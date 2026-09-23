@@ -1,0 +1,32 @@
+{
+  "range_percent": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45
+  ],
+  "capacity_records": 405,
+  "original_seven_scenarios_identical": true,
+  "baseline_identical": true,
+  "excel": {
+    "performed": true,
+    "passed": true,
+    "checked_cells": 3709,
+    "sheets": 10,
+    "csv_also_checked": true
+  },
+  "original_sources_unchanged": true,
+  "pdf_pages": 4,
+  "new_infeasible_services_at_45": [
+    "S002",
+    "S003",
+    "S004",
+    "S008",
+    "S012"
+  ]
+}

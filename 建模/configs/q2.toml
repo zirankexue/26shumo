@@ -1,0 +1,31 @@
+[paths]
+data_root = "../数据"
+template = "../结果提交模板.xlsx"
+output = "outputs/q2"
+cache = "cache/q2"
+font = "../写作/fonts/SimSun.ttf"
+
+[physics]
+gravity_m_s2 = 9.80665
+clearance_m = 50.0
+service_height_m = 30.0
+reserve = 0.20
+energy_tolerance_kwh = 1e-9
+
+[optimization]
+primary_order = ["tardiness", "makespan", "energy", "sorties"]
+comparison_order = ["makespan", "tardiness", "energy", "sorties"]
+seeds = [0, 1, 2]
+rounds_per_seed = 5
+candidate_limit = 1500
+initial_seconds = 180.0
+search_seconds = 1200.0
+final_seconds = 240.0
+comparison_seconds = 180.0
+workers = 1
+time_unit_s = 0.001
+energy_unit_kwh = 1e-9
+
+[export]
+excel = true
+render_previews = true

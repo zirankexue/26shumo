@@ -1,0 +1,23 @@
+# Local runtimes, caches and temporary files
+**/.runtime/
+**/node_modules/
+**/__pycache__/
+**/*.py[cod]
+**/.venv/
+**/cache/
+**/.DS_Store
+**/Thumbs.db
+**/~$*
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+# Raw attachments and the separate paper project are supplied locally.
+/数据/
+/写作/
+/_阅读缓存/
+/结果提交模板.xlsx
+# Only formal results are published.
+**/outputs/q2_smoke/
+**/outputs/**/logs/previews/
+**/outputs/**/*.inspect.ndjson

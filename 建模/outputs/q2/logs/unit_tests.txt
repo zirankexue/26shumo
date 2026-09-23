@@ -1,0 +1,29 @@
+test_against_exhaustive_batch_multiplicities (test_q1.OptimizationTests.test_against_exhaustive_batch_multiplicities) ... ok
+test_infeasible_not_partial_success (test_q1.OptimizationTests.test_infeasible_not_partial_success) ... ok
+test_descent_time_not_energy (test_q1.PhysicsTests.test_descent_time_not_energy) ... ok
+test_empty_full_ranges (test_q1.PhysicsTests.test_empty_full_ranges) ... ok
+test_reserve_monotonic_and_boundary (test_q1.PhysicsTests.test_reserve_monotonic_and_boundary) ... ok
+test_unreachable_and_zero_feasible_distinct (test_q1.PhysicsTests.test_unreachable_and_zero_feasible_distinct) ... ok
+test_corner_includes_four_cells (test_q1.TerrainTests.test_corner_includes_four_cells) ... ok
+test_geotiff_pixel_center_georeferencing (test_q1.TerrainTests.test_geotiff_pixel_center_georeferencing) ... ok
+test_invalid_and_missing (test_q1.TerrainTests.test_invalid_and_missing) ... ok
+test_line_along_boundary (test_q1.TerrainTests.test_line_along_boundary) ... ok
+test_peak_on_corner_not_missed (test_q1.TerrainTests.test_peak_on_corner_not_missed) ... ok
+test_point_at_center (test_q1.TerrainTests.test_point_at_center) ... ok
+test_reversal (test_q1.TerrainTests.test_reversal) ... ok
+test_endpoints_and_ninety_percent (test_q2.ChargingTests.test_endpoints_and_ninety_percent) ... ok
+test_invalid_soc (test_q2.ChargingTests.test_invalid_soc) ... ok
+test_all_pairs_and_q1_compatibility (test_q2.RealDataTests.test_all_pairs_and_q1_compatibility) ... ok
+test_deadline_intersections (test_q2.RealDataTests.test_deadline_intersections) ... ok
+test_multistop_remaining_payload_and_each_stop_climbs (test_q2.RealDataTests.test_multistop_remaining_payload_and_each_stop_climbs) ... ok
+test_validator_rejects_tampered_checkpoint (test_q2.RealDataTests.test_validator_rejects_tampered_checkpoint) ... ok
+test_battery_charge_blocks_reuse_on_another_drone (test_q2.SchedulingTests.test_battery_charge_blocks_reuse_on_another_drone) ... ok
+test_cp_matches_exhaustive_route_batch_order_and_batteries (test_q2.SchedulingTests.test_cp_matches_exhaustive_route_batch_order_and_batteries) ... ok
+test_first_box_on_time_last_box_late_and_optimized_order (test_q2.SchedulingTests.test_first_box_on_time_last_box_late_and_optimized_order) ... ok
+test_interval_coloring_and_conflict_rejection (test_q2.SchedulingTests.test_interval_coloring_and_conflict_rejection) ... ok
+test_multistop_visit_order_is_a_decision (test_q2.SchedulingTests.test_multistop_visit_order_is_a_decision) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 1.028s
+
+OK

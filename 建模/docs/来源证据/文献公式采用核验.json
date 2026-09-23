@@ -1,0 +1,101 @@
+{
+  "checked_utc": "2026-09-23T11:01:15.397697+00:00",
+  "physics_executable_ast_unchanged": true,
+  "configs_unchanged": true,
+  "physics_matches_saved_runs": true,
+  "original_input_hash_checks": 10,
+  "existing_output_files_unchanged": 94,
+  "q1_scenarios": [
+    {
+      "scenario": "objective_1_manifest",
+      "sorties_checked": 18,
+      "boxes_checked": 80,
+      "declared_feasible": true,
+      "passed": true
+    },
+    {
+      "scenario": "objective_2_manifest",
+      "sorties_checked": 18,
+      "boxes_checked": 80,
+      "declared_feasible": true,
+      "passed": true
+    },
+    {
+      "scenario": "objective_3_manifest",
+      "sorties_checked": 19,
+      "boxes_checked": 80,
+      "declared_feasible": true,
+      "passed": true
+    },
+    {
+      "scenario": "reserve_0.10_manifest",
+      "sorties_checked": 18,
+      "boxes_checked": 80,
+      "declared_feasible": true,
+      "passed": true
+    },
+    {
+      "scenario": "reserve_0.15_manifest",
+      "sorties_checked": 18,
+      "boxes_checked": 80,
+      "declared_feasible": true,
+      "passed": true
+    },
+    {
+      "scenario": "reserve_0.20_manifest",
+      "sorties_checked": 18,
+      "boxes_checked": 80,
+      "declared_feasible": true,
+      "passed": true
+    },
+    {
+      "scenario": "reserve_0.25_manifest",
+      "sorties_checked": 19,
+      "boxes_checked": 80,
+      "declared_feasible": true,
+      "passed": true
+    },
+    {
+      "scenario": "reserve_0.30_manifest",
+      "sorties_checked": 20,
+      "boxes_checked": 80,
+      "declared_feasible": true,
+      "passed": true
+    },
+    {
+      "scenario": "reserve_0.35_manifest",
+      "sorties_checked": 25,
+      "boxes_checked": 80,
+      "declared_feasible": true,
+      "passed": true
+    },
+    {
+      "scenario": "reserve_0.40_manifest",
+      "sorties_checked": 25,
+      "boxes_checked": 69,
+      "declared_feasible": false,
+      "passed": true
+    }
+  ],
+  "q2_scenarios": [
+    {
+      "scenario": "main",
+      "sorties_checked": 36,
+      "legs_checked": 76,
+      "boxes_checked": 80,
+      "passed": true
+    },
+    {
+      "scenario": "comparison",
+      "sorties_checked": 36,
+      "legs_checked": 76,
+      "boxes_checked": 80,
+      "passed": true
+    }
+  ],
+  "max_energy_difference_kwh": 0.0,
+  "max_soc_difference": 0.0,
+  "geometry_basis": "Saved segment geometries, no DEM traversal rerun. Original DEM hash verified.",
+  "need_reoptimization": false,
+  "reason": "Provenance and docstrings only; formulas, physical parameters, input data, constraints and objectives unchanged."
+}

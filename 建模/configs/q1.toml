@@ -1,0 +1,24 @@
+[paths]
+data_root = "../数据"
+template = "../结果提交模板.xlsx"
+output = "outputs/q1"
+cache = "cache/q1"
+font = "../写作/fonts/SimSun.ttf"
+
+[physics]
+gravity_m_s2 = 9.80665
+clearance_m = 50.0
+service_height_m = 30.0
+payload_tolerance_kg = 0.000001
+energy_tolerance_kwh = 0.000000001
+
+[optimization]
+baseline_reserve = 0.20
+primary_order = ["sorties", "energy", "time"]
+comparison_orders = [["sorties", "time", "energy"], ["energy", "sorties", "time"]]
+sensitivity_reserves = [0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40]
+milp_time_limit_s = 120.0
+
+[export]
+excel = true
+render_previews = true

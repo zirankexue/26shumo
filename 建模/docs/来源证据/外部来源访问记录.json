@@ -1,0 +1,117 @@
+[
+  {
+    "name": "PROJ",
+    "requested_url": "https://proj.org/en/stable/usage/ellipsoids.html",
+    "accessed_at_utc": "2026-09-23T08:46:27.280689+00:00",
+    "status": 200,
+    "final_url": "https://proj.org/en/stable/usage/ellipsoids.html",
+    "sha256": "540c6a439d6e7ada1005d63d1b4701c73ac0e3ab4cd8359231ab2e377096353d",
+    "title": "Ellipsoids — PROJ 9.9.0 documentation",
+    "excerpts": {
+      "WGS84 a=6378137.0": [
+        "0 a=6378165.0 rf=298.3 WGS 60 WGS66 a=6378145.0 rf=298.25 WGS 66 WGS72 a=6378135.0 rf=298.26 WGS 72 WGS84 a=6378137.0 rf=298.257223563 WGS 84 sphere a=6370997.0 b=6370997.0 Normal Sphere (r=6370997) ============ ================================= ============================ If size and shape are given as +ellps=xxx , later shape and size parameters are are taken into account as modifiers for the built-in ellipsoid definition. While this may seem "
+      ],
+      "298.257223563": [
+        "3 WGS 60 WGS66 a=6378145.0 rf=298.25 WGS 66 WGS72 a=6378135.0 rf=298.26 WGS 72 WGS84 a=6378137.0 rf=298.257223563 WGS 84 sphere a=6370997.0 b=6370997.0 Normal Sphere (r=6370997) ============ ================================= ============================ If size and shape are given as +ellps=xxx , later shape and size parameters are are taken into account as modifiers for the built-in ellipsoid definition. While this may seem strange, it is in acc"
+      ]
+    },
+    "scope": "仅证明记录摘录中的内容；不能据页面访问成功认定其支持其他公式。"
+  },
+  {
+    "name": "NIST",
+    "requested_url": "https://physics.nist.gov/cgi-bin/cuu/Value?gn",
+    "accessed_at_utc": "2026-09-23T08:46:27.281690+00:00",
+    "status": 200,
+    "final_url": "https://physics.nist.gov/cgi-bin/cuu/Value?gn",
+    "sha256": "52dce7c92132f996bffff10a8b34f32aca70576fe65d9535808ac2a33df75556",
+    "title": "CODATA Value:    standard acceleration of gravity",
+    "excerpts": {
+      "Numerical value": [
+        "nd Constants Bibliography Constants, Units & Uncertainty home page standard acceleration of gravity Numerical value 9.806 65 m s -2 Standard uncertainty (exact) Relative standard uncertainty (exact) Concise form 9.806 65 m s -2 Click here for correlation coefficient of this constant with other constants Source: 2022 CODATA recommended values Definition of uncertainty Correlation coefficient with any other constant "
+      ],
+      "(exact)": [
+        "nty home page standard acceleration of gravity Numerical value 9.806 65 m s -2 Standard uncertainty (exact) Relative standard uncertainty (exact) Concise form 9.806 65 m s -2 Click here for correlation coefficient of this constant with other constants Source: 2022 CODATA recommended values Definition of uncertainty Correlation coefficient with any other constant ",
+        " gravity Numerical value 9.806 65 m s -2 Standard uncertainty (exact) Relative standard uncertainty (exact) Concise form 9.806 65 m s -2 Click here for correlation coefficient of this constant with other constants Source: 2022 CODATA recommended values Definition of uncertainty Correlation coefficient with any other constant "
+      ]
+    },
+    "scope": "仅证明记录摘录中的内容；不能据页面访问成功认定其支持其他公式。"
+  },
+  {
+    "name": "OGC",
+    "requested_url": "https://docs.ogc.org/is/19-008r4/19-008r4.html",
+    "accessed_at_utc": "2026-09-23T08:46:27.282691+00:00",
+    "status": 200,
+    "final_url": "https://docs.ogc.org/is/19-008r4/19-008r4.html",
+    "sha256": "11bdc2ae93beba691276f94294d8e4c61c7953c53c6522a45d269127b85d9beb",
+    "title": "OGC GeoTIFF Standard",
+    "excerpts": {
+      "RasterPixelIsPoint": [
+        "ey This requirements class establishes the Raster Space used. There are currently only two options: RasterPixelIsPoint and RasterPixelIsArea . No user-defined raster spaces are currently supported. For variance in imaging display parameters, such as pixel aspect-ratios, use the standard TIFF 6.0 device-space tags. The use of this geokey is highly recommended for accurate georeferencing of raster. Requirements Class 7.0: GTRasterTypeGeoKey http://",
+        "f a raster dataset. Step 1: Establish the Raster Space coordinate system used: RasterPixelIsArea or RasterPixelIsPoint. Step 2: Establish/define the model space Type in which the image is to be georeferenced. If you are geocoding this data set, then the model space is defined to be the corresponding geographic, geocentric or projected coordinate reference system. Usually this will be a projected coordinate reference system. Step 3: Identify the n",
+        ".1, 1.0) GeoKeyDirectoryTag: GTModelTypeGeoKey = 2 (ModelTypeGeographic 2D) GTRasterTypeGeoKey = 2 (RasterPixelIsPoint) GeodeticCRSGeoKey = 4326 (Geographic 2D WGS 84) VerticalGeoKey = 4979 (Geographic 3D WGS 84, used here to document use of ellipsoidal height) VerticalCitationGeoKey = \"Geographic 3D WGS 84, Ellipsoidal height\" VerticalUnitsGeoKey = 9001 (Linear_Meter) Remarks: Note the \"RasterPixelIsPoint\" raster space, indicating that the DEM p",
+        "graphic 3D WGS 84, Ellipsoidal height\" VerticalUnitsGeoKey = 9001 (Linear_Meter) Remarks: Note the \"RasterPixelIsPoint\" raster space, indicating that the DEM posting of the first pixel is at the raster point (0,0,0), and therefore corresponds to 120W,32N exactly. The third value of the \"PixelScale\" is 1.0 to indicate that a single pixel-value unit corresponds to 1 meter, and the last tiepoint value indicates that base value zero indicates 1000m a",
+        "06, 1.0) GeoKeyDirectoryTag: GTModelTypeGeoKey = 2 (ModelTypeGeographic 2D) GTRasterTypeGeoKey = 2 (RasterPixelIsPoint) GeodeticCRSGeoKey = 4326 (Geographic 2D WGS 84) VerticalGeoKey = 3855 (EGM2008) VerticalCitationGeoKey = \"EGM2008 geoid height\" VerticalUnitsGeoKey = 9001 (Linear_Meter) F.3.4. Spherical Moon Example Introduction The GeoTIFF standard can be used for images from extraterrestrial bodies as well as the Earth. This Annex illustrates"
+      ],
+      "first pixel-value": [
+        " denoting the upper-left corner of the image, and increasing I to the right, increasing J down. The first pixel-value fills the square grid cell with the bounds: top-left = (0,0), bottom-right = (1,1) and so on; by extension this one-by-one grid cell is also referred to as a pixel. An N by M pixel image covers an area with the mathematically defined bounds (0,0), (N,M). (0,0) (1,0) x---x---x-> I | * | * | x---x---x Standard (PixelIsArea) TIFF Ras",
+        "s names as used in PixelIsArea Raster space, with increasing I to the right, increasing J down. The first pixel-value however, is realized as a point value located at (0,0). An N by M pixel image consists of points which fill the mathematically defined bounds (0,0), (N-1,M-1). (0,0) (1,0) x-------x------> I | | | | PixelIsPoint TIFF Raster space R, x-------x showing the location (x) of several pixels. | (1,1) v J The location of the pixel is refe"
+      ],
+      "at location (0,0)": []
+    },
+    "scope": "仅证明记录摘录中的内容；不能据页面访问成功认定其支持其他公式。"
+  },
+  {
+    "name": "OpenStax",
+    "requested_url": "https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system",
+    "accessed_at_utc": "2026-09-23T08:46:27.282691+00:00",
+    "status": 200,
+    "final_url": "https://openstax.org/books/university-physics-volume-1/pages/8-1-potential-energy-of-a-system",
+    "sha256": "4ab199a0ed8ede46298d301f025219f8e0516ea416a658ed749461652cbcc927",
+    "title": "8.1 Potential Energy of a System - University Physics Volume 1 | OpenStax",
+    "excerpts": {
+      "m g y": [
+        " see from this that the gravitational potential energy function, near Earth’s surface, is U ( y ) = m g y + const . U ( y ) = m g y + const . 8.5 You can choose the value of the constant, as described in the discussion of Equation 8.2 ; however, for solving most problems, the most convenient constant to choose is zero for when y = 0 , y = 0 , which is the lowest vertical position in the problem. Example 8.2 Gravitational Potential Energy of a Hik",
+        "avitational potential energy function, near Earth’s surface, is U ( y ) = m g y + const . U ( y ) = m g y + const . 8.5 You can choose the value of the constant, as described in the discussion of Equation 8.2 ; however, for solving most problems, the most convenient constant to choose is zero for when y = 0 , y = 0 , which is the lowest vertical position in the problem. Example 8.2 Gravitational Potential Energy of a Hiker The summit of Great Blu",
+        "ve for the distance y that the block travels before coming to a stop: K A + U A = K C + U C 0 = 0 + m g y C + 1 2 k ( y C ) 2 y C = - 2 m g k K A + U A = K C + U C 0 = 0 + m g y C + 1 2 k ( y C ) 2 y C = - 2 m g k Figure 8.5 A bungee jumper transforms gravitational potential energy at the start of the jump into elastic potential energy at the bottom of the jump. Example 8.4 Potential Energy of a Vertical Mass-Spring System A block weighing 1.2 N ",
+        "A + U A = K C + U C 0 = 0 + m g y C + 1 2 k ( y C ) 2 y C = - 2 m g k K A + U A = K C + U C 0 = 0 + m g y C + 1 2 k ( y C ) 2 y C = - 2 m g k Figure 8.5 A bungee jumper transforms gravitational potential energy at the start of the jump into elastic potential energy at the bottom of the jump. Example 8.4 Potential Energy of a Vertical Mass-Spring System A block weighing 1.2 N 1.2 N is hung from a spring with a spring constant of 6.0 N / m 6.0 N / "
+      ],
+      "gravitational potential energy": [
+        "plain the meaning of the zero of the potential energy function for a system Calculate and apply the gravitational potential energy for an object near Earth’s surface and the elastic potential energy of a mass-spring system In Work , we saw that the work done on an object by the constant gravitational force, near the surface of Earth, over any displacement is a function only of the difference in the positions of the end-points of the displacement.",
+        ", thereby decreasing the ball’s kinetic energy. This loss in kinetic energy translates to a gain in gravitational potential energy of the football-Earth system. As the football falls toward Earth, the work done on the football is now positive, because the displacement and the gravitational force both point vertically downward. The ball also speeds up, which indicates an increase in kinetic energy. Therefore, energy is converted from gravitational",
+        " also speeds up, which indicates an increase in kinetic energy. Therefore, energy is converted from gravitational potential energy back into kinetic energy. Figure 8.2 As a football starts its descent toward the wide receiver, gravitational potential energy is converted back into kinetic energy. Based on this scenario, we can define the difference of potential energy from point A to point B as the negative of the work done: Δ U A B = U B − U A = ",
+        "rgy back into kinetic energy. Figure 8.2 As a football starts its descent toward the wide receiver, gravitational potential energy is converted back into kinetic energy. Based on this scenario, we can define the difference of potential energy from point A to point B as the negative of the work done: Δ U A B = U B − U A = − W A B . Δ U A B = U B − U A = − W A B . 8.1 This formula explicitly states a potential energy difference , not just an absolu",
+        "on or air resistance, the change in kinetic energy of the football equals negative of the change in gravitational potential energy of the football. This can be generalized to any potential energy: Δ K A B = – Δ U A B . Δ K A B = – Δ U A B . 8.3 Let’s look at a specific example, choosing zero potential energy for gravitational potential energy at convenient points. Example 8.1 Basic Properties of Potential Energy A particle moves along the x -axis",
+        " B . Δ K A B = – Δ U A B . 8.3 Let’s look at a specific example, choosing zero potential energy for gravitational potential energy at convenient points. Example 8.1 Basic Properties of Potential Energy A particle moves along the x -axis under the action of a force given by F = − a x 2 F = − a x 2 , where a = 3 N/m 2 a = 3 N/m 2 . (a) What is the difference in its potential energy as it moves from x A = 1 m x A = 1 m to x B = 2 m x B = 2 m ? (b) W",
+        " . First, we consider each of these forces when acting separately, and then when both act together. Gravitational potential energy near Earth’s surface The system of interest consists of our planet, Earth, and one or more particles near its surface (or bodies small enough to be considered as particles, compared to Earth). The gravitational force on each particle (or body) is just its weight mg near the surface of Earth, acting vertically down. Ac",
+        "ersed, as given by Equation 7.4 . By definition, this work is the negative of the difference in the gravitational potential energy, so that difference is Δ U = − W A B = m g ( y B − y A ) . Δ U = − W A B = m g ( y B − y A ) . 8.4 You can see from this that the gravitational potential energy function, near Earth’s surface, is U ( y ) = m g y + const . U ( y ) = m g y + const . 8.5 You can choose the value of the constant, as described in the discu"
+      ],
+      "8.4": [
+        "ergy, so that difference is Δ U = − W A B = m g ( y B − y A ) . Δ U = − W A B = m g ( y B − y A ) . 8.4 You can see from this that the gravitational potential energy function, near Earth’s surface, is U ( y ) = m g y + const . U ( y ) = m g y + const . 8.5 You can choose the value of the constant, as described in the discussion of Equation 8.2 ; however, for solving most problems, the most convenient constant to choose is zero for when y = 0 , y ",
+        "vel ) = ( 75 × 9.8 N ) ( −48 m ) = −35.3 kJ . Significance Besides illustrating the use of Equation 8.4 and Equation 8.5 , the values of gravitational potential energy we found are reasonable. The gravitational potential energy is higher at the summit than at the base, and lower at sea level than at the base. Gravity does work on you on your way up, too! It does negative work and not quite as much (in magnitude), as your muscles do. But it certai",
+        " of a perfectly elastic, massless spring, the other end of which is fixed, as illustrated in Figure 8.4 . Figure 8.4 A vertical mass-spring system, with the positive y -axis pointing upward. The mass is initially at an unstretched spring length, point A. Then it is released, expanding past point B to point C, where it comes to a stop. First, let's consider the potential energy of the system. We need to define the constant in the potential energy ",
+        "ly elastic, massless spring, the other end of which is fixed, as illustrated in Figure 8.4 . Figure 8.4 A vertical mass-spring system, with the positive y -axis pointing upward. The mass is initially at an unstretched spring length, point A. Then it is released, expanding past point B to point C, where it comes to a stop. First, let's consider the potential energy of the system. We need to define the constant in the potential energy function of E",
+        "al energy at the start of the jump into elastic potential energy at the bottom of the jump. Example 8.4 Potential Energy of a Vertical Mass-Spring System A block weighing 1.2 N 1.2 N is hung from a spring with a spring constant of 6.0 N / m 6.0 N / m , as shown in Figure 8.4 . (a) What is the maximum expansion of the spring, as seen at point C? (b) What is the total potential energy at point B, halfway between A and C? (c) What is the speed of th",
+        ".2 N 1.2 N is hung from a spring with a spring constant of 6.0 N / m 6.0 N / m , as shown in Figure 8.4 . (a) What is the maximum expansion of the spring, as seen at point C? (b) What is the total potential energy at point B, halfway between A and C? (c) What is the speed of the block at point B? Strategy In part (a) we calculate the distance y C y C as discussed in the previous text. Then in part (b), we use half of the y value to calculate the ",
+        "), we use half of the y value to calculate the potential energy at point B using equations Equation 8.4 and Equation 8.6 . This energy must be equal to the kinetic energy, Equation 7.6 , at point B since the initial energy of the system is zero. By calculating the kinetic energy at point B, we can now calculate the speed of the block at point B. Solution Since the total energy of the system is zero at point A as discussed previously, the maximum ",
+        " be the same if the zero energy points were chosen at different locations. Check Your Understanding 8.4 Suppose the mass in Equation 8.6 is doubled while keeping the all other conditions the same. Would the maximum expansion of the spring increase, decrease, or remain the same? Would the speed at point B be larger, smaller, or the same compared to the original mass? Interactive Engage the simulation below to learn about conservation of energy wit"
+      ]
+    },
+    "scope": "仅证明记录摘录中的内容；不能据页面访问成功认定其支持其他公式。"
+  },
+  {
+    "name": "OR-Tools",
+    "requested_url": "https://developers.google.com/optimization/cp/cp_solver",
+    "accessed_at_utc": "2026-09-23T08:46:27.283691+00:00",
+    "status": "failed",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>",
+    "scope": "访问失败，不作为已核实的依据。"
+  },
+  {
+    "name": "NGA",
+    "requested_url": "https://earth-info.nga.mil/index.php?dir=wgs84&action=wgs84",
+    "accessed_at_utc": "2026-09-23T08:46:27.284690+00:00",
+    "status": "failed",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>",
+    "scope": "访问失败，不作为已核实的依据。"
+  }
+]

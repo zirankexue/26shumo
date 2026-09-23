@@ -1,0 +1,18 @@
+test_against_exhaustive_batch_multiplicities (test_q1.OptimizationTests.test_against_exhaustive_batch_multiplicities) ... ok
+test_infeasible_not_partial_success (test_q1.OptimizationTests.test_infeasible_not_partial_success) ... ok
+test_descent_time_not_energy (test_q1.PhysicsTests.test_descent_time_not_energy) ... ok
+test_empty_full_ranges (test_q1.PhysicsTests.test_empty_full_ranges) ... ok
+test_reserve_monotonic_and_boundary (test_q1.PhysicsTests.test_reserve_monotonic_and_boundary) ... ok
+test_unreachable_and_zero_feasible_distinct (test_q1.PhysicsTests.test_unreachable_and_zero_feasible_distinct) ... ok
+test_corner_includes_four_cells (test_q1.TerrainTests.test_corner_includes_four_cells) ... ok
+test_geotiff_pixel_center_georeferencing (test_q1.TerrainTests.test_geotiff_pixel_center_georeferencing) ... ok
+test_invalid_and_missing (test_q1.TerrainTests.test_invalid_and_missing) ... ok
+test_line_along_boundary (test_q1.TerrainTests.test_line_along_boundary) ... ok
+test_peak_on_corner_not_missed (test_q1.TerrainTests.test_peak_on_corner_not_missed) ... ok
+test_point_at_center (test_q1.TerrainTests.test_point_at_center) ... ok
+test_reversal (test_q1.TerrainTests.test_reversal) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.052s
+
+OK

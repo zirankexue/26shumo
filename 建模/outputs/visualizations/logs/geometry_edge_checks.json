@@ -1,0 +1,26 @@
+[
+  {
+    "case": "corner_peak",
+    "passed": true,
+    "cells": 7
+  },
+  {
+    "case": "grid_boundary",
+    "passed": true,
+    "cells": 6
+  },
+  {
+    "case": "horizontal",
+    "passed": true,
+    "cells": 3
+  },
+  {
+    "case": "vertical",
+    "passed": true,
+    "cells": 3
+  },
+  {
+    "case": "nodata_rejected",
+    "passed": true
+  }
+]

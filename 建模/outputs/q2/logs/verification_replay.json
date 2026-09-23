@@ -1,0 +1,12 @@
+{
+  "main_recomputed": true,
+  "comparison_recomputed": true,
+  "sources_match": true,
+  "excel": {
+    "performed": true,
+    "passed": true,
+    "checked_cells": 4339,
+    "sheets": 11,
+    "csv_also_checked": true
+  }
+}

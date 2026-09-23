@@ -1,0 +1,907 @@
+{
+  "label": "架次→能耗→时间",
+  "reserve": 0.2,
+  "order": [
+    "sorties",
+    "energy",
+    "time"
+  ],
+  "feasible": true,
+  "infeasible_services": [],
+  "infeasibility_details": [],
+  "summary": {
+    "sorties": 18,
+    "energy_kwh": 59.13226032599277,
+    "operation_s": 32776.5167822769,
+    "flight_s": 19288.516782276904,
+    "drone_counts": {
+      "A": 0,
+      "B": 9,
+      "C": 9
+    },
+    "delivered_boxes": 80
+  },
+  "rows": [
+    {
+      "sortie": "Q1-S001-01",
+      "service": "S001",
+      "drone": "C",
+      "box_ids": [
+        "S001-WAT-01",
+        "S001-WAT-02",
+        "S001-WAT-03",
+        "S001-FOD-01",
+        "S001-FOD-02",
+        "S001-FOD-03",
+        "S001-HYG-01",
+        "S001-HYG-02"
+      ],
+      "box_count": 8,
+      "counts": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "mass_kg": 78.0,
+      "volume_m3": 0.23500000000000001,
+      "flight_s": 618.1750458620229,
+      "operation_s": 1626.175045862023,
+      "energy_kwh": 2.995775804904669,
+      "return_soc": 0.6255280243869163
+    },
+    {
+      "sortie": "Q1-S001-02",
+      "service": "S001",
+      "drone": "C",
+      "box_ids": [
+        "S001-MED-01",
+        "S001-MED-02",
+        "S001-WAT-04",
+        "S001-WAT-05",
+        "S001-WAT-06",
+        "S001-WAT-07",
+        "S001-WAT-08"
+      ],
+      "box_count": 7,
+      "counts": [
+        2,
+        5,
+        0,
+        0
+      ],
+      "mass_kg": 76.0,
+      "volume_m3": 0.159,
+      "flight_s": 618.1750458620229,
+      "operation_s": 1560.175045862023,
+      "energy_kwh": 2.9175880955868267,
+      "return_soc": 0.6353014880516467
+    },
+    {
+      "sortie": "Q1-S002-01",
+      "service": "S002",
+      "drone": "B",
+      "box_ids": [
+        "S002-MED-01",
+        "S002-WAT-01",
+        "S002-FOD-01"
+      ],
+      "box_count": 3,
+      "counts": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass_kg": 25.0,
+      "volume_m3": 0.067,
+      "flight_s": 1186.7240813077574,
+      "operation_s": 1816.7240813077574,
+      "energy_kwh": 2.713472941241988,
+      "return_soc": 0.32163176468950305
+    },
+    {
+      "sortie": "Q1-S002-02",
+      "service": "S002",
+      "drone": "C",
+      "box_ids": [
+        "S002-WAT-02",
+        "S002-WAT-03",
+        "S002-WAT-04",
+        "S002-FOD-02",
+        "S002-HYG-01"
+      ],
+      "box_count": 5,
+      "counts": [
+        0,
+        3,
+        1,
+        1
+      ],
+      "mass_kg": 56.0,
+      "volume_m3": 0.14400000000000002,
+      "flight_s": 1231.8421660245544,
+      "operation_s": 2041.8421660245544,
+      "energy_kwh": 5.721356203945945,
+      "return_soc": 0.2848304745067569
+    },
+    {
+      "sortie": "Q1-S003-01",
+      "service": "S003",
+      "drone": "B",
+      "box_ids": [
+        "S003-MED-01",
+        "S003-WAT-01",
+        "S003-FOD-01"
+      ],
+      "box_count": 3,
+      "counts": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass_kg": 25.0,
+      "volume_m3": 0.067,
+      "flight_s": 1450.6096650380623,
+      "operation_s": 2080.6096650380623,
+      "energy_kwh": 2.7800780342326075,
+      "return_soc": 0.30498049144184813
+    },
+    {
+      "sortie": "Q1-S003-02",
+      "service": "S003",
+      "drone": "C",
+      "box_ids": [
+        "S003-WAT-02",
+        "S003-WAT-03",
+        "S003-WAT-04",
+        "S003-FOD-02",
+        "S003-HYG-01"
+      ],
+      "box_count": 5,
+      "counts": [
+        0,
+        3,
+        1,
+        1
+      ],
+      "mass_kg": 56.0,
+      "volume_m3": 0.14400000000000002,
+      "flight_s": 1560.1777110992603,
+      "operation_s": 2370.1777110992603,
+      "energy_kwh": 5.7653646949838375,
+      "return_soc": 0.2793294131270203
+    },
+    {
+      "sortie": "Q1-S004-01",
+      "service": "S004",
+      "drone": "C",
+      "box_ids": [
+        "S004-MED-01",
+        "S004-WAT-01",
+        "S004-WAT-02",
+        "S004-WAT-03",
+        "S004-FOD-01",
+        "S004-HYG-01"
+      ],
+      "box_count": 6,
+      "counts": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "mass_kg": 59.0,
+      "volume_m3": 0.156,
+      "flight_s": 1425.0547187724458,
+      "operation_s": 2301.054718772446,
+      "energy_kwh": 6.152860129174583,
+      "return_soc": 0.23089248385317718
+    },
+    {
+      "sortie": "Q1-S005-01",
+      "service": "S005",
+      "drone": "C",
+      "box_ids": [
+        "S005-MED-01",
+        "S005-WAT-01",
+        "S005-WAT-02",
+        "S005-WAT-03",
+        "S005-FOD-01",
+        "S005-HYG-01"
+      ],
+      "box_count": 6,
+      "counts": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "mass_kg": 59.0,
+      "volume_m3": 0.156,
+      "flight_s": 1001.1887154914712,
+      "operation_s": 1877.1887154914712,
+      "energy_kwh": 4.222137373445114,
+      "return_soc": 0.47223282831936075
+    },
+    {
+      "sortie": "Q1-S006-01",
+      "service": "S006",
+      "drone": "C",
+      "box_ids": [
+        "S006-MED-01",
+        "S006-WAT-01",
+        "S006-WAT-02",
+        "S006-WAT-03",
+        "S006-FOD-01",
+        "S006-HYG-01"
+      ],
+      "box_count": 6,
+      "counts": [
+        1,
+        3,
+        1,
+        1
+      ],
+      "mass_kg": 59.0,
+      "volume_m3": 0.156,
+      "flight_s": 685.5526244866224,
+      "operation_s": 1561.5526244866223,
+      "energy_kwh": 2.5979362904386822,
+      "return_soc": 0.6752579636951648
+    },
+    {
+      "sortie": "Q1-S007-01",
+      "service": "S007",
+      "drone": "C",
+      "box_ids": [
+        "S007-MED-01",
+        "S007-WAT-01",
+        "S007-WAT-02",
+        "S007-FOD-01",
+        "S007-HYG-01"
+      ],
+      "box_count": 5,
+      "counts": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "mass_kg": 45.0,
+      "volume_m3": 0.129,
+      "flight_s": 1097.6006984106912,
+      "operation_s": 1907.6006984106912,
+      "energy_kwh": 3.4110038084433194,
+      "return_soc": 0.5736245239445851
+    },
+    {
+      "sortie": "Q1-S008-01",
+      "service": "S008",
+      "drone": "C",
+      "box_ids": [
+        "S008-MED-01",
+        "S008-WAT-01",
+        "S008-WAT-02",
+        "S008-FOD-01",
+        "S008-HYG-01"
+      ],
+      "box_count": 5,
+      "counts": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "mass_kg": 45.0,
+      "volume_m3": 0.129,
+      "flight_s": 1389.7115246008332,
+      "operation_s": 2199.7115246008334,
+      "energy_kwh": 5.836020667966359,
+      "return_soc": 0.2704974165042051
+    },
+    {
+      "sortie": "Q1-S009-01",
+      "service": "S009",
+      "drone": "B",
+      "box_ids": [
+        "S009-MED-01",
+        "S009-WAT-01",
+        "S009-FOD-01"
+      ],
+      "box_count": 3,
+      "counts": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass_kg": 25.0,
+      "volume_m3": 0.067,
+      "flight_s": 928.4628643343575,
+      "operation_s": 1558.4628643343576,
+      "energy_kwh": 2.0962654017373348,
+      "return_soc": 0.4759336495656663
+    },
+    {
+      "sortie": "Q1-S010-01",
+      "service": "S010",
+      "drone": "B",
+      "box_ids": [
+        "S010-MED-01",
+        "S010-WAT-01",
+        "S010-FOD-01"
+      ],
+      "box_count": 3,
+      "counts": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass_kg": 25.0,
+      "volume_m3": 0.067,
+      "flight_s": 925.4035197802173,
+      "operation_s": 1555.4035197802173,
+      "energy_kwh": 1.823216564231414,
+      "return_soc": 0.5441958589421465
+    },
+    {
+      "sortie": "Q1-S011-01",
+      "service": "S011",
+      "drone": "B",
+      "box_ids": [
+        "S011-MED-01",
+        "S011-WAT-01",
+        "S011-FOD-01"
+      ],
+      "box_count": 3,
+      "counts": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass_kg": 25.0,
+      "volume_m3": 0.067,
+      "flight_s": 558.4247628605204,
+      "operation_s": 1188.4247628605203,
+      "energy_kwh": 1.0739366863951036,
+      "return_soc": 0.7315158284012241
+    },
+    {
+      "sortie": "Q1-S012-01",
+      "service": "S012",
+      "drone": "B",
+      "box_ids": [
+        "S012-MED-01",
+        "S012-WAT-01",
+        "S012-FOD-01"
+      ],
+      "box_count": 3,
+      "counts": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass_kg": 25.0,
+      "volume_m3": 0.067,
+      "flight_s": 1292.8268141491867,
+      "operation_s": 1922.8268141491867,
+      "energy_kwh": 2.7525999542899324,
+      "return_soc": 0.3118500114275169
+    },
+    {
+      "sortie": "Q1-S013-01",
+      "service": "S013",
+      "drone": "B",
+      "box_ids": [
+        "S013-MED-01",
+        "S013-WAT-01",
+        "S013-FOD-01"
+      ],
+      "box_count": 3,
+      "counts": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass_kg": 25.0,
+      "volume_m3": 0.067,
+      "flight_s": 880.5115887445249,
+      "operation_s": 1510.511588744525,
+      "energy_kwh": 1.8248281910807473,
+      "return_soc": 0.5437929522298132
+    },
+    {
+      "sortie": "Q1-S014-01",
+      "service": "S014",
+      "drone": "B",
+      "box_ids": [
+        "S014-MED-01",
+        "S014-WAT-01",
+        "S014-FOD-01"
+      ],
+      "box_count": 3,
+      "counts": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass_kg": 25.0,
+      "volume_m3": 0.067,
+      "flight_s": 1239.7476752786915,
+      "operation_s": 1869.7476752786915,
+      "energy_kwh": 2.1402909781417883,
+      "return_soc": 0.46492725546455294
+    },
+    {
+      "sortie": "Q1-S015-01",
+      "service": "S015",
+      "drone": "B",
+      "box_ids": [
+        "S015-MED-01",
+        "S015-WAT-01",
+        "S015-FOD-01"
+      ],
+      "box_count": 3,
+      "counts": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "mass_kg": 25.0,
+      "volume_m3": 0.067,
+      "flight_s": 1198.3275601736595,
+      "operation_s": 1828.3275601736595,
+      "energy_kwh": 2.3075285057525154,
+      "return_soc": 0.42311787356187114
+    }
+  ],
+  "safe_payloads": [
+    {
+      "service": "S001",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 1.3127102413808114
+    },
+    {
+      "service": "S001",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 1.2739409718481534
+    },
+    {
+      "service": "S001",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 80,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 3.08170436066632
+    },
+    {
+      "service": "S002",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 3.0905097276380133
+    },
+    {
+      "service": "S002",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 2.998820311876019
+    },
+    {
+      "service": "S002",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 68.85810375213623,
+      "reason": "往返安全能量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 6.399999976409767
+    },
+    {
+      "service": "S003",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 3.1570180488003334
+    },
+    {
+      "service": "S003",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 3.0645901579839023
+    },
+    {
+      "service": "S003",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 68.1995415687561,
+      "reason": "往返安全能量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 6.399999982142404
+    },
+    {
+      "service": "S004",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 3.266691534200595
+    },
+    {
+      "service": "S004",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 3.169798492551682
+    },
+    {
+      "service": "S004",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 63.69825065135956,
+      "reason": "往返安全能量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 6.399999982992551
+    },
+    {
+      "service": "S005",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 2.244865011388093
+    },
+    {
+      "service": "S005",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 2.178257601126719
+    },
+    {
+      "service": "S005",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 80,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 5.292642814980954
+    },
+    {
+      "service": "S006",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 1.3896826004864364
+    },
+    {
+      "service": "S006",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 1.3500226341272559
+    },
+    {
+      "service": "S006",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 80,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 3.2532717885603226
+    },
+    {
+      "service": "S007",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 2.0179724910850116
+    },
+    {
+      "service": "S007",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 1.95981561942133
+    },
+    {
+      "service": "S007",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 80,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 4.6796101703532695
+    },
+    {
+      "service": "S008",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 3.387190459625516
+    },
+    {
+      "service": "S008",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 28.80136013031006,
+      "reason": "往返安全能量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 3.1999999843748013
+    },
+    {
+      "service": "S008",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 58.904165625572205,
+      "reason": "往返安全能量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 6.399999980533199
+    },
+    {
+      "service": "S009",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 2.3868888130198633
+    },
+    {
+      "service": "S009",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 2.3164140175598926
+    },
+    {
+      "service": "S009",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 80,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 5.669612668817532
+    },
+    {
+      "service": "S010",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 2.0707297630186403
+    },
+    {
+      "service": "S010",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 2.011040412354545
+    },
+    {
+      "service": "S010",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 80,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 4.858856926614966
+    },
+    {
+      "service": "S011",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 1.2195961128656
+    },
+    {
+      "service": "S011",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 1.1839226028325527
+    },
+    {
+      "service": "S011",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 80,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 2.8532102708956293
+    },
+    {
+      "service": "S012",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 3.1314205551132304
+    },
+    {
+      "service": "S012",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 3.0391455377960237
+    },
+    {
+      "service": "S012",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 68.1097400188446,
+      "reason": "往返安全能量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 6.3999999657083695
+    },
+    {
+      "service": "S013",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 2.07421509600092
+    },
+    {
+      "service": "S013",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 2.014429642036623
+    },
+    {
+      "service": "S013",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 80,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 4.89171403094015
+    },
+    {
+      "service": "S014",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 2.4255872304885484
+    },
+    {
+      "service": "S014",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 2.3552205378029694
+    },
+    {
+      "service": "S014",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 80,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 5.607586660887968
+    },
+    {
+      "service": "S015",
+      "drone": "A",
+      "reserve": 0.2,
+      "safe_payload_kg": 25,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.6,
+      "energy_at_limit_kwh": 2.6193442676312952
+    },
+    {
+      "service": "S015",
+      "drone": "B",
+      "reserve": 0.2,
+      "safe_payload_kg": 30,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 3.2,
+      "energy_at_limit_kwh": 2.544527926579269
+    },
+    {
+      "service": "S015",
+      "drone": "C",
+      "reserve": 0.2,
+      "safe_payload_kg": 80,
+      "reason": "额定载质量限制",
+      "energy_budget_kwh": 6.4,
+      "energy_at_limit_kwh": 6.133265017718501
+    }
+  ],
+  "candidate_counts": {
+    "S001": 201,
+    "S002": 76,
+    "S003": 76,
+    "S004": 51,
+    "S005": 51,
+    "S006": 51,
+    "S007": 43,
+    "S008": 43,
+    "S009": 20,
+    "S010": 20,
+    "S011": 20,
+    "S012": 20,
+    "S013": 20,
+    "S014": 20,
+    "S015": 20
+  },
+  "state_count": 644,
+  "verification": {
+    "passed": true,
+    "delivered_boxes": 80,
+    "complete": true,
+    "sorties": 18,
+    "max_recalculation_errors": {
+      "mass_kg": 0.0,
+      "volume_m3": 0.0,
+      "energy_kwh": 8.881784197001252e-16,
+      "flight_s": 0.0,
+      "operation_s": 0.0,
+      "return_soc": 1.1102230246251565e-16
+    },
+    "min_return_soc": 0.23089248385317718
+  },
+  "sortie_lower_bound": 18
+}

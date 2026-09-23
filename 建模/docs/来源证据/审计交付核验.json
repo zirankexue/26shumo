@@ -1,0 +1,11 @@
+{
+  "scope": "来源与文档静态审计；不属于实飞校准或重新求解",
+  "formula_entries": 32,
+  "future_q3_entries": 7,
+  "preserved_files_checked": 150,
+  "changed_preserved_files": [],
+  "local_links_checked": 7,
+  "python_syntax": "passed",
+  "original_formula_omml": "preserved",
+  "models_or_results_recalculated": false
+}

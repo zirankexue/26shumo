@@ -1,0 +1,512 @@
+{
+  "baseline": {
+    "passed": true,
+    "delivered_boxes": 80,
+    "complete": true,
+    "sorties": 18,
+    "max_recalculation_errors": {
+      "mass_kg": 0.0,
+      "volume_m3": 0.0,
+      "energy_kwh": 8.881784197001252e-16,
+      "flight_s": 0.0,
+      "operation_s": 0.0,
+      "return_soc": 1.1102230246251565e-16
+    },
+    "min_return_soc": 0.23089248385317718
+  },
+  "milp": [
+    {
+      "service": "S001",
+      "passed": true,
+      "candidate_count": 201,
+      "dp_objective": [
+        2,
+        5.913363900491496,
+        3186.350091724046
+      ],
+      "milp_objective": [
+        2,
+        5.913363900491497,
+        3186.350091724046
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S002",
+      "passed": true,
+      "candidate_count": 76,
+      "dp_objective": [
+        2,
+        8.434829145187933,
+        3858.566247332312
+      ],
+      "milp_objective": [
+        2,
+        8.434829145187932,
+        3858.566247332312
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S003",
+      "passed": true,
+      "candidate_count": 76,
+      "dp_objective": [
+        2,
+        8.545442729216445,
+        4450.787376137323
+      ],
+      "milp_objective": [
+        2,
+        8.545442729216445,
+        4450.787376137323
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S004",
+      "passed": true,
+      "candidate_count": 51,
+      "dp_objective": [
+        1,
+        6.152860129174583,
+        2301.054718772446
+      ],
+      "milp_objective": [
+        1,
+        6.152860129174583,
+        2301.054718772446
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S005",
+      "passed": true,
+      "candidate_count": 51,
+      "dp_objective": [
+        1,
+        4.222137373445114,
+        1877.1887154914712
+      ],
+      "milp_objective": [
+        1,
+        4.222137373445114,
+        1877.1887154914712
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S006",
+      "passed": true,
+      "candidate_count": 51,
+      "dp_objective": [
+        1,
+        2.5979362904386822,
+        1561.5526244866223
+      ],
+      "milp_objective": [
+        1,
+        2.5979362904386822,
+        1561.5526244866223
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S007",
+      "passed": true,
+      "candidate_count": 43,
+      "dp_objective": [
+        1,
+        3.4110038084433194,
+        1907.6006984106912
+      ],
+      "milp_objective": [
+        1,
+        3.4110038084433194,
+        1907.6006984106912
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S008",
+      "passed": true,
+      "candidate_count": 43,
+      "dp_objective": [
+        1,
+        5.836020667966359,
+        2199.7115246008334
+      ],
+      "milp_objective": [
+        1,
+        5.836020667966359,
+        2199.7115246008334
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S009",
+      "passed": true,
+      "candidate_count": 20,
+      "dp_objective": [
+        1,
+        2.0962654017373348,
+        1558.4628643343576
+      ],
+      "milp_objective": [
+        1,
+        2.0962654017373348,
+        1558.4628643343576
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S010",
+      "passed": true,
+      "candidate_count": 20,
+      "dp_objective": [
+        1,
+        1.823216564231414,
+        1555.4035197802173
+      ],
+      "milp_objective": [
+        1,
+        1.823216564231414,
+        1555.4035197802173
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S011",
+      "passed": true,
+      "candidate_count": 20,
+      "dp_objective": [
+        1,
+        1.0739366863951036,
+        1188.4247628605203
+      ],
+      "milp_objective": [
+        1,
+        1.0739366863951036,
+        1188.4247628605203
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S012",
+      "passed": true,
+      "candidate_count": 20,
+      "dp_objective": [
+        1,
+        2.7525999542899324,
+        1922.8268141491867
+      ],
+      "milp_objective": [
+        1,
+        2.7525999542899324,
+        1922.8268141491867
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S013",
+      "passed": true,
+      "candidate_count": 20,
+      "dp_objective": [
+        1,
+        1.8248281910807473,
+        1510.511588744525
+      ],
+      "milp_objective": [
+        1,
+        1.8248281910807473,
+        1510.511588744525
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S014",
+      "passed": true,
+      "candidate_count": 20,
+      "dp_objective": [
+        1,
+        2.1402909781417883,
+        1869.7476752786915
+      ],
+      "milp_objective": [
+        1,
+        2.1402909781417883,
+        1869.7476752786915
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    },
+    {
+      "service": "S015",
+      "passed": true,
+      "candidate_count": 20,
+      "dp_objective": [
+        1,
+        2.3075285057525154,
+        1828.3275601736595
+      ],
+      "milp_objective": [
+        1,
+        2.3075285057525154,
+        1828.3275601736595
+      ],
+      "stages": [
+        {
+          "stage": 1,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 2,
+          "status": 0,
+          "mip_gap": 0.0
+        },
+        {
+          "stage": 3,
+          "status": 0,
+          "mip_gap": 0.0
+        }
+      ]
+    }
+  ],
+  "sensitivity": {
+    "passed": true,
+    "scenario_count": 9,
+    "checked": "可行域、安全载荷与最少架次单调性"
+  },
+  "excel": {
+    "performed": true,
+    "passed": true,
+    "checked_cells": 3709,
+    "sheets": 10,
+    "csv_also_checked": true
+  },
+  "sources_unchanged": true
+}

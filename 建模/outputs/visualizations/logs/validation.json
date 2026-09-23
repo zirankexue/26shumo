@@ -1,0 +1,102 @@
+{
+  "profile": {
+    "selected_q1": [
+      "S008",
+      "S014"
+    ],
+    "selected_q2": "Q2-029",
+    "segments": 6,
+    "cells": 1146,
+    "geometry_passed": true
+  },
+  "energy": {
+    "Q1": {
+      "sorties": 18,
+      "energy_kwh": 59.13226032599276,
+      "components_kwh": {
+        "去程水平": 33.944774597334685,
+        "去程爬升": 2.0002807973257184,
+        "返程水平": 22.632619504491537,
+        "返程爬升": 0.5545854268408267
+      },
+      "climb_percent": 4.320596253350901
+    },
+    "Q2": {
+      "sorties": 36,
+      "energy_kwh": 95.84569922525064,
+      "components_kwh": {
+        "配送航段水平": 51.51967827437634,
+        "配送航段爬升": 3.6554110716431483,
+        "最终返航水平": 39.556291468622376,
+        "最终返航爬升": 1.1143184106087727
+      },
+      "climb_percent": 4.976466884593744
+    }
+  },
+  "deadline": {
+    "hard_boxes": 31,
+    "identity_counts": {
+      "仅首批": 15,
+      "医疗+首批": 15,
+      "仅医疗": 1
+    },
+    "minimum": {
+      "box": "S007-WAT-01",
+      "service": "S007",
+      "sortie": "Q2-017",
+      "category": "仅首批",
+      "hard_deadline_s": 3600.0,
+      "completion_s": 3450.763,
+      "slack_s": 149.23700000000008,
+      "slack_min": 2.487283333333335,
+      "violation": false
+    },
+    "violations": 0
+  },
+  "matrix": {
+    "cells": 135,
+    "range_percent": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45
+    ],
+    "infeasible_cells": 7,
+    "checks_passed": true
+  },
+  "preserved_files": 185,
+  "passed": true,
+  "input_sha256": {
+    "D:\\xyq\\数模\\D题\\建模\\outputs\\q1_sensitivity_05_45\\tables\\results.json": "e3cf78da3f3cdf502c26939c223cef3bfad6aac4512ae8b2c4357a47670df322",
+    "D:\\xyq\\数模\\D题\\建模\\outputs\\q2\\tables\\results.json": "f1abdad847d29818099d189ce05a19d875b05ce63b7afc78782043970d4733b4",
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\调度中心与服务区.xlsx": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\运输无人机数据.xlsx": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+    "D:\\xyq\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\数字高程模型数据（DEM）\\镇龙乡及周边30米DEM.tif": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+    "D:\\xyq\\数模\\D题\\结果提交模板.xlsx": "16f521f29a7103c4ff7c3709ce1696bb9fffa18ce741895e45b7bc7afaf3320a"
+  },
+  "code_sha256": {
+    "D:\\xyq\\数模\\D题\\建模\\scripts\\plot_extended.py": "02b5364180be1fba6020258d43a1142e76a25b3f12851f6544e62cee30852a64"
+  },
+  "generated_utc": "2026-09-23T11:27:46.896159+00:00",
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2",
+    "Pillow": "12.3.0",
+    "openpyxl": "3.1.5"
+  },
+  "physics": {
+    "gravity_m_s2": 9.80665,
+    "clearance_m": 50.0,
+    "service_height_m": 30.0,
+    "payload_tolerance_kg": 1e-06,
+    "energy_tolerance_kwh": 1e-09
+  },
+  "optimizer_invoked": false
+}

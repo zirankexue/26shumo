@@ -1,0 +1,1252 @@
+{
+  "created_utc": "2026-09-23T11:37:14.260066+00:00",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "source_sha256": "3ac4b1723b8176e157e18968ebb548848c6d6bfc4210fc3defe960a4e9f761ee",
+      "uploaded_sha256": "3ac4b1723b8176e157e18968ebb548848c6d6bfc4210fc3defe960a4e9f761ee",
+      "bytes": 3614,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/README.md",
+      "source_sha256": "34f225ef0460a7bb675ed288498b84a028d71d2c15a2488e760bb8784d4dc8f2",
+      "uploaded_sha256": "34f225ef0460a7bb675ed288498b84a028d71d2c15a2488e760bb8784d4dc8f2",
+      "bytes": 8586,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/requirements.txt",
+      "source_sha256": "d861ba0aa1ddd8eea5f5e4f76f5199c878db083c39412a9f9f37e9bed91377ca",
+      "uploaded_sha256": "d861ba0aa1ddd8eea5f5e4f76f5199c878db083c39412a9f9f37e9bed91377ca",
+      "bytes": 77,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/requirements-q2.txt",
+      "source_sha256": "d1eab4c4de5ed68d0f0aaad7c20585f0674c13ba1019d935b5c3c1123bb20b2b",
+      "uploaded_sha256": "d1eab4c4de5ed68d0f0aaad7c20585f0674c13ba1019d935b5c3c1123bb20b2b",
+      "bytes": 39,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/run_q1.py",
+      "source_sha256": "9c53d58b1cc83e24ad9c52ca7ece78fd9f9538a47a051f415fda54f1013e52e5",
+      "uploaded_sha256": "9c53d58b1cc83e24ad9c52ca7ece78fd9f9538a47a051f415fda54f1013e52e5",
+      "bytes": 1367,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/run_q2.py",
+      "source_sha256": "9b31fb953813a0a96ae7adaa836761b82aa0f3cfd01fbc95faad2715979b42a4",
+      "uploaded_sha256": "9b31fb953813a0a96ae7adaa836761b82aa0f3cfd01fbc95faad2715979b42a4",
+      "bytes": 2259,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/configs/q1.toml",
+      "source_sha256": "d2ccd28acfd0f2a243a2eca7024d0f2fde1e9300863aad2295945c0306122a7c",
+      "uploaded_sha256": "d2ccd28acfd0f2a243a2eca7024d0f2fde1e9300863aad2295945c0306122a7c",
+      "bytes": 600,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/configs/q1_sensitivity_05_45.toml",
+      "source_sha256": "8b77dfcd113f5ae34d60358a2bb5f7c799353e5b1dbd30ac2c7368bb5bfe5fae",
+      "uploaded_sha256": "8b77dfcd113f5ae34d60358a2bb5f7c799353e5b1dbd30ac2c7368bb5bfe5fae",
+      "bytes": 729,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/configs/q2.toml",
+      "source_sha256": "cbdd8279cda709df93b288974170123874f8e041c45e187afd4a308c040e0ee6",
+      "uploaded_sha256": "cbdd8279cda709df93b288974170123874f8e041c45e187afd4a308c040e0ee6",
+      "bytes": 673,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/__init__.py",
+      "source_sha256": "f21e3c12b4d1bb47b994b9736604a465e12955c7868450f3fddff2d24f6d86fb",
+      "uploaded_sha256": "f21e3c12b4d1bb47b994b9736604a465e12955c7868450f3fddff2d24f6d86fb",
+      "bytes": 49,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/common/__init__.py",
+      "source_sha256": "71621e3e3b2e77ba181344c8bc3d2fd77ed247d21c688b6a0d158ff79113f162",
+      "uploaded_sha256": "71621e3e3b2e77ba181344c8bc3d2fd77ed247d21c688b6a0d158ff79113f162",
+      "bytes": 55,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/common/charging.py",
+      "source_sha256": "32e568978f3d6d3ef47475fb89892b2134649451c12fd41a56d6eaa70013d1f4",
+      "uploaded_sha256": "32e568978f3d6d3ef47475fb89892b2134649451c12fd41a56d6eaa70013d1f4",
+      "bytes": 425,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/common/data.py",
+      "source_sha256": "ac4f19eca580d3b09da8a4f70395de755cddf97eda223885b15b11cbfa96d3b5",
+      "uploaded_sha256": "ac4f19eca580d3b09da8a4f70395de755cddf97eda223885b15b11cbfa96d3b5",
+      "bytes": 4907,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/common/physics.py",
+      "source_sha256": "41cfed00d75265d33fb4f8843e195fe7e74ef410d0a68ffdd6a8bc373b381074",
+      "uploaded_sha256": "41cfed00d75265d33fb4f8843e195fe7e74ef410d0a68ffdd6a8bc373b381074",
+      "bytes": 2688,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/common/terrain.py",
+      "source_sha256": "2008da6f0e6c563fdc4637128798fd59ab23e1ca50ef9f4c0cec7a52582e0026",
+      "uploaded_sha256": "2008da6f0e6c563fdc4637128798fd59ab23e1ca50ef9f4c0cec7a52582e0026",
+      "bytes": 5195,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q1/__init__.py",
+      "source_sha256": "af1894d7c148e31a7f8523a6effefc608078f58554f05c730bb1297cec0f3901",
+      "uploaded_sha256": "af1894d7c148e31a7f8523a6effefc608078f58554f05c730bb1297cec0f3901",
+      "bytes": 46,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q1/optimize.py",
+      "source_sha256": "2ab86bcae27bafce732821662615a8a04fa58ecd1ba86cb185b82a39992c7229",
+      "uploaded_sha256": "2ab86bcae27bafce732821662615a8a04fa58ecd1ba86cb185b82a39992c7229",
+      "bytes": 4915,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q1/pipeline.py",
+      "source_sha256": "5d090d02a79ffefb67822be1f95d5d945f2157f5485548bbef343bf39a48439a",
+      "uploaded_sha256": "5d090d02a79ffefb67822be1f95d5d945f2157f5485548bbef343bf39a48439a",
+      "bytes": 10736,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q1/report.py",
+      "source_sha256": "aa41df817de314c7ec09a0794ba1030947632910cc16c56ff189b2df3ca18a87",
+      "uploaded_sha256": "aa41df817de314c7ec09a0794ba1030947632910cc16c56ff189b2df3ca18a87",
+      "bytes": 19190,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q1/validate.py",
+      "source_sha256": "34c8ce62e2dec150a0a59483cebf536283d0c45266d5192c08fa1e5c41f71456",
+      "uploaded_sha256": "34c8ce62e2dec150a0a59483cebf536283d0c45266d5192c08fa1e5c41f71456",
+      "bytes": 6438,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q2/__init__.py",
+      "source_sha256": "e00042305d1daf30ccd0f14563581877e5b330bf5b5fcada66677e896220f66c",
+      "uploaded_sha256": "e00042305d1daf30ccd0f14563581877e5b330bf5b5fcada66677e896220f66c",
+      "bytes": 60,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q2/candidates.py",
+      "source_sha256": "7ac26e53801c901043bdc1e62abca72e384c78cb7a6953d70a2f9b7169248e4c",
+      "uploaded_sha256": "7ac26e53801c901043bdc1e62abca72e384c78cb7a6953d70a2f9b7169248e4c",
+      "bytes": 7076,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q2/data.py",
+      "source_sha256": "6c14ea7bda0bd09a5063fd45564b3f55115d7473c84d572ec550de886f9b6bad",
+      "uploaded_sha256": "6c14ea7bda0bd09a5063fd45564b3f55115d7473c84d572ec550de886f9b6bad",
+      "bytes": 2158,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q2/pipeline.py",
+      "source_sha256": "f24b687b784ffe44e56004fc1797425d95eb91bec95b2b3ed84424c0d6fa36e6",
+      "uploaded_sha256": "f24b687b784ffe44e56004fc1797425d95eb91bec95b2b3ed84424c0d6fa36e6",
+      "bytes": 9683,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q2/report.py",
+      "source_sha256": "39b4254759c2db666b07b35528ba4d4593f3ce724e3b90a30597bf834a20a086",
+      "uploaded_sha256": "39b4254759c2db666b07b35528ba4d4593f3ce724e3b90a30597bf834a20a086",
+      "bytes": 17174,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q2/routes.py",
+      "source_sha256": "e046f36e7f90167d5fd3c9f372329709245d9ed809c1b95c9689d4fbd6ab446f",
+      "uploaded_sha256": "e046f36e7f90167d5fd3c9f372329709245d9ed809c1b95c9689d4fbd6ab446f",
+      "bytes": 5075,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q2/search.py",
+      "source_sha256": "d56d65db90bb3b4dddb2b1d51a0ee8cbeb9241cbb3cdf3b94160590c9571c0f1",
+      "uploaded_sha256": "d56d65db90bb3b4dddb2b1d51a0ee8cbeb9241cbb3cdf3b94160590c9571c0f1",
+      "bytes": 6006,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q2/solver.py",
+      "source_sha256": "42ff738db9e704f4553eeb384434722a7575fb44b6915dc1361079a55544c685",
+      "uploaded_sha256": "42ff738db9e704f4553eeb384434722a7575fb44b6915dc1361079a55544c685",
+      "bytes": 8820,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/src/uav_rescue/q2/validate.py",
+      "source_sha256": "f5f2b350513f4f98d772ba5dc50274c5c9cca41a240f2623529370fb5f1bc35a",
+      "uploaded_sha256": "f5f2b350513f4f98d772ba5dc50274c5c9cca41a240f2623529370fb5f1bc35a",
+      "bytes": 7416,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/scripts/audit_formula_sources.py",
+      "source_sha256": "228da28dd664dc292d3f6bccec00f0d86be0c2da13a9839f8fd0c7af088c3424",
+      "uploaded_sha256": "228da28dd664dc292d3f6bccec00f0d86be0c2da13a9839f8fd0c7af088c3424",
+      "bytes": 5585,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/scripts/build_reference_archives.py",
+      "source_sha256": "f21da6172601bdf76341bc99cf1561789198e8adbbe63141df0859821363a750",
+      "uploaded_sha256": "f21da6172601bdf76341bc99cf1561789198e8adbbe63141df0859821363a750",
+      "bytes": 6250,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/scripts/collect_references.py",
+      "source_sha256": "fbf6022af811f5afbdccbce7629374c28177797dd398dc38fa5ae4ba20224c61",
+      "uploaded_sha256": "fbf6022af811f5afbdccbce7629374c28177797dd398dc38fa5ae4ba20224c61",
+      "bytes": 7023,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/scripts/export_q1.mjs",
+      "source_sha256": "cdbd9c5bb22b1ecfec64db8f13e10b3147445646c6d70e9ade5fe46ee37a6a7d",
+      "uploaded_sha256": "cdbd9c5bb22b1ecfec64db8f13e10b3147445646c6d70e9ade5fe46ee37a6a7d",
+      "bytes": 4068,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/scripts/export_q2.mjs",
+      "source_sha256": "5d1190426cdba19fb6eee5cebf1014bf9b0dd21a0bce79bcb8883c46cab961b9",
+      "uploaded_sha256": "5d1190426cdba19fb6eee5cebf1014bf9b0dd21a0bce79bcb8883c46cab961b9",
+      "bytes": 155,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/scripts/plot_extended.py",
+      "source_sha256": "02b5364180be1fba6020258d43a1142e76a25b3f12851f6544e62cee30852a64",
+      "uploaded_sha256": "02b5364180be1fba6020258d43a1142e76a25b3f12851f6544e62cee30852a64",
+      "bytes": 31586,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/tests/test_q1.py",
+      "source_sha256": "0a710b03768800ac19165882e3de6be56238c12119f7d0973377f6f9efa56c1d",
+      "uploaded_sha256": "0a710b03768800ac19165882e3de6be56238c12119f7d0973377f6f9efa56c1d",
+      "bytes": 5149,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/tests/test_q2.py",
+      "source_sha256": "d4cbd30e5139030e6cbfdb4e9aacf98146a39d3d161f2e5d9683c38f816213e0",
+      "uploaded_sha256": "d4cbd30e5139030e6cbfdb4e9aacf98146a39d3d161f2e5d9683c38f816213e0",
+      "bytes": 8777,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/docs/公式来源与假设审计.md",
+      "source_sha256": "619d2e0d38305c0c5296d2dada4e348fa68c9ff53aa8a22dc75575b3c3f69ca8",
+      "uploaded_sha256": "619d2e0d38305c0c5296d2dada4e348fa68c9ff53aa8a22dc75575b3c3f69ca8",
+      "bytes": 28353,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/docs/文献公式采用与重算判断.md",
+      "source_sha256": "6dc75bd744cd8988e147f8894e3ced5755269d61e2e6172b912527efc9185580",
+      "uploaded_sha256": "6dc75bd744cd8988e147f8894e3ced5755269d61e2e6172b912527efc9185580",
+      "bytes": 3230,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/docs/来源证据/原题段落与公式.json",
+      "source_sha256": "b1e4d76bac0faea76622f552849f0fbe7f9a8b7448f0246daf7b684ccf4abbba",
+      "uploaded_sha256": "b1e4d76bac0faea76622f552849f0fbe7f9a8b7448f0246daf7b684ccf4abbba",
+      "bytes": 85341,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/docs/来源证据/外部来源访问记录.json",
+      "source_sha256": "d6625fc6a3b7895fe902e623a7bf1029fb74c916b520d5fec9809796a7795702",
+      "uploaded_sha256": "d6625fc6a3b7895fe902e623a7bf1029fb74c916b520d5fec9809796a7795702",
+      "bytes": 18022,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/docs/来源证据/审计交付核验.json",
+      "source_sha256": "e0fae62560bcd525a641ffaa240f998f56e99e6ebf2a6d08b7ac0ef6f2936485",
+      "uploaded_sha256": "e0fae62560bcd525a641ffaa240f998f56e99e6ebf2a6d08b7ac0ef6f2936485",
+      "bytes": 351,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/docs/来源证据/审计时输入及既有结果哈希.json",
+      "source_sha256": "bcf3eb65c52876f713e18fde0c5adad8198a9c9697d96b538d2bee83fe86e9ac",
+      "uploaded_sha256": "bcf3eb65c52876f713e18fde0c5adad8198a9c9697d96b538d2bee83fe86e9ac",
+      "bytes": 19378,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/docs/来源证据/文献公式采用前状态.json",
+      "source_sha256": "c0075081bb1d266233d6f7998ec43454f5107d316c16f3f3ab1a1d6cb2510d68",
+      "uploaded_sha256": "c0075081bb1d266233d6f7998ec43454f5107d316c16f3f3ab1a1d6cb2510d68",
+      "bytes": 11829,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/docs/来源证据/文献公式采用核验.json",
+      "source_sha256": "59df0ae28bfa3223bd943d0202144720b3077b7eb4634f58e5754415628a9a77",
+      "uploaded_sha256": "59df0ae28bfa3223bd943d0202144720b3077b7eb4634f58e5754415628a9a77",
+      "bytes": 2665,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/docs/问题一模型说明.md",
+      "source_sha256": "365bff47d284eda18e82535eb184dba8b49a57503869ee5ce11d87fca4e503b5",
+      "uploaded_sha256": "365bff47d284eda18e82535eb184dba8b49a57503869ee5ce11d87fca4e503b5",
+      "bytes": 13892,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/docs/问题二模型说明.md",
+      "source_sha256": "5f2237af5823368c788c51e0b74388e40f540ac6d9068d00233184266caccfac",
+      "uploaded_sha256": "5f2237af5823368c788c51e0b74388e40f540ac6d9068d00233184266caccfac",
+      "bytes": 12283,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/references/05_全文获取状态.md",
+      "source_sha256": "199222be8826dc56dac1fc2806bf36a8b9a86a692b6308542cd3798265044365",
+      "uploaded_sha256": "199222be8826dc56dac1fc2806bf36a8b9a86a692b6308542cd3798265044365",
+      "bytes": 3326,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/references/05_能耗公式全文核查.md",
+      "source_sha256": "f9e1ac0efa5530de223c46530fbe1e849bcb65169890b134dded6225383ab929",
+      "uploaded_sha256": "f9e1ac0efa5530de223c46530fbe1e849bcb65169890b134dded6225383ab929",
+      "bytes": 7680,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/references/README.md",
+      "source_sha256": "d04930f51e12c1dbb712f2f73833ce2ed9e2975826866cd0532ec2a203155eb2",
+      "uploaded_sha256": "d04930f51e12c1dbb712f2f73833ce2ed9e2975826866cd0532ec2a203155eb2",
+      "bytes": 5260,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/references/可用公式与适用性.md",
+      "source_sha256": "dfee4ee6fd88aab9960c0c71263b24848498fa51264fb9940d4be4ff526cbdc7",
+      "uploaded_sha256": "dfee4ee6fd88aab9960c0c71263b24848498fa51264fb9940d4be4ff526cbdc7",
+      "bytes": 17200,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/references/运输能耗公式专项核查.md",
+      "source_sha256": "2609ea39932f6a52b8a03a423c374bac075634e3ca08dd91226ba64fad276952",
+      "uploaded_sha256": "2609ea39932f6a52b8a03a423c374bac075634e3ca08dd91226ba64fad276952",
+      "bytes": 7968,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/figures/01_最大安全载荷.pdf",
+      "source_sha256": "1830b9cafba3e5167db4b56e8e648ee1a8c997c34ef7f8f2f42eebb94c3ef827",
+      "uploaded_sha256": "1830b9cafba3e5167db4b56e8e648ee1a8c997c34ef7f8f2f42eebb94c3ef827",
+      "bytes": 22308,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/figures/01_最大安全载荷.png",
+      "source_sha256": "fd8a857ddabc2b49cde09afa8dfefc6f62bd34a3fdf1674e9a4c025225365a55",
+      "uploaded_sha256": "fd8a857ddabc2b49cde09afa8dfefc6f62bd34a3fdf1674e9a4c025225365a55",
+      "bytes": 131441,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/figures/02_机型使用构成.pdf",
+      "source_sha256": "4c98362979287426ec929c995bb53b460b53f7e990114c5b4af44507bc5c9e98",
+      "uploaded_sha256": "4c98362979287426ec929c995bb53b460b53f7e990114c5b4af44507bc5c9e98",
+      "bytes": 17472,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/figures/02_机型使用构成.png",
+      "source_sha256": "7c01ad6fd9a671514397fea75d6e4db7905eea5362e496bc35d15f04b58330bf",
+      "uploaded_sha256": "7c01ad6fd9a671514397fea75d6e4db7905eea5362e496bc35d15f04b58330bf",
+      "bytes": 49138,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/figures/03_安全余量敏感性.pdf",
+      "source_sha256": "b95df0cca8b9bf366fcdb232ea6356345760472c1238a59170df7c750a9dbe2c",
+      "uploaded_sha256": "b95df0cca8b9bf366fcdb232ea6356345760472c1238a59170df7c750a9dbe2c",
+      "bytes": 24615,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/figures/03_安全余量敏感性.png",
+      "source_sha256": "7de2890d792394689330d25f4120471b12e8d558ebb420eae90b7476269bf062",
+      "uploaded_sha256": "7de2890d792394689330d25f4120471b12e8d558ebb420eae90b7476269bf062",
+      "bytes": 139045,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/figures/04_各机型载荷敏感性.pdf",
+      "source_sha256": "7e00a63f9621ecfec3f075232bd5d96d5c759fd21bafbb98dfcf4def37c5da5b",
+      "uploaded_sha256": "7e00a63f9621ecfec3f075232bd5d96d5c759fd21bafbb98dfcf4def37c5da5b",
+      "bytes": 21951,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/figures/04_各机型载荷敏感性.png",
+      "source_sha256": "f8578aa9ea0e9e0f80a813b3322553316d8e32e3a464050491b6343bc7e45566",
+      "uploaded_sha256": "f8578aa9ea0e9e0f80a813b3322553316d8e32e3a464050491b6343bc7e45566",
+      "bytes": 209873,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/logs/run_manifest.json",
+      "source_sha256": "e6c35fe40ad10787a43b80cf9ff79951a51207cf67df15eaa76f49f6a891150b",
+      "uploaded_sha256": "e6c35fe40ad10787a43b80cf9ff79951a51207cf67df15eaa76f49f6a891150b",
+      "bytes": 2424,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/logs/unit_tests.txt",
+      "source_sha256": "9a29e949e6177fbe15c17f9d5855778a4a9df8480fe3e9e163480a85251cceca",
+      "uploaded_sha256": "9a29e949e6177fbe15c17f9d5855778a4a9df8480fe3e9e163480a85251cceca",
+      "bytes": 1321,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/logs/validation.json",
+      "source_sha256": "11ef16a8aeaa62d1b9f6feaaf9d1f9ba8dd3d954009a0358f67447d6db95c40f",
+      "uploaded_sha256": "11ef16a8aeaa62d1b9f6feaaf9d1f9ba8dd3d954009a0358f67447d6db95c40f",
+      "bytes": 9983,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/objective_1_manifest.json",
+      "source_sha256": "8a34c547e9c42106bb5c591e876dcd4d817e4cdf2774c1a90e1fd2ff4d68b4c4",
+      "uploaded_sha256": "8a34c547e9c42106bb5c591e876dcd4d817e4cdf2774c1a90e1fd2ff4d68b4c4",
+      "bytes": 21835,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/objective_2_manifest.json",
+      "source_sha256": "068372477cc6a10b6ef30444384a3c79e16943839c8d832c649d437db7e8183a",
+      "uploaded_sha256": "068372477cc6a10b6ef30444384a3c79e16943839c8d832c649d437db7e8183a",
+      "bytes": 21806,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/objective_3_manifest.json",
+      "source_sha256": "8baa720395e54ce56565a5ee2dbd58cac9ce28c9e21374514902bd90e2e3a829",
+      "uploaded_sha256": "8baa720395e54ce56565a5ee2dbd58cac9ce28c9e21374514902bd90e2e3a829",
+      "bytes": 22241,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/Q1_单点组批.csv",
+      "source_sha256": "ee446d0e8a3114e479e02ea37fb4181b44b2a4c3645e5217fad93f27e99a73ea",
+      "uploaded_sha256": "ee446d0e8a3114e479e02ea37fb4181b44b2a4c3645e5217fad93f27e99a73ea",
+      "bytes": 2765,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/reserve_0.10_manifest.json",
+      "source_sha256": "205a0cf770d26353cad851fc8631a64dd7ee8bb0fc6ad31d1f8f7b4d745fc6b9",
+      "uploaded_sha256": "205a0cf770d26353cad851fc8631a64dd7ee8bb0fc6ad31d1f8f7b4d745fc6b9",
+      "bytes": 21793,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/reserve_0.15_manifest.json",
+      "source_sha256": "de267d77cda9f5b25234f9d70a5d3c3fe32575a1b1dfb85830701e9583cc9b98",
+      "uploaded_sha256": "de267d77cda9f5b25234f9d70a5d3c3fe32575a1b1dfb85830701e9583cc9b98",
+      "bytes": 22049,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/reserve_0.20_manifest.json",
+      "source_sha256": "8a34c547e9c42106bb5c591e876dcd4d817e4cdf2774c1a90e1fd2ff4d68b4c4",
+      "uploaded_sha256": "8a34c547e9c42106bb5c591e876dcd4d817e4cdf2774c1a90e1fd2ff4d68b4c4",
+      "bytes": 21835,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/reserve_0.25_manifest.json",
+      "source_sha256": "38acf9ddb177e397dbf37120e7cbee49a37528f04846dd1c69b10d3001d6a6a7",
+      "uploaded_sha256": "38acf9ddb177e397dbf37120e7cbee49a37528f04846dd1c69b10d3001d6a6a7",
+      "bytes": 22402,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/reserve_0.30_manifest.json",
+      "source_sha256": "775bd385daaeae065fac08c1214cc16a1d960ea3b8acb5d3cf0469a61dcfa7d4",
+      "uploaded_sha256": "775bd385daaeae065fac08c1214cc16a1d960ea3b8acb5d3cf0469a61dcfa7d4",
+      "bytes": 22831,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/reserve_0.35_manifest.json",
+      "source_sha256": "71408e7e03468698429d439d865383ba40cd40a431366b153b3c5a9122ec9b30",
+      "uploaded_sha256": "71408e7e03468698429d439d865383ba40cd40a431366b153b3c5a9122ec9b30",
+      "bytes": 25275,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/reserve_0.40_manifest.json",
+      "source_sha256": "31c33896246e3a6b7cb970bf1ab0c75b9b8d33f39a95c0cd0adc5f97e397d778",
+      "uploaded_sha256": "31c33896246e3a6b7cb970bf1ab0c75b9b8d33f39a95c0cd0adc5f97e397d778",
+      "bytes": 29706,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/results.json",
+      "source_sha256": "36e750fd72d17cb839c0622e7957c119482bfa5af9ec7875ba1622172b55776e",
+      "uploaded_sha256": "36e750fd72d17cb839c0622e7957c119482bfa5af9ec7875ba1622172b55776e",
+      "bytes": 391563,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/不可行情景诊断.csv",
+      "source_sha256": "45c2404aa8bda8e70ca78db210490a3b52a731fe2bdac6bf54d237ff8f2d7723",
+      "uploaded_sha256": "45c2404aa8bda8e70ca78db210490a3b52a731fe2bdac6bf54d237ff8f2d7723",
+      "bytes": 1097,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/余量敏感性汇总.csv",
+      "source_sha256": "ac520c7da198ee669153f8e8a137dfe118803281395c7a057546b8b1235bafef",
+      "uploaded_sha256": "ac520c7da198ee669153f8e8a137dfe118803281395c7a057546b8b1235bafef",
+      "bytes": 493,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/余量载荷明细.csv",
+      "source_sha256": "e18739b53ba79964dbcb1aee89fb49aa39e1d3f8f0a3b76d69f78343e49b6e3b",
+      "uploaded_sha256": "e18739b53ba79964dbcb1aee89fb49aa39e1d3f8f0a3b76d69f78343e49b6e3b",
+      "bytes": 13257,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/作业时间分解.csv",
+      "source_sha256": "da6013a897ed298daed1f9c1739375b7d8a11b4d5664ba2aacf665dbe2658be4",
+      "uploaded_sha256": "da6013a897ed298daed1f9c1739375b7d8a11b4d5664ba2aacf665dbe2658be4",
+      "bytes": 1318,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/口径与来源.csv",
+      "source_sha256": "9749f1c06b685aa7977130ab888e430dd646022ce3b9b33e8f864eef1588cb70",
+      "uploaded_sha256": "9749f1c06b685aa7977130ab888e430dd646022ce3b9b33e8f864eef1588cb70",
+      "bytes": 1025,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/最大安全载荷.csv",
+      "source_sha256": "196dc213638a0a03e641d37e0dbdcdfedc1327c009efab88414699df25f9959e",
+      "uploaded_sha256": "196dc213638a0a03e641d37e0dbdcdfedc1327c009efab88414699df25f9959e",
+      "bytes": 2896,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/服务区汇总.csv",
+      "source_sha256": "1470d1719321a4209b0c7cf8cf2a41101ad6795994a27f3df8297d281e7b7952",
+      "uploaded_sha256": "1470d1719321a4209b0c7cf8cf2a41101ad6795994a27f3df8297d281e7b7952",
+      "bytes": 1109,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/核验结果.csv",
+      "source_sha256": "25988eb707d300553d421e5500d0ef151ce905f364b14404c4b0054be56aae36",
+      "uploaded_sha256": "25988eb707d300553d421e5500d0ef151ce905f364b14404c4b0054be56aae36",
+      "bytes": 1534,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/tables/目标优先级对比.csv",
+      "source_sha256": "44097cb14a3b5c47650eba24afa2715e7bf7caa018c5a03e5baed08bc5b9eb6b",
+      "uploaded_sha256": "44097cb14a3b5c47650eba24afa2715e7bf7caa018c5a03e5baed08bc5b9eb6b",
+      "bytes": 410,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/问题一结果.xlsx",
+      "source_sha256": "5d1d82c7f3687df71f23342db481bfe6654bceaa4e49ff5769a825fe10caee49",
+      "uploaded_sha256": "5d1d82c7f3687df71f23342db481bfe6654bceaa4e49ff5769a825fe10caee49",
+      "bytes": 28036,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1/问题一结果分析.md",
+      "source_sha256": "c75c727e5012122cdd66c61bf4272c828bc7b040cc54c1c5d631fb3598844a44",
+      "uploaded_sha256": "8dfc1d2925953d17d58e02b66dc39a483ec75691c4c5839c49ed2f44c186814a",
+      "bytes": 4783,
+      "markdown_links_relativized": true
+    },
+    {
+      "path": "建模/outputs/q2/figures/01_多点运输航线.pdf",
+      "source_sha256": "4a75a32a6bbfda842164c7c62d4579ea9227f34e4f6d0a45d9527f3f5d9230dc",
+      "uploaded_sha256": "4a75a32a6bbfda842164c7c62d4579ea9227f34e4f6d0a45d9527f3f5d9230dc",
+      "bytes": 41523,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/figures/01_多点运输航线.png",
+      "source_sha256": "1c5d1230b87218cb6286eb39ac9beeaad3b00b13678dd9f7d76e13415dfe26c6",
+      "uploaded_sha256": "1c5d1230b87218cb6286eb39ac9beeaad3b00b13678dd9f7d76e13415dfe26c6",
+      "bytes": 232739,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/figures/02_无人机占用甘特图.pdf",
+      "source_sha256": "de1f4340f0995f7da285696cb29b5ba0be6fc925b1f05dafc6064818759ebd2a",
+      "uploaded_sha256": "de1f4340f0995f7da285696cb29b5ba0be6fc925b1f05dafc6064818759ebd2a",
+      "bytes": 26710,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/figures/02_无人机占用甘特图.png",
+      "source_sha256": "eab2e6d90bee7daee47ac84eb57b65164ef9d8493249f1b98267372790a3502e",
+      "uploaded_sha256": "eab2e6d90bee7daee47ac84eb57b65164ef9d8493249f1b98267372790a3502e",
+      "bytes": 69436,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/figures/03_电池占用与充电甘特图.pdf",
+      "source_sha256": "6d5e7c162ef275aca4f44ea36170da9a6e63a2df38004bcc9fafd80eb7d9ed50",
+      "uploaded_sha256": "6d5e7c162ef275aca4f44ea36170da9a6e63a2df38004bcc9fafd80eb7d9ed50",
+      "bytes": 28436,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/figures/03_电池占用与充电甘特图.png",
+      "source_sha256": "408b5a2fd5d6ef78c4419c12caa7d9b08c35d542d720ee0aa0fa2b918d431921",
+      "uploaded_sha256": "408b5a2fd5d6ef78c4419c12caa7d9b08c35d542d720ee0aa0fa2b918d431921",
+      "bytes": 92637,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/figures/04_逐箱交付及时性.pdf",
+      "source_sha256": "2a0f508cb2033e9fd020481c04085106ee14da03edb8b1473f7bd3e5ccdb286c",
+      "uploaded_sha256": "2a0f508cb2033e9fd020481c04085106ee14da03edb8b1473f7bd3e5ccdb286c",
+      "bytes": 34906,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/figures/04_逐箱交付及时性.png",
+      "source_sha256": "f1f71b8a0b13325d0bb1ee4f7f2e77439a2413fbf8b8346eac1478cfa0b15ae9",
+      "uploaded_sha256": "f1f71b8a0b13325d0bb1ee4f7f2e77439a2413fbf8b8346eac1478cfa0b15ae9",
+      "bytes": 93091,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/logs/checkpoint.json",
+      "source_sha256": "c26d540def0d2b88560075e6e63fc007c4382f352abc87b1f78a24ff1711ad8e",
+      "uploaded_sha256": "c26d540def0d2b88560075e6e63fc007c4382f352abc87b1f78a24ff1711ad8e",
+      "bytes": 233829,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/logs/resumed_from.json",
+      "source_sha256": "00aa35ca5754dfd60793c3305122c31cc910a0ad1533f5a80cc85ac0906d9d5d",
+      "uploaded_sha256": "00aa35ca5754dfd60793c3305122c31cc910a0ad1533f5a80cc85ac0906d9d5d",
+      "bytes": 225004,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/logs/run_manifest.json",
+      "source_sha256": "c1134f64f1b1db9ba02faca9c6523eeae5b675869013ed2e4b7c0b93e961c030",
+      "uploaded_sha256": "c1134f64f1b1db9ba02faca9c6523eeae5b675869013ed2e4b7c0b93e961c030",
+      "bytes": 2603,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/logs/solver_trace.json",
+      "source_sha256": "56dfa04917857c76a19a8b3f9b913322091cf2e0c20e2781e7fafa6a72240784",
+      "uploaded_sha256": "56dfa04917857c76a19a8b3f9b913322091cf2e0c20e2781e7fafa6a72240784",
+      "bytes": 20441,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/logs/system_python_tests.txt",
+      "source_sha256": "c27e2af682be6dcfc0ad88d1967a4d51b8a1c4d4a18bd467b84bf4be6569b5f7",
+      "uploaded_sha256": "c27e2af682be6dcfc0ad88d1967a4d51b8a1c4d4a18bd467b84bf4be6569b5f7",
+      "bytes": 2613,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/logs/unit_tests.txt",
+      "source_sha256": "3d9d114af739aa1f549839e6d814f0dff470171ae49cf86e23d0637255b9a6e8",
+      "uploaded_sha256": "3d9d114af739aa1f549839e6d814f0dff470171ae49cf86e23d0637255b9a6e8",
+      "bytes": 2613,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/logs/validation.json",
+      "source_sha256": "abda8acf3cbf537b547cea8f6d399522d854f8854b7a77e1a1faa6b1d8486aab",
+      "uploaded_sha256": "abda8acf3cbf537b547cea8f6d399522d854f8854b7a77e1a1faa6b1d8486aab",
+      "bytes": 744,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/logs/verification_replay.json",
+      "source_sha256": "e60ecdbea4a0580159c4f0df2aa137a0faab0a40994129b3823a86c65f224efa",
+      "uploaded_sha256": "e60ecdbea4a0580159c4f0df2aa137a0faab0a40994129b3823a86c65f224efa",
+      "bytes": 233,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/comparison_manifest.json",
+      "source_sha256": "fdecb7b2dbe517378c8d64b9add886766c416db1152a5e9d26fef6934d634204",
+      "uploaded_sha256": "fdecb7b2dbe517378c8d64b9add886766c416db1152a5e9d26fef6934d634204",
+      "bytes": 165071,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/initial_manifest.json",
+      "source_sha256": "976a22a7b2cda879ceba0092289e402bf50c102e1a1a1b292de95a0bf0d2319e",
+      "uploaded_sha256": "976a22a7b2cda879ceba0092289e402bf50c102e1a1a1b292de95a0bf0d2319e",
+      "bytes": 169981,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/main_manifest.json",
+      "source_sha256": "fdecb7b2dbe517378c8d64b9add886766c416db1152a5e9d26fef6934d634204",
+      "uploaded_sha256": "fdecb7b2dbe517378c8d64b9add886766c416db1152a5e9d26fef6934d634204",
+      "bytes": 165071,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/Q2_运输架次.csv",
+      "source_sha256": "038a300ba1423cc9074721a6c4df51d920cc3bac0654ee9fb1c144e59718fdf0",
+      "uploaded_sha256": "038a300ba1423cc9074721a6c4df51d920cc3bac0654ee9fb1c144e59718fdf0",
+      "bytes": 2463,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/Q2_逐箱交付.csv",
+      "source_sha256": "01fbcdd183b26635c68b0bef44f65599bbf13773255004dba6f09b02e90a1a2e",
+      "uploaded_sha256": "01fbcdd183b26635c68b0bef44f65599bbf13773255004dba6f09b02e90a1a2e",
+      "bytes": 2776,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/results.json",
+      "source_sha256": "f1abdad847d29818099d189ce05a19d875b05ce63b7afc78782043970d4733b4",
+      "uploaded_sha256": "f1abdad847d29818099d189ce05a19d875b05ce63b7afc78782043970d4733b4",
+      "bytes": 754339,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/口径与来源.csv",
+      "source_sha256": "4903e3330a9d7ff596958147cd9e30c092b0919db47c58da98100aa62fbd4e50",
+      "uploaded_sha256": "4903e3330a9d7ff596958147cd9e30c092b0919db47c58da98100aa62fbd4e50",
+      "bytes": 1540,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/无人机占用.csv",
+      "source_sha256": "7f0927eb3d77a73c4fc225abadc732626ef89aa1ce8dc458460d7d2491b0729e",
+      "uploaded_sha256": "7f0927eb3d77a73c4fc225abadc732626ef89aa1ce8dc458460d7d2491b0729e",
+      "bytes": 1810,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/架次装载与时间.csv",
+      "source_sha256": "4f6ca7e383487c08227854b1107694f3814e1695c84da1b785b663522dec4391",
+      "uploaded_sha256": "4f6ca7e383487c08227854b1107694f3814e1695c84da1b785b663522dec4391",
+      "bytes": 4491,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/核验结果.csv",
+      "source_sha256": "37707efadc14edeee18f9c28c1a8f72e5e123699a1a90ac7d913620f5c73beb0",
+      "uploaded_sha256": "37707efadc14edeee18f9c28c1a8f72e5e123699a1a90ac7d913620f5c73beb0",
+      "bytes": 288,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/求解状态.csv",
+      "source_sha256": "344f9627b225f4efd9db981c8e9bc5f69a44e9f98635201cbee904321bd343be",
+      "uploaded_sha256": "344f9627b225f4efd9db981c8e9bc5f69a44e9f98635201cbee904321bd343be",
+      "bytes": 6857,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/电池使用与充电.csv",
+      "source_sha256": "d5d56b5df7ed71e6f2ccdf5015c6890e234b31bccc7a0d4f06db45a8338fc1a0",
+      "uploaded_sha256": "d5d56b5df7ed71e6f2ccdf5015c6890e234b31bccc7a0d4f06db45a8338fc1a0",
+      "bytes": 3083,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/目标优先级对比.csv",
+      "source_sha256": "50924b7cb19decf3f68e9f52d526480277599783ef6e35309ddf8b7e2486d8c3",
+      "uploaded_sha256": "50924b7cb19decf3f68e9f52d526480277599783ef6e35309ddf8b7e2486d8c3",
+      "bytes": 435,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/逐段载荷与能耗.csv",
+      "source_sha256": "594bc64d4004bf643e69262ba3bf625b3dc821b6d0c025f11e4ea3089fea8502",
+      "uploaded_sha256": "594bc64d4004bf643e69262ba3bf625b3dc821b6d0c025f11e4ea3089fea8502",
+      "bytes": 12037,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/tables/逐箱时限与交接.csv",
+      "source_sha256": "d8260549025ca70fc8b19216601d613982bc3a779ddd967d15066c4074e5cd5f",
+      "uploaded_sha256": "d8260549025ca70fc8b19216601d613982bc3a779ddd967d15066c4074e5cd5f",
+      "bytes": 5245,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/问题二结果.xlsx",
+      "source_sha256": "c4ed7428b0ac8c215b61d7f0e067d8ac1bbdc341becbdce3c9fb46ebe893309e",
+      "uploaded_sha256": "c4ed7428b0ac8c215b61d7f0e067d8ac1bbdc341becbdce3c9fb46ebe893309e",
+      "bytes": 41654,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q2/问题二结果分析.md",
+      "source_sha256": "dc6dc3d53e54677a9a3a2b79aaf191617ce3599be1fc60d11e89cfc7439dbf4c",
+      "uploaded_sha256": "4f6415f3ba44dd6352369537ba39f8cebf71c2fc1423a3aae8f14bf6a90999a5",
+      "bytes": 4071,
+      "markdown_links_relativized": true
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/figures/01_最大安全载荷.pdf",
+      "source_sha256": "cbc13b53ad7b46cf58a1599983a9a9f3e2dfdfac1513df4f4890087835bf22e0",
+      "uploaded_sha256": "cbc13b53ad7b46cf58a1599983a9a9f3e2dfdfac1513df4f4890087835bf22e0",
+      "bytes": 22308,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/figures/01_最大安全载荷.png",
+      "source_sha256": "26a22595521d0dc0f652fdf11a46541d177b5209b6564cbdd9d9b3d77db8b164",
+      "uploaded_sha256": "26a22595521d0dc0f652fdf11a46541d177b5209b6564cbdd9d9b3d77db8b164",
+      "bytes": 250617,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/figures/02_机型使用构成.pdf",
+      "source_sha256": "f9c51280480971c6128f169561d5f3c5804d31499118dac2ce752c68db1d8da2",
+      "uploaded_sha256": "f9c51280480971c6128f169561d5f3c5804d31499118dac2ce752c68db1d8da2",
+      "bytes": 17472,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/figures/02_机型使用构成.png",
+      "source_sha256": "e6dc259233d176210406938c0c13d7486da6013d16f78cebf2c194c2fff97dde",
+      "uploaded_sha256": "e6dc259233d176210406938c0c13d7486da6013d16f78cebf2c194c2fff97dde",
+      "bytes": 91621,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/figures/03_安全余量敏感性.pdf",
+      "source_sha256": "4f069e5eb5b8e861e7f0d6e84f1579966c9aeb0a5baa554e1c80fd86fc156337",
+      "uploaded_sha256": "4f069e5eb5b8e861e7f0d6e84f1579966c9aeb0a5baa554e1c80fd86fc156337",
+      "bytes": 24632,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/figures/03_安全余量敏感性.png",
+      "source_sha256": "48b44dc699931341dc666b929690322a2d83dfebfd36da6a51390d35dfdbba66",
+      "uploaded_sha256": "48b44dc699931341dc666b929690322a2d83dfebfd36da6a51390d35dfdbba66",
+      "bytes": 268514,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/figures/04_各机型载荷敏感性.pdf",
+      "source_sha256": "8d1cc2453c7aa4a24749eaffc85f108595d2c190c68a506ba4b5c040f6a829ed",
+      "uploaded_sha256": "8d1cc2453c7aa4a24749eaffc85f108595d2c190c68a506ba4b5c040f6a829ed",
+      "bytes": 22275,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/figures/04_各机型载荷敏感性.png",
+      "source_sha256": "02e40c440472c104768ab3318e4b8514d57b835b2769e45572d0edab21b2210d",
+      "uploaded_sha256": "02e40c440472c104768ab3318e4b8514d57b835b2769e45572d0edab21b2210d",
+      "bytes": 408985,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/logs/extended_sensitivity_checks.json",
+      "source_sha256": "10243a721fb41cefcce0a82ec12bc8ada0005716fe8249f3afe4f50396e265c0",
+      "uploaded_sha256": "10243a721fb41cefcce0a82ec12bc8ada0005716fe8249f3afe4f50396e265c0",
+      "bytes": 524,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/logs/run_manifest.json",
+      "source_sha256": "690203114516d24fe66e170d9b643a3b4ac57172d44d5772d80a3da0968832c7",
+      "uploaded_sha256": "690203114516d24fe66e170d9b643a3b4ac57172d44d5772d80a3da0968832c7",
+      "bytes": 2490,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/logs/validation.json",
+      "source_sha256": "cc5cbf9b25f29b6a34ef03ce13485eec5c1e7314e6db4887f117c0924ecd9e1e",
+      "uploaded_sha256": "cc5cbf9b25f29b6a34ef03ce13485eec5c1e7314e6db4887f117c0924ecd9e1e",
+      "bytes": 9983,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/objective_1_manifest.json",
+      "source_sha256": "8a34c547e9c42106bb5c591e876dcd4d817e4cdf2774c1a90e1fd2ff4d68b4c4",
+      "uploaded_sha256": "8a34c547e9c42106bb5c591e876dcd4d817e4cdf2774c1a90e1fd2ff4d68b4c4",
+      "bytes": 21835,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/objective_2_manifest.json",
+      "source_sha256": "068372477cc6a10b6ef30444384a3c79e16943839c8d832c649d437db7e8183a",
+      "uploaded_sha256": "068372477cc6a10b6ef30444384a3c79e16943839c8d832c649d437db7e8183a",
+      "bytes": 21806,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/objective_3_manifest.json",
+      "source_sha256": "8baa720395e54ce56565a5ee2dbd58cac9ce28c9e21374514902bd90e2e3a829",
+      "uploaded_sha256": "8baa720395e54ce56565a5ee2dbd58cac9ce28c9e21374514902bd90e2e3a829",
+      "bytes": 22241,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/Q1_单点组批.csv",
+      "source_sha256": "ee446d0e8a3114e479e02ea37fb4181b44b2a4c3645e5217fad93f27e99a73ea",
+      "uploaded_sha256": "ee446d0e8a3114e479e02ea37fb4181b44b2a4c3645e5217fad93f27e99a73ea",
+      "bytes": 2765,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/reserve_0.05_manifest.json",
+      "source_sha256": "4f44a37563cb64b05a63c0e3ebc2256a6dfde0719905797a8d8eb621843ce422",
+      "uploaded_sha256": "4f44a37563cb64b05a63c0e3ebc2256a6dfde0719905797a8d8eb621843ce422",
+      "bytes": 21994,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/reserve_0.10_manifest.json",
+      "source_sha256": "205a0cf770d26353cad851fc8631a64dd7ee8bb0fc6ad31d1f8f7b4d745fc6b9",
+      "uploaded_sha256": "205a0cf770d26353cad851fc8631a64dd7ee8bb0fc6ad31d1f8f7b4d745fc6b9",
+      "bytes": 21793,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/reserve_0.15_manifest.json",
+      "source_sha256": "de267d77cda9f5b25234f9d70a5d3c3fe32575a1b1dfb85830701e9583cc9b98",
+      "uploaded_sha256": "de267d77cda9f5b25234f9d70a5d3c3fe32575a1b1dfb85830701e9583cc9b98",
+      "bytes": 22049,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/reserve_0.20_manifest.json",
+      "source_sha256": "8a34c547e9c42106bb5c591e876dcd4d817e4cdf2774c1a90e1fd2ff4d68b4c4",
+      "uploaded_sha256": "8a34c547e9c42106bb5c591e876dcd4d817e4cdf2774c1a90e1fd2ff4d68b4c4",
+      "bytes": 21835,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/reserve_0.25_manifest.json",
+      "source_sha256": "38acf9ddb177e397dbf37120e7cbee49a37528f04846dd1c69b10d3001d6a6a7",
+      "uploaded_sha256": "38acf9ddb177e397dbf37120e7cbee49a37528f04846dd1c69b10d3001d6a6a7",
+      "bytes": 22402,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/reserve_0.30_manifest.json",
+      "source_sha256": "775bd385daaeae065fac08c1214cc16a1d960ea3b8acb5d3cf0469a61dcfa7d4",
+      "uploaded_sha256": "775bd385daaeae065fac08c1214cc16a1d960ea3b8acb5d3cf0469a61dcfa7d4",
+      "bytes": 22831,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/reserve_0.35_manifest.json",
+      "source_sha256": "71408e7e03468698429d439d865383ba40cd40a431366b153b3c5a9122ec9b30",
+      "uploaded_sha256": "71408e7e03468698429d439d865383ba40cd40a431366b153b3c5a9122ec9b30",
+      "bytes": 25275,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/reserve_0.40_manifest.json",
+      "source_sha256": "31c33896246e3a6b7cb970bf1ab0c75b9b8d33f39a95c0cd0adc5f97e397d778",
+      "uploaded_sha256": "31c33896246e3a6b7cb970bf1ab0c75b9b8d33f39a95c0cd0adc5f97e397d778",
+      "bytes": 29706,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/reserve_0.45_manifest.json",
+      "source_sha256": "eb9ecb4b14a5131071e53ac77f2a5a7f891489b5cea1e2421003e38b1142d385",
+      "uploaded_sha256": "eb9ecb4b14a5131071e53ac77f2a5a7f891489b5cea1e2421003e38b1142d385",
+      "bytes": 36468,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/results.json",
+      "source_sha256": "e3cf78da3f3cdf502c26939c223cef3bfad6aac4512ae8b2c4357a47670df322",
+      "uploaded_sha256": "e3cf78da3f3cdf502c26939c223cef3bfad6aac4512ae8b2c4357a47670df322",
+      "bytes": 482256,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/不可行情景诊断.csv",
+      "source_sha256": "8fa46966ec52cf3cf99b470f4ccf6b8636bac036c880c62ef2b49e3db2ae56c7",
+      "uploaded_sha256": "8fa46966ec52cf3cf99b470f4ccf6b8636bac036c880c62ef2b49e3db2ae56c7",
+      "bytes": 4619,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/余量敏感性汇总.csv",
+      "source_sha256": "9f4529ce139f1898c842f3aadfcdfe252d71589929fa03b895bd6992fc64687c",
+      "uploaded_sha256": "9f4529ce139f1898c842f3aadfcdfe252d71589929fa03b895bd6992fc64687c",
+      "bytes": 589,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/余量载荷明细.csv",
+      "source_sha256": "74165c2246d7506677dcd147f46969fb47293fe3a16b92f83413332df85f719e",
+      "uploaded_sha256": "74165c2246d7506677dcd147f46969fb47293fe3a16b92f83413332df85f719e",
+      "bytes": 16949,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/作业时间分解.csv",
+      "source_sha256": "da6013a897ed298daed1f9c1739375b7d8a11b4d5664ba2aacf665dbe2658be4",
+      "uploaded_sha256": "da6013a897ed298daed1f9c1739375b7d8a11b4d5664ba2aacf665dbe2658be4",
+      "bytes": 1318,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/口径与来源.csv",
+      "source_sha256": "9749f1c06b685aa7977130ab888e430dd646022ce3b9b33e8f864eef1588cb70",
+      "uploaded_sha256": "9749f1c06b685aa7977130ab888e430dd646022ce3b9b33e8f864eef1588cb70",
+      "bytes": 1025,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/最大安全载荷.csv",
+      "source_sha256": "196dc213638a0a03e641d37e0dbdcdfedc1327c009efab88414699df25f9959e",
+      "uploaded_sha256": "196dc213638a0a03e641d37e0dbdcdfedc1327c009efab88414699df25f9959e",
+      "bytes": 2896,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/服务区汇总.csv",
+      "source_sha256": "1470d1719321a4209b0c7cf8cf2a41101ad6795994a27f3df8297d281e7b7952",
+      "uploaded_sha256": "1470d1719321a4209b0c7cf8cf2a41101ad6795994a27f3df8297d281e7b7952",
+      "bytes": 1109,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/核验结果.csv",
+      "source_sha256": "25988eb707d300553d421e5500d0ef151ce905f364b14404c4b0054be56aae36",
+      "uploaded_sha256": "25988eb707d300553d421e5500d0ef151ce905f364b14404c4b0054be56aae36",
+      "bytes": 1534,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/tables/目标优先级对比.csv",
+      "source_sha256": "44097cb14a3b5c47650eba24afa2715e7bf7caa018c5a03e5baed08bc5b9eb6b",
+      "uploaded_sha256": "44097cb14a3b5c47650eba24afa2715e7bf7caa018c5a03e5baed08bc5b9eb6b",
+      "bytes": 410,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/问题一结果.xlsx",
+      "source_sha256": "1ec3ffb7a5da74ddf722a116b88dec86e9acbe0b40b9d87b975f2e7b612bf36f",
+      "uploaded_sha256": "1ec3ffb7a5da74ddf722a116b88dec86e9acbe0b40b9d87b975f2e7b612bf36f",
+      "bytes": 32583,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/q1_sensitivity_05_45/问题一结果分析.md",
+      "source_sha256": "d0e06a217be1f947d1f1989b31232bf4b511db925f32f2c56e79fa86f1e77569",
+      "uploaded_sha256": "5728a8428ceb4fcfa67452de4d3df70e6430adf43cffed2e1959fb0e94990094",
+      "bytes": 5599,
+      "markdown_links_relativized": true
+    },
+    {
+      "path": "建模/outputs/visualizations/figures/01_地形与飞行高度剖面.pdf",
+      "source_sha256": "d95fa6eb4b1adbc56f9aafd4acc22a2c46f5a12700ee38950996003a769f1f91",
+      "uploaded_sha256": "d95fa6eb4b1adbc56f9aafd4acc22a2c46f5a12700ee38950996003a769f1f91",
+      "bytes": 89685,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/figures/01_地形与飞行高度剖面.png",
+      "source_sha256": "60e10aea9a6e795f65b0889dcd224d642b10bae3bf8dfe470b488f9f35b01c92",
+      "uploaded_sha256": "60e10aea9a6e795f65b0889dcd224d642b10bae3bf8dfe470b488f9f35b01c92",
+      "bytes": 580906,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/figures/02a_问题一能耗构成.pdf",
+      "source_sha256": "38ab41fc3fdb41c55dd61268d3e5b46ca42d3263d07204af5d7340ef0529a9a4",
+      "uploaded_sha256": "38ab41fc3fdb41c55dd61268d3e5b46ca42d3263d07204af5d7340ef0529a9a4",
+      "bytes": 33443,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/figures/02a_问题一能耗构成.png",
+      "source_sha256": "b17eaae6be4c9b8b11ca84a76726f1602c5c7a7d894312292e4bed7aaa069e0c",
+      "uploaded_sha256": "b17eaae6be4c9b8b11ca84a76726f1602c5c7a7d894312292e4bed7aaa069e0c",
+      "bytes": 355011,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/figures/02b_问题二能耗构成.pdf",
+      "source_sha256": "e930b1e6ff246cdb1b87f95394af885ceb255ce93ed6ba15f794ff259399b4c2",
+      "uploaded_sha256": "e930b1e6ff246cdb1b87f95394af885ceb255ce93ed6ba15f794ff259399b4c2",
+      "bytes": 36538,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/figures/02b_问题二能耗构成.png",
+      "source_sha256": "ea80e0fec1005513a59359cb847c97d0e8f6db166c5b733242d254cb165d1712",
+      "uploaded_sha256": "ea80e0fec1005513a59359cb847c97d0e8f6db166c5b733242d254cb165d1712",
+      "bytes": 380380,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/figures/05_硬时限裕量排序.pdf",
+      "source_sha256": "754f61859973ff67715bd093763d8c487052100b256b1b19b404f26f0001eb7c",
+      "uploaded_sha256": "754f61859973ff67715bd093763d8c487052100b256b1b19b404f26f0001eb7c",
+      "bytes": 35632,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/figures/05_硬时限裕量排序.png",
+      "source_sha256": "dde022046f7092127df6bd45504db9430e14c239437cd2e921e12cb0f9b41aa1",
+      "uploaded_sha256": "dde022046f7092127df6bd45504db9430e14c239437cd2e921e12cb0f9b41aa1",
+      "bytes": 421904,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/figures/06_安全余量服务区可行性矩阵.pdf",
+      "source_sha256": "0294b9d6926a7c26bb6daceb36a258d1db34a5cf9c3b248be873251293666750",
+      "uploaded_sha256": "0294b9d6926a7c26bb6daceb36a258d1db34a5cf9c3b248be873251293666750",
+      "bytes": 30902,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/figures/06_安全余量服务区可行性矩阵.png",
+      "source_sha256": "0764873ee110e29b65e525b979fcd70ffee7beab63b12075f241a549e5be1bb8",
+      "uploaded_sha256": "0764873ee110e29b65e525b979fcd70ffee7beab63b12075f241a549e5be1bb8",
+      "bytes": 330669,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/logs/export_checks.json",
+      "source_sha256": "d26dd8d5d3d86f1c30f9e9cab8516d7356dcb13b0c2ef285ba3efb07d2d78f09",
+      "uploaded_sha256": "d26dd8d5d3d86f1c30f9e9cab8516d7356dcb13b0c2ef285ba3efb07d2d78f09",
+      "bytes": 2184,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/logs/geometry_edge_checks.json",
+      "source_sha256": "c8f51a9948991ce8bd50c165ab0b22804084423823e49781ddabd94394e0fc87",
+      "uploaded_sha256": "c8f51a9948991ce8bd50c165ab0b22804084423823e49781ddabd94394e0fc87",
+      "bytes": 368,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/logs/validation.json",
+      "source_sha256": "47cbc0cbf03fd5ef44563bb927a4ebfac7e0dc1f15ee5f229e64fd9b20d29afd",
+      "uploaded_sha256": "47cbc0cbf03fd5ef44563bb927a4ebfac7e0dc1f15ee5f229e64fd9b20d29afd",
+      "bytes": 3458,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/tables/01_剖面像元明细.csv",
+      "source_sha256": "4fc82579ca11e40f6276c70ef56a3d10ffdfa429069a4e9662ec8fd5f223f1e7",
+      "uploaded_sha256": "4fc82579ca11e40f6276c70ef56a3d10ffdfa429069a4e9662ec8fd5f223f1e7",
+      "bytes": 139323,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/tables/01_剖面航段核验.csv",
+      "source_sha256": "1f57d4c277e27c8d884bacc8fc45c22630e57b5d13e53068a28cbeb2f8dc1f49",
+      "uploaded_sha256": "1f57d4c277e27c8d884bacc8fc45c22630e57b5d13e53068a28cbeb2f8dc1f49",
+      "bytes": 755,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/tables/02_逐架次能耗分解.csv",
+      "source_sha256": "e036a1a1d169c7878288d0e1c1e1c9bbc8cb3129ea60e8c4db7b793c25365f70",
+      "uploaded_sha256": "e036a1a1d169c7878288d0e1c1e1c9bbc8cb3129ea60e8c4db7b793c25365f70",
+      "bytes": 6109,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/tables/02_逐航段能耗分解.csv",
+      "source_sha256": "1f4ce9ef9826e3ca2da96cdbfe53c15e12eb6bc0cadf102f4db02638607456ea",
+      "uploaded_sha256": "1f4ce9ef9826e3ca2da96cdbfe53c15e12eb6bc0cadf102f4db02638607456ea",
+      "bytes": 14652,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/tables/05_硬时限裕量.csv",
+      "source_sha256": "32bbd4f775e778bef09d82d75300b4caa333b62adc8f3246ac7e062af568d677",
+      "uploaded_sha256": "32bbd4f775e778bef09d82d75300b4caa333b62adc8f3246ac7e062af568d677",
+      "bytes": 2898,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/tables/06_服务区可行性矩阵.csv",
+      "source_sha256": "a59e18402215a1879374b1a447bd41c434095dc3ca72565d19496164ea287cd6",
+      "uploaded_sha256": "a59e18402215a1879374b1a447bd41c434095dc3ca72565d19496164ea287cd6",
+      "bytes": 3438,
+      "markdown_links_relativized": false
+    },
+    {
+      "path": "建模/outputs/visualizations/图表说明.md",
+      "source_sha256": "aab0d5ecf58098adddf2b446e0bf17c35dc36a7edd2f7e1d10a71b45b38d21e5",
+      "uploaded_sha256": "aab0d5ecf58098adddf2b446e0bf17c35dc36a7edd2f7e1d10a71b45b38d21e5",
+      "bytes": 2698,
+      "markdown_links_relativized": false
+    }
+  ],
+  "included": [
+    "source",
+    "configs",
+    "tests",
+    "model_docs",
+    "reference_notes",
+    "formal_results",
+    "figures",
+    "verification_logs"
+  ],
+  "excluded": [
+    "original_attachments",
+    "paper_project",
+    "runtime",
+    "cache",
+    "reference_fulltexts",
+    "reference_download_responses",
+    "render_previews",
+    "smoke_results",
+    "office_lock_files"
+  ],
+  "numeric_result_bytes_preserved": true
+}

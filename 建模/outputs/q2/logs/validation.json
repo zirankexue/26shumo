@@ -1,0 +1,31 @@
+{
+  "main": {
+    "passed": true,
+    "unique_boxes": 80,
+    "mass_kg": 758,
+    "volume_m3": 2.011,
+    "hard_deadline_violations": 0,
+    "resource_conflicts": 0,
+    "max_energy_error_kwh": 0.0,
+    "total_flight_rounding_s": 0.040623467886121034
+  },
+  "comparison": {
+    "passed": true,
+    "unique_boxes": 80,
+    "mass_kg": 758,
+    "volume_m3": 2.011,
+    "hard_deadline_violations": 0,
+    "resource_conflicts": 0,
+    "max_energy_error_kwh": 0.0,
+    "total_flight_rounding_s": 0.040623467886121034
+  },
+  "excel": {
+    "performed": true,
+    "passed": true,
+    "checked_cells": 4339,
+    "sheets": 11,
+    "csv_also_checked": true
+  },
+  "sources_unchanged": true,
+  "q1_and_paper_unchanged": true
+}

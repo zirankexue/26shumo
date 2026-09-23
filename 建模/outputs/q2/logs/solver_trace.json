@@ -1,0 +1,902 @@
+[
+  {
+    "phase": "initial_fixed_routes",
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 38,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 0,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 38,
+        "seconds": 6.6707172,
+        "bound": 9111293.0,
+        "seed": 0,
+        "value": 9774247,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "OPTIMAL",
+        "pool_size": 38,
+        "seconds": 0.0160451,
+        "bound": 98006952455.0,
+        "seed": 0,
+        "value": 98006952455,
+        "proven": true
+      },
+      {
+        "stage": "sorties",
+        "status": "OPTIMAL",
+        "pool_size": 38,
+        "seconds": 0.017129000000000002,
+        "bound": 38.0,
+        "seed": 0,
+        "value": 38,
+        "proven": true
+      }
+    ]
+  },
+  {
+    "phase": "initial",
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 1500,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 0,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 37.6606977,
+        "bound": 5842920.0,
+        "seed": 0,
+        "value": 9774247,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 37.5573763,
+        "bound": 60520425755.0,
+        "seed": 0,
+        "value": 98006952455,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 37.3653994,
+        "bound": 28.0,
+        "seed": 0,
+        "value": 38,
+        "proven": false
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 0,
+    "round": 1,
+    "restricted_neighborhood": true,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 69,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 0,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 69,
+        "seconds": 17.7730411,
+        "bound": 8491925.0,
+        "seed": 0,
+        "value": 9118263,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 69,
+        "seconds": 17.777732500000003,
+        "bound": 95577704060.0,
+        "seed": 0,
+        "value": 96154441711,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "OPTIMAL",
+        "pool_size": 69,
+        "seconds": 0.027378800000000002,
+        "bound": 37.0,
+        "seed": 0,
+        "value": 37,
+        "proven": true
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 0,
+    "round": 2,
+    "restricted_neighborhood": true,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 84,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 0,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 84,
+        "seconds": 18.189741,
+        "bound": 8071963.0,
+        "seed": 0,
+        "value": 9118263,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 84,
+        "seconds": 18.1812353,
+        "bound": 93736739712.0,
+        "seed": 0,
+        "value": 93961330888,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "OPTIMAL",
+        "pool_size": 84,
+        "seconds": 0.0462334,
+        "bound": 36.0,
+        "seed": 0,
+        "value": 36,
+        "proven": true
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 0,
+    "round": 3,
+    "restricted_neighborhood": true,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 92,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 0,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 92,
+        "seconds": 18.646494200000003,
+        "bound": 8076430.0,
+        "seed": 0,
+        "value": 8630644,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 92,
+        "seconds": 18.642931400000002,
+        "bound": 93859515856.0,
+        "seed": 0,
+        "value": 96017260699,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "OPTIMAL",
+        "pool_size": 92,
+        "seconds": 0.0658402,
+        "bound": 36.0,
+        "seed": 0,
+        "value": 36,
+        "proven": true
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 0,
+    "round": 4,
+    "restricted_neighborhood": true,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 120,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 0,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 120,
+        "seconds": 19.1531913,
+        "bound": 7879753.0,
+        "seed": 0,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 120,
+        "seconds": 19.1438424,
+        "bound": 90045324891.0,
+        "seed": 0,
+        "value": 96017260699,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "OPTIMAL",
+        "pool_size": 120,
+        "seconds": 0.24136420000000003,
+        "bound": 36.0,
+        "seed": 0,
+        "value": 36,
+        "proven": true
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 0,
+    "round": 5,
+    "restricted_neighborhood": false,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 1500,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 0,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 19.5971245,
+        "bound": 6678401.0,
+        "seed": 0,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 19.4813048,
+        "bound": 73546846206.0,
+        "seed": 0,
+        "value": 96017260699,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 19.2251477,
+        "bound": 24.0,
+        "seed": 0,
+        "value": 36,
+        "proven": false
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 1,
+    "round": 1,
+    "restricted_neighborhood": true,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 153,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 1,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 153,
+        "seconds": 19.702526000000002,
+        "bound": 8172193.0,
+        "seed": 1,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 153,
+        "seconds": 19.7142372,
+        "bound": 95579280914.0,
+        "seed": 1,
+        "value": 96017260699,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "OPTIMAL",
+        "pool_size": 153,
+        "seconds": 0.1433927,
+        "bound": 36.0,
+        "seed": 1,
+        "value": 36,
+        "proven": true
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 1,
+    "round": 2,
+    "restricted_neighborhood": true,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 110,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 1,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 110,
+        "seconds": 20.419927100000002,
+        "bound": 8373297.0,
+        "seed": 1,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 110,
+        "seconds": 20.4161603,
+        "bound": 96004744574.0,
+        "seed": 1,
+        "value": 96017260699,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "OPTIMAL",
+        "pool_size": 110,
+        "seconds": 0.08520000000000001,
+        "bound": 36.0,
+        "seed": 1,
+        "value": 36,
+        "proven": true
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 1,
+    "round": 3,
+    "restricted_neighborhood": true,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 102,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 1,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 102,
+        "seconds": 21.259984600000003,
+        "bound": 8033300.0,
+        "seed": 1,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 102,
+        "seconds": 21.2604508,
+        "bound": 93682478131.0,
+        "seed": 1,
+        "value": 96017260699,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "OPTIMAL",
+        "pool_size": 102,
+        "seconds": 0.07143830000000001,
+        "bound": 36.0,
+        "seed": 1,
+        "value": 36,
+        "proven": true
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 1,
+    "round": 4,
+    "restricted_neighborhood": true,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 110,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 1,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 110,
+        "seconds": 22.2638755,
+        "bound": 8229540.0,
+        "seed": 1,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 110,
+        "seconds": 22.254314500000003,
+        "bound": 93589171688.0,
+        "seed": 1,
+        "value": 96017260699,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "OPTIMAL",
+        "pool_size": 110,
+        "seconds": 0.13185280000000002,
+        "bound": 36.0,
+        "seed": 1,
+        "value": 36,
+        "proven": true
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 1,
+    "round": 5,
+    "restricted_neighborhood": false,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 1500,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 1,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 23.3478043,
+        "bound": 6658506.0,
+        "seed": 1,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 23.2425922,
+        "bound": 74752676928.0,
+        "seed": 1,
+        "value": 96017260699,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 23.0183219,
+        "bound": 24.0,
+        "seed": 1,
+        "value": 36,
+        "proven": false
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 2,
+    "round": 1,
+    "restricted_neighborhood": true,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 170,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 2,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 170,
+        "seconds": 23.4477437,
+        "bound": 8196187.0,
+        "seed": 2,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "OPTIMAL",
+        "pool_size": 170,
+        "seconds": 6.499100800000001,
+        "bound": 96017260699.0,
+        "seed": 2,
+        "value": 96017260699,
+        "proven": true
+      },
+      {
+        "stage": "sorties",
+        "status": "OPTIMAL",
+        "pool_size": 170,
+        "seconds": 0.1458539,
+        "bound": 36.0,
+        "seed": 2,
+        "value": 36,
+        "proven": true
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 2,
+    "round": 2,
+    "restricted_neighborhood": true,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 108,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 2,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 108,
+        "seconds": 26.7924815,
+        "bound": 8140196.0,
+        "seed": 2,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 108,
+        "seconds": 26.8089887,
+        "bound": 95049060012.0,
+        "seed": 2,
+        "value": 96017260699,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "OPTIMAL",
+        "pool_size": 108,
+        "seconds": 0.13055560000000002,
+        "bound": 36.0,
+        "seed": 2,
+        "value": 36,
+        "proven": true
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 2,
+    "round": 3,
+    "restricted_neighborhood": true,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 111,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 2,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 111,
+        "seconds": 29.729191,
+        "bound": 8229540.0,
+        "seed": 2,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 111,
+        "seconds": 29.724579600000002,
+        "bound": 95408321957.0,
+        "seed": 2,
+        "value": 96017260699,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "OPTIMAL",
+        "pool_size": 111,
+        "seconds": 0.0727402,
+        "bound": 36.0,
+        "seed": 2,
+        "value": 36,
+        "proven": true
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 2,
+    "round": 4,
+    "restricted_neighborhood": true,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 294,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 2,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 294,
+        "seconds": 34.6324599,
+        "bound": 8083907.0,
+        "seed": 2,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 294,
+        "seconds": 34.6080482,
+        "bound": 94581802117.0,
+        "seed": 2,
+        "value": 96017260699,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "OPTIMAL",
+        "pool_size": 294,
+        "seconds": 0.4699687,
+        "bound": 36.0,
+        "seed": 2,
+        "value": 36,
+        "proven": true
+      }
+    ]
+  },
+  {
+    "phase": "search",
+    "seed": 2,
+    "round": 5,
+    "restricted_neighborhood": false,
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 1500,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 2,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 45.804413700000005,
+        "bound": 6782950.0,
+        "seed": 2,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 45.656527600000004,
+        "bound": 75448365831.0,
+        "seed": 2,
+        "value": 96017260699,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 45.4424233,
+        "bound": 24.0,
+        "seed": 2,
+        "value": 36,
+        "proven": false
+      }
+    ]
+  },
+  {
+    "phase": "final",
+    "stages": [
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 1500,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 0,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 53.201797000000006,
+        "bound": 6779763.0,
+        "seed": 0,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 53.067541000000006,
+        "bound": 75448365831.0,
+        "seed": 0,
+        "value": 95845699224,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 52.8120552,
+        "bound": 24.0,
+        "seed": 0,
+        "value": 36,
+        "proven": false
+      }
+    ]
+  },
+  {
+    "phase": "comparison",
+    "stages": [
+      {
+        "stage": "makespan",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 29.844791,
+        "bound": 6780826.0,
+        "seed": 0,
+        "value": 8575814,
+        "proven": false
+      },
+      {
+        "stage": "tardiness",
+        "status": "OPTIMAL_BY_ZERO_LOWER_BOUND",
+        "pool_size": 1500,
+        "seconds": 0.0,
+        "bound": 0,
+        "seed": 0,
+        "value": 0,
+        "proven": true
+      },
+      {
+        "stage": "energy",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 44.628277100000005,
+        "bound": 75448365831.0,
+        "seed": 0,
+        "value": 95845699224,
+        "proven": false
+      },
+      {
+        "stage": "sorties",
+        "status": "FEASIBLE",
+        "pool_size": 1500,
+        "seconds": 44.4122329,
+        "bound": 24.0,
+        "seed": 0,
+        "value": 36,
+        "proven": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,93 @@
+{
+  "artifacts": [
+    {
+      "pdf": "01_地形与飞行高度剖面.pdf",
+      "pages": 1,
+      "png_size": [
+        4293,
+        3523
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "text_chars": 809,
+      "rendered": true,
+      "sha256": "d95fa6eb4b1adbc56f9aafd4acc22a2c46f5a12700ee38950996003a769f1f91"
+    },
+    {
+      "pdf": "02a_问题一能耗构成.pdf",
+      "pages": 1,
+      "png_size": [
+        4459,
+        2154
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "text_chars": 552,
+      "rendered": true,
+      "sha256": "38ab41fc3fdb41c55dd61268d3e5b46ca42d3263d07204af5d7340ef0529a9a4"
+    },
+    {
+      "pdf": "02b_问题二能耗构成.pdf",
+      "pages": 1,
+      "png_size": [
+        4459,
+        2154
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "text_chars": 722,
+      "rendered": true,
+      "sha256": "e930b1e6ff246cdb1b87f95394af885ceb255ce93ed6ba15f794ff259399b4c2"
+    },
+    {
+      "pdf": "05_硬时限裕量排序.pdf",
+      "pages": 1,
+      "png_size": [
+        2920,
+        3620
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "text_chars": 776,
+      "rendered": true,
+      "sha256": "754f61859973ff67715bd093763d8c487052100b256b1b19b404f26f0001eb7c"
+    },
+    {
+      "pdf": "06_安全余量服务区可行性矩阵.pdf",
+      "pages": 1,
+      "png_size": [
+        4071,
+        2049
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "text_chars": 575,
+      "rendered": true,
+      "sha256": "0294b9d6926a7c26bb6daceb36a258d1db34a5cf9c3b248be873251293666750"
+    }
+  ],
+  "csv_counts": {
+    "energy_legs": 112,
+    "sorties": 54,
+    "hard_boxes": 31,
+    "matrix_cells": 135
+  },
+  "csv_independent_checks_passed": true,
+  "visual_review": {
+    "reviewed_utc": "2026-09-23T11:29:51.430827+00:00",
+    "all_five_png_and_pdf_renders_reviewed": true,
+    "chinese_labels_legends_and_annotations_readable": true,
+    "clipping_or_overlap_found": false,
+    "profile_ascent_descent_distinct": true
+  }
+}
