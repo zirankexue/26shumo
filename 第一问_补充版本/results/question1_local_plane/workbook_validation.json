@@ -1,0 +1,39 @@
+[
+  {
+    "file": "E:\\sxjm\\D题\\outputs\\question1_batching\\第一问_货箱组批方案.xlsx",
+    "sheets": 3,
+    "formulas": 360,
+    "charts": 0,
+    "formula_errors": 0,
+    "values_match_json": true,
+    "chart_types": [],
+    "charts_have_source_references": true
+  },
+  {
+    "file": "E:\\sxjm\\D题\\outputs\\question1_multiobjective\\第一问_多目标优化结果.xlsx",
+    "sheets": 3,
+    "formulas": 208,
+    "charts": 0,
+    "formula_errors": 0,
+    "values_match_json": true,
+    "chart_types": [],
+    "charts_have_source_references": true
+  },
+  {
+    "file": "E:\\sxjm\\D题\\outputs\\question1_reserve_sensitivity\\第一问_安全余量敏感性.xlsx",
+    "sheets": 5,
+    "formulas": 2134,
+    "charts": 6,
+    "formula_errors": 0,
+    "values_match_json": true,
+    "chart_types": [
+      "barChart",
+      "barChart",
+      "barChart",
+      "lineChart",
+      "lineChart",
+      "lineChart"
+    ],
+    "charts_have_source_references": true
+  }
+]

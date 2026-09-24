@@ -1,0 +1,784 @@
+{
+  "passed": true,
+  "scope": "Q1 only; source comparison plus previously executed peer API replay and new independent Q1 verification.",
+  "peer_commit": "9d1bddc2636a38a2f0445437420521389ad2fa49",
+  "sources": {
+    "D:\\Desktop\\zirankexve\\建模\\outputs\\q1_sensitivity_05_45\\tables\\results.json": "e3cf78da3f3cdf502c26939c223cef3bfad6aac4512ae8b2c4357a47670df322",
+    "D:\\Desktop\\zirankexve\\建模\\outputs\\q1_objective_audit\\results.json": "3eb6f71b3d6139b84f7d54e00849f423035e72bd15cf287cd166cb8e242e9556",
+    "E:\\sxjm\\D题\\results\\question1_batching\\solution.json": "b90e1443e931282622d183db7d07b68ff899709040630dfb7b6c029ad223ef39",
+    "E:\\sxjm\\D题\\results\\question1_multiobjective\\multiobjective.json": "17c37184c77c5f9039bbdfbe92410eb1760b1628900cf6e1a09f2744aff12334",
+    "E:\\sxjm\\D题\\results\\question1_reserve_sensitivity\\sensitivity.json": "2c7568a6f03345aaa9d2c3559c8256669c34c03b52ac7fe956a4f5950b0a4903"
+  },
+  "original_numeric_inputs_match": true,
+  "baseline": {
+    "feasible": true,
+    "box_assignments_equal": true,
+    "differences": {
+      "flight_count": 0,
+      "energy_kwh": 0.0,
+      "work_time_s": 0.0
+    }
+  },
+  "all_six_orders": [
+    {
+      "order": "N_E_T",
+      "plan_id": "PF001",
+      "feasible": true,
+      "box_assignments_equal": true,
+      "differences": {
+        "flight_count": 0,
+        "energy_kwh": 0.0,
+        "work_time_s": 0.0
+      }
+    },
+    {
+      "order": "N_T_E",
+      "plan_id": "PF001",
+      "feasible": true,
+      "box_assignments_equal": true,
+      "differences": {
+        "flight_count": 0,
+        "energy_kwh": 0.0,
+        "work_time_s": 0.0
+      }
+    },
+    {
+      "order": "E_N_T",
+      "plan_id": "PF002",
+      "feasible": true,
+      "box_assignments_equal": true,
+      "differences": {
+        "flight_count": 0,
+        "energy_kwh": 0.0,
+        "work_time_s": 0.0
+      }
+    },
+    {
+      "order": "E_T_N",
+      "plan_id": "PF002",
+      "feasible": true,
+      "box_assignments_equal": true,
+      "differences": {
+        "flight_count": 0,
+        "energy_kwh": 0.0,
+        "work_time_s": 0.0
+      }
+    },
+    {
+      "order": "T_N_E",
+      "plan_id": "PF001",
+      "feasible": true,
+      "box_assignments_equal": true,
+      "differences": {
+        "flight_count": 0,
+        "energy_kwh": 0.0,
+        "work_time_s": 0.0
+      }
+    },
+    {
+      "order": "T_E_N",
+      "plan_id": "PF001",
+      "feasible": true,
+      "box_assignments_equal": true,
+      "differences": {
+        "flight_count": 0,
+        "energy_kwh": 0.0,
+        "work_time_s": 0.0
+      }
+    }
+  ],
+  "common_nine_scenarios": [
+    {
+      "reserve_percent": 5.0,
+      "feasible": true,
+      "box_assignments_equal": true,
+      "differences": {
+        "flight_count": 0,
+        "energy_kwh": 0.0,
+        "work_time_s": 0.0
+      }
+    },
+    {
+      "reserve_percent": 10.0,
+      "feasible": true,
+      "box_assignments_equal": true,
+      "differences": {
+        "flight_count": 0,
+        "energy_kwh": 0.0,
+        "work_time_s": 0.0
+      }
+    },
+    {
+      "reserve_percent": 15.0,
+      "feasible": true,
+      "box_assignments_equal": true,
+      "differences": {
+        "flight_count": 0,
+        "energy_kwh": 0.0,
+        "work_time_s": 0.0
+      }
+    },
+    {
+      "reserve_percent": 20.0,
+      "feasible": true,
+      "box_assignments_equal": true,
+      "differences": {
+        "flight_count": 0,
+        "energy_kwh": 0.0,
+        "work_time_s": 0.0
+      }
+    },
+    {
+      "reserve_percent": 25.0,
+      "feasible": true,
+      "box_assignments_equal": true,
+      "differences": {
+        "flight_count": 0,
+        "energy_kwh": 0.0,
+        "work_time_s": 0.0
+      }
+    },
+    {
+      "reserve_percent": 30.0,
+      "feasible": true,
+      "box_assignments_equal": true,
+      "differences": {
+        "flight_count": 0,
+        "energy_kwh": 0.0,
+        "work_time_s": 0.0
+      }
+    },
+    {
+      "reserve_percent": 35.0,
+      "feasible": true,
+      "box_assignments_equal": true,
+      "differences": {
+        "flight_count": 0,
+        "energy_kwh": 0.0,
+        "work_time_s": 0.0
+      }
+    },
+    {
+      "reserve_percent": 40.0,
+      "feasible": false
+    },
+    {
+      "reserve_percent": 45.0,
+      "feasible": false
+    }
+  ],
+  "geometry": [
+    {
+      "service_id": "S001",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    },
+    {
+      "service_id": "S002",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    },
+    {
+      "service_id": "S003",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    },
+    {
+      "service_id": "S004",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    },
+    {
+      "service_id": "S005",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    },
+    {
+      "service_id": "S006",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    },
+    {
+      "service_id": "S007",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    },
+    {
+      "service_id": "S008",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": -2.842170943040401e-14
+      }
+    },
+    {
+      "service_id": "S009",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    },
+    {
+      "service_id": "S010",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    },
+    {
+      "service_id": "S011",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    },
+    {
+      "service_id": "S012",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    },
+    {
+      "service_id": "S013",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    },
+    {
+      "service_id": "S014",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    },
+    {
+      "service_id": "S015",
+      "differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      }
+    }
+  ],
+  "payload": [
+    {
+      "service_id": "S001",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S001",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S001",
+      "model": "C",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S002",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S002",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S002",
+      "model": "C",
+      "difference_kg": 0.0
+    },
+    {
+      "service_id": "S003",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S003",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S003",
+      "model": "C",
+      "difference_kg": 0.0
+    },
+    {
+      "service_id": "S004",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S004",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S004",
+      "model": "C",
+      "difference_kg": 0.0
+    },
+    {
+      "service_id": "S005",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S005",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S005",
+      "model": "C",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S006",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S006",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S006",
+      "model": "C",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S007",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S007",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S007",
+      "model": "C",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S008",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S008",
+      "model": "B",
+      "difference_kg": 0.0
+    },
+    {
+      "service_id": "S008",
+      "model": "C",
+      "difference_kg": 0.0
+    },
+    {
+      "service_id": "S009",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S009",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S009",
+      "model": "C",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S010",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S010",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S010",
+      "model": "C",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S011",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S011",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S011",
+      "model": "C",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S012",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S012",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S012",
+      "model": "C",
+      "difference_kg": 0.0
+    },
+    {
+      "service_id": "S013",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S013",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S013",
+      "model": "C",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S014",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S014",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S014",
+      "model": "C",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S015",
+      "model": "A",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S015",
+      "model": "B",
+      "difference_kg": 0
+    },
+    {
+      "service_id": "S015",
+      "model": "C",
+      "difference_kg": 0
+    }
+  ],
+  "baseline_box_assignments_unchanged": true,
+  "all_19_interval_assignments_unchanged": true,
+  "interval_updates": [
+    {
+      "plan_id": "R001",
+      "same_box_assignments": true,
+      "old_lower_percent": 0.0,
+      "old_upper_percent": 23.088493096568953,
+      "new_lower_percent": 0.0,
+      "new_upper_percent": 23.089248385317727,
+      "upper_shift_percentage_points": 0.0007552887487740634,
+      "old_energy_kwh": 59.13313308089387,
+      "new_energy_kwh": 59.13226032599277
+    },
+    {
+      "plan_id": "R002",
+      "same_box_assignments": true,
+      "old_lower_percent": 23.088493096568953,
+      "old_upper_percent": 27.049171281181383,
+      "new_lower_percent": 23.089248385317727,
+      "new_upper_percent": 27.04974165042051,
+      "upper_shift_percentage_points": 0.0005703692391278992,
+      "old_energy_kwh": 61.07522091639774,
+      "new_energy_kwh": 61.07431115757807
+    },
+    {
+      "plan_id": "R003",
+      "same_box_assignments": true,
+      "old_lower_percent": 27.049171281181383,
+      "old_upper_percent": 27.93180618565072,
+      "new_lower_percent": 27.04974165042051,
+      "new_upper_percent": 27.93294131270203,
+      "upper_shift_percentage_points": 0.0011351270513095812,
+      "old_energy_kwh": 63.29199060117033,
+      "new_energy_kwh": 63.291051673035774
+    },
+    {
+      "plan_id": "R004",
+      "same_box_assignments": true,
+      "old_lower_percent": 27.93180618565072,
+      "old_upper_percent": 28.482577766281768,
+      "new_lower_percent": 27.93294131270203,
+      "new_upper_percent": 28.48304745067569,
+      "upper_shift_percentage_points": 0.0004696843939235862,
+      "old_energy_kwh": 65.24468947015517,
+      "new_energy_kwh": 65.24374637868848
+    },
+    {
+      "plan_id": "R005",
+      "same_box_assignments": true,
+      "old_lower_percent": 28.482577766281768,
+      "old_upper_percent": 31.018866291297044,
+      "new_lower_percent": 28.48304745067569,
+      "new_upper_percent": 31.019547278321667,
+      "upper_shift_percentage_points": 0.0006809870246229366,
+      "old_energy_kwh": 67.22967632947265,
+      "new_energy_kwh": 67.2287315236232
+    },
+    {
+      "plan_id": "R006",
+      "same_box_assignments": true,
+      "old_lower_percent": 31.018866291297044,
+      "old_upper_percent": 31.183890238608292,
+      "new_lower_percent": 31.019547278321667,
+      "new_upper_percent": 31.185001142751688,
+      "upper_shift_percentage_points": 0.0011109041433954303,
+      "old_energy_kwh": 67.23968488871252,
+      "new_energy_kwh": 67.23874008286306
+    },
+    {
+      "plan_id": "R007",
+      "same_box_assignments": true,
+      "old_lower_percent": 31.183890238608292,
+      "old_upper_percent": 31.706673451999677,
+      "new_lower_percent": 31.185001142751688,
+      "new_upper_percent": 31.707188360601833,
+      "upper_shift_percentage_points": 0.0005149086021560834,
+      "old_energy_kwh": 69.4094670686323,
+      "new_energy_kwh": 69.40851960863192
+    },
+    {
+      "plan_id": "R008",
+      "same_box_assignments": true,
+      "old_lower_percent": 31.706673451999677,
+      "old_upper_percent": 32.04183347535123,
+      "new_lower_percent": 31.707188360601833,
+      "new_upper_percent": 32.04250135030689,
+      "upper_shift_percentage_points": 0.0006678749556598973,
+      "old_energy_kwh": 69.42589342240137,
+      "new_energy_kwh": 69.424945962401
+    },
+    {
+      "plan_id": "R009",
+      "same_box_assignments": true,
+      "old_lower_percent": 32.04183347535123,
+      "old_upper_percent": 32.480656203295354,
+      "new_lower_percent": 32.04250135030689,
+      "new_upper_percent": 32.481159227475295,
+      "upper_shift_percentage_points": 0.0005030241799417468,
+      "old_energy_kwh": 71.76155303911656,
+      "new_energy_kwh": 71.76060278959002
+    },
+    {
+      "plan_id": "R010",
+      "same_box_assignments": true,
+      "old_lower_percent": 32.480656203295354,
+      "old_upper_percent": 33.625187369806895,
+      "new_lower_percent": 32.481159227475295,
+      "new_upper_percent": 33.625670586616486,
+      "upper_shift_percentage_points": 0.0004832168095916245,
+      "old_energy_kwh": 74.2955960191667,
+      "new_energy_kwh": 74.29464357072257
+    },
+    {
+      "plan_id": "R011",
+      "same_box_assignments": true,
+      "old_lower_percent": 33.625187369806895,
+      "old_upper_percent": 33.833496178976844,
+      "new_lower_percent": 33.625670586616486,
+      "new_upper_percent": 33.83397543431236,
+      "upper_shift_percentage_points": 0.00047925533551307353,
+      "old_energy_kwh": 74.06450362363049,
+      "new_energy_kwh": 74.06352420478905
+    },
+    {
+      "plan_id": "R012",
+      "same_box_assignments": true,
+      "old_lower_percent": 33.833496178976844,
+      "old_upper_percent": 33.89129356695689,
+      "new_lower_percent": 33.83397543431236,
+      "new_upper_percent": 33.892330509767845,
+      "upper_shift_percentage_points": 0.0010369428109555656,
+      "old_energy_kwh": 74.06854951815318,
+      "new_energy_kwh": 74.06757009931174
+    },
+    {
+      "plan_id": "R013",
+      "same_box_assignments": true,
+      "old_lower_percent": 33.89129356695689,
+      "old_upper_percent": 34.23034883171433,
+      "new_lower_percent": 33.892330509767845,
+      "new_upper_percent": 34.23082016410171,
+      "upper_shift_percentage_points": 0.0004713323873772879,
+      "old_energy_kwh": 76.15638075096251,
+      "new_energy_kwh": 76.15534610424601
+    },
+    {
+      "plan_id": "R014",
+      "same_box_assignments": true,
+      "old_lower_percent": 34.23034883171433,
+      "old_upper_percent": 34.373653922648614,
+      "new_lower_percent": 34.23082016410171,
+      "new_upper_percent": 34.37428683208703,
+      "upper_shift_percentage_points": 0.000632909438415652,
+      "old_energy_kwh": 76.17667879345728,
+      "new_energy_kwh": 76.17564414674078
+    },
+    {
+      "plan_id": "R015",
+      "same_box_assignments": true,
+      "old_lower_percent": 34.373653922648614,
+      "old_upper_percent": 34.389933080480425,
+      "new_lower_percent": 34.37428683208703,
+      "new_upper_percent": 34.390361769385734,
+      "upper_shift_percentage_points": 0.00042868890530911585,
+      "old_energy_kwh": 76.00438227944089,
+      "new_energy_kwh": 76.003313418332
+    },
+    {
+      "plan_id": "R016",
+      "same_box_assignments": true,
+      "old_lower_percent": 34.389933080480425,
+      "old_upper_percent": 34.7772857412196,
+      "new_lower_percent": 34.390361769385734,
+      "new_upper_percent": 34.77774518918476,
+      "upper_shift_percentage_points": 0.0004594479651629513,
+      "old_energy_kwh": 75.86479362275799,
+      "new_energy_kwh": 75.8637037342195
+    },
+    {
+      "plan_id": "R017",
+      "same_box_assignments": true,
+      "old_lower_percent": 34.7772857412196,
+      "old_upper_percent": 35.11788903068388,
+      "new_lower_percent": 34.77774518918476,
+      "new_upper_percent": 35.11850882805334,
+      "upper_shift_percentage_points": 0.0006197973694668235,
+      "old_energy_kwh": 75.61004600791455,
+      "new_energy_kwh": 75.60892914897875
+    },
+    {
+      "plan_id": "R018",
+      "same_box_assignments": true,
+      "old_lower_percent": 35.11788903068388,
+      "old_upper_percent": 35.26575353904852,
+      "new_lower_percent": 35.11850882805334,
+      "new_upper_percent": 35.266593693194835,
+      "upper_shift_percentage_points": 0.000840154146317218,
+      "old_energy_kwh": 78.03180451218331,
+      "new_energy_kwh": 78.03068486372133
+    },
+    {
+      "plan_id": "R019",
+      "same_box_assignments": true,
+      "old_lower_percent": 35.26575353904852,
+      "old_upper_percent": 35.26719978564765,
+      "new_lower_percent": 35.266593693194835,
+      "new_upper_percent": 35.26764734919061,
+      "upper_shift_percentage_points": 0.0004475635429628255,
+      "old_energy_kwh": 83.21031282960357,
+      "new_energy_kwh": 83.20918878330642
+    }
+  ],
+  "old_baseline": {
+    "flight_count": 18,
+    "box_count": 80,
+    "mass_kg": 758.0,
+    "volume_m3": 2.011,
+    "energy_kwh": 59.13313308089387,
+    "flight_time_s": 19288.516782276904,
+    "work_time_s": 32776.5167822769,
+    "model_counts": {
+      "C": 9,
+      "B": 9
+    },
+    "minimum_soc_percent": 23.088493096568953,
+    "simple_flight_lower_bound": 18
+  },
+  "new_baseline": {
+    "flight_count": 18,
+    "box_count": 80,
+    "mass_kg": 758.0,
+    "volume_m3": 2.011,
+    "energy_kwh": 59.13226032599277,
+    "flight_time_s": 19288.516782276904,
+    "work_time_s": 32776.5167822769,
+    "model_counts": {
+      "C": 9,
+      "B": 9
+    },
+    "minimum_soc_percent": 23.089248385317727,
+    "simple_flight_lower_bound": 18
+  },
+  "energy_change_kwh": -0.0008727549011027236,
+  "old_global_limit_percent": 35.26719978564765,
+  "new_global_limit_percent": 35.26764734919061,
+  "qualifications": [
+    "Interval endpoints move with gravity; identical interval-indexed assignments do not imply identical decisions at every fixed rho in the narrow shifted boundary windows.",
+    "Peer six-order MILP evidence is checked as a saved snapshot; its 90 MILPs were not rerun here. Peer pure DP APIs were separately replayed."
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "created_utc": "2026-09-24T11:27:22.715938+00:00",
+  "passed": true,
+  "issues": [],
+  "source_sha256": {
+    "nodes": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "drones": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+    "boxes": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+    "dem": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+    "problem": "f4ca76b46a8dd760bf13d606ec7673656ac9b882a4b54ddd29ab4377da91aa45"
+  },
+  "solution_sha256": "b90e1443e931282622d183db7d07b68ff899709040630dfb7b6c029ad223ef39",
+  "geometry_audit_sha256": "d5cba304b094abd32c2db7406ac9fec3391df6e1b86e080ea6091b96d83c11da",
+  "decimal_precision_digits": 40,
+  "gravity_m_s2": 9.80665,
+  "method": "Complete real-box-ID bitmask nondominated-label DP; each mask anchors its least-significant bit. Independently merged local frontiers.",
+  "local_frontiers": {
+    "S001": [
+      [
+        2,
+        5.913363900491497,
+        3186.350091724046
+      ]
+    ],
+    "S002": [
+      [
+        2,
+        8.434829145187932,
+        3858.566247332312
+      ]
+    ],
+    "S003": [
+      [
+        2,
+        8.545442729216445,
+        4450.787376137323
+      ]
+    ],
+    "S004": [
+      [
+        1,
+        6.152860129174582,
+        2301.0547187724455
+      ]
+    ],
+    "S005": [
+      [
+        1,
+        4.222137373445114,
+        1877.1887154914712
+      ]
+    ],
+    "S006": [
+      [
+        1,
+        2.5979362904386822,
+        1561.5526244866223
+      ]
+    ],
+    "S007": [
+      [
+        1,
+        3.4110038084433194,
+        1907.600698410691
+      ]
+    ],
+    "S008": [
+      [
+        1,
+        5.836020667966359,
+        2199.7115246008334
+      ],
+      [
+        2,
+        5.738638079775605,
+        3863.683494351406
+      ]
+    ],
+    "S009": [
+      [
+        1,
+        2.0962654017373348,
+        1558.4628643343574
+      ]
+    ],
+    "S010": [
+      [
+        1,
+        1.823216564231414,
+        1555.4035197802173
+      ]
+    ],
+    "S011": [
+      [
+        1,
+        1.0739366863951036,
+        1188.4247628605206
+      ]
+    ],
+    "S012": [
+      [
+        1,
+        2.7525999542899324,
+        1922.826814149187
+      ]
+    ],
+    "S013": [
+      [
+        1,
+        1.8248281910807473,
+        1510.511588744525
+      ]
+    ],
+    "S014": [
+      [
+        1,
+        2.1402909781417883,
+        1869.7476752786913
+      ]
+    ],
+    "S015": [
+      [
+        1,
+        2.3075285057525154,
+        1828.3275601736595
+      ]
+    ]
+  },
+  "global_frontier": [
+    [
+      18,
+      59.13226032599276,
+      32776.51678227689
+    ],
+    [
+      19,
+      59.034877737802006,
+      34440.48875202747
+    ]
+  ],
+  "stage_statistics": [
+    {
+      "service_id": "S001",
+      "real_box_ids": [
+        "S001-MED-01",
+        "S001-MED-02",
+        "S001-WAT-01",
+        "S001-WAT-02",
+        "S001-WAT-03",
+        "S001-WAT-04",
+        "S001-WAT-05",
+        "S001-WAT-06",
+        "S001-WAT-07",
+        "S001-WAT-08",
+        "S001-FOD-01",
+        "S001-FOD-02",
+        "S001-FOD-03",
+        "S001-HYG-01",
+        "S001-HYG-02"
+      ],
+      "bitmask_state_count": 32768,
+      "feasible_masks": 18063,
+      "label_transitions": 8217878
+    },
+    {
+      "service_id": "S002",
+      "real_box_ids": [
+        "S002-MED-01",
+        "S002-WAT-01",
+        "S002-WAT-02",
+        "S002-WAT-03",
+        "S002-WAT-04",
+        "S002-FOD-01",
+        "S002-FOD-02",
+        "S002-HYG-01"
+      ],
+      "bitmask_state_count": 256,
+      "feasible_masks": 247,
+      "label_transitions": 4384
+    },
+    {
+      "service_id": "S003",
+      "real_box_ids": [
+        "S003-MED-01",
+        "S003-WAT-01",
+        "S003-WAT-02",
+        "S003-WAT-03",
+        "S003-WAT-04",
+        "S003-FOD-01",
+        "S003-FOD-02",
+        "S003-HYG-01"
+      ],
+      "bitmask_state_count": 256,
+      "feasible_masks": 247,
+      "label_transitions": 4198
+    },
+    {
+      "service_id": "S004",
+      "real_box_ids": [
+        "S004-MED-01",
+        "S004-WAT-01",
+        "S004-WAT-02",
+        "S004-WAT-03",
+        "S004-FOD-01",
+        "S004-HYG-01"
+      ],
+      "bitmask_state_count": 64,
+      "feasible_masks": 63,
+      "label_transitions": 418
+    },
+    {
+      "service_id": "S005",
+      "real_box_ids": [
+        "S005-MED-01",
+        "S005-WAT-01",
+        "S005-WAT-02",
+        "S005-WAT-03",
+        "S005-FOD-01",
+        "S005-HYG-01"
+      ],
+      "bitmask_state_count": 64,
+      "feasible_masks": 63,
+      "label_transitions": 416
+    },
+    {
+      "service_id": "S006",
+      "real_box_ids": [
+        "S006-MED-01",
+        "S006-WAT-01",
+        "S006-WAT-02",
+        "S006-WAT-03",
+        "S006-FOD-01",
+        "S006-HYG-01"
+      ],
+      "bitmask_state_count": 64,
+      "feasible_masks": 63,
+      "label_transitions": 416
+    },
+    {
+      "service_id": "S007",
+      "real_box_ids": [
+        "S007-MED-01",
+        "S007-WAT-01",
+        "S007-WAT-02",
+        "S007-FOD-01",
+        "S007-HYG-01"
+      ],
+      "bitmask_state_count": 32,
+      "feasible_masks": 31,
+      "label_transitions": 130
+    },
+    {
+      "service_id": "S008",
+      "real_box_ids": [
+        "S008-MED-01",
+        "S008-WAT-01",
+        "S008-WAT-02",
+        "S008-FOD-01",
+        "S008-HYG-01"
+      ],
+      "bitmask_state_count": 32,
+      "feasible_masks": 31,
+      "label_transitions": 131
+    },
+    {
+      "service_id": "S009",
+      "real_box_ids": [
+        "S009-MED-01",
+        "S009-WAT-01",
+        "S009-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    },
+    {
+      "service_id": "S010",
+      "real_box_ids": [
+        "S010-MED-01",
+        "S010-WAT-01",
+        "S010-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    },
+    {
+      "service_id": "S011",
+      "real_box_ids": [
+        "S011-MED-01",
+        "S011-WAT-01",
+        "S011-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    },
+    {
+      "service_id": "S012",
+      "real_box_ids": [
+        "S012-MED-01",
+        "S012-WAT-01",
+        "S012-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    },
+    {
+      "service_id": "S013",
+      "real_box_ids": [
+        "S013-MED-01",
+        "S013-WAT-01",
+        "S013-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    },
+    {
+      "service_id": "S014",
+      "real_box_ids": [
+        "S014-MED-01",
+        "S014-WAT-01",
+        "S014-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    },
+    {
+      "service_id": "S015",
+      "real_box_ids": [
+        "S015-MED-01",
+        "S015-WAT-01",
+        "S015-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    }
+  ],
+  "numeric_tolerances": {
+    "energy_kwh": 1e-09,
+    "time_s": 1e-06
+  }
+}

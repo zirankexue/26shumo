@@ -1,0 +1,12 @@
+# Original inputs and generated local packages stay local.
+/数据/
+/山区洪涝灾害下无人机运输与通信协同优化.docx
+/结果提交模板.xlsx
+/第一问/数据/原始附件/
+/archives/
+/.runtime_py/
+/.venv/
+**/node_modules/
+**/__pycache__/
+**/*.py[cod]
+**/.env*

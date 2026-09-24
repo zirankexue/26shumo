@@ -1,0 +1,4281 @@
+{
+  "created_utc": "2026-09-24T11:18:51.355591+00:00",
+  "scope": "Q1 multiobjective single-service batching; not Q2 multi-stop physical-fleet scheduling",
+  "assumptions": [
+    "Horizontal energy = available battery energy * horizontal distance / stated equivalent range.",
+    "Extra ascent energy = total mass * 9.80665 * ascent / (efficiency * 3.6e6).",
+    "All goods delivered at the only service area; return payload is zero.",
+    "Preparation, loading, flight and handover durations are summed sequentially.",
+    "Fixed WGS84 curvature scales at O01 define local planar distances; all cells touched by the straight lon/lat route are included without DEM resampling."
+  ],
+  "source_sha256": {
+    "nodes": {
+      "path": "数据\\无人机应急物资运输基础数据\\调度中心与服务区.xlsx",
+      "sha256": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38"
+    },
+    "drones": {
+      "path": "数据\\无人机应急物资运输基础数据\\运输无人机数据.xlsx",
+      "sha256": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb"
+    },
+    "boxes": {
+      "path": "数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx",
+      "sha256": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a"
+    },
+    "dem": {
+      "path": "数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\数字高程模型数据（DEM）\\镇龙乡及周边30米DEM.tif",
+      "sha256": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03"
+    },
+    "problem": {
+      "path": "山区洪涝灾害下无人机运输与通信协同优化.docx",
+      "sha256": "f4ca76b46a8dd760bf13d606ec7673656ac9b882a4b54ddd29ab4377da91aa45"
+    }
+  },
+  "baseline_solution_sha256": "b90e1443e931282622d183db7d07b68ff899709040630dfb7b6c029ad223ef39",
+  "type_order": [
+    "MED",
+    "WAT",
+    "FOD",
+    "HYG"
+  ],
+  "boxes": [
+    {
+      "id": "S001-MED-01",
+      "service_id": "S001",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 24,
+      "volume_litre": 12
+    },
+    {
+      "id": "S001-MED-02",
+      "service_id": "S001",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 24,
+      "volume_litre": 12
+    },
+    {
+      "id": "S001-WAT-01",
+      "service_id": "S001",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S001-WAT-02",
+      "service_id": "S001",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S001-WAT-03",
+      "service_id": "S001",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S001-WAT-04",
+      "service_id": "S001",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S001-WAT-05",
+      "service_id": "S001",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S001-WAT-06",
+      "service_id": "S001",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S001-WAT-07",
+      "service_id": "S001",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S001-WAT-08",
+      "service_id": "S001",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S001-FOD-01",
+      "service_id": "S001",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 28
+    },
+    {
+      "id": "S001-FOD-02",
+      "service_id": "S001",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 28
+    },
+    {
+      "id": "S001-FOD-03",
+      "service_id": "S001",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 28
+    },
+    {
+      "id": "S001-HYG-01",
+      "service_id": "S001",
+      "type": "HYG",
+      "type_name": "生活卫生用品",
+      "mass_kg": 6.0,
+      "volume_m3": 0.035,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 35
+    },
+    {
+      "id": "S001-HYG-02",
+      "service_id": "S001",
+      "type": "HYG",
+      "type_name": "生活卫生用品",
+      "mass_kg": 6.0,
+      "volume_m3": 0.035,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 35
+    },
+    {
+      "id": "S002-MED-01",
+      "service_id": "S002",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 24,
+      "volume_litre": 12
+    },
+    {
+      "id": "S002-WAT-01",
+      "service_id": "S002",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S002-WAT-02",
+      "service_id": "S002",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S002-WAT-03",
+      "service_id": "S002",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S002-WAT-04",
+      "service_id": "S002",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S002-FOD-01",
+      "service_id": "S002",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 28
+    },
+    {
+      "id": "S002-FOD-02",
+      "service_id": "S002",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 28
+    },
+    {
+      "id": "S002-HYG-01",
+      "service_id": "S002",
+      "type": "HYG",
+      "type_name": "生活卫生用品",
+      "mass_kg": 6.0,
+      "volume_m3": 0.035,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 35
+    },
+    {
+      "id": "S003-MED-01",
+      "service_id": "S003",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 7200,
+      "due_s": 7200,
+      "priority": 20,
+      "volume_litre": 12
+    },
+    {
+      "id": "S003-WAT-01",
+      "service_id": "S003",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 7200,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 27
+    },
+    {
+      "id": "S003-WAT-02",
+      "service_id": "S003",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 27
+    },
+    {
+      "id": "S003-WAT-03",
+      "service_id": "S003",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 27
+    },
+    {
+      "id": "S003-WAT-04",
+      "service_id": "S003",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 27
+    },
+    {
+      "id": "S003-FOD-01",
+      "service_id": "S003",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 28
+    },
+    {
+      "id": "S003-FOD-02",
+      "service_id": "S003",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 28
+    },
+    {
+      "id": "S003-HYG-01",
+      "service_id": "S003",
+      "type": "HYG",
+      "type_name": "生活卫生用品",
+      "mass_kg": 6.0,
+      "volume_m3": 0.035,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 14400,
+      "priority": 6,
+      "volume_litre": 35
+    },
+    {
+      "id": "S004-MED-01",
+      "service_id": "S004",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 7200,
+      "due_s": 7200,
+      "priority": 20,
+      "volume_litre": 12
+    },
+    {
+      "id": "S004-WAT-01",
+      "service_id": "S004",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 7200,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 27
+    },
+    {
+      "id": "S004-WAT-02",
+      "service_id": "S004",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 27
+    },
+    {
+      "id": "S004-WAT-03",
+      "service_id": "S004",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 27
+    },
+    {
+      "id": "S004-FOD-01",
+      "service_id": "S004",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 28
+    },
+    {
+      "id": "S004-HYG-01",
+      "service_id": "S004",
+      "type": "HYG",
+      "type_name": "生活卫生用品",
+      "mass_kg": 6.0,
+      "volume_m3": 0.035,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 14400,
+      "priority": 6,
+      "volume_litre": 35
+    },
+    {
+      "id": "S005-MED-01",
+      "service_id": "S005",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 10800,
+      "due_s": 10800,
+      "priority": 16,
+      "volume_litre": 12
+    },
+    {
+      "id": "S005-WAT-01",
+      "service_id": "S005",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 10800,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 27
+    },
+    {
+      "id": "S005-WAT-02",
+      "service_id": "S005",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 27
+    },
+    {
+      "id": "S005-WAT-03",
+      "service_id": "S005",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 27
+    },
+    {
+      "id": "S005-FOD-01",
+      "service_id": "S005",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 14400,
+      "priority": 6,
+      "volume_litre": 28
+    },
+    {
+      "id": "S005-HYG-01",
+      "service_id": "S005",
+      "type": "HYG",
+      "type_name": "生活卫生用品",
+      "mass_kg": 6.0,
+      "volume_m3": 0.035,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 18000,
+      "priority": 4,
+      "volume_litre": 35
+    },
+    {
+      "id": "S006-MED-01",
+      "service_id": "S006",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 24,
+      "volume_litre": 12
+    },
+    {
+      "id": "S006-WAT-01",
+      "service_id": "S006",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S006-WAT-02",
+      "service_id": "S006",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S006-WAT-03",
+      "service_id": "S006",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S006-FOD-01",
+      "service_id": "S006",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 28
+    },
+    {
+      "id": "S006-HYG-01",
+      "service_id": "S006",
+      "type": "HYG",
+      "type_name": "生活卫生用品",
+      "mass_kg": 6.0,
+      "volume_m3": 0.035,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 35
+    },
+    {
+      "id": "S007-MED-01",
+      "service_id": "S007",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 24,
+      "volume_litre": 12
+    },
+    {
+      "id": "S007-WAT-01",
+      "service_id": "S007",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S007-WAT-02",
+      "service_id": "S007",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S007-FOD-01",
+      "service_id": "S007",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 28
+    },
+    {
+      "id": "S007-HYG-01",
+      "service_id": "S007",
+      "type": "HYG",
+      "type_name": "生活卫生用品",
+      "mass_kg": 6.0,
+      "volume_m3": 0.035,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 35
+    },
+    {
+      "id": "S008-MED-01",
+      "service_id": "S008",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 7200,
+      "due_s": 7200,
+      "priority": 20,
+      "volume_litre": 12
+    },
+    {
+      "id": "S008-WAT-01",
+      "service_id": "S008",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 7200,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 27
+    },
+    {
+      "id": "S008-WAT-02",
+      "service_id": "S008",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 27
+    },
+    {
+      "id": "S008-FOD-01",
+      "service_id": "S008",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 28
+    },
+    {
+      "id": "S008-HYG-01",
+      "service_id": "S008",
+      "type": "HYG",
+      "type_name": "生活卫生用品",
+      "mass_kg": 6.0,
+      "volume_m3": 0.035,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 14400,
+      "priority": 6,
+      "volume_litre": 35
+    },
+    {
+      "id": "S009-MED-01",
+      "service_id": "S009",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 10800,
+      "due_s": 10800,
+      "priority": 16,
+      "volume_litre": 12
+    },
+    {
+      "id": "S009-WAT-01",
+      "service_id": "S009",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 10800,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 27
+    },
+    {
+      "id": "S009-FOD-01",
+      "service_id": "S009",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 14400,
+      "priority": 6,
+      "volume_litre": 28
+    },
+    {
+      "id": "S010-MED-01",
+      "service_id": "S010",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 24,
+      "volume_litre": 12
+    },
+    {
+      "id": "S010-WAT-01",
+      "service_id": "S010",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S010-FOD-01",
+      "service_id": "S010",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 28
+    },
+    {
+      "id": "S011-MED-01",
+      "service_id": "S011",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 10800,
+      "due_s": 10800,
+      "priority": 16,
+      "volume_litre": 12
+    },
+    {
+      "id": "S011-WAT-01",
+      "service_id": "S011",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 10800,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 27
+    },
+    {
+      "id": "S011-FOD-01",
+      "service_id": "S011",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 14400,
+      "priority": 6,
+      "volume_litre": 28
+    },
+    {
+      "id": "S012-MED-01",
+      "service_id": "S012",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 7200,
+      "priority": 22,
+      "volume_litre": 12
+    },
+    {
+      "id": "S012-WAT-01",
+      "service_id": "S012",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S012-FOD-01",
+      "service_id": "S012",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 28
+    },
+    {
+      "id": "S013-MED-01",
+      "service_id": "S013",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 24,
+      "volume_litre": 12
+    },
+    {
+      "id": "S013-WAT-01",
+      "service_id": "S013",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S013-FOD-01",
+      "service_id": "S013",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 28
+    },
+    {
+      "id": "S014-MED-01",
+      "service_id": "S014",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 7200,
+      "priority": 22,
+      "volume_litre": 12
+    },
+    {
+      "id": "S014-WAT-01",
+      "service_id": "S014",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 3600,
+      "due_s": 3600,
+      "priority": 12,
+      "volume_litre": 27
+    },
+    {
+      "id": "S014-FOD-01",
+      "service_id": "S014",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 7200,
+      "priority": 10,
+      "volume_litre": 28
+    },
+    {
+      "id": "S015-MED-01",
+      "service_id": "S015",
+      "type": "MED",
+      "type_name": "医疗物资",
+      "mass_kg": 3.0,
+      "volume_m3": 0.012,
+      "first_batch": "是",
+      "first_deadline_s": 7200,
+      "due_s": 7200,
+      "priority": 18,
+      "volume_litre": 12
+    },
+    {
+      "id": "S015-WAT-01",
+      "service_id": "S015",
+      "type": "WAT",
+      "type_name": "饮用水",
+      "mass_kg": 14.0,
+      "volume_m3": 0.027,
+      "first_batch": "是",
+      "first_deadline_s": 10800,
+      "due_s": 10800,
+      "priority": 8,
+      "volume_litre": 27
+    },
+    {
+      "id": "S015-FOD-01",
+      "service_id": "S015",
+      "type": "FOD",
+      "type_name": "应急食品",
+      "mass_kg": 8.0,
+      "volume_m3": 0.028,
+      "first_batch": "否",
+      "first_deadline_s": null,
+      "due_s": 14400,
+      "priority": 6,
+      "volume_litre": 28
+    }
+  ],
+  "drones": {
+    "A": {
+      "id": "A",
+      "name": "中轻载标准测试多旋翼",
+      "empty_mass_kg": 70,
+      "payload_kg": 25,
+      "volume_m3": 0.06,
+      "cruise_mps": 12,
+      "empty_range_m": 25000,
+      "full_range_m": 20000,
+      "energy_kwh": 4.5,
+      "reserve_percent": 20,
+      "prepare_s": 300,
+      "load_per_box_s": 30,
+      "handover_base_s": 150,
+      "handover_per_box_s": 30,
+      "climb_mps": 3,
+      "descend_mps": 2.5,
+      "climb_efficiency": 0.72,
+      "descent_extra_efficiency": 0,
+      "volume_litre": 60
+    },
+    "B": {
+      "id": "B",
+      "name": "中载标准测试多旋翼",
+      "empty_mass_kg": 65,
+      "payload_kg": 30,
+      "volume_m3": 0.073,
+      "cruise_mps": 15,
+      "empty_range_m": 28000,
+      "full_range_m": 16000,
+      "energy_kwh": 4,
+      "reserve_percent": 20,
+      "prepare_s": 300,
+      "load_per_box_s": 30,
+      "handover_base_s": 150,
+      "handover_per_box_s": 30,
+      "climb_mps": 3,
+      "descend_mps": 2.5,
+      "climb_efficiency": 0.72,
+      "descent_extra_efficiency": 0,
+      "volume_litre": 73
+    },
+    "C": {
+      "id": "C",
+      "name": "重载标准测试多旋翼",
+      "empty_mass_kg": 69.9,
+      "payload_kg": 80,
+      "volume_m3": 0.25,
+      "cruise_mps": 15,
+      "empty_range_m": 26000,
+      "full_range_m": 12000,
+      "energy_kwh": 8,
+      "reserve_percent": 20,
+      "prepare_s": 300,
+      "load_per_box_s": 30,
+      "handover_base_s": 180,
+      "handover_per_box_s": 36,
+      "climb_mps": 2.5,
+      "descend_mps": 2,
+      "climb_efficiency": 0.72,
+      "descent_extra_efficiency": 0,
+      "volume_litre": 250
+    }
+  },
+  "nodes": {
+    "O01": {
+      "id": "O01",
+      "name": "凤丹村无人机调度中心",
+      "lon": 109.2308517,
+      "lat": 23.0085095,
+      "elevation_m": 127.7
+    },
+    "S001": {
+      "id": "S001",
+      "name": "平旺、那龙、镇龙乡",
+      "lon": 109.2432319,
+      "lat": 23.0335927,
+      "elevation_m": 154.0
+    },
+    "S002": {
+      "id": "S002",
+      "name": "上良",
+      "lon": 109.2585519,
+      "lat": 23.0703271,
+      "elevation_m": 189.5
+    },
+    "S003": {
+      "id": "S003",
+      "name": "六造、那旭、都长",
+      "lon": 109.1688578,
+      "lat": 23.0402714,
+      "elevation_m": 308.5
+    },
+    "S004": {
+      "id": "S004",
+      "name": "大站",
+      "lon": 109.2381714,
+      "lat": 23.0778414,
+      "elevation_m": 198.3
+    },
+    "S005": {
+      "id": "S005",
+      "name": "上良、古律、那麓",
+      "lon": 109.2283003,
+      "lat": 23.0561338,
+      "elevation_m": 165.0
+    },
+    "S006": {
+      "id": "S006",
+      "name": "六昌、木路",
+      "lon": 109.1997836,
+      "lat": 23.007714,
+      "elevation_m": 284.8
+    },
+    "S007": {
+      "id": "S007",
+      "name": "佛子、那桑、银坑",
+      "lon": 109.1928191,
+      "lat": 23.0294186,
+      "elevation_m": 318.5
+    },
+    "S008": {
+      "id": "S008",
+      "name": "古麻、大站",
+      "lon": 109.2127472,
+      "lat": 23.0795113,
+      "elevation_m": 240.9
+    },
+    "S009": {
+      "id": "S009",
+      "name": "那龙",
+      "lon": 109.2541424,
+      "lat": 23.0552989,
+      "elevation_m": 200.0
+    },
+    "S010": {
+      "id": "S010",
+      "name": "镇龙乡",
+      "lon": 109.2760168,
+      "lat": 23.0194009,
+      "elevation_m": 321.6
+    },
+    "S011": {
+      "id": "S011",
+      "name": "那从",
+      "lon": 109.2203356,
+      "lat": 23.0319231,
+      "elevation_m": 182.1
+    },
+    "S012": {
+      "id": "S012",
+      "name": "镇龙乡",
+      "lon": 109.2831357,
+      "lat": 23.054464,
+      "elevation_m": 249.8
+    },
+    "S013": {
+      "id": "S013",
+      "name": "镇龙乡",
+      "lon": 109.2713839,
+      "lat": 23.0310882,
+      "elevation_m": 321.7
+    },
+    "S014": {
+      "id": "S014",
+      "name": "镇龙乡",
+      "lon": 109.2835966,
+      "lat": 23.0052097,
+      "elevation_m": 321.0
+    },
+    "S015": {
+      "id": "S015",
+      "name": "六造、那托、那旭",
+      "lon": 109.1923786,
+      "lat": 23.0494548,
+      "elevation_m": 444.5
+    }
+  },
+  "baseline": {
+    "flight_count": 18,
+    "box_count": 80,
+    "mass_kg": 758.0,
+    "volume_m3": 2.011,
+    "energy_kwh": 59.13226032599277,
+    "flight_time_s": 19288.516782276904,
+    "work_time_s": 32776.5167822769,
+    "model_counts": {
+      "C": 9,
+      "B": 9
+    },
+    "minimum_soc_percent": 23.089248385317727,
+    "simple_flight_lower_bound": 18
+  },
+  "frontier": [
+    {
+      "plan_id": "PF001",
+      "flight_count": 18,
+      "energy_kwh": 59.13226032599277,
+      "work_time_s": 32776.5167822769,
+      "flight_time_s": 19288.516782276904,
+      "box_count": 80,
+      "mass_kg": 758.0,
+      "volume_m3": 2.011,
+      "model_counts": {
+        "C": 9,
+        "B": 9
+      },
+      "minimum_soc_percent": 23.089248385317727,
+      "batches": [
+        {
+          "service_id": "S001",
+          "model": "C",
+          "counts": [
+            0,
+            3,
+            3,
+            2
+          ],
+          "box_count": 8,
+          "mass_kg": 78.0,
+          "volume_m3": 0.235,
+          "horizontal_out_kwh": 1.9511870756376157,
+          "horizontal_return_kwh": 0.9396995715430697,
+          "climb_out_kwh": 0.08133709148743111,
+          "climb_return_kwh": 0.023552066236553017,
+          "energy_kwh": 2.9957758049046697,
+          "flight_time_s": 618.1750458620229,
+          "work_time_s": 1626.175045862023,
+          "return_soc_percent": 62.552802438691636,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S001-WAT-01",
+            "S001-WAT-02",
+            "S001-WAT-03",
+            "S001-FOD-01",
+            "S001-FOD-02",
+            "S001-FOD-03",
+            "S001-HYG-01",
+            "S001-HYG-02"
+          ],
+          "batch_id": "PF001-001"
+        },
+        {
+          "service_id": "S001",
+          "model": "C",
+          "counts": [
+            2,
+            5,
+            0,
+            0
+          ],
+          "box_count": 7,
+          "mass_kg": 76.0,
+          "volume_m3": 0.159,
+          "horizontal_out_kwh": 1.874099259375722,
+          "horizontal_return_kwh": 0.9396995715430697,
+          "climb_out_kwh": 0.08023719843148208,
+          "climb_return_kwh": 0.023552066236553017,
+          "energy_kwh": 2.917588095586827,
+          "flight_time_s": 618.1750458620229,
+          "work_time_s": 1560.175045862023,
+          "return_soc_percent": 63.53014880516466,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S001-MED-01",
+            "S001-MED-02",
+            "S001-WAT-04",
+            "S001-WAT-05",
+            "S001-WAT-06",
+            "S001-WAT-07",
+            "S001-WAT-08"
+          ],
+          "batch_id": "PF001-002"
+        },
+        {
+          "service_id": "S002",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.5709648966225414,
+          "horizontal_return_kwh": 1.0587905448791264,
+          "climb_out_kwh": 0.061718646925830845,
+          "climb_return_kwh": 0.02199885281448894,
+          "energy_kwh": 2.7134729412419873,
+          "flight_time_s": 1186.7240813077576,
+          "work_time_s": 1816.7240813077576,
+          "return_soc_percent": 32.16317646895032,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S002-MED-01",
+            "S002-WAT-01",
+            "S002-FOD-01"
+          ],
+          "batch_id": "PF001-003"
+        },
+        {
+          "service_id": "S002",
+          "model": "C",
+          "counts": [
+            0,
+            3,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 56.0,
+          "volume_m3": 0.144,
+          "horizontal_out_kwh": 3.330889503834752,
+          "horizontal_return_kwh": 2.28047194281658,
+          "climb_out_kwh": 0.08633752942180115,
+          "climb_return_kwh": 0.023657227872811954,
+          "energy_kwh": 5.721356203945945,
+          "flight_time_s": 1231.8421660245544,
+          "work_time_s": 2041.8421660245544,
+          "return_soc_percent": 28.48304745067569,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S002-WAT-02",
+            "S002-WAT-03",
+            "S002-WAT-04",
+            "S002-FOD-02",
+            "S002-HYG-01"
+          ],
+          "batch_id": "PF001-004"
+        },
+        {
+          "service_id": "S003",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.5396566308188897,
+          "horizontal_return_kwh": 1.0376895668237054,
+          "climb_out_kwh": 0.14781622731660207,
+          "climb_return_kwh": 0.05491560927341014,
+          "energy_kwh": 2.7800780342326075,
+          "flight_time_s": 1450.6096650380623,
+          "work_time_s": 2080.6096650380623,
+          "return_soc_percent": 30.49804914418481,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S003-MED-01",
+            "S003-WAT-01",
+            "S003-FOD-01"
+          ],
+          "batch_id": "PF001-005"
+        },
+        {
+          "service_id": "S003",
+          "model": "C",
+          "counts": [
+            0,
+            3,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 56.0,
+          "volume_m3": 0.144,
+          "horizontal_out_kwh": 3.264507133246551,
+          "horizontal_return_kwh": 2.235023682389519,
+          "climb_out_kwh": 0.2067784779906689,
+          "climb_return_kwh": 0.059055401357097984,
+          "energy_kwh": 5.7653646949838375,
+          "flight_time_s": 1560.1777110992603,
+          "work_time_s": 2370.1777110992603,
+          "return_soc_percent": 27.93294131270203,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S003-WAT-02",
+            "S003-WAT-03",
+            "S003-WAT-04",
+            "S003-FOD-02",
+            "S003-HYG-01"
+          ],
+          "batch_id": "PF001-006"
+        },
+        {
+          "service_id": "S004",
+          "model": "C",
+          "counts": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "box_count": 6,
+          "mass_kg": 59.0,
+          "volume_m3": 0.156,
+          "horizontal_out_kwh": 3.6022318728088987,
+          "horizontal_return_kwh": 2.373748198857387,
+          "climb_out_kwh": 0.13193764958251988,
+          "climb_return_kwh": 0.044942407925776626,
+          "energy_kwh": 6.152860129174582,
+          "flight_time_s": 1425.0547187724458,
+          "work_time_s": 2301.054718772446,
+          "return_soc_percent": 23.089248385317727,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S004-MED-01",
+            "S004-WAT-01",
+            "S004-WAT-02",
+            "S004-WAT-03",
+            "S004-FOD-01",
+            "S004-HYG-01"
+          ],
+          "batch_id": "PF001-007"
+        },
+        {
+          "service_id": "S005",
+          "model": "C",
+          "counts": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "box_count": 6,
+          "mass_kg": 59.0,
+          "volume_m3": 0.156,
+          "horizontal_out_kwh": 2.4656781204611673,
+          "horizontal_return_kwh": 1.6247979597279143,
+          "climb_out_kwh": 0.09690814073348464,
+          "climb_return_kwh": 0.03475315252254769,
+          "energy_kwh": 4.222137373445114,
+          "flight_time_s": 1001.1887154914712,
+          "work_time_s": 1877.1887154914712,
+          "return_soc_percent": 47.223282831936075,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S005-MED-01",
+            "S005-WAT-01",
+            "S005-WAT-02",
+            "S005-WAT-03",
+            "S005-FOD-01",
+            "S005-HYG-01"
+          ],
+          "batch_id": "PF001-008"
+        },
+        {
+          "service_id": "S006",
+          "model": "C",
+          "counts": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "box_count": 6,
+          "mass_kg": 59.0,
+          "volume_m3": 0.156,
+          "horizontal_out_kwh": 1.4877382613150387,
+          "horizontal_return_kwh": 0.9803688776464122,
+          "climb_out_kwh": 0.11626283552567251,
+          "climb_return_kwh": 0.01356631595155864,
+          "energy_kwh": 2.5979362904386822,
+          "flight_time_s": 685.5526244866224,
+          "work_time_s": 1561.5526244866223,
+          "return_soc_percent": 67.52579636951648,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S006-MED-01",
+            "S006-WAT-01",
+            "S006-WAT-02",
+            "S006-WAT-03",
+            "S006-FOD-01",
+            "S006-HYG-01"
+          ],
+          "batch_id": "PF001-009"
+        },
+        {
+          "service_id": "S007",
+          "model": "C",
+          "counts": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 45.0,
+          "volume_m3": 0.129,
+          "horizontal_out_kwh": 1.805424024851908,
+          "horizontal_return_kwh": 1.3952976538218471,
+          "climb_out_kwh": 0.16704972914253036,
+          "climb_return_kwh": 0.04323240062703398,
+          "energy_kwh": 3.4110038084433194,
+          "flight_time_s": 1097.600698410691,
+          "work_time_s": 1907.600698410691,
+          "return_soc_percent": 57.36245239445851,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S007-MED-01",
+            "S007-WAT-01",
+            "S007-WAT-02",
+            "S007-FOD-01",
+            "S007-HYG-01"
+          ],
+          "batch_id": "PF001-010"
+        },
+        {
+          "service_id": "S008",
+          "model": "C",
+          "counts": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 45.0,
+          "volume_m3": 0.129,
+          "horizontal_out_kwh": 3.2165665239344476,
+          "horizontal_return_kwh": 2.4858801380887616,
+          "climb_out_kwh": 0.10659644023973264,
+          "climb_return_kwh": 0.02697756570341679,
+          "energy_kwh": 5.836020667966359,
+          "flight_time_s": 1389.7115246008332,
+          "work_time_s": 2199.7115246008334,
+          "return_soc_percent": 27.04974165042051,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S008-MED-01",
+            "S008-WAT-01",
+            "S008-WAT-02",
+            "S008-FOD-01",
+            "S008-HYG-01"
+          ],
+          "batch_id": "PF001-011"
+        },
+        {
+          "service_id": "S009",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.2093085809177107,
+          "horizontal_return_kwh": 0.8150433495170013,
+          "climb_out_kwh": 0.056364031539291815,
+          "climb_return_kwh": 0.015549439763331119,
+          "energy_kwh": 2.0962654017373348,
+          "flight_time_s": 928.4628643343575,
+          "work_time_s": 1558.4628643343576,
+          "return_soc_percent": 47.59336495656663,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S009-MED-01",
+            "S009-WAT-01",
+            "S009-FOD-01"
+          ],
+          "batch_id": "PF001-012"
+        },
+        {
+          "service_id": "S010",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.014170059744936,
+          "horizontal_return_kwh": 0.6835249294659695,
+          "climb_out_kwh": 0.10485506344716813,
+          "climb_return_kwh": 0.02066651157334056,
+          "energy_kwh": 1.8232165642314142,
+          "flight_time_s": 925.4035197802174,
+          "work_time_s": 1555.4035197802173,
+          "return_soc_percent": 54.41958589421465,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S010-MED-01",
+            "S010-WAT-01",
+            "S010-FOD-01"
+          ],
+          "batch_id": "PF001-013"
+        },
+        {
+          "service_id": "S011",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 0.5952123690500213,
+          "horizontal_return_kwh": 0.40115805891026746,
+          "climb_out_kwh": 0.05709028310103947,
+          "climb_return_kwh": 0.020475975333775414,
+          "energy_kwh": 1.0739366863951034,
+          "flight_time_s": 558.4247628605204,
+          "work_time_s": 1188.4247628605203,
+          "return_soc_percent": 73.15158284012242,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S011-MED-01",
+            "S011-WAT-01",
+            "S011-FOD-01"
+          ],
+          "batch_id": "PF001-014"
+        },
+        {
+          "service_id": "S012",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.5666422136743985,
+          "horizontal_return_kwh": 1.0558771660736266,
+          "climb_out_kwh": 0.09724961792957518,
+          "climb_return_kwh": 0.032830956612332075,
+          "energy_kwh": 2.7525999542899324,
+          "flight_time_s": 1292.826814149187,
+          "work_time_s": 1922.826814149187,
+          "return_soc_percent": 31.185001142751688,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S012-MED-01",
+            "S012-WAT-01",
+            "S012-FOD-01"
+          ],
+          "batch_id": "PF001-015"
+        },
+        {
+          "service_id": "S013",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.0279184247698354,
+          "horizontal_return_kwh": 0.6927909792212544,
+          "climb_out_kwh": 0.09244191759327783,
+          "climb_return_kwh": 0.011676869496379668,
+          "energy_kwh": 1.8248281910807471,
+          "flight_time_s": 880.511588744525,
+          "work_time_s": 1510.511588744525,
+          "return_soc_percent": 54.37929522298133,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S013-MED-01",
+            "S013-WAT-01",
+            "S013-FOD-01"
+          ],
+          "batch_id": "PF001-016"
+        },
+        {
+          "service_id": "S014",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.148736752292894,
+          "horizontal_return_kwh": 0.7742194714202496,
+          "climb_out_kwh": 0.1580802654354943,
+          "climb_return_kwh": 0.059254488993150216,
+          "energy_kwh": 2.1402909781417883,
+          "flight_time_s": 1239.7476752786913,
+          "work_time_s": 1869.7476752786913,
+          "return_soc_percent": 46.49272554645529,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S014-MED-01",
+            "S014-WAT-01",
+            "S014-FOD-01"
+          ],
+          "batch_id": "PF001-017"
+        },
+        {
+          "service_id": "S015",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.2738428939773572,
+          "horizontal_return_kwh": 0.8585378417457736,
+          "climb_out_kwh": 0.15121965148211586,
+          "climb_return_kwh": 0.023928118547268857,
+          "energy_kwh": 2.307528505752516,
+          "flight_time_s": 1198.3275601736595,
+          "work_time_s": 1828.3275601736595,
+          "return_soc_percent": 42.311787356187104,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S015-MED-01",
+            "S015-WAT-01",
+            "S015-FOD-01"
+          ],
+          "batch_id": "PF001-018"
+        }
+      ],
+      "matches_previous_baseline": true,
+      "normalized_objectives": {
+        "flight_count": 1.0,
+        "energy_kwh": 1.0016495771977927,
+        "work_time_s": 1.0
+      }
+    },
+    {
+      "plan_id": "PF002",
+      "flight_count": 19,
+      "energy_kwh": 59.03487773780201,
+      "work_time_s": 34440.48875202747,
+      "flight_time_s": 20562.488752027475,
+      "box_count": 80,
+      "mass_kg": 758.0,
+      "volume_m3": 2.011,
+      "model_counts": {
+        "C": 8,
+        "B": 11
+      },
+      "minimum_soc_percent": 23.089248385317727,
+      "batches": [
+        {
+          "service_id": "S001",
+          "model": "C",
+          "counts": [
+            0,
+            3,
+            3,
+            2
+          ],
+          "box_count": 8,
+          "mass_kg": 78.0,
+          "volume_m3": 0.235,
+          "horizontal_out_kwh": 1.9511870756376157,
+          "horizontal_return_kwh": 0.9396995715430697,
+          "climb_out_kwh": 0.08133709148743111,
+          "climb_return_kwh": 0.023552066236553017,
+          "energy_kwh": 2.9957758049046697,
+          "flight_time_s": 618.1750458620229,
+          "work_time_s": 1626.175045862023,
+          "return_soc_percent": 62.552802438691636,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S001-WAT-01",
+            "S001-WAT-02",
+            "S001-WAT-03",
+            "S001-FOD-01",
+            "S001-FOD-02",
+            "S001-FOD-03",
+            "S001-HYG-01",
+            "S001-HYG-02"
+          ],
+          "batch_id": "PF002-001"
+        },
+        {
+          "service_id": "S001",
+          "model": "C",
+          "counts": [
+            2,
+            5,
+            0,
+            0
+          ],
+          "box_count": 7,
+          "mass_kg": 76.0,
+          "volume_m3": 0.159,
+          "horizontal_out_kwh": 1.874099259375722,
+          "horizontal_return_kwh": 0.9396995715430697,
+          "climb_out_kwh": 0.08023719843148208,
+          "climb_return_kwh": 0.023552066236553017,
+          "energy_kwh": 2.917588095586827,
+          "flight_time_s": 618.1750458620229,
+          "work_time_s": 1560.175045862023,
+          "return_soc_percent": 63.53014880516466,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S001-MED-01",
+            "S001-MED-02",
+            "S001-WAT-04",
+            "S001-WAT-05",
+            "S001-WAT-06",
+            "S001-WAT-07",
+            "S001-WAT-08"
+          ],
+          "batch_id": "PF002-002"
+        },
+        {
+          "service_id": "S002",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.5709648966225414,
+          "horizontal_return_kwh": 1.0587905448791264,
+          "climb_out_kwh": 0.061718646925830845,
+          "climb_return_kwh": 0.02199885281448894,
+          "energy_kwh": 2.7134729412419873,
+          "flight_time_s": 1186.7240813077576,
+          "work_time_s": 1816.7240813077576,
+          "return_soc_percent": 32.16317646895032,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S002-MED-01",
+            "S002-WAT-01",
+            "S002-FOD-01"
+          ],
+          "batch_id": "PF002-003"
+        },
+        {
+          "service_id": "S002",
+          "model": "C",
+          "counts": [
+            0,
+            3,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 56.0,
+          "volume_m3": 0.144,
+          "horizontal_out_kwh": 3.330889503834752,
+          "horizontal_return_kwh": 2.28047194281658,
+          "climb_out_kwh": 0.08633752942180115,
+          "climb_return_kwh": 0.023657227872811954,
+          "energy_kwh": 5.721356203945945,
+          "flight_time_s": 1231.8421660245544,
+          "work_time_s": 2041.8421660245544,
+          "return_soc_percent": 28.48304745067569,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S002-WAT-02",
+            "S002-WAT-03",
+            "S002-WAT-04",
+            "S002-FOD-02",
+            "S002-HYG-01"
+          ],
+          "batch_id": "PF002-004"
+        },
+        {
+          "service_id": "S003",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.5396566308188897,
+          "horizontal_return_kwh": 1.0376895668237054,
+          "climb_out_kwh": 0.14781622731660207,
+          "climb_return_kwh": 0.05491560927341014,
+          "energy_kwh": 2.7800780342326075,
+          "flight_time_s": 1450.6096650380623,
+          "work_time_s": 2080.6096650380623,
+          "return_soc_percent": 30.49804914418481,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S003-MED-01",
+            "S003-WAT-01",
+            "S003-FOD-01"
+          ],
+          "batch_id": "PF002-005"
+        },
+        {
+          "service_id": "S003",
+          "model": "C",
+          "counts": [
+            0,
+            3,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 56.0,
+          "volume_m3": 0.144,
+          "horizontal_out_kwh": 3.264507133246551,
+          "horizontal_return_kwh": 2.235023682389519,
+          "climb_out_kwh": 0.2067784779906689,
+          "climb_return_kwh": 0.059055401357097984,
+          "energy_kwh": 5.7653646949838375,
+          "flight_time_s": 1560.1777110992603,
+          "work_time_s": 2370.1777110992603,
+          "return_soc_percent": 27.93294131270203,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S003-WAT-02",
+            "S003-WAT-03",
+            "S003-WAT-04",
+            "S003-FOD-02",
+            "S003-HYG-01"
+          ],
+          "batch_id": "PF002-006"
+        },
+        {
+          "service_id": "S004",
+          "model": "C",
+          "counts": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "box_count": 6,
+          "mass_kg": 59.0,
+          "volume_m3": 0.156,
+          "horizontal_out_kwh": 3.6022318728088987,
+          "horizontal_return_kwh": 2.373748198857387,
+          "climb_out_kwh": 0.13193764958251988,
+          "climb_return_kwh": 0.044942407925776626,
+          "energy_kwh": 6.152860129174582,
+          "flight_time_s": 1425.0547187724458,
+          "work_time_s": 2301.054718772446,
+          "return_soc_percent": 23.089248385317727,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S004-MED-01",
+            "S004-WAT-01",
+            "S004-WAT-02",
+            "S004-WAT-03",
+            "S004-FOD-01",
+            "S004-HYG-01"
+          ],
+          "batch_id": "PF002-007"
+        },
+        {
+          "service_id": "S005",
+          "model": "C",
+          "counts": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "box_count": 6,
+          "mass_kg": 59.0,
+          "volume_m3": 0.156,
+          "horizontal_out_kwh": 2.4656781204611673,
+          "horizontal_return_kwh": 1.6247979597279143,
+          "climb_out_kwh": 0.09690814073348464,
+          "climb_return_kwh": 0.03475315252254769,
+          "energy_kwh": 4.222137373445114,
+          "flight_time_s": 1001.1887154914712,
+          "work_time_s": 1877.1887154914712,
+          "return_soc_percent": 47.223282831936075,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S005-MED-01",
+            "S005-WAT-01",
+            "S005-WAT-02",
+            "S005-WAT-03",
+            "S005-FOD-01",
+            "S005-HYG-01"
+          ],
+          "batch_id": "PF002-008"
+        },
+        {
+          "service_id": "S006",
+          "model": "C",
+          "counts": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "box_count": 6,
+          "mass_kg": 59.0,
+          "volume_m3": 0.156,
+          "horizontal_out_kwh": 1.4877382613150387,
+          "horizontal_return_kwh": 0.9803688776464122,
+          "climb_out_kwh": 0.11626283552567251,
+          "climb_return_kwh": 0.01356631595155864,
+          "energy_kwh": 2.5979362904386822,
+          "flight_time_s": 685.5526244866224,
+          "work_time_s": 1561.5526244866223,
+          "return_soc_percent": 67.52579636951648,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S006-MED-01",
+            "S006-WAT-01",
+            "S006-WAT-02",
+            "S006-WAT-03",
+            "S006-FOD-01",
+            "S006-HYG-01"
+          ],
+          "batch_id": "PF002-009"
+        },
+        {
+          "service_id": "S007",
+          "model": "C",
+          "counts": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 45.0,
+          "volume_m3": 0.129,
+          "horizontal_out_kwh": 1.805424024851908,
+          "horizontal_return_kwh": 1.3952976538218471,
+          "climb_out_kwh": 0.16704972914253036,
+          "climb_return_kwh": 0.04323240062703398,
+          "energy_kwh": 3.4110038084433194,
+          "flight_time_s": 1097.600698410691,
+          "work_time_s": 1907.600698410691,
+          "return_soc_percent": 57.36245239445851,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S007-MED-01",
+            "S007-WAT-01",
+            "S007-WAT-02",
+            "S007-FOD-01",
+            "S007-HYG-01"
+          ],
+          "batch_id": "PF002-010"
+        },
+        {
+          "service_id": "S008",
+          "model": "B",
+          "counts": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "box_count": 2,
+          "mass_kg": 20.0,
+          "volume_m3": 0.062,
+          "horizontal_out_kwh": 1.5053288904661692,
+          "horizontal_return_kwh": 1.1541586355412108,
+          "climb_out_kwh": 0.07885724473783529,
+          "climb_return_kwh": 0.025086434488155812,
+          "energy_kwh": 2.7634312052333714,
+          "flight_time_s": 1331.841747175703,
+          "work_time_s": 1901.841747175703,
+          "return_soc_percent": 30.914219869165716,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S008-WAT-01",
+            "S008-HYG-01"
+          ],
+          "batch_id": "PF002-011"
+        },
+        {
+          "service_id": "S008",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.7124658983198644,
+          "horizontal_return_kwh": 1.1541586355412108,
+          "climb_out_kwh": 0.08349590619300207,
+          "climb_return_kwh": 0.025086434488155812,
+          "energy_kwh": 2.975206874542233,
+          "flight_time_s": 1331.841747175703,
+          "work_time_s": 1961.841747175703,
+          "return_soc_percent": 25.619828136444177,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S008-MED-01",
+            "S008-WAT-02",
+            "S008-FOD-01"
+          ],
+          "batch_id": "PF002-012"
+        },
+        {
+          "service_id": "S009",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.2093085809177107,
+          "horizontal_return_kwh": 0.8150433495170013,
+          "climb_out_kwh": 0.056364031539291815,
+          "climb_return_kwh": 0.015549439763331119,
+          "energy_kwh": 2.0962654017373348,
+          "flight_time_s": 928.4628643343575,
+          "work_time_s": 1558.4628643343576,
+          "return_soc_percent": 47.59336495656663,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S009-MED-01",
+            "S009-WAT-01",
+            "S009-FOD-01"
+          ],
+          "batch_id": "PF002-013"
+        },
+        {
+          "service_id": "S010",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.014170059744936,
+          "horizontal_return_kwh": 0.6835249294659695,
+          "climb_out_kwh": 0.10485506344716813,
+          "climb_return_kwh": 0.02066651157334056,
+          "energy_kwh": 1.8232165642314142,
+          "flight_time_s": 925.4035197802174,
+          "work_time_s": 1555.4035197802173,
+          "return_soc_percent": 54.41958589421465,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S010-MED-01",
+            "S010-WAT-01",
+            "S010-FOD-01"
+          ],
+          "batch_id": "PF002-014"
+        },
+        {
+          "service_id": "S011",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 0.5952123690500213,
+          "horizontal_return_kwh": 0.40115805891026746,
+          "climb_out_kwh": 0.05709028310103947,
+          "climb_return_kwh": 0.020475975333775414,
+          "energy_kwh": 1.0739366863951034,
+          "flight_time_s": 558.4247628605204,
+          "work_time_s": 1188.4247628605203,
+          "return_soc_percent": 73.15158284012242,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S011-MED-01",
+            "S011-WAT-01",
+            "S011-FOD-01"
+          ],
+          "batch_id": "PF002-015"
+        },
+        {
+          "service_id": "S012",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.5666422136743985,
+          "horizontal_return_kwh": 1.0558771660736266,
+          "climb_out_kwh": 0.09724961792957518,
+          "climb_return_kwh": 0.032830956612332075,
+          "energy_kwh": 2.7525999542899324,
+          "flight_time_s": 1292.826814149187,
+          "work_time_s": 1922.826814149187,
+          "return_soc_percent": 31.185001142751688,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S012-MED-01",
+            "S012-WAT-01",
+            "S012-FOD-01"
+          ],
+          "batch_id": "PF002-016"
+        },
+        {
+          "service_id": "S013",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.0279184247698354,
+          "horizontal_return_kwh": 0.6927909792212544,
+          "climb_out_kwh": 0.09244191759327783,
+          "climb_return_kwh": 0.011676869496379668,
+          "energy_kwh": 1.8248281910807471,
+          "flight_time_s": 880.511588744525,
+          "work_time_s": 1510.511588744525,
+          "return_soc_percent": 54.37929522298133,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S013-MED-01",
+            "S013-WAT-01",
+            "S013-FOD-01"
+          ],
+          "batch_id": "PF002-017"
+        },
+        {
+          "service_id": "S014",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.148736752292894,
+          "horizontal_return_kwh": 0.7742194714202496,
+          "climb_out_kwh": 0.1580802654354943,
+          "climb_return_kwh": 0.059254488993150216,
+          "energy_kwh": 2.1402909781417883,
+          "flight_time_s": 1239.7476752786913,
+          "work_time_s": 1869.7476752786913,
+          "return_soc_percent": 46.49272554645529,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S014-MED-01",
+            "S014-WAT-01",
+            "S014-FOD-01"
+          ],
+          "batch_id": "PF002-018"
+        },
+        {
+          "service_id": "S015",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.2738428939773572,
+          "horizontal_return_kwh": 0.8585378417457736,
+          "climb_out_kwh": 0.15121965148211586,
+          "climb_return_kwh": 0.023928118547268857,
+          "energy_kwh": 2.307528505752516,
+          "flight_time_s": 1198.3275601736595,
+          "work_time_s": 1828.3275601736595,
+          "return_soc_percent": 42.311787356187104,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S015-MED-01",
+            "S015-WAT-01",
+            "S015-FOD-01"
+          ],
+          "batch_id": "PF002-019"
+        }
+      ],
+      "matches_previous_baseline": false,
+      "normalized_objectives": {
+        "flight_count": 1.0555555555555556,
+        "energy_kwh": 1.0,
+        "work_time_s": 1.050767199602196
+      }
+    }
+  ],
+  "representatives": [
+    {
+      "plan_id": "PF001",
+      "flight_count": 18,
+      "energy_kwh": 59.13226032599277,
+      "work_time_s": 32776.5167822769,
+      "flight_time_s": 19288.516782276904,
+      "box_count": 80,
+      "mass_kg": 758.0,
+      "volume_m3": 2.011,
+      "model_counts": {
+        "C": 9,
+        "B": 9
+      },
+      "minimum_soc_percent": 23.089248385317727,
+      "batches": [
+        {
+          "service_id": "S001",
+          "model": "C",
+          "counts": [
+            0,
+            3,
+            3,
+            2
+          ],
+          "box_count": 8,
+          "mass_kg": 78.0,
+          "volume_m3": 0.235,
+          "horizontal_out_kwh": 1.9511870756376157,
+          "horizontal_return_kwh": 0.9396995715430697,
+          "climb_out_kwh": 0.08133709148743111,
+          "climb_return_kwh": 0.023552066236553017,
+          "energy_kwh": 2.9957758049046697,
+          "flight_time_s": 618.1750458620229,
+          "work_time_s": 1626.175045862023,
+          "return_soc_percent": 62.552802438691636,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S001-WAT-01",
+            "S001-WAT-02",
+            "S001-WAT-03",
+            "S001-FOD-01",
+            "S001-FOD-02",
+            "S001-FOD-03",
+            "S001-HYG-01",
+            "S001-HYG-02"
+          ],
+          "batch_id": "PF001-001"
+        },
+        {
+          "service_id": "S001",
+          "model": "C",
+          "counts": [
+            2,
+            5,
+            0,
+            0
+          ],
+          "box_count": 7,
+          "mass_kg": 76.0,
+          "volume_m3": 0.159,
+          "horizontal_out_kwh": 1.874099259375722,
+          "horizontal_return_kwh": 0.9396995715430697,
+          "climb_out_kwh": 0.08023719843148208,
+          "climb_return_kwh": 0.023552066236553017,
+          "energy_kwh": 2.917588095586827,
+          "flight_time_s": 618.1750458620229,
+          "work_time_s": 1560.175045862023,
+          "return_soc_percent": 63.53014880516466,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S001-MED-01",
+            "S001-MED-02",
+            "S001-WAT-04",
+            "S001-WAT-05",
+            "S001-WAT-06",
+            "S001-WAT-07",
+            "S001-WAT-08"
+          ],
+          "batch_id": "PF001-002"
+        },
+        {
+          "service_id": "S002",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.5709648966225414,
+          "horizontal_return_kwh": 1.0587905448791264,
+          "climb_out_kwh": 0.061718646925830845,
+          "climb_return_kwh": 0.02199885281448894,
+          "energy_kwh": 2.7134729412419873,
+          "flight_time_s": 1186.7240813077576,
+          "work_time_s": 1816.7240813077576,
+          "return_soc_percent": 32.16317646895032,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S002-MED-01",
+            "S002-WAT-01",
+            "S002-FOD-01"
+          ],
+          "batch_id": "PF001-003"
+        },
+        {
+          "service_id": "S002",
+          "model": "C",
+          "counts": [
+            0,
+            3,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 56.0,
+          "volume_m3": 0.144,
+          "horizontal_out_kwh": 3.330889503834752,
+          "horizontal_return_kwh": 2.28047194281658,
+          "climb_out_kwh": 0.08633752942180115,
+          "climb_return_kwh": 0.023657227872811954,
+          "energy_kwh": 5.721356203945945,
+          "flight_time_s": 1231.8421660245544,
+          "work_time_s": 2041.8421660245544,
+          "return_soc_percent": 28.48304745067569,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S002-WAT-02",
+            "S002-WAT-03",
+            "S002-WAT-04",
+            "S002-FOD-02",
+            "S002-HYG-01"
+          ],
+          "batch_id": "PF001-004"
+        },
+        {
+          "service_id": "S003",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.5396566308188897,
+          "horizontal_return_kwh": 1.0376895668237054,
+          "climb_out_kwh": 0.14781622731660207,
+          "climb_return_kwh": 0.05491560927341014,
+          "energy_kwh": 2.7800780342326075,
+          "flight_time_s": 1450.6096650380623,
+          "work_time_s": 2080.6096650380623,
+          "return_soc_percent": 30.49804914418481,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S003-MED-01",
+            "S003-WAT-01",
+            "S003-FOD-01"
+          ],
+          "batch_id": "PF001-005"
+        },
+        {
+          "service_id": "S003",
+          "model": "C",
+          "counts": [
+            0,
+            3,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 56.0,
+          "volume_m3": 0.144,
+          "horizontal_out_kwh": 3.264507133246551,
+          "horizontal_return_kwh": 2.235023682389519,
+          "climb_out_kwh": 0.2067784779906689,
+          "climb_return_kwh": 0.059055401357097984,
+          "energy_kwh": 5.7653646949838375,
+          "flight_time_s": 1560.1777110992603,
+          "work_time_s": 2370.1777110992603,
+          "return_soc_percent": 27.93294131270203,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S003-WAT-02",
+            "S003-WAT-03",
+            "S003-WAT-04",
+            "S003-FOD-02",
+            "S003-HYG-01"
+          ],
+          "batch_id": "PF001-006"
+        },
+        {
+          "service_id": "S004",
+          "model": "C",
+          "counts": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "box_count": 6,
+          "mass_kg": 59.0,
+          "volume_m3": 0.156,
+          "horizontal_out_kwh": 3.6022318728088987,
+          "horizontal_return_kwh": 2.373748198857387,
+          "climb_out_kwh": 0.13193764958251988,
+          "climb_return_kwh": 0.044942407925776626,
+          "energy_kwh": 6.152860129174582,
+          "flight_time_s": 1425.0547187724458,
+          "work_time_s": 2301.054718772446,
+          "return_soc_percent": 23.089248385317727,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S004-MED-01",
+            "S004-WAT-01",
+            "S004-WAT-02",
+            "S004-WAT-03",
+            "S004-FOD-01",
+            "S004-HYG-01"
+          ],
+          "batch_id": "PF001-007"
+        },
+        {
+          "service_id": "S005",
+          "model": "C",
+          "counts": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "box_count": 6,
+          "mass_kg": 59.0,
+          "volume_m3": 0.156,
+          "horizontal_out_kwh": 2.4656781204611673,
+          "horizontal_return_kwh": 1.6247979597279143,
+          "climb_out_kwh": 0.09690814073348464,
+          "climb_return_kwh": 0.03475315252254769,
+          "energy_kwh": 4.222137373445114,
+          "flight_time_s": 1001.1887154914712,
+          "work_time_s": 1877.1887154914712,
+          "return_soc_percent": 47.223282831936075,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S005-MED-01",
+            "S005-WAT-01",
+            "S005-WAT-02",
+            "S005-WAT-03",
+            "S005-FOD-01",
+            "S005-HYG-01"
+          ],
+          "batch_id": "PF001-008"
+        },
+        {
+          "service_id": "S006",
+          "model": "C",
+          "counts": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "box_count": 6,
+          "mass_kg": 59.0,
+          "volume_m3": 0.156,
+          "horizontal_out_kwh": 1.4877382613150387,
+          "horizontal_return_kwh": 0.9803688776464122,
+          "climb_out_kwh": 0.11626283552567251,
+          "climb_return_kwh": 0.01356631595155864,
+          "energy_kwh": 2.5979362904386822,
+          "flight_time_s": 685.5526244866224,
+          "work_time_s": 1561.5526244866223,
+          "return_soc_percent": 67.52579636951648,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S006-MED-01",
+            "S006-WAT-01",
+            "S006-WAT-02",
+            "S006-WAT-03",
+            "S006-FOD-01",
+            "S006-HYG-01"
+          ],
+          "batch_id": "PF001-009"
+        },
+        {
+          "service_id": "S007",
+          "model": "C",
+          "counts": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 45.0,
+          "volume_m3": 0.129,
+          "horizontal_out_kwh": 1.805424024851908,
+          "horizontal_return_kwh": 1.3952976538218471,
+          "climb_out_kwh": 0.16704972914253036,
+          "climb_return_kwh": 0.04323240062703398,
+          "energy_kwh": 3.4110038084433194,
+          "flight_time_s": 1097.600698410691,
+          "work_time_s": 1907.600698410691,
+          "return_soc_percent": 57.36245239445851,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S007-MED-01",
+            "S007-WAT-01",
+            "S007-WAT-02",
+            "S007-FOD-01",
+            "S007-HYG-01"
+          ],
+          "batch_id": "PF001-010"
+        },
+        {
+          "service_id": "S008",
+          "model": "C",
+          "counts": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 45.0,
+          "volume_m3": 0.129,
+          "horizontal_out_kwh": 3.2165665239344476,
+          "horizontal_return_kwh": 2.4858801380887616,
+          "climb_out_kwh": 0.10659644023973264,
+          "climb_return_kwh": 0.02697756570341679,
+          "energy_kwh": 5.836020667966359,
+          "flight_time_s": 1389.7115246008332,
+          "work_time_s": 2199.7115246008334,
+          "return_soc_percent": 27.04974165042051,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S008-MED-01",
+            "S008-WAT-01",
+            "S008-WAT-02",
+            "S008-FOD-01",
+            "S008-HYG-01"
+          ],
+          "batch_id": "PF001-011"
+        },
+        {
+          "service_id": "S009",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.2093085809177107,
+          "horizontal_return_kwh": 0.8150433495170013,
+          "climb_out_kwh": 0.056364031539291815,
+          "climb_return_kwh": 0.015549439763331119,
+          "energy_kwh": 2.0962654017373348,
+          "flight_time_s": 928.4628643343575,
+          "work_time_s": 1558.4628643343576,
+          "return_soc_percent": 47.59336495656663,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S009-MED-01",
+            "S009-WAT-01",
+            "S009-FOD-01"
+          ],
+          "batch_id": "PF001-012"
+        },
+        {
+          "service_id": "S010",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.014170059744936,
+          "horizontal_return_kwh": 0.6835249294659695,
+          "climb_out_kwh": 0.10485506344716813,
+          "climb_return_kwh": 0.02066651157334056,
+          "energy_kwh": 1.8232165642314142,
+          "flight_time_s": 925.4035197802174,
+          "work_time_s": 1555.4035197802173,
+          "return_soc_percent": 54.41958589421465,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S010-MED-01",
+            "S010-WAT-01",
+            "S010-FOD-01"
+          ],
+          "batch_id": "PF001-013"
+        },
+        {
+          "service_id": "S011",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 0.5952123690500213,
+          "horizontal_return_kwh": 0.40115805891026746,
+          "climb_out_kwh": 0.05709028310103947,
+          "climb_return_kwh": 0.020475975333775414,
+          "energy_kwh": 1.0739366863951034,
+          "flight_time_s": 558.4247628605204,
+          "work_time_s": 1188.4247628605203,
+          "return_soc_percent": 73.15158284012242,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S011-MED-01",
+            "S011-WAT-01",
+            "S011-FOD-01"
+          ],
+          "batch_id": "PF001-014"
+        },
+        {
+          "service_id": "S012",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.5666422136743985,
+          "horizontal_return_kwh": 1.0558771660736266,
+          "climb_out_kwh": 0.09724961792957518,
+          "climb_return_kwh": 0.032830956612332075,
+          "energy_kwh": 2.7525999542899324,
+          "flight_time_s": 1292.826814149187,
+          "work_time_s": 1922.826814149187,
+          "return_soc_percent": 31.185001142751688,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S012-MED-01",
+            "S012-WAT-01",
+            "S012-FOD-01"
+          ],
+          "batch_id": "PF001-015"
+        },
+        {
+          "service_id": "S013",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.0279184247698354,
+          "horizontal_return_kwh": 0.6927909792212544,
+          "climb_out_kwh": 0.09244191759327783,
+          "climb_return_kwh": 0.011676869496379668,
+          "energy_kwh": 1.8248281910807471,
+          "flight_time_s": 880.511588744525,
+          "work_time_s": 1510.511588744525,
+          "return_soc_percent": 54.37929522298133,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S013-MED-01",
+            "S013-WAT-01",
+            "S013-FOD-01"
+          ],
+          "batch_id": "PF001-016"
+        },
+        {
+          "service_id": "S014",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.148736752292894,
+          "horizontal_return_kwh": 0.7742194714202496,
+          "climb_out_kwh": 0.1580802654354943,
+          "climb_return_kwh": 0.059254488993150216,
+          "energy_kwh": 2.1402909781417883,
+          "flight_time_s": 1239.7476752786913,
+          "work_time_s": 1869.7476752786913,
+          "return_soc_percent": 46.49272554645529,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S014-MED-01",
+            "S014-WAT-01",
+            "S014-FOD-01"
+          ],
+          "batch_id": "PF001-017"
+        },
+        {
+          "service_id": "S015",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.2738428939773572,
+          "horizontal_return_kwh": 0.8585378417457736,
+          "climb_out_kwh": 0.15121965148211586,
+          "climb_return_kwh": 0.023928118547268857,
+          "energy_kwh": 2.307528505752516,
+          "flight_time_s": 1198.3275601736595,
+          "work_time_s": 1828.3275601736595,
+          "return_soc_percent": 42.311787356187104,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S015-MED-01",
+            "S015-WAT-01",
+            "S015-FOD-01"
+          ],
+          "batch_id": "PF001-018"
+        }
+      ],
+      "matches_previous_baseline": true,
+      "normalized_objectives": {
+        "flight_count": 1.0,
+        "energy_kwh": 1.0016495771977927,
+        "work_time_s": 1.0
+      },
+      "label": "推荐方案：架次与时间优先",
+      "priority": "先最少架次，再最低能耗，再最短累计作业时间"
+    },
+    {
+      "plan_id": "PF002",
+      "flight_count": 19,
+      "energy_kwh": 59.03487773780201,
+      "work_time_s": 34440.48875202747,
+      "flight_time_s": 20562.488752027475,
+      "box_count": 80,
+      "mass_kg": 758.0,
+      "volume_m3": 2.011,
+      "model_counts": {
+        "C": 8,
+        "B": 11
+      },
+      "minimum_soc_percent": 23.089248385317727,
+      "batches": [
+        {
+          "service_id": "S001",
+          "model": "C",
+          "counts": [
+            0,
+            3,
+            3,
+            2
+          ],
+          "box_count": 8,
+          "mass_kg": 78.0,
+          "volume_m3": 0.235,
+          "horizontal_out_kwh": 1.9511870756376157,
+          "horizontal_return_kwh": 0.9396995715430697,
+          "climb_out_kwh": 0.08133709148743111,
+          "climb_return_kwh": 0.023552066236553017,
+          "energy_kwh": 2.9957758049046697,
+          "flight_time_s": 618.1750458620229,
+          "work_time_s": 1626.175045862023,
+          "return_soc_percent": 62.552802438691636,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S001-WAT-01",
+            "S001-WAT-02",
+            "S001-WAT-03",
+            "S001-FOD-01",
+            "S001-FOD-02",
+            "S001-FOD-03",
+            "S001-HYG-01",
+            "S001-HYG-02"
+          ],
+          "batch_id": "PF002-001"
+        },
+        {
+          "service_id": "S001",
+          "model": "C",
+          "counts": [
+            2,
+            5,
+            0,
+            0
+          ],
+          "box_count": 7,
+          "mass_kg": 76.0,
+          "volume_m3": 0.159,
+          "horizontal_out_kwh": 1.874099259375722,
+          "horizontal_return_kwh": 0.9396995715430697,
+          "climb_out_kwh": 0.08023719843148208,
+          "climb_return_kwh": 0.023552066236553017,
+          "energy_kwh": 2.917588095586827,
+          "flight_time_s": 618.1750458620229,
+          "work_time_s": 1560.175045862023,
+          "return_soc_percent": 63.53014880516466,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S001-MED-01",
+            "S001-MED-02",
+            "S001-WAT-04",
+            "S001-WAT-05",
+            "S001-WAT-06",
+            "S001-WAT-07",
+            "S001-WAT-08"
+          ],
+          "batch_id": "PF002-002"
+        },
+        {
+          "service_id": "S002",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.5709648966225414,
+          "horizontal_return_kwh": 1.0587905448791264,
+          "climb_out_kwh": 0.061718646925830845,
+          "climb_return_kwh": 0.02199885281448894,
+          "energy_kwh": 2.7134729412419873,
+          "flight_time_s": 1186.7240813077576,
+          "work_time_s": 1816.7240813077576,
+          "return_soc_percent": 32.16317646895032,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S002-MED-01",
+            "S002-WAT-01",
+            "S002-FOD-01"
+          ],
+          "batch_id": "PF002-003"
+        },
+        {
+          "service_id": "S002",
+          "model": "C",
+          "counts": [
+            0,
+            3,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 56.0,
+          "volume_m3": 0.144,
+          "horizontal_out_kwh": 3.330889503834752,
+          "horizontal_return_kwh": 2.28047194281658,
+          "climb_out_kwh": 0.08633752942180115,
+          "climb_return_kwh": 0.023657227872811954,
+          "energy_kwh": 5.721356203945945,
+          "flight_time_s": 1231.8421660245544,
+          "work_time_s": 2041.8421660245544,
+          "return_soc_percent": 28.48304745067569,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S002-WAT-02",
+            "S002-WAT-03",
+            "S002-WAT-04",
+            "S002-FOD-02",
+            "S002-HYG-01"
+          ],
+          "batch_id": "PF002-004"
+        },
+        {
+          "service_id": "S003",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.5396566308188897,
+          "horizontal_return_kwh": 1.0376895668237054,
+          "climb_out_kwh": 0.14781622731660207,
+          "climb_return_kwh": 0.05491560927341014,
+          "energy_kwh": 2.7800780342326075,
+          "flight_time_s": 1450.6096650380623,
+          "work_time_s": 2080.6096650380623,
+          "return_soc_percent": 30.49804914418481,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S003-MED-01",
+            "S003-WAT-01",
+            "S003-FOD-01"
+          ],
+          "batch_id": "PF002-005"
+        },
+        {
+          "service_id": "S003",
+          "model": "C",
+          "counts": [
+            0,
+            3,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 56.0,
+          "volume_m3": 0.144,
+          "horizontal_out_kwh": 3.264507133246551,
+          "horizontal_return_kwh": 2.235023682389519,
+          "climb_out_kwh": 0.2067784779906689,
+          "climb_return_kwh": 0.059055401357097984,
+          "energy_kwh": 5.7653646949838375,
+          "flight_time_s": 1560.1777110992603,
+          "work_time_s": 2370.1777110992603,
+          "return_soc_percent": 27.93294131270203,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S003-WAT-02",
+            "S003-WAT-03",
+            "S003-WAT-04",
+            "S003-FOD-02",
+            "S003-HYG-01"
+          ],
+          "batch_id": "PF002-006"
+        },
+        {
+          "service_id": "S004",
+          "model": "C",
+          "counts": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "box_count": 6,
+          "mass_kg": 59.0,
+          "volume_m3": 0.156,
+          "horizontal_out_kwh": 3.6022318728088987,
+          "horizontal_return_kwh": 2.373748198857387,
+          "climb_out_kwh": 0.13193764958251988,
+          "climb_return_kwh": 0.044942407925776626,
+          "energy_kwh": 6.152860129174582,
+          "flight_time_s": 1425.0547187724458,
+          "work_time_s": 2301.054718772446,
+          "return_soc_percent": 23.089248385317727,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S004-MED-01",
+            "S004-WAT-01",
+            "S004-WAT-02",
+            "S004-WAT-03",
+            "S004-FOD-01",
+            "S004-HYG-01"
+          ],
+          "batch_id": "PF002-007"
+        },
+        {
+          "service_id": "S005",
+          "model": "C",
+          "counts": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "box_count": 6,
+          "mass_kg": 59.0,
+          "volume_m3": 0.156,
+          "horizontal_out_kwh": 2.4656781204611673,
+          "horizontal_return_kwh": 1.6247979597279143,
+          "climb_out_kwh": 0.09690814073348464,
+          "climb_return_kwh": 0.03475315252254769,
+          "energy_kwh": 4.222137373445114,
+          "flight_time_s": 1001.1887154914712,
+          "work_time_s": 1877.1887154914712,
+          "return_soc_percent": 47.223282831936075,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S005-MED-01",
+            "S005-WAT-01",
+            "S005-WAT-02",
+            "S005-WAT-03",
+            "S005-FOD-01",
+            "S005-HYG-01"
+          ],
+          "batch_id": "PF002-008"
+        },
+        {
+          "service_id": "S006",
+          "model": "C",
+          "counts": [
+            1,
+            3,
+            1,
+            1
+          ],
+          "box_count": 6,
+          "mass_kg": 59.0,
+          "volume_m3": 0.156,
+          "horizontal_out_kwh": 1.4877382613150387,
+          "horizontal_return_kwh": 0.9803688776464122,
+          "climb_out_kwh": 0.11626283552567251,
+          "climb_return_kwh": 0.01356631595155864,
+          "energy_kwh": 2.5979362904386822,
+          "flight_time_s": 685.5526244866224,
+          "work_time_s": 1561.5526244866223,
+          "return_soc_percent": 67.52579636951648,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S006-MED-01",
+            "S006-WAT-01",
+            "S006-WAT-02",
+            "S006-WAT-03",
+            "S006-FOD-01",
+            "S006-HYG-01"
+          ],
+          "batch_id": "PF002-009"
+        },
+        {
+          "service_id": "S007",
+          "model": "C",
+          "counts": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 45.0,
+          "volume_m3": 0.129,
+          "horizontal_out_kwh": 1.805424024851908,
+          "horizontal_return_kwh": 1.3952976538218471,
+          "climb_out_kwh": 0.16704972914253036,
+          "climb_return_kwh": 0.04323240062703398,
+          "energy_kwh": 3.4110038084433194,
+          "flight_time_s": 1097.600698410691,
+          "work_time_s": 1907.600698410691,
+          "return_soc_percent": 57.36245239445851,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S007-MED-01",
+            "S007-WAT-01",
+            "S007-WAT-02",
+            "S007-FOD-01",
+            "S007-HYG-01"
+          ],
+          "batch_id": "PF002-010"
+        },
+        {
+          "service_id": "S008",
+          "model": "B",
+          "counts": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "box_count": 2,
+          "mass_kg": 20.0,
+          "volume_m3": 0.062,
+          "horizontal_out_kwh": 1.5053288904661692,
+          "horizontal_return_kwh": 1.1541586355412108,
+          "climb_out_kwh": 0.07885724473783529,
+          "climb_return_kwh": 0.025086434488155812,
+          "energy_kwh": 2.7634312052333714,
+          "flight_time_s": 1331.841747175703,
+          "work_time_s": 1901.841747175703,
+          "return_soc_percent": 30.914219869165716,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S008-WAT-01",
+            "S008-HYG-01"
+          ],
+          "batch_id": "PF002-011"
+        },
+        {
+          "service_id": "S008",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.7124658983198644,
+          "horizontal_return_kwh": 1.1541586355412108,
+          "climb_out_kwh": 0.08349590619300207,
+          "climb_return_kwh": 0.025086434488155812,
+          "energy_kwh": 2.975206874542233,
+          "flight_time_s": 1331.841747175703,
+          "work_time_s": 1961.841747175703,
+          "return_soc_percent": 25.619828136444177,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S008-MED-01",
+            "S008-WAT-02",
+            "S008-FOD-01"
+          ],
+          "batch_id": "PF002-012"
+        },
+        {
+          "service_id": "S009",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.2093085809177107,
+          "horizontal_return_kwh": 0.8150433495170013,
+          "climb_out_kwh": 0.056364031539291815,
+          "climb_return_kwh": 0.015549439763331119,
+          "energy_kwh": 2.0962654017373348,
+          "flight_time_s": 928.4628643343575,
+          "work_time_s": 1558.4628643343576,
+          "return_soc_percent": 47.59336495656663,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S009-MED-01",
+            "S009-WAT-01",
+            "S009-FOD-01"
+          ],
+          "batch_id": "PF002-013"
+        },
+        {
+          "service_id": "S010",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.014170059744936,
+          "horizontal_return_kwh": 0.6835249294659695,
+          "climb_out_kwh": 0.10485506344716813,
+          "climb_return_kwh": 0.02066651157334056,
+          "energy_kwh": 1.8232165642314142,
+          "flight_time_s": 925.4035197802174,
+          "work_time_s": 1555.4035197802173,
+          "return_soc_percent": 54.41958589421465,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S010-MED-01",
+            "S010-WAT-01",
+            "S010-FOD-01"
+          ],
+          "batch_id": "PF002-014"
+        },
+        {
+          "service_id": "S011",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 0.5952123690500213,
+          "horizontal_return_kwh": 0.40115805891026746,
+          "climb_out_kwh": 0.05709028310103947,
+          "climb_return_kwh": 0.020475975333775414,
+          "energy_kwh": 1.0739366863951034,
+          "flight_time_s": 558.4247628605204,
+          "work_time_s": 1188.4247628605203,
+          "return_soc_percent": 73.15158284012242,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S011-MED-01",
+            "S011-WAT-01",
+            "S011-FOD-01"
+          ],
+          "batch_id": "PF002-015"
+        },
+        {
+          "service_id": "S012",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.5666422136743985,
+          "horizontal_return_kwh": 1.0558771660736266,
+          "climb_out_kwh": 0.09724961792957518,
+          "climb_return_kwh": 0.032830956612332075,
+          "energy_kwh": 2.7525999542899324,
+          "flight_time_s": 1292.826814149187,
+          "work_time_s": 1922.826814149187,
+          "return_soc_percent": 31.185001142751688,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S012-MED-01",
+            "S012-WAT-01",
+            "S012-FOD-01"
+          ],
+          "batch_id": "PF002-016"
+        },
+        {
+          "service_id": "S013",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.0279184247698354,
+          "horizontal_return_kwh": 0.6927909792212544,
+          "climb_out_kwh": 0.09244191759327783,
+          "climb_return_kwh": 0.011676869496379668,
+          "energy_kwh": 1.8248281910807471,
+          "flight_time_s": 880.511588744525,
+          "work_time_s": 1510.511588744525,
+          "return_soc_percent": 54.37929522298133,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S013-MED-01",
+            "S013-WAT-01",
+            "S013-FOD-01"
+          ],
+          "batch_id": "PF002-017"
+        },
+        {
+          "service_id": "S014",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.148736752292894,
+          "horizontal_return_kwh": 0.7742194714202496,
+          "climb_out_kwh": 0.1580802654354943,
+          "climb_return_kwh": 0.059254488993150216,
+          "energy_kwh": 2.1402909781417883,
+          "flight_time_s": 1239.7476752786913,
+          "work_time_s": 1869.7476752786913,
+          "return_soc_percent": 46.49272554645529,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S014-MED-01",
+            "S014-WAT-01",
+            "S014-FOD-01"
+          ],
+          "batch_id": "PF002-018"
+        },
+        {
+          "service_id": "S015",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.2738428939773572,
+          "horizontal_return_kwh": 0.8585378417457736,
+          "climb_out_kwh": 0.15121965148211586,
+          "climb_return_kwh": 0.023928118547268857,
+          "energy_kwh": 2.307528505752516,
+          "flight_time_s": 1198.3275601736595,
+          "work_time_s": 1828.3275601736595,
+          "return_soc_percent": 42.311787356187104,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S015-MED-01",
+            "S015-WAT-01",
+            "S015-FOD-01"
+          ],
+          "batch_id": "PF002-019"
+        }
+      ],
+      "matches_previous_baseline": false,
+      "normalized_objectives": {
+        "flight_count": 1.0555555555555556,
+        "energy_kwh": 1.0,
+        "work_time_s": 1.050767199602196
+      },
+      "label": "备选方案：能耗优先",
+      "priority": "先最低总能耗，再最少架次，再最短累计作业时间"
+    }
+  ],
+  "local_frontiers": {
+    "S001": [
+      {
+        "flight_count": 2,
+        "energy_kwh": 5.913363900491497,
+        "work_time_s": 3186.350091724046,
+        "candidate_indices": [
+          60,
+          200
+        ]
+      }
+    ],
+    "S002": [
+      {
+        "flight_count": 2,
+        "energy_kwh": 8.434829145187932,
+        "work_time_s": 3858.566247332312,
+        "candidate_indices": [
+          33,
+          56
+        ]
+      }
+    ],
+    "S003": [
+      {
+        "flight_count": 2,
+        "energy_kwh": 8.545442729216445,
+        "work_time_s": 4450.787376137323,
+        "candidate_indices": [
+          33,
+          56
+        ]
+      }
+    ],
+    "S004": [
+      {
+        "flight_count": 1,
+        "energy_kwh": 6.152860129174582,
+        "work_time_s": 2301.054718772446,
+        "candidate_indices": [
+          50
+        ]
+      }
+    ],
+    "S005": [
+      {
+        "flight_count": 1,
+        "energy_kwh": 4.222137373445114,
+        "work_time_s": 1877.1887154914712,
+        "candidate_indices": [
+          50
+        ]
+      }
+    ],
+    "S006": [
+      {
+        "flight_count": 1,
+        "energy_kwh": 2.5979362904386822,
+        "work_time_s": 1561.5526244866223,
+        "candidate_indices": [
+          50
+        ]
+      }
+    ],
+    "S007": [
+      {
+        "flight_count": 1,
+        "energy_kwh": 3.4110038084433194,
+        "work_time_s": 1907.600698410691,
+        "candidate_indices": [
+          42
+        ]
+      }
+    ],
+    "S008": [
+      {
+        "flight_count": 1,
+        "energy_kwh": 5.836020667966359,
+        "work_time_s": 2199.7115246008334,
+        "candidate_indices": [
+          42
+        ]
+      },
+      {
+        "flight_count": 2,
+        "energy_kwh": 5.738638079775605,
+        "work_time_s": 3863.683494351406,
+        "candidate_indices": [
+          11,
+          36
+        ]
+      }
+    ],
+    "S009": [
+      {
+        "flight_count": 1,
+        "energy_kwh": 2.0962654017373348,
+        "work_time_s": 1558.4628643343576,
+        "candidate_indices": [
+          18
+        ]
+      }
+    ],
+    "S010": [
+      {
+        "flight_count": 1,
+        "energy_kwh": 1.8232165642314142,
+        "work_time_s": 1555.4035197802173,
+        "candidate_indices": [
+          18
+        ]
+      }
+    ],
+    "S011": [
+      {
+        "flight_count": 1,
+        "energy_kwh": 1.0739366863951034,
+        "work_time_s": 1188.4247628605203,
+        "candidate_indices": [
+          18
+        ]
+      }
+    ],
+    "S012": [
+      {
+        "flight_count": 1,
+        "energy_kwh": 2.7525999542899324,
+        "work_time_s": 1922.826814149187,
+        "candidate_indices": [
+          18
+        ]
+      }
+    ],
+    "S013": [
+      {
+        "flight_count": 1,
+        "energy_kwh": 1.8248281910807471,
+        "work_time_s": 1510.511588744525,
+        "candidate_indices": [
+          18
+        ]
+      }
+    ],
+    "S014": [
+      {
+        "flight_count": 1,
+        "energy_kwh": 2.1402909781417883,
+        "work_time_s": 1869.7476752786913,
+        "candidate_indices": [
+          18
+        ]
+      }
+    ],
+    "S015": [
+      {
+        "flight_count": 1,
+        "energy_kwh": 2.307528505752516,
+        "work_time_s": 1828.3275601736595,
+        "candidate_indices": [
+          18
+        ]
+      }
+    ]
+  },
+  "endpoints": {
+    "N_E_T": "PF001",
+    "N_T_E": "PF001",
+    "E_N_T": "PF002",
+    "T_N_E": "PF001",
+    "E_T_N": "PF002",
+    "T_E_N": "PF001"
+  },
+  "ideal_objectives": {
+    "flight_count": 18,
+    "energy_kwh": 59.03487773780201,
+    "work_time_s": 32776.5167822769
+  },
+  "tradeoff": {
+    "from_plan": "PF001",
+    "to_plan": "PF002",
+    "extra_flights": 1,
+    "energy_saved_kwh": 0.0973825881907544,
+    "energy_saved_percent": 0.16468605741415898,
+    "extra_work_time_s": 1663.9719697505716,
+    "extra_work_time_percent": 5.076719960219579
+  },
+  "changed_services": [
+    {
+      "service_id": "S008",
+      "from_summary": {
+        "flight_count": 1,
+        "energy_kwh": 5.836020667966359,
+        "work_time_s": 2199.7115246008334,
+        "flight_time_s": 1389.7115246008332,
+        "box_count": 5,
+        "mass_kg": 45.0,
+        "volume_m3": 0.129,
+        "model_counts": {
+          "C": 1
+        },
+        "minimum_soc_percent": 27.04974165042051
+      },
+      "to_summary": {
+        "flight_count": 2,
+        "energy_kwh": 5.738638079775605,
+        "work_time_s": 3863.683494351406,
+        "flight_time_s": 2663.683494351406,
+        "box_count": 5,
+        "mass_kg": 45.0,
+        "volume_m3": 0.129,
+        "model_counts": {
+          "B": 2
+        },
+        "minimum_soc_percent": 25.619828136444177
+      },
+      "from_batches": [
+        {
+          "service_id": "S008",
+          "model": "C",
+          "counts": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "box_count": 5,
+          "mass_kg": 45.0,
+          "volume_m3": 0.129,
+          "horizontal_out_kwh": 3.2165665239344476,
+          "horizontal_return_kwh": 2.4858801380887616,
+          "climb_out_kwh": 0.10659644023973264,
+          "climb_return_kwh": 0.02697756570341679,
+          "energy_kwh": 5.836020667966359,
+          "flight_time_s": 1389.7115246008332,
+          "work_time_s": 2199.7115246008334,
+          "return_soc_percent": 27.04974165042051,
+          "payload_limit_kg": 80,
+          "volume_limit_m3": 0.25,
+          "energy_budget_kwh": 6.4,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S008-MED-01",
+            "S008-WAT-01",
+            "S008-WAT-02",
+            "S008-FOD-01",
+            "S008-HYG-01"
+          ],
+          "batch_id": "PF001-011"
+        }
+      ],
+      "to_batches": [
+        {
+          "service_id": "S008",
+          "model": "B",
+          "counts": [
+            0,
+            1,
+            0,
+            1
+          ],
+          "box_count": 2,
+          "mass_kg": 20.0,
+          "volume_m3": 0.062,
+          "horizontal_out_kwh": 1.5053288904661692,
+          "horizontal_return_kwh": 1.1541586355412108,
+          "climb_out_kwh": 0.07885724473783529,
+          "climb_return_kwh": 0.025086434488155812,
+          "energy_kwh": 2.7634312052333714,
+          "flight_time_s": 1331.841747175703,
+          "work_time_s": 1901.841747175703,
+          "return_soc_percent": 30.914219869165716,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S008-WAT-01",
+            "S008-HYG-01"
+          ],
+          "batch_id": "PF002-011"
+        },
+        {
+          "service_id": "S008",
+          "model": "B",
+          "counts": [
+            1,
+            1,
+            1,
+            0
+          ],
+          "box_count": 3,
+          "mass_kg": 25.0,
+          "volume_m3": 0.067,
+          "horizontal_out_kwh": 1.7124658983198644,
+          "horizontal_return_kwh": 1.1541586355412108,
+          "climb_out_kwh": 0.08349590619300207,
+          "climb_return_kwh": 0.025086434488155812,
+          "energy_kwh": 2.975206874542233,
+          "flight_time_s": 1331.841747175703,
+          "work_time_s": 1961.841747175703,
+          "return_soc_percent": 25.619828136444177,
+          "payload_limit_kg": 30,
+          "volume_limit_m3": 0.073,
+          "energy_budget_kwh": 3.2,
+          "reserve_percent": 20,
+          "box_ids": [
+            "S008-MED-01",
+            "S008-WAT-02",
+            "S008-FOD-01"
+          ],
+          "batch_id": "PF002-012"
+        }
+      ]
+    }
+  ],
+  "weighted_sum": {
+    "normalization": "Divide each objective by its coordinate-wise ideal minimum.",
+    "difference_energy_plan_minus_recommended": {
+      "flight_count": 0.05555555555555558,
+      "energy_kwh": -0.0016495771977926843,
+      "work_time_s": 0.05076719960219589
+    },
+    "energy_weight_threshold_when_other_weights_equal": 0.9699042426005163
+  },
+  "algorithm": {
+    "name": "Exact per-state nondominated-label dynamic programming and global frontier merging",
+    "cost_tolerances": {
+      "energy_kwh": 1e-09,
+      "time_s": 1e-06
+    },
+    "comparison": "Exact componentwise dominance on sums of per-batch integer costs; raw totals retained for reporting and independent high-precision verification.",
+    "integer_cost_scales": {
+      "energy": 1000000000000,
+      "time": 1000000
+    },
+    "state_count": 644,
+    "feasible_candidate_count": 732,
+    "local_statistics": {
+      "S001": {
+        "state_count": 324,
+        "feasible_candidate_count": 201,
+        "generated_labels": 22383,
+        "max_state_frontier_size": 2
+      },
+      "S002": {
+        "state_count": 60,
+        "feasible_candidate_count": 76,
+        "generated_labels": 1914,
+        "max_state_frontier_size": 3
+      },
+      "S003": {
+        "state_count": 60,
+        "feasible_candidate_count": 76,
+        "generated_labels": 1744,
+        "max_state_frontier_size": 2
+      },
+      "S004": {
+        "state_count": 32,
+        "feasible_candidate_count": 51,
+        "generated_labels": 632,
+        "max_state_frontier_size": 2
+      },
+      "S005": {
+        "state_count": 32,
+        "feasible_candidate_count": 51,
+        "generated_labels": 623,
+        "max_state_frontier_size": 2
+      },
+      "S006": {
+        "state_count": 32,
+        "feasible_candidate_count": 51,
+        "generated_labels": 623,
+        "max_state_frontier_size": 2
+      },
+      "S007": {
+        "state_count": 24,
+        "feasible_candidate_count": 43,
+        "generated_labels": 382,
+        "max_state_frontier_size": 2
+      },
+      "S008": {
+        "state_count": 24,
+        "feasible_candidate_count": 43,
+        "generated_labels": 385,
+        "max_state_frontier_size": 2
+      },
+      "S009": {
+        "state_count": 8,
+        "feasible_candidate_count": 20,
+        "generated_labels": 56,
+        "max_state_frontier_size": 1
+      },
+      "S010": {
+        "state_count": 8,
+        "feasible_candidate_count": 20,
+        "generated_labels": 56,
+        "max_state_frontier_size": 1
+      },
+      "S011": {
+        "state_count": 8,
+        "feasible_candidate_count": 20,
+        "generated_labels": 56,
+        "max_state_frontier_size": 1
+      },
+      "S012": {
+        "state_count": 8,
+        "feasible_candidate_count": 20,
+        "generated_labels": 56,
+        "max_state_frontier_size": 1
+      },
+      "S013": {
+        "state_count": 8,
+        "feasible_candidate_count": 20,
+        "generated_labels": 56,
+        "max_state_frontier_size": 1
+      },
+      "S014": {
+        "state_count": 8,
+        "feasible_candidate_count": 20,
+        "generated_labels": 56,
+        "max_state_frontier_size": 1
+      },
+      "S015": {
+        "state_count": 8,
+        "feasible_candidate_count": 20,
+        "generated_labels": 56,
+        "max_state_frontier_size": 1
+      }
+    },
+    "global_merge_sizes": [
+      {
+        "service_id": "S001",
+        "candidates": 1,
+        "retained": 1
+      },
+      {
+        "service_id": "S002",
+        "candidates": 1,
+        "retained": 1
+      },
+      {
+        "service_id": "S003",
+        "candidates": 1,
+        "retained": 1
+      },
+      {
+        "service_id": "S004",
+        "candidates": 1,
+        "retained": 1
+      },
+      {
+        "service_id": "S005",
+        "candidates": 1,
+        "retained": 1
+      },
+      {
+        "service_id": "S006",
+        "candidates": 1,
+        "retained": 1
+      },
+      {
+        "service_id": "S007",
+        "candidates": 1,
+        "retained": 1
+      },
+      {
+        "service_id": "S008",
+        "candidates": 2,
+        "retained": 2
+      },
+      {
+        "service_id": "S009",
+        "candidates": 2,
+        "retained": 2
+      },
+      {
+        "service_id": "S010",
+        "candidates": 2,
+        "retained": 2
+      },
+      {
+        "service_id": "S011",
+        "candidates": 2,
+        "retained": 2
+      },
+      {
+        "service_id": "S012",
+        "candidates": 2,
+        "retained": 2
+      },
+      {
+        "service_id": "S013",
+        "candidates": 2,
+        "retained": 2
+      },
+      {
+        "service_id": "S014",
+        "candidates": 2,
+        "retained": 2
+      },
+      {
+        "service_id": "S015",
+        "candidates": 2,
+        "retained": 2
+      }
+    ]
+  },
+  "checks": {
+    "original_input_hashes_unchanged": true,
+    "all_frontier_plans_feasible": true,
+    "all_frontier_plans_cover_each_box_once": true,
+    "baseline_preserved": true
+  }
+}

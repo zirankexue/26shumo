@@ -1,0 +1,115 @@
+{
+  "scope": "核查题目是否强制重力加速度数值、UTM或其他距离投影；未审核题目二以后求解。",
+  "problem": {
+    "path": "E:\\sxjm\\D题\\山区洪涝灾害下无人机运输与通信协同优化.docx",
+    "sha256": "f4ca76b46a8dd760bf13d606ec7673656ac9b882a4b54ddd29ab4377da91aa45",
+    "extraction": "ZIP中所有word/*.xml文字与OMML文字检索，document.xml全体113段阅读。段序含表格与空段。",
+    "specific_g_or_projection_hits": [],
+    "evidence_paragraphs": [
+      {
+        "paragraph_index_1based": 8,
+        "text": "题目以镇龙乡及周边山区为地理背景，设置标准测试场景（真实场景可能略有不同）。附件提供1个临时调度中心、15个服务区和80个不可拆货箱，设置三种运输无人机机型，共配置8架实体运输无人机，并给出配套共享电池组、数字高程模型（Digital Elevation Model，DEM）数据、中继无人机、可更换能源组件及无线链路参数等信息。空间坐标和公开地理数据用于描述测试场景，需求、时限、装备和资源参数以附件给定值为准。"
+      },
+      {
+        "paragraph_index_1based": 12,
+        "text": "本问题在不考虑实体无人机和共享电池调度的情况下，研究单服务区直接往返条件下的运输能力与货箱组批问题。每个架次采用 O01→Si→O01 的直接往返形式，仅服务一个服务区，其中O01表示临时调度中心，Si表示第i个服务区（i=1,2,…,15）；同一服务区可由多个架次分批服务，不得跨服务区组批。根据附件给出的节点坐标、30 米 DEM、机型参数和货箱数据，完成如下各项："
+      },
+      {
+        "paragraph_index_1based": 30,
+        "text": "论文应清楚说明问题假设、符号定义、模型与算法、数据处理过程、主要结果及其适用条件，并交代各问题之间的数据继承关系。除论文外，应按附件模板提交必要的结果文件、检查说明和可运行程序。不同问题可采用不同求解方法，但公共物理规则、单位、对象编号和计算口径应保持一致。图表应能够反映运输路线、调度时序、资源占用、通信保障和任务分区等关键结果。"
+      },
+      {
+        "paragraph_index_1based": 40,
+        "text": "地理空间数据位于“数据/镇龙乡地理空间数据”目录，具体说明详见该目录下的“镇龙乡地理空间数据说明.docx”。图1给出30米DEM与调度节点的整体位置关系。"
+      },
+      {
+        "paragraph_index_1based": 44,
+        "text": "本附录统一运输与中继无人机飞行时间、能耗、返航安全余量及能源资源充电周转的计算口径，相关参数及单位以配套数据文件为准。"
+      },
+      {
+        "paragraph_index_1based": 46,
+        "text": "任意两个任务节点之间采用两节点水平直线作为运输航段，计划巡航海拔取该航段所经过 DEM 像元的最高地面高程以上50米。每个航段按爬升、巡航和下降三个阶段计算：无人机由起点作业高度爬升至巡航海拔，完成水平巡航后下降至终点作业高度。O01作业高度取其地面海拔，服务区作业高度取其地面海拔以上30米；连续访问多个服务区时，每次投送后均从30米作业高度重新爬升。"
+      },
+      {
+        "paragraph_index_1based": 47,
+        "text": "水平巡航距离、爬升高度和下降高度由节点位置、DEM及计划巡航海拔确定。机型 g 携带载荷q 时的等效航程为："
+      },
+      {
+        "paragraph_index_1based": 49,
+        "text": "其中，g 表示运输无人机机型，q 表示当前有效载荷（kg）；Lg0和LgF分别表示机型 g 的空载标准航程和满载标准航程（m）；Qg 表示机型 g 的最大载货质量（kg）。"
+      },
+      {
+        "paragraph_index_1based": 52,
+        "text": "其中，tgij 表示机型 g 从节点 i 到节点 j 的航段飞行时间（s）；dij 为水平巡航距离（m）；hij+、hij− 分别为爬升高度和下降高度（m）；vg↑、vgc、vg↓ 分别为爬升、巡航和下降速度（m/s）。"
+      },
+      {
+        "paragraph_index_1based": 53,
+        "text": "航段运输能耗按水平航程能耗与爬升附加能耗之和计算："
+      },
+      {
+        "paragraph_index_1based": 54,
+        "text": "Egij(q)=Egijhor(q)+Egijup(q)."
+      },
+      {
+        "paragraph_index_1based": 55,
+        "text": "其中，Egij(q) 为航段总运输能耗，Egijhor(q) 和 Egijup(q) 分别为水平巡航能耗和爬升附加能耗（kWh）。"
+      },
+      {
+        "paragraph_index_1based": 56,
+        "text": "下降能耗效率取0表示不单独计算下降附加能耗。每个运输架次均须满足返航安全余量："
+      },
+      {
+        "paragraph_index_1based": 58,
+        "text": "其中，EpT 为架次 p 的总运输能耗（kWh），qpij 为架次 p 在航段 i→j 上的剩余载荷（kg），ρg 为机型 g 的返航安全余量比例，Eguse 为机型 g 单组电池的可用能量（kWh）。"
+      },
+      {
+        "paragraph_index_1based": 103,
+        "text": "灾情背景、地理高程数据、无人机运输与能耗模型、通信传播模型、设备参数量级及电池充电规律参考下列公开资料，正式计算以配套数据文件和本题统一规则为准。"
+      }
+    ]
+  },
+  "geography_note": {
+    "actual_path": "E:\\sxjm\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡地理空间数据说明.png",
+    "sha256": "0be630a16ebde6628fe9592483481ac3d30964601f5573df6231f109525922e6",
+    "source_location": "二、坐标与高程口径",
+    "visually_read": true,
+    "quote": "DEM 来源于 Copernicus DEM GLO-30，为数字表面模型（DSM）。坐标参考系为 WGS 84（EPSG:4326），经纬度方向像元大小均为1/3600°，名义地面分辨率为30米。",
+    "file_mismatch": "题目第40段称说明.docx，实际本工作目录只有同名说明.png；已直接查看该PNG。"
+  },
+  "workbooks_checked": [
+    {
+      "path": "E:\\sxjm\\D题\\数据\\无人机应急物资运输基础数据\\中继无人机数据.xlsx",
+      "sha256": "be52643ff29419233e6a141dca03a04160a8af551cab36d8c49b51bb836bea04",
+      "specific_g_or_projection_hits": []
+    },
+    {
+      "path": "E:\\sxjm\\D题\\数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx",
+      "sha256": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+      "specific_g_or_projection_hits": []
+    },
+    {
+      "path": "E:\\sxjm\\D题\\数据\\无人机应急物资运输基础数据\\调度中心与服务区.xlsx",
+      "sha256": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+      "specific_g_or_projection_hits": []
+    },
+    {
+      "path": "E:\\sxjm\\D题\\数据\\无人机应急物资运输基础数据\\运输无人机数据.xlsx",
+      "sha256": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+      "specific_g_or_projection_hits": []
+    },
+    {
+      "path": "E:\\sxjm\\D题\\数据\\无人机应急物资运输基础数据\\通信链路参数.xlsx",
+      "sha256": "1860d153199e7ae460ba36e83b673374e640e19de91ea167f2877271001f5f81",
+      "specific_g_or_projection_hits": []
+    }
+  ],
+  "conclusions": {
+    "gravity_required_value": null,
+    "gravity_explanation": "原题和五份基础工作簿未给出重力加速度9.81或9.80665。原题公式g用于机型下标。选用重力常数属于需说明并统一的补充计算设定。",
+    "required_computation_projection": null,
+    "source_coordinate_system": "WGS84 EPSG:4326",
+    "source_crs_vs_distance": "EPSG:4326说明原始经纬度及DEM栅格的坐标基准，不等于要求使用UTM投影。题目未指定UTM 49N或局部椭球平面。",
+    "required_geometry_rule": "两节点水平直线运输；巡航海拔为航段所经过DEM像元最高高程以上50m。",
+    "consistency_requirement": "公共物理规则、单位、对象编号和计算口径应保持一致（第30段）。"
+  }
+}

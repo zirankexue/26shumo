@@ -1,0 +1,1455 @@
+{
+  "created_utc": "2026-09-24T11:25:48.508741+00:00",
+  "scope": "第一问三个小问；局部椭球平面当前正式版本",
+  "encoding": "UTF-8 with BOM; RFC4180 CSV; float repr round-trip; nested structures are JSON; missing/null is literal null",
+  "baseline_sha256": "b90e1443e931282622d183db7d07b68ff899709040630dfb7b6c029ad223ef39",
+  "original_sources": [
+    {
+      "key": "nodes",
+      "path": "数据\\无人机应急物资运输基础数据\\调度中心与服务区.xlsx",
+      "sha256": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+      "verified": true
+    },
+    {
+      "key": "drones",
+      "path": "数据\\无人机应急物资运输基础数据\\运输无人机数据.xlsx",
+      "sha256": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+      "verified": true
+    },
+    {
+      "key": "boxes",
+      "path": "数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx",
+      "sha256": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+      "verified": true
+    },
+    {
+      "key": "dem",
+      "path": "数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\数字高程模型数据（DEM）\\镇龙乡及周边30米DEM.tif",
+      "sha256": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+      "verified": true
+    },
+    {
+      "key": "problem",
+      "path": "山区洪涝灾害下无人机运输与通信协同优化.docx",
+      "sha256": "f4ca76b46a8dd760bf13d606ec7673656ac9b882a4b54ddd29ab4377da91aa45",
+      "verified": true
+    }
+  ],
+  "formal_results": [
+    {
+      "path": "results\\question1_batching\\solution.json",
+      "sha256": "b90e1443e931282622d183db7d07b68ff899709040630dfb7b6c029ad223ef39"
+    },
+    {
+      "path": "results\\question1_multiobjective\\multiobjective.json",
+      "sha256": "17c37184c77c5f9039bbdfbe92410eb1760b1628900cf6e1a09f2744aff12334"
+    },
+    {
+      "path": "results\\question1_reserve_sensitivity\\sensitivity.json",
+      "sha256": "2c7568a6f03345aaa9d2c3559c8256669c34c03b52ac7fe956a4f5950b0a4903"
+    },
+    {
+      "path": "results\\question1_reserve_sensitivity\\all_capacity_feasible_batches.json",
+      "sha256": "705558b27d85af4ce02d5c6d1ee5b8471e3ea43680656fcf61fbfb7980ab8341"
+    }
+  ],
+  "coordinate_model": {
+    "model": "WGS84_local_ellipsoidal_plane_O01",
+    "origin_id": "O01",
+    "origin_lon_degree": 109.2308517,
+    "origin_lat_degree": 23.0085095,
+    "ellipsoid": "WGS84",
+    "semi_major_axis_m": 6378137.0,
+    "eccentricity_squared": 0.0066943799901413165,
+    "prime_vertical_radius_m": 6381401.129389777,
+    "meridional_radius_m": 6345171.1402309295,
+    "longitude_scale_m_per_radian": 5873740.328096923,
+    "latitude_scale_m_per_radian": 6345171.1402309295,
+    "formula": "x=N0*cos(phi0)*radians(lon-lon0); y=M0*radians(lat-lat0)",
+    "node_coordinates": {
+      "O01": {
+        "x_m": 0.0,
+        "y_m": 0.0
+      },
+      "S001": {
+        "x_m": 1269.169921901062,
+        "y_m": 2777.817111438484
+      },
+      "S002": {
+        "x_m": 2839.716698490673,
+        "y_m": 6845.936207025278
+      },
+      "S003": {
+        "x_m": -6355.373355953578,
+        "y_m": 3517.443919109309
+      },
+      "S004": {
+        "x_m": 750.3871566968315,
+        "y_m": 7678.1008080523625
+      },
+      "S005": {
+        "x_m": -261.55959828932436,
+        "y_m": 5274.111575089368
+      },
+      "S006": {
+        "x_m": -3184.9806990700627,
+        "y_m": -88.09695382351546
+      },
+      "S007": {
+        "x_m": -3898.9541341595636,
+        "y_m": 2315.560046755532
+      },
+      "S008": {
+        "x_m": -1856.0028796848844,
+        "y_m": 7863.032427398767
+      },
+      "S009": {
+        "x_m": 2387.6719196811728,
+        "y_m": 5181.651302622434
+      },
+      "S010": {
+        "x_m": 4630.150275412627,
+        "y_m": 1206.1585956945476
+      },
+      "S011": {
+        "x_m": -1078.0696447321873,
+        "y_m": 2592.918715330475
+      },
+      "S012": {
+        "x_m": 5359.952197597734,
+        "y_m": 5089.1910301555
+      },
+      "S013": {
+        "x_m": 4155.203398046757,
+        "y_m": 2500.458442863541
+      },
+      "S014": {
+        "x_m": 5407.201871835279,
+        "y_m": -365.43347357259984
+      },
+      "S015": {
+        "x_m": -3944.1124797915336,
+        "y_m": 4534.451544180149
+      }
+    }
+  },
+  "dem_metadata": {
+    "crs": "EPSG:4326",
+    "raster_type": "PixelIsPoint",
+    "shape": [
+      1309,
+      1486
+    ],
+    "centre_origin": [
+      109.03277777777778,
+      23.224722222222223
+    ],
+    "pixel_size_degree": [
+      0.00027777777777777393,
+      0.0002777777777777777
+    ],
+    "nodata": -32767,
+    "distance_crs": "WGS84_local_ellipsoidal_plane_O01",
+    "local_plane": {
+      "model": "WGS84_local_ellipsoidal_plane_O01",
+      "origin_id": "O01",
+      "origin_lon_degree": 109.2308517,
+      "origin_lat_degree": 23.0085095,
+      "ellipsoid": "WGS84",
+      "semi_major_axis_m": 6378137.0,
+      "eccentricity_squared": 0.0066943799901413165,
+      "prime_vertical_radius_m": 6381401.129389777,
+      "meridional_radius_m": 6345171.1402309295,
+      "longitude_scale_m_per_radian": 5873740.328096923,
+      "latitude_scale_m_per_radian": 6345171.1402309295,
+      "formula": "x=N0*cos(phi0)*radians(lon-lon0); y=M0*radians(lat-lat0)",
+      "node_coordinates": {
+        "O01": {
+          "x_m": 0.0,
+          "y_m": 0.0
+        },
+        "S001": {
+          "x_m": 1269.169921901062,
+          "y_m": 2777.817111438484
+        },
+        "S002": {
+          "x_m": 2839.716698490673,
+          "y_m": 6845.936207025278
+        },
+        "S003": {
+          "x_m": -6355.373355953578,
+          "y_m": 3517.443919109309
+        },
+        "S004": {
+          "x_m": 750.3871566968315,
+          "y_m": 7678.1008080523625
+        },
+        "S005": {
+          "x_m": -261.55959828932436,
+          "y_m": 5274.111575089368
+        },
+        "S006": {
+          "x_m": -3184.9806990700627,
+          "y_m": -88.09695382351546
+        },
+        "S007": {
+          "x_m": -3898.9541341595636,
+          "y_m": 2315.560046755532
+        },
+        "S008": {
+          "x_m": -1856.0028796848844,
+          "y_m": 7863.032427398767
+        },
+        "S009": {
+          "x_m": 2387.6719196811728,
+          "y_m": 5181.651302622434
+        },
+        "S010": {
+          "x_m": 4630.150275412627,
+          "y_m": 1206.1585956945476
+        },
+        "S011": {
+          "x_m": -1078.0696447321873,
+          "y_m": 2592.918715330475
+        },
+        "S012": {
+          "x_m": 5359.952197597734,
+          "y_m": 5089.1910301555
+        },
+        "S013": {
+          "x_m": 4155.203398046757,
+          "y_m": 2500.458442863541
+        },
+        "S014": {
+          "x_m": 5407.201871835279,
+          "y_m": -365.43347357259984
+        },
+        "S015": {
+          "x_m": -3944.1124797915336,
+          "y_m": 4534.451544180149
+        }
+      }
+    },
+    "route_geometry": "Straight segment in fixed local plane and lon/lat; exact grid crossings.",
+    "grid_boundary_rule": "Include cells on both sides of a touched boundary."
+  },
+  "gravity_m_s2": 9.80665,
+  "numeric_tolerances": {
+    "energy_kwh": 1e-09,
+    "time_s": 1e-06,
+    "payload_bisection_kg": 1e-06,
+    "objective_energy_scale": 1000000000000,
+    "objective_time_scale": 1000000,
+    "comparison": "Sum independently rounded per-batch integer costs before lexicographic comparison; report unrounded costs."
+  },
+  "tables": [
+    {
+      "file": "数据/nodes.csv",
+      "row_count": 16,
+      "sha256": "fe6c1abfb37307de7452c428610a7b0b835dcc57fafaabd6ee605253a5c49e63",
+      "source": "solution.json:nodes, dem_metadata.local_plane.node_coordinates",
+      "processing": "保留16节点原经纬度与地面海拔；添加正式局部平面坐标和作业海拔",
+      "columns": [
+        {
+          "field": "id",
+          "unit": "1",
+          "type": "text",
+          "description": "原始节点、机型或货箱唯一编号"
+        },
+        {
+          "field": "name",
+          "unit": "1",
+          "type": "text",
+          "description": "原表名称"
+        },
+        {
+          "field": "lon",
+          "unit": "degree",
+          "type": "number",
+          "description": "WGS84经度"
+        },
+        {
+          "field": "lat",
+          "unit": "degree",
+          "type": "number",
+          "description": "WGS84纬度"
+        },
+        {
+          "field": "elevation_m",
+          "unit": "m",
+          "type": "number",
+          "description": "原节点表地面海拔；与DEM像元高程分别取源"
+        },
+        {
+          "field": "x_m",
+          "unit": "m",
+          "type": "number",
+          "description": "O01原点局部椭球平面东向坐标"
+        },
+        {
+          "field": "y_m",
+          "unit": "m",
+          "type": "number",
+          "description": "O01原点局部椭球平面北向坐标"
+        },
+        {
+          "field": "operation_altitude_m",
+          "unit": "m",
+          "type": "number",
+          "description": "O01取地面海拔，服务区取地面海拔+30m"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/drones.csv",
+      "row_count": 3,
+      "sha256": "17b9c45065abd43de4dd4843313f96d0221898515bd1ffa6f43d3def6fbf47fb",
+      "source": "solution.json:drones",
+      "processing": "3机型原始物理参数；升降、准备、装载与交接参数全保留",
+      "columns": [
+        {
+          "field": "id",
+          "unit": "1",
+          "type": "text",
+          "description": "原始节点、机型或货箱唯一编号"
+        },
+        {
+          "field": "name",
+          "unit": "1",
+          "type": "text",
+          "description": "原表名称"
+        },
+        {
+          "field": "empty_mass_kg",
+          "unit": "kg",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "payload_kg",
+          "unit": "kg",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "volume_m3",
+          "unit": "m^3",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "cruise_mps",
+          "unit": "m/s",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "empty_range_m",
+          "unit": "m",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "full_range_m",
+          "unit": "m",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "energy_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "单架次或方案往返总运输能耗"
+        },
+        {
+          "field": "reserve_percent",
+          "unit": "%",
+          "type": "integer",
+          "description": "安全余量百分数，例如20表示20%"
+        },
+        {
+          "field": "prepare_s",
+          "unit": "s",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "load_per_box_s",
+          "unit": "s",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "handover_base_s",
+          "unit": "s",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "handover_per_box_s",
+          "unit": "s",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "climb_mps",
+          "unit": "m/s",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "descend_mps",
+          "unit": "m/s",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "climb_efficiency",
+          "unit": "1",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "descent_extra_efficiency",
+          "unit": "1",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "volume_litre",
+          "unit": "L",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/boxes.csv",
+      "row_count": 80,
+      "sha256": "127fe36c0cd37fce9379f1b35f3263fbd4064ffdac67c97ed081cf53fcec037e",
+      "source": "solution.json:boxes",
+      "processing": "80个不可拆分真实货箱；原始时限与优先级字段保留，但第一问未使用这些调度约束",
+      "columns": [
+        {
+          "field": "id",
+          "unit": "1",
+          "type": "text",
+          "description": "原始节点、机型或货箱唯一编号"
+        },
+        {
+          "field": "service_id",
+          "unit": "1",
+          "type": "text",
+          "description": "目标服务区编号"
+        },
+        {
+          "field": "type",
+          "unit": "1",
+          "type": "text",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "type_name",
+          "unit": "1",
+          "type": "text",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "mass_kg",
+          "unit": "kg",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "volume_m3",
+          "unit": "m^3",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "first_batch",
+          "unit": "1",
+          "type": "text",
+          "description": "原需求表保留字段；第一问未施加物理机队与首批时限调度"
+        },
+        {
+          "field": "first_deadline_s",
+          "unit": "s",
+          "type": "integer",
+          "description": "原需求表保留字段；第一问未作为约束求解"
+        },
+        {
+          "field": "due_s",
+          "unit": "s",
+          "type": "integer",
+          "description": "原需求表保留字段；第一问未作为约束求解"
+        },
+        {
+          "field": "priority",
+          "unit": "1",
+          "type": "integer",
+          "description": "原需求表保留字段；第一问未作为调度目标求解"
+        },
+        {
+          "field": "volume_litre",
+          "unit": "L",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/routes.csv",
+      "row_count": 15,
+      "sha256": "e68a4eb36d5fac023b8e92a09a2568f465f5d3e03b086325bd9d041c2f25309f",
+      "source": "solution.json:routes",
+      "processing": "15条O01单服务区航线，保留全部相交像元及峰值像元JSON数组",
+      "columns": [
+        {
+          "field": "service_id",
+          "unit": "1",
+          "type": "text",
+          "description": "目标服务区编号"
+        },
+        {
+          "field": "distance_m",
+          "unit": "m",
+          "type": "number",
+          "description": "O01到目标服务区的单程水平直线距离；不含垂直段"
+        },
+        {
+          "field": "max_terrain_m",
+          "unit": "m",
+          "type": "number",
+          "description": "相交DEM闭像元原值的最大海拔"
+        },
+        {
+          "field": "cruise_altitude_m",
+          "unit": "m",
+          "type": "number",
+          "description": "所有相交DEM闭像元最高海拔+50m"
+        },
+        {
+          "field": "outbound_climb_m",
+          "unit": "m",
+          "type": "number",
+          "description": "巡航海拔减O01地面海拔"
+        },
+        {
+          "field": "return_climb_m",
+          "unit": "m",
+          "type": "number",
+          "description": "巡航海拔减服务区作业海拔"
+        },
+        {
+          "field": "crossed_cell_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "相交DEM闭像元数"
+        },
+        {
+          "field": "peak_cells",
+          "unit": "1",
+          "type": "json",
+          "description": "达到最高地形海拔的零基[row,column]数组"
+        },
+        {
+          "field": "crossed_cells",
+          "unit": "1",
+          "type": "json",
+          "description": "完整相交DEM像元的零基[row,column]数组；PixelIsPoint"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/batches.csv",
+      "row_count": 18,
+      "sha256": "0ece9014b4250098b2f5b4270fa020be4eabf05d561b71ffdf0cdf5a596fc8d6",
+      "source": "solution.json:batches",
+      "processing": "18架次推荐方案，逐架次保留所有原始数值及箱号数组",
+      "columns": [
+        {
+          "field": "service_id",
+          "unit": "1",
+          "type": "text",
+          "description": "目标服务区编号"
+        },
+        {
+          "field": "model",
+          "unit": "1",
+          "type": "text",
+          "description": "机型编号"
+        },
+        {
+          "field": "counts",
+          "unit": "1",
+          "type": "json",
+          "description": "按MED,WAT,FOD,HYG排列的各类货箱数JSON数组"
+        },
+        {
+          "field": "box_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "货箱数"
+        },
+        {
+          "field": "mass_kg",
+          "unit": "kg",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "volume_m3",
+          "unit": "m^3",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "horizontal_out_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "horizontal_return_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "climb_out_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "climb_return_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "energy_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "单架次或方案往返总运输能耗"
+        },
+        {
+          "field": "flight_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "含水平往返及垂直升降的飞行时间"
+        },
+        {
+          "field": "work_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "准备+装载+飞行+交接的累计作业时间；不是多机并行完工时间"
+        },
+        {
+          "field": "return_soc_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "返航剩余能量占可用电池能量的百分数"
+        },
+        {
+          "field": "payload_limit_kg",
+          "unit": "kg",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "volume_limit_m3",
+          "unit": "m^3",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "energy_budget_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "reserve_percent",
+          "unit": "%",
+          "type": "integer",
+          "description": "安全余量百分数，例如20表示20%"
+        },
+        {
+          "field": "box_ids",
+          "unit": "1",
+          "type": "json",
+          "description": "该架次包含的真实货箱编号JSON数组"
+        },
+        {
+          "field": "batch_id",
+          "unit": "1",
+          "type": "text",
+          "description": "方案内架次编号"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/service_summary.csv",
+      "row_count": 15,
+      "sha256": "3239e5c841f6d9dd3b21134a122812b8d4518259b979c264d4d64f259e04b727",
+      "source": "solution.json:service_summary",
+      "processing": "15区组批汇总与各机型安全载荷",
+      "columns": [
+        {
+          "field": "service_id",
+          "unit": "1",
+          "type": "text",
+          "description": "目标服务区编号"
+        },
+        {
+          "field": "demand",
+          "unit": "1",
+          "type": "json",
+          "description": "按MED,WAT,FOD,HYG排列的服务区需求数量JSON数组"
+        },
+        {
+          "field": "box_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "货箱数"
+        },
+        {
+          "field": "mass_kg",
+          "unit": "kg",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "volume_m3",
+          "unit": "m^3",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "flight_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "往返架次数"
+        },
+        {
+          "field": "energy_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "单架次或方案往返总运输能耗"
+        },
+        {
+          "field": "work_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "准备+装载+飞行+交接的累计作业时间；不是多机并行完工时间"
+        },
+        {
+          "field": "flight_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "含水平往返及垂直升降的飞行时间"
+        },
+        {
+          "field": "model_counts",
+          "unit": "1",
+          "type": "json",
+          "description": "各机型架次数JSON字典"
+        },
+        {
+          "field": "minimum_soc_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "方案中最低返航SOC百分数"
+        },
+        {
+          "field": "state_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "feasible_candidate_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "simple_flight_lower_bound",
+          "unit": "1",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "safe_payloads",
+          "unit": "1",
+          "type": "json",
+          "description": "A/B/C机型连续安全载荷JSON字典"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/pareto.csv",
+      "row_count": 2,
+      "sha256": "0fec34ba3addecec0d2788703072e3fd8f3fc15fec0da03d55ce0bab18715b3d",
+      "source": "multiobjective.json:frontier",
+      "processing": "2个完整非支配目标点，完整批次嵌入JSON列",
+      "columns": [
+        {
+          "field": "plan_id",
+          "unit": "1",
+          "type": "text",
+          "description": "方案编号"
+        },
+        {
+          "field": "flight_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "往返架次数"
+        },
+        {
+          "field": "energy_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "单架次或方案往返总运输能耗"
+        },
+        {
+          "field": "work_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "准备+装载+飞行+交接的累计作业时间；不是多机并行完工时间"
+        },
+        {
+          "field": "flight_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "含水平往返及垂直升降的飞行时间"
+        },
+        {
+          "field": "box_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "货箱数"
+        },
+        {
+          "field": "mass_kg",
+          "unit": "kg",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "volume_m3",
+          "unit": "m^3",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "model_counts",
+          "unit": "1",
+          "type": "json",
+          "description": "各机型架次数JSON字典"
+        },
+        {
+          "field": "minimum_soc_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "方案中最低返航SOC百分数"
+        },
+        {
+          "field": "batches",
+          "unit": "1",
+          "type": "json",
+          "description": "完整逐架次方案JSON数组，保留真实箱号及能耗时间等所有字段"
+        },
+        {
+          "field": "matches_previous_baseline",
+          "unit": "1",
+          "type": "boolean",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "normalized_objectives",
+          "unit": "1",
+          "type": "json",
+          "description": "相对各坐标理想最小值的目标归一化字典"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/reserve_intervals.csv",
+      "row_count": 19,
+      "sha256": "b54b67e27c44cf43b3824666b6c02456184f1045163d7d22a157bfc1238bbf00",
+      "source": "sensitivity.json:interval_plans",
+      "processing": "19段字典序最优方案；区间首段闭下界、后续开下界，均闭上界",
+      "columns": [
+        {
+          "field": "plan_id",
+          "unit": "1",
+          "type": "text",
+          "description": "方案编号"
+        },
+        {
+          "field": "reserve_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "安全余量百分数，例如20表示20%"
+        },
+        {
+          "field": "feasible",
+          "unit": "1",
+          "type": "boolean",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "flight_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "往返架次数"
+        },
+        {
+          "field": "energy_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "单架次或方案往返总运输能耗"
+        },
+        {
+          "field": "work_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "准备+装载+飞行+交接的累计作业时间；不是多机并行完工时间"
+        },
+        {
+          "field": "flight_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "含水平往返及垂直升降的飞行时间"
+        },
+        {
+          "field": "box_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "货箱数"
+        },
+        {
+          "field": "mass_kg",
+          "unit": "kg",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "volume_m3",
+          "unit": "m^3",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "model_counts",
+          "unit": "1",
+          "type": "json",
+          "description": "各机型架次数JSON字典"
+        },
+        {
+          "field": "minimum_soc_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "方案中最低返航SOC百分数"
+        },
+        {
+          "field": "batches",
+          "unit": "1",
+          "type": "json",
+          "description": "完整逐架次方案JSON数组，保留真实箱号及能耗时间等所有字段"
+        },
+        {
+          "field": "lower_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "方案适用区间下界；是否包含见lower_inclusive"
+        },
+        {
+          "field": "upper_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "方案适用区间上界"
+        },
+        {
+          "field": "lower_inclusive",
+          "unit": "1",
+          "type": "boolean",
+          "description": "首段为true，之后下端点属于前一段"
+        },
+        {
+          "field": "upper_inclusive",
+          "unit": "1",
+          "type": "boolean",
+          "description": "上端点满足能量等号，包含在当前区间"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/reserve_transitions.csv",
+      "row_count": 18,
+      "sha256": "8784caca96363e192daa0889f713e4e88c5d03606d10c8b6682bc9b896422294",
+      "source": "sensitivity.json:transitions",
+      "processing": "18次方案切换，保留服务区变化明细JSON列",
+      "columns": [
+        {
+          "field": "threshold_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "相邻选中方案切换的安全余量百分数"
+        },
+        {
+          "field": "equality_plan_id",
+          "unit": "1",
+          "type": "text",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "above_plan_id",
+          "unit": "1",
+          "type": "text",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "old_flight_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "new_flight_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "old_energy_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "new_energy_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "old_work_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "new_work_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "changes",
+          "unit": "1",
+          "type": "json",
+          "description": "方案切换前后发生变化的服务区与批次JSON数组"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/payload_limits.csv",
+      "row_count": 45,
+      "sha256": "03dcfea0b42ebd24d76f9b74ede3afd0a6909a86114b4a9da10df73840c858fe",
+      "source": "sensitivity.json:payloads",
+      "processing": "15服务区×3机型=45行，额定满载和空载余量极限及指定样本",
+      "columns": [
+        {
+          "field": "service_id",
+          "unit": "1",
+          "type": "text",
+          "description": "目标服务区编号"
+        },
+        {
+          "field": "model",
+          "unit": "1",
+          "type": "text",
+          "description": "机型编号"
+        },
+        {
+          "field": "rated_payload_kg",
+          "unit": "kg",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "full_load_maximum_reserve_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "empty_roundtrip_maximum_reserve_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "samples",
+          "unit": "1",
+          "type": "json",
+          "description": "报告中指定余量取值的安全载荷JSON数组"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/payload_curves.csv",
+      "row_count": 2745,
+      "sha256": "44a65d41d2640d6154ca4bc2acc3dd1befca698aba5ff4eef77a29da7d1f9ed3",
+      "source": "sensitivity.json:payload_curves",
+      "processing": "45组×0..60整数百分数=2745点，不可行载荷写null",
+      "columns": [
+        {
+          "field": "service_id",
+          "unit": "1",
+          "type": "text",
+          "description": "目标服务区编号"
+        },
+        {
+          "field": "model",
+          "unit": "1",
+          "type": "text",
+          "description": "机型编号"
+        },
+        {
+          "field": "reserve_percent",
+          "unit": "%",
+          "type": "integer",
+          "description": "安全余量百分数，例如20表示20%"
+        },
+        {
+          "field": "safe_payload_kg",
+          "unit": "kg",
+          "type": "integer",
+          "description": "仅质量与能量约束下的连续最大安全载荷；null为空载往返亦不可行"
+        },
+        {
+          "field": "limiting_factor",
+          "unit": "1",
+          "type": "text",
+          "description": "约束分类：额定载荷/能量余量/空载不可行"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/all_candidates.csv",
+      "row_count": 742,
+      "sha256": "156b574bba28debba34060a279f91ccd4e73b2a47ab19006c173626eef0716dc",
+      "source": "all_capacity_feasible_batches.json",
+      "processing": "742个满足质量与体积限制的非空候选；每个附能量余量失效阈值",
+      "columns": [
+        {
+          "field": "service_id",
+          "unit": "1",
+          "type": "text",
+          "description": "目标服务区编号"
+        },
+        {
+          "field": "model",
+          "unit": "1",
+          "type": "text",
+          "description": "机型编号"
+        },
+        {
+          "field": "counts",
+          "unit": "1",
+          "type": "json",
+          "description": "按MED,WAT,FOD,HYG排列的各类货箱数JSON数组"
+        },
+        {
+          "field": "box_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "货箱数"
+        },
+        {
+          "field": "mass_kg",
+          "unit": "kg",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "volume_m3",
+          "unit": "m^3",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "horizontal_out_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "horizontal_return_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "climb_out_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "climb_return_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "energy_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "单架次或方案往返总运输能耗"
+        },
+        {
+          "field": "flight_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "含水平往返及垂直升降的飞行时间"
+        },
+        {
+          "field": "work_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "准备+装载+飞行+交接的累计作业时间；不是多机并行完工时间"
+        },
+        {
+          "field": "critical_reserve_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "该候选批次保持可行的最大安全余量百分数"
+        },
+        {
+          "field": "return_soc_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "返航剩余能量占可用电池能量的百分数"
+        },
+        {
+          "field": "payload_limit_kg",
+          "unit": "kg",
+          "type": "integer",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "volume_limit_m3",
+          "unit": "m^3",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/single_box_limits.csv",
+      "row_count": 53,
+      "sha256": "d8900ec011d9ea5ea232241ee426cdeca979df5380ad526eb82db6e18a06ee50",
+      "source": "sensitivity.json:single_box_limits",
+      "processing": "53个服务区物资类别的单箱可行上限，用于判定全任务可行余量上限",
+      "columns": [
+        {
+          "field": "service_id",
+          "unit": "1",
+          "type": "text",
+          "description": "目标服务区编号"
+        },
+        {
+          "field": "type",
+          "unit": "1",
+          "type": "text",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "mass_kg",
+          "unit": "kg",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "volume_m3",
+          "unit": "m^3",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "maximum_reserve_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "该服务区该类单箱在所有可用机型中的最大可行余量"
+        },
+        {
+          "field": "best_models",
+          "unit": "1",
+          "type": "json",
+          "description": "达到最高单箱可行余量的机型JSON数组"
+        },
+        {
+          "field": "model_limits",
+          "unit": "1",
+          "type": "json",
+          "description": "逐机型单箱可行上限JSON数组"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/reserve_scenarios.csv",
+      "row_count": 18,
+      "sha256": "aca84fd3b88c2109bc6892c8b1d3c9910d3648d041a88271ca1111f3b29ff34c",
+      "source": "sensitivity.json:scenarios",
+      "processing": "18个正式报告情景；不可行的全任务目标值与载荷按正式JSON保留null",
+      "columns": [
+        {
+          "field": "plan_id",
+          "unit": "1",
+          "type": "text",
+          "description": "方案编号"
+        },
+        {
+          "field": "reserve_percent",
+          "unit": "%",
+          "type": "integer",
+          "description": "安全余量百分数，例如20表示20%"
+        },
+        {
+          "field": "feasible",
+          "unit": "1",
+          "type": "boolean",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "flight_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "往返架次数"
+        },
+        {
+          "field": "energy_kwh",
+          "unit": "kWh",
+          "type": "number",
+          "description": "单架次或方案往返总运输能耗"
+        },
+        {
+          "field": "work_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "准备+装载+飞行+交接的累计作业时间；不是多机并行完工时间"
+        },
+        {
+          "field": "flight_time_s",
+          "unit": "s",
+          "type": "number",
+          "description": "含水平往返及垂直升降的飞行时间"
+        },
+        {
+          "field": "box_count",
+          "unit": "1",
+          "type": "integer",
+          "description": "货箱数"
+        },
+        {
+          "field": "mass_kg",
+          "unit": "kg",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "volume_m3",
+          "unit": "m^3",
+          "type": "number",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "model_counts",
+          "unit": "1",
+          "type": "json",
+          "description": "各机型架次数JSON字典"
+        },
+        {
+          "field": "minimum_soc_percent",
+          "unit": "%",
+          "type": "number",
+          "description": "方案中最低返航SOC百分数"
+        },
+        {
+          "field": "batches",
+          "unit": "1",
+          "type": "json",
+          "description": "完整逐架次方案JSON数组，保留真实箱号及能耗时间等所有字段"
+        },
+        {
+          "field": "interval_plan_id",
+          "unit": "1",
+          "type": "text",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        },
+        {
+          "field": "blocked_demands",
+          "unit": "1",
+          "type": "json",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    },
+    {
+      "file": "数据/batch_box_assignments.csv",
+      "row_count": 80,
+      "sha256": "3e429981400f235a8b57dd66e7bc6a6a62239cc431997bd471d5f22486b7820d",
+      "source": "solution.json:batches[].box_ids",
+      "processing": "将推荐方案箱号数组展开为80行，一箱一行",
+      "columns": [
+        {
+          "field": "batch_id",
+          "unit": "1",
+          "type": "text",
+          "description": "方案内架次编号"
+        },
+        {
+          "field": "service_id",
+          "unit": "1",
+          "type": "text",
+          "description": "目标服务区编号"
+        },
+        {
+          "field": "model",
+          "unit": "1",
+          "type": "text",
+          "description": "机型编号"
+        },
+        {
+          "field": "box_id",
+          "unit": "1",
+          "type": "text",
+          "description": "沿用正式JSON字段；详见源对象及字段名中的单位后缀"
+        }
+      ],
+      "lossless_roundtrip_verified": true
+    }
+  ],
+  "numerical_precision_note": "小数保持计算结果，不代表坐标、DEM、耗电模型具有同等实测精度。",
+  "scope_note": "未将多机资源、充电排程、首批与配送时限纳入第一问；全程往返单点，返程空载。"
+}

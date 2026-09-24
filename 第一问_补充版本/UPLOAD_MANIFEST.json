@@ -1,0 +1,1402 @@
+{
+  "created_utc": "2026-09-24T12:02:35.941085+00:00",
+  "scope": "Q1 only; new directory only",
+  "source_archive": {
+    "name": "第一问_论文材料包_20260924.zip",
+    "sha256": "df8d81fa904be48df92309769863d87f00560a125e5f00a63e59a0bcda8ed051"
+  },
+  "source_peer_commit": "9d1bddc2636a38a2f0445437420521389ad2fa49",
+  "original_tracked_file_count": 462,
+  "original_tracked_files_unchanged": true,
+  "markdown_links_valid": true,
+  "numerical_and_code_files_unchanged": true,
+  "omitted_archive_paths": [
+    "CODE_CHANGE_LOG.md",
+    "山区洪涝灾害下无人机运输与通信协同优化.docx",
+    "数据/无人机应急物资运输基础数据/物资需求与配送时限.xlsx",
+    "数据/无人机应急物资运输基础数据/调度中心与服务区.xlsx",
+    "数据/无人机应急物资运输基础数据/运输无人机数据.xlsx",
+    "数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/数字高程模型数据（DEM）/镇龙乡及周边30米DEM.tif",
+    "第一问/数据/原始附件/README.md",
+    "第一问/数据/原始附件/山区洪涝灾害下无人机运输与通信协同优化.docx",
+    "第一问/数据/原始附件/物资需求与配送时限.xlsx",
+    "第一问/数据/原始附件/调度中心与服务区.xlsx",
+    "第一问/数据/原始附件/运输无人机数据.xlsx",
+    "第一问/数据/原始附件/镇龙乡及周边30米DEM.tif",
+    "材料包说明.md",
+    "package_manifest.json"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "c060f2251343526b703d72b0eee7d0b80f3b95ad8e25ae7aa2787aed2c8a23ca",
+      "bytes": 289,
+      "source_bytes_unchanged": null
+    },
+    {
+      "path": "code/export_q1_batching.mjs",
+      "sha256": "a97489cd1a824f678c78924a50112ce855efa63b8cca1095fb9f59fea73b6725",
+      "bytes": 18868,
+      "source": "第一问_论文材料包_20260924.zip:code/export_q1_batching.mjs",
+      "source_sha256": "a97489cd1a824f678c78924a50112ce855efa63b8cca1095fb9f59fea73b6725",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "code/export_q1_multiobjective.mjs",
+      "sha256": "48694d136f5fe12d129747b55cdc6013ce930d14227d2d0eb851ea5ca49ad5bd",
+      "bytes": 25723,
+      "source": "第一问_论文材料包_20260924.zip:code/export_q1_multiobjective.mjs",
+      "source_sha256": "48694d136f5fe12d129747b55cdc6013ce930d14227d2d0eb851ea5ca49ad5bd",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "code/export_q1_reserve_sensitivity.mjs",
+      "sha256": "4e95893112993d2a24f4088d2e39d14443932aaf27dd02342f2598c035324f96",
+      "bytes": 33396,
+      "source": "第一问_论文材料包_20260924.zip:code/export_q1_reserve_sensitivity.mjs",
+      "source_sha256": "4e95893112993d2a24f4088d2e39d14443932aaf27dd02342f2598c035324f96",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "code/README_Q1.md",
+      "sha256": "a86f1f341c311704029a76e49bbee56e07e018766eb5425bb08333a54a6b4e99",
+      "bytes": 10060,
+      "source": "第一问_论文材料包_20260924.zip:code/README_Q1.md",
+      "source_sha256": "8b3eddd6e78241bfa48df8a5ee67d8ea0ae2248923b5827048f8d3f425e70d28",
+      "source_bytes_unchanged": false
+    },
+    {
+      "path": "code/requirements_q1.txt",
+      "sha256": "55953dae406a34601b9e4f1c0e96ba05274f605f2faab828ad26441adc927e27",
+      "bytes": 44,
+      "source": "第一问_论文材料包_20260924.zip:code/requirements_q1.txt",
+      "source_sha256": "55953dae406a34601b9e4f1c0e96ba05274f605f2faab828ad26441adc927e27",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "code/solve_q1_batching.py",
+      "sha256": "d978f40619ff398f80a1ef75fa9b3bf70ad2421bc0a9a077f73640684a8e8d46",
+      "bytes": 20566,
+      "source": "第一问_论文材料包_20260924.zip:code/solve_q1_batching.py",
+      "source_sha256": "d978f40619ff398f80a1ef75fa9b3bf70ad2421bc0a9a077f73640684a8e8d46",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "code/solve_q1_multiobjective.py",
+      "sha256": "89bf2032ac07367d30a5bfb6f67e6b774bfa19863e8a9995428700f75abb102a",
+      "bytes": 16378,
+      "source": "第一问_论文材料包_20260924.zip:code/solve_q1_multiobjective.py",
+      "source_sha256": "89bf2032ac07367d30a5bfb6f67e6b774bfa19863e8a9995428700f75abb102a",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "code/solve_q1_reserve_sensitivity.py",
+      "sha256": "0fbbe0bda09bb71879b8972782cb7e4c637bede6c7b2d5511f72c8e284a196d2",
+      "bytes": 16462,
+      "source": "第一问_论文材料包_20260924.zip:code/solve_q1_reserve_sensitivity.py",
+      "source_sha256": "0fbbe0bda09bb71879b8972782cb7e4c637bede6c7b2d5511f72c8e284a196d2",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "code/verify_q1_local_plane.py",
+      "sha256": "0f3e1939191b1eff56d5f0495ef30875423e2efac5bd86a4ae0ed1373518c25c",
+      "bytes": 29923,
+      "source": "第一问_论文材料包_20260924.zip:code/verify_q1_local_plane.py",
+      "source_sha256": "0f3e1939191b1eff56d5f0495ef30875423e2efac5bd86a4ae0ed1373518c25c",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "CODE_CHANGE_LOG.md",
+      "sha256": "d966f4537defe151bbf7cecc81120a9ec188915accdd51f04fa5bc59408525c0",
+      "bytes": 44932,
+      "source_bytes_unchanged": null
+    },
+    {
+      "path": "README.md",
+      "sha256": "335a989bf774dca50da706ace91c3a783be726a11aefbaf9629f426acba7c395",
+      "bytes": 4547,
+      "source_bytes_unchanged": null
+    },
+    {
+      "path": "results/question1_batching/candidates.json",
+      "sha256": "4c2f7eff5f36b0c1579e5739a1a680570047b0e9e1c37898ddf9779c96bebccc",
+      "bytes": 518144,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_batching/candidates.json",
+      "source_sha256": "4c2f7eff5f36b0c1579e5739a1a680570047b0e9e1c37898ddf9779c96bebccc",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_batching/geometry_audit.json",
+      "sha256": "d5cba304b094abd32c2db7406ac9fec3391df6e1b86e080ea6091b96d83c11da",
+      "bytes": 13353,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_batching/geometry_audit.json",
+      "source_sha256": "d5cba304b094abd32c2db7406ac9fec3391df6e1b86e080ea6091b96d83c11da",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_batching/independent_audit.json",
+      "sha256": "ea050efd47696461b4b1bf3d773782deb21a29ecafa1e2822d4e4e266d5c6b4a",
+      "bytes": 12719,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_batching/independent_audit.json",
+      "source_sha256": "ea050efd47696461b4b1bf3d773782deb21a29ecafa1e2822d4e4e266d5c6b4a",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_batching/Q1_单点组批.csv",
+      "sha256": "0ee9e5d493dbd3471bf0afef4f24e9423eb0eb2f404a48ef474cfea2ecbc9351",
+      "bytes": 2586,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_batching/Q1_单点组批.csv",
+      "source_sha256": "0ee9e5d493dbd3471bf0afef4f24e9423eb0eb2f404a48ef474cfea2ecbc9351",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_batching/Q1_局部椭球有向航段.csv",
+      "sha256": "955666b19e1ddde90b68025f17f844a70097178d62cc76bbf93c3f369f99e802",
+      "bytes": 2553,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_batching/Q1_局部椭球有向航段.csv",
+      "source_sha256": "955666b19e1ddde90b68025f17f844a70097178d62cc76bbf93c3f369f99e802",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_batching/Q1_局部椭球距离与航线.csv",
+      "sha256": "e53d33322a4b65fcd963e5fd8f2b9d578b359a44d6254f73c95047cd37d7dde2",
+      "bytes": 2115,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_batching/Q1_局部椭球距离与航线.csv",
+      "source_sha256": "e53d33322a4b65fcd963e5fd8f2b9d578b359a44d6254f73c95047cd37d7dde2",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_batching/solution.json",
+      "sha256": "b90e1443e931282622d183db7d07b68ff899709040630dfb7b6c029ad223ef39",
+      "bytes": 263144,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_batching/solution.json",
+      "source_sha256": "b90e1443e931282622d183db7d07b68ff899709040630dfb7b6c029ad223ef39",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_batching/第一问_货箱组批计算说明.md",
+      "sha256": "6775e4801adf5bd3cb1f2d18924b6610b04ca1b29115839d7753d56ddc0bdfdc",
+      "bytes": 8304,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_batching/第一问_货箱组批计算说明.md",
+      "source_sha256": "51a161a9bae8e562a6e2896b16339b3eafffcba37445123e9c3f0844a769611e",
+      "source_bytes_unchanged": false
+    },
+    {
+      "path": "results/question1_local_plane/coordinate_change_comparison.json",
+      "sha256": "9039de727aa98b41f11a385c5194280e0b19ee51f8f374e0fc9066157ccb1192",
+      "bytes": 8919,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_local_plane/coordinate_change_comparison.json",
+      "source_sha256": "9039de727aa98b41f11a385c5194280e0b19ee51f8f374e0fc9066157ccb1192",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_local_plane/qa_batching.png",
+      "sha256": "ef87a73ecbb96b332175369d2cf53b99efd6d2fc3f84de8fa5b2d02733f00952",
+      "bytes": 1049073,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_local_plane/qa_batching.png",
+      "source_sha256": "ef87a73ecbb96b332175369d2cf53b99efd6d2fc3f84de8fa5b2d02733f00952",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_local_plane/qa_multi.png",
+      "sha256": "a62d132082d6463fa0e7df5e08e1e982bec5902d4ee8a3d69f761508e6962c25",
+      "bytes": 572344,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_local_plane/qa_multi.png",
+      "source_sha256": "a62d132082d6463fa0e7df5e08e1e982bec5902d4ee8a3d69f761508e6962c25",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_local_plane/qa_reserve.png",
+      "sha256": "f3574e0283d1a3217965e81a1c2a1e2869785197c4384ae82b763bc6af645bf4",
+      "bytes": 1534146,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_local_plane/qa_reserve.png",
+      "source_sha256": "f3574e0283d1a3217965e81a1c2a1e2869785197c4384ae82b763bc6af645bf4",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_local_plane/source_rules_check.json",
+      "sha256": "d9c9fb2583a6aa4c2467f95b83225d130adee734b2b5bcd30030e35e3d96d73c",
+      "bytes": 8272,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_local_plane/source_rules_check.json",
+      "source_sha256": "d9c9fb2583a6aa4c2467f95b83225d130adee734b2b5bcd30030e35e3d96d73c",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_local_plane/workbook_validation.json",
+      "sha256": "f2f661270733eef336fe816486e0778721af7c19000360bc55c78ed1c067b83b",
+      "bytes": 1016,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_local_plane/workbook_validation.json",
+      "source_sha256": "f2f661270733eef336fe816486e0778721af7c19000360bc55c78ed1c067b83b",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_multiobjective/independent_endpoints.json",
+      "sha256": "6d7e61a673e1bfbc22bbc54d4f4fd7867580d5256dd7243b93825a9907fce77f",
+      "bytes": 1529,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_multiobjective/independent_endpoints.json",
+      "source_sha256": "6d7e61a673e1bfbc22bbc54d4f4fd7867580d5256dd7243b93825a9907fce77f",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_multiobjective/independent_frontier.json",
+      "sha256": "2a9f594e4c5ed255d801103119d0f6b01ddbbfefe63acec972ccabe2770483e8",
+      "bytes": 7487,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_multiobjective/independent_frontier.json",
+      "source_sha256": "2a9f594e4c5ed255d801103119d0f6b01ddbbfefe63acec972ccabe2770483e8",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_multiobjective/local_candidates.json",
+      "sha256": "4c2f7eff5f36b0c1579e5739a1a680570047b0e9e1c37898ddf9779c96bebccc",
+      "bytes": 518144,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_multiobjective/local_candidates.json",
+      "source_sha256": "4c2f7eff5f36b0c1579e5739a1a680570047b0e9e1c37898ddf9779c96bebccc",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_multiobjective/multiobjective.json",
+      "sha256": "17c37184c77c5f9039bbdfbe92410eb1760b1628900cf6e1a09f2744aff12334",
+      "bytes": 121701,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_multiobjective/multiobjective.json",
+      "source_sha256": "17c37184c77c5f9039bbdfbe92410eb1760b1628900cf6e1a09f2744aff12334",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_multiobjective/validation.json",
+      "sha256": "f0d3ed1e1581d24bcf6239215eb7ace2c4080af2a0d29506ffe27364c1bd882e",
+      "bytes": 2475,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_multiobjective/validation.json",
+      "source_sha256": "f0d3ed1e1581d24bcf6239215eb7ace2c4080af2a0d29506ffe27364c1bd882e",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_multiobjective/第一问_多目标优化分析.md",
+      "sha256": "4c90d2e7e2dfd3fed97a5040090218db24f189c5c5d2ffb59698ee457596aac5",
+      "bytes": 12059,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_multiobjective/第一问_多目标优化分析.md",
+      "source_sha256": "8c7ba4065e34728d86e72ab115db46398b309bcee5d6a297c44a5a6c9ee663fb",
+      "source_bytes_unchanged": false
+    },
+    {
+      "path": "results/question1_peer_alignment/audit_q1_numeric_alignment.py",
+      "sha256": "25263f78a7cd51e8a425ba73b73b56006cd16f2effebb963b7c61d82acec500e",
+      "bytes": 11879,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_peer_alignment/audit_q1_numeric_alignment.py",
+      "source_sha256": "25263f78a7cd51e8a425ba73b73b56006cd16f2effebb963b7c61d82acec500e",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_peer_alignment/final_alignment_validation.json",
+      "sha256": "d98f5d27840f7929f2718e2d94d6b2c60d3f9d6830155e00a42df13b2fe572ad",
+      "bytes": 20964,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_peer_alignment/final_alignment_validation.json",
+      "source_sha256": "d98f5d27840f7929f2718e2d94d6b2c60d3f9d6830155e00a42df13b2fe572ad",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_peer_alignment/numeric_alignment_dry_run.json",
+      "sha256": "f36de08ba6cdcf12bf577f73446ac5ea8893d1116e39de0c5e0574ae45a96625",
+      "bytes": 35354,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_peer_alignment/numeric_alignment_dry_run.json",
+      "source_sha256": "f36de08ba6cdcf12bf577f73446ac5ea8893d1116e39de0c5e0574ae45a96625",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_peer_alignment/peer_latest_scope_audit.json",
+      "sha256": "0ed3e0d776b0ede57de0f5e736f8386a4b6d9870d7034a90c700682e82145b10",
+      "bytes": 4201,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_peer_alignment/peer_latest_scope_audit.json",
+      "source_sha256": "0ed3e0d776b0ede57de0f5e736f8386a4b6d9870d7034a90c700682e82145b10",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_peer_alignment/workbook_validation.json",
+      "sha256": "b27008fb457fd930001a0d7487f101dabf550c92920f4933cbbdc79d379d139f",
+      "bytes": 6496,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_peer_alignment/workbook_validation.json",
+      "source_sha256": "b27008fb457fd930001a0d7487f101dabf550c92920f4933cbbdc79d379d139f",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_reserve_sensitivity/all_capacity_feasible_batches.json",
+      "sha256": "705558b27d85af4ce02d5c6d1ee5b8471e3ea43680656fcf61fbfb7980ab8341",
+      "bytes": 518619,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_reserve_sensitivity/all_capacity_feasible_batches.json",
+      "source_sha256": "705558b27d85af4ce02d5c6d1ee5b8471e3ea43680656fcf61fbfb7980ab8341",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_reserve_sensitivity/independent_payloads.json",
+      "sha256": "99dfd8075d7f94d3e00b8f028bd73fe8f8dff149556a8739f61cf9d2c8ee0093",
+      "bytes": 920173,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_reserve_sensitivity/independent_payloads.json",
+      "source_sha256": "99dfd8075d7f94d3e00b8f028bd73fe8f8dff149556a8739f61cf9d2c8ee0093",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_reserve_sensitivity/independent_scenarios.json",
+      "sha256": "c624ac4fe6905690feb00cc681bcf2b7518ef3a23089074fef79a938b17ab32d",
+      "bytes": 13652,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_reserve_sensitivity/independent_scenarios.json",
+      "source_sha256": "c624ac4fe6905690feb00cc681bcf2b7518ef3a23089074fef79a938b17ab32d",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_reserve_sensitivity/payload_validation.json",
+      "sha256": "99dfd8075d7f94d3e00b8f028bd73fe8f8dff149556a8739f61cf9d2c8ee0093",
+      "bytes": 920173,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_reserve_sensitivity/payload_validation.json",
+      "source_sha256": "99dfd8075d7f94d3e00b8f028bd73fe8f8dff149556a8739f61cf9d2c8ee0093",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_reserve_sensitivity/sensitivity.json",
+      "sha256": "2c7568a6f03345aaa9d2c3559c8256669c34c03b52ac7fe956a4f5950b0a4903",
+      "bytes": 1461056,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_reserve_sensitivity/sensitivity.json",
+      "source_sha256": "2c7568a6f03345aaa9d2c3559c8256669c34c03b52ac7fe956a4f5950b0a4903",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_reserve_sensitivity/validation.json",
+      "sha256": "ac79dbb77689900c28925d4d01eba5257026d1ffe3681cff4c7fb691fcf6704f",
+      "bytes": 85661,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_reserve_sensitivity/validation.json",
+      "source_sha256": "ac79dbb77689900c28925d4d01eba5257026d1ffe3681cff4c7fb691fcf6704f",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "results/question1_reserve_sensitivity/第一问_返航安全余量敏感性分析.md",
+      "sha256": "5e0dcb0ef27ac48083b95ad67ca9f957a682ecd1012a8aea5d9e52bddbc510c6",
+      "bytes": 21026,
+      "source": "第一问_论文材料包_20260924.zip:results/question1_reserve_sensitivity/第一问_返航安全余量敏感性分析.md",
+      "source_sha256": "1f665b9c46a8dd9e97fbed02f822a730cfa3df36465b46d12393c057f823386e",
+      "source_bytes_unchanged": false
+    },
+    {
+      "path": "第一问/README.md",
+      "sha256": "b00b17851aa7867007ac8d7a4faeec18a1c2c71334c83639f5ba5a9cf48e3ea7",
+      "bytes": 3020,
+      "source": "第一问_论文材料包_20260924.zip:第一问/README.md",
+      "source_sha256": "47a16803496989b4d7e7739c8c4511c4bc3c40e3bbe3c45061230be8cf8e2889",
+      "source_bytes_unchanged": false
+    },
+    {
+      "path": "第一问/代码/build_paper_package.py",
+      "sha256": "1a77ddb2a2c33ed63cf57af0839a671d21f32420c5ac635a31e305393fc940eb",
+      "bytes": 13673,
+      "source": "第一问_论文材料包_20260924.zip:第一问/代码/build_paper_package.py",
+      "source_sha256": "1a77ddb2a2c33ed63cf57af0839a671d21f32420c5ac635a31e305393fc940eb",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/代码/compare_q1_peer.py",
+      "sha256": "fd82a77c95ef9bb4ce3e75d5e72cb8fd6d44305f660cae3ea1c156efd9710d18",
+      "bytes": 6241,
+      "source": "第一问_论文材料包_20260924.zip:第一问/代码/compare_q1_peer.py",
+      "source_sha256": "fd82a77c95ef9bb4ce3e75d5e72cb8fd6d44305f660cae3ea1c156efd9710d18",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/代码/make_q1_paper_figures.py",
+      "sha256": "4c4d50a63ca4cf7abc79e95977548237021dd679d58a5330313c6888f811bac1",
+      "bytes": 25741,
+      "source": "第一问_论文材料包_20260924.zip:第一问/代码/make_q1_paper_figures.py",
+      "source_sha256": "4c4d50a63ca4cf7abc79e95977548237021dd679d58a5330313c6888f811bac1",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/代码/plot_q1_geography.py",
+      "sha256": "5946d6232ed96e940cf4ee990a407f65972ef9380d9a9652b90a93aa2763e383",
+      "bytes": 17694,
+      "source": "第一问_论文材料包_20260924.zip:第一问/代码/plot_q1_geography.py",
+      "source_sha256": "5946d6232ed96e940cf4ee990a407f65972ef9380d9a9652b90a93aa2763e383",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/代码/prepare_q1_paper_data.py",
+      "sha256": "0ae1c430fb08dfbcefbc1bd000164825ae09dde169fd613100c86ec937451d23",
+      "bytes": 15846,
+      "source": "第一问_论文材料包_20260924.zip:第一问/代码/prepare_q1_paper_data.py",
+      "source_sha256": "0ae1c430fb08dfbcefbc1bd000164825ae09dde169fd613100c86ec937451d23",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/代码/README.md",
+      "sha256": "9915ca9c91aa02768be249ffa4407d02a362db888be29c813321cdba322f252d",
+      "bytes": 3471,
+      "source": "第一问_论文材料包_20260924.zip:第一问/代码/README.md",
+      "source_sha256": "9f106b86ba1a71a4ac47a6316c1da8834bea09b4d3c44f2ca8b0b9bb788b9ebf",
+      "source_bytes_unchanged": false
+    },
+    {
+      "path": "第一问/代码/requirements_paper.txt",
+      "sha256": "a5ac40b8778046298e56819498df0a415301ac6b71b6fd450898bb44adea4ed6",
+      "bytes": 254,
+      "source": "第一问_论文材料包_20260924.zip:第一问/代码/requirements_paper.txt",
+      "source_sha256": "a5ac40b8778046298e56819498df0a415301ac6b71b6fd450898bb44adea4ed6",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/代码/复现第一问.py",
+      "sha256": "5a15a997b9c90b32547d6c3628bac9f7b6e0ed8f053be8182ead6670db8c814f",
+      "bytes": 1613,
+      "source": "第一问_论文材料包_20260924.zip:第一问/代码/复现第一问.py",
+      "source_sha256": "5a15a997b9c90b32547d6c3628bac9f7b6e0ed8f053be8182ead6670db8c814f",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F01_routes_terrain.pdf",
+      "sha256": "74bf919de27e1c7536f70dbb5c36043c91cb6585630d5abb9bcec0091b04d4b9",
+      "bytes": 338793,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F01_routes_terrain.pdf",
+      "source_sha256": "74bf919de27e1c7536f70dbb5c36043c91cb6585630d5abb9bcec0091b04d4b9",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F01_routes_terrain.png",
+      "sha256": "4872f826655b175c9b8d19d03926c732788ce8a960d1b1f7d10218e53a1e505c",
+      "bytes": 943079,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F01_routes_terrain.png",
+      "source_sha256": "4872f826655b175c9b8d19d03926c732788ce8a960d1b1f7d10218e53a1e505c",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F01_routes_terrain.svg",
+      "sha256": "5c8f11c51216a83aef4e36cff57e7127a476647928f10979c99ac0f893fc475a",
+      "bytes": 515933,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F01_routes_terrain.svg",
+      "source_sha256": "5c8f11c51216a83aef4e36cff57e7127a476647928f10979c99ac0f893fc475a",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F01_routes_terrain_preview.png",
+      "sha256": "609fb567e53c149f0ff6186108b578a58c1907dec1e5d78bd579938b515ea80f",
+      "bytes": 369628,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F01_routes_terrain_preview.png",
+      "source_sha256": "609fb567e53c149f0ff6186108b578a58c1907dec1e5d78bd579938b515ea80f",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F02_terrain_profiles.pdf",
+      "sha256": "d322a1d989ac48b099455b144957dfe53d129b0f9cb8caee13074761132e8ace",
+      "bytes": 62959,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F02_terrain_profiles.pdf",
+      "source_sha256": "d322a1d989ac48b099455b144957dfe53d129b0f9cb8caee13074761132e8ace",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F02_terrain_profiles.png",
+      "sha256": "3d222e344dfbbbf29c1f7323a301b87b9db23d76e504551d27e3a0668686ae33",
+      "bytes": 775138,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F02_terrain_profiles.png",
+      "source_sha256": "3d222e344dfbbbf29c1f7323a301b87b9db23d76e504551d27e3a0668686ae33",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F02_terrain_profiles.svg",
+      "sha256": "78dd344e830975e6ff2a338995f9540e57258b681e2c3d75e2e0cce6fec2d6f5",
+      "bytes": 184628,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F02_terrain_profiles.svg",
+      "source_sha256": "78dd344e830975e6ff2a338995f9540e57258b681e2c3d75e2e0cce6fec2d6f5",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F02_terrain_profiles_preview.png",
+      "sha256": "ef21f8dff5ef45810c4a3be1e559489a57e0567b3e4151ffbfc08441816492fc",
+      "bytes": 187243,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F02_terrain_profiles_preview.png",
+      "source_sha256": "ef21f8dff5ef45810c4a3be1e559489a57e0567b3e4151ffbfc08441816492fc",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F03_demand.pdf",
+      "sha256": "a6c7abdf8c9277abe05cd7064a3f2ac4789f2ac66e17a0d590f5e3bdf35bc4e0",
+      "bytes": 20619,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F03_demand.pdf",
+      "source_sha256": "a6c7abdf8c9277abe05cd7064a3f2ac4789f2ac66e17a0d590f5e3bdf35bc4e0",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F03_demand.png",
+      "sha256": "a88b3ea63c0e40aeb086cfa693d7ef36d56ceb20990d5ebd3c87273a9ea2bf38",
+      "bytes": 241372,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F03_demand.png",
+      "source_sha256": "a88b3ea63c0e40aeb086cfa693d7ef36d56ceb20990d5ebd3c87273a9ea2bf38",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F03_demand.svg",
+      "sha256": "3fa20aeebbefcdd02fffadc4625f55a0697ee70bdb0b2e4200ad8b6517e438a6",
+      "bytes": 61503,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F03_demand.svg",
+      "source_sha256": "3fa20aeebbefcdd02fffadc4625f55a0697ee70bdb0b2e4200ad8b6517e438a6",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F03_demand_preview.png",
+      "sha256": "a851c56cb4b33df35e2c086df933956f045275a22b2f5afd8c12081e034cb051",
+      "bytes": 40208,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F03_demand_preview.png",
+      "source_sha256": "a851c56cb4b33df35e2c086df933956f045275a22b2f5afd8c12081e034cb051",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F04_batch_composition.pdf",
+      "sha256": "995224634d921e559b09fd75089467f72a5aa3a0abaea1a81368f766497207d1",
+      "bytes": 22153,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F04_batch_composition.pdf",
+      "source_sha256": "995224634d921e559b09fd75089467f72a5aa3a0abaea1a81368f766497207d1",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F04_batch_composition.png",
+      "sha256": "cc2edce4359619b8d0b2b2c8ccd943610d28bf6d35bb332d57afcd249b2a0660",
+      "bytes": 464312,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F04_batch_composition.png",
+      "source_sha256": "cc2edce4359619b8d0b2b2c8ccd943610d28bf6d35bb332d57afcd249b2a0660",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F04_batch_composition.svg",
+      "sha256": "046912466fa66393809e4f1e0c82f6ca866ec48d843dbb6056e7a8aa2c9598e3",
+      "bytes": 39047,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F04_batch_composition.svg",
+      "source_sha256": "046912466fa66393809e4f1e0c82f6ca866ec48d843dbb6056e7a8aa2c9598e3",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F04_batch_composition_preview.png",
+      "sha256": "2aee7f0f37c199d581ff8de8a9827b4559b2b6a9cf42a319a5c7c109a79329f8",
+      "bytes": 69775,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F04_batch_composition_preview.png",
+      "source_sha256": "2aee7f0f37c199d581ff8de8a9827b4559b2b6a9cf42a319a5c7c109a79329f8",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F05_constraint_utilization.pdf",
+      "sha256": "691e1db0cd7cc31835c6122bc8eee0305b5c95073fbef18c645b3af84f66d02a",
+      "bytes": 23502,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F05_constraint_utilization.pdf",
+      "source_sha256": "691e1db0cd7cc31835c6122bc8eee0305b5c95073fbef18c645b3af84f66d02a",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F05_constraint_utilization.png",
+      "sha256": "de0733e95b24f3135d272a96984fad367aafb8d58665afed062be53187e50e6a",
+      "bytes": 366152,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F05_constraint_utilization.png",
+      "source_sha256": "de0733e95b24f3135d272a96984fad367aafb8d58665afed062be53187e50e6a",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F05_constraint_utilization.svg",
+      "sha256": "055be106f28b465a3b9e5f3d288752c590d7698af73e1626d3246b7b9532e66b",
+      "bytes": 33865,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F05_constraint_utilization.svg",
+      "source_sha256": "055be106f28b465a3b9e5f3d288752c590d7698af73e1626d3246b7b9532e66b",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F05_constraint_utilization_preview.png",
+      "sha256": "b3e3ca5ed66485c0b0d3f4d551d0733b28c1c16e410ef2f087fe29e65c3d2fcd",
+      "bytes": 60222,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F05_constraint_utilization_preview.png",
+      "source_sha256": "b3e3ca5ed66485c0b0d3f4d551d0733b28c1c16e410ef2f087fe29e65c3d2fcd",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F06_energy_components.pdf",
+      "sha256": "fce7ec913e78549c53848ab7a31a84cc0e0f889f56deb1a2a796c02fa556e179",
+      "bytes": 22675,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F06_energy_components.pdf",
+      "source_sha256": "fce7ec913e78549c53848ab7a31a84cc0e0f889f56deb1a2a796c02fa556e179",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F06_energy_components.png",
+      "sha256": "1afa27b33d4742aa906de2ca316f22fb6b1c9b05b463a6b4bd49721c4afd7da9",
+      "bytes": 304596,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F06_energy_components.png",
+      "source_sha256": "1afa27b33d4742aa906de2ca316f22fb6b1c9b05b463a6b4bd49721c4afd7da9",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F06_energy_components.svg",
+      "sha256": "4a6a5ef7ef98520f62a7bbafdefbb348db9e6681d71674f234b353e48334eb24",
+      "bytes": 54001,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F06_energy_components.svg",
+      "source_sha256": "4a6a5ef7ef98520f62a7bbafdefbb348db9e6681d71674f234b353e48334eb24",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F06_energy_components_preview.png",
+      "sha256": "806ec20e08c0a704e7e8b2debdedca489f8ba63d16cad45dc340fbd5fb644277",
+      "bytes": 51855,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F06_energy_components_preview.png",
+      "source_sha256": "806ec20e08c0a704e7e8b2debdedca489f8ba63d16cad45dc340fbd5fb644277",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F07_time_components.pdf",
+      "sha256": "364cad7bad1fdd9db83d2be027ea81279f40ce1310d527dd90495bed593c446e",
+      "bytes": 19362,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F07_time_components.pdf",
+      "source_sha256": "364cad7bad1fdd9db83d2be027ea81279f40ce1310d527dd90495bed593c446e",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F07_time_components.png",
+      "sha256": "2fe2dea6043a1bb3e5410b9f5402eff5c4c02c2a5317b4f921276f775449e758",
+      "bytes": 280435,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F07_time_components.png",
+      "source_sha256": "2fe2dea6043a1bb3e5410b9f5402eff5c4c02c2a5317b4f921276f775449e758",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F07_time_components.svg",
+      "sha256": "c3f93e16180877e860397370016930ea297a1c5e9de06e6700f5d04f7a85abdb",
+      "bytes": 36737,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F07_time_components.svg",
+      "source_sha256": "c3f93e16180877e860397370016930ea297a1c5e9de06e6700f5d04f7a85abdb",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F07_time_components_preview.png",
+      "sha256": "7424cc8afea8b9e8efe4605064faf60fdd1fa7c14d88438e9468990f279ab652",
+      "bytes": 45375,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F07_time_components_preview.png",
+      "source_sha256": "7424cc8afea8b9e8efe4605064faf60fdd1fa7c14d88438e9468990f279ab652",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F08_safe_payload.pdf",
+      "sha256": "28fa1305008621c64ebb6c8a38715b8d4f850b7b2fcaa1cd3b63a68de2bad89a",
+      "bytes": 36379,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F08_safe_payload.pdf",
+      "source_sha256": "28fa1305008621c64ebb6c8a38715b8d4f850b7b2fcaa1cd3b63a68de2bad89a",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F08_safe_payload.png",
+      "sha256": "d4bbf34eb856595b058e5ddff2b9b3e60f683826d2e82d13fddeef5edfc39d96",
+      "bytes": 493604,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F08_safe_payload.png",
+      "source_sha256": "d4bbf34eb856595b058e5ddff2b9b3e60f683826d2e82d13fddeef5edfc39d96",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F08_safe_payload.svg",
+      "sha256": "5048aee9324afa0d1df9873170cbec16ab3547c13428005bd4b6882b71d73981",
+      "bytes": 101696,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F08_safe_payload.svg",
+      "source_sha256": "5048aee9324afa0d1df9873170cbec16ab3547c13428005bd4b6882b71d73981",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F08_safe_payload_preview.png",
+      "sha256": "4c59583d73f634b944cf054b8c36aa413b0f2b0288eb777b91b9f17a9db2dcdb",
+      "bytes": 86907,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F08_safe_payload_preview.png",
+      "source_sha256": "4c59583d73f634b944cf054b8c36aa413b0f2b0288eb777b91b9f17a9db2dcdb",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F09_pareto.pdf",
+      "sha256": "ff00a8a41dc3f3d2818b7789935360c08ef7a4eef32c7eeb101ed5caabf02b22",
+      "bytes": 20281,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F09_pareto.pdf",
+      "source_sha256": "ff00a8a41dc3f3d2818b7789935360c08ef7a4eef32c7eeb101ed5caabf02b22",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F09_pareto.png",
+      "sha256": "eb205dae010e126f24877fa86d88895ced97ff6f7d1841c6c2f3c4ce755591fb",
+      "bytes": 226113,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F09_pareto.png",
+      "source_sha256": "eb205dae010e126f24877fa86d88895ced97ff6f7d1841c6c2f3c4ce755591fb",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F09_pareto.svg",
+      "sha256": "1ff9dfdc2f562096617751d81dc3ac7c436c21e1263fd28e88d2a5f4c48d75a3",
+      "bytes": 17840,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F09_pareto.svg",
+      "source_sha256": "1ff9dfdc2f562096617751d81dc3ac7c436c21e1263fd28e88d2a5f4c48d75a3",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F09_pareto_preview.png",
+      "sha256": "6831c96901177659e9a106653b84c90fc04bb5722600622820e0a28f2affb2bf",
+      "bytes": 37352,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F09_pareto_preview.png",
+      "source_sha256": "6831c96901177659e9a106653b84c90fc04bb5722600622820e0a28f2affb2bf",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F10_s008_split.pdf",
+      "sha256": "67110db88c7bb38e292b1c0367bc6a1ce77ff7ef25acc5931397ced3941932ed",
+      "bytes": 15835,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F10_s008_split.pdf",
+      "source_sha256": "67110db88c7bb38e292b1c0367bc6a1ce77ff7ef25acc5931397ced3941932ed",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F10_s008_split.png",
+      "sha256": "8bd17f72387ed488eb56d765e2ee8efe80ed508bfb4b8cc32d6e5867dd36b98e",
+      "bytes": 118674,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F10_s008_split.png",
+      "source_sha256": "8bd17f72387ed488eb56d765e2ee8efe80ed508bfb4b8cc32d6e5867dd36b98e",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F10_s008_split.svg",
+      "sha256": "b43ace5c6470067b7349f494b4b4de4202e427e09f20746e54916d612225c0cd",
+      "bytes": 14477,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F10_s008_split.svg",
+      "source_sha256": "b43ace5c6470067b7349f494b4b4de4202e427e09f20746e54916d612225c0cd",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F10_s008_split_preview.png",
+      "sha256": "50e86ec0b1775add08e1aa1d4c868ac9395e687a1d0e37481a15c04f7903331b",
+      "bytes": 19930,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F10_s008_split_preview.png",
+      "source_sha256": "50e86ec0b1775add08e1aa1d4c868ac9395e687a1d0e37481a15c04f7903331b",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F11_reserve_steps.pdf",
+      "sha256": "1f1aaa00a4d30da884b32a31876f58ba795550a67a4c55715dc5047266444e5f",
+      "bytes": 36801,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F11_reserve_steps.pdf",
+      "source_sha256": "1f1aaa00a4d30da884b32a31876f58ba795550a67a4c55715dc5047266444e5f",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F11_reserve_steps.png",
+      "sha256": "34cf6028136b466fd9f59b46952b20b54096866813fea8fd7f0b76a459f68531",
+      "bytes": 345531,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F11_reserve_steps.png",
+      "source_sha256": "34cf6028136b466fd9f59b46952b20b54096866813fea8fd7f0b76a459f68531",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F11_reserve_steps.svg",
+      "sha256": "61380e24524814189317f32f4dc3305189f17978e71dced14cbf0c89117e550c",
+      "bytes": 57292,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F11_reserve_steps.svg",
+      "source_sha256": "61380e24524814189317f32f4dc3305189f17978e71dced14cbf0c89117e550c",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F11_reserve_steps_preview.png",
+      "sha256": "0ad8cc9e0182392c5524b90d522bbec6a2b92352085131c8cd5a4785df4865bd",
+      "bytes": 59662,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F11_reserve_steps_preview.png",
+      "source_sha256": "0ad8cc9e0182392c5524b90d522bbec6a2b92352085131c8cd5a4785df4865bd",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F12_interval_comparison.pdf",
+      "sha256": "a2e5e7becec8ba5ba16381e03be0a45b2d1c7e0b68770fd7328fc48c656c0bc8",
+      "bytes": 19131,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F12_interval_comparison.pdf",
+      "source_sha256": "a2e5e7becec8ba5ba16381e03be0a45b2d1c7e0b68770fd7328fc48c656c0bc8",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F12_interval_comparison.png",
+      "sha256": "b0509e40e41bd5a176337b6fd00788a93e83456ef6ab9355249587df44c995ec",
+      "bytes": 447795,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F12_interval_comparison.png",
+      "source_sha256": "b0509e40e41bd5a176337b6fd00788a93e83456ef6ab9355249587df44c995ec",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F12_interval_comparison.svg",
+      "sha256": "45b35a4c289afc4e1b5bf93e2a7f946bdafdf15db88bec149120f4be3b2f7ba8",
+      "bytes": 46432,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F12_interval_comparison.svg",
+      "source_sha256": "45b35a4c289afc4e1b5bf93e2a7f946bdafdf15db88bec149120f4be3b2f7ba8",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F12_interval_comparison_preview.png",
+      "sha256": "7198a0784163ab872da1b7e37a1fc7288e1d8c17042a3a0ca27432af5bc019fd",
+      "bytes": 67913,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F12_interval_comparison_preview.png",
+      "source_sha256": "7198a0784163ab872da1b7e37a1fc7288e1d8c17042a3a0ca27432af5bc019fd",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F13_payload_curves.pdf",
+      "sha256": "292eca6606dfa278492a9dd273e83a4519c5ee7d79c0acb3d924b60eb5e70711",
+      "bytes": 29793,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F13_payload_curves.pdf",
+      "source_sha256": "292eca6606dfa278492a9dd273e83a4519c5ee7d79c0acb3d924b60eb5e70711",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F13_payload_curves.png",
+      "sha256": "76e2d2d53ba8a033fd61fee69909a0c048afac436e9f9c3de3de6f52c7a915cd",
+      "bytes": 653080,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F13_payload_curves.png",
+      "source_sha256": "76e2d2d53ba8a033fd61fee69909a0c048afac436e9f9c3de3de6f52c7a915cd",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F13_payload_curves.svg",
+      "sha256": "3b8f92251a9d089062a1e6d8f275f9bb1f89d05285281f2526d469a9e06e621c",
+      "bytes": 141034,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F13_payload_curves.svg",
+      "source_sha256": "3b8f92251a9d089062a1e6d8f275f9bb1f89d05285281f2526d469a9e06e621c",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F13_payload_curves_preview.png",
+      "sha256": "eaf696fb8172b8af2010f27b3ce6f99c2abfba49fa8489c78789f645f3a0fe4e",
+      "bytes": 136578,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F13_payload_curves_preview.png",
+      "source_sha256": "eaf696fb8172b8af2010f27b3ce6f99c2abfba49fa8489c78789f645f3a0fe4e",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F14_last_threshold.pdf",
+      "sha256": "17976c601d06ad4d8019503d4930fb0b10fb94436aa5441b18d3c744f8c0d0c0",
+      "bytes": 34198,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F14_last_threshold.pdf",
+      "source_sha256": "17976c601d06ad4d8019503d4930fb0b10fb94436aa5441b18d3c744f8c0d0c0",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F14_last_threshold.png",
+      "sha256": "2ee0b103dd21edde2fd07169326b3ff13fd74418bef6bd3202fc1282a01a54f7",
+      "bytes": 347725,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F14_last_threshold.png",
+      "source_sha256": "2ee0b103dd21edde2fd07169326b3ff13fd74418bef6bd3202fc1282a01a54f7",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F14_last_threshold.svg",
+      "sha256": "454eb63031c6ab424cba6e1694c3aba582e6ffafdc206d870874cddfd364bf8a",
+      "bytes": 18872,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F14_last_threshold.svg",
+      "source_sha256": "454eb63031c6ab424cba6e1694c3aba582e6ffafdc206d870874cddfd364bf8a",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F14_last_threshold_preview.png",
+      "sha256": "bdd09606c414aed7466710bab4002695c90018b33c300ecfe124a3dc03005067",
+      "bytes": 56381,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F14_last_threshold_preview.png",
+      "source_sha256": "bdd09606c414aed7466710bab4002695c90018b33c300ecfe124a3dc03005067",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F15_payload_thresholds.pdf",
+      "sha256": "bac983b2e466795669858271863ecdcf831110d3856087025226e1d2d62d296c",
+      "bytes": 33104,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F15_payload_thresholds.pdf",
+      "source_sha256": "bac983b2e466795669858271863ecdcf831110d3856087025226e1d2d62d296c",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F15_payload_thresholds.png",
+      "sha256": "adc63c24194d47fdcce546b54641e822af534e01891e4677f53a269679c51530",
+      "bytes": 320870,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F15_payload_thresholds.png",
+      "source_sha256": "adc63c24194d47fdcce546b54641e822af534e01891e4677f53a269679c51530",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F15_payload_thresholds.svg",
+      "sha256": "7ab398740c27ac5c4c4c1c177f014053ba8d9bfff3550de8965d62f1801ea37e",
+      "bytes": 58960,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F15_payload_thresholds.svg",
+      "source_sha256": "7ab398740c27ac5c4c4c1c177f014053ba8d9bfff3550de8965d62f1801ea37e",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F15_payload_thresholds_preview.png",
+      "sha256": "aafb18481100e0968409f8ab4905688b4f50bbad440f3844827a5709e3335063",
+      "bytes": 62123,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F15_payload_thresholds_preview.png",
+      "source_sha256": "aafb18481100e0968409f8ab4905688b4f50bbad440f3844827a5709e3335063",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F16_solver_flow.pdf",
+      "sha256": "31c1588a9f5fb5a0f944d8629e1e66b038e458b90d07db4757dc6d6589ae872b",
+      "bytes": 66112,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F16_solver_flow.pdf",
+      "source_sha256": "31c1588a9f5fb5a0f944d8629e1e66b038e458b90d07db4757dc6d6589ae872b",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F16_solver_flow.png",
+      "sha256": "23ab7bfa290dcfc4d98d5cf2226fea72efecc1889ac394ba9e473f25f0edcfd7",
+      "bytes": 531643,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F16_solver_flow.png",
+      "source_sha256": "23ab7bfa290dcfc4d98d5cf2226fea72efecc1889ac394ba9e473f25f0edcfd7",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F16_solver_flow.svg",
+      "sha256": "5e26d1f7ed442519fb0bbb3faf435cba5e78c6880b55aa71001ed341133d5c34",
+      "bytes": 10558,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F16_solver_flow.svg",
+      "source_sha256": "5e26d1f7ed442519fb0bbb3faf435cba5e78c6880b55aa71001ed341133d5c34",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/F16_solver_flow_preview.png",
+      "sha256": "78806f24e1a358beabd819f33bd32ff73f443cd6b06228201eb526addee082ad",
+      "bytes": 97537,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/F16_solver_flow_preview.png",
+      "source_sha256": "78806f24e1a358beabd819f33bd32ff73f443cd6b06228201eb526addee082ad",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/figure_manifest.json",
+      "sha256": "7506d79593c398b4652f88897005d8654cf2596b87fcc59ff78fdaae1b618d41",
+      "bytes": 9845,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/figure_manifest.json",
+      "source_sha256": "7506d79593c398b4652f88897005d8654cf2596b87fcc59ff78fdaae1b618d41",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/图册首页_preview.png",
+      "sha256": "51d5da1caad9bddd51b0e5867f4bf7e86f1f4db6be6c466a52e20f82884ccada",
+      "bytes": 157781,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/图册首页_preview.png",
+      "source_sha256": "51d5da1caad9bddd51b0e5867f4bf7e86f1f4db6be6c466a52e20f82884ccada",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/图组索引_01.png",
+      "sha256": "d0e5bc66a25823ca1ad54148b2875151c62cbc4c224c1982448a7161b09b6e28",
+      "bytes": 648417,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/图组索引_01.png",
+      "source_sha256": "d0e5bc66a25823ca1ad54148b2875151c62cbc4c224c1982448a7161b09b6e28",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/图组索引_02.png",
+      "sha256": "bbf2b3f4ec86cdeff6801c770fbf4cfa4dd85e63a702165ad2ad2d327269d89b",
+      "bytes": 317093,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/图组索引_02.png",
+      "source_sha256": "bbf2b3f4ec86cdeff6801c770fbf4cfa4dd85e63a702165ad2ad2d327269d89b",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/图组索引_03.png",
+      "sha256": "961a23141ea94b914511bb8a8a2570aecdbf456b2a37f47ae9e88906fef4d28b",
+      "bytes": 242956,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/图组索引_03.png",
+      "source_sha256": "961a23141ea94b914511bb8a8a2570aecdbf456b2a37f47ae9e88906fef4d28b",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/图组索引_04.png",
+      "sha256": "d1389f010858d0bb0a386f3597a65a1dd5dab6410326945304d90c39e1473909",
+      "bytes": 417456,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/图组索引_04.png",
+      "source_sha256": "d1389f010858d0bb0a386f3597a65a1dd5dab6410326945304d90c39e1473909",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/图片/第一问_论文图册.pdf",
+      "sha256": "10a77c16440e39d80c75a6a86b2a73fbec6f3bf98a0e56c1406892f337151833",
+      "bytes": 893864,
+      "source": "第一问_论文材料包_20260924.zip:第一问/图片/第一问_论文图册.pdf",
+      "source_sha256": "10a77c16440e39d80c75a6a86b2a73fbec6f3bf98a0e56c1406892f337151833",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/all_candidates.csv",
+      "sha256": "156b574bba28debba34060a279f91ccd4e73b2a47ab19006c173626eef0716dc",
+      "bytes": 156492,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/all_candidates.csv",
+      "source_sha256": "156b574bba28debba34060a279f91ccd4e73b2a47ab19006c173626eef0716dc",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/batch_box_assignments.csv",
+      "sha256": "3e429981400f235a8b57dd66e7bc6a6a62239cc431997bd471d5f22486b7820d",
+      "bytes": 2197,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/batch_box_assignments.csv",
+      "source_sha256": "3e429981400f235a8b57dd66e7bc6a6a62239cc431997bd471d5f22486b7820d",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/batches.csv",
+      "sha256": "0ece9014b4250098b2f5b4270fa020be4eabf05d561b71ffdf0cdf5a596fc8d6",
+      "bytes": 5358,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/batches.csv",
+      "source_sha256": "0ece9014b4250098b2f5b4270fa020be4eabf05d561b71ffdf0cdf5a596fc8d6",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/boxes.csv",
+      "sha256": "127fe36c0cd37fce9379f1b35f3263fbd4064ffdac67c97ed081cf53fcec037e",
+      "bytes": 5300,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/boxes.csv",
+      "source_sha256": "127fe36c0cd37fce9379f1b35f3263fbd4064ffdac67c97ed081cf53fcec037e",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/data_dictionary.csv",
+      "sha256": "648b4af275b76369fb8e2aa000bc22e955aa5fa97d0099d6d1613f782e614e43",
+      "bytes": 17404,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/data_dictionary.csv",
+      "source_sha256": "648b4af275b76369fb8e2aa000bc22e955aa5fa97d0099d6d1613f782e614e43",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/drones.csv",
+      "sha256": "17b9c45065abd43de4dd4843313f96d0221898515bd1ffa6f43d3def6fbf47fb",
+      "bytes": 534,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/drones.csv",
+      "source_sha256": "17b9c45065abd43de4dd4843313f96d0221898515bd1ffa6f43d3def6fbf47fb",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/F02_profile_cell_intervals.csv",
+      "sha256": "135e3abfca47903dd571e55c48db275e09fdcab9f05145c8ab7f1e06c7ba7c1a",
+      "bytes": 102022,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/F02_profile_cell_intervals.csv",
+      "source_sha256": "135e3abfca47903dd571e55c48db275e09fdcab9f05145c8ab7f1e06c7ba7c1a",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/F02_profile_envelope_points.csv",
+      "sha256": "24a36eb66797ccdcacb02df381e58db532ef9ce88a1e5501b1ca2dc7295f5958",
+      "bytes": 40614,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/F02_profile_envelope_points.csv",
+      "source_sha256": "24a36eb66797ccdcacb02df381e58db532ef9ce88a1e5501b1ca2dc7295f5958",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/F02_profile_envelope_segments.csv",
+      "sha256": "25c71a081be08ccaa3b79eda29bc3f9ca9d72a3e020ec46604893b87bba475f9",
+      "bytes": 57851,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/F02_profile_envelope_segments.csv",
+      "source_sha256": "25c71a081be08ccaa3b79eda29bc3f9ca9d72a3e020ec46604893b87bba475f9",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/nodes.csv",
+      "sha256": "fe6c1abfb37307de7452c428610a7b0b835dcc57fafaabd6ee605253a5c49e63",
+      "bytes": 1538,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/nodes.csv",
+      "source_sha256": "fe6c1abfb37307de7452c428610a7b0b835dcc57fafaabd6ee605253a5c49e63",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/pareto.csv",
+      "sha256": "0fec34ba3addecec0d2788703072e3fd8f3fc15fec0da03d55ce0bab18715b3d",
+      "bytes": 24174,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/pareto.csv",
+      "source_sha256": "0fec34ba3addecec0d2788703072e3fd8f3fc15fec0da03d55ce0bab18715b3d",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/payload_curves.csv",
+      "sha256": "44a65d41d2640d6154ca4bc2acc3dd1befca698aba5ff4eef77a29da7d1f9ed3",
+      "bytes": 92270,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/payload_curves.csv",
+      "source_sha256": "44a65d41d2640d6154ca4bc2acc3dd1befca698aba5ff4eef77a29da7d1f9ed3",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/payload_limits.csv",
+      "sha256": "03dcfea0b42ebd24d76f9b74ede3afd0a6909a86114b4a9da10df73840c858fe",
+      "bytes": 51645,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/payload_limits.csv",
+      "source_sha256": "03dcfea0b42ebd24d76f9b74ede3afd0a6909a86114b4a9da10df73840c858fe",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/reserve_intervals.csv",
+      "sha256": "b54b67e27c44cf43b3824666b6c02456184f1045163d7d22a157bfc1238bbf00",
+      "bytes": 288832,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/reserve_intervals.csv",
+      "source_sha256": "b54b67e27c44cf43b3824666b6c02456184f1045163d7d22a157bfc1238bbf00",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/reserve_scenarios.csv",
+      "sha256": "aca84fd3b88c2109bc6892c8b1d3c9910d3648d041a88271ca1111f3b29ff34c",
+      "bytes": 211891,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/reserve_scenarios.csv",
+      "source_sha256": "aca84fd3b88c2109bc6892c8b1d3c9910d3648d041a88271ca1111f3b29ff34c",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/reserve_transitions.csv",
+      "sha256": "8784caca96363e192daa0889f713e4e88c5d03606d10c8b6682bc9b896422294",
+      "bytes": 17802,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/reserve_transitions.csv",
+      "source_sha256": "8784caca96363e192daa0889f713e4e88c5d03606d10c8b6682bc9b896422294",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/routes.csv",
+      "sha256": "e68a4eb36d5fac023b8e92a09a2568f465f5d3e03b086325bd9d041c2f25309f",
+      "bytes": 37470,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/routes.csv",
+      "source_sha256": "e68a4eb36d5fac023b8e92a09a2568f465f5d3e03b086325bd9d041c2f25309f",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/service_summary.csv",
+      "sha256": "3239e5c841f6d9dd3b21134a122812b8d4518259b979c264d4d64f259e04b727",
+      "bytes": 5385,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/service_summary.csv",
+      "source_sha256": "3239e5c841f6d9dd3b21134a122812b8d4518259b979c264d4d64f259e04b727",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/single_box_limits.csv",
+      "sha256": "d8900ec011d9ea5ea232241ee426cdeca979df5380ad526eb82db6e18a06ee50",
+      "bytes": 18554,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/single_box_limits.csv",
+      "source_sha256": "d8900ec011d9ea5ea232241ee426cdeca979df5380ad526eb82db6e18a06ee50",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F03_demand.csv",
+      "sha256": "fdbd1aaf85b1c5b4425cf4dc38f647c25ffc12d5835984334343ff6e9e5a94c1",
+      "bytes": 1087,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F03_demand.csv",
+      "source_sha256": "fdbd1aaf85b1c5b4425cf4dc38f647c25ffc12d5835984334343ff6e9e5a94c1",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F04_batch_composition.csv",
+      "sha256": "aa7615e069a4abd3f900a6208d4ece9e3cb889ebc90d6acadfa07b2cc4321ab8",
+      "bytes": 1725,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F04_batch_composition.csv",
+      "source_sha256": "aa7615e069a4abd3f900a6208d4ece9e3cb889ebc90d6acadfa07b2cc4321ab8",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F05_constraint_utilization.csv",
+      "sha256": "bb06adbba8c6669108cbe646d4937ababdc3ec8b30cdb7bc2a0f912d2e8460ac",
+      "bytes": 1158,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F05_constraint_utilization.csv",
+      "source_sha256": "bb06adbba8c6669108cbe646d4937ababdc3ec8b30cdb7bc2a0f912d2e8460ac",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F06_energy_components.csv",
+      "sha256": "b5c1ba5eec6ebd26bad6ed5ddea602d27d15447b6c616d6400dbb29dadc105f9",
+      "bytes": 1982,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F06_energy_components.csv",
+      "source_sha256": "b5c1ba5eec6ebd26bad6ed5ddea602d27d15447b6c616d6400dbb29dadc105f9",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F07_time_components.csv",
+      "sha256": "015fd5a73fd795960843040d66f5b5e1ea8489346fa6dcb1c072913e6b82e0e5",
+      "bytes": 1081,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F07_time_components.csv",
+      "source_sha256": "015fd5a73fd795960843040d66f5b5e1ea8489346fa6dcb1c072913e6b82e0e5",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F08_safe_payload.csv",
+      "sha256": "bdf6a5f728aa8701810c6728120725054d42ea8b06fedf92ed5e21e3052a6713",
+      "bytes": 1273,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F08_safe_payload.csv",
+      "source_sha256": "bdf6a5f728aa8701810c6728120725054d42ea8b06fedf92ed5e21e3052a6713",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F09_pareto.csv",
+      "sha256": "5d513913a947f6632a93ab8b90f3e0cfeccb3faf80fc4b8440a22596ad48d639",
+      "bytes": 188,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F09_pareto.csv",
+      "source_sha256": "5d513913a947f6632a93ab8b90f3e0cfeccb3faf80fc4b8440a22596ad48d639",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F10_s008_split.csv",
+      "sha256": "2d806881243c27144942a1531b9a613b9ac32d050eb2da38c824803519cfd6a6",
+      "bytes": 468,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F10_s008_split.csv",
+      "source_sha256": "2d806881243c27144942a1531b9a613b9ac32d050eb2da38c824803519cfd6a6",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F11_reserve_steps.csv",
+      "sha256": "59f4ff195d2c02f5a94a8037fc3515342c04651bfda214e41fa36887d0d76686",
+      "bytes": 1857,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F11_reserve_steps.csv",
+      "source_sha256": "59f4ff195d2c02f5a94a8037fc3515342c04651bfda214e41fa36887d0d76686",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F12_interval_comparison.csv",
+      "sha256": "7702fe33775bbf71d52a78d740d5252612a05b7219e20dade6d5538363b45679",
+      "bytes": 2013,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F12_interval_comparison.csv",
+      "source_sha256": "7702fe33775bbf71d52a78d740d5252612a05b7219e20dade6d5538363b45679",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F13_payload_curves.csv",
+      "sha256": "44a65d41d2640d6154ca4bc2acc3dd1befca698aba5ff4eef77a29da7d1f9ed3",
+      "bytes": 92270,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F13_payload_curves.csv",
+      "source_sha256": "44a65d41d2640d6154ca4bc2acc3dd1befca698aba5ff4eef77a29da7d1f9ed3",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F14_last_threshold.csv",
+      "sha256": "8f616314a4fb1846d63873f32c43150600e30ebd9af9f40f005504b8444294c2",
+      "bytes": 302,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F14_last_threshold.csv",
+      "source_sha256": "8f616314a4fb1846d63873f32c43150600e30ebd9af9f40f005504b8444294c2",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F15_payload_thresholds.csv",
+      "sha256": "5e7b5ca15f6b8524655d84a1a6aae56bb59c4293012e29113db26c32b0f2af9a",
+      "bytes": 2095,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F15_payload_thresholds.csv",
+      "source_sha256": "5e7b5ca15f6b8524655d84a1a6aae56bb59c4293012e29113db26c32b0f2af9a",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/数据/图表源数据/F16_solver_flow.csv",
+      "sha256": "44edceae6dddecf6b7437b1a38ff0e9be832ee589fc41682ec8e6fe553cfc9ed",
+      "bytes": 621,
+      "source": "第一问_论文材料包_20260924.zip:第一问/数据/图表源数据/F16_solver_flow.csv",
+      "source_sha256": "44edceae6dddecf6b7437b1a38ff0e9be832ee589fc41682ec8e6fe553cfc9ed",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/文字/与师兄版本的差异及统一说明.md",
+      "sha256": "4a451a700e638efc0c0e4c65bbb0539d27e02e2b04e3ef428a2857f9138f5d51",
+      "bytes": 8988,
+      "source": "第一问_论文材料包_20260924.zip:第一问/文字/与师兄版本的差异及统一说明.md",
+      "source_sha256": "e205ac1ab461de872cca3c24a82887e89181af07f3750c1197e254007d7fb540",
+      "source_bytes_unchanged": false
+    },
+    {
+      "path": "第一问/文字/写作说明.md",
+      "sha256": "de5f94da89cb896f009a01690f9448972d513e4e07eae35685ca147bac298aca",
+      "bytes": 14047,
+      "source": "第一问_论文材料包_20260924.zip:第一问/文字/写作说明.md",
+      "source_sha256": "de5f94da89cb896f009a01690f9448972d513e4e07eae35685ca147bac298aca",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/文字/图表设计约定.md",
+      "sha256": "43b6c6031f715917f1acdce2d0bd561b0fe67ca96f4d92288d8179426071d925",
+      "bytes": 3037,
+      "source": "第一问_论文材料包_20260924.zip:第一问/文字/图表设计约定.md",
+      "source_sha256": "e7f1255b2ff063345dceda932769f221a6660ed22a98176bbf64352a7b917f99",
+      "source_bytes_unchanged": false
+    },
+    {
+      "path": "第一问/文字/图表说明与选用建议.md",
+      "sha256": "dbcd0f83da648ea8a7bcbd5f94149de979026ff6004d1fb2bcb1ef497602a76d",
+      "bytes": 11501,
+      "source": "第一问_论文材料包_20260924.zip:第一问/文字/图表说明与选用建议.md",
+      "source_sha256": "dbcd0f83da648ea8a7bcbd5f94149de979026ff6004d1fb2bcb1ef497602a76d",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/文字/数据来源与处理说明.md",
+      "sha256": "a9d176d71d0e18b280c6b17daf31a1be4328f7eb1d41231d5c65db60fd9acca4",
+      "bytes": 5506,
+      "source": "第一问_论文材料包_20260924.zip:第一问/文字/数据来源与处理说明.md",
+      "source_sha256": "a9d176d71d0e18b280c6b17daf31a1be4328f7eb1d41231d5c65db60fd9acca4",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/文字/第一问_论文正文.md",
+      "sha256": "675e06102c169a87939e02c1ec752dd2bd2289c99b70437f44942d793e6318a2",
+      "bytes": 31709,
+      "source": "第一问_论文材料包_20260924.zip:第一问/文字/第一问_论文正文.md",
+      "source_sha256": "675e06102c169a87939e02c1ec752dd2bd2289c99b70437f44942d793e6318a2",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/结果/data_manifest.json",
+      "sha256": "455b7df235e7a176a00be03f4594643f0d801cfe969c819193df6de70b266a65",
+      "bytes": 47638,
+      "source": "第一问_论文材料包_20260924.zip:第一问/结果/data_manifest.json",
+      "source_sha256": "455b7df235e7a176a00be03f4594643f0d801cfe969c819193df6de70b266a65",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/结果/geography_figures.json",
+      "sha256": "8f65cce7fb574423da60200fc8386a269db51ef34af265b716b8763a0b6e4606",
+      "bytes": 7847,
+      "source": "第一问_论文材料包_20260924.zip:第一问/结果/geography_figures.json",
+      "source_sha256": "8f65cce7fb574423da60200fc8386a269db51ef34af265b716b8763a0b6e4606",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/结果/图册首页.pdf",
+      "sha256": "44be272e95f29e91f489223a6f469e2b6371f6d148330fe8e74e7d0193c4b4e3",
+      "bytes": 93647,
+      "source": "第一问_论文材料包_20260924.zip:第一问/结果/图册首页.pdf",
+      "source_sha256": "44be272e95f29e91f489223a6f469e2b6371f6d148330fe8e74e7d0193c4b4e3",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/结果/图形人工审阅.json",
+      "sha256": "233f8086d1610b1318bfa446f1f0bcd58d2061d23c93ed2a00b4aaf38cac27f2",
+      "bytes": 5610,
+      "source": "第一问_论文材料包_20260924.zip:第一问/结果/图形人工审阅.json",
+      "source_sha256": "233f8086d1610b1318bfa446f1f0bcd58d2061d23c93ed2a00b4aaf38cac27f2",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/结果/材料清单与核验.json",
+      "sha256": "673cce8a9cee80b7e406d7fb4de724b7620a814a2594e373ce09bd64a960cb20",
+      "bytes": 19019,
+      "source": "第一问_论文材料包_20260924.zip:第一问/结果/材料清单与核验.json",
+      "source_sha256": "673cce8a9cee80b7e406d7fb4de724b7620a814a2594e373ce09bd64a960cb20",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/结果/第一问_多目标优化结果.xlsx",
+      "sha256": "430abd565ccf4db1ce1eefebc2128b1b605319726a774ec2a059dfa744dc44bc",
+      "bytes": 17053,
+      "source": "第一问_论文材料包_20260924.zip:第一问/结果/第一问_多目标优化结果.xlsx",
+      "source_sha256": "430abd565ccf4db1ce1eefebc2128b1b605319726a774ec2a059dfa744dc44bc",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/结果/第一问_安全余量敏感性.xlsx",
+      "sha256": "54028c4c1f4721e159facb27e02c4620cff2c6ee205c67bb74b770e80e3cffdb",
+      "bytes": 138087,
+      "source": "第一问_论文材料包_20260924.zip:第一问/结果/第一问_安全余量敏感性.xlsx",
+      "source_sha256": "54028c4c1f4721e159facb27e02c4620cff2c6ee205c67bb74b770e80e3cffdb",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问/结果/第一问_货箱组批方案.xlsx",
+      "sha256": "18ddaea5e0b1eae065c4ac6d7ca4e15ff5baf3850bb569ce366d4087bf9afe84",
+      "bytes": 17339,
+      "source": "第一问_论文材料包_20260924.zip:第一问/结果/第一问_货箱组批方案.xlsx",
+      "source_sha256": "18ddaea5e0b1eae065c4ac6d7ca4e15ff5baf3850bb569ce366d4087bf9afe84",
+      "source_bytes_unchanged": true
+    },
+    {
+      "path": "第一问_模型建立与求解方法.md",
+      "sha256": "de2a1740d0e42b92d8c00e818a9ef7c3d9c050e574f107ac320bfd99ba0ff103",
+      "bytes": 24208,
+      "source": "第一问_模型建立与求解方法.md",
+      "source_sha256": "de2a1740d0e42b92d8c00e818a9ef7c3d9c050e574f107ac320bfd99ba0ff103",
+      "source_bytes_unchanged": true
+    }
+  ],
+  "file_count_excluding_this_manifest": 172
+}

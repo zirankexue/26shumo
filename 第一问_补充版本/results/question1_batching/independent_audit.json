@@ -1,0 +1,529 @@
+{
+  "created_utc": "2026-09-24T11:27:22.715938+00:00",
+  "passed": true,
+  "issues": [],
+  "source_sha256": {
+    "nodes": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "drones": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+    "boxes": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+    "dem": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+    "problem": "f4ca76b46a8dd760bf13d606ec7673656ac9b882a4b54ddd29ab4377da91aa45"
+  },
+  "solution_sha256": "b90e1443e931282622d183db7d07b68ff899709040630dfb7b6c029ad223ef39",
+  "geometry_audit_sha256": "d5cba304b094abd32c2db7406ac9fec3391df6e1b86e080ea6091b96d83c11da",
+  "decimal_precision_digits": 40,
+  "gravity_m_s2": 9.80665,
+  "audit_type": "Independent original-workbook, exact box-ID bitmask Pareto DP and Decimal physics; independently verified local-plane geometry.",
+  "batch_count": 18,
+  "recomputed_totals": {
+    "flight_count": 18,
+    "box_count": 80,
+    "energy_kwh": 59.13226032599277,
+    "flight_time_s": 19288.516782276904,
+    "work_time_s": 32776.5167822769,
+    "mass_kg": 758.0,
+    "volume_m3": 2.011,
+    "minimum_soc_percent": 23.089248385317727,
+    "model_counts": {
+      "C": 9,
+      "B": 9
+    }
+  },
+  "maximum_per_batch_difference": {
+    "energy_kwh": 4.440892098500626e-16,
+    "flight_time_s": 2.2737367544323206e-13,
+    "work_time_s": 4.547473508864641e-13,
+    "return_soc_percent": 1.4210854715202004e-14
+  },
+  "independent_global_optimum": [
+    18,
+    59.13226032599276,
+    32776.51678227689
+  ],
+  "independent_global_frontier": [
+    [
+      18,
+      59.13226032599276,
+      32776.51678227689
+    ],
+    [
+      19,
+      59.034877737802006,
+      34440.48875202747
+    ]
+  ],
+  "services": [
+    {
+      "service_id": "S001",
+      "real_box_ids": [
+        "S001-MED-01",
+        "S001-MED-02",
+        "S001-WAT-01",
+        "S001-WAT-02",
+        "S001-WAT-03",
+        "S001-WAT-04",
+        "S001-WAT-05",
+        "S001-WAT-06",
+        "S001-WAT-07",
+        "S001-WAT-08",
+        "S001-FOD-01",
+        "S001-FOD-02",
+        "S001-FOD-03",
+        "S001-HYG-01",
+        "S001-HYG-02"
+      ],
+      "bitmask_state_count": 32768,
+      "feasible_masks": 18063,
+      "label_transitions": 8217878
+    },
+    {
+      "service_id": "S002",
+      "real_box_ids": [
+        "S002-MED-01",
+        "S002-WAT-01",
+        "S002-WAT-02",
+        "S002-WAT-03",
+        "S002-WAT-04",
+        "S002-FOD-01",
+        "S002-FOD-02",
+        "S002-HYG-01"
+      ],
+      "bitmask_state_count": 256,
+      "feasible_masks": 247,
+      "label_transitions": 4384
+    },
+    {
+      "service_id": "S003",
+      "real_box_ids": [
+        "S003-MED-01",
+        "S003-WAT-01",
+        "S003-WAT-02",
+        "S003-WAT-03",
+        "S003-WAT-04",
+        "S003-FOD-01",
+        "S003-FOD-02",
+        "S003-HYG-01"
+      ],
+      "bitmask_state_count": 256,
+      "feasible_masks": 247,
+      "label_transitions": 4198
+    },
+    {
+      "service_id": "S004",
+      "real_box_ids": [
+        "S004-MED-01",
+        "S004-WAT-01",
+        "S004-WAT-02",
+        "S004-WAT-03",
+        "S004-FOD-01",
+        "S004-HYG-01"
+      ],
+      "bitmask_state_count": 64,
+      "feasible_masks": 63,
+      "label_transitions": 418
+    },
+    {
+      "service_id": "S005",
+      "real_box_ids": [
+        "S005-MED-01",
+        "S005-WAT-01",
+        "S005-WAT-02",
+        "S005-WAT-03",
+        "S005-FOD-01",
+        "S005-HYG-01"
+      ],
+      "bitmask_state_count": 64,
+      "feasible_masks": 63,
+      "label_transitions": 416
+    },
+    {
+      "service_id": "S006",
+      "real_box_ids": [
+        "S006-MED-01",
+        "S006-WAT-01",
+        "S006-WAT-02",
+        "S006-WAT-03",
+        "S006-FOD-01",
+        "S006-HYG-01"
+      ],
+      "bitmask_state_count": 64,
+      "feasible_masks": 63,
+      "label_transitions": 416
+    },
+    {
+      "service_id": "S007",
+      "real_box_ids": [
+        "S007-MED-01",
+        "S007-WAT-01",
+        "S007-WAT-02",
+        "S007-FOD-01",
+        "S007-HYG-01"
+      ],
+      "bitmask_state_count": 32,
+      "feasible_masks": 31,
+      "label_transitions": 130
+    },
+    {
+      "service_id": "S008",
+      "real_box_ids": [
+        "S008-MED-01",
+        "S008-WAT-01",
+        "S008-WAT-02",
+        "S008-FOD-01",
+        "S008-HYG-01"
+      ],
+      "bitmask_state_count": 32,
+      "feasible_masks": 31,
+      "label_transitions": 131
+    },
+    {
+      "service_id": "S009",
+      "real_box_ids": [
+        "S009-MED-01",
+        "S009-WAT-01",
+        "S009-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    },
+    {
+      "service_id": "S010",
+      "real_box_ids": [
+        "S010-MED-01",
+        "S010-WAT-01",
+        "S010-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    },
+    {
+      "service_id": "S011",
+      "real_box_ids": [
+        "S011-MED-01",
+        "S011-WAT-01",
+        "S011-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    },
+    {
+      "service_id": "S012",
+      "real_box_ids": [
+        "S012-MED-01",
+        "S012-WAT-01",
+        "S012-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    },
+    {
+      "service_id": "S013",
+      "real_box_ids": [
+        "S013-MED-01",
+        "S013-WAT-01",
+        "S013-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    },
+    {
+      "service_id": "S014",
+      "real_box_ids": [
+        "S014-MED-01",
+        "S014-WAT-01",
+        "S014-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    },
+    {
+      "service_id": "S015",
+      "real_box_ids": [
+        "S015-MED-01",
+        "S015-WAT-01",
+        "S015-FOD-01"
+      ],
+      "bitmask_state_count": 8,
+      "feasible_masks": 7,
+      "label_transitions": 13
+    }
+  ],
+  "safe_payloads": [
+    {
+      "service_id": "S001",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S001",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S001",
+      "model": "C",
+      "safe_payload_kg": 80.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S002",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S002",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S002",
+      "model": "C",
+      "safe_payload_kg": 68.85810410720296,
+      "limiting_factor": "energy_reserve"
+    },
+    {
+      "service_id": "S003",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S003",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S003",
+      "model": "C",
+      "safe_payload_kg": 68.19954184597009,
+      "limiting_factor": "energy_reserve"
+    },
+    {
+      "service_id": "S004",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S004",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S004",
+      "model": "C",
+      "safe_payload_kg": 63.698250949091744,
+      "limiting_factor": "energy_reserve"
+    },
+    {
+      "service_id": "S005",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S005",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S005",
+      "model": "C",
+      "safe_payload_kg": 80.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S006",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S006",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S006",
+      "model": "C",
+      "safe_payload_kg": 80.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S007",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S007",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S007",
+      "model": "C",
+      "safe_payload_kg": 80.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S008",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S008",
+      "model": "B",
+      "safe_payload_kg": 28.80136035688338,
+      "limiting_factor": "energy_reserve"
+    },
+    {
+      "service_id": "S008",
+      "model": "C",
+      "safe_payload_kg": 58.904166011780035,
+      "limiting_factor": "energy_reserve"
+    },
+    {
+      "service_id": "S009",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S009",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S009",
+      "model": "C",
+      "safe_payload_kg": 80.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S010",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S010",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S010",
+      "model": "C",
+      "safe_payload_kg": 80.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S011",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S011",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S011",
+      "model": "C",
+      "safe_payload_kg": 80.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S012",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S012",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S012",
+      "model": "C",
+      "safe_payload_kg": 68.10974054867984,
+      "limiting_factor": "energy_reserve"
+    },
+    {
+      "service_id": "S013",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S013",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S013",
+      "model": "C",
+      "safe_payload_kg": 80.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S014",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S014",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S014",
+      "model": "C",
+      "safe_payload_kg": 80.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S015",
+      "model": "A",
+      "safe_payload_kg": 25.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S015",
+      "model": "B",
+      "safe_payload_kg": 30.0,
+      "limiting_factor": "rated_payload"
+    },
+    {
+      "service_id": "S015",
+      "model": "C",
+      "safe_payload_kg": 80.0,
+      "limiting_factor": "rated_payload"
+    }
+  ]
+}

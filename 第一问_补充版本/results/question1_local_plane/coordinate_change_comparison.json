@@ -1,0 +1,286 @@
+{
+  "coordinate_model": {
+    "model": "WGS84_local_ellipsoidal_plane_O01",
+    "origin_id": "O01",
+    "origin_lon_degree": 109.2308517,
+    "origin_lat_degree": 23.0085095,
+    "ellipsoid": "WGS84",
+    "semi_major_axis_m": 6378137.0,
+    "eccentricity_squared": 0.0066943799901413165,
+    "prime_vertical_radius_m": 6381401.129389777,
+    "meridional_radius_m": 6345171.1402309295,
+    "longitude_scale_m_per_radian": 5873740.328096923,
+    "latitude_scale_m_per_radian": 6345171.1402309295,
+    "formula": "x=N0*cos(phi0)*radians(lon-lon0); y=M0*radians(lat-lat0)",
+    "node_coordinates": {
+      "O01": {
+        "x_m": 0.0,
+        "y_m": 0.0
+      },
+      "S001": {
+        "x_m": 1269.169921901062,
+        "y_m": 2777.817111438484
+      },
+      "S002": {
+        "x_m": 2839.716698490673,
+        "y_m": 6845.936207025278
+      },
+      "S003": {
+        "x_m": -6355.373355953578,
+        "y_m": 3517.443919109309
+      },
+      "S004": {
+        "x_m": 750.3871566968315,
+        "y_m": 7678.1008080523625
+      },
+      "S005": {
+        "x_m": -261.55959828932436,
+        "y_m": 5274.111575089368
+      },
+      "S006": {
+        "x_m": -3184.9806990700627,
+        "y_m": -88.09695382351546
+      },
+      "S007": {
+        "x_m": -3898.9541341595636,
+        "y_m": 2315.560046755532
+      },
+      "S008": {
+        "x_m": -1856.0028796848844,
+        "y_m": 7863.032427398767
+      },
+      "S009": {
+        "x_m": 2387.6719196811728,
+        "y_m": 5181.651302622434
+      },
+      "S010": {
+        "x_m": 4630.150275412627,
+        "y_m": 1206.1585956945476
+      },
+      "S011": {
+        "x_m": -1078.0696447321873,
+        "y_m": 2592.918715330475
+      },
+      "S012": {
+        "x_m": 5359.952197597734,
+        "y_m": 5089.1910301555
+      },
+      "S013": {
+        "x_m": 4155.203398046757,
+        "y_m": 2500.458442863541
+      },
+      "S014": {
+        "x_m": 5407.201871835279,
+        "y_m": -365.43347357259984
+      },
+      "S015": {
+        "x_m": -3944.1124797915336,
+        "y_m": 4534.451544180149
+      }
+    }
+  },
+  "gravity_m_s2": 9.81,
+  "previous_archive": "archives/question1_utm_before_local_plane_20260924.zip",
+  "original_input_hashes_equal": {
+    "nodes": true,
+    "drones": true,
+    "boxes": true,
+    "dem": true,
+    "problem": false
+  },
+  "problem_source_note": "Current DOCX SHA256 differs from the previous recorded fingerprint. This task did not edit the DOCX; all four numerical inputs are unchanged. Current problem rules rechecked in source_rules_check.json.",
+  "routes": [
+    {
+      "service_id": "S001",
+      "old_utm_distance_m": 3053.9887026416195,
+      "local_plane_distance_m": 3054.0236075149764,
+      "difference_m": 0.03490487335693615,
+      "recorded_peer_distance_m": 3054.0236075149764,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": true
+    },
+    {
+      "service_id": "S002",
+      "old_utm_distance_m": 7411.3077087600395,
+      "local_plane_distance_m": 7411.533814153884,
+      "difference_m": 0.22610539384459116,
+      "recorded_peer_distance_m": 7411.533814153884,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": false
+    },
+    {
+      "service_id": "S003",
+      "old_utm_distance_m": 7263.327717049588,
+      "local_plane_distance_m": 7263.826967765937,
+      "difference_m": 0.49925071634970664,
+      "recorded_peer_distance_m": 7263.826967765937,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": false
+    },
+    {
+      "service_id": "S004",
+      "old_utm_distance_m": 7714.729254942358,
+      "local_plane_distance_m": 7714.681646286507,
+      "difference_m": -0.04760865585103602,
+      "recorded_peer_distance_m": 7714.681646286507,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": true
+    },
+    {
+      "service_id": "S005",
+      "old_utm_distance_m": 5280.641689396255,
+      "local_plane_distance_m": 5280.5933691157215,
+      "difference_m": -0.04832028053351678,
+      "recorded_peer_distance_m": 5280.5933691157215,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": true
+    },
+    {
+      "service_id": "S006",
+      "old_utm_distance_m": 3186.250613253772,
+      "local_plane_distance_m": 3186.19885235084,
+      "difference_m": -0.051760902932073805,
+      "recorded_peer_distance_m": 3186.19885235084,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": true
+    },
+    {
+      "service_id": "S007",
+      "old_utm_distance_m": 4534.527995612143,
+      "local_plane_distance_m": 4534.717374921003,
+      "difference_m": 0.18937930886022514,
+      "recorded_peer_distance_m": 4534.717374921003,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": true
+    },
+    {
+      "service_id": "S008",
+      "old_utm_distance_m": 8079.114648723534,
+      "local_plane_distance_m": 8079.110448788476,
+      "difference_m": -0.004199935057840776,
+      "recorded_peer_distance_m": 8079.110448788476,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": false
+    },
+    {
+      "service_id": "S009",
+      "old_utm_distance_m": 5705.148819569368,
+      "local_plane_distance_m": 5705.303446619009,
+      "difference_m": 0.15462704964102159,
+      "recorded_peer_distance_m": 5705.303446619009,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": true
+    },
+    {
+      "service_id": "S010",
+      "old_utm_distance_m": 4784.4748762577,
+      "local_plane_distance_m": 4784.6745062617865,
+      "difference_m": 0.19963000408642984,
+      "recorded_peer_distance_m": 4784.6745062617865,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": false
+    },
+    {
+      "service_id": "S011",
+      "old_utm_distance_m": 2808.0980667554068,
+      "local_plane_distance_m": 2808.106412371872,
+      "difference_m": 0.008345616465248895,
+      "recorded_peer_distance_m": 2808.106412371872,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": true
+    },
+    {
+      "service_id": "S012",
+      "old_utm_distance_m": 7390.4482261717885,
+      "local_plane_distance_m": 7391.140162515387,
+      "difference_m": 0.6919363435981722,
+      "recorded_peer_distance_m": 7391.140162515387,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": false
+    },
+    {
+      "service_id": "S013",
+      "old_utm_distance_m": 4849.227041161927,
+      "local_plane_distance_m": 4849.536854548781,
+      "difference_m": 0.3098133868534205,
+      "recorded_peer_distance_m": 4849.536854548781,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": true
+    },
+    {
+      "service_id": "S014",
+      "old_utm_distance_m": 5419.570194994185,
+      "local_plane_distance_m": 5419.5362999417475,
+      "difference_m": -0.03389505243740132,
+      "recorded_peer_distance_m": 5419.5362999417475,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": true
+    },
+    {
+      "service_id": "S015",
+      "old_utm_distance_m": 6009.4725710713465,
+      "local_plane_distance_m": 6009.764892220415,
+      "difference_m": 0.2923211490688118,
+      "recorded_peer_distance_m": 6009.764892220415,
+      "peer_difference_m": 0.0,
+      "same_max_terrain": true,
+      "same_cells": false
+    }
+  ],
+  "max_absolute_distance_change_m": 0.6919363435981722,
+  "max_difference_from_recorded_peer_distance_m": 0.0,
+  "same_concrete_batch_assignment": true,
+  "old_totals": {
+    "flight_count": 18,
+    "box_count": 80,
+    "mass_kg": 758.0,
+    "volume_m3": 2.011,
+    "energy_kwh": 59.131669241559365,
+    "flight_time_s": 19288.09267694372,
+    "work_time_s": 32776.09267694372,
+    "model_counts": {
+      "C": 9,
+      "B": 9
+    },
+    "minimum_soc_percent": 23.088032111281986,
+    "simple_flight_lower_bound": 18
+  },
+  "new_totals": {
+    "flight_count": 18,
+    "box_count": 80,
+    "mass_kg": 758.0,
+    "volume_m3": 2.011,
+    "energy_kwh": 59.13313308089387,
+    "flight_time_s": 19288.516782276904,
+    "work_time_s": 32776.5167822769,
+    "model_counts": {
+      "C": 9,
+      "B": 9
+    },
+    "minimum_soc_percent": 23.088493096568953,
+    "simple_flight_lower_bound": 18
+  },
+  "delta": {
+    "flight_count": 0,
+    "energy_kwh": 0.0014638393345052236,
+    "flight_time_s": 0.4241053331825242,
+    "work_time_s": 0.4241053331788862,
+    "minimum_soc_percent": 0.00046098528696703056
+  },
+  "old_global_reserve_limit": 35.26716681555608,
+  "new_global_reserve_limit": 35.26719978564765
+}

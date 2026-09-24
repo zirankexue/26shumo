@@ -1,0 +1,183 @@
+{
+  "created_utc": "2026-09-24T11:25:53.393812+00:00",
+  "backend": "Python matplotlib",
+  "matplotlib_version": "3.10.8",
+  "font_name": "Microsoft YaHei",
+  "font_file": "C:\\Windows\\Fonts\\msyh.ttc",
+  "baseline_sha256": "b90e1443e931282622d183db7d07b68ff899709040630dfb7b6c029ad223ef39",
+  "source_sha256": {
+    "nodes": {
+      "path": "数据\\无人机应急物资运输基础数据\\调度中心与服务区.xlsx",
+      "sha256": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38"
+    },
+    "drones": {
+      "path": "数据\\无人机应急物资运输基础数据\\运输无人机数据.xlsx",
+      "sha256": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb"
+    },
+    "boxes": {
+      "path": "数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx",
+      "sha256": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a"
+    },
+    "dem": {
+      "path": "数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\数字高程模型数据（DEM）\\镇龙乡及周边30米DEM.tif",
+      "sha256": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03"
+    },
+    "problem": {
+      "path": "山区洪涝灾害下无人机运输与通信协同优化.docx",
+      "sha256": "f4ca76b46a8dd760bf13d606ec7673656ac9b882a4b54ddd29ab4377da91aa45"
+    }
+  },
+  "figures": [
+    {
+      "outputs": [
+        {
+          "file": "图片/F01_routes_terrain.png",
+          "sha256": "4872f826655b175c9b8d19d03926c732788ce8a960d1b1f7d10218e53a1e505c",
+          "size_bytes": 943079
+        },
+        {
+          "file": "图片/F01_routes_terrain.pdf",
+          "sha256": "74bf919de27e1c7536f70dbb5c36043c91cb6585630d5abb9bcec0091b04d4b9",
+          "size_bytes": 338793
+        },
+        {
+          "file": "图片/F01_routes_terrain.svg",
+          "sha256": "5c8f11c51216a83aef4e36cff57e7127a476647928f10979c99ac0f893fc475a",
+          "size_bytes": 515933
+        }
+      ],
+      "preview": "图片/F01_routes_terrain_preview.png",
+      "width_mm": 180,
+      "height_mm": 143,
+      "png_pixels": [
+        4251,
+        3377
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": {
+        "text_within_canvas": true,
+        "svg_editable_text": true,
+        "pdf_fonttype": 42,
+        "font_size_min_pt": 10,
+        "visual_review": "passed_by_matching_reviewed_png",
+        "data_geometry_checks": true,
+        "visual_review_record": "结果/图形人工审阅.json",
+        "pdf_text_extractable": true,
+        "pdf_font_subtypes": [
+          "/Type0"
+        ]
+      },
+      "id": "F01",
+      "archetype": "image plate + quant",
+      "core_conclusion": "15个服务区采用同一O01局部椭球平面与DEM基底，第一问航线均为单点往返辐射航线。",
+      "source_data": [
+        "数据/nodes.csv",
+        "数据/routes.csv"
+      ],
+      "raw_dem_crop": {
+        "rows": [
+          489,
+          824
+        ],
+        "columns": [
+          451,
+          943
+        ],
+        "shape": [
+          335,
+          492
+        ],
+        "index_end_exclusive": true
+      },
+      "processing": "原DEM按节点边界外扩裁剪；不做空间降采样或平滑，imshow nearest仅进行背景像素显示；固定单调灰绿伪彩色。航线及节点直接取正式坐标。",
+      "caption": "图1 第一问调度中心、服务区与地形分布。坐标采用以O01为原点的WGS84局部椭球平面，单位为km；蓝线表示O01与15个服务区之间的水平往返航线。地形背景直接取题给30米DEM裁剪，节点位置与地面高程取题给节点表。DEM仅作最近邻显示，不参与插值或平滑；正式地形净空计算仍使用完整相交闭像元原值。"
+    },
+    {
+      "outputs": [
+        {
+          "file": "图片/F02_terrain_profiles.png",
+          "sha256": "3d222e344dfbbbf29c1f7323a301b87b9db23d76e504551d27e3a0668686ae33",
+          "size_bytes": 775138
+        },
+        {
+          "file": "图片/F02_terrain_profiles.pdf",
+          "sha256": "d322a1d989ac48b099455b144957dfe53d129b0f9cb8caee13074761132e8ace",
+          "size_bytes": 62959
+        },
+        {
+          "file": "图片/F02_terrain_profiles.svg",
+          "sha256": "78dd344e830975e6ff2a338995f9540e57258b681e2c3d75e2e0cce6fec2d6f5",
+          "size_bytes": 184628
+        }
+      ],
+      "preview": "图片/F02_terrain_profiles_preview.png",
+      "width_mm": 180,
+      "height_mm": 207,
+      "png_pixels": [
+        4251,
+        4889
+      ],
+      "png_dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": {
+        "text_within_canvas": true,
+        "svg_editable_text": true,
+        "pdf_fonttype": 42,
+        "font_size_min_pt": 10,
+        "visual_review": "passed_by_matching_reviewed_png",
+        "data_geometry_checks": true,
+        "visual_review_record": "结果/图形人工审阅.json",
+        "pdf_text_extractable": true,
+        "pdf_font_subtypes": [
+          "/Type0"
+        ]
+      },
+      "id": "F02",
+      "archetype": "quantitative grid",
+      "core_conclusion": "巡航高度由沿途最高原始DEM闭像元而非端点海拔决定，去返爬升分别从各端点作业海拔计算。",
+      "source_data": [
+        "数据/F02_profile_cell_intervals.csv",
+        "数据/F02_profile_envelope_segments.csv",
+        "数据/F02_profile_envelope_points.csv",
+        "数据/nodes.csv",
+        "数据/routes.csv"
+      ],
+      "processing": "独立解析线段与像元闭矩形相交得到t区间，原像元高程构成分段常值保守上包络；若仅接触角点产生孤立更高峰值亦保留。无双线性平滑、无沿线稀疏采样。",
+      "profile_checks": {
+        "S004": {
+          "cells": 276,
+          "segments": 276,
+          "max_terrain_m": 348.2391662597656,
+          "formal_maximum_matches": true
+        },
+        "S008": {
+          "cells": 321,
+          "segments": 321,
+          "max_terrain_m": 322.9093322753906,
+          "formal_maximum_matches": true
+        },
+        "S012": {
+          "cells": 354,
+          "segments": 354,
+          "max_terrain_m": 363.3009948730469,
+          "formal_maximum_matches": true
+        }
+      },
+      "caption": "图2 典型航线地形剖面与高度设置。（a）S004，（b）S008，（c）S012。地形曲线为水平直线经过的原始DEM闭像元高程所构成的保守上包络，不做双线性插值。巡航海拔为最高相交像元海拔加50m；去程爬升为巡航海拔减O01地面海拔，返程爬升为巡航海拔减服务区作业海拔。节点地面海拔取题给节点表，服务区作业海拔在其基础上加30m，与沿途DEM高程分别取源。蓝线表示几何飞行高度，并非时间轨迹；第一问返程空载。",
+      "source_data_hashes": {
+        "数据/F02_profile_cell_intervals.csv": "135e3abfca47903dd571e55c48db275e09fdcab9f05145c8ab7f1e06c7ba7c1a",
+        "数据/F02_profile_envelope_segments.csv": "25c71a081be08ccaa3b79eda29bc3f9ca9d72a3e020ec46604893b87bba475f9",
+        "数据/F02_profile_envelope_points.csv": "24a36eb66797ccdcacb02df381e58db532ef9ce88a1e5501b1ca2dc7295f5958",
+        "数据/nodes.csv": "fe6c1abfb37307de7452c428610a7b0b835dcc57fafaabd6ee605253a5c49e63",
+        "数据/routes.csv": "e68a4eb36d5fac023b8e92a09a2568f465f5d3e03b086325bd9d041c2f25309f"
+      }
+    }
+  ],
+  "statistics_note": "确定性几何与物理模型图；无重复实验、误差条或统计显著性检验。",
+  "image_integrity": "仅裁剪DEM与统一单调伪彩色显示；未改高程、未局部修图、未平滑地形。"
+}

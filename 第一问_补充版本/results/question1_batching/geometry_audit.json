@@ -1,0 +1,455 @@
+{
+  "audit_created_utc": "2026-09-24T11:27:14.773592+00:00",
+  "auditor": "verify_q1_local_plane.py",
+  "method": "Re-read original XLSX/GeoTIFF. WGS84 fixed N(phi0)cos(phi0), M(phi0) at O01. Enumerate every bounding-box pixel and independently clip the straight segment against each closed pixel rectangle; no solver geometry functions or stored geometry inputs are used.",
+  "pixel_registration": "PixelIsPoint tiepoint denotes pixel center; add 0.5 before closed-cell indexing.",
+  "sources": {
+    "solution_sha256": "b90e1443e931282622d183db7d07b68ff899709040630dfb7b6c029ad223ef39",
+    "nodes_sha256": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "dem_sha256": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03"
+  },
+  "local_plane": {
+    "origin": "O01",
+    "origin_lon": 109.2308517,
+    "origin_lat": 23.0085095,
+    "semi_major_axis_m": 6378137.0,
+    "eccentricity_squared": 0.0066943799901413165,
+    "east_scale_m_per_radian": 5873740.328096923,
+    "north_scale_m_per_radian": 6345171.1402309295
+  },
+  "summary": {
+    "all_cell_sets_equal": true,
+    "all_peak_cells_equal": true,
+    "routes_audited": 15,
+    "max_abs_difference_by_field": {
+      "distance_m": 0.0,
+      "max_terrain_m": 0.0,
+      "cruise_altitude_m": 0.0,
+      "outbound_climb_m": 0.0,
+      "return_climb_m": 0.0
+    },
+    "independent_total_route_cell_visits": 3554
+  },
+  "routes": {
+    "S001": {
+      "independent_values": {
+        "distance_m": 3054.0236075149764,
+        "max_terrain_m": 223.05661010742188,
+        "cruise_altitude_m": 273.0566101074219,
+        "outbound_climb_m": 145.3566101074219,
+        "return_climb_m": 89.05661010742188
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 136,
+      "solver_cell_count": 136,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          721,
+          741
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S002": {
+      "independent_values": {
+        "distance_m": 7411.533814153884,
+        "max_terrain_m": 258.9542541503906,
+        "cruise_altitude_m": 308.9542541503906,
+        "outbound_climb_m": 181.25425415039064,
+        "return_climb_m": 89.45425415039062
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 323,
+      "solver_cell_count": 323,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          591,
+          797
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S003": {
+      "independent_values": {
+        "distance_m": 7263.826967765937,
+        "max_terrain_m": 511.80413818359375,
+        "cruise_altitude_m": 561.8041381835938,
+        "outbound_climb_m": 434.10413818359376,
+        "return_climb_m": 223.30413818359375
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 338,
+      "solver_cell_count": 338,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          726,
+          610
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S004": {
+      "independent_values": {
+        "distance_m": 7714.681646286507,
+        "max_terrain_m": 348.2391662597656,
+        "cruise_altitude_m": 398.2391662597656,
+        "outbound_climb_m": 270.53916625976564,
+        "return_climb_m": 169.9391662597656
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 276,
+      "solver_cell_count": 276,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          587,
+          733
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S005": {
+      "independent_values": {
+        "distance_m": 5280.5933691157215,
+        "max_terrain_m": 276.410888671875,
+        "cruise_altitude_m": 326.410888671875,
+        "outbound_climb_m": 198.710888671875,
+        "return_climb_m": 131.410888671875
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 181,
+      "solver_cell_count": 181,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          669,
+          707
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S006": {
+      "independent_values": {
+        "distance_m": 3186.19885235084,
+        "max_terrain_m": 316.09783935546875,
+        "cruise_altitude_m": 366.09783935546875,
+        "outbound_climb_m": 238.39783935546876,
+        "return_climb_m": 51.29783935546874
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 116,
+      "solver_cell_count": 116,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          781,
+          614
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S007": {
+      "independent_values": {
+        "distance_m": 4534.717374921003,
+        "max_terrain_m": 461.9731750488281,
+        "cruise_altitude_m": 511.9731750488281,
+        "outbound_climb_m": 384.27317504882814,
+        "return_climb_m": 163.47317504882812
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 213,
+      "solver_cell_count": 213,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          724,
+          613
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S008": {
+      "independent_values": {
+        "distance_m": 8079.110448788476,
+        "max_terrain_m": 322.9093322753906,
+        "cruise_altitude_m": 372.9093322753906,
+        "outbound_climb_m": 245.20933227539064,
+        "return_climb_m": 102.00933227539062
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 321,
+      "solver_cell_count": 321,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          533,
+          651
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S009": {
+      "independent_values": {
+        "distance_m": 5705.303446619009,
+        "max_terrain_m": 243.22891235351562,
+        "cruise_altitude_m": 293.2289123535156,
+        "outbound_climb_m": 165.52891235351564,
+        "return_climb_m": 63.228912353515625
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 253,
+      "solver_cell_count": 253,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          633,
+          785
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S010": {
+      "independent_values": {
+        "distance_m": 4784.6745062617865,
+        "max_terrain_m": 385.63653564453125,
+        "cruise_altitude_m": 435.63653564453125,
+        "outbound_climb_m": 307.93653564453126,
+        "return_climb_m": 84.03653564453123
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 203,
+      "solver_cell_count": 203,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          745,
+          850
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S011": {
+      "independent_values": {
+        "distance_m": 2808.106412371872,
+        "max_terrain_m": 245.36175537109375,
+        "cruise_altitude_m": 295.36175537109375,
+        "outbound_climb_m": 167.66175537109376,
+        "return_climb_m": 83.26175537109376
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 123,
+      "solver_cell_count": 123,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          713,
+          683
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S012": {
+      "independent_values": {
+        "distance_m": 7391.140162515387,
+        "max_terrain_m": 363.3009948730469,
+        "cruise_altitude_m": 413.3009948730469,
+        "outbound_climb_m": 285.6009948730469,
+        "return_climb_m": 133.50099487304686
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 354,
+      "solver_cell_count": 354,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          642,
+          869
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S013": {
+      "independent_values": {
+        "distance_m": 4849.536854548781,
+        "max_terrain_m": 349.18182373046875,
+        "cruise_altitude_m": 399.18182373046875,
+        "outbound_climb_m": 271.48182373046876,
+        "return_climb_m": 47.48182373046876
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 228,
+      "solver_cell_count": 228,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          701,
+          853
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S014": {
+      "independent_values": {
+        "distance_m": 5419.5362999417475,
+        "max_terrain_m": 541.9473876953125,
+        "cruise_altitude_m": 591.9473876953125,
+        "outbound_climb_m": 464.2473876953125,
+        "return_climb_m": 240.9473876953125
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 203,
+      "solver_cell_count": 203,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          789,
+          879
+        ]
+      ],
+      "peak_cells_equal": true
+    },
+    "S015": {
+      "independent_values": {
+        "distance_m": 6009.764892220415,
+        "max_terrain_m": 521.7992553710938,
+        "cruise_altitude_m": 571.7992553710938,
+        "outbound_climb_m": 444.09925537109376,
+        "return_climb_m": 97.29925537109375
+      },
+      "absolute_differences": {
+        "distance_m": 0.0,
+        "max_terrain_m": 0.0,
+        "cruise_altitude_m": 0.0,
+        "outbound_climb_m": 0.0,
+        "return_climb_m": 0.0
+      },
+      "independent_cell_count": 286,
+      "solver_cell_count": 286,
+      "cell_sets_equal": true,
+      "only_in_independent": [],
+      "only_in_solver": [],
+      "independent_peak_cells": [
+        [
+          666,
+          608
+        ]
+      ],
+      "peak_cells_equal": true
+    }
+  }
+}

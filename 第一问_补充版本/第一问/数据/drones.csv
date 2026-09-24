@@ -1,0 +1,4 @@
+﻿id,name,empty_mass_kg,payload_kg,volume_m3,cruise_mps,empty_range_m,full_range_m,energy_kwh,reserve_percent,prepare_s,load_per_box_s,handover_base_s,handover_per_box_s,climb_mps,descend_mps,climb_efficiency,descent_extra_efficiency,volume_litre
+A,中轻载标准测试多旋翼,70,25,0.06,12,25000,20000,4.5,20,300,30,150,30,3,2.5,0.72,0,60
+B,中载标准测试多旋翼,65,30,0.073,15,28000,16000,4,20,300,30,150,30,3,2.5,0.72,0,73
+C,重载标准测试多旋翼,69.9,80,0.25,15,26000,12000,8,20,300,30,180,36,2.5,2,0.72,0,250

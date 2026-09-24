@@ -1,0 +1,135 @@
+{
+  "reviewed_utc": "2026-09-24T11:38:54.924038+00:00",
+  "scope": "After peer numeric alignment, all 7 changed previews were visually re-inspected; the 9 unchanged PNG hashes inherit the prior actual visual review.",
+  "corrections": [
+    "F11: do not overpaint a closed endpoint with an open endpoint when adjacent y values are equal.",
+    "F15: show the negative S008/C full-load threshold, with its physical interpretation.",
+    "2026-09-24 peer alignment: regenerated with g=9.80665; inspected F05/F09/F11/F12/F13/F14/F15, including precise shifted endpoints and the final narrow interval. No clipping or overlaps found."
+  ],
+  "figures": {
+    "F01": {
+      "file": "图片/F01_routes_terrain.png",
+      "png_sha256": "4872f826655b175c9b8d19d03926c732788ce8a960d1b1f7d10218e53a1e505c",
+      "visual_review": "passed"
+    },
+    "F02": {
+      "file": "图片/F02_terrain_profiles.png",
+      "png_sha256": "3d222e344dfbbbf29c1f7323a301b87b9db23d76e504551d27e3a0668686ae33",
+      "visual_review": "passed"
+    },
+    "F03": {
+      "file": "图片/F03_demand.png",
+      "png_sha256": "a88b3ea63c0e40aeb086cfa693d7ef36d56ceb20990d5ebd3c87273a9ea2bf38",
+      "visual_review": "passed"
+    },
+    "F04": {
+      "file": "图片/F04_batch_composition.png",
+      "png_sha256": "cc2edce4359619b8d0b2b2c8ccd943610d28bf6d35bb332d57afcd249b2a0660",
+      "visual_review": "passed"
+    },
+    "F05": {
+      "file": "图片/F05_constraint_utilization.png",
+      "png_sha256": "de0733e95b24f3135d272a96984fad367aafb8d58665afed062be53187e50e6a",
+      "visual_review": "passed"
+    },
+    "F06": {
+      "file": "图片/F06_energy_components.png",
+      "png_sha256": "1afa27b33d4742aa906de2ca316f22fb6b1c9b05b463a6b4bd49721c4afd7da9",
+      "visual_review": "passed"
+    },
+    "F07": {
+      "file": "图片/F07_time_components.png",
+      "png_sha256": "2fe2dea6043a1bb3e5410b9f5402eff5c4c02c2a5317b4f921276f775449e758",
+      "visual_review": "passed"
+    },
+    "F08": {
+      "file": "图片/F08_safe_payload.png",
+      "png_sha256": "d4bbf34eb856595b058e5ddff2b9b3e60f683826d2e82d13fddeef5edfc39d96",
+      "visual_review": "passed"
+    },
+    "F09": {
+      "file": "图片/F09_pareto.png",
+      "png_sha256": "eb205dae010e126f24877fa86d88895ced97ff6f7d1841c6c2f3c4ce755591fb",
+      "visual_review": "passed"
+    },
+    "F10": {
+      "file": "图片/F10_s008_split.png",
+      "png_sha256": "8bd17f72387ed488eb56d765e2ee8efe80ed508bfb4b8cc32d6e5867dd36b98e",
+      "visual_review": "passed"
+    },
+    "F11": {
+      "file": "图片/F11_reserve_steps.png",
+      "png_sha256": "34cf6028136b466fd9f59b46952b20b54096866813fea8fd7f0b76a459f68531",
+      "visual_review": "passed"
+    },
+    "F12": {
+      "file": "图片/F12_interval_comparison.png",
+      "png_sha256": "b0509e40e41bd5a176337b6fd00788a93e83456ef6ab9355249587df44c995ec",
+      "visual_review": "passed"
+    },
+    "F13": {
+      "file": "图片/F13_payload_curves.png",
+      "png_sha256": "76e2d2d53ba8a033fd61fee69909a0c048afac436e9f9c3de3de6f52c7a915cd",
+      "visual_review": "passed"
+    },
+    "F14": {
+      "file": "图片/F14_last_threshold.png",
+      "png_sha256": "2ee0b103dd21edde2fd07169326b3ff13fd74418bef6bd3202fc1282a01a54f7",
+      "visual_review": "passed"
+    },
+    "F15": {
+      "file": "图片/F15_payload_thresholds.png",
+      "png_sha256": "adc63c24194d47fdcce546b54641e822af534e01891e4677f53a269679c51530",
+      "visual_review": "passed"
+    },
+    "F16": {
+      "file": "图片/F16_solver_flow.png",
+      "png_sha256": "23ab7bfa290dcfc4d98d5cf2226fea72efecc1889ac394ba9e473f25f0edcfd7",
+      "visual_review": "passed"
+    }
+  },
+  "review_history": [
+    {
+      "reviewed_utc": "2026-09-24T11:04:06.132722+00:00",
+      "scope": "All 16 figure previews inspected; root review plus independent geography and F11-F15 review.",
+      "previous_png_sha256": {
+        "F01": "4872f826655b175c9b8d19d03926c732788ce8a960d1b1f7d10218e53a1e505c",
+        "F02": "3d222e344dfbbbf29c1f7323a301b87b9db23d76e504551d27e3a0668686ae33",
+        "F03": "a88b3ea63c0e40aeb086cfa693d7ef36d56ceb20990d5ebd3c87273a9ea2bf38",
+        "F04": "cc2edce4359619b8d0b2b2c8ccd943610d28bf6d35bb332d57afcd249b2a0660",
+        "F05": "98f68aa32fd0072096872edb64178276790f53765e59d5cd129a4b6404b58e57",
+        "F06": "1afa27b33d4742aa906de2ca316f22fb6b1c9b05b463a6b4bd49721c4afd7da9",
+        "F07": "2fe2dea6043a1bb3e5410b9f5402eff5c4c02c2a5317b4f921276f775449e758",
+        "F08": "d4bbf34eb856595b058e5ddff2b9b3e60f683826d2e82d13fddeef5edfc39d96",
+        "F09": "63d66cd3198778f1931f09b3f44319cd311e2316e3561c05acd70c340436197b",
+        "F10": "8bd17f72387ed488eb56d765e2ee8efe80ed508bfb4b8cc32d6e5867dd36b98e",
+        "F11": "40b140fea7a93d16b1fee57164b98c0f253ec1f9d8f6309685fc55292d974078",
+        "F12": "da1a0fb5d2028053db1cbabc356783d060380b5f709a6c9d819df7fe9f912205",
+        "F13": "021a496677584b1884ce6bfbaa42dccb10e3b1003a59c604a9578d782af81d66",
+        "F14": "d01091fb7dfc89234861bca3c24f4704a1d9d519213cb5567cbfd9816b2190ab",
+        "F15": "13e6fd5150830512af33c5717ef10f1954ac5fe2f3c476ca5709ee1cdd01e921",
+        "F16": "23ab7bfa290dcfc4d98d5cf2226fea72efecc1889ac394ba9e473f25f0edcfd7"
+      }
+    }
+  ],
+  "reinspected_figures": [
+    "F05",
+    "F09",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15"
+  ],
+  "unchanged_figures_with_prior_review": [
+    "F01",
+    "F02",
+    "F03",
+    "F04",
+    "F06",
+    "F07",
+    "F08",
+    "F10",
+    "F16"
+  ]
+}

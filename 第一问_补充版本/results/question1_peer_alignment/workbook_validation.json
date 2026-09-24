@@ -1,0 +1,199 @@
+{
+  "created_utc": "2026-09-24T11:43:47.681917+00:00",
+  "passed": true,
+  "validation_method": "Artifact Tool recalculate and error scan; openpyxl read-only analysis of saved values; OOXML chart sources and anchors; rendered visual review",
+  "source_sha256": {
+    "results/question1_batching/solution.json": "b90e1443e931282622d183db7d07b68ff899709040630dfb7b6c029ad223ef39",
+    "results/question1_multiobjective/multiobjective.json": "17c37184c77c5f9039bbdfbe92410eb1760b1628900cf6e1a09f2744aff12334",
+    "results/question1_reserve_sensitivity/sensitivity.json": "2c7568a6f03345aaa9d2c3559c8256669c34c03b52ac7fe956a4f5950b0a4903"
+  },
+  "workbooks": [
+    {
+      "path": "outputs/question1_batching/第一问_货箱组批方案.xlsx",
+      "sha256": "18ddaea5e0b1eae065c4ac6d7ca4e15ff5baf3850bb569ce366d4087bf9afe84",
+      "sheet_names": [
+        "Q1_单点组批",
+        "各区汇总",
+        "计算明细"
+      ],
+      "formula_count": 360,
+      "formula_error_count": 0,
+      "gravity_m_s2": 9.80665,
+      "local_ellipsoid_plane_note": true,
+      "batch_rows": 18,
+      "box_count": 80,
+      "energy_kwh": 59.13226032599277,
+      "work_time_s": 32776.5167822769
+    },
+    {
+      "path": "outputs/question1_multiobjective/第一问_多目标优化结果.xlsx",
+      "sha256": "430abd565ccf4db1ce1eefebc2128b1b605319726a774ec2a059dfa744dc44bc",
+      "sheet_names": [
+        "方案比较",
+        "完整前沿",
+        "代表方案批次"
+      ],
+      "formula_count": 232,
+      "formula_error_count": 0,
+      "gravity_m_s2": 9.80665,
+      "local_ellipsoid_plane_note": true,
+      "pareto_points": 2,
+      "representative_batch_rows": 37,
+      "objective_order_count": 6,
+      "endpoints": {
+        "N_E_T": "PF001",
+        "N_T_E": "PF001",
+        "E_N_T": "PF002",
+        "T_N_E": "PF001",
+        "E_T_N": "PF002",
+        "T_E_N": "PF001"
+      }
+    },
+    {
+      "path": "outputs/question1_reserve_sensitivity/第一问_安全余量敏感性.xlsx",
+      "sha256": "54028c4c1f4721e159facb27e02c4620cff2c6ee205c67bb74b770e80e3cffdb",
+      "sheet_names": [
+        "情景比较",
+        "最大安全载荷",
+        "组批变化临界点",
+        "情景批次",
+        "口径说明"
+      ],
+      "formula_count": 2236,
+      "formula_error_count": 0,
+      "gravity_m_s2": 9.80665,
+      "local_ellipsoid_plane_note": true,
+      "scenario_count": 18,
+      "feasible_scenario_count": 13,
+      "batch_rows": 255,
+      "payload_rows": 45,
+      "payload_sample_count": 12,
+      "payload_last_column": "Q",
+      "payload_percentages": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        60
+      ],
+      "curve_points": 2745,
+      "interval_count": 19,
+      "transition_count": 18,
+      "maximum_reserve_percent": 35.26764734919061,
+      "native_chart_count": 6,
+      "chart_sources": [
+        {
+          "part": "xl/drawings/charts/chart1.xml",
+          "source_formulas": [
+            "'情景比较'!$P$6:$P$18",
+            "'情景比较'!$Q$6:$Q$18"
+          ]
+        },
+        {
+          "part": "xl/drawings/charts/chart2.xml",
+          "source_formulas": [
+            "'情景比较'!$P$6:$P$18",
+            "'情景比较'!$R$6:$R$18"
+          ]
+        },
+        {
+          "part": "xl/drawings/charts/chart3.xml",
+          "source_formulas": [
+            "'情景比较'!$P$6:$P$18",
+            "'情景比较'!$S$6:$S$18"
+          ]
+        },
+        {
+          "part": "xl/drawings/charts/chart4.xml",
+          "source_formulas": [
+            "'最大安全载荷'!$H$76:$H$136",
+            "'最大安全载荷'!$I$76:$I$136",
+            "'最大安全载荷'!$H$76:$H$136",
+            "'最大安全载荷'!$J$76:$J$136",
+            "'最大安全载荷'!$H$76:$H$136",
+            "'最大安全载荷'!$K$76:$K$136"
+          ]
+        },
+        {
+          "part": "xl/drawings/charts/chart5.xml",
+          "source_formulas": [
+            "'最大安全载荷'!$L$76:$L$136",
+            "'最大安全载荷'!$M$76:$M$136",
+            "'最大安全载荷'!$L$76:$L$136",
+            "'最大安全载荷'!$N$76:$N$136",
+            "'最大安全载荷'!$L$76:$L$136",
+            "'最大安全载荷'!$O$76:$O$136"
+          ]
+        },
+        {
+          "part": "xl/drawings/charts/chart6.xml",
+          "source_formulas": [
+            "'最大安全载荷'!$P$76:$P$136",
+            "'最大安全载荷'!$Q$76:$Q$136",
+            "'最大安全载荷'!$P$76:$P$136",
+            "'最大安全载荷'!$R$76:$R$136",
+            "'最大安全载荷'!$P$76:$P$136",
+            "'最大安全载荷'!$S$76:$S$136"
+          ]
+        }
+      ],
+      "chart_anchors": [
+        {
+          "part": "xl/drawings/drawing1.xml",
+          "from_row_1based": 25,
+          "to_row_1based": 41
+        },
+        {
+          "part": "xl/drawings/drawing1.xml",
+          "from_row_1based": 25,
+          "to_row_1based": 41
+        },
+        {
+          "part": "xl/drawings/drawing1.xml",
+          "from_row_1based": 25,
+          "to_row_1based": 41
+        },
+        {
+          "part": "xl/drawings/drawing2.xml",
+          "from_row_1based": 53,
+          "to_row_1based": 72
+        },
+        {
+          "part": "xl/drawings/drawing2.xml",
+          "from_row_1based": 53,
+          "to_row_1based": 72
+        },
+        {
+          "part": "xl/drawings/drawing2.xml",
+          "from_row_1based": 53,
+          "to_row_1based": 72
+        }
+      ],
+      "unavailable_payloads_remain_blank": true,
+      "infeasible_scenario_objectives_remain_blank": true
+    }
+  ],
+  "visual_review": {
+    "passed": true,
+    "images_reviewed": [
+      "q1_notes_preview.png",
+      "q1_multiobjective_priorities.png",
+      "q1_multiobjective_notes.png",
+      "reserve_scenarios.png",
+      "reserve_payload_table.png",
+      "reserve_scenario_charts.png",
+      "reserve_payload_charts.png",
+      "reserve_notes.png",
+      "reserve_intervals.png"
+    ],
+    "findings": "Six-order table, gravity text, 18 scenarios, 12 payload columns and charts are legible; no overlap. Existing sheet names and six chart count preserved.",
+    "native_excel_application_tested": false
+  }
+}

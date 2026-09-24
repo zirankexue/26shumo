@@ -1,0 +1,81 @@
+{
+  "created_utc": "2026-09-24T11:18:26.988408+00:00",
+  "peer_commit": "9d1bddc2636a38a2f0445437420521389ad2fa49",
+  "peer_worktree_status": "",
+  "core_code_checks": [
+    {
+      "file": "建模/src/uav_rescue/common/data.py",
+      "sha256": "ac4f19eca580d3b09da8a4f70395de755cddf97eda223885b15b11cbfa96d3b5",
+      "changed_since_previous_peer_commit": false
+    },
+    {
+      "file": "建模/src/uav_rescue/common/terrain.py",
+      "sha256": "2008da6f0e6c563fdc4637128798fd59ab23e1ca50ef9f4c0cec7a52582e0026",
+      "changed_since_previous_peer_commit": false
+    },
+    {
+      "file": "建模/src/uav_rescue/common/physics.py",
+      "sha256": "41cfed00d75265d33fb4f8843e195fe7e74ef410d0a68ffdd6a8bc373b381074",
+      "changed_since_previous_peer_commit": false
+    },
+    {
+      "file": "建模/src/uav_rescue/q1/optimize.py",
+      "sha256": "2ab86bcae27bafce732821662615a8a04fa58ecd1ba86cb185b82a39992c7229",
+      "changed_since_previous_peer_commit": false
+    }
+  ],
+  "saved_audit_code_hash_checks": [
+    {
+      "file": "建模\\scripts\\audit_q1_objectives.py",
+      "saved_sha256": "f4314840013105ca01afa4b81ad9bc4b6d68507c95a2ae8c55eed6c4808a7cc5",
+      "current_sha256": "f4314840013105ca01afa4b81ad9bc4b6d68507c95a2ae8c55eed6c4808a7cc5",
+      "matches": true
+    },
+    {
+      "file": "建模\\src\\uav_rescue\\q1\\validate.py",
+      "saved_sha256": "e3fbbafc5cbfd5467710f9313e6b7a92e6cd7df0212bc1442553bb3eb58ab602",
+      "current_sha256": "e3fbbafc5cbfd5467710f9313e6b7a92e6cd7df0212bc1442553bb3eb58ab602",
+      "matches": true
+    },
+    {
+      "file": "建模\\src\\uav_rescue\\q1\\optimize.py",
+      "saved_sha256": "2ab86bcae27bafce732821662615a8a04fa58ecd1ba86cb185b82a39992c7229",
+      "current_sha256": "2ab86bcae27bafce732821662615a8a04fa58ecd1ba86cb185b82a39992c7229",
+      "matches": true
+    }
+  ],
+  "actual_new_q1_changes": [
+    "Configuration now adds the true time-first T,N,E order; new reports retain N,T,E as an additional comparison.",
+    "outputs/q1_objective_audit independently covers all six permutations and 90 per-service staged MILP checks.",
+    "milp_crosscheck now follows solution.order rather than always N,E,T and uses zero tolerance specifically for the sortie objective.",
+    "Old outputs/q1 and outputs/q1_sensitivity_05_45 were preserved, so their results.json still contain three comparisons; current six-order evidence is in q1_objective_audit.",
+    "New common_geometry includes all 240 directed inter-node legs, a 16x16 horizontal distance matrix and 720 model-specific times. Q1 geometry formula itself is unchanged."
+  ],
+  "peer_new_objective_audit": {
+    "saved_passed": true,
+    "orders": 6,
+    "service_milp_count": 90,
+    "all_service_milps_pass": true,
+    "all_stages_optimal_zero_gap": true,
+    "source_hash_matches_preserved_q1": true
+  },
+  "alignable_minor_differences": [
+    "g 9.81 -> 9.80665",
+    "Continuous safe-payload bisection stop 1e-7 -> 1e-6 kg",
+    "Routine energy-feasibility tolerance 1e-10 -> 1e-9 kWh",
+    "Lexicographic objectives compare sums of separately rounded per-candidate integer costs, 1e-12 kWh and 1e-6 s; raw values remain exported",
+    "Add all six scalar objective orders and the peer 5%-45% scenario grid while retaining existing additional scenarios"
+  ],
+  "preserve_substantive_extensions": [
+    "Complete 3-objective nondominated frontier, not merely six scalar orders",
+    "All 110 interior capacity-candidate energy events / 111 elementary intervals / 19 selected-plan intervals",
+    "Full box-ID assignment recovery and independent geometry/Decimal/bitmask checks"
+  ],
+  "payload_rounding_max_abs_change_kg": 5.21540641784668e-07,
+  "event_tolerance_note": {
+    "maximum_rho_allowance_from_peer_energy_epsilon_percentage_points": 2.5000000000000002e-08,
+    "minimum_distinct_event_gap_percentage_points": 0.0010536559957827762,
+    "note": "Energy comparison tolerance is numerical only. Retain physical event labels 100*(1-E/B); do not label epsilon-expanded feasible bounds as new physical thresholds."
+  },
+  "full_dry_run_evidence": "numeric_alignment_dry_run.json"
+}

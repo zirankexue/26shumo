@@ -1,0 +1,3187 @@
+{
+  "created_utc": "2026-09-24T11:27:22.715938+00:00",
+  "passed": true,
+  "issues": [],
+  "source_sha256": {
+    "nodes": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "drones": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+    "boxes": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+    "dem": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+    "problem": "f4ca76b46a8dd760bf13d606ec7673656ac9b882a4b54ddd29ab4377da91aa45"
+  },
+  "solution_sha256": "b90e1443e931282622d183db7d07b68ff899709040630dfb7b6c029ad223ef39",
+  "geometry_audit_sha256": "d5cba304b094abd32c2db7406ac9fec3391df6e1b86e080ea6091b96d83c11da",
+  "decimal_precision_digits": 40,
+  "gravity_m_s2": 9.80665,
+  "formal_result_sha256": "2c7568a6f03345aaa9d2c3559c8256669c34c03b52ac7fe956a4f5950b0a4903",
+  "method": "Independent input reread, Decimal cost, candidate reconstruction, all critical intervals and equality endpoints; no main solver import.",
+  "candidate_completeness": {
+    "physical_candidates": 742,
+    "all_candidates_matched": true
+  },
+  "event_scan": {
+    "elementary_interval_count": 111,
+    "endpoint_count": 112,
+    "intervals": [
+      {
+        "lower_percent": 0.0,
+        "upper_percent": 10.277732170617583,
+        "checked_midpoint_percent": 5.138866085308791,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 10.277732170617583,
+        "upper_percent": 10.741087373785787,
+        "checked_midpoint_percent": 10.509409772201685,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 10.741087373785787,
+        "upper_percent": 13.700166806726502,
+        "checked_midpoint_percent": 12.220627090256144,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 13.700166806726502,
+        "upper_percent": 14.195989369065499,
+        "checked_midpoint_percent": 13.948078087896,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 14.195989369065499,
+        "upper_percent": 15.741246492669802,
+        "checked_midpoint_percent": 14.968617930867651,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 15.741246492669802,
+        "upper_percent": 16.253822612815565,
+        "checked_midpoint_percent": 15.997534552742684,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 16.253822612815565,
+        "upper_percent": 16.69841470474314,
+        "checked_midpoint_percent": 16.476118658779352,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 16.69841470474314,
+        "upper_percent": 17.21807896850513,
+        "checked_midpoint_percent": 16.958246836624134,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 17.21807896850513,
+        "upper_percent": 18.49834980814271,
+        "checked_midpoint_percent": 17.85821438832392,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 18.49834980814271,
+        "upper_percent": 19.029864056709364,
+        "checked_midpoint_percent": 18.76410693242604,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 19.029864056709364,
+        "upper_percent": 20.943757614070424,
+        "checked_midpoint_percent": 19.986810835389893,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 20.943757614070424,
+        "upper_percent": 21.3350175806924,
+        "checked_midpoint_percent": 21.13938759738141,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 21.3350175806924,
+        "upper_percent": 21.48787179482167,
+        "checked_midpoint_percent": 21.411444687757037,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 21.48787179482167,
+        "upper_percent": 22.425348449344536,
+        "checked_midpoint_percent": 21.956610122083102,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 22.425348449344536,
+        "upper_percent": 22.974839218973045,
+        "checked_midpoint_percent": 22.70009383415879,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 22.974839218973045,
+        "upper_percent": 23.089248385317727,
+        "checked_midpoint_percent": 23.032043802145385,
+        "plan_id": "R001",
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ]
+      },
+      {
+        "lower_percent": 23.089248385317727,
+        "upper_percent": 23.126171839191844,
+        "checked_midpoint_percent": 23.107710112254786,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 23.126171839191844,
+        "upper_percent": 23.67753808899527,
+        "checked_midpoint_percent": 23.40185496409356,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 23.67753808899527,
+        "upper_percent": 24.117364992910183,
+        "checked_midpoint_percent": 23.897451540952726,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 24.117364992910183,
+        "upper_percent": 24.45453860982926,
+        "checked_midpoint_percent": 24.28595180136972,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 24.45453860982926,
+        "upper_percent": 24.816404020531174,
+        "checked_midpoint_percent": 24.635471315180215,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 24.816404020531174,
+        "upper_percent": 25.008165702020023,
+        "checked_midpoint_percent": 24.912284861275598,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 25.008165702020023,
+        "upper_percent": 25.084478154656665,
+        "checked_midpoint_percent": 25.046321928338344,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 25.084478154656665,
+        "upper_percent": 25.619828136444173,
+        "checked_midpoint_percent": 25.35215314555042,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 25.619828136444173,
+        "upper_percent": 25.638539334041177,
+        "checked_midpoint_percent": 25.629183735242677,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 25.638539334041177,
+        "upper_percent": 26.28127303682959,
+        "checked_midpoint_percent": 25.959906185435383,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 26.28127303682959,
+        "upper_percent": 26.3815010415561,
+        "checked_midpoint_percent": 26.331387039192844,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 26.3815010415561,
+        "upper_percent": 26.47941874283079,
+        "checked_midpoint_percent": 26.430459892193443,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 26.47941874283079,
+        "upper_percent": 26.58500791149507,
+        "checked_midpoint_percent": 26.53221332716293,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 26.58500791149507,
+        "upper_percent": 26.834919599947945,
+        "checked_midpoint_percent": 26.709963755721507,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 26.834919599947945,
+        "upper_percent": 26.85008097743354,
+        "checked_midpoint_percent": 26.84250028869074,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 26.85008097743354,
+        "upper_percent": 27.049741650420515,
+        "checked_midpoint_percent": 26.949911313927025,
+        "plan_id": "R002",
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ]
+      },
+      {
+        "lower_percent": 27.049741650420515,
+        "upper_percent": 27.344763417724234,
+        "checked_midpoint_percent": 27.197252534072373,
+        "plan_id": "R003",
+        "objective": [
+          20,
+          63.291051673035774,
+          36336.00019280513
+        ]
+      },
+      {
+        "lower_percent": 27.344763417724234,
+        "upper_percent": 27.40291854245265,
+        "checked_midpoint_percent": 27.373840980088442,
+        "plan_id": "R003",
+        "objective": [
+          20,
+          63.291051673035774,
+          36336.00019280513
+        ]
+      },
+      {
+        "lower_percent": 27.40291854245265,
+        "upper_percent": 27.80429050375623,
+        "checked_midpoint_percent": 27.60360452310444,
+        "plan_id": "R003",
+        "objective": [
+          20,
+          63.291051673035774,
+          36336.00019280513
+        ]
+      },
+      {
+        "lower_percent": 27.80429050375623,
+        "upper_percent": 27.932941312702035,
+        "checked_midpoint_percent": 27.868615908229135,
+        "plan_id": "R003",
+        "objective": [
+          20,
+          63.291051673035774,
+          36336.00019280513
+        ]
+      },
+      {
+        "lower_percent": 27.932941312702035,
+        "upper_percent": 28.213801924801494,
+        "checked_midpoint_percent": 28.073371618751764,
+        "plan_id": "R004",
+        "objective": [
+          20,
+          65.24374637868848,
+          36493.568238866326
+        ]
+      },
+      {
+        "lower_percent": 28.213801924801494,
+        "upper_percent": 28.219224385368808,
+        "checked_midpoint_percent": 28.216513155085153,
+        "plan_id": "R004",
+        "objective": [
+          20,
+          65.24374637868848,
+          36493.568238866326
+        ]
+      },
+      {
+        "lower_percent": 28.219224385368808,
+        "upper_percent": 28.24481799996971,
+        "checked_midpoint_percent": 28.23202119266926,
+        "plan_id": "R004",
+        "objective": [
+          20,
+          65.24374637868848,
+          36493.568238866326
+        ]
+      },
+      {
+        "lower_percent": 28.24481799996971,
+        "upper_percent": 28.483047450675688,
+        "checked_midpoint_percent": 28.3639327253227,
+        "plan_id": "R004",
+        "objective": [
+          20,
+          65.24374637868848,
+          36493.568238866326
+        ]
+      },
+      {
+        "lower_percent": 28.483047450675688,
+        "upper_percent": 28.6819978164674,
+        "checked_midpoint_percent": 28.582522633571546,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 28.6819978164674,
+        "upper_percent": 28.891108116118442,
+        "checked_midpoint_percent": 28.786552966292923,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 28.891108116118442,
+        "upper_percent": 29.021681793906474,
+        "checked_midpoint_percent": 28.95639495501246,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 29.021681793906474,
+        "upper_percent": 29.087398865914757,
+        "checked_midpoint_percent": 29.054540329910616,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 29.087398865914757,
+        "upper_percent": 29.279671710000525,
+        "checked_midpoint_percent": 29.183535287957643,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 29.279671710000525,
+        "upper_percent": 29.432021862201093,
+        "checked_midpoint_percent": 29.35584678610081,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 29.432021862201093,
+        "upper_percent": 29.90283184863083,
+        "checked_midpoint_percent": 29.66742685541596,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 29.90283184863083,
+        "upper_percent": 29.940287052484354,
+        "checked_midpoint_percent": 29.92155945055759,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 29.940287052484354,
+        "upper_percent": 29.975484768209327,
+        "checked_midpoint_percent": 29.95788591034684,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 29.975484768209327,
+        "upper_percent": 30.078669903196623,
+        "checked_midpoint_percent": 30.027077335702973,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 30.078669903196623,
+        "upper_percent": 30.256513364257376,
+        "checked_midpoint_percent": 30.167591633727,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 30.256513364257376,
+        "upper_percent": 30.355956474222978,
+        "checked_midpoint_percent": 30.30623491924018,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 30.355956474222978,
+        "upper_percent": 30.498049144184826,
+        "checked_midpoint_percent": 30.427002809203902,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 30.498049144184826,
+        "upper_percent": 30.797111466784617,
+        "checked_midpoint_percent": 30.64758030548472,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 30.797111466784617,
+        "upper_percent": 30.862153151702735,
+        "checked_midpoint_percent": 30.829632309243678,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 30.862153151702735,
+        "upper_percent": 30.89345626588168,
+        "checked_midpoint_percent": 30.87780470879221,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 30.89345626588168,
+        "upper_percent": 30.914219869165716,
+        "checked_midpoint_percent": 30.9038380675237,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 30.914219869165716,
+        "upper_percent": 31.019547278321667,
+        "checked_midpoint_percent": 30.966883573743694,
+        "plan_id": "R005",
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 31.019547278321667,
+        "upper_percent": 31.093504726018153,
+        "checked_midpoint_percent": 31.05652600216991,
+        "plan_id": "R006",
+        "objective": [
+          20,
+          67.23874008286305,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 31.093504726018153,
+        "upper_percent": 31.18500114275169,
+        "checked_midpoint_percent": 31.13925293438492,
+        "plan_id": "R006",
+        "objective": [
+          20,
+          67.23874008286305,
+          36586.686323583126
+        ]
+      },
+      {
+        "lower_percent": 31.18500114275169,
+        "upper_percent": 31.331206491685062,
+        "checked_midpoint_percent": 31.258103817218377,
+        "plan_id": "R007",
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ]
+      },
+      {
+        "lower_percent": 31.331206491685062,
+        "upper_percent": 31.40560079293836,
+        "checked_midpoint_percent": 31.36840364231171,
+        "plan_id": "R007",
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ]
+      },
+      {
+        "lower_percent": 31.40560079293836,
+        "upper_percent": 31.47161820551763,
+        "checked_midpoint_percent": 31.438609499227994,
+        "plan_id": "R007",
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ]
+      },
+      {
+        "lower_percent": 31.47161820551763,
+        "upper_percent": 31.47795489366701,
+        "checked_midpoint_percent": 31.47478654959232,
+        "plan_id": "R007",
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ]
+      },
+      {
+        "lower_percent": 31.47795489366701,
+        "upper_percent": 31.640490949552817,
+        "checked_midpoint_percent": 31.559222921609916,
+        "plan_id": "R007",
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ]
+      },
+      {
+        "lower_percent": 31.640490949552817,
+        "upper_percent": 31.678968156831466,
+        "checked_midpoint_percent": 31.65972955319214,
+        "plan_id": "R007",
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ]
+      },
+      {
+        "lower_percent": 31.678968156831466,
+        "upper_percent": 31.707188360601826,
+        "checked_midpoint_percent": 31.693078258716646,
+        "plan_id": "R007",
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ]
+      },
+      {
+        "lower_percent": 31.707188360601826,
+        "upper_percent": 31.944758894522394,
+        "checked_midpoint_percent": 31.82597362756211,
+        "plan_id": "R008",
+        "objective": [
+          20,
+          69.424945962401,
+          36704.53665520747
+        ]
+      },
+      {
+        "lower_percent": 31.944758894522394,
+        "upper_percent": 32.02960208337485,
+        "checked_midpoint_percent": 31.987180488948617,
+        "plan_id": "R008",
+        "objective": [
+          20,
+          69.424945962401,
+          36704.53665520747
+        ]
+      },
+      {
+        "lower_percent": 32.02960208337485,
+        "upper_percent": 32.04250135030691,
+        "checked_midpoint_percent": 32.03605171684087,
+        "plan_id": "R008",
+        "objective": [
+          20,
+          69.424945962401,
+          36704.53665520747
+        ]
+      },
+      {
+        "lower_percent": 32.04250135030691,
+        "upper_percent": 32.04370189974889,
+        "checked_midpoint_percent": 32.0431016250279,
+        "plan_id": "R009",
+        "objective": [
+          20,
+          71.76060278959002,
+          36819.94971062739
+        ]
+      },
+      {
+        "lower_percent": 32.04370189974889,
+        "upper_percent": 32.16317646895032,
+        "checked_midpoint_percent": 32.103439184349604,
+        "plan_id": "R009",
+        "objective": [
+          20,
+          71.76060278959002,
+          36819.94971062739
+        ]
+      },
+      {
+        "lower_percent": 32.16317646895032,
+        "upper_percent": 32.16698480565183,
+        "checked_midpoint_percent": 32.165080637301074,
+        "plan_id": "R009",
+        "objective": [
+          20,
+          71.76060278959002,
+          36819.94971062739
+        ]
+      },
+      {
+        "lower_percent": 32.16698480565183,
+        "upper_percent": 32.421696098982565,
+        "checked_midpoint_percent": 32.2943404523172,
+        "plan_id": "R009",
+        "objective": [
+          20,
+          71.76060278959002,
+          36819.94971062739
+        ]
+      },
+      {
+        "lower_percent": 32.421696098982565,
+        "upper_percent": 32.48115922747529,
+        "checked_midpoint_percent": 32.45142766322893,
+        "plan_id": "R009",
+        "objective": [
+          20,
+          71.76060278959002,
+          36819.94971062739
+        ]
+      },
+      {
+        "lower_percent": 32.48115922747529,
+        "upper_percent": 32.54877334652204,
+        "checked_midpoint_percent": 32.514966286998664,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 32.54877334652204,
+        "upper_percent": 32.566019413051016,
+        "checked_midpoint_percent": 32.55739637978653,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 32.566019413051016,
+        "upper_percent": 32.676759993672434,
+        "checked_midpoint_percent": 32.62138970336173,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 32.676759993672434,
+        "upper_percent": 32.815427626738035,
+        "checked_midpoint_percent": 32.74609381020524,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 32.815427626738035,
+        "upper_percent": 32.916674454014775,
+        "checked_midpoint_percent": 32.866051040376405,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 32.916674454014775,
+        "upper_percent": 32.98044313138012,
+        "checked_midpoint_percent": 32.94855879269745,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 32.98044313138012,
+        "upper_percent": 32.99084306434336,
+        "checked_midpoint_percent": 32.98564309786174,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 32.99084306434336,
+        "upper_percent": 33.18477221827871,
+        "checked_midpoint_percent": 33.08780764131103,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 33.18477221827871,
+        "upper_percent": 33.188818571078635,
+        "checked_midpoint_percent": 33.18679539467867,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 33.188818571078635,
+        "upper_percent": 33.29200929939256,
+        "checked_midpoint_percent": 33.240413935235594,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 33.29200929939256,
+        "upper_percent": 33.30799311522088,
+        "checked_midpoint_percent": 33.30000120730672,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 33.30799311522088,
+        "upper_percent": 33.3286869224482,
+        "checked_midpoint_percent": 33.31834001883454,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 33.3286869224482,
+        "upper_percent": 33.527010224400314,
+        "checked_midpoint_percent": 33.42784857342426,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 33.527010224400314,
+        "upper_percent": 33.56220603178755,
+        "checked_midpoint_percent": 33.54460812809393,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 33.56220603178755,
+        "upper_percent": 33.61723489367199,
+        "checked_midpoint_percent": 33.58972046272977,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 33.61723489367199,
+        "upper_percent": 33.6256705866165,
+        "checked_midpoint_percent": 33.62145274014424,
+        "plan_id": "R010",
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ]
+      },
+      {
+        "lower_percent": 33.6256705866165,
+        "upper_percent": 33.693166513125405,
+        "checked_midpoint_percent": 33.65941854987095,
+        "plan_id": "R011",
+        "objective": [
+          21,
+          74.06352420478905,
+          38595.7914578031
+        ]
+      },
+      {
+        "lower_percent": 33.693166513125405,
+        "upper_percent": 33.72974790626707,
+        "checked_midpoint_percent": 33.711457209696235,
+        "plan_id": "R011",
+        "objective": [
+          21,
+          74.06352420478905,
+          38595.7914578031
+        ]
+      },
+      {
+        "lower_percent": 33.72974790626707,
+        "upper_percent": 33.83397543431235,
+        "checked_midpoint_percent": 33.781861670289715,
+        "plan_id": "R011",
+        "objective": [
+          21,
+          74.06352420478905,
+          38595.7914578031
+        ]
+      },
+      {
+        "lower_percent": 33.83397543431235,
+        "upper_percent": 33.89233050976785,
+        "checked_midpoint_percent": 33.8631529720401,
+        "plan_id": "R012",
+        "objective": [
+          21,
+          74.06757009931174,
+          38595.7914578031
+        ]
+      },
+      {
+        "lower_percent": 33.89233050976785,
+        "upper_percent": 34.09218401175715,
+        "checked_midpoint_percent": 33.9922572607625,
+        "plan_id": "R013",
+        "objective": [
+          22,
+          76.15534610424601,
+          40490.40112284116
+        ]
+      },
+      {
+        "lower_percent": 34.09218401175715,
+        "upper_percent": 34.12166330394383,
+        "checked_midpoint_percent": 34.106923657850494,
+        "plan_id": "R013",
+        "objective": [
+          22,
+          76.15534610424601,
+          40490.40112284116
+        ]
+      },
+      {
+        "lower_percent": 34.12166330394383,
+        "upper_percent": 34.23082016410171,
+        "checked_midpoint_percent": 34.176241734022774,
+        "plan_id": "R013",
+        "objective": [
+          22,
+          76.15534610424601,
+          40490.40112284116
+        ]
+      },
+      {
+        "lower_percent": 34.23082016410171,
+        "upper_percent": 34.26168365131952,
+        "checked_midpoint_percent": 34.246251907710615,
+        "plan_id": "R014",
+        "objective": [
+          22,
+          76.17564414674078,
+          40490.40112284116
+        ]
+      },
+      {
+        "lower_percent": 34.26168365131952,
+        "upper_percent": 34.31455908156743,
+        "checked_midpoint_percent": 34.28812136644348,
+        "plan_id": "R014",
+        "objective": [
+          22,
+          76.17564414674078,
+          40490.40112284116
+        ]
+      },
+      {
+        "lower_percent": 34.31455908156743,
+        "upper_percent": 34.349045168965695,
+        "checked_midpoint_percent": 34.33180212526656,
+        "plan_id": "R014",
+        "objective": [
+          22,
+          76.17564414674078,
+          40490.40112284116
+        ]
+      },
+      {
+        "lower_percent": 34.349045168965695,
+        "upper_percent": 34.37428683208703,
+        "checked_midpoint_percent": 34.36166600052636,
+        "plan_id": "R014",
+        "objective": [
+          22,
+          76.17564414674078,
+          40490.40112284116
+        ]
+      },
+      {
+        "lower_percent": 34.37428683208703,
+        "upper_percent": 34.39036176938574,
+        "checked_midpoint_percent": 34.382324300736386,
+        "plan_id": "R015",
+        "objective": [
+          23,
+          76.003313418332,
+          42164.62973077376
+        ]
+      },
+      {
+        "lower_percent": 34.39036176938574,
+        "upper_percent": 34.77774518918476,
+        "checked_midpoint_percent": 34.58405347928525,
+        "plan_id": "R016",
+        "objective": [
+          24,
+          75.8637037342195,
+          43702.23572736472
+        ]
+      },
+      {
+        "lower_percent": 34.77774518918476,
+        "upper_percent": 34.81058808112973,
+        "checked_midpoint_percent": 34.79416663515725,
+        "plan_id": "R017",
+        "objective": [
+          25,
+          75.60892914897875,
+          45384.20769711529
+        ]
+      },
+      {
+        "lower_percent": 34.81058808112973,
+        "upper_percent": 34.85135583127266,
+        "checked_midpoint_percent": 34.830971956201196,
+        "plan_id": "R017",
+        "objective": [
+          25,
+          75.60892914897875,
+          45384.20769711529
+        ]
+      },
+      {
+        "lower_percent": 34.85135583127266,
+        "upper_percent": 34.88095155436768,
+        "checked_midpoint_percent": 34.86615369282017,
+        "plan_id": "R017",
+        "objective": [
+          25,
+          75.60892914897875,
+          45384.20769711529
+        ]
+      },
+      {
+        "lower_percent": 34.88095155436768,
+        "upper_percent": 35.11071811715969,
+        "checked_midpoint_percent": 34.99583483576368,
+        "plan_id": "R017",
+        "objective": [
+          25,
+          75.60892914897875,
+          45384.20769711529
+        ]
+      },
+      {
+        "lower_percent": 35.11071811715969,
+        "upper_percent": 35.118508828053336,
+        "checked_midpoint_percent": 35.114613472606514,
+        "plan_id": "R017",
+        "objective": [
+          25,
+          75.60892914897875,
+          45384.20769711529
+        ]
+      },
+      {
+        "lower_percent": 35.118508828053336,
+        "upper_percent": 35.26659369319482,
+        "checked_midpoint_percent": 35.19255126062408,
+        "plan_id": "R018",
+        "objective": [
+          25,
+          78.03068486372133,
+          45505.620752535215
+        ]
+      },
+      {
+        "lower_percent": 35.26659369319482,
+        "upper_percent": 35.26764734919062,
+        "checked_midpoint_percent": 35.267120521192716,
+        "plan_id": "R019",
+        "objective": [
+          25,
+          83.20918878330642,
+          45693.360307385476
+        ]
+      }
+    ],
+    "endpoints": [
+      {
+        "reserve_percent": 0.0,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 10.277732170617583,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 10.741087373785787,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 13.700166806726502,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 14.195989369065499,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 15.741246492669802,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 16.253822612815565,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 16.69841470474314,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 17.21807896850513,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 18.49834980814271,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 19.029864056709364,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 20.943757614070424,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 21.3350175806924,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 21.48787179482167,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 22.425348449344536,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 22.974839218973045,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 23.089248385317727,
+        "objective": [
+          18,
+          59.13226032599277,
+          32776.5167822769
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 23.126171839191844,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 23.67753808899527,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 24.117364992910183,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 24.45453860982926,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 24.816404020531174,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 25.008165702020023,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 25.084478154656665,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 25.619828136444173,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 25.638539334041177,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 26.28127303682959,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 26.3815010415561,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 26.47941874283079,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 26.58500791149507,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 26.834919599947945,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 26.85008097743354,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 27.049741650420515,
+        "objective": [
+          19,
+          61.07431115757807,
+          34566.15844562943
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 27.344763417724234,
+        "objective": [
+          20,
+          63.291051673035774,
+          36336.00019280513
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 27.40291854245265,
+        "objective": [
+          20,
+          63.291051673035774,
+          36336.00019280513
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 27.80429050375623,
+        "objective": [
+          20,
+          63.291051673035774,
+          36336.00019280513
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 27.932941312702035,
+        "objective": [
+          20,
+          63.291051673035774,
+          36336.00019280513
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 28.213801924801494,
+        "objective": [
+          20,
+          65.24374637868848,
+          36493.568238866326
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 28.219224385368808,
+        "objective": [
+          20,
+          65.24374637868848,
+          36493.568238866326
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 28.24481799996971,
+        "objective": [
+          20,
+          65.24374637868848,
+          36493.568238866326
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 28.483047450675688,
+        "objective": [
+          20,
+          65.24374637868848,
+          36493.568238866326
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 28.6819978164674,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 28.891108116118442,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 29.021681793906474,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 29.087398865914757,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 29.279671710000525,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 29.432021862201093,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 29.90283184863083,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 29.940287052484354,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 29.975484768209327,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 30.078669903196623,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 30.256513364257376,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 30.355956474222978,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 30.498049144184826,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 30.797111466784617,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 30.862153151702735,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 30.89345626588168,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 30.914219869165716,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 31.019547278321667,
+        "objective": [
+          20,
+          67.2287315236232,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 31.093504726018153,
+        "objective": [
+          20,
+          67.23874008286305,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 31.18500114275169,
+        "objective": [
+          20,
+          67.23874008286305,
+          36586.686323583126
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 31.331206491685062,
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 31.40560079293836,
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 31.47161820551763,
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 31.47795489366701,
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 31.640490949552817,
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 31.678968156831466,
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 31.707188360601826,
+        "objective": [
+          20,
+          69.40851960863192,
+          36704.53665520747
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 31.944758894522394,
+        "objective": [
+          20,
+          69.424945962401,
+          36704.53665520747
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.02960208337485,
+        "objective": [
+          20,
+          69.424945962401,
+          36704.53665520747
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.04250135030691,
+        "objective": [
+          20,
+          69.424945962401,
+          36704.53665520747
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.04370189974889,
+        "objective": [
+          20,
+          71.76060278959002,
+          36819.94971062739
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.16317646895032,
+        "objective": [
+          20,
+          71.76060278959002,
+          36819.94971062739
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.16698480565183,
+        "objective": [
+          20,
+          71.76060278959002,
+          36819.94971062739
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.421696098982565,
+        "objective": [
+          20,
+          71.76060278959002,
+          36819.94971062739
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.48115922747529,
+        "objective": [
+          20,
+          71.76060278959002,
+          36819.94971062739
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.54877334652204,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.566019413051016,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.676759993672434,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.815427626738035,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.916674454014775,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.98044313138012,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 32.99084306434336,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 33.18477221827871,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 33.188818571078635,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 33.29200929939256,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 33.30799311522088,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 33.3286869224482,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 33.527010224400314,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 33.56220603178755,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 33.61723489367199,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 33.6256705866165,
+        "objective": [
+          20,
+          74.29464357072257,
+          36919.819488052526
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 33.693166513125405,
+        "objective": [
+          21,
+          74.06352420478905,
+          38595.7914578031
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 33.72974790626707,
+        "objective": [
+          21,
+          74.06352420478905,
+          38595.7914578031
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 33.83397543431235,
+        "objective": [
+          21,
+          74.06352420478905,
+          38595.7914578031
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 33.89233050976785,
+        "objective": [
+          21,
+          74.06757009931174,
+          38595.7914578031
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 34.09218401175715,
+        "objective": [
+          22,
+          76.15534610424601,
+          40490.40112284116
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 34.12166330394383,
+        "objective": [
+          22,
+          76.15534610424601,
+          40490.40112284116
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 34.23082016410171,
+        "objective": [
+          22,
+          76.15534610424601,
+          40490.40112284116
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 34.26168365131952,
+        "objective": [
+          22,
+          76.17564414674078,
+          40490.40112284116
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 34.31455908156743,
+        "objective": [
+          22,
+          76.17564414674078,
+          40490.40112284116
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 34.349045168965695,
+        "objective": [
+          22,
+          76.17564414674078,
+          40490.40112284116
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 34.37428683208703,
+        "objective": [
+          22,
+          76.17564414674078,
+          40490.40112284116
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 34.39036176938574,
+        "objective": [
+          23,
+          76.003313418332,
+          42164.62973077376
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 34.77774518918476,
+        "objective": [
+          24,
+          75.8637037342195,
+          43702.23572736472
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 34.81058808112973,
+        "objective": [
+          25,
+          75.60892914897875,
+          45384.20769711529
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 34.85135583127266,
+        "objective": [
+          25,
+          75.60892914897875,
+          45384.20769711529
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 34.88095155436768,
+        "objective": [
+          25,
+          75.60892914897875,
+          45384.20769711529
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 35.11071811715969,
+        "objective": [
+          25,
+          75.60892914897875,
+          45384.20769711529
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 35.118508828053336,
+        "objective": [
+          25,
+          75.60892914897875,
+          45384.20769711529
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 35.26659369319482,
+        "objective": [
+          25,
+          78.03068486372133,
+          45505.620752535215
+        ],
+        "equality_feasible": true
+      },
+      {
+        "reserve_percent": 35.26764734919062,
+        "objective": [
+          25,
+          83.20918878330642,
+          45693.360307385476
+        ],
+        "equality_feasible": true
+      }
+    ]
+  },
+  "global_feasibility_limit_percent_40digit": "35.26764734919061558551234451852125404115",
+  "global_limit_just_above_infeasible": true,
+  "all_output_plan_checks": [
+    {
+      "plan_id": "R001",
+      "passed": true,
+      "batch_count": 18,
+      "recomputed_totals": {
+        "flight_count": 18,
+        "box_count": 80,
+        "energy_kwh": 59.13226032599277,
+        "flight_time_s": 19288.516782276904,
+        "work_time_s": 32776.5167822769,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 23.089248385317727,
+        "model_counts": {
+          "C": 9,
+          "B": 9
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 4.440892098500626e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "R002",
+      "passed": true,
+      "batch_count": 19,
+      "recomputed_totals": {
+        "flight_count": 19,
+        "box_count": 80,
+        "energy_kwh": 61.07431115757807,
+        "flight_time_s": 20640.158445629426,
+        "work_time_s": 34566.15844562943,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 27.049741650420515,
+        "model_counts": {
+          "C": 9,
+          "B": 10
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 2.1316282072803006e-14
+      }
+    },
+    {
+      "plan_id": "R003",
+      "passed": true,
+      "batch_count": 20,
+      "recomputed_totals": {
+        "flight_count": 20,
+        "box_count": 80,
+        "energy_kwh": 63.291051673035774,
+        "flight_time_s": 21972.000192805128,
+        "work_time_s": 36336.00019280513,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 27.932941312702035,
+        "model_counts": {
+          "C": 9,
+          "B": 11
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 2.1316282072803006e-14
+      }
+    },
+    {
+      "plan_id": "R004",
+      "passed": true,
+      "batch_count": 20,
+      "recomputed_totals": {
+        "flight_count": 20,
+        "box_count": 80,
+        "energy_kwh": 65.24374637868848,
+        "flight_time_s": 22081.568238866326,
+        "work_time_s": 36493.568238866326,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 28.483047450675688,
+        "model_counts": {
+          "C": 10,
+          "B": 10
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 2.1316282072803006e-14
+      }
+    },
+    {
+      "plan_id": "R005",
+      "passed": true,
+      "batch_count": 20,
+      "recomputed_totals": {
+        "flight_count": 20,
+        "box_count": 80,
+        "energy_kwh": 67.2287315236232,
+        "flight_time_s": 22126.686323583122,
+        "work_time_s": 36586.686323583126,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 31.019547278321667,
+        "model_counts": {
+          "C": 11,
+          "B": 9
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 1.1368683772161603e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 2.1316282072803006e-14
+      }
+    },
+    {
+      "plan_id": "R006",
+      "passed": true,
+      "batch_count": 20,
+      "recomputed_totals": {
+        "flight_count": 20,
+        "box_count": 80,
+        "energy_kwh": 67.23874008286305,
+        "flight_time_s": 22126.686323583122,
+        "work_time_s": 36586.686323583126,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 31.18500114275169,
+        "model_counts": {
+          "C": 11,
+          "B": 9
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 1.1368683772161603e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "R007",
+      "passed": true,
+      "batch_count": 20,
+      "recomputed_totals": {
+        "flight_count": 20,
+        "box_count": 80,
+        "energy_kwh": 69.40851960863192,
+        "flight_time_s": 22196.536655207474,
+        "work_time_s": 36704.53665520747,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 31.707188360601826,
+        "model_counts": {
+          "C": 12,
+          "B": 8
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "R008",
+      "passed": true,
+      "batch_count": 20,
+      "recomputed_totals": {
+        "flight_count": 20,
+        "box_count": 80,
+        "energy_kwh": 69.424945962401,
+        "flight_time_s": 22196.536655207474,
+        "work_time_s": 36704.53665520747,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 32.04250135030691,
+        "model_counts": {
+          "C": 12,
+          "B": 8
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "R009",
+      "passed": true,
+      "batch_count": 20,
+      "recomputed_totals": {
+        "flight_count": 20,
+        "box_count": 80,
+        "energy_kwh": 71.76060278959002,
+        "flight_time_s": 22269.949710627396,
+        "work_time_s": 36819.94971062739,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 32.48115922747529,
+        "model_counts": {
+          "C": 13,
+          "B": 7
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "R010",
+      "passed": true,
+      "batch_count": 20,
+      "recomputed_totals": {
+        "flight_count": 20,
+        "box_count": 80,
+        "energy_kwh": 74.29464357072257,
+        "flight_time_s": 22327.819488052526,
+        "work_time_s": 36919.819488052526,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 33.6256705866165,
+        "model_counts": {
+          "C": 14,
+          "B": 6
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "R011",
+      "passed": true,
+      "batch_count": 21,
+      "recomputed_totals": {
+        "flight_count": 21,
+        "box_count": 80,
+        "energy_kwh": 74.06352420478905,
+        "flight_time_s": 23601.791457803098,
+        "work_time_s": 38595.7914578031,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 33.83397543431235,
+        "model_counts": {
+          "C": 13,
+          "B": 8
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "R012",
+      "passed": true,
+      "batch_count": 21,
+      "recomputed_totals": {
+        "flight_count": 21,
+        "box_count": 80,
+        "energy_kwh": 74.06757009931174,
+        "flight_time_s": 23601.791457803098,
+        "work_time_s": 38595.7914578031,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 33.89233050976785,
+        "model_counts": {
+          "C": 13,
+          "B": 8
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "R013",
+      "passed": true,
+      "batch_count": 22,
+      "recomputed_totals": {
+        "flight_count": 22,
+        "box_count": 80,
+        "energy_kwh": 76.15534610424601,
+        "flight_time_s": 25052.401122841162,
+        "work_time_s": 40490.40112284116,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 34.23082016410171,
+        "model_counts": {
+          "C": 13,
+          "B": 9
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "R014",
+      "passed": true,
+      "batch_count": 22,
+      "recomputed_totals": {
+        "flight_count": 22,
+        "box_count": 80,
+        "energy_kwh": 76.17564414674078,
+        "flight_time_s": 25052.401122841162,
+        "work_time_s": 40490.40112284116,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 34.37428683208703,
+        "model_counts": {
+          "C": 13,
+          "B": 9
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "R015",
+      "passed": true,
+      "batch_count": 23,
+      "recomputed_totals": {
+        "flight_count": 23,
+        "box_count": 80,
+        "energy_kwh": 76.003313418332,
+        "flight_time_s": 26330.629730773762,
+        "work_time_s": 42164.62973077376,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 34.39036176938574,
+        "model_counts": {
+          "C": 12,
+          "B": 11
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 2.2737367544323206e-13,
+        "return_soc_percent": 2.1316282072803006e-14
+      }
+    },
+    {
+      "plan_id": "R016",
+      "passed": true,
+      "batch_count": 24,
+      "recomputed_totals": {
+        "flight_count": 24,
+        "box_count": 80,
+        "energy_kwh": 75.8637037342195,
+        "flight_time_s": 27472.23572736472,
+        "work_time_s": 43702.23572736472,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 34.77774518918476,
+        "model_counts": {
+          "C": 11,
+          "B": 13
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 2.2737367544323206e-13,
+        "return_soc_percent": 2.1316282072803006e-14
+      }
+    },
+    {
+      "plan_id": "R017",
+      "passed": true,
+      "batch_count": 25,
+      "recomputed_totals": {
+        "flight_count": 25,
+        "box_count": 80,
+        "energy_kwh": 75.60892914897875,
+        "flight_time_s": 28746.207697115296,
+        "work_time_s": 45384.20769711529,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 35.118508828053336,
+        "model_counts": {
+          "C": 10,
+          "B": 15
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 2.2737367544323206e-13,
+        "return_soc_percent": 2.1316282072803006e-14
+      }
+    },
+    {
+      "plan_id": "R018",
+      "passed": true,
+      "batch_count": 25,
+      "recomputed_totals": {
+        "flight_count": 25,
+        "box_count": 80,
+        "energy_kwh": 78.03068486372133,
+        "flight_time_s": 28819.62075253522,
+        "work_time_s": 45505.620752535215,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 35.26659369319482,
+        "model_counts": {
+          "C": 11,
+          "B": 14
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "R019",
+      "passed": true,
+      "batch_count": 25,
+      "recomputed_totals": {
+        "flight_count": 25,
+        "box_count": 80,
+        "energy_kwh": 83.20918878330642,
+        "flight_time_s": 28935.36030738548,
+        "work_time_s": 45693.360307385476,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 35.26764734919062,
+        "model_counts": {
+          "C": 13,
+          "B": 12
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "SC001",
+      "reserve_percent": 0,
+      "feasible": true,
+      "independent_objective": [
+        18,
+        59.13226032599277,
+        32776.5167822769
+      ],
+      "passed": true,
+      "batch_count": 18,
+      "recomputed_totals": {
+        "flight_count": 18,
+        "box_count": 80,
+        "energy_kwh": 59.13226032599277,
+        "flight_time_s": 19288.516782276904,
+        "work_time_s": 32776.5167822769,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 23.089248385317727,
+        "model_counts": {
+          "C": 9,
+          "B": 9
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 4.440892098500626e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "SC002",
+      "reserve_percent": 5,
+      "feasible": true,
+      "independent_objective": [
+        18,
+        59.13226032599277,
+        32776.5167822769
+      ],
+      "passed": true,
+      "batch_count": 18,
+      "recomputed_totals": {
+        "flight_count": 18,
+        "box_count": 80,
+        "energy_kwh": 59.13226032599277,
+        "flight_time_s": 19288.516782276904,
+        "work_time_s": 32776.5167822769,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 23.089248385317727,
+        "model_counts": {
+          "C": 9,
+          "B": 9
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 4.440892098500626e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "SC003",
+      "reserve_percent": 10,
+      "feasible": true,
+      "independent_objective": [
+        18,
+        59.13226032599277,
+        32776.5167822769
+      ],
+      "passed": true,
+      "batch_count": 18,
+      "recomputed_totals": {
+        "flight_count": 18,
+        "box_count": 80,
+        "energy_kwh": 59.13226032599277,
+        "flight_time_s": 19288.516782276904,
+        "work_time_s": 32776.5167822769,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 23.089248385317727,
+        "model_counts": {
+          "C": 9,
+          "B": 9
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 4.440892098500626e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "SC004",
+      "reserve_percent": 15,
+      "feasible": true,
+      "independent_objective": [
+        18,
+        59.13226032599277,
+        32776.5167822769
+      ],
+      "passed": true,
+      "batch_count": 18,
+      "recomputed_totals": {
+        "flight_count": 18,
+        "box_count": 80,
+        "energy_kwh": 59.13226032599277,
+        "flight_time_s": 19288.516782276904,
+        "work_time_s": 32776.5167822769,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 23.089248385317727,
+        "model_counts": {
+          "C": 9,
+          "B": 9
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 4.440892098500626e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "SC005",
+      "reserve_percent": 20,
+      "feasible": true,
+      "independent_objective": [
+        18,
+        59.13226032599277,
+        32776.5167822769
+      ],
+      "passed": true,
+      "batch_count": 18,
+      "recomputed_totals": {
+        "flight_count": 18,
+        "box_count": 80,
+        "energy_kwh": 59.13226032599277,
+        "flight_time_s": 19288.516782276904,
+        "work_time_s": 32776.5167822769,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 23.089248385317727,
+        "model_counts": {
+          "C": 9,
+          "B": 9
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 4.440892098500626e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "SC006",
+      "reserve_percent": 22.5,
+      "feasible": true,
+      "independent_objective": [
+        18,
+        59.13226032599277,
+        32776.5167822769
+      ],
+      "passed": true,
+      "batch_count": 18,
+      "recomputed_totals": {
+        "flight_count": 18,
+        "box_count": 80,
+        "energy_kwh": 59.13226032599277,
+        "flight_time_s": 19288.516782276904,
+        "work_time_s": 32776.5167822769,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 23.089248385317727,
+        "model_counts": {
+          "C": 9,
+          "B": 9
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 4.440892098500626e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "SC007",
+      "reserve_percent": 23,
+      "feasible": true,
+      "independent_objective": [
+        18,
+        59.13226032599277,
+        32776.5167822769
+      ],
+      "passed": true,
+      "batch_count": 18,
+      "recomputed_totals": {
+        "flight_count": 18,
+        "box_count": 80,
+        "energy_kwh": 59.13226032599277,
+        "flight_time_s": 19288.516782276904,
+        "work_time_s": 32776.5167822769,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 23.089248385317727,
+        "model_counts": {
+          "C": 9,
+          "B": 9
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 4.440892098500626e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "SC008",
+      "reserve_percent": 25,
+      "feasible": true,
+      "independent_objective": [
+        19,
+        61.07431115757807,
+        34566.15844562943
+      ],
+      "passed": true,
+      "batch_count": 19,
+      "recomputed_totals": {
+        "flight_count": 19,
+        "box_count": 80,
+        "energy_kwh": 61.07431115757807,
+        "flight_time_s": 20640.158445629426,
+        "work_time_s": 34566.15844562943,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 27.049741650420515,
+        "model_counts": {
+          "C": 9,
+          "B": 10
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 2.1316282072803006e-14
+      }
+    },
+    {
+      "plan_id": "SC009",
+      "reserve_percent": 27.5,
+      "feasible": true,
+      "independent_objective": [
+        20,
+        63.291051673035774,
+        36336.00019280513
+      ],
+      "passed": true,
+      "batch_count": 20,
+      "recomputed_totals": {
+        "flight_count": 20,
+        "box_count": 80,
+        "energy_kwh": 63.291051673035774,
+        "flight_time_s": 21972.000192805128,
+        "work_time_s": 36336.00019280513,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 27.932941312702035,
+        "model_counts": {
+          "C": 9,
+          "B": 11
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 2.1316282072803006e-14
+      }
+    },
+    {
+      "plan_id": "SC010",
+      "reserve_percent": 30,
+      "feasible": true,
+      "independent_objective": [
+        20,
+        67.2287315236232,
+        36586.686323583126
+      ],
+      "passed": true,
+      "batch_count": 20,
+      "recomputed_totals": {
+        "flight_count": 20,
+        "box_count": 80,
+        "energy_kwh": 67.2287315236232,
+        "flight_time_s": 22126.686323583122,
+        "work_time_s": 36586.686323583126,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 31.019547278321667,
+        "model_counts": {
+          "C": 11,
+          "B": 9
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 1.1368683772161603e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 2.1316282072803006e-14
+      }
+    },
+    {
+      "plan_id": "SC011",
+      "reserve_percent": 32.5,
+      "feasible": true,
+      "independent_objective": [
+        20,
+        74.29464357072257,
+        36919.819488052526
+      ],
+      "passed": true,
+      "batch_count": 20,
+      "recomputed_totals": {
+        "flight_count": 20,
+        "box_count": 80,
+        "energy_kwh": 74.29464357072257,
+        "flight_time_s": 22327.819488052526,
+        "work_time_s": 36919.819488052526,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 33.6256705866165,
+        "model_counts": {
+          "C": 14,
+          "B": 6
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "SC012",
+      "reserve_percent": 35,
+      "feasible": true,
+      "independent_objective": [
+        25,
+        75.60892914897875,
+        45384.20769711529
+      ],
+      "passed": true,
+      "batch_count": 25,
+      "recomputed_totals": {
+        "flight_count": 25,
+        "box_count": 80,
+        "energy_kwh": 75.60892914897875,
+        "flight_time_s": 28746.207697115296,
+        "work_time_s": 45384.20769711529,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 35.118508828053336,
+        "model_counts": {
+          "C": 10,
+          "B": 15
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 2.2737367544323206e-13,
+        "return_soc_percent": 2.1316282072803006e-14
+      }
+    },
+    {
+      "plan_id": "SC013",
+      "reserve_percent": 35.26764734919061,
+      "feasible": true,
+      "independent_objective": [
+        25,
+        83.20918878330642,
+        45693.360307385476
+      ],
+      "passed": true,
+      "batch_count": 25,
+      "recomputed_totals": {
+        "flight_count": 25,
+        "box_count": 80,
+        "energy_kwh": 83.20918878330642,
+        "flight_time_s": 28935.36030738548,
+        "work_time_s": 45693.360307385476,
+        "mass_kg": 758.0,
+        "volume_m3": 2.011,
+        "minimum_soc_percent": 35.26764734919062,
+        "model_counts": {
+          "C": 13,
+          "B": 12
+        }
+      },
+      "maximum_per_batch_difference": {
+        "energy_kwh": 8.881784197001252e-16,
+        "flight_time_s": 2.2737367544323206e-13,
+        "work_time_s": 4.547473508864641e-13,
+        "return_soc_percent": 1.4210854715202004e-14
+      }
+    },
+    {
+      "plan_id": "SC014",
+      "reserve_percent": 36,
+      "feasible": false,
+      "independent_objective": null
+    },
+    {
+      "plan_id": "SC015",
+      "reserve_percent": 40,
+      "feasible": false,
+      "independent_objective": null
+    },
+    {
+      "plan_id": "SC016",
+      "reserve_percent": 45,
+      "feasible": false,
+      "independent_objective": null
+    },
+    {
+      "plan_id": "SC017",
+      "reserve_percent": 50,
+      "feasible": false,
+      "independent_objective": null
+    },
+    {
+      "plan_id": "SC018",
+      "reserve_percent": 60,
+      "feasible": false,
+      "independent_objective": null
+    }
+  ],
+  "payload_record_count": 3285,
+  "maximum_payload_difference_kg": 8.939059625845402e-07,
+  "elapsed_seconds": 9.134282200000598
+}

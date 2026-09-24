@@ -1,0 +1,9 @@
+matplotlib==3.10.8
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.60.2
+kiwisolver==1.4.9
+pyparsing==3.2.5
+# Also install numpy, Pillow and openpyxl from ../../code/requirements_q1.txt.
+# pypdf is used only to assemble/check the figure atlas.
+pypdf==6.10.0

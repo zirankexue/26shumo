@@ -1,0 +1,612 @@
+{
+  "created_utc": "2026-09-24T11:45:09.357632+00:00",
+  "versions": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "matplotlib": "3.10.8",
+    "pypdf": "6.10.0"
+  },
+  "copies": [
+    {
+      "kind": "nodes",
+      "source": "数据/无人机应急物资运输基础数据/调度中心与服务区.xlsx",
+      "copy": "第一问/数据/原始附件/调度中心与服务区.xlsx",
+      "sha256": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38"
+    },
+    {
+      "kind": "drones",
+      "source": "数据/无人机应急物资运输基础数据/运输无人机数据.xlsx",
+      "copy": "第一问/数据/原始附件/运输无人机数据.xlsx",
+      "sha256": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb"
+    },
+    {
+      "kind": "boxes",
+      "source": "数据/无人机应急物资运输基础数据/物资需求与配送时限.xlsx",
+      "copy": "第一问/数据/原始附件/物资需求与配送时限.xlsx",
+      "sha256": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a"
+    },
+    {
+      "kind": "dem",
+      "source": "数据/镇龙乡地理空间数据/镇龙乡及周边地理数据/数字高程模型数据（DEM）/镇龙乡及周边30米DEM.tif",
+      "copy": "第一问/数据/原始附件/镇龙乡及周边30米DEM.tif",
+      "sha256": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03"
+    },
+    {
+      "kind": "problem",
+      "source": "山区洪涝灾害下无人机运输与通信协同优化.docx",
+      "copy": "第一问/数据/原始附件/山区洪涝灾害下无人机运输与通信协同优化.docx",
+      "sha256": "f4ca76b46a8dd760bf13d606ec7673656ac9b882a4b54ddd29ab4377da91aa45"
+    },
+    {
+      "kind": "verified_workbook",
+      "source": "outputs/question1_batching/第一问_货箱组批方案.xlsx",
+      "copy": "第一问/结果/第一问_货箱组批方案.xlsx",
+      "sha256": "18ddaea5e0b1eae065c4ac6d7ca4e15ff5baf3850bb569ce366d4087bf9afe84"
+    },
+    {
+      "kind": "verified_workbook",
+      "source": "outputs/question1_multiobjective/第一问_多目标优化结果.xlsx",
+      "copy": "第一问/结果/第一问_多目标优化结果.xlsx",
+      "sha256": "430abd565ccf4db1ce1eefebc2128b1b605319726a774ec2a059dfa744dc44bc"
+    },
+    {
+      "kind": "verified_workbook",
+      "source": "outputs/question1_reserve_sensitivity/第一问_安全余量敏感性.xlsx",
+      "copy": "第一问/结果/第一问_安全余量敏感性.xlsx",
+      "sha256": "54028c4c1f4721e159facb27e02c4620cff2c6ee205c67bb74b770e80e3cffdb"
+    }
+  ],
+  "qa": {
+    "figures": [
+      {
+        "id": "F01",
+        "pixels": [
+          4251,
+          3377
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 187,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F01_routes_terrain.png",
+            "sha256": "4872f826655b175c9b8d19d03926c732788ce8a960d1b1f7d10218e53a1e505c",
+            "size": 943079
+          },
+          "pdf": {
+            "path": "第一问/图片/F01_routes_terrain.pdf",
+            "sha256": "74bf919de27e1c7536f70dbb5c36043c91cb6585630d5abb9bcec0091b04d4b9",
+            "size": 338793
+          },
+          "svg": {
+            "path": "第一问/图片/F01_routes_terrain.svg",
+            "sha256": "5c8f11c51216a83aef4e36cff57e7127a476647928f10979c99ac0f893fc475a",
+            "size": 515933
+          }
+        }
+      },
+      {
+        "id": "F02",
+        "pixels": [
+          4251,
+          4889
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 379,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F02_terrain_profiles.png",
+            "sha256": "3d222e344dfbbbf29c1f7323a301b87b9db23d76e504551d27e3a0668686ae33",
+            "size": 775138
+          },
+          "pdf": {
+            "path": "第一问/图片/F02_terrain_profiles.pdf",
+            "sha256": "d322a1d989ac48b099455b144957dfe53d129b0f9cb8caee13074761132e8ace",
+            "size": 62959
+          },
+          "svg": {
+            "path": "第一问/图片/F02_terrain_profiles.svg",
+            "sha256": "78dd344e830975e6ff2a338995f9540e57258b681e2c3d75e2e0cce6fec2d6f5",
+            "size": 184628
+          }
+        }
+      },
+      {
+        "id": "F03",
+        "pixels": [
+          4251,
+          3420
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 277,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F03_demand.png",
+            "sha256": "a88b3ea63c0e40aeb086cfa693d7ef36d56ceb20990d5ebd3c87273a9ea2bf38",
+            "size": 241372
+          },
+          "pdf": {
+            "path": "第一问/图片/F03_demand.pdf",
+            "sha256": "a6c7abdf8c9277abe05cd7064a3f2ac4789f2ac66e17a0d590f5e3bdf35bc4e0",
+            "size": 20619
+          },
+          "svg": {
+            "path": "第一问/图片/F03_demand.svg",
+            "sha256": "3fa20aeebbefcdd02fffadc4625f55a0697ee70bdb0b2e4200ad8b6517e438a6",
+            "size": 61503
+          }
+        }
+      },
+      {
+        "id": "F04",
+        "pixels": [
+          4251,
+          3900
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 487,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F04_batch_composition.png",
+            "sha256": "cc2edce4359619b8d0b2b2c8ccd943610d28bf6d35bb332d57afcd249b2a0660",
+            "size": 464312
+          },
+          "pdf": {
+            "path": "第一问/图片/F04_batch_composition.pdf",
+            "sha256": "995224634d921e559b09fd75089467f72a5aa3a0abaea1a81368f766497207d1",
+            "size": 22153
+          },
+          "svg": {
+            "path": "第一问/图片/F04_batch_composition.svg",
+            "sha256": "046912466fa66393809e4f1e0c82f6ca866ec48d843dbb6056e7a8aa2c9598e3",
+            "size": 39047
+          }
+        }
+      },
+      {
+        "id": "F05",
+        "pixels": [
+          4251,
+          3600
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 290,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F05_constraint_utilization.png",
+            "sha256": "de0733e95b24f3135d272a96984fad367aafb8d58665afed062be53187e50e6a",
+            "size": 366152
+          },
+          "pdf": {
+            "path": "第一问/图片/F05_constraint_utilization.pdf",
+            "sha256": "691e1db0cd7cc31835c6122bc8eee0305b5c95073fbef18c645b3af84f66d02a",
+            "size": 23502
+          },
+          "svg": {
+            "path": "第一问/图片/F05_constraint_utilization.svg",
+            "sha256": "055be106f28b465a3b9e5f3d288752c590d7698af73e1626d3246b7b9532e66b",
+            "size": 33865
+          }
+        }
+      },
+      {
+        "id": "F06",
+        "pixels": [
+          4251,
+          3600
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 251,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F06_energy_components.png",
+            "sha256": "1afa27b33d4742aa906de2ca316f22fb6b1c9b05b463a6b4bd49721c4afd7da9",
+            "size": 304596
+          },
+          "pdf": {
+            "path": "第一问/图片/F06_energy_components.pdf",
+            "sha256": "fce7ec913e78549c53848ab7a31a84cc0e0f889f56deb1a2a796c02fa556e179",
+            "size": 22675
+          },
+          "svg": {
+            "path": "第一问/图片/F06_energy_components.svg",
+            "sha256": "4a6a5ef7ef98520f62a7bbafdefbb348db9e6681d71674f234b353e48334eb24",
+            "size": 54001
+          }
+        }
+      },
+      {
+        "id": "F07",
+        "pixels": [
+          4251,
+          3600
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 230,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F07_time_components.png",
+            "sha256": "2fe2dea6043a1bb3e5410b9f5402eff5c4c02c2a5317b4f921276f775449e758",
+            "size": 280435
+          },
+          "pdf": {
+            "path": "第一问/图片/F07_time_components.pdf",
+            "sha256": "364cad7bad1fdd9db83d2be027ea81279f40ce1310d527dd90495bed593c446e",
+            "size": 19362
+          },
+          "svg": {
+            "path": "第一问/图片/F07_time_components.svg",
+            "sha256": "c3f93e16180877e860397370016930ea297a1c5e9de06e6700f5d04f7a85abdb",
+            "size": 36737
+          }
+        }
+      },
+      {
+        "id": "F08",
+        "pixels": [
+          4251,
+          3480
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 430,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F08_safe_payload.png",
+            "sha256": "d4bbf34eb856595b058e5ddff2b9b3e60f683826d2e82d13fddeef5edfc39d96",
+            "size": 493604
+          },
+          "pdf": {
+            "path": "第一问/图片/F08_safe_payload.pdf",
+            "sha256": "28fa1305008621c64ebb6c8a38715b8d4f850b7b2fcaa1cd3b63a68de2bad89a",
+            "size": 36379
+          },
+          "svg": {
+            "path": "第一问/图片/F08_safe_payload.svg",
+            "sha256": "5048aee9324afa0d1df9873170cbec16ab3547c13428005bd4b6882b71d73981",
+            "size": 101696
+          }
+        }
+      },
+      {
+        "id": "F09",
+        "pixels": [
+          4251,
+          2190
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 162,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F09_pareto.png",
+            "sha256": "eb205dae010e126f24877fa86d88895ced97ff6f7d1841c6c2f3c4ce755591fb",
+            "size": 226113
+          },
+          "pdf": {
+            "path": "第一问/图片/F09_pareto.pdf",
+            "sha256": "ff00a8a41dc3f3d2818b7789935360c08ef7a4eef32c7eeb101ed5caabf02b22",
+            "size": 20281
+          },
+          "svg": {
+            "path": "第一问/图片/F09_pareto.svg",
+            "sha256": "1ff9dfdc2f562096617751d81dc3ac7c436c21e1263fd28e88d2a5f4c48d75a3",
+            "size": 17840
+          }
+        }
+      },
+      {
+        "id": "F10",
+        "pixels": [
+          4251,
+          1980
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 104,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F10_s008_split.png",
+            "sha256": "8bd17f72387ed488eb56d765e2ee8efe80ed508bfb4b8cc32d6e5867dd36b98e",
+            "size": 118674
+          },
+          "pdf": {
+            "path": "第一问/图片/F10_s008_split.pdf",
+            "sha256": "67110db88c7bb38e292b1c0367bc6a1ce77ff7ef25acc5931397ced3941932ed",
+            "size": 15835
+          },
+          "svg": {
+            "path": "第一问/图片/F10_s008_split.svg",
+            "sha256": "b43ace5c6470067b7349f494b4b4de4202e427e09f20746e54916d612225c0cd",
+            "size": 14477
+          }
+        }
+      },
+      {
+        "id": "F11",
+        "pixels": [
+          4251,
+          3900
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 146,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F11_reserve_steps.png",
+            "sha256": "34cf6028136b466fd9f59b46952b20b54096866813fea8fd7f0b76a459f68531",
+            "size": 345531
+          },
+          "pdf": {
+            "path": "第一问/图片/F11_reserve_steps.pdf",
+            "sha256": "1f1aaa00a4d30da884b32a31876f58ba795550a67a4c55715dc5047266444e5f",
+            "size": 36801
+          },
+          "svg": {
+            "path": "第一问/图片/F11_reserve_steps.svg",
+            "sha256": "61380e24524814189317f32f4dc3305189f17978e71dced14cbf0c89117e550c",
+            "size": 57292
+          }
+        }
+      },
+      {
+        "id": "F12",
+        "pixels": [
+          4251,
+          4020
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 349,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F12_interval_comparison.png",
+            "sha256": "b0509e40e41bd5a176337b6fd00788a93e83456ef6ab9355249587df44c995ec",
+            "size": 447795
+          },
+          "pdf": {
+            "path": "第一问/图片/F12_interval_comparison.pdf",
+            "sha256": "a2e5e7becec8ba5ba16381e03be0a45b2d1c7e0b68770fd7328fc48c656c0bc8",
+            "size": 19131
+          },
+          "svg": {
+            "path": "第一问/图片/F12_interval_comparison.svg",
+            "sha256": "45b35a4c289afc4e1b5bf93e2a7f946bdafdf15db88bec149120f4be3b2f7ba8",
+            "size": 46432
+          }
+        }
+      },
+      {
+        "id": "F13",
+        "pixels": [
+          4251,
+          5100
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 228,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F13_payload_curves.png",
+            "sha256": "76e2d2d53ba8a033fd61fee69909a0c048afac436e9f9c3de3de6f52c7a915cd",
+            "size": 653080
+          },
+          "pdf": {
+            "path": "第一问/图片/F13_payload_curves.pdf",
+            "sha256": "292eca6606dfa278492a9dd273e83a4519c5ee7d79c0acb3d924b60eb5e70711",
+            "size": 29793
+          },
+          "svg": {
+            "path": "第一问/图片/F13_payload_curves.svg",
+            "sha256": "3b8f92251a9d089062a1e6d8f275f9bb1f89d05285281f2526d469a9e06e621c",
+            "size": 141034
+          }
+        }
+      },
+      {
+        "id": "F14",
+        "pixels": [
+          4251,
+          2760
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 262,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F14_last_threshold.png",
+            "sha256": "2ee0b103dd21edde2fd07169326b3ff13fd74418bef6bd3202fc1282a01a54f7",
+            "size": 347725
+          },
+          "pdf": {
+            "path": "第一问/图片/F14_last_threshold.pdf",
+            "sha256": "17976c601d06ad4d8019503d4930fb0b10fb94436aa5441b18d3c744f8c0d0c0",
+            "size": 34198
+          },
+          "svg": {
+            "path": "第一问/图片/F14_last_threshold.svg",
+            "sha256": "454eb63031c6ab424cba6e1694c3aba582e6ffafdc206d870874cddfd364bf8a",
+            "size": 18872
+          }
+        }
+      },
+      {
+        "id": "F15",
+        "pixels": [
+          4251,
+          3480
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 180,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F15_payload_thresholds.png",
+            "sha256": "adc63c24194d47fdcce546b54641e822af534e01891e4677f53a269679c51530",
+            "size": 320870
+          },
+          "pdf": {
+            "path": "第一问/图片/F15_payload_thresholds.pdf",
+            "sha256": "bac983b2e466795669858271863ecdcf831110d3856087025226e1d2d62d296c",
+            "size": 33104
+          },
+          "svg": {
+            "path": "第一问/图片/F15_payload_thresholds.svg",
+            "sha256": "7ab398740c27ac5c4c4c1c177f014053ba8d9bfff3550de8965d62f1801ea37e",
+            "size": 58960
+          }
+        }
+      },
+      {
+        "id": "F16",
+        "pixels": [
+          4251,
+          3600
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "pdf_pages": 1,
+        "pdf_text_chars": 239,
+        "font_subtypes": [
+          "/Type0"
+        ],
+        "svg_text": true,
+        "files": {
+          "png": {
+            "path": "第一问/图片/F16_solver_flow.png",
+            "sha256": "23ab7bfa290dcfc4d98d5cf2226fea72efecc1889ac394ba9e473f25f0edcfd7",
+            "size": 531643
+          },
+          "pdf": {
+            "path": "第一问/图片/F16_solver_flow.pdf",
+            "sha256": "31c1588a9f5fb5a0f944d8629e1e66b038e458b90d07db4757dc6d6589ae872b",
+            "size": 66112
+          },
+          "svg": {
+            "path": "第一问/图片/F16_solver_flow.svg",
+            "sha256": "5e26d1f7ed442519fb0bbb3faf435cba5e78c6880b55aa71001ed341133d5c34",
+            "size": 10558
+          }
+        }
+      }
+    ],
+    "all_markdown_links_valid": true,
+    "atlas_pages": 17,
+    "visual_review_current": true,
+    "visual_review_record": "结果/图形人工审阅.json",
+    "visual_review_note": "PNG hashes match the completed visual review.",
+    "deterministic_model": true
+  }
+}
