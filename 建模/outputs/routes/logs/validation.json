@@ -1,0 +1,156 @@
+{
+  "passed": true,
+  "generated_utc": "2026-09-23T12:02:02.062171+00:00",
+  "input_sha256": {
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\调度中心与服务区.xlsx": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\运输无人机数据.xlsx": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+    "D:\\xyq\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\数字高程模型数据（DEM）\\镇龙乡及周边30米DEM.tif": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+    "D:\\xyq\\数模\\D题\\结果提交模板.xlsx": "16f521f29a7103c4ff7c3709ce1696bb9fffa18ce741895e45b7bc7afaf3320a"
+  },
+  "result_sha256": {
+    "D:\\xyq\\数模\\D题\\建模\\outputs\\q1_sensitivity_05_45\\tables\\results.json": "e3cf78da3f3cdf502c26939c223cef3bfad6aac4512ae8b2c4357a47670df322",
+    "D:\\xyq\\数模\\D题\\建模\\outputs\\q2\\tables\\results.json": "f1abdad847d29818099d189ce05a19d875b05ce63b7afc78782043970d4733b4"
+  },
+  "code_sha256": {
+    "D:\\xyq\\数模\\D题\\建模\\scripts\\plot_routes.py": "8332d0b45a0c3aa5c4faed553fb33e5910b46126e687b5308ae9d8c5d0193d9c"
+  },
+  "counts": {
+    "nodes": 16,
+    "q1_sorties": 18,
+    "q1_legs": 36,
+    "q2_sorties": 36,
+    "q2_legs": 76,
+    "units": 8,
+    "vertices": 448
+  },
+  "geometry_tolerance_m": 1e-06,
+  "all_legs_recomputed_with_full_dem": true,
+  "route_continuity_checked": true,
+  "xy_projection_checked": true,
+  "grouping_counts_checked": true,
+  "preserved_files": 227,
+  "bounds_km": [
+    -7.355373355953578,
+    6.407201871835279,
+    -1.3654334735725997,
+    8.863032427398768
+  ],
+  "z_exaggeration": 5.0,
+  "view": {
+    "elevation": 28,
+    "azimuth": -60,
+    "projection": "orthographic"
+  },
+  "display_grids": {
+    "240": [
+      240,
+      240
+    ],
+    "200": [
+      200,
+      200
+    ],
+    "85": [
+      85,
+      85
+    ]
+  },
+  "label_layout_checks": [
+    {
+      "labels": 31,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 0,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 31,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 29,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 0,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 29,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 11,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 7,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 9,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 9,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 11,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 7,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 10,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 9,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 11,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 7,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 9,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 9,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 11,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 7,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 10,
+      "pairwise_label_overlap": false
+    },
+    {
+      "labels": 9,
+      "pairwise_label_overlap": false
+    }
+  ],
+  "optimizer_invoked": false,
+  "dependencies": {
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2",
+    "Pillow": "12.3.0",
+    "openpyxl": "3.1.5"
+  }
+}

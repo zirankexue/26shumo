@@ -16,7 +16,8 @@ energy_tolerance_kwh = 0.000000001
 [optimization]
 baseline_reserve = 0.20
 primary_order = ["sorties", "energy", "time"]
-comparison_orders = [["sorties", "time", "energy"], ["energy", "sorties", "time"]]
+# First three report rows cover each primary objective; retain the former tie-break comparison.
+comparison_orders = [["energy", "sorties", "time"], ["time", "sorties", "energy"], ["sorties", "time", "energy"]]
 sensitivity_reserves = [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45]
 milp_time_limit_s = 120.0
 

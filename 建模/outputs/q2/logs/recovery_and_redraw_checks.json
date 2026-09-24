@@ -1,0 +1,52 @@
+{
+  "checkpoint_schemes_restored": [
+    "tardiness",
+    "makespan",
+    "energy",
+    "sorties"
+  ],
+  "candidate_count": 64,
+  "checkpoint_matches_formal_results": true,
+  "independent_redraw_pngs": [
+    {
+      "name": "01_二维运输路线.png",
+      "sha256": "d1fc63140201dc790c2603e6c12f9e8c36a1584ab045a8bf995de5811e71ea67",
+      "equal": true
+    },
+    {
+      "name": "02_三维实际航迹.png",
+      "sha256": "76e7394579e68cec62b58bacb026b03ff95de33e8ee048168ce8e26a4050829e",
+      "equal": true
+    },
+    {
+      "name": "03_无人机占用甘特图.png",
+      "sha256": "7fffd5dbcfec7bff36e88213bde0129def358f4b046c4fc0a095d5dd8fbbb3bb",
+      "equal": true
+    },
+    {
+      "name": "04_电池使用与充电.png",
+      "sha256": "90db5e8bfd1482b83ce9093795100e740e8d8f7914d840dbe822f22ab9616766",
+      "equal": true
+    },
+    {
+      "name": "05_逐箱配送及时性.png",
+      "sha256": "5304336f2de6beb6ecdb0b08d8c15ebaf5f899e836cb974f9a1266c1e97c313d",
+      "equal": true
+    },
+    {
+      "name": "06_硬截止裕量排序.png",
+      "sha256": "a16cd8160b414f325b65216db5a4ee02fd773e157279c99f6d8f89cecc5f0363",
+      "equal": true
+    },
+    {
+      "name": "07_四目标优先级权衡.png",
+      "sha256": "fadef495b70dcf8bfdcca2d5d2527d8e1cb3511d7c1539cabfac9373c50ef424",
+      "equal": true
+    },
+    {
+      "name": "08_ALNS搜索进展.png",
+      "sha256": "6eaceeba42101552c7291147c08bcee1f4bdb1ebc5e09f01f3770e31e12a6cde",
+      "equal": true
+    }
+  ]
+}

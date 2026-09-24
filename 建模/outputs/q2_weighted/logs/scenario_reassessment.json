@@ -1,0 +1,30 @@
+{
+  "scenario_tardiness": {
+    "source": "weighted",
+    "search_endpoint_score": 0.03827399124808814,
+    "selected_score": 0.01935195708897127,
+    "complete_candidates_compared": 9,
+    "comparison_scope": "saved complete schedules only; no additional optimization"
+  },
+  "scenario_makespan": {
+    "source": "scenario_makespan",
+    "search_endpoint_score": -0.022393057827109042,
+    "selected_score": -0.022393057827109042,
+    "complete_candidates_compared": 9,
+    "comparison_scope": "saved complete schedules only; no additional optimization"
+  },
+  "scenario_energy": {
+    "source": "scenario_energy",
+    "search_endpoint_score": 0.04745761556473045,
+    "selected_score": 0.04745761556473045,
+    "complete_candidates_compared": 9,
+    "comparison_scope": "saved complete schedules only; no additional optimization"
+  },
+  "scenario_sorties": {
+    "source": "scenario_energy",
+    "search_endpoint_score": 0.40012823040243617,
+    "selected_score": 0.07243419306764831,
+    "complete_candidates_compared": 9,
+    "comparison_scope": "saved complete schedules only; no additional optimization"
+  }
+}

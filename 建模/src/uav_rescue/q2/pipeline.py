@@ -8,6 +8,7 @@ import math
 import os
 import platform
 import subprocess
+import shutil
 import time
 import tomllib
 from ..common.data import file_hash
@@ -21,8 +22,29 @@ def save(path,obj):
     path.write_text(json.dumps(obj,ensure_ascii=False,indent=2,allow_nan=False),encoding='utf-8')
 
 
+def verify_csv_tables(payload,output):
+    checked=0
+    for sheet in payload['sheets']:
+        with (output/'tables'/f"{sheet['name']}.csv").open(encoding='utf-8-sig',newline='') as f:
+            actual=list(csv.reader(f))
+        expected=[[str(v) if v is not None else '' for v in row] for row in [sheet['headers'],*sheet['rows']]]
+        if actual!=expected:raise AssertionError(f"CSV与JSON不一致: {sheet['name']}")
+        checked+=1
+    for name,result in payload.get('schemes',{}).items():
+        for kind in ['sorties','deliveries','legs','phases']:
+            with (output/'tables/by_scheme'/name/f'{kind}.csv').open(encoding='utf-8-sig',newline='') as f:
+                actual=list(csv.DictReader(f))
+            records=result[kind];headers=list(dict.fromkeys(k for row in records for k in row))
+            expected=[{k:json.dumps(row[k],ensure_ascii=False) if isinstance(row.get(k),(list,dict)) else str(row[k]) if row.get(k) is not None else '' for k in headers} for row in records]
+            if actual!=expected:raise AssertionError(f'对照明细CSV不一致: {name}/{kind}')
+            checked+=1
+    return {'csv_files_checked':checked,'json_csv_equal':True}
+
+
 def retain_best_seen(payload):
     """A contrast run may also improve the primary order; do not discard that result."""
+    if 'schemes' in payload:
+        return
     def key(result,order):
         s=result['summary']
         values={'tardiness':round(s['weighted_tardiness_s']*1000),'makespan':round(s['makespan_s']*1000),
@@ -55,9 +77,13 @@ def run(project,config_path,args):
     started=time.perf_counter();cfg=tomllib.loads(config_path.read_text(encoding='utf-8'))
     paths={k:(project/v).resolve() for k,v in cfg['paths'].items()}
     output=(project/args.output).resolve() if args.output else paths['output']
+    if output.exists() and not (args.resume or args.report_only or args.verify_only):
+        if not output.is_relative_to((project/'outputs').resolve()):
+            raise ValueError('自动归档仅允许工程outputs内的目录')
+        archived=output.with_name(output.name+'_archive_'+datetime.now().strftime('%Y%m%d_%H%M%S_%f'))
+        output.rename(archived)
     for folder in ['tables','figures','logs']:(output/folder).mkdir(parents=True,exist_ok=True)
     cache=paths['cache'];cache.mkdir(parents=True,exist_ok=True)
-    from .report import build_sheets,make_figures,write_report
     from ..q1.report import verify_workbook
     data=load_scheduling_inputs(paths['data_root'],paths['template'])
     if args.report_only or args.verify_only:
@@ -77,15 +103,21 @@ def run(project,config_path,args):
                 elif isinstance(a,(int,float)) and not isinstance(a,bool):
                     if not isinstance(b,(int,float)) or not math.isclose(a,b,rel_tol=1e-12,abs_tol=1e-8):raise AssertionError(f'{location}数值不一致')
                 elif a!=b:raise AssertionError(f'{location}内容不一致')
-            for name,schedule_key in [('main','schedule'),('comparison','comparison_schedule')]:
+            cases = [(name,payload['schemes'][name],schedule) for name,schedule in payload['schedules'].items()] if 'schemes' in payload else [(name,payload[name],payload[sk]) for name,sk in [('main','schedule'),('comparison','comparison_schedule')]]
+            for name,result,schedule in cases:
                 pool={}
-                for row in payload[name]['sorties']:
+                for row in result['sorties']:
                     p=factory.make(row['drone'],row['boxes'],row['visits'])
                     if p is None:raise AssertionError('保存架次违反物理约束')
                     pool[p.id]=p
-                rebuilt=validate_schedule(payload[schedule_key],pool,factory)
-                compare(rebuilt,payload[name],name)
-            checks={'main_recomputed':True,'comparison_recomputed':True,'sources_match':True}
+                rebuilt=validate_schedule(schedule,pool,factory)
+                compare(rebuilt,result,name)
+            checks={'schemes_recomputed':[name for name,_,_ in cases],'sources_match':True,
+                    'verified_utc':datetime.now(timezone.utc).isoformat(),
+                    'verification_code_sha256':{str(p):file_hash(p) for p in sorted((project/'src').rglob('*.py'))}}
+            from .report import build_sheets
+            payload['sheets']=build_sheets(payload,data)
+            checks['csv']=verify_csv_tables(payload,output)
             if (output/'问题二结果.xlsx').exists():checks['excel']=verify_workbook(output/'问题二结果.xlsx',build_sheets(payload,data))
             save(output/'logs/verification_replay.json',checks)
             print('独立重算核验通过：'+json.dumps(checks,ensure_ascii=False),flush=True)
@@ -96,16 +128,20 @@ def run(project,config_path,args):
         if args.budget_seconds is not None:
             keys=['initial_seconds','search_seconds','final_seconds','comparison_seconds']
             if args.budget_seconds<=0:raise ValueError('预算必须为正')
-            total=sum(cfg['optimization'][k] for k in keys)
+            total=cfg['optimization']['initial_seconds']+cfg['optimization']['search_seconds']+3*cfg['optimization']['comparison_seconds']+4*cfg['optimization']['final_seconds']
             for k in keys:cfg['optimization'][k]*=args.budget_seconds/total
         hashes={str(p):file_hash(p) for p in data.base.source_paths}
+        cfg['optimization']['input_sha256']=hashes
         if args.resume:
             checkpoint=output/'logs/checkpoint.json'
             if not checkpoint.exists():raise ValueError('没有可继续的检查点')
             cfg['optimization']['resume_checkpoint']=str(checkpoint)
         # Preserve Q1 artifacts and the existing paper as well as raw attachments.
-        protected=[p for folder in [project/'outputs/q1',project.parent/'写作'] if folder.exists() for p in folder.rglob('*') if p.is_file() and not p.name.startswith('~$')]
+        protected=[p for folder in [*sorted((project/'outputs').glob('q1*')),project.parent/'写作'] if folder.is_dir() for p in folder.rglob('*') if p.is_file() and not p.name.startswith('~$')]
         protected_hashes={str(p):file_hash(p) for p in protected}
+        code_paths=[*sorted((project/'src').rglob('*.py')),project/'run_q2.py',config_path]
+        code_hashes={str(p):file_hash(p) for p in code_paths}
+        save(output/'logs/protected_files.json',protected_hashes)
         factory=RouteFactory(data,cfg['physics'])
         save(cache/'legs.json',factory.leg_records())
         print('问题二输入通过：80箱、31个硬时限箱、8架实体机、14组电池、240条有向航段。',flush=True)
@@ -119,15 +155,49 @@ def run(project,config_path,args):
         payload['metadata']={'generated_utc':datetime.now(timezone.utc).isoformat(),'python':platform.python_version(),
                              'dependencies':{n:importlib.metadata.version(n) for n in ['ortools','numpy','scipy','openpyxl','matplotlib','Pillow']},
                              'config':cfg,'config_sha256':file_hash(config_path),'input_sha256':hashes,
+                             'code_sha256':code_hashes,
                              'q1_and_paper_unchanged':True,'protected_file_count':len(protected_hashes),'sources_unchanged':True}
         save(output/'tables/results.json',payload)
+    if args.solve_only:
+        save(output/'logs/solver_trace.json',payload['trace'])
+        save(output/'logs/alns_trace.json',payload.get('alns_trace',[]))
+        print('计算完成，结果已保存；使用--report-only导出。',flush=True)
+        return
+    from .report import build_sheets,make_figures,write_report
     retain_best_seen(payload)
+    if 'schemes' in payload:
+        from .figures import prepare_map
+        prepare_map(payload,data,payload['metadata']['config']['physics'],project)
+        export_sources=[project/'src/uav_rescue/q2'/name for name in ['report.py','figures.py','narrative.py','pipeline.py']]+[project/'scripts/plot_q2.py',project/'scripts/export_q2.mjs',project/'scripts/export_q1.mjs']
+        payload['metadata']['export_code_sha256']={str(p):file_hash(p) for p in export_sources}
     payload['sheets']=build_sheets(payload,data)
     save(output/'tables/results.json',payload)
     for sheet in payload['sheets']:
         with (output/'tables'/f"{sheet['name']}.csv").open('w',encoding='utf-8-sig',newline='') as f:
             writer=csv.writer(f);writer.writerow(sheet['headers']);writer.writerows(sheet['rows'])
     for name in ['main','comparison','initial']:save(output/'tables'/f'{name}_manifest.json',payload[name])
+    for name,result in payload.get('schemes',{}).items():
+        save(output/'tables'/f'{name}_manifest.json',result)
+        destination=output/'tables/by_scheme'/name
+        destination.mkdir(parents=True,exist_ok=True)
+        for kind in ['sorties','deliveries','legs','phases']:
+            records=result[kind]
+            headers=list(dict.fromkeys(k for row in records for k in row))
+            with (destination/f'{kind}.csv').open('w',encoding='utf-8-sig',newline='') as f:
+                writer=csv.DictWriter(f,fieldnames=headers);writer.writeheader()
+                for row in records:
+                    writer.writerow({k:json.dumps(v,ensure_ascii=False) if isinstance(v,(list,dict)) else v for k,v in row.items()})
+    if 'schemes' in payload:
+        bundle={k:payload[k] for k in ['main','schemes','orders','nodes','resources','map','alns_trace','metadata']}
+        bundle_path=output/'plotting/data/plot_data.json'
+        save(bundle_path,bundle)
+        save(bundle_path.with_name('manifest.json'),{'plot_data_sha256':file_hash(bundle_path),'input_sha256':payload['metadata']['input_sha256']})
+        code_dir=output/'plotting/code';code_dir.mkdir(parents=True,exist_ok=True)
+        shutil.copy2(project/'scripts/plot_q2.py',code_dir/'plot_q2.py')
+        shutil.copy2(project/'src/uav_rescue/q2/figures.py',code_dir/'q2_figures.py')
+        shutil.copy2(paths['font'],bundle_path.parent/'SimSun.ttf')
+        (code_dir/'requirements.txt').write_text('\n'.join(f'{name}=={importlib.metadata.version(name)}' for name in ['numpy','matplotlib','Pillow'])+'\n',encoding='utf-8')
+        (output/'plotting/README.md').write_text('# 问题二图册重绘\n\n从工程运行 `python scripts/plot_q2.py`。迁移时保留code与data，执行 `python code/plot_q2.py --from-bundle <data/plot_data.json绝对路径> --output <输出绝对路径>`。绘图不读取原始表格或DEM，不运行优化。字体已随数据保存，可用--font替换；--z-exaggeration 1生成真实比例三维图。\n\n所有图的数值以JSON快照为准，对应CSV在tables中；空值不是零。图中地形网格仅用于显示。\n',encoding='utf-8')
     make_figures(payload,paths['font'],output/'figures')
     write_report(payload,output/'问题二结果分析.md')
     if cfg['export']['excel'] and not args.skip_excel:
@@ -135,10 +205,15 @@ def run(project,config_path,args):
         payload['excel_verification']=verify_workbook(output/'问题二结果.xlsx',payload['sheets'])
     else:payload['excel_verification']={'performed':False}
     payload['metadata']['last_export_elapsed_s']=time.perf_counter()-started
+    csv_checks=verify_csv_tables(payload,output)
+    save(output/'logs/csv_consistency.json',csv_checks)
     save(output/'logs/run_manifest.json',payload['metadata'])
     save(output/'logs/solver_trace.json',payload['trace'])
+    save(output/'logs/alns_trace.json',payload.get('alns_trace',[]))
     save(output/'logs/validation.json',{'main':payload['main']['verification'],'comparison':payload['comparison']['verification'],
                                       'excel':payload['excel_verification'],'sources_unchanged':payload['metadata']['sources_unchanged'],
                                       'q1_and_paper_unchanged':payload['metadata']['q1_and_paper_unchanged']})
+    if 'schemes' in payload:
+        save(output/'logs/all_scheme_validation.json',{name:r['verification'] for name,r in payload['schemes'].items()})
     save(output/'tables/results.json',payload)
     print('问题二完成：'+json.dumps(payload['main']['summary'],ensure_ascii=False),flush=True)

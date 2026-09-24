@@ -1,0 +1,98 @@
+{
+  "passed": true,
+  "exports": [
+    {
+      "file": "01_问题一二维路线总览.pdf",
+      "pages": 1,
+      "png_pixels": [
+        2902,
+        3249
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_fonts_present": true,
+      "rendered": true,
+      "pdf_bytes": 3362584
+    },
+    {
+      "file": "02_问题一三维地形航迹.pdf",
+      "pages": 1,
+      "png_pixels": [
+        3198,
+        3249
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_fonts_present": true,
+      "rendered": true,
+      "pdf_bytes": 1085331
+    },
+    {
+      "file": "03_问题二维路线总览.pdf",
+      "pages": 1,
+      "png_pixels": [
+        2743,
+        3249
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_fonts_present": true,
+      "rendered": true,
+      "pdf_bytes": 2905718
+    },
+    {
+      "file": "04_问题二三维地形航迹.pdf",
+      "pages": 1,
+      "png_pixels": [
+        3081,
+        3249
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_fonts_present": true,
+      "rendered": true,
+      "pdf_bytes": 968475
+    },
+    {
+      "file": "05_问题二分无人机二维路线.pdf",
+      "pages": 1,
+      "png_pixels": [
+        6390,
+        3813
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_fonts_present": true,
+      "rendered": true,
+      "pdf_bytes": 9639243
+    },
+    {
+      "file": "06_问题二分无人机三维航迹.pdf",
+      "pages": 1,
+      "png_pixels": [
+        6939,
+        3813
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_fonts_present": true,
+      "rendered": true,
+      "pdf_bytes": 2787224
+    }
+  ],
+  "visual_review": "6 PNG与6份PDF的Poppler渲染均已检查；节点、图例、乡界、分面标题可读，无文字裁切。",
+  "all_route_csv_unchanged": true,
+  "final_hashes_rechecked": true
+}

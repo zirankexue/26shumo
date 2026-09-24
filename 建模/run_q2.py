@@ -28,6 +28,7 @@ def main():
     parser.add_argument("--report-only", action="store_true", help="从已保存计算结果重新导出报告和表格")
     parser.add_argument("--resume", action="store_true", help="从本输出目录的已验证检查点继续搜索")
     parser.add_argument("--verify-only", action="store_true", help="从原始输入独立重算已保存方案，无需求解器搜索")
+    parser.add_argument("--solve-only", action="store_true", help="仅计算并保存，随后用--report-only导出图表和Excel")
     args = parser.parse_args()
     if args.test:
         import unittest

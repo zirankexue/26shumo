@@ -1,0 +1,6215 @@
+{
+  "main": {
+    "summary": {
+      "sorties": 21,
+      "energy_kwh": 63.84504008245794,
+      "makespan_s": 6361.702,
+      "weighted_tardiness_s": 0.0,
+      "late_boxes": 0,
+      "on_time_boxes": 80,
+      "hard_boxes": 31,
+      "min_soc": 0.2009171095022737,
+      "multi_stop_sorties": 5,
+      "operation_s": 40152.14,
+      "type_counts": {
+        "B": 7,
+        "A": 8,
+        "C": 6
+      },
+      "units_used": 8,
+      "batteries_used": 14
+    },
+    "sorties": [
+      {
+        "sortie": "Q2-001",
+        "candidate": "0778dae839811744",
+        "unit": "U05",
+        "drone": "B",
+        "battery": "BAT-B-01",
+        "start_s": 0.0,
+        "takeoff_s": 390.0,
+        "visits": [
+          "S012"
+        ],
+        "return_s": 1922.828,
+        "energy_kwh": 2.7525999542899324,
+        "soc": 0.3118500114275169,
+        "charge_s": 1859.4599801923039,
+        "charge_end_s": 3782.288,
+        "mass_kg": 25,
+        "volume_m3": 0.067,
+        "boxes": [
+          "S012-FOD-01",
+          "S012-MED-01",
+          "S012-WAT-01"
+        ],
+        "flight_s": 1292.8268141491867,
+        "operation_s": 1922.828,
+        "rounding_s": 0.001185850813271827
+      },
+      {
+        "sortie": "Q2-002",
+        "candidate": "0b35025e45de1090",
+        "unit": "U06",
+        "drone": "B",
+        "battery": "BAT-B-02",
+        "start_s": 0.0,
+        "takeoff_s": 390.0,
+        "visits": [
+          "S006"
+        ],
+        "return_s": 1267.271,
+        "energy_kwh": 1.224316782124016,
+        "soc": 0.693920804468996,
+        "charge_s": 1197.203938920407,
+        "charge_end_s": 2464.475,
+        "mass_kg": 25,
+        "volume_m3": 0.067,
+        "boxes": [
+          "S006-FOD-01",
+          "S006-MED-01",
+          "S006-WAT-03"
+        ],
+        "flight_s": 637.2700113681328,
+        "operation_s": 1267.271,
+        "rounding_s": 0.0009886318671874506
+      },
+      {
+        "sortie": "Q2-003",
+        "candidate": "68f6905b5211dfbf",
+        "unit": "U01",
+        "drone": "A",
+        "battery": "BAT-A-01",
+        "start_s": 0.0,
+        "takeoff_s": 360.0,
+        "visits": [
+          "S007"
+        ],
+        "return_s": 1727.468,
+        "energy_kwh": 1.9053833002603837,
+        "soc": 0.5765814888310259,
+        "charge_s": 1050.4440645196662,
+        "charge_end_s": 2777.913,
+        "mass_kg": 17,
+        "volume_m3": 0.039,
+        "boxes": [
+          "S007-MED-01",
+          "S007-WAT-01"
+        ],
+        "flight_s": 1157.4668858917819,
+        "operation_s": 1727.468,
+        "rounding_s": 0.001114108218189358
+      },
+      {
+        "sortie": "Q2-004",
+        "candidate": "8749f9503ee0df2a",
+        "unit": "U02",
+        "drone": "A",
+        "battery": "BAT-A-02",
+        "start_s": 0.0,
+        "takeoff_s": 360.0,
+        "visits": [
+          "S009"
+        ],
+        "return_s": 1688.64,
+        "energy_kwh": 2.331353700458349,
+        "soc": 0.48192139989814464,
+        "charge_s": 1173.5021801324117,
+        "charge_end_s": 2862.143,
+        "mass_kg": 22,
+        "volume_m3": 0.055,
+        "boxes": [
+          "S009-FOD-01",
+          "S009-WAT-01"
+        ],
+        "flight_s": 1118.6396458883246,
+        "operation_s": 1688.64,
+        "rounding_s": 0.00035411167550591927
+      },
+      {
+        "sortie": "Q2-005",
+        "candidate": "8c31f9e8595743b2",
+        "unit": "U07",
+        "drone": "C",
+        "battery": "BAT-C-01",
+        "start_s": 0.0,
+        "takeoff_s": 480.0,
+        "visits": [
+          "S001"
+        ],
+        "return_s": 1494.176,
+        "energy_kwh": 2.995775804904669,
+        "soc": 0.6255280243869163,
+        "charge_s": 1644.6892804950144,
+        "charge_end_s": 3138.866,
+        "mass_kg": 78,
+        "volume_m3": 0.163,
+        "boxes": [
+          "S001-FOD-03",
+          "S001-WAT-01",
+          "S001-WAT-02",
+          "S001-WAT-03",
+          "S001-WAT-07",
+          "S001-WAT-08"
+        ],
+        "flight_s": 618.1750458620229,
+        "operation_s": 1494.176,
+        "rounding_s": 0.0009541379771462744
+      },
+      {
+        "sortie": "Q2-006",
+        "candidate": "920f9b55caa7c7ae",
+        "unit": "U03",
+        "drone": "A",
+        "battery": "BAT-A-03",
+        "start_s": 0.0,
+        "takeoff_s": 360.0,
+        "visits": [
+          "S007"
+        ],
+        "return_s": 1727.468,
+        "energy_kwh": 1.9709635056721377,
+        "soc": 0.562008109850636,
+        "charge_s": 1069.389457194173,
+        "charge_end_s": 2796.858,
+        "mass_kg": 22,
+        "volume_m3": 0.055,
+        "boxes": [
+          "S007-FOD-01",
+          "S007-WAT-02"
+        ],
+        "flight_s": 1157.4668858917819,
+        "operation_s": 1727.468,
+        "rounding_s": 0.001114108218189358
+      },
+      {
+        "sortie": "Q2-007",
+        "candidate": "a70857771474fae8",
+        "unit": "U04",
+        "drone": "A",
+        "battery": "BAT-A-04",
+        "start_s": 0.0,
+        "takeoff_s": 390.0,
+        "visits": [
+          "S009",
+          "S002",
+          "S013"
+        ],
+        "return_s": 2675.579,
+        "energy_kwh": 3.389959548938707,
+        "soc": 0.24667565579139838,
+        "charge_s": 1479.321647471182,
+        "charge_end_s": 4154.901,
+        "mass_kg": 20,
+        "volume_m3": 0.051000000000000004,
+        "boxes": [
+          "S002-WAT-02",
+          "S009-MED-01",
+          "S013-MED-01"
+        ],
+        "flight_s": 1745.5767622896801,
+        "operation_s": 2675.579,
+        "rounding_s": 0.002237710319946018
+      },
+      {
+        "sortie": "Q2-008",
+        "candidate": "d7f51c575af6ec49",
+        "unit": "U08",
+        "drone": "C",
+        "battery": "BAT-C-02",
+        "start_s": 0.0,
+        "takeoff_s": 570.0,
+        "visits": [
+          "S001"
+        ],
+        "return_s": 1692.176,
+        "energy_kwh": 2.9175880955868267,
+        "soc": 0.6353014880516467,
+        "charge_s": 1623.5134425547653,
+        "charge_end_s": 3315.69,
+        "mass_kg": 76,
+        "volume_m3": 0.231,
+        "boxes": [
+          "S001-FOD-01",
+          "S001-FOD-02",
+          "S001-HYG-01",
+          "S001-HYG-02",
+          "S001-MED-01",
+          "S001-MED-02",
+          "S001-WAT-04",
+          "S001-WAT-05",
+          "S001-WAT-06"
+        ],
+        "flight_s": 618.1750458620229,
+        "operation_s": 1692.176,
+        "rounding_s": 0.0009541379771462744
+      },
+      {
+        "sortie": "Q2-009",
+        "candidate": "cb69733493a61fd9",
+        "unit": "U06",
+        "drone": "B",
+        "battery": "BAT-B-03",
+        "start_s": 1267.271,
+        "takeoff_s": 1627.271,
+        "visits": [
+          "S006"
+        ],
+        "return_s": 2474.542,
+        "energy_kwh": 1.1381173257060366,
+        "soc": 0.7154706685734908,
+        "charge_s": 1159.8508411392825,
+        "charge_end_s": 3634.393,
+        "mass_kg": 20,
+        "volume_m3": 0.062,
+        "boxes": [
+          "S006-HYG-01",
+          "S006-WAT-01"
+        ],
+        "flight_s": 637.2700113681328,
+        "operation_s": 1207.271,
+        "rounding_s": 0.0009886318671874506
+      },
+      {
+        "sortie": "Q2-010",
+        "candidate": "2af5d67e5d41a679",
+        "unit": "U07",
+        "drone": "C",
+        "battery": "BAT-C-03",
+        "start_s": 1494.176,
+        "takeoff_s": 2004.176,
+        "visits": [
+          "S002"
+        ],
+        "return_s": 3668.02,
+        "energy_kwh": 6.280970256414267,
+        "soc": 0.21487871794821667,
+        "charge_s": 2534.4294444455304,
+        "charge_end_s": 6202.45,
+        "mass_kg": 67,
+        "volume_m3": 0.184,
+        "boxes": [
+          "S002-FOD-01",
+          "S002-FOD-02",
+          "S002-HYG-01",
+          "S002-MED-01",
+          "S002-WAT-01",
+          "S002-WAT-03",
+          "S002-WAT-04"
+        ],
+        "flight_s": 1231.8421660245544,
+        "operation_s": 2173.844,
+        "rounding_s": 0.0018339754456064838
+      },
+      {
+        "sortie": "Q2-011",
+        "candidate": "f4d154bb28472d1d",
+        "unit": "U02",
+        "drone": "A",
+        "battery": "BAT-A-05",
+        "start_s": 1688.64,
+        "takeoff_s": 2048.64,
+        "visits": [
+          "S013"
+        ],
+        "return_s": 3300.804,
+        "energy_kwh": 2.0255255619357206,
+        "soc": 0.5498832084587287,
+        "charge_s": 1085.1518290036524,
+        "charge_end_s": 4385.956,
+        "mass_kg": 22,
+        "volume_m3": 0.055,
+        "boxes": [
+          "S013-FOD-01",
+          "S013-WAT-01"
+        ],
+        "flight_s": 1042.1628172294845,
+        "operation_s": 1612.164,
+        "rounding_s": 0.0011827705155837975
+      },
+      {
+        "sortie": "Q2-012",
+        "candidate": "58b350f9cc56209c",
+        "unit": "U08",
+        "drone": "C",
+        "battery": "BAT-C-04",
+        "start_s": 1692.176,
+        "takeoff_s": 2172.176,
+        "visits": [
+          "S004"
+        ],
+        "return_s": 3993.232,
+        "energy_kwh": 6.152860129174583,
+        "soc": 0.23089248385317718,
+        "charge_s": 2499.732951651449,
+        "charge_end_s": 6492.965,
+        "mass_kg": 59,
+        "volume_m3": 0.156,
+        "boxes": [
+          "S004-FOD-01",
+          "S004-HYG-01",
+          "S004-MED-01",
+          "S004-WAT-01",
+          "S004-WAT-02",
+          "S004-WAT-03"
+        ],
+        "flight_s": 1425.0547187724458,
+        "operation_s": 2301.056,
+        "rounding_s": 0.0012812275542728457
+      },
+      {
+        "sortie": "Q2-013",
+        "candidate": "ca607a84f0f2e89e",
+        "unit": "U01",
+        "drone": "A",
+        "battery": "BAT-A-06",
+        "start_s": 1727.468,
+        "takeoff_s": 2087.468,
+        "visits": [
+          "S006",
+          "S011"
+        ],
+        "return_s": 3529.854,
+        "energy_kwh": 1.9595258462387837,
+        "soc": 0.564549811946937,
+        "charge_s": 1066.0852444689817,
+        "charge_end_s": 4595.94,
+        "mass_kg": 22,
+        "volume_m3": 0.055,
+        "boxes": [
+          "S006-WAT-02",
+          "S011-FOD-01"
+        ],
+        "flight_s": 1082.384279362757,
+        "operation_s": 1802.386,
+        "rounding_s": 0.0017206372427835959
+      },
+      {
+        "sortie": "Q2-014",
+        "candidate": "58637b13c93945c6",
+        "unit": "U05",
+        "drone": "B",
+        "battery": "BAT-B-04",
+        "start_s": 1922.828,
+        "takeoff_s": 2312.828,
+        "visits": [
+          "S014"
+        ],
+        "return_s": 3792.577,
+        "energy_kwh": 2.1402909781417883,
+        "soc": 0.46492725546455294,
+        "charge_s": 1594.126090528108,
+        "charge_end_s": 5386.704,
+        "mass_kg": 25,
+        "volume_m3": 0.067,
+        "boxes": [
+          "S014-FOD-01",
+          "S014-MED-01",
+          "S014-WAT-01"
+        ],
+        "flight_s": 1239.7476752786915,
+        "operation_s": 1869.749,
+        "rounding_s": 0.0013247213086060583
+      },
+      {
+        "sortie": "Q2-015",
+        "candidate": "6cb0366dc18b20a6",
+        "unit": "U06",
+        "drone": "B",
+        "battery": "BAT-B-02",
+        "start_s": 2474.542,
+        "takeoff_s": 2864.542,
+        "visits": [
+          "S010"
+        ],
+        "return_s": 4029.947,
+        "energy_kwh": 1.823216564231414,
+        "soc": 0.5441958589421465,
+        "charge_s": 1456.7271778336126,
+        "charge_end_s": 5486.675,
+        "mass_kg": 25,
+        "volume_m3": 0.067,
+        "boxes": [
+          "S010-FOD-01",
+          "S010-MED-01",
+          "S010-WAT-01"
+        ],
+        "flight_s": 925.4035197802173,
+        "operation_s": 1555.405,
+        "rounding_s": 0.0014802197826497832
+      },
+      {
+        "sortie": "Q2-016",
+        "candidate": "c36888df3a3a6934",
+        "unit": "U03",
+        "drone": "A",
+        "battery": "BAT-A-01",
+        "start_s": 2777.913,
+        "takeoff_s": 3167.913,
+        "visits": [
+          "S003",
+          "S015"
+        ],
+        "return_s": 5381.382,
+        "energy_kwh": 3.2974580584469555,
+        "soc": 0.26723154256734327,
+        "charge_s": 1452.5989946624536,
+        "charge_end_s": 6833.981,
+        "mass_kg": 20,
+        "volume_m3": 0.051000000000000004,
+        "boxes": [
+          "S003-MED-01",
+          "S003-WAT-03",
+          "S015-MED-01"
+        ],
+        "flight_s": 1823.4677062080732,
+        "operation_s": 2603.469,
+        "rounding_s": 0.0012937919267983489
+      },
+      {
+        "sortie": "Q2-017",
+        "candidate": "31a8131d8650c560",
+        "unit": "U04",
+        "drone": "A",
+        "battery": "BAT-A-03",
+        "start_s": 2796.858,
+        "takeoff_s": 3156.858,
+        "visits": [
+          "S015"
+        ],
+        "return_s": 4765.512,
+        "energy_kwh": 2.5577839515021354,
+        "soc": 0.4316035663328588,
+        "charge_s": 1238.9153637672837,
+        "charge_end_s": 6004.428,
+        "mass_kg": 22,
+        "volume_m3": 0.055,
+        "boxes": [
+          "S015-FOD-01",
+          "S015-WAT-01"
+        ],
+        "flight_s": 1398.6530565810067,
+        "operation_s": 1968.654,
+        "rounding_s": 0.0009434189933017478
+      },
+      {
+        "sortie": "Q2-018",
+        "candidate": "dd80ad26e4984bf0",
+        "unit": "U07",
+        "drone": "C",
+        "battery": "BAT-C-01",
+        "start_s": 3668.02,
+        "takeoff_s": 4178.02,
+        "visits": [
+          "S007",
+          "S003"
+        ],
+        "return_s": 6361.702,
+        "energy_kwh": 6.39266312398181,
+        "soc": 0.2009171095022737,
+        "charge_s": 2564.679596078407,
+        "charge_end_s": 8926.382,
+        "mass_kg": 70,
+        "volume_m3": 0.20700000000000002,
+        "boxes": [
+          "S003-FOD-01",
+          "S003-FOD-02",
+          "S003-HYG-01",
+          "S003-WAT-01",
+          "S003-WAT-02",
+          "S003-WAT-04",
+          "S007-HYG-01"
+        ],
+        "flight_s": 1571.6811665046162,
+        "operation_s": 2693.682,
+        "rounding_s": 0.0008334953838584624
+      },
+      {
+        "sortie": "Q2-019",
+        "candidate": "4b7f575440af23b7",
+        "unit": "U05",
+        "drone": "B",
+        "battery": "BAT-B-01",
+        "start_s": 3792.577,
+        "takeoff_s": 4182.577,
+        "visits": [
+          "S008"
+        ],
+        "return_s": 5754.42,
+        "energy_kwh": 2.9752068745422333,
+        "soc": 0.25619828136444167,
+        "charge_s": 1955.9229789683006,
+        "charge_end_s": 7710.343,
+        "mass_kg": 25,
+        "volume_m3": 0.067,
+        "boxes": [
+          "S008-FOD-01",
+          "S008-MED-01",
+          "S008-WAT-02"
+        ],
+        "flight_s": 1331.841747175703,
+        "operation_s": 1961.843,
+        "rounding_s": 0.0012528242970120118
+      },
+      {
+        "sortie": "Q2-020",
+        "candidate": "1e3d860e74c0b125",
+        "unit": "U08",
+        "drone": "C",
+        "battery": "BAT-C-02",
+        "start_s": 3993.232,
+        "takeoff_s": 4533.232,
+        "visits": [
+          "S011",
+          "S005"
+        ],
+        "return_s": 6298.4,
+        "energy_kwh": 4.850049514673822,
+        "soc": 0.39374381066577224,
+        "charge_s": 2146.8884102241595,
+        "charge_end_s": 8445.289,
+        "mass_kg": 76,
+        "volume_m3": 0.195,
+        "boxes": [
+          "S005-FOD-01",
+          "S005-HYG-01",
+          "S005-MED-01",
+          "S005-WAT-01",
+          "S005-WAT-02",
+          "S005-WAT-03",
+          "S011-MED-01",
+          "S011-WAT-01"
+        ],
+        "flight_s": 1117.1669662295876,
+        "operation_s": 2305.168,
+        "rounding_s": 0.0010337704122775904
+      },
+      {
+        "sortie": "Q2-021",
+        "candidate": "0564f6e759c890b3",
+        "unit": "U06",
+        "drone": "B",
+        "battery": "BAT-B-03",
+        "start_s": 4029.947,
+        "takeoff_s": 4389.947,
+        "visits": [
+          "S008"
+        ],
+        "return_s": 5931.79,
+        "energy_kwh": 2.7634312052333714,
+        "soc": 0.30914219869165716,
+        "charge_s": 1864.1535222677942,
+        "charge_end_s": 7795.944,
+        "mass_kg": 20,
+        "volume_m3": 0.062,
+        "boxes": [
+          "S008-HYG-01",
+          "S008-WAT-01"
+        ],
+        "flight_s": 1331.841747175703,
+        "operation_s": 1901.843,
+        "rounding_s": 0.0012528242970120118
+      }
+    ],
+    "deliveries": [
+      {
+        "box": "S001-FOD-01",
+        "sortie": "Q2-008",
+        "service": "S001",
+        "rank": 5,
+        "start_s": 1200.273,
+        "completion_s": 1236.273,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S001-FOD-02",
+        "sortie": "Q2-008",
+        "service": "S001",
+        "rank": 3,
+        "start_s": 1128.273,
+        "completion_s": 1164.273,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S001-FOD-03",
+        "sortie": "Q2-005",
+        "service": "S001",
+        "rank": 2,
+        "start_s": 1002.273,
+        "completion_s": 1038.273,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S001-HYG-01",
+        "sortie": "Q2-008",
+        "service": "S001",
+        "rank": 2,
+        "start_s": 1092.273,
+        "completion_s": 1128.273,
+        "expected_s": 10800.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 6,
+        "volume_m3": 0.035
+      },
+      {
+        "box": "S001-HYG-02",
+        "sortie": "Q2-008",
+        "service": "S001",
+        "rank": 7,
+        "start_s": 1272.273,
+        "completion_s": 1308.273,
+        "expected_s": 10800.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 6,
+        "volume_m3": 0.035
+      },
+      {
+        "box": "S001-MED-01",
+        "sortie": "Q2-008",
+        "service": "S001",
+        "rank": 1,
+        "start_s": 1056.273,
+        "completion_s": 1092.273,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 24,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S001-MED-02",
+        "sortie": "Q2-008",
+        "service": "S001",
+        "rank": 8,
+        "start_s": 1308.273,
+        "completion_s": 1344.273,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": false,
+        "priority": 24,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S001-WAT-01",
+        "sortie": "Q2-005",
+        "service": "S001",
+        "rank": 3,
+        "start_s": 1038.273,
+        "completion_s": 1074.273,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S001-WAT-02",
+        "sortie": "Q2-005",
+        "service": "S001",
+        "rank": 4,
+        "start_s": 1074.273,
+        "completion_s": 1110.273,
+        "expected_s": 3600.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S001-WAT-03",
+        "sortie": "Q2-005",
+        "service": "S001",
+        "rank": 6,
+        "start_s": 1146.273,
+        "completion_s": 1182.273,
+        "expected_s": 3600.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S001-WAT-04",
+        "sortie": "Q2-008",
+        "service": "S001",
+        "rank": 9,
+        "start_s": 1344.273,
+        "completion_s": 1380.273,
+        "expected_s": 3600.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S001-WAT-05",
+        "sortie": "Q2-008",
+        "service": "S001",
+        "rank": 4,
+        "start_s": 1164.273,
+        "completion_s": 1200.273,
+        "expected_s": 3600.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S001-WAT-06",
+        "sortie": "Q2-008",
+        "service": "S001",
+        "rank": 6,
+        "start_s": 1236.273,
+        "completion_s": 1272.273,
+        "expected_s": 3600.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S001-WAT-07",
+        "sortie": "Q2-005",
+        "service": "S001",
+        "rank": 5,
+        "start_s": 1110.273,
+        "completion_s": 1146.273,
+        "expected_s": 3600.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S001-WAT-08",
+        "sortie": "Q2-005",
+        "service": "S001",
+        "rank": 1,
+        "start_s": 966.273,
+        "completion_s": 1002.273,
+        "expected_s": 3600.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S002-FOD-01",
+        "sortie": "Q2-010",
+        "service": "S002",
+        "rank": 7,
+        "start_s": 3011.508,
+        "completion_s": 3047.508,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S002-FOD-02",
+        "sortie": "Q2-010",
+        "service": "S002",
+        "rank": 5,
+        "start_s": 2939.508,
+        "completion_s": 2975.508,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S002-HYG-01",
+        "sortie": "Q2-010",
+        "service": "S002",
+        "rank": 3,
+        "start_s": 2867.508,
+        "completion_s": 2903.508,
+        "expected_s": 10800.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 6,
+        "volume_m3": 0.035
+      },
+      {
+        "box": "S002-MED-01",
+        "sortie": "Q2-010",
+        "service": "S002",
+        "rank": 1,
+        "start_s": 2795.508,
+        "completion_s": 2831.508,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 24,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S002-WAT-01",
+        "sortie": "Q2-010",
+        "service": "S002",
+        "rank": 2,
+        "start_s": 2831.508,
+        "completion_s": 2867.508,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S002-WAT-02",
+        "sortie": "Q2-007",
+        "service": "S002",
+        "rank": 1,
+        "start_s": 1495.903,
+        "completion_s": 1525.903,
+        "expected_s": 3600.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S002-WAT-03",
+        "sortie": "Q2-010",
+        "service": "S002",
+        "rank": 6,
+        "start_s": 2975.508,
+        "completion_s": 3011.508,
+        "expected_s": 3600.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S002-WAT-04",
+        "sortie": "Q2-010",
+        "service": "S002",
+        "rank": 4,
+        "start_s": 2903.508,
+        "completion_s": 2939.508,
+        "expected_s": 3600.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S003-FOD-01",
+        "sortie": "Q2-018",
+        "service": "S003",
+        "rank": 5,
+        "start_s": 5499.073,
+        "completion_s": 5535.073,
+        "expected_s": 10800.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S003-FOD-02",
+        "sortie": "Q2-018",
+        "service": "S003",
+        "rank": 2,
+        "start_s": 5391.073,
+        "completion_s": 5427.073,
+        "expected_s": 10800.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S003-HYG-01",
+        "sortie": "Q2-018",
+        "service": "S003",
+        "rank": 1,
+        "start_s": 5355.073,
+        "completion_s": 5391.073,
+        "expected_s": 14400.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 6,
+        "lateness_s": 0,
+        "mass_kg": 6,
+        "volume_m3": 0.035
+      },
+      {
+        "box": "S003-MED-01",
+        "sortie": "Q2-016",
+        "service": "S003",
+        "rank": 1,
+        "start_s": 4157.255,
+        "completion_s": 4187.255,
+        "expected_s": 7200.0,
+        "hard_s": 7200.0,
+        "first": true,
+        "priority": 20,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S003-WAT-01",
+        "sortie": "Q2-018",
+        "service": "S003",
+        "rank": 3,
+        "start_s": 5427.073,
+        "completion_s": 5463.073,
+        "expected_s": 7200.0,
+        "hard_s": 7200.0,
+        "first": true,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S003-WAT-02",
+        "sortie": "Q2-018",
+        "service": "S003",
+        "rank": 6,
+        "start_s": 5535.073,
+        "completion_s": 5571.073,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S003-WAT-03",
+        "sortie": "Q2-016",
+        "service": "S003",
+        "rank": 2,
+        "start_s": 4187.255,
+        "completion_s": 4217.255,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S003-WAT-04",
+        "sortie": "Q2-018",
+        "service": "S003",
+        "rank": 4,
+        "start_s": 5463.073,
+        "completion_s": 5499.073,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S004-FOD-01",
+        "sortie": "Q2-012",
+        "service": "S004",
+        "rank": 6,
+        "start_s": 3239.674,
+        "completion_s": 3275.674,
+        "expected_s": 10800.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S004-HYG-01",
+        "sortie": "Q2-012",
+        "service": "S004",
+        "rank": 2,
+        "start_s": 3095.674,
+        "completion_s": 3131.674,
+        "expected_s": 14400.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 6,
+        "lateness_s": 0,
+        "mass_kg": 6,
+        "volume_m3": 0.035
+      },
+      {
+        "box": "S004-MED-01",
+        "sortie": "Q2-012",
+        "service": "S004",
+        "rank": 4,
+        "start_s": 3167.674,
+        "completion_s": 3203.674,
+        "expected_s": 7200.0,
+        "hard_s": 7200.0,
+        "first": true,
+        "priority": 20,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S004-WAT-01",
+        "sortie": "Q2-012",
+        "service": "S004",
+        "rank": 3,
+        "start_s": 3131.674,
+        "completion_s": 3167.674,
+        "expected_s": 7200.0,
+        "hard_s": 7200.0,
+        "first": true,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S004-WAT-02",
+        "sortie": "Q2-012",
+        "service": "S004",
+        "rank": 1,
+        "start_s": 3059.674,
+        "completion_s": 3095.674,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S004-WAT-03",
+        "sortie": "Q2-012",
+        "service": "S004",
+        "rank": 5,
+        "start_s": 3203.674,
+        "completion_s": 3239.674,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S005-FOD-01",
+        "sortie": "Q2-020",
+        "service": "S005",
+        "rank": 1,
+        "start_s": 5578.44,
+        "completion_s": 5614.44,
+        "expected_s": 14400.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 6,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S005-HYG-01",
+        "sortie": "Q2-020",
+        "service": "S005",
+        "rank": 4,
+        "start_s": 5686.44,
+        "completion_s": 5722.44,
+        "expected_s": 18000.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 4,
+        "lateness_s": 0,
+        "mass_kg": 6,
+        "volume_m3": 0.035
+      },
+      {
+        "box": "S005-MED-01",
+        "sortie": "Q2-020",
+        "service": "S005",
+        "rank": 2,
+        "start_s": 5614.44,
+        "completion_s": 5650.44,
+        "expected_s": 10800.0,
+        "hard_s": 10800.0,
+        "first": true,
+        "priority": 16,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S005-WAT-01",
+        "sortie": "Q2-020",
+        "service": "S005",
+        "rank": 3,
+        "start_s": 5650.44,
+        "completion_s": 5686.44,
+        "expected_s": 10800.0,
+        "hard_s": 10800.0,
+        "first": true,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S005-WAT-02",
+        "sortie": "Q2-020",
+        "service": "S005",
+        "rank": 5,
+        "start_s": 5722.44,
+        "completion_s": 5758.44,
+        "expected_s": 10800.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S005-WAT-03",
+        "sortie": "Q2-020",
+        "service": "S005",
+        "rank": 6,
+        "start_s": 5758.44,
+        "completion_s": 5794.44,
+        "expected_s": 10800.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S006-FOD-01",
+        "sortie": "Q2-002",
+        "service": "S006",
+        "rank": 2,
+        "start_s": 882.399,
+        "completion_s": 912.399,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S006-HYG-01",
+        "sortie": "Q2-009",
+        "service": "S006",
+        "rank": 2,
+        "start_s": 2119.67,
+        "completion_s": 2149.67,
+        "expected_s": 10800.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 6,
+        "volume_m3": 0.035
+      },
+      {
+        "box": "S006-MED-01",
+        "sortie": "Q2-002",
+        "service": "S006",
+        "rank": 1,
+        "start_s": 852.399,
+        "completion_s": 882.399,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 24,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S006-WAT-01",
+        "sortie": "Q2-009",
+        "service": "S006",
+        "rank": 1,
+        "start_s": 2089.67,
+        "completion_s": 2119.67,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S006-WAT-02",
+        "sortie": "Q2-013",
+        "service": "S006",
+        "rank": 1,
+        "start_s": 2602.97,
+        "completion_s": 2632.97,
+        "expected_s": 3600.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S006-WAT-03",
+        "sortie": "Q2-002",
+        "service": "S006",
+        "rank": 3,
+        "start_s": 912.399,
+        "completion_s": 942.399,
+        "expected_s": 3600.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S007-FOD-01",
+        "sortie": "Q2-006",
+        "service": "S007",
+        "rank": 2,
+        "start_s": 1111.374,
+        "completion_s": 1141.374,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S007-HYG-01",
+        "sortie": "Q2-018",
+        "service": "S007",
+        "rank": 1,
+        "start_s": 4895.781,
+        "completion_s": 4931.781,
+        "expected_s": 10800.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 6,
+        "volume_m3": 0.035
+      },
+      {
+        "box": "S007-MED-01",
+        "sortie": "Q2-003",
+        "service": "S007",
+        "rank": 1,
+        "start_s": 1081.374,
+        "completion_s": 1111.374,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 24,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S007-WAT-01",
+        "sortie": "Q2-003",
+        "service": "S007",
+        "rank": 2,
+        "start_s": 1111.374,
+        "completion_s": 1141.374,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S007-WAT-02",
+        "sortie": "Q2-006",
+        "service": "S007",
+        "rank": 1,
+        "start_s": 1081.374,
+        "completion_s": 1111.374,
+        "expected_s": 3600.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S008-FOD-01",
+        "sortie": "Q2-019",
+        "service": "S008",
+        "rank": 2,
+        "start_s": 5023.725,
+        "completion_s": 5053.725,
+        "expected_s": 10800.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S008-HYG-01",
+        "sortie": "Q2-021",
+        "service": "S008",
+        "rank": 1,
+        "start_s": 5201.095,
+        "completion_s": 5231.095,
+        "expected_s": 14400.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 6,
+        "lateness_s": 0,
+        "mass_kg": 6,
+        "volume_m3": 0.035
+      },
+      {
+        "box": "S008-MED-01",
+        "sortie": "Q2-019",
+        "service": "S008",
+        "rank": 1,
+        "start_s": 4993.725,
+        "completion_s": 5023.725,
+        "expected_s": 7200.0,
+        "hard_s": 7200.0,
+        "first": true,
+        "priority": 20,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S008-WAT-01",
+        "sortie": "Q2-021",
+        "service": "S008",
+        "rank": 2,
+        "start_s": 5231.095,
+        "completion_s": 5261.095,
+        "expected_s": 7200.0,
+        "hard_s": 7200.0,
+        "first": true,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S008-WAT-02",
+        "sortie": "Q2-019",
+        "service": "S008",
+        "rank": 3,
+        "start_s": 5053.725,
+        "completion_s": 5083.725,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S009-FOD-01",
+        "sortie": "Q2-004",
+        "service": "S009",
+        "rank": 1,
+        "start_s": 1065.91,
+        "completion_s": 1095.91,
+        "expected_s": 14400.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 6,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S009-MED-01",
+        "sortie": "Q2-007",
+        "service": "S009",
+        "rank": 1,
+        "start_s": 1095.91,
+        "completion_s": 1125.91,
+        "expected_s": 10800.0,
+        "hard_s": 10800.0,
+        "first": true,
+        "priority": 16,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S009-WAT-01",
+        "sortie": "Q2-004",
+        "service": "S009",
+        "rank": 2,
+        "start_s": 1095.91,
+        "completion_s": 1125.91,
+        "expected_s": 10800.0,
+        "hard_s": 10800.0,
+        "first": true,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S010-FOD-01",
+        "sortie": "Q2-015",
+        "service": "S010",
+        "rank": 3,
+        "start_s": 3529.781,
+        "completion_s": 3559.781,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S010-MED-01",
+        "sortie": "Q2-015",
+        "service": "S010",
+        "rank": 1,
+        "start_s": 3469.781,
+        "completion_s": 3499.781,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 24,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S010-WAT-01",
+        "sortie": "Q2-015",
+        "service": "S010",
+        "rank": 2,
+        "start_s": 3499.781,
+        "completion_s": 3529.781,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S011-FOD-01",
+        "sortie": "Q2-013",
+        "service": "S011",
+        "rank": 1,
+        "start_s": 3171.026,
+        "completion_s": 3201.026,
+        "expected_s": 14400.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 6,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S011-MED-01",
+        "sortie": "Q2-020",
+        "service": "S011",
+        "rank": 1,
+        "start_s": 5009.135,
+        "completion_s": 5045.135,
+        "expected_s": 10800.0,
+        "hard_s": 10800.0,
+        "first": true,
+        "priority": 16,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S011-WAT-01",
+        "sortie": "Q2-020",
+        "service": "S011",
+        "rank": 2,
+        "start_s": 5045.135,
+        "completion_s": 5081.135,
+        "expected_s": 10800.0,
+        "hard_s": 10800.0,
+        "first": true,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S012-FOD-01",
+        "sortie": "Q2-001",
+        "service": "S012",
+        "rank": 3,
+        "start_s": 1241.344,
+        "completion_s": 1271.344,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S012-MED-01",
+        "sortie": "Q2-001",
+        "service": "S012",
+        "rank": 1,
+        "start_s": 1181.344,
+        "completion_s": 1211.344,
+        "expected_s": 7200.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 22,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S012-WAT-01",
+        "sortie": "Q2-001",
+        "service": "S012",
+        "rank": 2,
+        "start_s": 1211.344,
+        "completion_s": 1241.344,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S013-FOD-01",
+        "sortie": "Q2-011",
+        "service": "S013",
+        "rank": 2,
+        "start_s": 2742.255,
+        "completion_s": 2772.255,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S013-MED-01",
+        "sortie": "Q2-007",
+        "service": "S013",
+        "rank": 1,
+        "start_s": 2117.03,
+        "completion_s": 2147.03,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 24,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S013-WAT-01",
+        "sortie": "Q2-011",
+        "service": "S013",
+        "rank": 1,
+        "start_s": 2712.255,
+        "completion_s": 2742.255,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S014-FOD-01",
+        "sortie": "Q2-014",
+        "service": "S014",
+        "rank": 3,
+        "start_s": 3135.259,
+        "completion_s": 3165.259,
+        "expected_s": 7200.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 10,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S014-MED-01",
+        "sortie": "Q2-014",
+        "service": "S014",
+        "rank": 1,
+        "start_s": 3075.259,
+        "completion_s": 3105.259,
+        "expected_s": 7200.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 22,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S014-WAT-01",
+        "sortie": "Q2-014",
+        "service": "S014",
+        "rank": 2,
+        "start_s": 3105.259,
+        "completion_s": 3135.259,
+        "expected_s": 3600.0,
+        "hard_s": 3600.0,
+        "first": true,
+        "priority": 12,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      },
+      {
+        "box": "S015-FOD-01",
+        "sortie": "Q2-017",
+        "service": "S015",
+        "rank": 1,
+        "start_s": 3994.625,
+        "completion_s": 4024.625,
+        "expected_s": 14400.0,
+        "hard_s": null,
+        "first": false,
+        "priority": 6,
+        "lateness_s": 0,
+        "mass_kg": 8,
+        "volume_m3": 0.028
+      },
+      {
+        "box": "S015-MED-01",
+        "sortie": "Q2-016",
+        "service": "S015",
+        "rank": 1,
+        "start_s": 4640.495,
+        "completion_s": 4670.495,
+        "expected_s": 7200.0,
+        "hard_s": 7200.0,
+        "first": true,
+        "priority": 18,
+        "lateness_s": 0,
+        "mass_kg": 3,
+        "volume_m3": 0.012
+      },
+      {
+        "box": "S015-WAT-01",
+        "sortie": "Q2-017",
+        "service": "S015",
+        "rank": 2,
+        "start_s": 4024.625,
+        "completion_s": 4054.625,
+        "expected_s": 10800.0,
+        "hard_s": 10800.0,
+        "first": true,
+        "priority": 8,
+        "lateness_s": 0,
+        "mass_kg": 14,
+        "volume_m3": 0.027
+      }
+    ],
+    "legs": [
+      {
+        "sortie": "Q2-001",
+        "segment": 1,
+        "from": "O01",
+        "to": "S012",
+        "payload_kg": 25.0,
+        "volume_m3": 0.067,
+        "distance_m": 7391.140162515387,
+        "cruise_altitude_m": 413.3009948730469,
+        "climb_m": 285.6009948730469,
+        "descent_m": 133.50099487304686,
+        "start_s": 390.0,
+        "end_s": 1031.344,
+        "flight_s": 641.3434070745934,
+        "energy_kwh": 1.6638918316039737
+      },
+      {
+        "sortie": "Q2-001",
+        "segment": 2,
+        "from": "S012",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 7391.140162515387,
+        "cruise_altitude_m": 413.3009948730469,
+        "climb_m": 133.50099487304686,
+        "descent_m": 285.6009948730469,
+        "start_s": 1271.344,
+        "end_s": 1922.828,
+        "flight_s": 651.4834070745934,
+        "energy_kwh": 1.0887081226859587
+      },
+      {
+        "sortie": "Q2-002",
+        "segment": 1,
+        "from": "O01",
+        "to": "S006",
+        "payload_kg": 25.0,
+        "volume_m3": 0.067,
+        "distance_m": 3186.19885235084,
+        "cruise_altitude_m": 366.09783935546875,
+        "climb_m": 238.39783935546876,
+        "descent_m": 51.29783935546874,
+        "start_s": 390.0,
+        "end_s": 702.399,
+        "flight_s": 312.39833901739973,
+        "energy_kwh": 0.7565302022399308
+      },
+      {
+        "sortie": "Q2-002",
+        "segment": 2,
+        "from": "S006",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 3186.19885235084,
+        "cruise_altitude_m": 366.09783935546875,
+        "climb_m": 51.29783935546874,
+        "descent_m": 238.39783935546876,
+        "start_s": 942.399,
+        "end_s": 1267.271,
+        "flight_s": 324.8716723507331,
+        "energy_kwh": 0.4677865798840852
+      },
+      {
+        "sortie": "Q2-003",
+        "segment": 1,
+        "from": "O01",
+        "to": "S007",
+        "payload_kg": 17.0,
+        "volume_m3": 0.039,
+        "distance_m": 4534.717374921003,
+        "cruise_altitude_m": 511.9731750488281,
+        "climb_m": 384.27317504882814,
+        "descent_m": 163.47317504882812,
+        "start_s": 360.0,
+        "end_s": 931.374,
+        "flight_s": 571.3734429458909,
+        "energy_kwh": 1.0458399232196336
+      },
+      {
+        "sortie": "Q2-003",
+        "segment": 2,
+        "from": "S007",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 4534.717374921003,
+        "cruise_altitude_m": 511.9731750488281,
+        "climb_m": 163.47317504882812,
+        "descent_m": 384.27317504882814,
+        "start_s": 1141.374,
+        "end_s": 1727.468,
+        "flight_s": 586.093442945891,
+        "energy_kwh": 0.8595433770407502
+      },
+      {
+        "sortie": "Q2-004",
+        "segment": 1,
+        "from": "O01",
+        "to": "S009",
+        "payload_kg": 22.0,
+        "volume_m3": 0.055,
+        "distance_m": 5705.303446619009,
+        "cruise_altitude_m": 293.2289123535156,
+        "climb_m": 165.52891235351564,
+        "descent_m": 63.228912353515625,
+        "start_s": 360.0,
+        "end_s": 915.91,
+        "flight_s": 555.9098229441622,
+        "energy_kwh": 1.2876535295525708
+      },
+      {
+        "sortie": "Q2-004",
+        "segment": 2,
+        "from": "S009",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 5705.303446619009,
+        "cruise_altitude_m": 293.2289123535156,
+        "climb_m": 63.228912353515625,
+        "descent_m": 165.52891235351564,
+        "start_s": 1125.91,
+        "end_s": 1688.64,
+        "flight_s": 562.7298229441623,
+        "energy_kwh": 1.0437001709057783
+      },
+      {
+        "sortie": "Q2-005",
+        "segment": 1,
+        "from": "O01",
+        "to": "S001",
+        "payload_kg": 78.0,
+        "volume_m3": 0.163,
+        "distance_m": 3054.0236075149764,
+        "cruise_altitude_m": 273.0566101074219,
+        "climb_m": 145.3566101074219,
+        "descent_m": 89.05661010742188,
+        "start_s": 480.0,
+        "end_s": 786.273,
+        "flight_s": 306.27252293101145,
+        "energy_kwh": 2.0325241671250467
+      },
+      {
+        "sortie": "Q2-005",
+        "segment": 2,
+        "from": "S001",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 3054.0236075149764,
+        "cruise_altitude_m": 273.0566101074219,
+        "climb_m": 89.05661010742188,
+        "descent_m": 145.3566101074219,
+        "start_s": 1182.273,
+        "end_s": 1494.176,
+        "flight_s": 311.90252293101145,
+        "energy_kwh": 0.9632516377796227
+      },
+      {
+        "sortie": "Q2-006",
+        "segment": 1,
+        "from": "O01",
+        "to": "S007",
+        "payload_kg": 22.0,
+        "volume_m3": 0.055,
+        "distance_m": 4534.717374921003,
+        "cruise_altitude_m": 511.9731750488281,
+        "climb_m": 384.27317504882814,
+        "descent_m": 163.47317504882812,
+        "start_s": 360.0,
+        "end_s": 931.374,
+        "flight_s": 571.3734429458909,
+        "energy_kwh": 1.1114201286313874
+      },
+      {
+        "sortie": "Q2-006",
+        "segment": 2,
+        "from": "S007",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 4534.717374921003,
+        "cruise_altitude_m": 511.9731750488281,
+        "climb_m": 163.47317504882812,
+        "descent_m": 384.27317504882814,
+        "start_s": 1141.374,
+        "end_s": 1727.468,
+        "flight_s": 586.093442945891,
+        "energy_kwh": 0.8595433770407502
+      },
+      {
+        "sortie": "Q2-007",
+        "segment": 1,
+        "from": "O01",
+        "to": "S009",
+        "payload_kg": 20.0,
+        "volume_m3": 0.051000000000000004,
+        "distance_m": 5705.303446619009,
+        "cruise_altitude_m": 293.2289123535156,
+        "climb_m": 165.52891235351564,
+        "descent_m": 63.228912353515625,
+        "start_s": 390.0,
+        "end_s": 945.91,
+        "flight_s": 555.9098229441622,
+        "energy_kwh": 1.2548289962317891
+      },
+      {
+        "sortie": "Q2-007",
+        "segment": 2,
+        "from": "S009",
+        "to": "S002",
+        "payload_kg": 17.0,
+        "volume_m3": 0.039,
+        "distance_m": 1724.5836381782458,
+        "cruise_altitude_m": 328.2866516113281,
+        "climb_m": 98.28665161132812,
+        "descent_m": 108.78665161132812,
+        "start_s": 1125.91,
+        "end_s": 1345.903,
+        "flight_s": 219.99218102982775,
+        "energy_kwh": 0.3819880995637079
+      },
+      {
+        "sortie": "Q2-007",
+        "segment": 3,
+        "from": "S002",
+        "to": "S013",
+        "payload_kg": 3.0,
+        "volume_m3": 0.012,
+        "distance_m": 4540.229317505124,
+        "cruise_altitude_m": 377.2103271484375,
+        "climb_m": 157.7103271484375,
+        "descent_m": 25.51032714843751,
+        "start_s": 1525.903,
+        "end_s": 1967.03,
+        "flight_s": 441.1266830342812,
+        "energy_kwh": 0.867650729097559
+      },
+      {
+        "sortie": "Q2-007",
+        "segment": 4,
+        "from": "S013",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 4849.536854548781,
+        "cruise_altitude_m": 399.18182373046875,
+        "climb_m": 47.48182373046876,
+        "descent_m": 271.48182373046876,
+        "start_s": 2147.03,
+        "end_s": 2675.579,
+        "flight_s": 528.5480752814088,
+        "energy_kwh": 0.8854917240456509
+      },
+      {
+        "sortie": "Q2-008",
+        "segment": 1,
+        "from": "O01",
+        "to": "S001",
+        "payload_kg": 76.0,
+        "volume_m3": 0.231,
+        "distance_m": 3054.0236075149764,
+        "cruise_altitude_m": 273.0566101074219,
+        "climb_m": 145.3566101074219,
+        "descent_m": 89.05661010742188,
+        "start_s": 570.0,
+        "end_s": 876.273,
+        "flight_s": 306.27252293101145,
+        "energy_kwh": 1.954336457807204
+      },
+      {
+        "sortie": "Q2-008",
+        "segment": 2,
+        "from": "S001",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 3054.0236075149764,
+        "cruise_altitude_m": 273.0566101074219,
+        "climb_m": 89.05661010742188,
+        "descent_m": 145.3566101074219,
+        "start_s": 1380.273,
+        "end_s": 1692.176,
+        "flight_s": 311.90252293101145,
+        "energy_kwh": 0.9632516377796227
+      },
+      {
+        "sortie": "Q2-009",
+        "segment": 1,
+        "from": "O01",
+        "to": "S006",
+        "payload_kg": 20.0,
+        "volume_m3": 0.062,
+        "distance_m": 3186.19885235084,
+        "cruise_altitude_m": 366.09783935546875,
+        "climb_m": 238.39783935546876,
+        "descent_m": 51.29783935546874,
+        "start_s": 1627.271,
+        "end_s": 1939.67,
+        "flight_s": 312.39833901739973,
+        "energy_kwh": 0.6703307458219514
+      },
+      {
+        "sortie": "Q2-009",
+        "segment": 2,
+        "from": "S006",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 3186.19885235084,
+        "cruise_altitude_m": 366.09783935546875,
+        "climb_m": 51.29783935546874,
+        "descent_m": 238.39783935546876,
+        "start_s": 2149.67,
+        "end_s": 2474.542,
+        "flight_s": 324.8716723507331,
+        "energy_kwh": 0.4677865798840852
+      },
+      {
+        "sortie": "Q2-010",
+        "segment": 1,
+        "from": "O01",
+        "to": "S002",
+        "payload_kg": 67.0,
+        "volume_m3": 0.184,
+        "distance_m": 7411.533814153884,
+        "cruise_altitude_m": 308.9542541503906,
+        "climb_m": 181.25425415039064,
+        "descent_m": 89.45425415039062,
+        "start_s": 2004.176,
+        "end_s": 2615.508,
+        "flight_s": 611.3310830122772,
+        "energy_kwh": 3.976841085724875
+      },
+      {
+        "sortie": "Q2-010",
+        "segment": 2,
+        "from": "S002",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 7411.533814153884,
+        "cruise_altitude_m": 308.9542541503906,
+        "climb_m": 89.45425415039062,
+        "descent_m": 181.25425415039064,
+        "start_s": 3047.508,
+        "end_s": 3668.02,
+        "flight_s": 620.5110830122771,
+        "energy_kwh": 2.3041291706893916
+      },
+      {
+        "sortie": "Q2-011",
+        "segment": 1,
+        "from": "O01",
+        "to": "S013",
+        "payload_kg": 22.0,
+        "volume_m3": 0.055,
+        "distance_m": 4849.536854548781,
+        "cruise_altitude_m": 399.18182373046875,
+        "climb_m": 271.48182373046876,
+        "descent_m": 47.48182373046876,
+        "start_s": 2048.64,
+        "end_s": 2562.255,
+        "flight_s": 513.6147419480756,
+        "energy_kwh": 1.1400338378900698
+      },
+      {
+        "sortie": "Q2-011",
+        "segment": 2,
+        "from": "S013",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 4849.536854548781,
+        "cruise_altitude_m": 399.18182373046875,
+        "climb_m": 47.48182373046876,
+        "descent_m": 271.48182373046876,
+        "start_s": 2772.255,
+        "end_s": 3300.804,
+        "flight_s": 528.5480752814088,
+        "energy_kwh": 0.8854917240456509
+      },
+      {
+        "sortie": "Q2-012",
+        "segment": 1,
+        "from": "O01",
+        "to": "S004",
+        "payload_kg": 59.0,
+        "volume_m3": 0.156,
+        "distance_m": 7714.681646286507,
+        "cruise_altitude_m": 398.2391662597656,
+        "climb_m": 270.53916625976564,
+        "descent_m": 169.9391662597656,
+        "start_s": 2172.176,
+        "end_s": 2879.674,
+        "flight_s": 707.4973593862229,
+        "energy_kwh": 3.7341695223914186
+      },
+      {
+        "sortie": "Q2-012",
+        "segment": 2,
+        "from": "S004",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 7714.681646286507,
+        "cruise_altitude_m": 398.2391662597656,
+        "climb_m": 169.9391662597656,
+        "descent_m": 270.53916625976564,
+        "start_s": 3275.674,
+        "end_s": 3993.232,
+        "flight_s": 717.5573593862229,
+        "energy_kwh": 2.4186906067831635
+      },
+      {
+        "sortie": "Q2-013",
+        "segment": 1,
+        "from": "O01",
+        "to": "S006",
+        "payload_kg": 22.0,
+        "volume_m3": 0.055,
+        "distance_m": 3186.19885235084,
+        "cruise_altitude_m": 366.09783935546875,
+        "climb_m": 238.39783935546876,
+        "descent_m": 51.29783935546874,
+        "start_s": 2087.468,
+        "end_s": 2452.97,
+        "flight_s": 365.50165322324705,
+        "energy_kwh": 0.7699101528391015
+      },
+      {
+        "sortie": "Q2-013",
+        "segment": 2,
+        "from": "S006",
+        "to": "S011",
+        "payload_kg": 8.0,
+        "volume_m3": 0.028,
+        "distance_m": 3409.8268591147494,
+        "cruise_altitude_m": 400.46759033203125,
+        "climb_m": 85.66759033203124,
+        "descent_m": 188.36759033203126,
+        "start_s": 2632.97,
+        "end_s": 3021.026,
+        "flight_s": 388.05513783638537,
+        "energy_kwh": 0.662105488813295
+      },
+      {
+        "sortie": "Q2-013",
+        "segment": 3,
+        "from": "S011",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 2808.106412371872,
+        "cruise_altitude_m": 295.36175537109375,
+        "climb_m": 83.26175537109376,
+        "descent_m": 167.66175537109376,
+        "start_s": 3201.026,
+        "end_s": 3529.854,
+        "flight_s": 328.82748830312477,
+        "energy_kwh": 0.5275102045863874
+      },
+      {
+        "sortie": "Q2-014",
+        "segment": 1,
+        "from": "O01",
+        "to": "S014",
+        "payload_kg": 25.0,
+        "volume_m3": 0.067,
+        "distance_m": 5419.5362999417475,
+        "cruise_altitude_m": 591.9473876953125,
+        "climb_m": 464.2473876953125,
+        "descent_m": 240.9473876953125,
+        "start_s": 2312.828,
+        "end_s": 2925.259,
+        "flight_s": 612.4305043060124,
+        "energy_kwh": 1.3068170177283882
+      },
+      {
+        "sortie": "Q2-014",
+        "segment": 2,
+        "from": "S014",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 5419.5362999417475,
+        "cruise_altitude_m": 591.9473876953125,
+        "climb_m": 240.9473876953125,
+        "descent_m": 464.2473876953125,
+        "start_s": 3165.259,
+        "end_s": 3792.577,
+        "flight_s": 627.317170972679,
+        "energy_kwh": 0.8334739604133998
+      },
+      {
+        "sortie": "Q2-015",
+        "segment": 1,
+        "from": "O01",
+        "to": "S010",
+        "payload_kg": 25.0,
+        "volume_m3": 0.067,
+        "distance_m": 4784.6745062617865,
+        "cruise_altitude_m": 435.63653564453125,
+        "climb_m": 307.93653564453126,
+        "descent_m": 84.03653564453123,
+        "start_s": 2864.542,
+        "end_s": 3319.781,
+        "flight_s": 455.2384265567753,
+        "energy_kwh": 1.119025123192104
+      },
+      {
+        "sortie": "Q2-015",
+        "segment": 2,
+        "from": "S010",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 4784.6745062617865,
+        "cruise_altitude_m": 435.63653564453125,
+        "climb_m": 84.03653564453123,
+        "descent_m": 307.93653564453126,
+        "start_s": 3559.781,
+        "end_s": 4029.947,
+        "flight_s": 470.165093223442,
+        "energy_kwh": 0.7041914410393101
+      },
+      {
+        "sortie": "Q2-016",
+        "segment": 1,
+        "from": "O01",
+        "to": "S003",
+        "payload_kg": 20.0,
+        "volume_m3": 0.051000000000000004,
+        "distance_m": 7263.826967765937,
+        "cruise_altitude_m": 561.8041381835938,
+        "climb_m": 434.10413818359376,
+        "descent_m": 223.30413818359375,
+        "start_s": 3167.913,
+        "end_s": 4007.255,
+        "flight_s": 839.3419486484636,
+        "energy_kwh": 1.6736670802830476
+      },
+      {
+        "sortie": "Q2-016",
+        "segment": 2,
+        "from": "S003",
+        "to": "S015",
+        "payload_kg": 3.0,
+        "volume_m3": 0.012,
+        "distance_m": 2616.9607414636503,
+        "cruise_altitude_m": 487.89886474609375,
+        "climb_m": 149.39886474609375,
+        "descent_m": 13.39886474609375,
+        "start_s": 4217.255,
+        "end_s": 4490.495,
+        "flight_s": 273.23922926910626,
+        "energy_kwh": 0.5162645545133282
+      },
+      {
+        "sortie": "Q2-016",
+        "segment": 3,
+        "from": "S015",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 6009.764892220415,
+        "cruise_altitude_m": 571.7992553710938,
+        "climb_m": 97.29925537109375,
+        "descent_m": 444.09925537109376,
+        "start_s": 4670.495,
+        "end_s": 5381.382,
+        "flight_s": 710.8865282905033,
+        "energy_kwh": 1.1075264236505795
+      },
+      {
+        "sortie": "Q2-017",
+        "segment": 1,
+        "from": "O01",
+        "to": "S015",
+        "payload_kg": 22.0,
+        "volume_m3": 0.055,
+        "distance_m": 6009.764892220415,
+        "cruise_altitude_m": 571.7992553710938,
+        "climb_m": 444.09925537109376,
+        "descent_m": 97.29925537109375,
+        "start_s": 3156.858,
+        "end_s": 3844.625,
+        "flight_s": 687.7665282905034,
+        "energy_kwh": 1.450257527851556
+      },
+      {
+        "sortie": "Q2-017",
+        "segment": 2,
+        "from": "S015",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 6009.764892220415,
+        "cruise_altitude_m": 571.7992553710938,
+        "climb_m": 97.29925537109375,
+        "descent_m": 444.09925537109376,
+        "start_s": 4054.625,
+        "end_s": 4765.512,
+        "flight_s": 710.8865282905033,
+        "energy_kwh": 1.1075264236505795
+      },
+      {
+        "sortie": "Q2-018",
+        "segment": 1,
+        "from": "O01",
+        "to": "S007",
+        "payload_kg": 70.0,
+        "volume_m3": 0.20700000000000002,
+        "distance_m": 4534.717374921003,
+        "cruise_altitude_m": 511.9731750488281,
+        "climb_m": 384.27317504882814,
+        "descent_m": 163.47317504882812,
+        "start_s": 4178.02,
+        "end_s": 4715.781,
+        "flight_s": 537.7603492053455,
+        "energy_kwh": 2.6982252032490663
+      },
+      {
+        "sortie": "Q2-018",
+        "segment": 2,
+        "from": "S007",
+        "to": "S003",
+        "payload_kg": 64.0,
+        "volume_m3": 0.17200000000000001,
+        "distance_m": 2734.6883251703875,
+        "cruise_altitude_m": 410.6993408203125,
+        "climb_m": 62.1993408203125,
+        "descent_m": 72.1993408203125,
+        "start_s": 4931.781,
+        "end_s": 5175.073,
+        "flight_s": 243.29196174964042,
+        "energy_kwh": 1.4003588369861268
+      },
+      {
+        "sortie": "Q2-018",
+        "segment": 3,
+        "from": "S003",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 7263.826967765937,
+        "cruise_altitude_m": 561.8041381835938,
+        "climb_m": 223.30413818359375,
+        "descent_m": 434.10413818359376,
+        "start_s": 5571.073,
+        "end_s": 6361.702,
+        "flight_s": 790.6288555496302,
+        "energy_kwh": 2.294079083746617
+      },
+      {
+        "sortie": "Q2-019",
+        "segment": 1,
+        "from": "O01",
+        "to": "S008",
+        "payload_kg": 25.0,
+        "volume_m3": 0.067,
+        "distance_m": 8079.110448788476,
+        "cruise_altitude_m": 372.9093322753906,
+        "climb_m": 245.20933227539064,
+        "descent_m": 102.00933227539065,
+        "start_s": 4182.577,
+        "end_s": 4843.725,
+        "flight_s": 661.1475402545182,
+        "energy_kwh": 1.7959618045128665
+      },
+      {
+        "sortie": "Q2-019",
+        "segment": 2,
+        "from": "S008",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 8079.110448788476,
+        "cruise_altitude_m": 372.9093322753906,
+        "climb_m": 102.00933227539065,
+        "descent_m": 245.20933227539064,
+        "start_s": 5083.725,
+        "end_s": 5754.42,
+        "flight_s": 670.6942069211849,
+        "energy_kwh": 1.1792450700293666
+      },
+      {
+        "sortie": "Q2-020",
+        "segment": 1,
+        "from": "O01",
+        "to": "S011",
+        "payload_kg": 76.0,
+        "volume_m3": 0.195,
+        "distance_m": 2808.106412371872,
+        "cruise_altitude_m": 295.36175537109375,
+        "climb_m": 167.66175537109376,
+        "descent_m": 83.26175537109376,
+        "start_s": 4533.232,
+        "end_s": 4829.135,
+        "flight_s": 295.90267399210916,
+        "energy_kwh": 1.8157420522535306
+      },
+      {
+        "sortie": "Q2-020",
+        "segment": 2,
+        "from": "S011",
+        "to": "S005",
+        "payload_kg": 59.0,
+        "volume_m3": 0.156,
+        "distance_m": 2802.7636017267305,
+        "cruise_altitude_m": 347.5489196777344,
+        "climb_m": 135.44891967773438,
+        "descent_m": 152.54891967773438,
+        "start_s": 5081.135,
+        "end_s": 5398.44,
+        "flight_s": 317.304934491743,
+        "energy_kwh": 1.3747563501698297
+      },
+      {
+        "sortie": "Q2-020",
+        "segment": 3,
+        "from": "S005",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 5280.5933691157215,
+        "cruise_altitude_m": 326.410888671875,
+        "climb_m": 131.410888671875,
+        "descent_m": 198.710888671875,
+        "start_s": 5794.44,
+        "end_s": 6298.4,
+        "flight_s": 503.9593577457356,
+        "energy_kwh": 1.659551112250462
+      },
+      {
+        "sortie": "Q2-021",
+        "segment": 1,
+        "from": "O01",
+        "to": "S008",
+        "payload_kg": 20.0,
+        "volume_m3": 0.062,
+        "distance_m": 8079.110448788476,
+        "cruise_altitude_m": 372.9093322753906,
+        "climb_m": 245.20933227539064,
+        "descent_m": 102.00933227539065,
+        "start_s": 4389.947,
+        "end_s": 5051.095,
+        "flight_s": 661.1475402545182,
+        "energy_kwh": 1.5841861352040045
+      },
+      {
+        "sortie": "Q2-021",
+        "segment": 2,
+        "from": "S008",
+        "to": "O01",
+        "payload_kg": 0.0,
+        "volume_m3": 0.0,
+        "distance_m": 8079.110448788476,
+        "cruise_altitude_m": 372.9093322753906,
+        "climb_m": 102.00933227539065,
+        "descent_m": 245.20933227539064,
+        "start_s": 5261.095,
+        "end_s": 5931.79,
+        "flight_s": 670.6942069211849,
+        "energy_kwh": 1.1792450700293666
+      }
+    ],
+    "phases": [
+      {
+        "sortie": "Q2-001",
+        "from": "O01",
+        "to": "S012",
+        "phase": "爬升",
+        "start_s": 390.0,
+        "end_s": 485.20033162434896
+      },
+      {
+        "sortie": "Q2-001",
+        "from": "O01",
+        "to": "S012",
+        "phase": "巡航",
+        "start_s": 485.20033162434896,
+        "end_s": 977.9430091253747
+      },
+      {
+        "sortie": "Q2-001",
+        "from": "O01",
+        "to": "S012",
+        "phase": "下降",
+        "start_s": 977.9430091253747,
+        "end_s": 1031.3434070745934
+      },
+      {
+        "sortie": "Q2-001",
+        "from": "O01",
+        "to": "S012",
+        "phase": "毫秒保守裕量",
+        "start_s": 1031.3434070745934,
+        "end_s": 1031.344
+      },
+      {
+        "sortie": "Q2-001",
+        "from": "S012",
+        "to": "S012",
+        "phase": "基础交接",
+        "start_s": 1031.344,
+        "end_s": 1181.344
+      },
+      {
+        "sortie": "Q2-001",
+        "from": "S012",
+        "to": "S012",
+        "phase": "逐箱交接",
+        "box": "S012-MED-01",
+        "start_s": 1181.344,
+        "end_s": 1211.344
+      },
+      {
+        "sortie": "Q2-001",
+        "from": "S012",
+        "to": "S012",
+        "phase": "逐箱交接",
+        "box": "S012-WAT-01",
+        "start_s": 1211.344,
+        "end_s": 1241.344
+      },
+      {
+        "sortie": "Q2-001",
+        "from": "S012",
+        "to": "S012",
+        "phase": "逐箱交接",
+        "box": "S012-FOD-01",
+        "start_s": 1241.344,
+        "end_s": 1271.344
+      },
+      {
+        "sortie": "Q2-001",
+        "from": "S012",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 1271.344,
+        "end_s": 1315.844331624349
+      },
+      {
+        "sortie": "Q2-001",
+        "from": "S012",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 1315.844331624349,
+        "end_s": 1808.5870091253748
+      },
+      {
+        "sortie": "Q2-001",
+        "from": "S012",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 1808.5870091253748,
+        "end_s": 1922.8274070745936
+      },
+      {
+        "sortie": "Q2-001",
+        "from": "S012",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 1922.8274070745936,
+        "end_s": 1922.828
+      },
+      {
+        "sortie": "Q2-002",
+        "from": "O01",
+        "to": "S006",
+        "phase": "爬升",
+        "start_s": 390.0,
+        "end_s": 469.4659464518229
+      },
+      {
+        "sortie": "Q2-002",
+        "from": "O01",
+        "to": "S006",
+        "phase": "巡航",
+        "start_s": 469.4659464518229,
+        "end_s": 681.8792032752123
+      },
+      {
+        "sortie": "Q2-002",
+        "from": "O01",
+        "to": "S006",
+        "phase": "下降",
+        "start_s": 681.8792032752123,
+        "end_s": 702.3983390173997
+      },
+      {
+        "sortie": "Q2-002",
+        "from": "O01",
+        "to": "S006",
+        "phase": "毫秒保守裕量",
+        "start_s": 702.3983390173997,
+        "end_s": 702.399
+      },
+      {
+        "sortie": "Q2-002",
+        "from": "S006",
+        "to": "S006",
+        "phase": "基础交接",
+        "start_s": 702.399,
+        "end_s": 852.399
+      },
+      {
+        "sortie": "Q2-002",
+        "from": "S006",
+        "to": "S006",
+        "phase": "逐箱交接",
+        "box": "S006-MED-01",
+        "start_s": 852.399,
+        "end_s": 882.399
+      },
+      {
+        "sortie": "Q2-002",
+        "from": "S006",
+        "to": "S006",
+        "phase": "逐箱交接",
+        "box": "S006-FOD-01",
+        "start_s": 882.399,
+        "end_s": 912.399
+      },
+      {
+        "sortie": "Q2-002",
+        "from": "S006",
+        "to": "S006",
+        "phase": "逐箱交接",
+        "box": "S006-WAT-03",
+        "start_s": 912.399,
+        "end_s": 942.399
+      },
+      {
+        "sortie": "Q2-002",
+        "from": "S006",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 942.399,
+        "end_s": 959.4982797851562
+      },
+      {
+        "sortie": "Q2-002",
+        "from": "S006",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 959.4982797851562,
+        "end_s": 1171.9115366085455
+      },
+      {
+        "sortie": "Q2-002",
+        "from": "S006",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 1171.9115366085455,
+        "end_s": 1267.270672350733
+      },
+      {
+        "sortie": "Q2-002",
+        "from": "S006",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 1267.270672350733,
+        "end_s": 1267.271
+      },
+      {
+        "sortie": "Q2-003",
+        "from": "O01",
+        "to": "S007",
+        "phase": "爬升",
+        "start_s": 360.0,
+        "end_s": 488.0910583496094
+      },
+      {
+        "sortie": "Q2-003",
+        "from": "O01",
+        "to": "S007",
+        "phase": "巡航",
+        "start_s": 488.0910583496094,
+        "end_s": 865.9841729263596
+      },
+      {
+        "sortie": "Q2-003",
+        "from": "O01",
+        "to": "S007",
+        "phase": "下降",
+        "start_s": 865.9841729263596,
+        "end_s": 931.3734429458909
+      },
+      {
+        "sortie": "Q2-003",
+        "from": "O01",
+        "to": "S007",
+        "phase": "毫秒保守裕量",
+        "start_s": 931.3734429458909,
+        "end_s": 931.374
+      },
+      {
+        "sortie": "Q2-003",
+        "from": "S007",
+        "to": "S007",
+        "phase": "基础交接",
+        "start_s": 931.374,
+        "end_s": 1081.374
+      },
+      {
+        "sortie": "Q2-003",
+        "from": "S007",
+        "to": "S007",
+        "phase": "逐箱交接",
+        "box": "S007-MED-01",
+        "start_s": 1081.374,
+        "end_s": 1111.374
+      },
+      {
+        "sortie": "Q2-003",
+        "from": "S007",
+        "to": "S007",
+        "phase": "逐箱交接",
+        "box": "S007-WAT-01",
+        "start_s": 1111.374,
+        "end_s": 1141.374
+      },
+      {
+        "sortie": "Q2-003",
+        "from": "S007",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 1141.374,
+        "end_s": 1195.8650583496094
+      },
+      {
+        "sortie": "Q2-003",
+        "from": "S007",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 1195.8650583496094,
+        "end_s": 1573.7581729263597
+      },
+      {
+        "sortie": "Q2-003",
+        "from": "S007",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 1573.7581729263597,
+        "end_s": 1727.467442945891
+      },
+      {
+        "sortie": "Q2-003",
+        "from": "S007",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 1727.467442945891,
+        "end_s": 1727.468
+      },
+      {
+        "sortie": "Q2-004",
+        "from": "O01",
+        "to": "S009",
+        "phase": "爬升",
+        "start_s": 360.0,
+        "end_s": 415.1763041178385
+      },
+      {
+        "sortie": "Q2-004",
+        "from": "O01",
+        "to": "S009",
+        "phase": "巡航",
+        "start_s": 415.1763041178385,
+        "end_s": 890.618258002756
+      },
+      {
+        "sortie": "Q2-004",
+        "from": "O01",
+        "to": "S009",
+        "phase": "下降",
+        "start_s": 890.618258002756,
+        "end_s": 915.9098229441622
+      },
+      {
+        "sortie": "Q2-004",
+        "from": "O01",
+        "to": "S009",
+        "phase": "毫秒保守裕量",
+        "start_s": 915.9098229441622,
+        "end_s": 915.91
+      },
+      {
+        "sortie": "Q2-004",
+        "from": "S009",
+        "to": "S009",
+        "phase": "基础交接",
+        "start_s": 915.91,
+        "end_s": 1065.9099999999999
+      },
+      {
+        "sortie": "Q2-004",
+        "from": "S009",
+        "to": "S009",
+        "phase": "逐箱交接",
+        "box": "S009-FOD-01",
+        "start_s": 1065.91,
+        "end_s": 1095.91
+      },
+      {
+        "sortie": "Q2-004",
+        "from": "S009",
+        "to": "S009",
+        "phase": "逐箱交接",
+        "box": "S009-WAT-01",
+        "start_s": 1095.91,
+        "end_s": 1125.91
+      },
+      {
+        "sortie": "Q2-004",
+        "from": "S009",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 1125.91,
+        "end_s": 1146.9863041178387
+      },
+      {
+        "sortie": "Q2-004",
+        "from": "S009",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 1146.9863041178387,
+        "end_s": 1622.4282580027561
+      },
+      {
+        "sortie": "Q2-004",
+        "from": "S009",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 1622.4282580027561,
+        "end_s": 1688.6398229441625
+      },
+      {
+        "sortie": "Q2-004",
+        "from": "S009",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 1688.6398229441625,
+        "end_s": 1688.64
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "O01",
+        "to": "S001",
+        "phase": "爬升",
+        "start_s": 480.0,
+        "end_s": 538.1426440429688
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "O01",
+        "to": "S001",
+        "phase": "巡航",
+        "start_s": 538.1426440429688,
+        "end_s": 741.7442178773006
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "O01",
+        "to": "S001",
+        "phase": "下降",
+        "start_s": 741.7442178773006,
+        "end_s": 786.2725229310115
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "O01",
+        "to": "S001",
+        "phase": "毫秒保守裕量",
+        "start_s": 786.2725229310115,
+        "end_s": 786.273
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "S001",
+        "to": "S001",
+        "phase": "基础交接",
+        "start_s": 786.273,
+        "end_s": 966.273
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-WAT-08",
+        "start_s": 966.273,
+        "end_s": 1002.273
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-FOD-03",
+        "start_s": 1002.273,
+        "end_s": 1038.273
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-WAT-01",
+        "start_s": 1038.273,
+        "end_s": 1074.273
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-WAT-02",
+        "start_s": 1074.273,
+        "end_s": 1110.273
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-WAT-07",
+        "start_s": 1110.273,
+        "end_s": 1146.273
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-WAT-03",
+        "start_s": 1146.273,
+        "end_s": 1182.273
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "S001",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 1182.273,
+        "end_s": 1217.8956440429686
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "S001",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 1217.8956440429686,
+        "end_s": 1421.4972178773003
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "S001",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 1421.4972178773003,
+        "end_s": 1494.1755229310113
+      },
+      {
+        "sortie": "Q2-005",
+        "from": "S001",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 1494.1755229310113,
+        "end_s": 1494.176
+      },
+      {
+        "sortie": "Q2-006",
+        "from": "O01",
+        "to": "S007",
+        "phase": "爬升",
+        "start_s": 360.0,
+        "end_s": 488.0910583496094
+      },
+      {
+        "sortie": "Q2-006",
+        "from": "O01",
+        "to": "S007",
+        "phase": "巡航",
+        "start_s": 488.0910583496094,
+        "end_s": 865.9841729263596
+      },
+      {
+        "sortie": "Q2-006",
+        "from": "O01",
+        "to": "S007",
+        "phase": "下降",
+        "start_s": 865.9841729263596,
+        "end_s": 931.3734429458909
+      },
+      {
+        "sortie": "Q2-006",
+        "from": "O01",
+        "to": "S007",
+        "phase": "毫秒保守裕量",
+        "start_s": 931.3734429458909,
+        "end_s": 931.374
+      },
+      {
+        "sortie": "Q2-006",
+        "from": "S007",
+        "to": "S007",
+        "phase": "基础交接",
+        "start_s": 931.374,
+        "end_s": 1081.374
+      },
+      {
+        "sortie": "Q2-006",
+        "from": "S007",
+        "to": "S007",
+        "phase": "逐箱交接",
+        "box": "S007-WAT-02",
+        "start_s": 1081.374,
+        "end_s": 1111.374
+      },
+      {
+        "sortie": "Q2-006",
+        "from": "S007",
+        "to": "S007",
+        "phase": "逐箱交接",
+        "box": "S007-FOD-01",
+        "start_s": 1111.374,
+        "end_s": 1141.374
+      },
+      {
+        "sortie": "Q2-006",
+        "from": "S007",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 1141.374,
+        "end_s": 1195.8650583496094
+      },
+      {
+        "sortie": "Q2-006",
+        "from": "S007",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 1195.8650583496094,
+        "end_s": 1573.7581729263597
+      },
+      {
+        "sortie": "Q2-006",
+        "from": "S007",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 1573.7581729263597,
+        "end_s": 1727.467442945891
+      },
+      {
+        "sortie": "Q2-006",
+        "from": "S007",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 1727.467442945891,
+        "end_s": 1727.468
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "O01",
+        "to": "S009",
+        "phase": "爬升",
+        "start_s": 390.0,
+        "end_s": 445.1763041178385
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "O01",
+        "to": "S009",
+        "phase": "巡航",
+        "start_s": 445.1763041178385,
+        "end_s": 920.618258002756
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "O01",
+        "to": "S009",
+        "phase": "下降",
+        "start_s": 920.618258002756,
+        "end_s": 945.9098229441622
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "O01",
+        "to": "S009",
+        "phase": "毫秒保守裕量",
+        "start_s": 945.9098229441622,
+        "end_s": 945.91
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S009",
+        "to": "S009",
+        "phase": "基础交接",
+        "start_s": 945.91,
+        "end_s": 1095.9099999999999
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S009",
+        "to": "S009",
+        "phase": "逐箱交接",
+        "box": "S009-MED-01",
+        "start_s": 1095.91,
+        "end_s": 1125.91
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S009",
+        "to": "S002",
+        "phase": "爬升",
+        "start_s": 1125.91,
+        "end_s": 1158.6722172037762
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S009",
+        "to": "S002",
+        "phase": "巡航",
+        "start_s": 1158.6722172037762,
+        "end_s": 1302.3875203852967
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S009",
+        "to": "S002",
+        "phase": "下降",
+        "start_s": 1302.3875203852967,
+        "end_s": 1345.902181029828
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S009",
+        "to": "S002",
+        "phase": "毫秒保守裕量",
+        "start_s": 1345.902181029828,
+        "end_s": 1345.903
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S002",
+        "to": "S002",
+        "phase": "基础交接",
+        "start_s": 1345.903,
+        "end_s": 1495.903
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S002",
+        "to": "S002",
+        "phase": "逐箱交接",
+        "box": "S002-WAT-02",
+        "start_s": 1495.903,
+        "end_s": 1525.903
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S002",
+        "to": "S013",
+        "phase": "爬升",
+        "start_s": 1525.903,
+        "end_s": 1578.4731090494793
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S002",
+        "to": "S013",
+        "phase": "巡航",
+        "start_s": 1578.4731090494793,
+        "end_s": 1956.8255521749063
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S002",
+        "to": "S013",
+        "phase": "下降",
+        "start_s": 1956.8255521749063,
+        "end_s": 1967.0296830342813
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S002",
+        "to": "S013",
+        "phase": "毫秒保守裕量",
+        "start_s": 1967.0296830342813,
+        "end_s": 1967.03
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S013",
+        "to": "S013",
+        "phase": "基础交接",
+        "start_s": 1967.03,
+        "end_s": 2117.0299999999997
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S013",
+        "to": "S013",
+        "phase": "逐箱交接",
+        "box": "S013-MED-01",
+        "start_s": 2117.03,
+        "end_s": 2147.03
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S013",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 2147.03,
+        "end_s": 2162.8572745768233
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S013",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 2162.8572745768233,
+        "end_s": 2566.985345789222
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S013",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 2566.985345789222,
+        "end_s": 2675.5780752814094
+      },
+      {
+        "sortie": "Q2-007",
+        "from": "S013",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 2675.5780752814094,
+        "end_s": 2675.579
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "O01",
+        "to": "S001",
+        "phase": "爬升",
+        "start_s": 570.0,
+        "end_s": 628.1426440429688
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "O01",
+        "to": "S001",
+        "phase": "巡航",
+        "start_s": 628.1426440429688,
+        "end_s": 831.7442178773006
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "O01",
+        "to": "S001",
+        "phase": "下降",
+        "start_s": 831.7442178773006,
+        "end_s": 876.2725229310115
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "O01",
+        "to": "S001",
+        "phase": "毫秒保守裕量",
+        "start_s": 876.2725229310115,
+        "end_s": 876.273
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "S001",
+        "phase": "基础交接",
+        "start_s": 876.273,
+        "end_s": 1056.2730000000001
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-MED-01",
+        "start_s": 1056.273,
+        "end_s": 1092.273
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-HYG-01",
+        "start_s": 1092.273,
+        "end_s": 1128.273
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-FOD-02",
+        "start_s": 1128.273,
+        "end_s": 1164.273
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-WAT-05",
+        "start_s": 1164.273,
+        "end_s": 1200.273
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-FOD-01",
+        "start_s": 1200.273,
+        "end_s": 1236.273
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-WAT-06",
+        "start_s": 1236.273,
+        "end_s": 1272.273
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-HYG-02",
+        "start_s": 1272.273,
+        "end_s": 1308.273
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-MED-02",
+        "start_s": 1308.273,
+        "end_s": 1344.273
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "S001",
+        "phase": "逐箱交接",
+        "box": "S001-WAT-04",
+        "start_s": 1344.273,
+        "end_s": 1380.273
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 1380.273,
+        "end_s": 1415.8956440429686
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 1415.8956440429686,
+        "end_s": 1619.4972178773003
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 1619.4972178773003,
+        "end_s": 1692.1755229310113
+      },
+      {
+        "sortie": "Q2-008",
+        "from": "S001",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 1692.1755229310113,
+        "end_s": 1692.176
+      },
+      {
+        "sortie": "Q2-009",
+        "from": "O01",
+        "to": "S006",
+        "phase": "爬升",
+        "start_s": 1627.271,
+        "end_s": 1706.7369464518229
+      },
+      {
+        "sortie": "Q2-009",
+        "from": "O01",
+        "to": "S006",
+        "phase": "巡航",
+        "start_s": 1706.7369464518229,
+        "end_s": 1919.150203275212
+      },
+      {
+        "sortie": "Q2-009",
+        "from": "O01",
+        "to": "S006",
+        "phase": "下降",
+        "start_s": 1919.150203275212,
+        "end_s": 1939.6693390173996
+      },
+      {
+        "sortie": "Q2-009",
+        "from": "O01",
+        "to": "S006",
+        "phase": "毫秒保守裕量",
+        "start_s": 1939.6693390173996,
+        "end_s": 1939.67
+      },
+      {
+        "sortie": "Q2-009",
+        "from": "S006",
+        "to": "S006",
+        "phase": "基础交接",
+        "start_s": 1939.67,
+        "end_s": 2089.67
+      },
+      {
+        "sortie": "Q2-009",
+        "from": "S006",
+        "to": "S006",
+        "phase": "逐箱交接",
+        "box": "S006-WAT-01",
+        "start_s": 2089.67,
+        "end_s": 2119.67
+      },
+      {
+        "sortie": "Q2-009",
+        "from": "S006",
+        "to": "S006",
+        "phase": "逐箱交接",
+        "box": "S006-HYG-01",
+        "start_s": 2119.67,
+        "end_s": 2149.67
+      },
+      {
+        "sortie": "Q2-009",
+        "from": "S006",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 2149.67,
+        "end_s": 2166.7692797851564
+      },
+      {
+        "sortie": "Q2-009",
+        "from": "S006",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 2166.7692797851564,
+        "end_s": 2379.182536608546
+      },
+      {
+        "sortie": "Q2-009",
+        "from": "S006",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 2379.182536608546,
+        "end_s": 2474.5416723507333
+      },
+      {
+        "sortie": "Q2-009",
+        "from": "S006",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 2474.5416723507333,
+        "end_s": 2474.542
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "O01",
+        "to": "S002",
+        "phase": "爬升",
+        "start_s": 2004.176,
+        "end_s": 2076.6777016601563
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "O01",
+        "to": "S002",
+        "phase": "巡航",
+        "start_s": 2076.6777016601563,
+        "end_s": 2570.779955937082
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "O01",
+        "to": "S002",
+        "phase": "下降",
+        "start_s": 2570.779955937082,
+        "end_s": 2615.5070830122772
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "O01",
+        "to": "S002",
+        "phase": "毫秒保守裕量",
+        "start_s": 2615.5070830122772,
+        "end_s": 2615.508
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "S002",
+        "to": "S002",
+        "phase": "基础交接",
+        "start_s": 2615.508,
+        "end_s": 2795.508
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "S002",
+        "to": "S002",
+        "phase": "逐箱交接",
+        "box": "S002-MED-01",
+        "start_s": 2795.508,
+        "end_s": 2831.508
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "S002",
+        "to": "S002",
+        "phase": "逐箱交接",
+        "box": "S002-WAT-01",
+        "start_s": 2831.508,
+        "end_s": 2867.508
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "S002",
+        "to": "S002",
+        "phase": "逐箱交接",
+        "box": "S002-HYG-01",
+        "start_s": 2867.508,
+        "end_s": 2903.508
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "S002",
+        "to": "S002",
+        "phase": "逐箱交接",
+        "box": "S002-WAT-04",
+        "start_s": 2903.508,
+        "end_s": 2939.508
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "S002",
+        "to": "S002",
+        "phase": "逐箱交接",
+        "box": "S002-FOD-02",
+        "start_s": 2939.508,
+        "end_s": 2975.508
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "S002",
+        "to": "S002",
+        "phase": "逐箱交接",
+        "box": "S002-WAT-03",
+        "start_s": 2975.508,
+        "end_s": 3011.508
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "S002",
+        "to": "S002",
+        "phase": "逐箱交接",
+        "box": "S002-FOD-01",
+        "start_s": 3011.508,
+        "end_s": 3047.508
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "S002",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 3047.508,
+        "end_s": 3083.289701660156
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "S002",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 3083.289701660156,
+        "end_s": 3577.3919559370815
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "S002",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 3577.3919559370815,
+        "end_s": 3668.019083012277
+      },
+      {
+        "sortie": "Q2-010",
+        "from": "S002",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 3668.019083012277,
+        "end_s": 3668.02
+      },
+      {
+        "sortie": "Q2-011",
+        "from": "O01",
+        "to": "S013",
+        "phase": "爬升",
+        "start_s": 2048.64,
+        "end_s": 2139.1339412434895
+      },
+      {
+        "sortie": "Q2-011",
+        "from": "O01",
+        "to": "S013",
+        "phase": "巡航",
+        "start_s": 2139.1339412434895,
+        "end_s": 2543.262012455888
+      },
+      {
+        "sortie": "Q2-011",
+        "from": "O01",
+        "to": "S013",
+        "phase": "下降",
+        "start_s": 2543.262012455888,
+        "end_s": 2562.2547419480757
+      },
+      {
+        "sortie": "Q2-011",
+        "from": "O01",
+        "to": "S013",
+        "phase": "毫秒保守裕量",
+        "start_s": 2562.2547419480757,
+        "end_s": 2562.255
+      },
+      {
+        "sortie": "Q2-011",
+        "from": "S013",
+        "to": "S013",
+        "phase": "基础交接",
+        "start_s": 2562.255,
+        "end_s": 2712.255
+      },
+      {
+        "sortie": "Q2-011",
+        "from": "S013",
+        "to": "S013",
+        "phase": "逐箱交接",
+        "box": "S013-WAT-01",
+        "start_s": 2712.255,
+        "end_s": 2742.255
+      },
+      {
+        "sortie": "Q2-011",
+        "from": "S013",
+        "to": "S013",
+        "phase": "逐箱交接",
+        "box": "S013-FOD-01",
+        "start_s": 2742.255,
+        "end_s": 2772.255
+      },
+      {
+        "sortie": "Q2-011",
+        "from": "S013",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 2772.255,
+        "end_s": 2788.0822745768232
+      },
+      {
+        "sortie": "Q2-011",
+        "from": "S013",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 2788.0822745768232,
+        "end_s": 3192.2103457892217
+      },
+      {
+        "sortie": "Q2-011",
+        "from": "S013",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 3192.2103457892217,
+        "end_s": 3300.8030752814093
+      },
+      {
+        "sortie": "Q2-011",
+        "from": "S013",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 3300.8030752814093,
+        "end_s": 3300.804
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "O01",
+        "to": "S004",
+        "phase": "爬升",
+        "start_s": 2172.176,
+        "end_s": 2280.391666503906
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "O01",
+        "to": "S004",
+        "phase": "巡航",
+        "start_s": 2280.391666503906,
+        "end_s": 2794.7037762563396
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "O01",
+        "to": "S004",
+        "phase": "下降",
+        "start_s": 2794.7037762563396,
+        "end_s": 2879.6733593862223
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "O01",
+        "to": "S004",
+        "phase": "毫秒保守裕量",
+        "start_s": 2879.6733593862223,
+        "end_s": 2879.674
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "S004",
+        "to": "S004",
+        "phase": "基础交接",
+        "start_s": 2879.674,
+        "end_s": 3059.674
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "S004",
+        "to": "S004",
+        "phase": "逐箱交接",
+        "box": "S004-WAT-02",
+        "start_s": 3059.674,
+        "end_s": 3095.674
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "S004",
+        "to": "S004",
+        "phase": "逐箱交接",
+        "box": "S004-HYG-01",
+        "start_s": 3095.674,
+        "end_s": 3131.674
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "S004",
+        "to": "S004",
+        "phase": "逐箱交接",
+        "box": "S004-WAT-01",
+        "start_s": 3131.674,
+        "end_s": 3167.674
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "S004",
+        "to": "S004",
+        "phase": "逐箱交接",
+        "box": "S004-MED-01",
+        "start_s": 3167.674,
+        "end_s": 3203.674
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "S004",
+        "to": "S004",
+        "phase": "逐箱交接",
+        "box": "S004-WAT-03",
+        "start_s": 3203.674,
+        "end_s": 3239.674
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "S004",
+        "to": "S004",
+        "phase": "逐箱交接",
+        "box": "S004-FOD-01",
+        "start_s": 3239.674,
+        "end_s": 3275.674
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "S004",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 3275.674,
+        "end_s": 3343.6496665039062
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "S004",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 3343.6496665039062,
+        "end_s": 3857.9617762563403
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "S004",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 3857.9617762563403,
+        "end_s": 3993.231359386223
+      },
+      {
+        "sortie": "Q2-012",
+        "from": "S004",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 3993.231359386223,
+        "end_s": 3993.232
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "O01",
+        "to": "S006",
+        "phase": "爬升",
+        "start_s": 2087.468,
+        "end_s": 2166.933946451823
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "O01",
+        "to": "S006",
+        "phase": "巡航",
+        "start_s": 2166.933946451823,
+        "end_s": 2432.4505174810597
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "O01",
+        "to": "S006",
+        "phase": "下降",
+        "start_s": 2432.4505174810597,
+        "end_s": 2452.9696532232474
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "O01",
+        "to": "S006",
+        "phase": "毫秒保守裕量",
+        "start_s": 2452.9696532232474,
+        "end_s": 2452.97
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "S006",
+        "to": "S006",
+        "phase": "基础交接",
+        "start_s": 2452.97,
+        "end_s": 2602.97
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "S006",
+        "to": "S006",
+        "phase": "逐箱交接",
+        "box": "S006-WAT-02",
+        "start_s": 2602.97,
+        "end_s": 2632.97
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "S006",
+        "to": "S011",
+        "phase": "爬升",
+        "start_s": 2632.97,
+        "end_s": 2661.52586344401
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "S006",
+        "to": "S011",
+        "phase": "巡航",
+        "start_s": 2661.52586344401,
+        "end_s": 2945.678101703573
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "S006",
+        "to": "S011",
+        "phase": "下降",
+        "start_s": 2945.678101703573,
+        "end_s": 3021.0251378363855
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "S006",
+        "to": "S011",
+        "phase": "毫秒保守裕量",
+        "start_s": 3021.0251378363855,
+        "end_s": 3021.026
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "S011",
+        "to": "S011",
+        "phase": "基础交接",
+        "start_s": 3021.026,
+        "end_s": 3171.026
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "S011",
+        "to": "S011",
+        "phase": "逐箱交接",
+        "box": "S011-FOD-01",
+        "start_s": 3171.026,
+        "end_s": 3201.026
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "S011",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 3201.026,
+        "end_s": 3228.7799184570313
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "S011",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 3228.7799184570313,
+        "end_s": 3462.7887861546874
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "S011",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 3462.7887861546874,
+        "end_s": 3529.853488303125
+      },
+      {
+        "sortie": "Q2-013",
+        "from": "S011",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 3529.853488303125,
+        "end_s": 3529.854
+      },
+      {
+        "sortie": "Q2-014",
+        "from": "O01",
+        "to": "S014",
+        "phase": "爬升",
+        "start_s": 2312.828,
+        "end_s": 2467.577129231771
+      },
+      {
+        "sortie": "Q2-014",
+        "from": "O01",
+        "to": "S014",
+        "phase": "巡航",
+        "start_s": 2467.577129231771,
+        "end_s": 2828.8795492278873
+      },
+      {
+        "sortie": "Q2-014",
+        "from": "O01",
+        "to": "S014",
+        "phase": "下降",
+        "start_s": 2828.8795492278873,
+        "end_s": 2925.258504306012
+      },
+      {
+        "sortie": "Q2-014",
+        "from": "O01",
+        "to": "S014",
+        "phase": "毫秒保守裕量",
+        "start_s": 2925.258504306012,
+        "end_s": 2925.259
+      },
+      {
+        "sortie": "Q2-014",
+        "from": "S014",
+        "to": "S014",
+        "phase": "基础交接",
+        "start_s": 2925.259,
+        "end_s": 3075.259
+      },
+      {
+        "sortie": "Q2-014",
+        "from": "S014",
+        "to": "S014",
+        "phase": "逐箱交接",
+        "box": "S014-MED-01",
+        "start_s": 3075.259,
+        "end_s": 3105.259
+      },
+      {
+        "sortie": "Q2-014",
+        "from": "S014",
+        "to": "S014",
+        "phase": "逐箱交接",
+        "box": "S014-WAT-01",
+        "start_s": 3105.259,
+        "end_s": 3135.259
+      },
+      {
+        "sortie": "Q2-014",
+        "from": "S014",
+        "to": "S014",
+        "phase": "逐箱交接",
+        "box": "S014-FOD-01",
+        "start_s": 3135.259,
+        "end_s": 3165.259
+      },
+      {
+        "sortie": "Q2-014",
+        "from": "S014",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 3165.259,
+        "end_s": 3245.5747958984375
+      },
+      {
+        "sortie": "Q2-014",
+        "from": "S014",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 3245.5747958984375,
+        "end_s": 3606.877215894554
+      },
+      {
+        "sortie": "Q2-014",
+        "from": "S014",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 3606.877215894554,
+        "end_s": 3792.576170972679
+      },
+      {
+        "sortie": "Q2-014",
+        "from": "S014",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 3792.576170972679,
+        "end_s": 3792.577
+      },
+      {
+        "sortie": "Q2-015",
+        "from": "O01",
+        "to": "S010",
+        "phase": "爬升",
+        "start_s": 2864.542,
+        "end_s": 2967.1875118815105
+      },
+      {
+        "sortie": "Q2-015",
+        "from": "O01",
+        "to": "S010",
+        "phase": "巡航",
+        "start_s": 2967.1875118815105,
+        "end_s": 3286.165812298963
+      },
+      {
+        "sortie": "Q2-015",
+        "from": "O01",
+        "to": "S010",
+        "phase": "下降",
+        "start_s": 3286.165812298963,
+        "end_s": 3319.7804265567756
+      },
+      {
+        "sortie": "Q2-015",
+        "from": "O01",
+        "to": "S010",
+        "phase": "毫秒保守裕量",
+        "start_s": 3319.7804265567756,
+        "end_s": 3319.781
+      },
+      {
+        "sortie": "Q2-015",
+        "from": "S010",
+        "to": "S010",
+        "phase": "基础交接",
+        "start_s": 3319.781,
+        "end_s": 3469.781
+      },
+      {
+        "sortie": "Q2-015",
+        "from": "S010",
+        "to": "S010",
+        "phase": "逐箱交接",
+        "box": "S010-MED-01",
+        "start_s": 3469.781,
+        "end_s": 3499.781
+      },
+      {
+        "sortie": "Q2-015",
+        "from": "S010",
+        "to": "S010",
+        "phase": "逐箱交接",
+        "box": "S010-WAT-01",
+        "start_s": 3499.781,
+        "end_s": 3529.781
+      },
+      {
+        "sortie": "Q2-015",
+        "from": "S010",
+        "to": "S010",
+        "phase": "逐箱交接",
+        "box": "S010-FOD-01",
+        "start_s": 3529.781,
+        "end_s": 3559.781
+      },
+      {
+        "sortie": "Q2-015",
+        "from": "S010",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 3559.781,
+        "end_s": 3587.793178548177
+      },
+      {
+        "sortie": "Q2-015",
+        "from": "S010",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 3587.793178548177,
+        "end_s": 3906.7714789656293
+      },
+      {
+        "sortie": "Q2-015",
+        "from": "S010",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 3906.7714789656293,
+        "end_s": 4029.946093223442
+      },
+      {
+        "sortie": "Q2-015",
+        "from": "S010",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 4029.946093223442,
+        "end_s": 4029.947
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "O01",
+        "to": "S003",
+        "phase": "爬升",
+        "start_s": 3167.913,
+        "end_s": 3312.614379394531
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "O01",
+        "to": "S003",
+        "phase": "巡航",
+        "start_s": 3312.614379394531,
+        "end_s": 3917.933293375026
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "O01",
+        "to": "S003",
+        "phase": "下降",
+        "start_s": 3917.933293375026,
+        "end_s": 4007.2549486484636
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "O01",
+        "to": "S003",
+        "phase": "毫秒保守裕量",
+        "start_s": 4007.2549486484636,
+        "end_s": 4007.255
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "S003",
+        "to": "S003",
+        "phase": "基础交接",
+        "start_s": 4007.255,
+        "end_s": 4157.255
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "S003",
+        "to": "S003",
+        "phase": "逐箱交接",
+        "box": "S003-MED-01",
+        "start_s": 4157.255,
+        "end_s": 4187.255
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "S003",
+        "to": "S003",
+        "phase": "逐箱交接",
+        "box": "S003-WAT-03",
+        "start_s": 4187.255,
+        "end_s": 4217.255
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "S003",
+        "to": "S015",
+        "phase": "爬升",
+        "start_s": 4217.255,
+        "end_s": 4267.054621582031
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "S003",
+        "to": "S015",
+        "phase": "巡航",
+        "start_s": 4267.054621582031,
+        "end_s": 4485.134683370668
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "S003",
+        "to": "S015",
+        "phase": "下降",
+        "start_s": 4485.134683370668,
+        "end_s": 4490.494229269106
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "S003",
+        "to": "S015",
+        "phase": "毫秒保守裕量",
+        "start_s": 4490.494229269106,
+        "end_s": 4490.495
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "S015",
+        "to": "S015",
+        "phase": "基础交接",
+        "start_s": 4490.495,
+        "end_s": 4640.495
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "S015",
+        "to": "S015",
+        "phase": "逐箱交接",
+        "box": "S015-MED-01",
+        "start_s": 4640.495,
+        "end_s": 4670.495
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "S015",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 4670.495,
+        "end_s": 4702.928085123698
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "S015",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 4702.928085123698,
+        "end_s": 5203.741826142066
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "S015",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 5203.741826142066,
+        "end_s": 5381.381528290503
+      },
+      {
+        "sortie": "Q2-016",
+        "from": "S015",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 5381.381528290503,
+        "end_s": 5381.382
+      },
+      {
+        "sortie": "Q2-017",
+        "from": "O01",
+        "to": "S015",
+        "phase": "爬升",
+        "start_s": 3156.858,
+        "end_s": 3304.8910851236983
+      },
+      {
+        "sortie": "Q2-017",
+        "from": "O01",
+        "to": "S015",
+        "phase": "巡航",
+        "start_s": 3304.8910851236983,
+        "end_s": 3805.7048261420664
+      },
+      {
+        "sortie": "Q2-017",
+        "from": "O01",
+        "to": "S015",
+        "phase": "下降",
+        "start_s": 3805.7048261420664,
+        "end_s": 3844.624528290504
+      },
+      {
+        "sortie": "Q2-017",
+        "from": "O01",
+        "to": "S015",
+        "phase": "毫秒保守裕量",
+        "start_s": 3844.624528290504,
+        "end_s": 3844.625
+      },
+      {
+        "sortie": "Q2-017",
+        "from": "S015",
+        "to": "S015",
+        "phase": "基础交接",
+        "start_s": 3844.625,
+        "end_s": 3994.625
+      },
+      {
+        "sortie": "Q2-017",
+        "from": "S015",
+        "to": "S015",
+        "phase": "逐箱交接",
+        "box": "S015-FOD-01",
+        "start_s": 3994.625,
+        "end_s": 4024.625
+      },
+      {
+        "sortie": "Q2-017",
+        "from": "S015",
+        "to": "S015",
+        "phase": "逐箱交接",
+        "box": "S015-WAT-01",
+        "start_s": 4024.625,
+        "end_s": 4054.625
+      },
+      {
+        "sortie": "Q2-017",
+        "from": "S015",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 4054.625,
+        "end_s": 4087.0580851236978
+      },
+      {
+        "sortie": "Q2-017",
+        "from": "S015",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 4087.0580851236978,
+        "end_s": 4587.871826142065
+      },
+      {
+        "sortie": "Q2-017",
+        "from": "S015",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 4587.871826142065,
+        "end_s": 4765.511528290503
+      },
+      {
+        "sortie": "Q2-017",
+        "from": "S015",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 4765.511528290503,
+        "end_s": 4765.512
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "O01",
+        "to": "S007",
+        "phase": "爬升",
+        "start_s": 4178.02,
+        "end_s": 4331.729270019532
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "O01",
+        "to": "S007",
+        "phase": "巡航",
+        "start_s": 4331.729270019532,
+        "end_s": 4634.043761680932
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "O01",
+        "to": "S007",
+        "phase": "下降",
+        "start_s": 4634.043761680932,
+        "end_s": 4715.780349205346
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "O01",
+        "to": "S007",
+        "phase": "毫秒保守裕量",
+        "start_s": 4715.780349205346,
+        "end_s": 4715.781
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S007",
+        "to": "S007",
+        "phase": "基础交接",
+        "start_s": 4715.781,
+        "end_s": 4895.781
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S007",
+        "to": "S007",
+        "phase": "逐箱交接",
+        "box": "S007-HYG-01",
+        "start_s": 4895.781,
+        "end_s": 4931.781
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S007",
+        "to": "S003",
+        "phase": "爬升",
+        "start_s": 4931.781,
+        "end_s": 4956.660736328125
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S007",
+        "to": "S003",
+        "phase": "巡航",
+        "start_s": 4956.660736328125,
+        "end_s": 5138.973291339484
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S007",
+        "to": "S003",
+        "phase": "下降",
+        "start_s": 5138.973291339484,
+        "end_s": 5175.07296174964
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S007",
+        "to": "S003",
+        "phase": "毫秒保守裕量",
+        "start_s": 5175.07296174964,
+        "end_s": 5175.073
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S003",
+        "to": "S003",
+        "phase": "基础交接",
+        "start_s": 5175.073,
+        "end_s": 5355.073
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S003",
+        "to": "S003",
+        "phase": "逐箱交接",
+        "box": "S003-HYG-01",
+        "start_s": 5355.073,
+        "end_s": 5391.073
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S003",
+        "to": "S003",
+        "phase": "逐箱交接",
+        "box": "S003-FOD-02",
+        "start_s": 5391.073,
+        "end_s": 5427.073
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S003",
+        "to": "S003",
+        "phase": "逐箱交接",
+        "box": "S003-WAT-01",
+        "start_s": 5427.073,
+        "end_s": 5463.073
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S003",
+        "to": "S003",
+        "phase": "逐箱交接",
+        "box": "S003-WAT-04",
+        "start_s": 5463.073,
+        "end_s": 5499.073
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S003",
+        "to": "S003",
+        "phase": "逐箱交接",
+        "box": "S003-FOD-01",
+        "start_s": 5499.073,
+        "end_s": 5535.073
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S003",
+        "to": "S003",
+        "phase": "逐箱交接",
+        "box": "S003-WAT-02",
+        "start_s": 5535.073,
+        "end_s": 5571.073
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S003",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 5571.073,
+        "end_s": 5660.394655273438
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S003",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 5660.394655273438,
+        "end_s": 6144.649786457833
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S003",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 6144.649786457833,
+        "end_s": 6361.70185554963
+      },
+      {
+        "sortie": "Q2-018",
+        "from": "S003",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 6361.70185554963,
+        "end_s": 6361.702
+      },
+      {
+        "sortie": "Q2-019",
+        "from": "O01",
+        "to": "S008",
+        "phase": "爬升",
+        "start_s": 4182.577,
+        "end_s": 4264.3134440917975
+      },
+      {
+        "sortie": "Q2-019",
+        "from": "O01",
+        "to": "S008",
+        "phase": "巡航",
+        "start_s": 4264.3134440917975,
+        "end_s": 4802.920807344362
+      },
+      {
+        "sortie": "Q2-019",
+        "from": "O01",
+        "to": "S008",
+        "phase": "下降",
+        "start_s": 4802.920807344362,
+        "end_s": 4843.724540254519
+      },
+      {
+        "sortie": "Q2-019",
+        "from": "O01",
+        "to": "S008",
+        "phase": "毫秒保守裕量",
+        "start_s": 4843.724540254519,
+        "end_s": 4843.725
+      },
+      {
+        "sortie": "Q2-019",
+        "from": "S008",
+        "to": "S008",
+        "phase": "基础交接",
+        "start_s": 4843.725,
+        "end_s": 4993.725
+      },
+      {
+        "sortie": "Q2-019",
+        "from": "S008",
+        "to": "S008",
+        "phase": "逐箱交接",
+        "box": "S008-MED-01",
+        "start_s": 4993.725,
+        "end_s": 5023.725
+      },
+      {
+        "sortie": "Q2-019",
+        "from": "S008",
+        "to": "S008",
+        "phase": "逐箱交接",
+        "box": "S008-FOD-01",
+        "start_s": 5023.725,
+        "end_s": 5053.725
+      },
+      {
+        "sortie": "Q2-019",
+        "from": "S008",
+        "to": "S008",
+        "phase": "逐箱交接",
+        "box": "S008-WAT-02",
+        "start_s": 5053.725,
+        "end_s": 5083.725
+      },
+      {
+        "sortie": "Q2-019",
+        "from": "S008",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 5083.725,
+        "end_s": 5117.728110758464
+      },
+      {
+        "sortie": "Q2-019",
+        "from": "S008",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 5117.728110758464,
+        "end_s": 5656.335474011029
+      },
+      {
+        "sortie": "Q2-019",
+        "from": "S008",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 5656.335474011029,
+        "end_s": 5754.419206921185
+      },
+      {
+        "sortie": "Q2-019",
+        "from": "S008",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 5754.419206921185,
+        "end_s": 5754.42
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "O01",
+        "to": "S011",
+        "phase": "爬升",
+        "start_s": 4533.232,
+        "end_s": 4600.296702148437
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "O01",
+        "to": "S011",
+        "phase": "巡航",
+        "start_s": 4600.296702148437,
+        "end_s": 4787.503796306562
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "O01",
+        "to": "S011",
+        "phase": "下降",
+        "start_s": 4787.503796306562,
+        "end_s": 4829.134673992109
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "O01",
+        "to": "S011",
+        "phase": "毫秒保守裕量",
+        "start_s": 4829.134673992109,
+        "end_s": 4829.135
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S011",
+        "to": "S011",
+        "phase": "基础交接",
+        "start_s": 4829.135,
+        "end_s": 5009.135
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S011",
+        "to": "S011",
+        "phase": "逐箱交接",
+        "box": "S011-MED-01",
+        "start_s": 5009.135,
+        "end_s": 5045.135
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S011",
+        "to": "S011",
+        "phase": "逐箱交接",
+        "box": "S011-WAT-01",
+        "start_s": 5045.135,
+        "end_s": 5081.135
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S011",
+        "to": "S005",
+        "phase": "爬升",
+        "start_s": 5081.135,
+        "end_s": 5135.314567871094
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S011",
+        "to": "S005",
+        "phase": "巡航",
+        "start_s": 5135.314567871094,
+        "end_s": 5322.165474652877
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S011",
+        "to": "S005",
+        "phase": "下降",
+        "start_s": 5322.165474652877,
+        "end_s": 5398.439934491744
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S011",
+        "to": "S005",
+        "phase": "毫秒保守裕量",
+        "start_s": 5398.439934491744,
+        "end_s": 5398.44
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S005",
+        "to": "S005",
+        "phase": "基础交接",
+        "start_s": 5398.44,
+        "end_s": 5578.44
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S005",
+        "to": "S005",
+        "phase": "逐箱交接",
+        "box": "S005-FOD-01",
+        "start_s": 5578.44,
+        "end_s": 5614.44
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S005",
+        "to": "S005",
+        "phase": "逐箱交接",
+        "box": "S005-MED-01",
+        "start_s": 5614.44,
+        "end_s": 5650.44
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S005",
+        "to": "S005",
+        "phase": "逐箱交接",
+        "box": "S005-WAT-01",
+        "start_s": 5650.44,
+        "end_s": 5686.44
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S005",
+        "to": "S005",
+        "phase": "逐箱交接",
+        "box": "S005-HYG-01",
+        "start_s": 5686.44,
+        "end_s": 5722.44
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S005",
+        "to": "S005",
+        "phase": "逐箱交接",
+        "box": "S005-WAT-02",
+        "start_s": 5722.44,
+        "end_s": 5758.44
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S005",
+        "to": "S005",
+        "phase": "逐箱交接",
+        "box": "S005-WAT-03",
+        "start_s": 5758.44,
+        "end_s": 5794.44
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S005",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 5794.44,
+        "end_s": 5847.00435546875
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S005",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 5847.00435546875,
+        "end_s": 6199.043913409798
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S005",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 6199.043913409798,
+        "end_s": 6298.399357745735
+      },
+      {
+        "sortie": "Q2-020",
+        "from": "S005",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 6298.399357745735,
+        "end_s": 6298.4
+      },
+      {
+        "sortie": "Q2-021",
+        "from": "O01",
+        "to": "S008",
+        "phase": "爬升",
+        "start_s": 4389.947,
+        "end_s": 4471.683444091797
+      },
+      {
+        "sortie": "Q2-021",
+        "from": "O01",
+        "to": "S008",
+        "phase": "巡航",
+        "start_s": 4471.683444091797,
+        "end_s": 5010.290807344362
+      },
+      {
+        "sortie": "Q2-021",
+        "from": "O01",
+        "to": "S008",
+        "phase": "下降",
+        "start_s": 5010.290807344362,
+        "end_s": 5051.0945402545185
+      },
+      {
+        "sortie": "Q2-021",
+        "from": "O01",
+        "to": "S008",
+        "phase": "毫秒保守裕量",
+        "start_s": 5051.0945402545185,
+        "end_s": 5051.095
+      },
+      {
+        "sortie": "Q2-021",
+        "from": "S008",
+        "to": "S008",
+        "phase": "基础交接",
+        "start_s": 5051.095,
+        "end_s": 5201.095
+      },
+      {
+        "sortie": "Q2-021",
+        "from": "S008",
+        "to": "S008",
+        "phase": "逐箱交接",
+        "box": "S008-HYG-01",
+        "start_s": 5201.095,
+        "end_s": 5231.095
+      },
+      {
+        "sortie": "Q2-021",
+        "from": "S008",
+        "to": "S008",
+        "phase": "逐箱交接",
+        "box": "S008-WAT-01",
+        "start_s": 5231.095,
+        "end_s": 5261.095
+      },
+      {
+        "sortie": "Q2-021",
+        "from": "S008",
+        "to": "O01",
+        "phase": "爬升",
+        "start_s": 5261.095,
+        "end_s": 5295.098110758464
+      },
+      {
+        "sortie": "Q2-021",
+        "from": "S008",
+        "to": "O01",
+        "phase": "巡航",
+        "start_s": 5295.098110758464,
+        "end_s": 5833.705474011029
+      },
+      {
+        "sortie": "Q2-021",
+        "from": "S008",
+        "to": "O01",
+        "phase": "下降",
+        "start_s": 5833.705474011029,
+        "end_s": 5931.789206921185
+      },
+      {
+        "sortie": "Q2-021",
+        "from": "S008",
+        "to": "O01",
+        "phase": "毫秒保守裕量",
+        "start_s": 5931.789206921185,
+        "end_s": 5931.79
+      }
+    ],
+    "verification": {
+      "passed": true,
+      "unique_boxes": 80,
+      "mass_kg": 758,
+      "volume_m3": 2.011,
+      "hard_deadline_violations": 0,
+      "resource_conflicts": 0,
+      "max_energy_error_kwh": 0.0,
+      "total_flight_rounding_s": 0.025325106093532668
+    }
+  },
+  "schedule": [
+    {
+      "candidate": "0778dae839811744",
+      "start": 0,
+      "return": 1922828,
+      "deliveries": {
+        "S012-FOD-01": 1271344,
+        "S012-MED-01": 1211344,
+        "S012-WAT-01": 1241344
+      },
+      "unit": "U05",
+      "battery": "BAT-B-01",
+      "charge_end": 3782288,
+      "sortie": "Q2-001"
+    },
+    {
+      "candidate": "0b35025e45de1090",
+      "start": 0,
+      "return": 1267271,
+      "deliveries": {
+        "S006-FOD-01": 912399,
+        "S006-MED-01": 882399,
+        "S006-WAT-03": 942399
+      },
+      "unit": "U06",
+      "battery": "BAT-B-02",
+      "charge_end": 2464475,
+      "sortie": "Q2-002"
+    },
+    {
+      "candidate": "68f6905b5211dfbf",
+      "start": 0,
+      "return": 1727468,
+      "deliveries": {
+        "S007-MED-01": 1111374,
+        "S007-WAT-01": 1141374
+      },
+      "unit": "U01",
+      "battery": "BAT-A-01",
+      "charge_end": 2777913,
+      "sortie": "Q2-003"
+    },
+    {
+      "candidate": "8749f9503ee0df2a",
+      "start": 0,
+      "return": 1688640,
+      "deliveries": {
+        "S009-FOD-01": 1095910,
+        "S009-WAT-01": 1125910
+      },
+      "unit": "U02",
+      "battery": "BAT-A-02",
+      "charge_end": 2862143,
+      "sortie": "Q2-004"
+    },
+    {
+      "candidate": "8c31f9e8595743b2",
+      "start": 0,
+      "return": 1494176,
+      "deliveries": {
+        "S001-FOD-03": 1038273,
+        "S001-WAT-01": 1074273,
+        "S001-WAT-02": 1110273,
+        "S001-WAT-03": 1182273,
+        "S001-WAT-07": 1146273,
+        "S001-WAT-08": 1002273
+      },
+      "unit": "U07",
+      "battery": "BAT-C-01",
+      "charge_end": 3138866,
+      "sortie": "Q2-005"
+    },
+    {
+      "candidate": "920f9b55caa7c7ae",
+      "start": 0,
+      "return": 1727468,
+      "deliveries": {
+        "S007-FOD-01": 1141374,
+        "S007-WAT-02": 1111374
+      },
+      "unit": "U03",
+      "battery": "BAT-A-03",
+      "charge_end": 2796858,
+      "sortie": "Q2-006"
+    },
+    {
+      "candidate": "a70857771474fae8",
+      "start": 0,
+      "return": 2675579,
+      "deliveries": {
+        "S002-WAT-02": 1525903,
+        "S009-MED-01": 1125910,
+        "S013-MED-01": 2147030
+      },
+      "unit": "U04",
+      "battery": "BAT-A-04",
+      "charge_end": 4154901,
+      "sortie": "Q2-007"
+    },
+    {
+      "candidate": "d7f51c575af6ec49",
+      "start": 0,
+      "return": 1692176,
+      "deliveries": {
+        "S001-FOD-01": 1236273,
+        "S001-FOD-02": 1164273,
+        "S001-HYG-01": 1128273,
+        "S001-HYG-02": 1308273,
+        "S001-MED-01": 1092273,
+        "S001-MED-02": 1344273,
+        "S001-WAT-04": 1380273,
+        "S001-WAT-05": 1200273,
+        "S001-WAT-06": 1272273
+      },
+      "unit": "U08",
+      "battery": "BAT-C-02",
+      "charge_end": 3315690,
+      "sortie": "Q2-008"
+    },
+    {
+      "candidate": "cb69733493a61fd9",
+      "start": 1267271,
+      "return": 2474542,
+      "deliveries": {
+        "S006-HYG-01": 2149670,
+        "S006-WAT-01": 2119670
+      },
+      "unit": "U06",
+      "battery": "BAT-B-03",
+      "charge_end": 3634393,
+      "sortie": "Q2-009"
+    },
+    {
+      "candidate": "2af5d67e5d41a679",
+      "start": 1494176,
+      "return": 3668020,
+      "deliveries": {
+        "S002-FOD-01": 3047508,
+        "S002-FOD-02": 2975508,
+        "S002-HYG-01": 2903508,
+        "S002-MED-01": 2831508,
+        "S002-WAT-01": 2867508,
+        "S002-WAT-03": 3011508,
+        "S002-WAT-04": 2939508
+      },
+      "unit": "U07",
+      "battery": "BAT-C-03",
+      "charge_end": 6202450,
+      "sortie": "Q2-010"
+    },
+    {
+      "candidate": "f4d154bb28472d1d",
+      "start": 1688640,
+      "return": 3300804,
+      "deliveries": {
+        "S013-FOD-01": 2772255,
+        "S013-WAT-01": 2742255
+      },
+      "unit": "U02",
+      "battery": "BAT-A-05",
+      "charge_end": 4385956,
+      "sortie": "Q2-011"
+    },
+    {
+      "candidate": "58b350f9cc56209c",
+      "start": 1692176,
+      "return": 3993232,
+      "deliveries": {
+        "S004-FOD-01": 3275674,
+        "S004-HYG-01": 3131674,
+        "S004-MED-01": 3203674,
+        "S004-WAT-01": 3167674,
+        "S004-WAT-02": 3095674,
+        "S004-WAT-03": 3239674
+      },
+      "unit": "U08",
+      "battery": "BAT-C-04",
+      "charge_end": 6492965,
+      "sortie": "Q2-012"
+    },
+    {
+      "candidate": "ca607a84f0f2e89e",
+      "start": 1727468,
+      "return": 3529854,
+      "deliveries": {
+        "S006-WAT-02": 2632970,
+        "S011-FOD-01": 3201026
+      },
+      "unit": "U01",
+      "battery": "BAT-A-06",
+      "charge_end": 4595940,
+      "sortie": "Q2-013"
+    },
+    {
+      "candidate": "58637b13c93945c6",
+      "start": 1922828,
+      "return": 3792577,
+      "deliveries": {
+        "S014-FOD-01": 3165259,
+        "S014-MED-01": 3105259,
+        "S014-WAT-01": 3135259
+      },
+      "unit": "U05",
+      "battery": "BAT-B-04",
+      "charge_end": 5386704,
+      "sortie": "Q2-014"
+    },
+    {
+      "candidate": "6cb0366dc18b20a6",
+      "start": 2474542,
+      "return": 4029947,
+      "deliveries": {
+        "S010-FOD-01": 3559781,
+        "S010-MED-01": 3499781,
+        "S010-WAT-01": 3529781
+      },
+      "unit": "U06",
+      "battery": "BAT-B-02",
+      "charge_end": 5486675,
+      "sortie": "Q2-015"
+    },
+    {
+      "candidate": "c36888df3a3a6934",
+      "start": 2777913,
+      "return": 5381382,
+      "deliveries": {
+        "S003-MED-01": 4187255,
+        "S003-WAT-03": 4217255,
+        "S015-MED-01": 4670495
+      },
+      "unit": "U03",
+      "battery": "BAT-A-01",
+      "charge_end": 6833981,
+      "sortie": "Q2-016"
+    },
+    {
+      "candidate": "31a8131d8650c560",
+      "start": 2796858,
+      "return": 4765512,
+      "deliveries": {
+        "S015-FOD-01": 4024625,
+        "S015-WAT-01": 4054625
+      },
+      "unit": "U04",
+      "battery": "BAT-A-03",
+      "charge_end": 6004428,
+      "sortie": "Q2-017"
+    },
+    {
+      "candidate": "dd80ad26e4984bf0",
+      "start": 3668020,
+      "return": 6361702,
+      "deliveries": {
+        "S003-FOD-01": 5535073,
+        "S003-FOD-02": 5427073,
+        "S003-HYG-01": 5391073,
+        "S003-WAT-01": 5463073,
+        "S003-WAT-02": 5571073,
+        "S003-WAT-04": 5499073,
+        "S007-HYG-01": 4931781
+      },
+      "unit": "U07",
+      "battery": "BAT-C-01",
+      "charge_end": 8926382,
+      "sortie": "Q2-018"
+    },
+    {
+      "candidate": "4b7f575440af23b7",
+      "start": 3792577,
+      "return": 5754420,
+      "deliveries": {
+        "S008-FOD-01": 5053725,
+        "S008-MED-01": 5023725,
+        "S008-WAT-02": 5083725
+      },
+      "unit": "U05",
+      "battery": "BAT-B-01",
+      "charge_end": 7710343,
+      "sortie": "Q2-019"
+    },
+    {
+      "candidate": "1e3d860e74c0b125",
+      "start": 3993232,
+      "return": 6298400,
+      "deliveries": {
+        "S005-FOD-01": 5614440,
+        "S005-HYG-01": 5722440,
+        "S005-MED-01": 5650440,
+        "S005-WAT-01": 5686440,
+        "S005-WAT-02": 5758440,
+        "S005-WAT-03": 5794440,
+        "S011-MED-01": 5045135,
+        "S011-WAT-01": 5081135
+      },
+      "unit": "U08",
+      "battery": "BAT-C-02",
+      "charge_end": 8445289,
+      "sortie": "Q2-020"
+    },
+    {
+      "candidate": "0564f6e759c890b3",
+      "start": 4029947,
+      "return": 5931790,
+      "deliveries": {
+        "S008-HYG-01": 5231095,
+        "S008-WAT-01": 5261095
+      },
+      "unit": "U06",
+      "battery": "BAT-B-03",
+      "charge_end": 7795944,
+      "sortie": "Q2-021"
+    }
+  ],
+  "vector": {
+    "tardiness": 0,
+    "makespan": 6361702,
+    "energy": 63845040082,
+    "sorties": 21
+  },
+  "score": -0.05174036312804231,
+  "source": "pool_best",
+  "trace": [],
+  "seconds": 150.00182539992966,
+  "iterations": 179669,
+  "evaluations": 987536,
+  "feasible_evaluations": 427688,
+  "accepted_moves": 20530,
+  "operator_counts": {
+    "merge": 21284,
+    "move": 21501,
+    "swap": 23143,
+    "repartition": 22317,
+    "type": 36195,
+    "split": 21181,
+    "order": 34048
+  },
+  "operator_final_weights": {
+    "merge": 0.2,
+    "move": 0.2,
+    "swap": 0.2,
+    "repartition": 0.2,
+    "type": 0.2,
+    "split": 0.2,
+    "order": 0.4102849188000001
+  },
+  "generated_candidates": 71988,
+  "candidates": [
+    {
+      "id": "0778dae839811744",
+      "drone": "B",
+      "boxes": [
+        "S012-FOD-01",
+        "S012-MED-01",
+        "S012-WAT-01"
+      ],
+      "visits": [
+        "S012"
+      ],
+      "stops": [
+        [
+          "S012",
+          1031344,
+          1181344,
+          [
+            "S012-FOD-01",
+            "S012-MED-01",
+            "S012-WAT-01"
+          ]
+        ]
+      ],
+      "duration": 1922828,
+      "charge": 1859460,
+      "energy": 2.7525999542899324,
+      "mass": 25.0,
+      "volume": 0.067,
+      "flight_s": 1292.8268141491867,
+      "rounding_s": 0.001185850813271827
+    },
+    {
+      "id": "0b35025e45de1090",
+      "drone": "B",
+      "boxes": [
+        "S006-FOD-01",
+        "S006-MED-01",
+        "S006-WAT-03"
+      ],
+      "visits": [
+        "S006"
+      ],
+      "stops": [
+        [
+          "S006",
+          702399,
+          852399,
+          [
+            "S006-FOD-01",
+            "S006-MED-01",
+            "S006-WAT-03"
+          ]
+        ]
+      ],
+      "duration": 1267271,
+      "charge": 1197204,
+      "energy": 1.224316782124016,
+      "mass": 25.0,
+      "volume": 0.067,
+      "flight_s": 637.2700113681328,
+      "rounding_s": 0.0009886318671306071
+    },
+    {
+      "id": "68f6905b5211dfbf",
+      "drone": "A",
+      "boxes": [
+        "S007-MED-01",
+        "S007-WAT-01"
+      ],
+      "visits": [
+        "S007"
+      ],
+      "stops": [
+        [
+          "S007",
+          931374,
+          1081374,
+          [
+            "S007-MED-01",
+            "S007-WAT-01"
+          ]
+        ]
+      ],
+      "duration": 1727468,
+      "charge": 1050445,
+      "energy": 1.9053833002603837,
+      "mass": 17.0,
+      "volume": 0.039,
+      "flight_s": 1157.4668858917819,
+      "rounding_s": 0.001114108218189358
+    },
+    {
+      "id": "8749f9503ee0df2a",
+      "drone": "A",
+      "boxes": [
+        "S009-FOD-01",
+        "S009-WAT-01"
+      ],
+      "visits": [
+        "S009"
+      ],
+      "stops": [
+        [
+          "S009",
+          915910,
+          1065910,
+          [
+            "S009-FOD-01",
+            "S009-WAT-01"
+          ]
+        ]
+      ],
+      "duration": 1688640,
+      "charge": 1173503,
+      "energy": 2.331353700458349,
+      "mass": 22.0,
+      "volume": 0.055,
+      "flight_s": 1118.6396458883246,
+      "rounding_s": 0.00035411167550591927
+    },
+    {
+      "id": "8c31f9e8595743b2",
+      "drone": "C",
+      "boxes": [
+        "S001-FOD-03",
+        "S001-WAT-01",
+        "S001-WAT-02",
+        "S001-WAT-03",
+        "S001-WAT-07",
+        "S001-WAT-08"
+      ],
+      "visits": [
+        "S001"
+      ],
+      "stops": [
+        [
+          "S001",
+          786273,
+          966273,
+          [
+            "S001-FOD-03",
+            "S001-WAT-01",
+            "S001-WAT-02",
+            "S001-WAT-03",
+            "S001-WAT-07",
+            "S001-WAT-08"
+          ]
+        ]
+      ],
+      "duration": 1494176,
+      "charge": 1644690,
+      "energy": 2.995775804904669,
+      "mass": 78.0,
+      "volume": 0.163,
+      "flight_s": 618.1750458620229,
+      "rounding_s": 0.0009541379770325875
+    },
+    {
+      "id": "920f9b55caa7c7ae",
+      "drone": "A",
+      "boxes": [
+        "S007-FOD-01",
+        "S007-WAT-02"
+      ],
+      "visits": [
+        "S007"
+      ],
+      "stops": [
+        [
+          "S007",
+          931374,
+          1081374,
+          [
+            "S007-FOD-01",
+            "S007-WAT-02"
+          ]
+        ]
+      ],
+      "duration": 1727468,
+      "charge": 1069390,
+      "energy": 1.9709635056721377,
+      "mass": 22.0,
+      "volume": 0.055,
+      "flight_s": 1157.4668858917819,
+      "rounding_s": 0.001114108218189358
+    },
+    {
+      "id": "a70857771474fae8",
+      "drone": "A",
+      "boxes": [
+        "S002-WAT-02",
+        "S009-MED-01",
+        "S013-MED-01"
+      ],
+      "visits": [
+        "S009",
+        "S002",
+        "S013"
+      ],
+      "stops": [
+        [
+          "S009",
+          945910,
+          1095910,
+          [
+            "S009-MED-01"
+          ]
+        ],
+        [
+          "S002",
+          1345903,
+          1495903,
+          [
+            "S002-WAT-02"
+          ]
+        ],
+        [
+          "S013",
+          1967030,
+          2117030,
+          [
+            "S013-MED-01"
+          ]
+        ]
+      ],
+      "duration": 2675579,
+      "charge": 1479322,
+      "energy": 3.389959548938707,
+      "mass": 20.0,
+      "volume": 0.051000000000000004,
+      "flight_s": 1745.5767622896801,
+      "rounding_s": 0.002237710320059705
+    },
+    {
+      "id": "d7f51c575af6ec49",
+      "drone": "C",
+      "boxes": [
+        "S001-FOD-01",
+        "S001-FOD-02",
+        "S001-HYG-01",
+        "S001-HYG-02",
+        "S001-MED-01",
+        "S001-MED-02",
+        "S001-WAT-04",
+        "S001-WAT-05",
+        "S001-WAT-06"
+      ],
+      "visits": [
+        "S001"
+      ],
+      "stops": [
+        [
+          "S001",
+          876273,
+          1056273,
+          [
+            "S001-FOD-01",
+            "S001-FOD-02",
+            "S001-HYG-01",
+            "S001-HYG-02",
+            "S001-MED-01",
+            "S001-MED-02",
+            "S001-WAT-04",
+            "S001-WAT-05",
+            "S001-WAT-06"
+          ]
+        ]
+      ],
+      "duration": 1692176,
+      "charge": 1623514,
+      "energy": 2.9175880955868267,
+      "mass": 76.0,
+      "volume": 0.231,
+      "flight_s": 618.1750458620229,
+      "rounding_s": 0.0009541379770325875
+    },
+    {
+      "id": "cb69733493a61fd9",
+      "drone": "B",
+      "boxes": [
+        "S006-HYG-01",
+        "S006-WAT-01"
+      ],
+      "visits": [
+        "S006"
+      ],
+      "stops": [
+        [
+          "S006",
+          672399,
+          822399,
+          [
+            "S006-HYG-01",
+            "S006-WAT-01"
+          ]
+        ]
+      ],
+      "duration": 1207271,
+      "charge": 1159851,
+      "energy": 1.1381173257060366,
+      "mass": 20.0,
+      "volume": 0.062,
+      "flight_s": 637.2700113681328,
+      "rounding_s": 0.0009886318671306071
+    },
+    {
+      "id": "2af5d67e5d41a679",
+      "drone": "C",
+      "boxes": [
+        "S002-FOD-01",
+        "S002-FOD-02",
+        "S002-HYG-01",
+        "S002-MED-01",
+        "S002-WAT-01",
+        "S002-WAT-03",
+        "S002-WAT-04"
+      ],
+      "visits": [
+        "S002"
+      ],
+      "stops": [
+        [
+          "S002",
+          1121332,
+          1301332,
+          [
+            "S002-FOD-01",
+            "S002-FOD-02",
+            "S002-HYG-01",
+            "S002-MED-01",
+            "S002-WAT-01",
+            "S002-WAT-03",
+            "S002-WAT-04"
+          ]
+        ]
+      ],
+      "duration": 2173844,
+      "charge": 2534430,
+      "energy": 6.280970256414267,
+      "mass": 67.0,
+      "volume": 0.184,
+      "flight_s": 1231.8421660245544,
+      "rounding_s": 0.0018339754456064838
+    },
+    {
+      "id": "f4d154bb28472d1d",
+      "drone": "A",
+      "boxes": [
+        "S013-FOD-01",
+        "S013-WAT-01"
+      ],
+      "visits": [
+        "S013"
+      ],
+      "stops": [
+        [
+          "S013",
+          873615,
+          1023615,
+          [
+            "S013-FOD-01",
+            "S013-WAT-01"
+          ]
+        ]
+      ],
+      "duration": 1612164,
+      "charge": 1085152,
+      "energy": 2.0255255619357206,
+      "mass": 22.0,
+      "volume": 0.055,
+      "flight_s": 1042.1628172294845,
+      "rounding_s": 0.0011827705154701107
+    },
+    {
+      "id": "58b350f9cc56209c",
+      "drone": "C",
+      "boxes": [
+        "S004-FOD-01",
+        "S004-HYG-01",
+        "S004-MED-01",
+        "S004-WAT-01",
+        "S004-WAT-02",
+        "S004-WAT-03"
+      ],
+      "visits": [
+        "S004"
+      ],
+      "stops": [
+        [
+          "S004",
+          1187498,
+          1367498,
+          [
+            "S004-FOD-01",
+            "S004-HYG-01",
+            "S004-MED-01",
+            "S004-WAT-01",
+            "S004-WAT-02",
+            "S004-WAT-03"
+          ]
+        ]
+      ],
+      "duration": 2301056,
+      "charge": 2499733,
+      "energy": 6.152860129174583,
+      "mass": 59.0,
+      "volume": 0.156,
+      "flight_s": 1425.0547187724458,
+      "rounding_s": 0.001281227554045472
+    },
+    {
+      "id": "ca607a84f0f2e89e",
+      "drone": "A",
+      "boxes": [
+        "S006-WAT-02",
+        "S011-FOD-01"
+      ],
+      "visits": [
+        "S006",
+        "S011"
+      ],
+      "stops": [
+        [
+          "S006",
+          725502,
+          875502,
+          [
+            "S006-WAT-02"
+          ]
+        ],
+        [
+          "S011",
+          1293558,
+          1443558,
+          [
+            "S011-FOD-01"
+          ]
+        ]
+      ],
+      "duration": 1802386,
+      "charge": 1066086,
+      "energy": 1.9595258462387837,
+      "mass": 22.0,
+      "volume": 0.055,
+      "flight_s": 1082.384279362757,
+      "rounding_s": 0.0017206372428972827
+    },
+    {
+      "id": "58637b13c93945c6",
+      "drone": "B",
+      "boxes": [
+        "S014-FOD-01",
+        "S014-MED-01",
+        "S014-WAT-01"
+      ],
+      "visits": [
+        "S014"
+      ],
+      "stops": [
+        [
+          "S014",
+          1002431,
+          1152431,
+          [
+            "S014-FOD-01",
+            "S014-MED-01",
+            "S014-WAT-01"
+          ]
+        ]
+      ],
+      "duration": 1869749,
+      "charge": 1594127,
+      "energy": 2.1402909781417883,
+      "mass": 25.0,
+      "volume": 0.067,
+      "flight_s": 1239.7476752786915,
+      "rounding_s": 0.0013247213084923715
+    },
+    {
+      "id": "6cb0366dc18b20a6",
+      "drone": "B",
+      "boxes": [
+        "S010-FOD-01",
+        "S010-MED-01",
+        "S010-WAT-01"
+      ],
+      "visits": [
+        "S010"
+      ],
+      "stops": [
+        [
+          "S010",
+          845239,
+          995239,
+          [
+            "S010-FOD-01",
+            "S010-MED-01",
+            "S010-WAT-01"
+          ]
+        ]
+      ],
+      "duration": 1555405,
+      "charge": 1456728,
+      "energy": 1.823216564231414,
+      "mass": 25.0,
+      "volume": 0.067,
+      "flight_s": 925.4035197802173,
+      "rounding_s": 0.0014802197827066266
+    },
+    {
+      "id": "c36888df3a3a6934",
+      "drone": "A",
+      "boxes": [
+        "S003-MED-01",
+        "S003-WAT-03",
+        "S015-MED-01"
+      ],
+      "visits": [
+        "S003",
+        "S015"
+      ],
+      "stops": [
+        [
+          "S003",
+          1229342,
+          1379342,
+          [
+            "S003-MED-01",
+            "S003-WAT-03"
+          ]
+        ],
+        [
+          "S015",
+          1712582,
+          1862582,
+          [
+            "S015-MED-01"
+          ]
+        ]
+      ],
+      "duration": 2603469,
+      "charge": 1452599,
+      "energy": 3.2974580584469555,
+      "mass": 20.0,
+      "volume": 0.051000000000000004,
+      "flight_s": 1823.4677062080732,
+      "rounding_s": 0.0012937919268551923
+    },
+    {
+      "id": "31a8131d8650c560",
+      "drone": "A",
+      "boxes": [
+        "S015-FOD-01",
+        "S015-WAT-01"
+      ],
+      "visits": [
+        "S015"
+      ],
+      "stops": [
+        [
+          "S015",
+          1047767,
+          1197767,
+          [
+            "S015-FOD-01",
+            "S015-WAT-01"
+          ]
+        ]
+      ],
+      "duration": 1968654,
+      "charge": 1238916,
+      "energy": 2.5577839515021354,
+      "mass": 22.0,
+      "volume": 0.055,
+      "flight_s": 1398.6530565810067,
+      "rounding_s": 0.0009434189933017478
+    },
+    {
+      "id": "dd80ad26e4984bf0",
+      "drone": "C",
+      "boxes": [
+        "S003-FOD-01",
+        "S003-FOD-02",
+        "S003-HYG-01",
+        "S003-WAT-01",
+        "S003-WAT-02",
+        "S003-WAT-04",
+        "S007-HYG-01"
+      ],
+      "visits": [
+        "S007",
+        "S003"
+      ],
+      "stops": [
+        [
+          "S007",
+          1047761,
+          1227761,
+          [
+            "S007-HYG-01"
+          ]
+        ],
+        [
+          "S003",
+          1507053,
+          1687053,
+          [
+            "S003-FOD-01",
+            "S003-FOD-02",
+            "S003-HYG-01",
+            "S003-WAT-01",
+            "S003-WAT-02",
+            "S003-WAT-04"
+          ]
+        ]
+      ],
+      "duration": 2693682,
+      "charge": 2564680,
+      "energy": 6.39266312398181,
+      "mass": 70.0,
+      "volume": 0.20700000000000002,
+      "flight_s": 1571.6811665046162,
+      "rounding_s": 0.0008334953836310888
+    },
+    {
+      "id": "4b7f575440af23b7",
+      "drone": "B",
+      "boxes": [
+        "S008-FOD-01",
+        "S008-MED-01",
+        "S008-WAT-02"
+      ],
+      "visits": [
+        "S008"
+      ],
+      "stops": [
+        [
+          "S008",
+          1051148,
+          1201148,
+          [
+            "S008-FOD-01",
+            "S008-MED-01",
+            "S008-WAT-02"
+          ]
+        ]
+      ],
+      "duration": 1961843,
+      "charge": 1955923,
+      "energy": 2.9752068745422333,
+      "mass": 25.0,
+      "volume": 0.067,
+      "flight_s": 1331.841747175703,
+      "rounding_s": 0.0012528242971256986
+    },
+    {
+      "id": "1e3d860e74c0b125",
+      "drone": "C",
+      "boxes": [
+        "S005-FOD-01",
+        "S005-HYG-01",
+        "S005-MED-01",
+        "S005-WAT-01",
+        "S005-WAT-02",
+        "S005-WAT-03",
+        "S011-MED-01",
+        "S011-WAT-01"
+      ],
+      "visits": [
+        "S011",
+        "S005"
+      ],
+      "stops": [
+        [
+          "S011",
+          835903,
+          1015903,
+          [
+            "S011-MED-01",
+            "S011-WAT-01"
+          ]
+        ],
+        [
+          "S005",
+          1405208,
+          1585208,
+          [
+            "S005-FOD-01",
+            "S005-HYG-01",
+            "S005-MED-01",
+            "S005-WAT-01",
+            "S005-WAT-02",
+            "S005-WAT-03"
+          ]
+        ]
+      ],
+      "duration": 2305168,
+      "charge": 2146889,
+      "energy": 4.850049514673822,
+      "mass": 76.0,
+      "volume": 0.195,
+      "flight_s": 1117.1669662295876,
+      "rounding_s": 0.001033770412504964
+    },
+    {
+      "id": "0564f6e759c890b3",
+      "drone": "B",
+      "boxes": [
+        "S008-HYG-01",
+        "S008-WAT-01"
+      ],
+      "visits": [
+        "S008"
+      ],
+      "stops": [
+        [
+          "S008",
+          1021148,
+          1171148,
+          [
+            "S008-HYG-01",
+            "S008-WAT-01"
+          ]
+        ]
+      ],
+      "duration": 1901843,
+      "charge": 1864154,
+      "energy": 2.7634312052333714,
+      "mass": 20.0,
+      "volume": 0.062,
+      "flight_s": 1331.841747175703,
+      "rounding_s": 0.0012528242971256986
+    }
+  ],
+  "spec": {
+    "weights": {
+      "tardiness": 3.0,
+      "makespan": 1.5,
+      "energy": 1.0,
+      "sorties": 0.5
+    },
+    "integer_weights": {
+      "tardiness": 6,
+      "makespan": 3,
+      "energy": 2,
+      "sorties": 1
+    },
+    "alpha": {
+      "tardiness": 0.5,
+      "makespan": 0.25,
+      "energy": 0.16666666666666666,
+      "sorties": 0.08333333333333333
+    },
+    "lower": {
+      "tardiness": 0,
+      "makespan": 7528576,
+      "energy": 62634022492,
+      "sorties": 19
+    },
+    "upper": {
+      "tardiness": 429204104,
+      "makespan": 11453859,
+      "energy": 85864101380,
+      "sorties": 31
+    },
+    "span": {
+      "tardiness": 429204104,
+      "makespan": 3925283,
+      "energy": 23230078888,
+      "sorties": 12
+    },
+    "precision": 1000000,
+    "normalization_source": "Four archived lexicographic solutions, fixed before weighted search",
+    "score_quantization_absolute_error_bound": 1e-06
+  },
+  "source_file": "D:\\xyq\\数模\\D题\\建模\\outputs\\q2_weighted\\tables\\results.json",
+  "source_sha256": "871d662073e9277d313fb4dc0238c9a507254555bbdb805173be0f0e23ce5084",
+  "input_sha256": {
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\调度中心与服务区.xlsx": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\运输无人机数据.xlsx": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+    "D:\\xyq\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\数字高程模型数据（DEM）\\镇龙乡及周边30米DEM.tif": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+    "D:\\xyq\\数模\\D题\\结果提交模板.xlsx": "16f521f29a7103c4ff7c3709ce1696bb9fffa18ce741895e45b7bc7afaf3320a"
+  },
+  "parameters": {
+    "seconds": 150.0,
+    "seeds": "0,1,2",
+    "input": "outputs/q2_weighted/tables/results.json",
+    "output": "outputs/q2_improved/dynamic_experiment.json",
+    "additional": "outputs/q2_improved/pool_experiment.json"
+  },
+  "additional_source_sha256": "4cdda9f91473cb8588f615d8eed21ba871f9af3d25f36911529ec0e13e9edb68",
+  "code_sha256": {
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\dynamic_search.py": "af19c657687e9bd60b6406bb2b6b41a095df6420f64b8d56014ef2f11a71633f",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\fast_schedule.py": "be9d3ea337fa7afea7737cd87747759ac3df3628ac9d9dde985fadfca1ea0de2",
+    "D:\\xyq\\数模\\D题\\建模\\run_q2_improve.py": "c6a3ed2a268fc9f162e67c83fc5217b346ca3e43e6d75262e4f262caf545e3b3"
+  }
+}

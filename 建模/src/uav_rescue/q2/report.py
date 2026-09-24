@@ -10,12 +10,16 @@ import numpy as np
 
 def build_sheets(payload,data):
     main=payload['main'];rows=main['sorties'];deliveries=main['deliveries'];sheets=[]
+    from .alns import LABELS
+    LABELS = dict(LABELS, **payload.get('scheme_labels', {}))
+    primary_name = payload.get('primary_scheme', 'tardiness')
+    cases=payload.get('schemes',{'tardiness':main,'makespan':payload['comparison']})
     def sheet(name,headers,values,widths=None):
         widths=widths or [max(16,min(28,len(h)*2+2)) for h in headers]
         formats={str(i):'0.000' for i in range(len(headers)) if any(isinstance(r[i],float) for r in values)}
         sheets.append({'name':name,'headers':headers,'rows':values,'widths':widths,'formats':formats})
     sheet('Q2_运输架次',data.template_headers['Q2_运输架次'],[
-        [r['sortie'],r['unit'],r['drone'],r['battery'],r['start_s'],' → '.join(r['visits']),r['return_s'],r['energy_kwh']] for r in rows],
+        [r['sortie'],r['unit'],r['drone'],r['battery'],r['start_s'],' → '.join(['O01',*r['visits'],'O01']),r['return_s'],r['energy_kwh']] for r in rows],
         [18,16,14,20,21,46,24,23])
     sheets[-1]['formats']['7']='0.000000'
     sheet('Q2_逐箱交付',data.template_headers['Q2_逐箱交付'],[
@@ -39,25 +43,37 @@ def build_sheets(payload,data):
     sheets[-1]['formats']['13']='0.000000'
     sheet('目标优先级对比',['方案','加权逾期（系数·s）','最后返航s','最后返航h','能耗kWh','架次','多点架次','按期箱数','A型架次','B型架次','C型架次'],[
         [name,r['summary']['weighted_tardiness_s'],r['summary']['makespan_s'],r['summary']['makespan_s']/3600,r['summary']['energy_kwh'],r['summary']['sorties'],r['summary']['multi_stop_sorties'],r['summary']['on_time_boxes'],*[r['summary']['type_counts'].get(g,0) for g in 'ABC']]
-        for name,r in [('初始可行调度',payload['initial']),('及时性→完工→能耗→架次',main),('完工→及时性→能耗→架次',payload['comparison'])]],
+        for name,r in [('初始可行调度',payload['initial']),*[(LABELS[k],v) for k,v in cases.items()]]],
         [36,28,22,22,22,14,18,18,18,18,18])
     sheets[-1]['formats']['4']='0.000000'
+    sheet('对照运输安排',['方案','架次','无人机','机型','电池','准备开始s','访问路线','返航s','能耗kWh','质量kg','体积m³','SOC','充满时刻s','货箱列表'],[
+        [LABELS[name],r['sortie'],r['unit'],r['drone'],r['battery'],r['start_s'],' → '.join(['O01',*r['visits'],'O01']),r['return_s'],r['energy_kwh'],r['mass_kg'],r['volume_m3'],r['soc'],r['charge_end_s'],'; '.join(r['boxes'])]
+        for name,result in cases.items() if name!=primary_name for r in result['sorties']],
+        [24,18,14,12,20,20,46,20,20,18,18,18,22,88])
+    sheets[-1]['formats'].update({'8':'0.000000','11':'0.000%'})
+    sheet('对照逐箱交付',['方案','货箱','服务区','架次','交箱次序','完成时刻s','期望时刻s','硬截止s','逾期s'],[
+        [LABELS[name],r['box'],r['service'],r['sortie'],r['rank'],r['completion_s'],r['expected_s'],r['hard_s'],r['lateness_s']]
+        for name,result in cases.items() if name!=primary_name for r in result['deliveries']])
+    sheet('硬截止裕量',['货箱','服务区','身份','有效硬截止s','交付完成s','裕量s','是否满足'],[
+        [r['box'],r['service'],'医疗+首批' if '-MED-' in r['box'] and r['first'] else '医疗' if '-MED-' in r['box'] else '首批',
+         r['hard_s'],r['completion_s'],r['hard_s']-r['completion_s'],'是' if r['completion_s']<=r['hard_s'] else '否']
+        for r in sorted((r for r in deliveries if r['hard_s'] is not None),key=lambda r:(r['hard_s']-r['completion_s'],r['box']))])
     phase_labels={'initial_fixed_routes':'固定组批初调','initial':'初始全池调度','search':'全池搜索','final':'主方案收尾','comparison':'目标对照'}
-    metric_labels={'tardiness':'加权逾期','makespan':'最后返航','energy':'能耗','sorties':'架次'}
+    metric_labels={'tardiness':'加权逾期','makespan':'最后返航','energy':'能耗','sorties':'架次','weighted':'归一化加权评分'}
     status_labels={'OPTIMAL_BY_ZERO_LOWER_BOUND':'已达零逾期下界','OPTIMAL':'当前模型已证最优','FEASIBLE':'可行，未证最优','UNKNOWN':'限时未取得新解','INFEASIBLE':'当前模型不可行'}
-    sheet('求解状态',['阶段','种子','轮次','目标','状态','候选数','当前值（整数单位）','求解器界限（整数单位）','已证最优','用时s'],[
-        ['局部组批重排' if group.get('restricted_neighborhood') else phase_labels.get(group['phase'],group['phase']),stage.get('seed'),group.get('round'),metric_labels.get(stage.get('stage'),stage.get('stage')),status_labels.get(stage['status'],stage['status']),stage.get('pool_size'),stage.get('value'),stage.get('bound'),'是' if stage.get('proven') else '否',stage.get('seconds')]
+    sheet('求解状态',['方案','阶段','种子','轮次','目标','状态','候选数','当前值（整数单位）','求解器界限（整数单位）','本层条件最优','整个前缀已证最优','用时s'],[
+        [LABELS.get(group.get('scheme'),''),'局部组批重排' if group.get('restricted_neighborhood') else phase_labels.get(group['phase'],group['phase']),stage.get('seed'),group.get('round'),metric_labels.get(stage.get('stage'),stage.get('stage')),status_labels.get(stage['status'],stage['status']),stage.get('pool_size'),stage.get('value'),stage.get('bound'),'是' if stage.get('proven') else '否','是' if stage.get('lex_prefix_proven') else '否',stage.get('seconds')]
         for group in payload['trace'] for stage in group['stages']],
-        [18,12,12,18,22,15,30,32,18,20])
-    sheet('核验结果',['检查项','主方案','对照方案'],[
-        ['完整交付箱数',main['verification']['unique_boxes'],payload['comparison']['verification']['unique_boxes']],
-        ['硬截止违反数',0,0],['无人机与电池冲突数',0,0],['总质量kg',main['verification']['mass_kg'],payload['comparison']['verification']['mass_kg']],
-        ['总体积m³',main['verification']['volume_m3'],payload['comparison']['verification']['volume_m3']],
-        ['最低返航SOC',main['summary']['min_soc'],payload['comparison']['summary']['min_soc']],
-        ['原始附件、问题一结果和论文未修改','通过','通过']],[50,28,28])
-    sheets[-1]['cell_formats']={'B2:C4':'0','B7:C7':'0.000%'}
+        [24,22,12,12,18,27,15,30,32,20,22,20])
+    sheet('核验结果',['检查项',*[LABELS[k] for k in cases]],[
+        [label,*[r['verification'][field] for r in cases.values()]] for label,field in [
+            ('完整交付箱数','unique_boxes'),('硬截止违反数','hard_deadline_violations'),('无人机与电池冲突数','resource_conflicts'),('总质量kg','mass_kg'),('总体积m³','volume_m3')]],
+        [36]+[24]*len(cases))
+    sheet('方案来源',['方案','目标顺序','最好解来源','候选池数量','说明'],[
+        [LABELS[k],' → '.join(metric_labels[m] for m in payload.get('orders',{}).get(k,[])),payload.get('provenance',{}).get(k,''),payload['pool_size'],'收尾状态仅对应当次模型；跨目标搜索可更新此方案，不将其他运行的状态当作本方案最优证书。'] for k in cases],
+        [24,50,35,18,90])
     sheet('口径与来源',['事项','说明'],[
-        ['主目标','词典序：加权逾期→最后返航→能耗→架次；医疗和首批截止始终为硬约束。'],
+        ['主目标',payload.get('objective_description','词典序：加权逾期→最后返航→能耗→架次；医疗和首批截止始终为硬约束。')],
         ['开始时刻','准备开始；无人机和满电电池均从此时占用。准备300秒，再按每箱30秒装载。'],
         ['交付时刻','基础交接后逐箱连续交接；箱序参与优化，最后一箱交完后才能飞往下一站。'],
         ['电池周转','返航立即按SOC分段充电。下一任务准备开始前充满。同型共享，跨型禁用，无额外充电器上限。'],
@@ -68,10 +84,22 @@ def build_sheets(payload,data):
         ['刷新方式','本表为外部优化程序的结果快照。修改数据或配置后运行run_q2.py，Excel不会自行重新求解。'],
         ['能源解释','水平能耗=可用能量×距离/等效航程；爬升能耗=势能/效率。沿用问题一，并非题面逐项展开的原公式。'],
         ['原始来源','数据/无人机应急物资运输基础数据：节点、逐箱需求、运输机参数及库存；完整30米DEM；原结果模板。']],[26,116])
+    if 'map' in payload:
+        nodes={n['id']:n for n in payload['nodes']};vertices=[]
+        for r in main['legs']:
+            a,b=r['from'],r['to'];pa,pb=payload['map']['xy'][a],payload['map']['xy'][b]
+            za=nodes[a]['elevation']+(0 if a=='O01' else 30);zb=nodes[b]['elevation']+(0 if b=='O01' else 30)
+            points=[(*pa,za),(*pa,r['cruise_altitude_m']),(*pb,r['cruise_altitude_m']),(*pb,zb)]
+            for index,(x,y,z) in enumerate(points,1):vertices.append([r['sortie'],r['segment'],index,a,b,x,y,z])
+        sheet('航迹坐标',['架次','航段','顶点次序','起点','终点','东向km','北向km','海拔m'],vertices,[18,14,16,16,16,20,20,20])
+        sheets[-1]['formats'].update({'5':'0.000000','6':'0.000000','7':'0.000'})
     return sheets
 
 
 def make_figures(payload,font_path,output):
+    if 'schemes' in payload:
+        from .figures import draw_all
+        return draw_all(payload,font_path,output)
     font=FontProperties(fname=str(font_path))
     plt.rcParams.update({'font.family':font.get_name(),'axes.unicode_minus':False,'font.size':10,'savefig.bbox':'tight'})
     from matplotlib import font_manager
@@ -122,6 +150,9 @@ def make_figures(payload,font_path,output):
 
 
 def write_report(payload,path):
+    if 'schemes' in payload:
+        from .narrative import write_report as write_new_report
+        return write_new_report(payload,path)
     main=payload['main'];m=main['summary'];c=payload['comparison']['summary'];initial=payload['initial']['summary']
     final=next(t for t in payload['trace'] if t['phase']=='final')
     statuses='；'.join(f"{s.get('stage')}：{s['status']}" for s in final['stages'])

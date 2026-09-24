@@ -1,0 +1,57 @@
+{
+  "passed": true,
+  "mode": "audited_source_results",
+  "generated_utc": "2026-09-23T15:45:00.524310+00:00",
+  "checks": {
+    "passed": true,
+    "boxes": 80,
+    "sorties": 18,
+    "services": 15,
+    "capacity_points": 405,
+    "feasibility_cells": 135,
+    "main_objective_cases": 3,
+    "all_objective_orders": 6,
+    "optimizer_invoked": false
+  },
+  "inputs_sha256": {
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\调度中心与服务区.xlsx": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\运输无人机数据.xlsx": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+    "D:\\xyq\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\数字高程模型数据（DEM）\\镇龙乡及周边30米DEM.tif": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+    "D:\\xyq\\数模\\D题\\结果提交模板.xlsx": "16f521f29a7103c4ff7c3709ce1696bb9fffa18ce741895e45b7bc7afaf3320a",
+    "D:\\xyq\\数模\\D题\\建模\\outputs\\q1_sensitivity_05_45\\tables\\results.json": "e3cf78da3f3cdf502c26939c223cef3bfad6aac4512ae8b2c4357a47670df322",
+    "D:\\xyq\\数模\\D题\\建模\\outputs\\q1_objective_audit\\results.json": "3eb6f71b3d6139b84f7d54e00849f423035e72bd15cf287cd166cb8e242e9556"
+  },
+  "code_sha256": {
+    "D:\\xyq\\数模\\D题\\建模\\scripts\\plot_q1_core.py": "e3a4cd454af75c1aa45075038aa18b20f9e551946ed4a87e702aa06493cd4e03",
+    "D:\\xyq\\数模\\D题\\建模\\scripts\\q1_figure_data.py": "a2523729459035127454a2b899bec075d9b63170d36c8037f69f35331c284183"
+  },
+  "plot_data_sha256": "65ece99f64b551dbdc63ef4264de3bde4c78f71224cf12526c97b8cde33a8614",
+  "font": "D:\\xyq\\数模\\D题\\写作\\fonts\\SimSun.ttf",
+  "font_sha256": "ca4da082cd970f0c8abaa79f213ddcbc475f7b5afabcb81b385998f9ebfbb53f",
+  "dpi": 300,
+  "protected_files_unchanged": 285,
+  "csv_roundtrip_checked": true,
+  "optimizer_invoked": false,
+  "dependencies": {
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2",
+    "Pillow": "12.3.0"
+  },
+  "outputs_sha256": {
+    "figures\\01_各服务区货箱组批方案.pdf": "b5bff74396253c56f75c08b4b62e65fd38dd53171c9b23433dbdd95bf3c825df",
+    "figures\\01_各服务区货箱组批方案.png": "8ba99f1782ccae1ff769e91e9a9fc1df1987d076dc21b882ac6e6cdbebfd8b8e",
+    "figures\\02_批次装载与返航安全.pdf": "2b8d4273ec990b420bb4afe236b1d0113819efc9791b930bc0965658d18e0f16",
+    "figures\\02_批次装载与返航安全.png": "c0437eacda9231395dba2a9fae808675801d12075034eead7afa447d6c1cc689",
+    "figures\\03_各服务区组批统计.pdf": "e880794056366ffa3caf6c9046ad9cb3a161886fafc7388d9285b5a04927a74c",
+    "figures\\03_各服务区组批统计.png": "14973a76699d67ab346d51138e10b7d706ac1056ee4850ecabcf6e26a44fc8a4",
+    "figures\\04_目标优先级权衡.pdf": "4db42eed76bcc603fb3fa205adc01d18d915299b64cfb0e83b4eef354e9f4f45",
+    "figures\\04_目标优先级权衡.png": "fe8ccfb4aff3787de2c191941d53ae9469dd0cce9f6c66ce23df4835d591a441",
+    "figures\\05_安全余量与最大安全载荷.pdf": "c3b45e6ef67e6282e3f1bff822fbb5d85da87a1754a0a1386bb03f59c4754119",
+    "figures\\05_安全余量与最大安全载荷.png": "9828ea536c01aa591713fb23cb022dac30ea0703771234ac479b69df7b5fe4cb",
+    "figures\\06_安全余量与组批结果.pdf": "5ce0b1a7e0ec784601892c243843d7d97d7cce4b7f4aa537f90d2f8c0affb2d7",
+    "figures\\06_安全余量与组批结果.png": "c4bcfc1b37064ad6aeddf91edd6c9ae49f8fe06281d47fc80ce63ca34eb41aa9",
+    "figures\\07_安全余量与服务区可行性.pdf": "e24a6ff1038b88d18d5f1106225a0dfe8076953723e21b3b6697eb8b2528787b",
+    "figures\\07_安全余量与服务区可行性.png": "403f4ccc83021fe9369ec47ed6f161203618dbfac6b17225b73e468762fe2502"
+  }
+}

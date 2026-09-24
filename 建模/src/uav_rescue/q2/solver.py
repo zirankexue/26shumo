@@ -4,14 +4,25 @@ from ortools.sat.python import cp_model
 from .routes import ticks, objective
 
 
-def solve_pool(pool, data, order, seconds, seed, incumbent=None, workers=1):
+def solve_pool(pool, data, order, seconds, seed, incumbent=None, workers=1,
+               *, improve_only=True, change_candidates=(), weighted_spec=None):
     """Exact CP-SAT formulation within a fixed route pool; bounded lexicographic search."""
     started=time.perf_counter()
     pool=dict(sorted(pool.items()))
+    def values(schedule):
+        result=objective(schedule,pool,data)
+        if weighted_spec is not None:
+            from .weighted import integer_score
+            result['weighted']=integer_score(result,weighted_spec)
+        return result
     model=cp_model.CpModel()
     # Every solution uses <= number of boxes candidates. Serial execution gives a safe horizon.
+    if not pool:
+        return None, [{'status': 'EMPTY_POOL', 'proven': False}]
     horizon=len(data.base.boxes)*max(p.duration+p.charge for p in pool.values())
-    if incumbent:
+    changed = set(change_candidates)
+    fallback = incumbent if incumbent and improve_only and not changed else None
+    if incumbent and improve_only:
         obj=objective(incumbent,pool,data)
         # If tardiness is zero, no box may exceed its expected time.
         if obj['tardiness']==0 and order[0]=='tardiness':
@@ -56,8 +67,10 @@ def solve_pool(pool, data, order, seconds, seed, incumbent=None, workers=1):
                 model.add(delivered[b]==s+base_end+(rank+1)*box_time).only_enforce_if(x)
             if slots:model.add_no_overlap(slots)
     for b,choices in by_box.items():
-        if not choices:return incumbent,[{'status':'UNCOVERED_BOX','box':b}]
+        if not choices:return fallback,[{'status':'UNCOVERED_BOX','box':b,'proven':False}]
         model.add_exactly_one(choices)
+    if changed:
+        model.add(sum(select[pid] for pid in changed if pid in select) <= len(changed)-1)
     for g in data.units:
         model.add_cumulative(drone_intervals[g],[1]*len(drone_intervals[g]),len(data.units[g]))
         model.add_cumulative(battery_intervals[g],[1]*len(battery_intervals[g]),data.battery_count[g])
@@ -69,7 +82,15 @@ def solve_pool(pool, data, order, seconds, seed, incumbent=None, workers=1):
         model.add(makespan>=min(p.duration for p in pool.values() if b in p.boxes))
     metrics={'tardiness':sum(t.priority*late[b] for b,t in data.timing.items()),'makespan':makespan,
              'energy':sum(p.energy_int*select[pid] for pid,p in pool.items()),'sorties':sum(select.values())}
-    if incumbent:model.add(metrics[order[0]]<=objective(incumbent,pool,data)[order[0]])
+    if weighted_spec is not None:
+        from .weighted import add_objective
+        energy_bound=len(data.base.boxes)*max(p.energy_int for p in pool.values())
+        energy_total=model.new_int_var(0,energy_bound,'energy_total')
+        model.add(energy_total==metrics['energy']);metrics['energy']=energy_total
+        metrics['weighted']=add_objective(model,metrics,{
+            'tardiness':sum(t.priority for t in data.timing.values())*horizon,
+            'makespan':horizon,'energy':energy_bound,'sorties':len(data.base.boxes)},weighted_spec)
+    if incumbent and improve_only:model.add(metrics[order[0]]<=values(incumbent)[order[0]])
 
     def hints(schedule):
         model.clear_hints()
@@ -89,16 +110,16 @@ def solve_pool(pool, data, order, seconds, seed, incumbent=None, workers=1):
                 model.add_hint(delivered[b],c);model.add_hint(late[b],max(0,c-ticks(data.timing[b].expected)))
         if known:model.add_hint(makespan,max(a['return'] for a in known.values()))
 
-    trace=[];best=incumbent
+    trace=[];best=fallback;prefix_proven=True
     for stage,metric in enumerate(order):
         remaining=seconds-(time.perf_counter()-started)
         if remaining<=0.01:break
         if metric=='tardiness' and best and objective(best,pool,data)['tardiness']==0:
             model.add(metrics[metric]==0)
-            trace.append({'stage':metric,'status':'OPTIMAL_BY_ZERO_LOWER_BOUND','pool_size':len(pool),'seconds':0.0,'bound':0,'seed':seed,'value':0,'proven':True})
+            trace.append({'stage':metric,'status':'OPTIMAL_BY_ZERO_LOWER_BOUND','pool_size':len(pool),'seconds':0.0,'bound':0,'seed':seed,'value':0,'proven':True,'prefix_proven':prefix_proven,'lex_prefix_proven':prefix_proven})
             continue
-        hints(best);model.minimize(metrics[metric])
-        if best:model.add(metrics[metric]<=objective(best,pool,data)[metric])
+        hints(best or incumbent);model.minimize(metrics[metric])
+        if best:model.add(metrics[metric]<=values(best)[metric])
         solver=cp_model.CpSolver()
         solver.parameters.max_time_in_seconds=max(0.01,remaining/(len(order)-stage))
         solver.parameters.num_search_workers=workers
@@ -112,22 +133,25 @@ def solve_pool(pool, data, order, seconds, seed, incumbent=None, workers=1):
         if status==cp_model.INFEASIBLE and best:
             raise AssertionError('模型拒绝已知可行方案，需检查建模或提示值，不得静默返回')
         row={'stage':metric,'status':solver.status_name(status),'pool_size':len(pool),'seconds':solver.wall_time,
-             'bound':solver.best_objective_bound,'seed':seed}
+             'bound':solver.best_objective_bound,'seed':seed,
+             'prefix_proven':prefix_proven,'restricted_change':bool(changed),'improve_only':improve_only}
         if status in (cp_model.OPTIMAL,cp_model.FEASIBLE):
             best=[]
             for pid,p in pool.items():
                 if solver.value(select[pid]):
                     best.append({'candidate':pid,'start':solver.value(starts[pid]),'return':solver.value(ends[pid]),
                                  'deliveries':{b:solver.value(delivered[b]) for b in p.boxes}})
-            value=objective(best,pool,data)[metric]
+            value=values(best)[metric]
             row.update(value=value,proven=status==cp_model.OPTIMAL)
         elif best:
-            value=objective(best,pool,data)[metric]
+            value=values(best)[metric]
             row.update(value=value,proven=False,fallback='保留已验证的前级可行解')
         else:
             row.update(proven=False)
             trace.append(row);break
         trace.append(row)
+        row['lex_prefix_proven'] = prefix_proven and row['proven']
+        prefix_proven = row['lex_prefix_proven']
         model.add(metrics[metric]==value)
     return best,trace
 

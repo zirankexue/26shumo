@@ -1,0 +1,15 @@
+{
+  "related_tests_passed": 16,
+  "worksheet_previews_reviewed": 17,
+  "final_pdf_render_reviewed": true,
+  "editable_weight_recalculation_passed": true,
+  "xlsx_csv_json_reconciled": true,
+  "original_sources_unchanged": true,
+  "checkpoint_read": false,
+  "artifacts_sha256": {
+    "问题二结果.xlsx": "514c122dcf96d50efa736564d87042bba8e99f633310ac834acb0f95a7952255",
+    "tables/results.json": "871d662073e9277d313fb4dc0238c9a507254555bbdb805173be0f0e23ce5084",
+    "figures/09_四指标加权权衡.png": "8f2a233025f6ce7f986671b404b23c3f12221856a4b429e29eecf3575dc0ab1a",
+    "figures/09_四指标加权权衡.pdf": "1391d23b2714d0ebea0b8e2026802e772618d1741f00979c1944960b4e701c99"
+  }
+}

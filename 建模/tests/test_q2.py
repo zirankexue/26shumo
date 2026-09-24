@@ -62,12 +62,48 @@ class SchedulingTests(unittest.TestCase):
                                 if any(data.timing[b].hard is not None and c>data.timing[b].hard*1000 for b,c in a['deliveries'].items()):valid=False;break
                                 schedule.append(a);machine=a['return'];avail[bat]=machine+p.charge
                             if valid:solutions.append(schedule)
+        from uav_rescue.q2.alns import ORDERS
+        for order in ORDERS.values():
+            with self.subTest(order=order):
+                key=lambda s:tuple(objective(s,pool,data)[k] for k in order)
+                exact=min(solutions,key=key)
+                found,trace=solve_pool(pool,data,order,10,0,None)
+                self.assertEqual(key(found),key(exact))
+                self.assertTrue(all(t['proven'] for t in trace))
+
+    def test_warm_start_does_not_block_worse_changed_solution(self):
+        data,pool=self.fixture()
+        data.timing={'a':data.timing['a']};data.base.boxes=['a']
+        p=pool['a'];other=replace(p,id='other',energy=p.energy+1)
+        pool={'a':p,'other':other}
+        initial=[make_assignment(p,0,{},data)]
+        result,_=solve_pool(pool,data,['energy','tardiness','makespan','sorties'],5,0,
+                            initial,improve_only=False,change_candidates=['a'])
+        self.assertEqual(result[0]['candidate'],'other')
+        self.assertGreater(objective(result,pool,data)['energy'],objective(initial,pool,data)['energy'])
+        failed,_=solve_pool({'a':p},data,['energy','tardiness','makespan','sorties'],5,0,
+                            initial,improve_only=False,change_candidates=['a'])
+        self.assertIsNone(failed)
+        self.assertEqual(initial[0]['candidate'],'a')
+
+
+    def test_acceptance_and_weights(self):
+        import random
+        from uav_rescue.q2.alns import accept,update_weight
         order=['tardiness','makespan','energy','sorties']
-        key=lambda s:tuple(objective(s,pool,data)[k] for k in order)
-        exact=min(solutions,key=key)
-        found,trace=solve_pool(pool,data,order,10,0,None)
-        self.assertEqual(key(found),key(exact))
-        self.assertTrue(all(t['proven'] for t in trace))
+        old=dict(zip(order,[0,100,100,20]));new=dict(old,makespan=101)
+        accepted,prob=accept(old,new,order,dict.fromkeys(order,100),1,random.Random(0))
+        self.assertTrue(accepted)
+        self.assertAlmostEqual(prob,math.exp(-.01))
+        _,cold=accept(old,new,order,dict.fromkeys(order,100),.001,random.Random(0))
+        self.assertLess(cold,prob)
+        better=dict(old,makespan=99,energy=100000)
+        self.assertEqual(accept(old,better,order,dict.fromkeys(order,100),1,random.Random(0)),(True,1))
+        weights={'x':1.}
+        update_weight(weights,'x',5)
+        self.assertAlmostEqual(weights['x'],1.8)
+        for _ in range(100):update_weight(weights,'x',0)
+        self.assertEqual(weights['x'],.1)
 
     def test_first_box_on_time_last_box_late_and_optimized_order(self):
         data,pool=self.fixture();data.timing={k:v for k,v in data.timing.items() if k in 'ab'};data.base.boxes=list('ab')
@@ -160,6 +196,18 @@ class RealDataTests(unittest.TestCase):
         b=next(iter(schedule[0]['deliveries']))
         schedule[0]['deliveries'][b]+=1
         with self.assertRaises(AssertionError):validate_schedule(schedule,pool,self.factory)
+
+    def test_pruning_preserves_singletons_and_complete_incumbent(self):
+        import random
+        from uav_rescue.q2.candidates import initial_pool,greedy_schedule,prune_pool
+        pool=initial_pool(self.factory)
+        schedule=next(s for seed in range(24) if (s:=greedy_schedule(self.factory,pool,seed)) is not None)
+        protected={a['candidate'] for a in schedule}
+        required=protected|{pid for pid,p in pool.items() if len(p.boxes)==1}
+        kept=prune_pool(pool,self.factory,len(required)+10,protected,random.Random(0))
+        self.assertTrue(required<=kept.keys())
+        validate_schedule(assign_resources(schedule,kept,self.data),kept,self.factory)
+        with self.assertRaises(ValueError):prune_pool(pool,self.factory,len(required)-1,protected,random.Random(0))
 
 
 if __name__=='__main__':unittest.main()

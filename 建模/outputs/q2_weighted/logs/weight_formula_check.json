@@ -1,0 +1,282 @@
+{
+  "generated_utc": "2026-09-24T09:42:33.273Z",
+  "stage": "final",
+  "workbook": "D:\\xyq\\数模\\D题\\建模\\outputs\\q2_weighted\\问题二结果.xlsx",
+  "engine": "@oai/artifact-tool",
+  "native_excel_engine_tested": false,
+  "disk_workbook_modified": false,
+  "input_sha256": "514c122dcf96d50efa736564d87042bba8e99f633310ac834acb0f95a7952255",
+  "tolerance": 1e-11,
+  "cases": [
+    {
+      "name": "default_before_temporary_change",
+      "relative_weights": [
+        3,
+        1.5,
+        1,
+        0.5
+      ],
+      "normalized_weights": [
+        0.5,
+        0.25,
+        0.16666666666666666,
+        0.08333333333333333
+      ],
+      "rows": [
+        {
+          "row": 2,
+          "scenario": "加权推荐方案",
+          "actual": 0.1059336392473101,
+          "expected": 0.1059336392473101,
+          "absolute_error": 0
+        },
+        {
+          "row": 3,
+          "scenario": "及时性权重放大",
+          "actual": 0.1059336392473101,
+          "expected": 0.1059336392473101,
+          "absolute_error": 0
+        },
+        {
+          "row": 4,
+          "scenario": "完工时间权重放大",
+          "actual": 0.27544700855403387,
+          "expected": 0.27544700855403387,
+          "absolute_error": 0
+        },
+        {
+          "row": 5,
+          "scenario": "能耗权重放大",
+          "actual": 0.12675983786838455,
+          "expected": 0.12675983786838455,
+          "absolute_error": 0
+        },
+        {
+          "row": 6,
+          "scenario": "架次权重放大",
+          "actual": 0.12675983786838455,
+          "expected": 0.12675983786838455,
+          "absolute_error": 0
+        },
+        {
+          "row": 7,
+          "scenario": "旧词典序：及时性",
+          "actual": 0.26188360176833103,
+          "expected": 0.26188360176833103,
+          "absolute_error": 0
+        },
+        {
+          "row": 8,
+          "scenario": "旧词典序：完工时间",
+          "actual": 0.2247758693605345,
+          "expected": 0.2247758693605345,
+          "absolute_error": 0
+        },
+        {
+          "row": 9,
+          "scenario": "旧词典序：能耗",
+          "actual": 0.75,
+          "expected": 0.75,
+          "absolute_error": 0
+        },
+        {
+          "row": 10,
+          "scenario": "旧词典序：架次",
+          "actual": 0.2427402409033082,
+          "expected": 0.2427402409033082,
+          "absolute_error": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "equal_weights_mean_of_normalized_metrics",
+      "relative_weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "normalized_weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "rows": [
+        {
+          "row": 2,
+          "scenario": "加权推荐方案",
+          "actual": 0.20457884051847167,
+          "expected": 0.20457884051847167,
+          "absolute_error": 0
+        },
+        {
+          "row": 3,
+          "scenario": "及时性权重放大",
+          "actual": 0.20457884051847167,
+          "expected": 0.20457884051847167,
+          "absolute_error": 0
+        },
+        {
+          "row": 4,
+          "scenario": "完工时间权重放大",
+          "actual": 0.2864072709859845,
+          "expected": 0.2864072709859845,
+          "absolute_error": 0
+        },
+        {
+          "row": 5,
+          "scenario": "能耗权重放大",
+          "actual": 0.10171772278240182,
+          "expected": 0.10171772278240182,
+          "absolute_error": 0
+        },
+        {
+          "row": 6,
+          "scenario": "架次权重放大",
+          "actual": 0.10171772278240182,
+          "expected": 0.10171772278240182,
+          "absolute_error": 0
+        },
+        {
+          "row": 7,
+          "scenario": "旧词典序：及时性",
+          "actual": 0.511883601768331,
+          "expected": 0.511883601768331,
+          "absolute_error": 0
+        },
+        {
+          "row": 8,
+          "scenario": "旧词典序：完工时间",
+          "actual": 0.4508343129245348,
+          "expected": 0.4508343129245348,
+          "absolute_error": 0
+        },
+        {
+          "row": 9,
+          "scenario": "旧词典序：能耗",
+          "actual": 0.5,
+          "expected": 0.5,
+          "absolute_error": 0
+        },
+        {
+          "row": 10,
+          "scenario": "旧词典序：架次",
+          "actual": 0.21784455585952253,
+          "expected": 0.21784455585952253,
+          "absolute_error": 0
+        }
+      ],
+      "passed": true
+    },
+    {
+      "name": "default_restored",
+      "relative_weights": [
+        3,
+        1.5,
+        1,
+        0.5
+      ],
+      "normalized_weights": [
+        0.5,
+        0.25,
+        0.16666666666666666,
+        0.08333333333333333
+      ],
+      "rows": [
+        {
+          "row": 2,
+          "scenario": "加权推荐方案",
+          "actual": 0.1059336392473101,
+          "expected": 0.1059336392473101,
+          "absolute_error": 0
+        },
+        {
+          "row": 3,
+          "scenario": "及时性权重放大",
+          "actual": 0.1059336392473101,
+          "expected": 0.1059336392473101,
+          "absolute_error": 0
+        },
+        {
+          "row": 4,
+          "scenario": "完工时间权重放大",
+          "actual": 0.27544700855403387,
+          "expected": 0.27544700855403387,
+          "absolute_error": 0
+        },
+        {
+          "row": 5,
+          "scenario": "能耗权重放大",
+          "actual": 0.12675983786838455,
+          "expected": 0.12675983786838455,
+          "absolute_error": 0
+        },
+        {
+          "row": 6,
+          "scenario": "架次权重放大",
+          "actual": 0.12675983786838455,
+          "expected": 0.12675983786838455,
+          "absolute_error": 0
+        },
+        {
+          "row": 7,
+          "scenario": "旧词典序：及时性",
+          "actual": 0.26188360176833103,
+          "expected": 0.26188360176833103,
+          "absolute_error": 0
+        },
+        {
+          "row": 8,
+          "scenario": "旧词典序：完工时间",
+          "actual": 0.2247758693605345,
+          "expected": 0.2247758693605345,
+          "absolute_error": 0
+        },
+        {
+          "row": 9,
+          "scenario": "旧词典序：能耗",
+          "actual": 0.75,
+          "expected": 0.75,
+          "absolute_error": 0
+        },
+        {
+          "row": 10,
+          "scenario": "旧词典序：架次",
+          "actual": 0.2427402409033082,
+          "expected": 0.2427402409033082,
+          "absolute_error": 0
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "verified_sheet_names": [
+    "主权重统一评分",
+    "权重设置",
+    "权重情景定义",
+    "Q2_运输架次",
+    "Q2_逐箱交付",
+    "架次装载与时间",
+    "逐箱时限与交接",
+    "电池使用与充电",
+    "无人机占用",
+    "逐段载荷与能耗",
+    "对照运输安排",
+    "对照逐箱交付",
+    "硬截止裕量",
+    "求解状态",
+    "核验结果",
+    "口径与来源",
+    "航迹坐标"
+  ],
+  "checked_score_range": "主权重统一评分!F2:J10",
+  "changed_input_range": "权重设置!C2:C5",
+  "default_scores_equal_results_json": true,
+  "formulas_and_raw_metrics_unchanged": true,
+  "recalculation_demonstrated": true,
+  "formula_error_count": 0,
+  "all_checks_passed": true,
+  "final_input_sha256": "514c122dcf96d50efa736564d87042bba8e99f633310ac834acb0f95a7952255"
+}

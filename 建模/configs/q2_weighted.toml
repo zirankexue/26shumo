@@ -1,0 +1,16 @@
+[weighted]
+# W, Cmax, E, N. Decision preferences; these numbers are not physical parameters.
+weights = [3.0, 1.5, 1.0, 0.5]
+reference = "outputs/q2/tables/results.json"
+candidate_source = "cache/q2/candidates.json"
+output = "outputs/q2_weighted"
+initial_seconds = 120.0
+search_seconds = 360.0
+final_seconds = 120.0
+repair_seconds = 15.0
+score_precision = 1000000
+seeds = [0, 1, 2]
+candidate_limit = 1500
+scenario_iterations = 3000
+scenario_multiplier = 10.0
+scenario_refine_seconds = 60.0

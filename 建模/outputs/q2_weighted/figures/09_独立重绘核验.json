@@ -1,0 +1,22 @@
+{
+  "five_plan_csv_equal": true,
+  "accepted_cloud_csv_equal": true,
+  "png_redraw_sha256_equal": true,
+  "standalone_script_sha256_equal": true,
+  "png_300_dpi": true,
+  "pdf_single_vector_page": true,
+  "scenario_source_csv_equal": true,
+  "coincident_curves_preserved": [
+    [
+      "weighted",
+      "scenario_tardiness"
+    ],
+    [
+      "scenario_energy",
+      "scenario_sorties"
+    ]
+  ],
+  "finite_reassessment_set": 9,
+  "checkpoint_read": false,
+  "visual_review": "PNG及Poppler渲染PDF已逐项查看：双色同轨迹、同心星号、5方案3坐标点、固定归一化越界、图例、解云和有限集合回评页脚可读"
+}

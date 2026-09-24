@@ -1,12 +1,46 @@
 {
-  "main_recomputed": true,
-  "comparison_recomputed": true,
+  "schemes_recomputed": [
+    "tardiness",
+    "makespan",
+    "energy",
+    "sorties"
+  ],
   "sources_match": true,
+  "verified_utc": "2026-09-24T07:33:23.829530+00:00",
+  "verification_code_sha256": {
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\__init__.py": "f21e3c12b4d1bb47b994b9736604a465e12955c7868450f3fddff2d24f6d86fb",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\common\\__init__.py": "71621e3e3b2e77ba181344c8bc3d2fd77ed247d21c688b6a0d158ff79113f162",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\common\\charging.py": "32e568978f3d6d3ef47475fb89892b2134649451c12fd41a56d6eaa70013d1f4",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\common\\data.py": "ac4f19eca580d3b09da8a4f70395de755cddf97eda223885b15b11cbfa96d3b5",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\common\\physics.py": "41cfed00d75265d33fb4f8843e195fe7e74ef410d0a68ffdd6a8bc373b381074",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\common\\terrain.py": "2008da6f0e6c563fdc4637128798fd59ab23e1ca50ef9f4c0cec7a52582e0026",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q1\\__init__.py": "af1894d7c148e31a7f8523a6effefc608078f58554f05c730bb1297cec0f3901",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q1\\optimize.py": "2ab86bcae27bafce732821662615a8a04fa58ecd1ba86cb185b82a39992c7229",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q1\\pipeline.py": "32e4bfbfd54030547031ad1b85439846fd010c8333f707763a19501cf45282e4",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q1\\report.py": "fb63fc0437a69ac88be49e0f2ac4c99ae4eca380fc9f5a04939bc5aa5697d313",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q1\\validate.py": "e3fbbafc5cbfd5467710f9313e6b7a92e6cd7df0212bc1442553bb3eb58ab602",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\__init__.py": "e00042305d1daf30ccd0f14563581877e5b330bf5b5fcada66677e896220f66c",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\alns.py": "f2934e2f29d23f4c80852fcc260f0cf0e35f7bd27d7c8fcb9770c01a34b0e994",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\candidates.py": "a84c3ac9e0370a533bf3da739a5b5232afffcc0e88828b69e8cf7dd01a8a341f",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\data.py": "6c14ea7bda0bd09a5063fd45564b3f55115d7473c84d572ec550de886f9b6bad",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\figures.py": "0069bbd741917cd1f8b52de8bdc62c1de89f6dc5d1a3d3c7df8d0e6af9e36e72",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\narrative.py": "6e25e096c7338d696696888a2db1c3b9cf44d84e3e362832cba533f6d0309705",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\pipeline.py": "c64fae9669d4dcde280f081eed8efccc957781f1454b2883a5eaf690ccf0ae00",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\report.py": "62d89062559f651fb70c0241818cae7beb264e17ecd2ef937098cc309b575c51",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\routes.py": "e046f36e7f90167d5fd3c9f372329709245d9ed809c1b95c9689d4fbd6ab446f",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\search.py": "222c3b2d3895ce051f18da6d3d4bd3b1641a5372d95e96a5d3e328c7c9872e58",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\solver.py": "bd82823472a21e22084c179826c2ab15b852089532d4fe0b7a5d6db2e34c7cf6",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\validate.py": "13fceca65c7ff14df8cef5a95eddf4e7c69dccfe764e316c2f7ae9f5ce7f4d9f"
+  },
+  "csv": {
+    "csv_files_checked": 32,
+    "json_csv_equal": true
+  },
   "excel": {
     "performed": true,
     "passed": true,
-    "checked_cells": 4339,
-    "sheets": 11,
+    "checked_cells": 19429,
+    "sheets": 16,
     "csv_also_checked": true
   }
 }

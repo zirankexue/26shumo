@@ -8,7 +8,7 @@ from scipy.optimize import Bounds, LinearConstraint, milp
 
 from ..common.data import Inputs
 from ..common.terrain import Route
-from .optimize import Batch, Solution
+from .optimize import Batch, Solution, INDEX
 
 
 def validate_manifest(inputs: Inputs, routes: dict[str, Route], rows: list[dict],
@@ -68,7 +68,8 @@ def milp_crosscheck(demand: tuple[int, ...], batches: list[Batch], solution: Sol
     constraints = [LinearConstraint(a, demand, demand)]
     stage_values, statuses = [], []
     chosen = None
-    for stage, objective in enumerate(objectives):
+    for stage, name in enumerate(solution.order):
+        objective = objectives[INDEX[name]]
         result = milp(objective, integrality=np.ones(len(batches)),
                       bounds=Bounds(np.zeros(len(batches)), np.full(len(batches), sum(demand))),
                       constraints=constraints,
@@ -80,9 +81,9 @@ def milp_crosscheck(demand: tuple[int, ...], batches: list[Batch], solution: Sol
             raise AssertionError("MILP舍入后的解不满足箱数等式")
         value = float(objective @ chosen)
         stage_values.append(value)
-        statuses.append({"stage": stage + 1, "status": result.status, "mip_gap": float(result.mip_gap)})
+        statuses.append({"stage": stage + 1, "objective": name, "status": result.status, "mip_gap": float(result.mip_gap)})
         # Energy measured in Wh; tolerance = 1e-8 kWh, well below printed precision.
-        eps = 0.0 if stage == 0 else 1e-5
+        eps = 0.0 if name == 'sorties' else 1e-5
         constraints.append(LinearConstraint(objective, value - eps, value + eps))
     objective = (int(objectives[0] @ chosen), float(objectives[1] @ chosen) / 1000,
                  float(objectives[2] @ chosen))

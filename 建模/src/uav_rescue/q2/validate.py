@@ -57,6 +57,8 @@ def validate_schedule(schedule,pool,factory):
             prev=end
         if remaining or clock_ms!=a['return'] or clock_ms-start_ms!=p.duration:raise AssertionError('返航时间或载荷不符')
         soc=1-energy/d.battery
+        if energy>(1-factory.physics['reserve'])*d.battery+factory.physics['energy_tolerance_kwh']:
+            raise AssertionError('往返能量预算超限')
         if soc<factory.physics['reserve']-1e-9:raise AssertionError('返航SOC不足')
         # Independent integration of fast and slow SOC increments.
         charge_s=data.full_charge_s[p.drone]*(max(0,0.9-soc)/0.9*0.65+(1-max(0.9,soc))/0.1*0.35)

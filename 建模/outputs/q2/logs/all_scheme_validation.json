@@ -1,0 +1,42 @@
+{
+  "tardiness": {
+    "passed": true,
+    "unique_boxes": 80,
+    "mass_kg": 758,
+    "volume_m3": 2.011,
+    "hard_deadline_violations": 0,
+    "resource_conflicts": 0,
+    "max_energy_error_kwh": 0.0,
+    "total_flight_rounding_s": 0.038604289569633465
+  },
+  "makespan": {
+    "passed": true,
+    "unique_boxes": 80,
+    "mass_kg": 758,
+    "volume_m3": 2.011,
+    "hard_deadline_violations": 0,
+    "resource_conflicts": 0,
+    "max_energy_error_kwh": 0.0,
+    "total_flight_rounding_s": 0.03495609478505912
+  },
+  "energy": {
+    "passed": true,
+    "unique_boxes": 80,
+    "mass_kg": 758,
+    "volume_m3": 2.011,
+    "hard_deadline_violations": 0,
+    "resource_conflicts": 0,
+    "max_energy_error_kwh": 0.0,
+    "total_flight_rounding_s": 0.023849019700151075
+  },
+  "sorties": {
+    "passed": true,
+    "unique_boxes": 80,
+    "mass_kg": 758,
+    "volume_m3": 2.011,
+    "hard_deadline_violations": 0,
+    "resource_conflicts": 0,
+    "max_energy_error_kwh": 0.0,
+    "total_flight_rounding_s": 0.025382198865173677
+  }
+}

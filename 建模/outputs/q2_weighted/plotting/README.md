@@ -1,0 +1,1 @@
+绘图代码与data快照可单独迁移。命令：python code/plot_q2_weighted.py --data <data/plot_data.json的绝对路径> --font <data/SimSun.ttf的绝对路径> --output <输出目录>。不读取原始附件，不运行优化。依赖：numpy、matplotlib。

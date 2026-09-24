@@ -7,7 +7,7 @@
     "hard_deadline_violations": 0,
     "resource_conflicts": 0,
     "max_energy_error_kwh": 0.0,
-    "total_flight_rounding_s": 0.040623467886121034
+    "total_flight_rounding_s": 0.038604289569633465
   },
   "comparison": {
     "passed": true,
@@ -17,13 +17,13 @@
     "hard_deadline_violations": 0,
     "resource_conflicts": 0,
     "max_energy_error_kwh": 0.0,
-    "total_flight_rounding_s": 0.040623467886121034
+    "total_flight_rounding_s": 0.03495609478505912
   },
   "excel": {
     "performed": true,
     "passed": true,
-    "checked_cells": 4339,
-    "sheets": 11,
+    "checked_cells": 19429,
+    "sheets": 16,
     "csv_also_checked": true
   },
   "sources_unchanged": true,

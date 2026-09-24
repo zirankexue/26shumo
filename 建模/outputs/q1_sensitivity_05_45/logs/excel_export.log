@@ -1,0 +1,24 @@
+{"kind":"sheet","id":"ws/n0wg4v","name":"Q1_单点组批","index":0,"range":"A1:I19","address":"A1:I19"}
+{"kind":"sheet","id":"ws/zyqzex","name":"作业时间分解","index":1,"range":"A1:H19","address":"A1:H19"}
+{"kind":"sheet","id":"ws/i2aaln","name":"最大安全载荷","index":2,"range":"A1:G46","address":"A1:G46"}
+{"kind":"sheet","id":"ws/jaagbf","name":"目标优先级对比","index":3,"range":"A1:I4","address":"A1:I4"}
+{"kind":"sheet","id":"ws/lhtp70","name":"余量敏感性汇总","index":4,"range":"A1:I10","address":"A1:I10"}
+{"kind":"sheet","id":"ws/80ne2k","name":"余量载荷明细","index":5,"range":"A1:E406","address":"A1:E406"}
+{"kind":"sheet","id":"ws/mslurv","name":"不可行情景诊断","index":6,"range":"A1:H73","address":"A1:H73"}
+{"kind":"sheet","id":"ws/uha8l8","name":"服务区汇总","index":7,"range":"A1:J16","address":"A1:J16"}
+{"kind":"sheet","id":"ws/kyncka","name":"核验结果","index":8,"range":"A1:I16","address":"A1:I16"}
+{"kind":"sheet","id":"ws/acbp45","name":"口径与来源","index":9,"range":"A1:B10","address":"A1:B10"}
+{"kind":"notice","message":"Cell search matched 0 entries."}
+Rendered Q1_单点组批
+Rendered 作业时间分解
+Rendered 最大安全载荷
+Rendered 目标优先级对比
+Rendered 余量敏感性汇总
+Rendered 余量载荷明细
+Rendered 不可行情景诊断
+Rendered 服务区汇总
+Rendered 核验结果
+Rendered 口径与来源
+Inspect result written to file: D:\xyq\数模\D题\建模\outputs\q1_sensitivity_05_45\问题一结果.xlsx.inspect.ndjson
+Exported 问题一结果.xlsx
+

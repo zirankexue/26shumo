@@ -172,7 +172,13 @@ def write_report(payload,path):
     if energy_first is not None:
         e=energy_first['summary']
         parts+=['',f"能耗优先方案相对主方案增加{e['sorties']-s['sorties']}架次，节能{s['energy_kwh']-e['energy_kwh']:.6f} kWh（{100*(s['energy_kwh']-e['energy_kwh'])/s['energy_kwh']:.4f}%），增加累计作业时间{(e['operation_s']-s['operation_s'])/60:.3f}分钟。该对照量化了优先减少架次的代价。"]
-    parts+=['','对照仅改变目标优先关系，不改变物理与装载约束。这三组方案不是完整Pareto前沿。主方案体现先减少往返任务组织次数，再控制能耗的偏好。',
+    time_first=next((x for x in payload['comparisons'] if x['order'][0]=='time'),None)
+    if time_first is not None:
+        t=time_first['summary']
+        same=(t['sorties']==s['sorties'] and abs(t['energy_kwh']-s['energy_kwh'])<=1e-9
+              and abs(t['operation_s']-s['operation_s'])<=1e-6)
+        parts+=['','时间优先方案'+('与主方案的三项汇总指标相同；这是独立优化所得结果，仍保留此案例以完整覆盖三种首要目标。' if same else '列于上表，累计作业时间的优先性由独立词典序优化保证。')]
+    parts+=['','对照仅改变目标优先关系，不改变物理与装载约束。这些有限对照方案不是完整Pareto前沿。主方案体现先减少往返任务组织次数，再控制能耗的偏好。',
         '', '## 3 安全余量敏感性','',
         '| 安全余量 | 可行性 | 最少架次 | 能耗kWh | 累计作业小时 | A/B/C架次 |','|---|---|---:|---:|---:|---|']
     for x in payload['sensitivity']:
@@ -218,10 +224,12 @@ def verify_workbook(path,sheets):
             with (path.parent/'tables'/f"{sheet['name']}.csv").open(encoding='utf-8-sig',newline='') as stream:
                 csv_rows=list(csv.reader(stream))
             if len(csv_rows)!=len(expected):raise AssertionError('CSV行数不一致')
-            for row_index,row in enumerate(expected,1):
+            actual_rows=ws.iter_rows(min_row=1,max_row=len(expected),
+                                     max_col=max(len(row) for row in expected),values_only=True)
+            for row_index,(row,actual_row) in enumerate(zip(expected,actual_rows,strict=True),1):
                 if len(csv_rows[row_index-1])!=len(row):raise AssertionError('CSV列数不一致')
                 for col_index,value in enumerate(row,1):
-                    actual=ws.cell(row_index,col_index).value
+                    actual=actual_row[col_index-1]
                     csv_value=csv_rows[row_index-1][col_index-1]
                     if isinstance(value,(int,float)):
                         if not isinstance(actual,(int,float)) or not math.isclose(actual,value,rel_tol=1e-12,abs_tol=1e-9):

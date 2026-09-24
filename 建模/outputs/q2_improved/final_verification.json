@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "independently_recomputed_complete_schedules": 7,
+  "related_tests_passed": 22,
+  "checkpoint_read": false,
+  "visualizations_generated": false,
+  "old_sources_unchanged": true,
+  "verification": {
+    "passed": true,
+    "unique_boxes": 80,
+    "mass_kg": 758,
+    "volume_m3": 2.011,
+    "hard_deadline_violations": 0,
+    "resource_conflicts": 0,
+    "max_energy_error_kwh": 0.0,
+    "total_flight_rounding_s": 0.025325106093532668
+  },
+  "files_sha256": {
+    "tables\\deliveries.csv": "7686bc275ace405cf1ae2e53d182647234377ef63e3bc0187d8eae63ba2aab7f",
+    "tables\\final_result.json": "e456cdbecb4ede8389bc2bdef7c8a3bb8712c6f4c09bf53396264a5ffce85754",
+    "tables\\legs.csv": "8b8a5bca48ad0bc8063d36baa5bbe865f2f4eafed2b464d1b15d42aa2224a1e7",
+    "tables\\phases.csv": "e527ff166b4206c7f4adfdf847e864e4d4c823919a3456f3b683b506f2d35899",
+    "tables\\sorties.csv": "a1dc5b82ce8b9f52c4010e4181bc8e928c8845b443e0946d305a3c0158c9c84d",
+    "tables\\截图数值对照.csv": "f8f2e5eb143f2944dfcde3c9218a566f905819b8f5260b560ca70447bb092a7c",
+    "tables\\无人机与电池使用.csv": "fec8958c1b30bbc84de0244ad7d3b0f2eb434a0a2d93c4c985ec5614f09ede65",
+    "tables\\阶段结果比较.csv": "7fcaab50f3e74801f845a6a1e32906b64655040b7d7772bcbbbcb654d9540a4f"
+  }
+}

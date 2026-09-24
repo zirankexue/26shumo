@@ -12,6 +12,13 @@ def variants(factory, ids, rng, old_order=None):
         return list(permutations(services))
     result = [tuple(services), tuple(reversed(services))]
     if old_order and set(old_order) == set(services): result.append(tuple(old_order))
+    if old_order and set(old_order) == set(services):
+        for _ in range(4):
+            left, right = sorted(rng.sample(range(len(services)), 2))
+            result.append(tuple(old_order[:left]) + tuple(reversed(old_order[left:right+1])) + tuple(old_order[right+1:]))
+            moved = list(old_order)
+            moved.insert(right, moved.pop(left))
+            result.append(tuple(moved))
     for _ in range(4):
         rest = services.copy(); order=[]; prev="O01"
         while rest:

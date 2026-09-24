@@ -1,0 +1,94 @@
+{
+  "csv_independent_reconstruction_passed": true,
+  "vertices_checked": 448,
+  "legs_checked": 112,
+  "group_counts_passed": true,
+  "display_scale_1_and_5_passed": true,
+  "artifacts": [
+    {
+      "file": "01_问题一二维路线总览.pdf",
+      "pages": 1,
+      "png_size": [
+        3468,
+        3216
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "dee10039f2d1fe998a24d24056c2c12b9ef7e34fb1d82adb3d196202a0cf7d06"
+    },
+    {
+      "file": "02_问题一三维地形航迹.pdf",
+      "pages": 1,
+      "png_size": [
+        3202,
+        3216
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "7f353825537c6517ef7a6b1b58cb5c379a407367707068b26d7247bbd15a6263"
+    },
+    {
+      "file": "03_问题二维路线总览.pdf",
+      "pages": 1,
+      "png_size": [
+        3468,
+        3216
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "1e4fff33f5c84683ac957ebf8a93d86fa740e4c888bc0eb2f338b56084b7967b"
+    },
+    {
+      "file": "04_问题二三维地形航迹.pdf",
+      "pages": 1,
+      "png_size": [
+        3085,
+        3216
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "74c9b8da4eb31ffadf3ca8fef1fc3de8dd56f04f3bd6befbcff0440439d99821"
+    },
+    {
+      "file": "05_问题二分无人机二维路线.pdf",
+      "pages": 1,
+      "png_size": [
+        6339,
+        3720
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "6ff54fc3e7bfee1f3201b3a3ad80a6423622ea42fc8c866c39cb3742ff54e847"
+    },
+    {
+      "file": "06_问题二分无人机三维航迹.pdf",
+      "pages": 1,
+      "png_size": [
+        6941,
+        3720
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "sha256": "93968d1167d81fe305a4dee5176fc9264f92b40deaf1edfd23c50b7bf6ba3e8d"
+    }
+  ],
+  "visual_review": {
+    "reviewed_utc": "2026-09-23T12:06:32.725451+00:00",
+    "all_six_pdf_renders_reviewed": true,
+    "node_labels_counts_and_visit_order_readable": true,
+    "clipping_or_label_overlap_found": false,
+    "altitude_exaggeration_label_present": true
+  }
+}

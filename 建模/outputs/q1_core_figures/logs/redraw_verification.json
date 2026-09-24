@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "entry": "code/plot_q1_core.py",
+  "mode": "saved_plot_bundle",
+  "original_attachments_read": false,
+  "solver_called": false,
+  "dependency_path": "建模/.runtime/python",
+  "checks": [
+    {
+      "file": "figures\\01_各服务区货箱组批方案.png",
+      "identical": true,
+      "sha256": "8ba99f1782ccae1ff769e91e9a9fc1df1987d076dc21b882ac6e6cdbebfd8b8e"
+    },
+    {
+      "file": "figures\\02_批次装载与返航安全.png",
+      "identical": true,
+      "sha256": "c0437eacda9231395dba2a9fae808675801d12075034eead7afa447d6c1cc689"
+    },
+    {
+      "file": "figures\\03_各服务区组批统计.png",
+      "identical": true,
+      "sha256": "14973a76699d67ab346d51138e10b7d706ac1056ee4850ecabcf6e26a44fc8a4"
+    },
+    {
+      "file": "figures\\04_目标优先级权衡.png",
+      "identical": true,
+      "sha256": "fe8ccfb4aff3787de2c191941d53ae9469dd0cce9f6c66ce23df4835d591a441"
+    },
+    {
+      "file": "figures\\05_安全余量与最大安全载荷.png",
+      "identical": true,
+      "sha256": "9828ea536c01aa591713fb23cb022dac30ea0703771234ac479b69df7b5fe4cb"
+    },
+    {
+      "file": "figures\\06_安全余量与组批结果.png",
+      "identical": true,
+      "sha256": "c4bcfc1b37064ad6aeddf91edd6c9ae49f8fe06281d47fc80ce63ca34eb41aa9"
+    },
+    {
+      "file": "figures\\07_安全余量与服务区可行性.png",
+      "identical": true,
+      "sha256": "403f4ccc83021fe9369ec47ed6f161203618dbfac6b17225b73e468762fe2502"
+    },
+    {
+      "file": "data\\01_逐箱组批.csv",
+      "identical": true,
+      "sha256": "829b3c0a5c93318c8d5ba84b5f742896e45e89d9241c6d0e52109b0b9811bc42"
+    },
+    {
+      "file": "data\\02_批次约束与分项.csv",
+      "identical": true,
+      "sha256": "f2447150b5ddb2c5e0fed0e00be048748d11331c4a5012b0926d0a212d848898"
+    },
+    {
+      "file": "data\\03_服务区统计.csv",
+      "identical": true,
+      "sha256": "ead4ad11d5e5d4d96854595412bbdbfad5f106282c573081f3d06b7d2dd73a56"
+    },
+    {
+      "file": "data\\04_全部目标顺序对照.csv",
+      "identical": true,
+      "sha256": "1fa62e51662fcd20d940ced9f744ffacc3b6ee13c392a303377afe725d45749f"
+    },
+    {
+      "file": "data\\05_安全载荷.csv",
+      "identical": true,
+      "sha256": "38c28fa9bb98bd564f609a9bcee82bd9cb9c88a93f4fb76525a539649f20e3f4"
+    },
+    {
+      "file": "data\\06_余量组批汇总.csv",
+      "identical": true,
+      "sha256": "465a5f5bf1411c1ef0b90146646932da7bb0a6510bc92fd49908d8d07620718e"
+    },
+    {
+      "file": "data\\07_服务区可行性.csv",
+      "identical": true,
+      "sha256": "99a4dcdd250ed154770fad63e54a5f030c5d74310fe0147cb8d3951ecf9d7e65"
+    },
+    {
+      "file": "data\\plot_data.json",
+      "identical": true,
+      "sha256": "65ece99f64b551dbdc63ef4264de3bde4c78f71224cf12526c97b8cde33a8614"
+    },
+    {
+      "file": "data\\plot_data.sha256",
+      "identical": true,
+      "sha256": "e672f8f0518a4fb8cd27389a78da4d803ef250f8fdfcb86b7703000d06141910"
+    }
+  ]
+}

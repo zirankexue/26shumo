@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-23T08:28:24.189993+00:00",
+  "generated_utc": "2026-09-24T06:52:46.944425+00:00",
   "python": "3.12.14",
   "dependencies": {
     "ortools": "9.15.6755",
@@ -42,23 +42,61 @@
         1,
         2
       ],
-      "rounds_per_seed": 5,
       "candidate_limit": 1500,
-      "initial_seconds": 120.0,
-      "search_seconds": 800.0,
-      "final_seconds": 160.0,
-      "comparison_seconds": 120.0,
+      "initial_seconds": 180.0,
+      "search_seconds": 1500.0,
+      "final_seconds": 120.0,
+      "comparison_seconds": 480.0,
+      "orders": [
+        [
+          "tardiness",
+          "makespan",
+          "energy",
+          "sorties"
+        ],
+        [
+          "makespan",
+          "tardiness",
+          "energy",
+          "sorties"
+        ],
+        [
+          "energy",
+          "tardiness",
+          "makespan",
+          "sorties"
+        ],
+        [
+          "sorties",
+          "tardiness",
+          "makespan",
+          "energy"
+        ]
+      ],
+      "repair_seconds": 20.0,
+      "destroy_min": 3,
+      "destroy_max": 8,
+      "reaction": 0.2,
+      "weight_floor": 0.1,
+      "temperature_start": 0.05,
+      "temperature_end": 0.001,
       "workers": 1,
       "time_unit_s": 0.001,
       "energy_unit_kwh": 1e-09,
-      "resume_checkpoint": "D:\\xyq\\数模\\D题\\建模\\outputs\\q2\\logs\\checkpoint.json"
+      "input_sha256": {
+        "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\调度中心与服务区.xlsx": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+        "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+        "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\运输无人机数据.xlsx": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+        "D:\\xyq\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\数字高程模型数据（DEM）\\镇龙乡及周边30米DEM.tif": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+        "D:\\xyq\\数模\\D题\\结果提交模板.xlsx": "16f521f29a7103c4ff7c3709ce1696bb9fffa18ce741895e45b7bc7afaf3320a"
+      }
     },
     "export": {
       "excel": true,
       "render_previews": true
     }
   },
-  "config_sha256": "cbdd8279cda709df93b288974170123874f8e041c45e187afd4a308c040e0ee6",
+  "config_sha256": "847edeeb53c63eda0b63a1347c6b65f6d287b022553b1c28817906e09ecb7ad6",
   "input_sha256": {
     "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\调度中心与服务区.xlsx": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
     "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
@@ -66,8 +104,42 @@
     "D:\\xyq\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\数字高程模型数据（DEM）\\镇龙乡及周边30米DEM.tif": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
     "D:\\xyq\\数模\\D题\\结果提交模板.xlsx": "16f521f29a7103c4ff7c3709ce1696bb9fffa18ce741895e45b7bc7afaf3320a"
   },
+  "code_sha256": {
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\__init__.py": "f21e3c12b4d1bb47b994b9736604a465e12955c7868450f3fddff2d24f6d86fb",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\common\\__init__.py": "71621e3e3b2e77ba181344c8bc3d2fd77ed247d21c688b6a0d158ff79113f162",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\common\\charging.py": "32e568978f3d6d3ef47475fb89892b2134649451c12fd41a56d6eaa70013d1f4",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\common\\data.py": "ac4f19eca580d3b09da8a4f70395de755cddf97eda223885b15b11cbfa96d3b5",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\common\\physics.py": "41cfed00d75265d33fb4f8843e195fe7e74ef410d0a68ffdd6a8bc373b381074",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\common\\terrain.py": "2008da6f0e6c563fdc4637128798fd59ab23e1ca50ef9f4c0cec7a52582e0026",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q1\\__init__.py": "af1894d7c148e31a7f8523a6effefc608078f58554f05c730bb1297cec0f3901",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q1\\optimize.py": "2ab86bcae27bafce732821662615a8a04fa58ecd1ba86cb185b82a39992c7229",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q1\\pipeline.py": "32e4bfbfd54030547031ad1b85439846fd010c8333f707763a19501cf45282e4",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q1\\report.py": "a580bfee13f7e2dc5a4385a3c0a52f1e7cff72a8200da48b2b77f24bacfab256",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q1\\validate.py": "e3fbbafc5cbfd5467710f9313e6b7a92e6cd7df0212bc1442553bb3eb58ab602",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\__init__.py": "e00042305d1daf30ccd0f14563581877e5b330bf5b5fcada66677e896220f66c",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\alns.py": "f2934e2f29d23f4c80852fcc260f0cf0e35f7bd27d7c8fcb9770c01a34b0e994",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\candidates.py": "a84c3ac9e0370a533bf3da739a5b5232afffcc0e88828b69e8cf7dd01a8a341f",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\data.py": "6c14ea7bda0bd09a5063fd45564b3f55115d7473c84d572ec550de886f9b6bad",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\pipeline.py": "10220ce8d964e4672cc9f417eae715eba97541c2a165d58c376e65f1fafcb55f",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\report.py": "39b4254759c2db666b07b35528ba4d4593f3ce724e3b90a30597bf834a20a086",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\routes.py": "e046f36e7f90167d5fd3c9f372329709245d9ed809c1b95c9689d4fbd6ab446f",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\search.py": "222c3b2d3895ce051f18da6d3d4bd3b1641a5372d95e96a5d3e328c7c9872e58",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\solver.py": "bd82823472a21e22084c179826c2ab15b852089532d4fe0b7a5d6db2e34c7cf6",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\validate.py": "13fceca65c7ff14df8cef5a95eddf4e7c69dccfe764e316c2f7ae9f5ce7f4d9f",
+    "D:\\xyq\\数模\\D题\\建模\\run_q2.py": "739cc5718a70cb84b2ced5e14a7491ff736e2056a07aed5728d4acc8b594a332",
+    "D:\\xyq\\数模\\D题\\建模\\configs\\q2.toml": "847edeeb53c63eda0b63a1347c6b65f6d287b022553b1c28817906e09ecb7ad6"
+  },
   "q1_and_paper_unchanged": true,
-  "protected_file_count": 84,
+  "protected_file_count": 210,
   "sources_unchanged": true,
-  "last_export_elapsed_s": 18.609783899970353
+  "export_code_sha256": {
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\report.py": "62d89062559f651fb70c0241818cae7beb264e17ecd2ef937098cc309b575c51",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\figures.py": "0069bbd741917cd1f8b52de8bdc62c1de89f6dc5d1a3d3c7df8d0e6af9e36e72",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\narrative.py": "6e25e096c7338d696696888a2db1c3b9cf44d84e3e362832cba533f6d0309705",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\q2\\pipeline.py": "c64fae9669d4dcde280f081eed8efccc957781f1454b2883a5eaf690ccf0ae00",
+    "D:\\xyq\\数模\\D题\\建模\\scripts\\plot_q2.py": "183e6a46b36d77fbd0ce32a95ecb672b656cdc41fe8ada128f1a5cb59c8d3118",
+    "D:\\xyq\\数模\\D题\\建模\\scripts\\export_q2.mjs": "5d1190426cdba19fb6eee5cebf1014bf9b0dd21a0bce79bcb8883c46cab961b9",
+    "D:\\xyq\\数模\\D题\\建模\\scripts\\export_q1.mjs": "cdbd9c5bb22b1ecfec64db8f13e10b3147445646c6d70e9ade5fe46ee37a6a7d"
+  },
+  "last_export_elapsed_s": 22.82241340004839
 }

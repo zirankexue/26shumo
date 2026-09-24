@@ -65,6 +65,9 @@ for (const source of data.sheets) {
   for (const [address, format] of Object.entries(source.cell_formats || {})) {
     sheet.getRange(address).setNumberFormat(format);
   }
+  for (const [address, formula] of Object.entries(source.cell_formulas || {})) {
+    sheet.getRange(address).formulas = [[formula]];
+  }
 }
 wb.recalculate();
 const summary = await wb.inspect({ kind:'sheet', include:'id,name', maxChars:3000 });

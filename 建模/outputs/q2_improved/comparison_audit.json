@@ -1,0 +1,257 @@
+{
+  "scope": "只读口径对比；没有检查点读取、求解器修改或优化；截图仅有摘要，不能验证对方可行性。",
+  "source_result": "D:\\xyq\\数模\\D题\\建模\\outputs\\q2_weighted\\tables\\results.json",
+  "source_sha256": "871d662073e9277d313fb4dc0238c9a507254555bbdb805173be0f0e23ce5084",
+  "sum_box_priorities": 956,
+  "our_weighted_mean_definitions": {
+    "weighted_mean_tardiness_s": "sum_b w_b max(0,C_b-d_b)/sum_b w_b",
+    "weighted_mean_delivery_s": "sum_b w_b C_b/sum_b w_b"
+  },
+  "ours": [
+    {
+      "scheme": "weighted",
+      "weighted_tardiness_coefficient_s": 47.891999999999825,
+      "weighted_mean_tardiness_s": 0.05009623430962325,
+      "weighted_mean_delivery_s": 3187.2863326359834,
+      "possible_screenshot_T": 0.08854964708275222,
+      "makespan_s": 7727.954,
+      "energy_kwh": 70.78182937056067,
+      "sorties": 24,
+      "on_time": 79,
+      "hard_violations": 0
+    },
+    {
+      "scheme": "scenario_tardiness",
+      "weighted_tardiness_coefficient_s": 47.891999999999825,
+      "weighted_mean_tardiness_s": 0.05009623430962325,
+      "weighted_mean_delivery_s": 3187.2863326359834,
+      "possible_screenshot_T": 0.08854964708275222,
+      "makespan_s": 7727.954,
+      "energy_kwh": 70.78182937056067,
+      "sorties": 24,
+      "on_time": 79,
+      "hard_violations": 0
+    },
+    {
+      "scheme": "scenario_makespan",
+      "weighted_tardiness_coefficient_s": 179071.71600000001,
+      "weighted_mean_tardiness_s": 187.31351046025105,
+      "weighted_mean_delivery_s": 3120.724972803347,
+      "possible_screenshot_T": 0.13871833548349605,
+      "makespan_s": 6921.074,
+      "energy_kwh": 71.53526408714686,
+      "sorties": 25,
+      "on_time": 74,
+      "hard_violations": 0
+    },
+    {
+      "scheme": "scenario_energy",
+      "weighted_tardiness_coefficient_s": 42218.63999999999,
+      "weighted_mean_tardiness_s": 44.161757322175724,
+      "weighted_mean_delivery_s": 3732.039058577406,
+      "possible_screenshot_T": 0.11593490643886567,
+      "makespan_s": 8760.787,
+      "energy_kwh": 62.50833539005977,
+      "sorties": 19,
+      "on_time": 77,
+      "hard_violations": 0
+    },
+    {
+      "scheme": "scenario_sorties",
+      "weighted_tardiness_coefficient_s": 42218.63999999999,
+      "weighted_mean_tardiness_s": 44.161757322175724,
+      "weighted_mean_delivery_s": 3732.039058577406,
+      "possible_screenshot_T": 0.11593490643886567,
+      "makespan_s": 8760.787,
+      "energy_kwh": 62.50833539005977,
+      "sorties": 19,
+      "on_time": 77,
+      "hard_violations": 0
+    },
+    {
+      "scheme": "tardiness",
+      "weighted_tardiness_coefficient_s": 0.0,
+      "weighted_mean_tardiness_s": 0.0,
+      "weighted_mean_delivery_s": 3517.026261506276,
+      "possible_screenshot_T": 0.0976951739307299,
+      "makespan_s": 7715.162,
+      "energy_kwh": 85.86410138075082,
+      "sorties": 31,
+      "on_time": 80,
+      "hard_violations": 0
+    },
+    {
+      "scheme": "makespan",
+      "weighted_tardiness_coefficient_s": 783.5759999999973,
+      "weighted_mean_tardiness_s": 0.8196401673640139,
+      "weighted_mean_delivery_s": 3406.6417635983266,
+      "possible_screenshot_T": 0.09485661570199908,
+      "makespan_s": 7528.576,
+      "energy_kwh": 83.18904016191938,
+      "sorties": 30,
+      "on_time": 79,
+      "hard_violations": 0
+    },
+    {
+      "scheme": "energy",
+      "weighted_tardiness_coefficient_s": 429204.104,
+      "weighted_mean_tardiness_s": 448.9582677824268,
+      "weighted_mean_delivery_s": 4408.3978933054395,
+      "possible_screenshot_T": 0.24716612697582518,
+      "makespan_s": 11453.859,
+      "energy_kwh": 62.634022491209805,
+      "sorties": 19,
+      "on_time": 65,
+      "hard_violations": 0
+    },
+    {
+      "scheme": "sorties",
+      "weighted_tardiness_coefficient_s": 60547.40600000001,
+      "weighted_mean_tardiness_s": 63.33410669456068,
+      "weighted_mean_delivery_s": 3919.748089958159,
+      "possible_screenshot_T": 0.1264746988028824,
+      "makespan_s": 9906.71,
+      "energy_kwh": 65.5252117464245,
+      "sorties": 19,
+      "on_time": 78,
+      "hard_violations": 0
+    }
+  ],
+  "screenshot_transcribed_rounded": [
+    {
+      "scheme": "timeliness",
+      "T": 0.087,
+      "weighted_mean_tardiness_s": 31.688,
+      "weighted_mean_delivery_s": 2830.809,
+      "makespan_h": 2.069,
+      "energy_kwh": 73.391,
+      "sorties": 23,
+      "hard_violations": 0,
+      "possible_T_formula_result": 0.08743580555555557,
+      "conditional_our_F": 0.13513905646166383
+    },
+    {
+      "scheme": "makespan_recommended",
+      "T": 0.149,
+      "weighted_mean_tardiness_s": 235.508,
+      "weighted_mean_delivery_s": 3001.488,
+      "makespan_h": 1.867,
+      "energy_kwh": 70.295,
+      "sorties": 22,
+      "hard_violations": 0,
+      "possible_T_formula_result": 0.14879355555555554,
+      "conditional_our_F": 0.28665904398510383
+    },
+    {
+      "scheme": "energy",
+      "T": 0.14,
+      "weighted_mean_tardiness_s": 179.963,
+      "weighted_mean_delivery_s": 3228.646,
+      "makespan_h": 2.275,
+      "energy_kwh": 68.643,
+      "sorties": 20,
+      "hard_violations": 0,
+      "possible_T_formula_result": 0.13967433333333334,
+      "conditional_our_F": 0.2926052311104231
+    },
+    {
+      "scheme": "sorties",
+      "T": 0.208,
+      "weighted_mean_tardiness_s": 349.45,
+      "weighted_mean_delivery_s": 4000.521,
+      "makespan_h": 2.971,
+      "energy_kwh": 66.591,
+      "sorties": 16,
+      "hard_violations": 0,
+      "possible_T_formula_result": 0.2081950277777778,
+      "conditional_our_F": 0.598441863358609
+    }
+  ],
+  "screenshot_formula_hypothesis": "四行输出与T=(加权平均迟到+0.1*加权平均送达)/3600一致，但缺少metric_row/evaluate定义，不能证实。",
+  "conditional_F_note": "只假设对方加权平均迟到使用同一80箱、同一w_b和分母956，将其已四舍五入摘要换算到我方固定归一化尺度；不代表已验证其物理/资源模型一致。",
+  "screenshot_recommendation_minus_ours": {
+    "screenshot_minus_ours_makespan_minutes": -16.77923333333333,
+    "screenshot_minus_ours_energy_kwh": -0.4868293705606703,
+    "screenshot_minus_ours_sorties": -2,
+    "screenshot_minus_ours_weighted_mean_tardiness_s": 235.4579037656904,
+    "screenshot_minus_ours_weighted_mean_delivery_s": -185.79833263598357
+  },
+  "algorithm_observations": {
+    "weighted_route_generation_rounds": 26,
+    "frozen_pool_scenario_rounds": 12000,
+    "pool_size": 1500,
+    "weighted_cp_statuses": {
+      "FEASIBLE": 27,
+      "UNKNOWN": 3,
+      "OPTIMAL": 2
+    },
+    "limitations": [
+      "4×3000快速轮次只在固定1500候选池重组，没有每轮新航线。",
+      "主搜索生成候选采用轮换词典序代理成本，而非当前加权目标边际值。",
+      "快速列表调度固定优先所有含硬截止架次，软箱架次难以穿插；箱内顺序主要末次CP调整。",
+      "局部CP单次约15秒，主搜索仅26轮，完整候选池两次120秒均仅FEASIBLE。",
+      "同机型机电资源和逐箱顺序联合调度仍有搜索空间；不能由算法名字断言优劣。"
+    ]
+  },
+  "weight_scenarios": {
+    "screenshot": [
+      [
+        8,
+        1,
+        0.5,
+        0.25
+      ],
+      [
+        1,
+        6,
+        0.5,
+        0.25
+      ],
+      [
+        1,
+        0.5,
+        6,
+        0.25
+      ],
+      [
+        1,
+        0.5,
+        1,
+        6
+      ]
+    ],
+    "ours": [
+      [
+        30,
+        1.5,
+        1,
+        0.5
+      ],
+      [
+        3,
+        15,
+        1,
+        0.5
+      ],
+      [
+        3,
+        1.5,
+        10,
+        0.5
+      ],
+      [
+        3,
+        1.5,
+        1,
+        5
+      ]
+    ]
+  },
+  "unknowns_from_screenshot": [
+    "及时性T完整公式与各指标归一化基准",
+    "飞行与能耗口径、每站爬升和巡航高程",
+    "逐箱交接与医疗/首批硬截止时刻",
+    "实体机/电池库存占用、换电和充满后复用",
+    "具体路线、货箱和资源安排"
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "csv_files_checked": 32,
+  "json_csv_equal": true,
+  "protected_files_unchanged": 210,
+  "trajectory_vertices": 272,
+  "best_seen_consistent_across_four_orders": true,
+  "figures": [
+    {
+      "name": "01_二维运输路线",
+      "png_size": [
+        2964,
+        2624
+      ],
+      "png_sha256": "d1fc63140201dc790c2603e6c12f9e8c36a1584ab045a8bf995de5811e71ea67",
+      "pdf_sha256": "696e0f11005878ccd95efc94974f068128ee63c03e74dde1904aa95f96e18d71",
+      "pdf_pages": 1,
+      "pdf_render_nonblank": true
+    },
+    {
+      "name": "02_三维实际航迹",
+      "png_size": [
+        2627,
+        2727
+      ],
+      "png_sha256": "76e7394579e68cec62b58bacb026b03ff95de33e8ee048168ce8e26a4050829e",
+      "pdf_sha256": "c91dd14249dbb25057b631ac516a706760d78293cc61c4675d034e82935652a3",
+      "pdf_pages": 1,
+      "pdf_render_nonblank": true
+    },
+    {
+      "name": "03_无人机占用甘特图",
+      "png_size": [
+        3392,
+        1689
+      ],
+      "png_sha256": "7fffd5dbcfec7bff36e88213bde0129def358f4b046c4fc0a095d5dd8fbbb3bb",
+      "pdf_sha256": "fd34d595165980af2f632c71d7243e42d32a062e6e945dd240b0ddb7202421b9",
+      "pdf_pages": 1,
+      "pdf_render_nonblank": true
+    },
+    {
+      "name": "04_电池使用与充电",
+      "png_size": [
+        3507,
+        2208
+      ],
+      "png_sha256": "90db5e8bfd1482b83ce9093795100e740e8d8f7914d840dbe822f22ab9616766",
+      "pdf_sha256": "a75c4d4b5c409db2e361d6d8c05d74fc8587c009a57c8846f3cc806714a33f51",
+      "pdf_pages": 1,
+      "pdf_render_nonblank": true
+    },
+    {
+      "name": "05_逐箱配送及时性",
+      "png_size": [
+        3662,
+        2955
+      ],
+      "png_sha256": "5304336f2de6beb6ecdb0b08d8c15ebaf5f899e836cb974f9a1266c1e97c313d",
+      "pdf_sha256": "106cf540476beb7dedbed143fed1dcd711f1d70c78dfacd70e0d1070c03f7b86",
+      "pdf_pages": 1,
+      "pdf_render_nonblank": true
+    },
+    {
+      "name": "06_硬截止裕量排序",
+      "png_size": [
+        2696,
+        3246
+      ],
+      "png_sha256": "a16cd8160b414f325b65216db5a4ee02fd773e157279c99f6d8f89cecc5f0363",
+      "pdf_sha256": "7ac6d306183e4246591aeca763a4bb43b832c45983854afd4af15b21992fc8a7",
+      "pdf_pages": 1,
+      "pdf_render_nonblank": true
+    },
+    {
+      "name": "07_四目标优先级权衡",
+      "png_size": [
+        3266,
+        2665
+      ],
+      "png_sha256": "fadef495b70dcf8bfdcca2d5d2527d8e1cb3511d7c1539cabfac9373c50ef424",
+      "pdf_sha256": "97ab7ce3cf6744c4918bd04de1530b618db3ae02d0a03a86b23377a9561fcaaf",
+      "pdf_pages": 1,
+      "pdf_render_nonblank": true
+    },
+    {
+      "name": "08_ALNS搜索进展",
+      "png_size": [
+        3243,
+        2467
+      ],
+      "png_sha256": "6eaceeba42101552c7291147c08bcee1f4bdb1ebc5e09f01f3770e31e12a6cde",
+      "pdf_sha256": "62da54986d30908cee719f2f5c0f125f948c289388f8fd8bcbe40d132a5c1ec2",
+      "pdf_pages": 1,
+      "pdf_render_nonblank": true
+    }
+  ],
+  "excel_preview_count": 16,
+  "visual_review": "Rendered every PDF and worksheet preview; human inspection recorded separately."
+}

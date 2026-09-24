@@ -1,0 +1,32 @@
+{
+  "review_date": "2026-09-24",
+  "result_scope": "Formal 3602.38823079993-second ALNS and CP-SAT run",
+  "pdfs_rendered_and_visually_reviewed": 8,
+  "excel_sheet_previews_visually_reviewed": 16,
+  "checks": {
+    "chinese_glyphs_readable": true,
+    "labels_and_legends_unclipped": true,
+    "route_order_footnotes_readable": true,
+    "all_31_hard_deadline_box_labels_present": true,
+    "resource_ids_and_sortie_labels_readable": true,
+    "figure_counts_and_objectives_match_formal_results": true
+  },
+  "independent_redraw": {
+    "code": "plotting/code/plot_q2.py",
+    "data": "plotting/data/plot_data.json",
+    "output": "../q2_redraw",
+    "reads_original_workbooks_or_dem": false,
+    "png_hash_matches": 8,
+    "png_count": 8
+  },
+  "machine_audit": "export_checks.json",
+  "full_replay": "verification_replay.json",
+  "unit_tests": {"passed": 27, "q1_regressions": 13},
+  "streaming_excel_verifier_regression": {
+    "q2_cells_compared_by_both_old_and_new_verifiers": 19429,
+    "q2_both_passed": true,
+    "q1_existing_workbook_cells_checked": 2785,
+    "q1_existing_workbook_passed": true
+  },
+  "scope_note": "Visual and numerical consistency do not establish field calibration or global routing optimality."
+}

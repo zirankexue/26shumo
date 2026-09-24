@@ -1,0 +1,35 @@
+{
+  "nodes": 16,
+  "directed_legs": 240,
+  "unordered_pairs": 120,
+  "flight_time_rows": 720,
+  "matrix_shape": [
+    16,
+    16
+  ],
+  "matrix_diagonal_zero": true,
+  "matrix_symmetric": true,
+  "saved_results_equal_cache": true,
+  "coordinates_equal_Terrain_and_saved_map": true,
+  "full_dem_geometry_matches": true,
+  "max_distance_recompute_error_m": 0.0,
+  "source_sha256": {
+    "D:\\xyq\\数模\\D题\\建模\\outputs\\q2\\tables\\results.json": "ad0262058bde174a9a763e525c2ec29fef02964b5ccae4bbf292112f355ea75c",
+    "D:\\xyq\\数模\\D题\\建模\\cache\\q2\\legs.json": "cdc9c5f915ffabfa87521ce51f91e03e9081d55680138e3952c082d52eb58ae3",
+    "D:\\xyq\\数模\\D题\\建模\\scripts\\export_geometry.py": "e32ae6e8e39b4d4fb0f8554c89fe3320dea6a93a682b78d65dc60dbf19eeb0ad",
+    "D:\\xyq\\数模\\D题\\建模\\src\\uav_rescue\\common\\terrain.py": "2008da6f0e6c563fdc4637128798fd59ab23e1ca50ef9f4c0cec7a52582e0026",
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\调度中心与服务区.xlsx": "541a7af1ded08c9a3ff448480332cb5f6a54902f0afa6e9bcd50c1d2b2b34e38",
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+    "D:\\xyq\\数模\\D题\\数据\\无人机应急物资运输基础数据\\运输无人机数据.xlsx": "9296a657c07e042afba6aeea7999665d9cd24e00b592fd6c269de6e338480dcb",
+    "D:\\xyq\\数模\\D题\\数据\\镇龙乡地理空间数据\\镇龙乡及周边地理数据\\数字高程模型数据（DEM）\\镇龙乡及周边30米DEM.tif": "741fe6de0b2bcaffd0f4007f574ee698d46197094f52cc954b532c4f90fc7c03",
+    "D:\\xyq\\数模\\D题\\结果提交模板.xlsx": "16f521f29a7103c4ff7c3709ce1696bb9fffa18ce741895e45b7bc7afaf3320a"
+  },
+  "generated_utc": "2026-09-24T08:59:14.189691+00:00",
+  "output_sha256": {
+    "directed_legs_240.csv": "93e183481b4c8668d095133932f40d6ae45b045d9b0f8bcfea76b5ad1488dcff",
+    "flight_times_720.csv": "ffd1f191490869e7ce8e9f8dd1fd9c4d6389aca80d975b976cf54543c0f28fb6",
+    "horizontal_distance_matrix_m.csv": "22ded7df181f218650b9d2e3191e9371f20af7ba6b242b878ddf575e1f38f699",
+    "legs_source.json": "cdc9c5f915ffabfa87521ce51f91e03e9081d55680138e3952c082d52eb58ae3",
+    "nodes_wgs84_local_xy.csv": "041f9f2eb3417df23b732e08a7e770d922421b5e3a8399bdd974f7e2663b551e"
+  }
+}

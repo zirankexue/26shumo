@@ -124,10 +124,10 @@ def run(project: Path, config_path: Path, output_override: str | None, skip_exce
         for sid in inputs.services)
     print('主方案：'+json.dumps(baseline['summary'],ensure_ascii=False),flush=True)
     comparisons=[baseline]
-    labels={('sorties','time','energy'):'架次→时间→能耗',('energy','sorties','time'):'能耗→架次→时间'}
+    objective_names={'sorties':'架次','energy':'能耗','time':'时间'}
     for raw_order in opt['comparison_orders']:
         order=tuple(raw_order)
-        result,_=scenario(baseline_reserve,order,labels.get(order,'→'.join(order)))
+        result,_=scenario(baseline_reserve,order,'→'.join(objective_names[k] for k in order))
         comparisons.append(result)
     sensitivity=[]
     for reserve in sorted(set(float(r) for r in opt['sensitivity_reserves'])):

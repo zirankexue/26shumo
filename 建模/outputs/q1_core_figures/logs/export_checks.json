@@ -1,0 +1,111 @@
+{
+  "passed": true,
+  "exports": [
+    {
+      "name": "01_各服务区货箱组批方案.pdf",
+      "png_size": [
+        5670,
+        3633
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_pages": 1,
+      "text_chars": 1693,
+      "vector_fonts": true,
+      "rendered": true
+    },
+    {
+      "name": "02_批次装载与返航安全.pdf",
+      "png_size": [
+        5332,
+        3490
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_pages": 1,
+      "text_chars": 880,
+      "vector_fonts": true,
+      "rendered": true
+    },
+    {
+      "name": "03_各服务区组批统计.pdf",
+      "png_size": [
+        6756,
+        2919
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_pages": 1,
+      "text_chars": 918,
+      "vector_fonts": true,
+      "rendered": true
+    },
+    {
+      "name": "04_目标优先级权衡.pdf",
+      "png_size": [
+        5082,
+        2490
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_pages": 1,
+      "text_chars": 531,
+      "vector_fonts": true,
+      "rendered": true
+    },
+    {
+      "name": "05_安全余量与最大安全载荷.pdf",
+      "png_size": [
+        5747,
+        2919
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_pages": 1,
+      "text_chars": 726,
+      "vector_fonts": true,
+      "rendered": true
+    },
+    {
+      "name": "06_安全余量与组批结果.pdf",
+      "png_size": [
+        4777,
+        3490
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_pages": 1,
+      "text_chars": 618,
+      "vector_fonts": true,
+      "rendered": true
+    },
+    {
+      "name": "07_安全余量与服务区可行性.pdf",
+      "png_size": [
+        4758,
+        2490
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_pages": 1,
+      "text_chars": 561,
+      "vector_fonts": true,
+      "rendered": true
+    }
+  ],
+  "visual_review": "7份最终PDF经Poppler渲染逐图检查；80箱标签、18批次行序、标题图例、曲线、135格数字与基准黑框可读，无文字重叠或裁切。7张PNG重绘一致。"
+}

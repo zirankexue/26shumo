@@ -21,3 +21,12 @@
 **/outputs/q2_smoke/
 **/outputs/**/logs/previews/
 **/outputs/**/*.inspect.ndjson
+**/outputs/**/*inspect.ndjson
+**/outputs/**/logs/visual_qa/
+**/outputs/**/logs/qa/
+**/outputs/*redraw*/
+**/outputs/*smoke*/
+**/*PDF渲染核验.png
+**/*.ttf
+**/*.otf
+**/outputs/**/*checkpoint*
