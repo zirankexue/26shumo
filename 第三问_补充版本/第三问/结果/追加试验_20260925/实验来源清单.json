@@ -1,0 +1,265 @@
+{
+  "scope": "Unmodified saved Q3 trial outputs; neither trial replaces the formal recommendation.",
+  "copy_count": 43,
+  "bytes": 17399024,
+  "files": [
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/audit_final_label_symmetry.json",
+      "source": "project/results/question3_trial_local_20260925/audit_final_label_symmetry.json",
+      "bytes": 28403,
+      "sha256": "8a64ccb62cc8cf1abc3722aceff327ce1f93252a579d07077ba8efc0d0bf03a9"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/search_candidate_summary.json",
+      "source": "project/results/question3_trial_local_20260925/search_candidate_summary.json",
+      "bytes": 4087686,
+      "sha256": "aa90f52a75b92022a14a89aaf7e511f446e8ef99df2c8149ff49c2eff02f7519"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/search_history.json",
+      "source": "project/results/question3_trial_local_20260925/search_history.json",
+      "bytes": 4119,
+      "sha256": "f6bb0aa1195fc40eeb2854a113948e1bdb2b46002f1b43e393eb616c1806038b"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_fixed_refinement.json",
+      "source": "project/results/question3_trial_local_20260925/solution_fixed_refinement.json",
+      "bytes": 278490,
+      "sha256": "33761d5777790a43a2922bea1efaee586187babc1f2aacca9cd9ac635a64ccaf"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_interval_relay_switch.json",
+      "source": "project/results/question3_trial_local_20260925/solution_interval_relay_switch.json",
+      "bytes": 279116,
+      "sha256": "ab613b928481344acaca23374aa0fab717c17eeb23c21f50085b37cd3ce23c63"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_joint_neighborhood_1.json",
+      "source": "project/results/question3_trial_local_20260925/solution_joint_neighborhood_1.json",
+      "bytes": 278202,
+      "sha256": "b324768846966e78cf9d311835fbd4e61c98ea612da328a9f94bf6b2b64e6fc9"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_joint_neighborhood_2.json",
+      "source": "project/results/question3_trial_local_20260925/solution_joint_neighborhood_2.json",
+      "bytes": 278209,
+      "sha256": "60890b9f024d47ffdcfc4b9dbdb4111a981699c18edf8920f3738e495496116e"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_joint_neighborhood_3.json",
+      "source": "project/results/question3_trial_local_20260925/solution_joint_neighborhood_3.json",
+      "bytes": 277717,
+      "sha256": "7ddfa92c2db7e7f925be85d656cd41083c167a58e65f517445c5a020e7943e0e"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_recommended.json",
+      "source": "project/results/question3_trial_local_20260925/solution_recommended.json",
+      "bytes": 283843,
+      "sha256": "887ee5eab5fa5034059f449d469c656960e268a4302a44e57a83cd1c4df7b0e3"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_route_seed_union.json",
+      "source": "project/results/question3_trial_local_20260925/solution_route_seed_union.json",
+      "bytes": 275771,
+      "sha256": "963dc504aa4e7b0aa38bd4dadc5aaba944e06b4b34a3d7eecadb21f6938221dd"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_search_best.json",
+      "source": "project/results/question3_trial_local_20260925/solution_search_best.json",
+      "bytes": 278209,
+      "sha256": "60890b9f024d47ffdcfc4b9dbdb4111a981699c18edf8920f3738e495496116e"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_targeted_stations.json",
+      "source": "project/results/question3_trial_local_20260925/solution_targeted_stations.json",
+      "bytes": 275798,
+      "sha256": "5934eab6357cccd62f406938817ab4ccb8df67ce039d0d402cfb81a1277ae54c"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/station_pool.json",
+      "source": "project/results/question3_trial_local_20260925/station_pool.json",
+      "bytes": 65491,
+      "sha256": "939206a6afb6ff0aadde5c347fc81a6fed5d18d2cd8f01a035c21e38c7988093"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/station_refinement_audit.json",
+      "source": "project/results/question3_trial_local_20260925/station_refinement_audit.json",
+      "bytes": 7979,
+      "sha256": "7c643e0ad29c841940356090eadce454962cf63124fd6dc3e079e002cf893b85"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_fixed_refinement.json",
+      "source": "project/results/question3_trial_local_20260925/validation_fixed_refinement.json",
+      "bytes": 280236,
+      "sha256": "a2901f9dbf6fd6ae950f7f00f49efb1881751482bb9991a58eaf44fb9d0907c5"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_interval_relay_switch.json",
+      "source": "project/results/question3_trial_local_20260925/validation_interval_relay_switch.json",
+      "bytes": 280118,
+      "sha256": "c6762aa50c74451cd246235c309b4c44acaeef58f842678de7248c3a67d14817"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_joint_neighborhood_1.json",
+      "source": "project/results/question3_trial_local_20260925/validation_joint_neighborhood_1.json",
+      "bytes": 280240,
+      "sha256": "447db82c6a24b00e879008cc4cf8cf4d197e184e5dc20a735de48548e8070fb0"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_joint_neighborhood_2.json",
+      "source": "project/results/question3_trial_local_20260925/validation_joint_neighborhood_2.json",
+      "bytes": 280240,
+      "sha256": "79c3893e8e62e6f69cc10d912e1d8cff77bbdd37aa5e774da68c0b8c69eef173"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_joint_neighborhood_3.json",
+      "source": "project/results/question3_trial_local_20260925/validation_joint_neighborhood_3.json",
+      "bytes": 280291,
+      "sha256": "b8b42106856d0a01dbc5e7361e68330e01ece59f8d9a688e9127631517c90a31"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_recommended.json",
+      "source": "project/results/question3_trial_local_20260925/validation_recommended.json",
+      "bytes": 280221,
+      "sha256": "730c60fa9ae9492f926ee2def0d758748c84317a0ea2b43353ec231659978600"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_route_seed_union.json",
+      "source": "project/results/question3_trial_local_20260925/validation_route_seed_union.json",
+      "bytes": 280821,
+      "sha256": "541fd9321da963b7dc3ea229f5a61fb5fe09cf0c7973e558a1a1c5b1f5d355a2"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_targeted_stations.json",
+      "source": "project/results/question3_trial_local_20260925/validation_targeted_stations.json",
+      "bytes": 281116,
+      "sha256": "0dc71a4e8518981fd3e925038130a88387e04c5895dcdee755213afdd154d560"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/audit_final_label_symmetry.json",
+      "source": "project/results/q3_remote_long_20260925/audit_final_label_symmetry.json",
+      "bytes": 26619,
+      "sha256": "b3bc0fdbfd064f87d351a2f6c592dd954f89ec545e220825a0c4e8781dd8f93b"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/run.log",
+      "source": "project/results/q3_remote_long_20260925/run.log",
+      "bytes": 5363,
+      "sha256": "387e4478068d7c55652ff660ca35df87c7215eae9bbd01101c73dd49763b0f42"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/search_candidate_summary.json",
+      "source": "project/results/q3_remote_long_20260925/search_candidate_summary.json",
+      "bytes": 4048749,
+      "sha256": "071df3990e31aef82c5f33a33b79ca56a22853710928f2685f9ec7267563485d"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/search_history.json",
+      "source": "project/results/q3_remote_long_20260925/search_history.json",
+      "bytes": 4294,
+      "sha256": "e878abe6608192c52ac3803f6d2c435f9ac7876dd74c82a22db0f75e1d02be6b"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_fixed_refinement.json",
+      "source": "project/results/q3_remote_long_20260925/solution_fixed_refinement.json",
+      "bytes": 267917,
+      "sha256": "0ede2e124df8e0d2a971de470a9f600d441797f083f1b2d8ba6e7e44f5efb887"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_interval_relay_switch.json",
+      "source": "project/results/q3_remote_long_20260925/solution_interval_relay_switch.json",
+      "bytes": 267368,
+      "sha256": "8a8db7794a15b15556ec36fc87932bac0c2a2e5deb1d7ca0487bd1183b71fb7e"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_joint_neighborhood_1.json",
+      "source": "project/results/q3_remote_long_20260925/solution_joint_neighborhood_1.json",
+      "bytes": 267322,
+      "sha256": "7243c6f00175eeded511e25e1c5c012f8ef3f1f967ffaf7f805cbbdc9988e407"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_joint_neighborhood_2.json",
+      "source": "project/results/q3_remote_long_20260925/solution_joint_neighborhood_2.json",
+      "bytes": 267555,
+      "sha256": "f1208fabd40771b7732a96a482ced70ce579981199c95b860aefbc509543d0f4"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_joint_neighborhood_3.json",
+      "source": "project/results/q3_remote_long_20260925/solution_joint_neighborhood_3.json",
+      "bytes": 268027,
+      "sha256": "343d333ce5734770a1e6cca2bd5492975cf718ca257ee4c59b5ed75bae356df9"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_joint_neighborhood_4.json",
+      "source": "project/results/q3_remote_long_20260925/solution_joint_neighborhood_4.json",
+      "bytes": 266702,
+      "sha256": "961ebc0dbe29e8b100aa6efb55756d12e989ec0121dae77885ae4616c16a6473"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_recommended.json",
+      "source": "project/results/q3_remote_long_20260925/solution_recommended.json",
+      "bytes": 273719,
+      "sha256": "112edd2970520aae7c9aa4e1605f125bc003a4a4958bf4004f8e80ee8303453a"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_search_best.json",
+      "source": "project/results/q3_remote_long_20260925/solution_search_best.json",
+      "bytes": 267917,
+      "sha256": "0ede2e124df8e0d2a971de470a9f600d441797f083f1b2d8ba6e7e44f5efb887"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/station_pool.json",
+      "source": "project/results/q3_remote_long_20260925/station_pool.json",
+      "bytes": 63078,
+      "sha256": "bd1c48dfd7dbdbdacaa59ae933d0d49fbb9d131f5132cc43907c1122c18a77c2"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_fixed_refinement.json",
+      "source": "project/results/q3_remote_long_20260925/validation_fixed_refinement.json",
+      "bytes": 268861,
+      "sha256": "e236d70056ba04c607f54ca520675778fd88f82e669377504616eb3a74c066be"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_interval_relay_switch.json",
+      "source": "project/results/q3_remote_long_20260925/validation_interval_relay_switch.json",
+      "bytes": 268784,
+      "sha256": "316edd7da21bfe1f4e302be7fcd59309887e509fd1af0153194c7ff97448a93a"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_joint_neighborhood_1.json",
+      "source": "project/results/q3_remote_long_20260925/validation_joint_neighborhood_1.json",
+      "bytes": 268866,
+      "sha256": "ad4beb9aac93a32a7e0cd01ce67fb4df67ab9f08418e2fb64f6688e456d85ff6"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_joint_neighborhood_2.json",
+      "source": "project/results/q3_remote_long_20260925/validation_joint_neighborhood_2.json",
+      "bytes": 268865,
+      "sha256": "a85474a7edcaf255144ab5daffe3e2c99d264e1b5a859bc6de4fd7501951259f"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_joint_neighborhood_3.json",
+      "source": "project/results/q3_remote_long_20260925/validation_joint_neighborhood_3.json",
+      "bytes": 268807,
+      "sha256": "30f82be2a2fc5b12703e03a4dc0313fa99eaa19185e747b42d689858cd953d9e"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_joint_neighborhood_4.json",
+      "source": "project/results/q3_remote_long_20260925/validation_joint_neighborhood_4.json",
+      "bytes": 268874,
+      "sha256": "5fb23b3f70b09c90b396bf93700a0603a1f7ecf6786fd74b256c649615641b5b"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_local_rerun.json",
+      "source": "project/results/q3_remote_long_20260925/validation_local_rerun.json",
+      "bytes": 280166,
+      "sha256": "e2a9c4d6e6792f4ed2638e9d0ff263287f37350ae505e2e59989bdf2ac804d9a"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_recommended.json",
+      "source": "project/results/q3_remote_long_20260925/validation_recommended.json",
+      "bytes": 268855,
+      "sha256": "bde0471ab48e0d1c3a47ebd7eb8a7dd317e937e4c4b5ebdc0cd21a42c29e74c9"
+    }
+  ]
+}

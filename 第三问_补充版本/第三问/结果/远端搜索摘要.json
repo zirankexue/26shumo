@@ -13,7 +13,7 @@
     "solver_note": "CP-SAT stages are CPU-bound; the GPU was used only as the remote machine context, not as a CP-SAT accelerator."
   },
   "formal": {
-    "path": "results/question3_agent_update/solution_recommended.json",
+    "path": "solution_recommended.json",
     "sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b",
     "metrics": {
       "boxes": 80,
@@ -32,7 +32,7 @@
       "score": 0.0037081055399544767
     },
     "validation": {
-      "path": "results/question3_agent_update/validation_recommended.json",
+      "path": "validation_recommended.json",
       "sha256": "a661d9f495803115cf5714ea40dd64614d2d3cdef670d6a704619bf0ebfa1375",
       "passed": true,
       "check_count": 11884,
@@ -43,7 +43,7 @@
     }
   },
   "remote_candidate": {
-    "local_path": "local results/q3_remote_long_20260925/solution_recommended.json",
+    "local_path": "追加试验_20260925/远端搜索/solution_recommended.json",
     "sha256": "112edd2970520aae7c9aa4e1605f125bc003a4a4958bf4004f8e80ee8303453a",
     "metrics": {
       "boxes": 80,
@@ -62,7 +62,7 @@
       "score": 0.003708041850279103
     },
     "validation": {
-      "local_path": "local results/q3_remote_long_20260925/validation_recommended.json",
+      "local_path": "追加试验_20260925/远端搜索/validation_recommended.json",
       "sha256": "bde0471ab48e0d1c3a47ebd7eb8a7dd317e937e4c4b5ebdc0cd21a42c29e74c9",
       "passed": true,
       "check_count": 11902,
@@ -92,6 +92,8 @@
     "promote_remote_candidate": false,
     "reason": "Same 21 transport sorties, 3 relay sorties, and energy; joint finish improves by 0.001 s and score by 6.368967537390136e-08, below the 1e-6 interpretation threshold; weighted mean delivery is 8.183815899581987 s later."
   },
-  "search_history_path": "local results/q3_remote_long_20260925/search_history.json",
-  "large_candidate_pool_omitted_from_package": true
+  "search_history_path": "追加试验_20260925/远端搜索/search_history.json",
+  "large_candidate_pool_omitted_from_package": false,
+  "candidate_pool_path": "追加试验_20260925/远端搜索/search_candidate_summary.json",
+  "archive_note": "Paths resolve relative to this summary. Raw trial artifacts added during the 2026-09-25 completeness check."
 }

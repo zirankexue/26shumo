@@ -1,0 +1,261 @@
+{
+  "checked_at_utc": "2026-09-25T07:10:38.429246+00:00",
+  "checked_remote_commit_before_supplement": "e32bdbe4351bd9919ebca4a72678cf409d037cd3",
+  "previous_commit_archive": {
+    "tracked_files": 69,
+    "manifest_entries": 68,
+    "committed_hash_errors": 0
+  },
+  "scope": "Archive coverage, byte identity, saved solution/validation/workbook bindings, and local Markdown navigation; no new optimizer or physical-validation run.",
+  "formal_evidence": {
+    "solution_sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b",
+    "validation_sha256": "a661d9f495803115cf5714ea40dd64614d2d3cdef670d6a704619bf0ebfa1375",
+    "workbook_sha256": "a857c6b2bb248bce6e7a168ca390f6e0e00f4c737cb74d0d46ab551af140283f",
+    "metrics": {
+      "boxes": 80,
+      "transport_sorties": 21,
+      "relay_sorties": 3,
+      "transport_energy_kwh": 64.09596908039461,
+      "relay_energy_kwh": 2.349304202173859,
+      "joint_finish_s": 6612.284,
+      "transport_finish_s": 6559.627,
+      "last_delivery_s": 6234.755,
+      "late_boxes": 0,
+      "weighted_delay_s": 0.0,
+      "weighted_mean_delivery_s": 3092.1109979079497,
+      "multi_stop_sorties": 6,
+      "total_energy_kwh": 66.44527328256846,
+      "score": 0.0037081055399544767
+    },
+    "saved_validation_checks": 11884,
+    "saved_validation_errors": 0,
+    "continuous_intervals": 240,
+    "unproven_intervals": 0,
+    "workbook_readback_saved_checks": 700,
+    "matching_solution_validator_and_workbook_hashes": true
+  },
+  "source_snapshot_checks": [
+    {
+      "path": "第三问/代码/export_q3_senior.mjs",
+      "sha256": "d60828cb8bec81c3634e50267b34029a6ea14479c4c57dd4148304babbb15338",
+      "matches_project_source": true
+    },
+    {
+      "path": "第三问/代码/finalize_q3_agent_update.py",
+      "sha256": "7d9df69335e1cafb57210d3f644667ae951b930c7a1ff7f7647c7fa4866dc5d1",
+      "matches_project_source": true
+    },
+    {
+      "path": "第三问/代码/improve_q3_from_agents.py",
+      "sha256": "c0de9a4d0103230e61e9f869e8967411eaf9ddfd1a72497266d73a87295b59e4",
+      "matches_project_source": true
+    },
+    {
+      "path": "第三问/代码/q3_geometry.py",
+      "sha256": "a774b6d52feb8655670bcb333955116b26ed04aeb3d4b8681caab69190ac1a71",
+      "matches_project_source": true
+    },
+    {
+      "path": "第三问/代码/q3_multi_profiles.py",
+      "sha256": "6922c9108f760568d63e3c6e8aab6a5276811e485d1e97e0222c2a2ab550af71",
+      "matches_project_source": true
+    },
+    {
+      "path": "第三问/代码/q3_refine_timing.py",
+      "sha256": "18c17959578a3dfd736a7065552df4d126135180a5a48568bd5bf57badec6bbf",
+      "matches_project_source": true
+    },
+    {
+      "path": "第三问/代码/q3_senior_adapter.py",
+      "sha256": "253c681b3dc44b70e9625a9318d79ad0eed8711255557a8a6ab753848eb8b332",
+      "matches_project_source": true
+    },
+    {
+      "path": "第三问/代码/q3_transport.py",
+      "sha256": "7b1ad8da047b1e9ff6b528eaf178227a6e0be057ae19591dabb47199cd29268e",
+      "matches_project_source": true
+    },
+    {
+      "path": "第三问/代码/requirements_q3.txt",
+      "sha256": "3d4041311bccf0f1f052b28a8467ebd2216399b5cb25525c7a970f7d51c6cd0b",
+      "matches_project_source": true
+    },
+    {
+      "path": "第三问/代码/run_single_station_ablation.py",
+      "sha256": "14e2113195050ef76e395b45178147c94286f519779c95fa83ecc5ff5cf6a032",
+      "matches_project_source": true
+    },
+    {
+      "path": "第三问/代码/solve_q1_batching.py",
+      "sha256": "d978f40619ff398f80a1ef75fa9b3bf70ad2421bc0a9a077f73640684a8e8d46",
+      "matches_project_source": true
+    },
+    {
+      "path": "第三问/代码/solve_q3_independent.py",
+      "sha256": "35cdd15d905c9900e3964f887fbcc3a13f9b112c41998a1a86f75e585aa7044e",
+      "matches_project_source": true
+    },
+    {
+      "path": "第三问/代码/solve_q3_senior.py",
+      "sha256": "969868c54ae91c25058c0f6dead11a45f21452a12031af3d2e22e7f62b313c89",
+      "matches_project_source": true
+    },
+    {
+      "path": "第三问/代码/validate_q3_senior.py",
+      "sha256": "72dd05f278487801faba8f8301c1cf23782fe3ea73da3d46594bf25b75375258",
+      "matches_project_source": true
+    }
+  ],
+  "added_experiment_evidence": {
+    "files": 43,
+    "bytes": 17399024,
+    "all_source_hashes_match": true,
+    "provenance": "第三问/结果/追加试验_20260925/实验来源清单.json"
+  },
+  "saved_trial_validation_bindings": [
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_fixed_refinement.json",
+      "saved_validation_passed": true,
+      "check_count": 11858,
+      "error_count": 0,
+      "solution_sha256": "33761d5777790a43a2922bea1efaee586187babc1f2aacca9cd9ac635a64ccaf",
+      "matching_archived_solution": "solution_fixed_refinement.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_interval_relay_switch.json",
+      "saved_validation_passed": true,
+      "check_count": 11858,
+      "error_count": 0,
+      "solution_sha256": "ab613b928481344acaca23374aa0fab717c17eeb23c21f50085b37cd3ce23c63",
+      "matching_archived_solution": "solution_interval_relay_switch.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_joint_neighborhood_1.json",
+      "saved_validation_passed": true,
+      "check_count": 11858,
+      "error_count": 0,
+      "solution_sha256": "b324768846966e78cf9d311835fbd4e61c98ea612da328a9f94bf6b2b64e6fc9",
+      "matching_archived_solution": "solution_joint_neighborhood_1.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_joint_neighborhood_2.json",
+      "saved_validation_passed": true,
+      "check_count": 11858,
+      "error_count": 0,
+      "solution_sha256": "60890b9f024d47ffdcfc4b9dbdb4111a981699c18edf8920f3738e495496116e",
+      "matching_archived_solution": "solution_search_best.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_joint_neighborhood_3.json",
+      "saved_validation_passed": true,
+      "check_count": 11858,
+      "error_count": 0,
+      "solution_sha256": "7ddfa92c2db7e7f925be85d656cd41083c167a58e65f517445c5a020e7943e0e",
+      "matching_archived_solution": "solution_joint_neighborhood_3.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_recommended.json",
+      "saved_validation_passed": true,
+      "check_count": 11899,
+      "error_count": 0,
+      "solution_sha256": "887ee5eab5fa5034059f449d469c656960e268a4302a44e57a83cd1c4df7b0e3",
+      "matching_archived_solution": "solution_recommended.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_route_seed_union.json",
+      "saved_validation_passed": true,
+      "check_count": 11877,
+      "error_count": 0,
+      "solution_sha256": "963dc504aa4e7b0aa38bd4dadc5aaba944e06b4b34a3d7eecadb21f6938221dd",
+      "matching_archived_solution": "solution_route_seed_union.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/validation_targeted_stations.json",
+      "saved_validation_passed": true,
+      "check_count": 11877,
+      "error_count": 0,
+      "solution_sha256": "5934eab6357cccd62f406938817ab4ccb8df67ce039d0d402cfb81a1277ae54c",
+      "matching_archived_solution": "solution_targeted_stations.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_fixed_refinement.json",
+      "saved_validation_passed": true,
+      "check_count": 11858,
+      "error_count": 0,
+      "solution_sha256": "0ede2e124df8e0d2a971de470a9f600d441797f083f1b2d8ba6e7e44f5efb887",
+      "matching_archived_solution": "solution_search_best.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_interval_relay_switch.json",
+      "saved_validation_passed": true,
+      "check_count": 11858,
+      "error_count": 0,
+      "solution_sha256": "8a8db7794a15b15556ec36fc87932bac0c2a2e5deb1d7ca0487bd1183b71fb7e",
+      "matching_archived_solution": "solution_interval_relay_switch.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_joint_neighborhood_1.json",
+      "saved_validation_passed": true,
+      "check_count": 11858,
+      "error_count": 0,
+      "solution_sha256": "7243c6f00175eeded511e25e1c5c012f8ef3f1f967ffaf7f805cbbdc9988e407",
+      "matching_archived_solution": "solution_joint_neighborhood_1.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_joint_neighborhood_2.json",
+      "saved_validation_passed": true,
+      "check_count": 11858,
+      "error_count": 0,
+      "solution_sha256": "f1208fabd40771b7732a96a482ced70ce579981199c95b860aefbc509543d0f4",
+      "matching_archived_solution": "solution_joint_neighborhood_2.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_joint_neighborhood_3.json",
+      "saved_validation_passed": true,
+      "check_count": 11858,
+      "error_count": 0,
+      "solution_sha256": "343d333ce5734770a1e6cca2bd5492975cf718ca257ee4c59b5ed75bae356df9",
+      "matching_archived_solution": "solution_joint_neighborhood_3.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_joint_neighborhood_4.json",
+      "saved_validation_passed": true,
+      "check_count": 11858,
+      "error_count": 0,
+      "solution_sha256": "961ebc0dbe29e8b100aa6efb55756d12e989ec0121dae77885ae4616c16a6473",
+      "matching_archived_solution": "solution_joint_neighborhood_4.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_local_rerun.json",
+      "saved_validation_passed": true,
+      "check_count": 11902,
+      "error_count": 0,
+      "solution_sha256": "112edd2970520aae7c9aa4e1605f125bc003a4a4958bf4004f8e80ee8303453a",
+      "matching_archived_solution": "solution_recommended.json"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/validation_recommended.json",
+      "saved_validation_passed": true,
+      "check_count": 11902,
+      "error_count": 0,
+      "solution_sha256": "112edd2970520aae7c9aa4e1605f125bc003a4a4958bf4004f8e80ee8303453a",
+      "matching_archived_solution": "solution_recommended.json"
+    }
+  ],
+  "markdown": {
+    "relative_links_checked": 78,
+    "broken_relative_links": [],
+    "historical_external_local_links": 24,
+    "external_links_note": "Historical source citations use local original paths; they are not claimed as uploaded files or portable GitHub links."
+  },
+  "formal_artifacts_unchanged": true,
+  "standalone_reproduction_ready": false,
+  "reproduction_requirements": [
+    "Original input workbooks, DEM and template",
+    "Restore original code/results/outputs layout",
+    "Configure read-only senior model location",
+    "Provide historical baseline and station-normalization/ablation seeds for full historical replay",
+    "Install compatible Python dependencies and the separate Excel export runtime"
+  ],
+  "note": "All saved trial validators report passed; this audit confirms their hash binding, not a fresh physical re-run."
+}

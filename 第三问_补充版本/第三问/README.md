@@ -4,6 +4,8 @@
 
 - [算法复核与改进报告](结果/第三问_Agent算法复核与改进报告.md)
 - [远端延长搜索复核](结果/远端搜索复核报告.md) / [远端搜索摘要](结果/远端搜索摘要.json)
+- [本地与远端追加试验原始文件](结果/追加试验_20260925/README.md)
+- [归档完整性与复现条件](../完整性检查.md)
 - [最终方案](结果/solution_recommended.json)
 - [独立验证](结果/validation_recommended.json)
 - [单站对照](结果/ablation_summary.json)
@@ -27,6 +29,6 @@
 
 1. 以原项目布局准备题目附件和 D:\Desktop\zirankexve\建模 的只读来源；
 2. 在原项目根目录运行 code\validate_q3_senior.py，将 Q3_SENIOR_ROOT 指向师兄工程；
-3. 按 code\README_Q3_AGENT_UPDATE.md 的顺序运行验证和有限搜索。
+3. 按[代码运行说明](代码/README_Q3_AGENT_UPDATE.md)还原原项目布局，再运行验证或有限搜索。当前中文归档路径与源码默认的 `code/results/outputs` 路径不同。
 
 已上传的 JSON、Excel、报告和预览可以直接阅读，不需要上述环境。结果是有限候选、限时搜索下的 FEASIBLE 解，没有第三问全局最优证明。能耗使用题设继承的简化模型，不等同于飞行实测标定。

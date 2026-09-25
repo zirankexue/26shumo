@@ -1,22 +1,36 @@
-# 第三问代码说明
+# 第三问改进版的运行说明
 
-本目录保存本次实际使用的第三问源代码快照。核心入口和职责如下：
+正式推荐及模型解释见[第三问说明](../README.md)和[算法报告](../结果/第三问_Agent算法复核与改进报告.md)。当前目录保存源码与成果，完整运行条件见[完整性检查](../../完整性检查.md)。本文件修复此前与源码索引重复、缺少运行命令的问题。
 
-| 文件 | 作用 |
-|---|---|
-| q3_geometry.py | DEM、链路和连续通信几何 |
-| solve_q3_senior.py | 沿用师兄运输物理、逐箱排序、机体/电池资源和固定评分，联合安排运输与中继 |
-| q3_senior_adapter.py | 只读加载师兄第二问来源，并核对原始输入哈希 |
-| validate_q3_senior.py | 独立复算运输、中继、时限、资源、SOC和连续通信 |
-| q3_multi_profiles.py | 生成单站及有限双站连续通信候选，逐区段记录实际 station |
-| improve_q3_from_agents.py | 合并结构种子、定向选站和有限邻域搜索 |
-| finalize_q3_agent_update.py | 站点坐标去重、固定结构精修和最终冻结 |
-| q3_refine_timing.py | 等价真实箱号的硬时限标签后处理 |
-| export_q3_senior.mjs | 导出并检查第三问 Excel |
-| run_single_station_ablation.py | 同结构单站对照实验入口 |
-| q3_transport.py / solve_q3_independent.py / solve_q1_batching.py | 运输、通信和公共几何依赖 |
-| requirements_q3.txt | 已验证的 Python 核心版本 |
+## 验证已有正式方案
 
-源码中的 ROOT 和输入路径按原工作区布局编写。本 GitHub 补充目录不携带题目原始附件、DEM、运行时和师兄源码，因此这里的源码主要用于审阅与溯源；需要完整重跑时，应在原 E:\sxjm\D题 工作区准备附件，并将 Q3_SENIOR_ROOT 指向只读的师兄工程。冻结结果可以直接阅读和用结果目录中的验证 JSON 审计。
+下面命令只适用于已配置数据与环境的原工作区 `E:/sxjm/D题`。当前 GitHub 中文归档目录不是这个布局；不要仅改变当前目录后直接执行。
 
-第三问使用的公共口径、有限候选边界、站点去重及运行命令见 [第三问说明](../README.md) 和 [最终报告](../结果/第三问_Agent算法复核与改进报告.md)。
+```powershell
+Set-Location 'E:/sxjm/D题'
+$env:Q3_SENIOR_ROOT = 'D:/Desktop/zirankexve'
+python -X utf8 code/validate_q3_senior.py --solution results/question3_agent_update/solution_recommended.json --output results/question3_agent_update/validation_manual_review.json
+```
+
+上述命令重算保存结果的物理、资源、时限、能源与连续通信，并将新验证报告写入单独文件，不重新优化。原始附件、DEM、模板、师兄只读模型及配置必须与保存结果一致。
+
+## 有限候选搜索
+
+在已还原原布局的独立运行副本中，原入口可运行：
+
+```powershell
+python -X utf8 code/improve_q3_from_agents.py --seconds 65 --rounds 2 --pool-limit 350
+```
+
+这条命令还读取 `results/question3_from_senior` 中的基线最终方案、站池和 `solution_main.json`、`solution_enhanced.json`、`solution_zero_lateness.json`。相关历史文件没有完整复制到当前归档的默认路径，需要从原工作区准备。搜索会写入 `results/question3_agent_update`，运行副本应与正式交付目录分开。
+
+扩大热启动搜索使用 `--resume`、`--skip-station-refinement`、`--rounds` 和 `--pool-limit`。本次本地续算为 3 轮、每阶段 30 秒、活动池 600；远端为 4 轮、每阶段 120 秒、活动池 1200，并分别做通信选项求解及固定结构精修。实际保存参数、继承历史和阶段结果见[追加试验原始记录](../结果/追加试验_20260925/README.md)，不能仅按历史数组长度推算新增计算次数。
+
+## 环境与其他入口
+
+- 求解和验证需要 Python、[Python 核心依赖清单](requirements_q3.txt)以及师兄只读公共模型。源码直接导入 `tomllib`；原本机 Python 3.12 可用，本次远端 Python 3.10 使用过临时兼容层，未把该兼容层发布为正式代码。
+- `run_single_station_ablation.py` 原位置为 `results/question3_agent_update`，同目录需 `solution_deduplicated_seed.json` 和 `station_pool.json`。当前归档中的位置仅供源码审阅。
+- `finalize_q3_agent_update.py` 使用 `before_station_normalization` 快照与相应候选摘要；不能用已经规范化的文件冒充规范化前输入。
+- `export_q3_senior.mjs` 重导出需要 Node 和 `@oai/artifact-tool`。现有[正式工作簿](../输出/第三问_Agent改进联合调度.xlsx)可直接打开，查看它不需要导出环境。
+
+所有限时搜索均受候选集合、零迟到约束与线程调度影响；保存可行结果的复验与逐字重现历史搜索输出是两种不同工作。13 份已归档算法/验证/导出源码未在此次完整性检查中修改。
