@@ -243,7 +243,7 @@
     }
   ],
   "markdown": {
-    "relative_links_checked": 78,
+    "relative_links_checked": 113,
     "broken_relative_links": [],
     "historical_external_local_links": 24,
     "external_links_note": "Historical source citations use local original paths; they are not claimed as uploaded files or portable GitHub links."
@@ -257,5 +257,18 @@
     "Provide historical baseline and station-normalization/ablation seeds for full historical replay",
     "Install compatible Python dependencies and the separate Excel export runtime"
   ],
-  "note": "All saved trial validators report passed; this audit confirms their hash binding, not a fresh physical re-run."
+  "note": "All saved trial validators report passed; this audit confirms their hash binding, not a fresh physical re-run.",
+  "writing_disambiguation": {
+    "checked_at_utc": "2026-09-25T07:57:45.214686+00:00",
+    "base_commit": "a806cd1a553ee4332f59b8dfc575b358e71e628b",
+    "writing_index": "WRITING_SOURCE.json",
+    "writing_guide": "第三问_写作统一口径.md",
+    "same_named_recommendations": 4,
+    "different_recommendation_hashes": 4,
+    "classified_saved_solutions": 20,
+    "formal_source_count": 1,
+    "identical_intermediate_solution_pairs": 2,
+    "identical_input_snapshot_groups": 1,
+    "protected_artifacts_byte_identical_to_previous_commit": 97
+  }
 }

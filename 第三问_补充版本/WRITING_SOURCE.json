@@ -1,0 +1,296 @@
+{
+  "created_utc": "2026-09-25T07:56:18.786986+00:00",
+  "audit_base_commit": "a806cd1a553ee4332f59b8dfc575b358e71e628b",
+  "path_base": "Paths are relative to 第三问_补充版本; this file defines exactly one final Q3 answer for writing.",
+  "formal_source_count": 1,
+  "canonical": {
+    "solution": {
+      "path": "第三问/结果/solution_recommended.json",
+      "sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b"
+    },
+    "validation": {
+      "path": "第三问/结果/validation_recommended.json",
+      "sha256": "a661d9f495803115cf5714ea40dd64614d2d3cdef670d6a704619bf0ebfa1375"
+    },
+    "workbook": {
+      "path": "第三问/输出/第三问_Agent改进联合调度.xlsx",
+      "sha256": "a857c6b2bb248bce6e7a168ca390f6e0e00f4c737cb74d0d46ab551af140283f"
+    },
+    "report": {
+      "path": "第三问/结果/第三问_Agent算法复核与改进报告.md",
+      "sha256": "bc8679fd88d0efa3d83746111db5f7cb121b6a622beb0e0c80aa0dd46b2eaf6b"
+    },
+    "metrics": {
+      "boxes": 80,
+      "transport_sorties": 21,
+      "relay_sorties": 3,
+      "transport_energy_kwh": 64.09596908039461,
+      "relay_energy_kwh": 2.349304202173859,
+      "joint_finish_s": 6612.284,
+      "transport_finish_s": 6559.627,
+      "last_delivery_s": 6234.755,
+      "late_boxes": 0,
+      "weighted_delay_s": 0.0,
+      "weighted_mean_delivery_s": 3092.1109979079497,
+      "multi_stop_sorties": 6,
+      "total_energy_kwh": 66.44527328256846,
+      "score": 0.0037081055399544767
+    },
+    "validation_check_count": 11884,
+    "validation_error_count": 0,
+    "continuous_interval_count": 240,
+    "unproven_interval_count": 0
+  },
+  "same_named_recommendations": [
+    {
+      "path": "第三问/结果/solution_recommended.json",
+      "sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b",
+      "role": "formal",
+      "label": "唯一正式方案",
+      "use_as_final_answer": true,
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.09596908039461,
+        "relay_energy_kwh": 2.349304202173859,
+        "joint_finish_s": 6612.284,
+        "transport_finish_s": 6559.627,
+        "last_delivery_s": 6234.755,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3092.1109979079497,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.44527328256846,
+        "score": 0.0037081055399544767
+      }
+    },
+    {
+      "path": "第三问/结果/基线对照/solution_recommended.json",
+      "sha256": "35e203d5426de54543065ac5051a8956e6450b1092e96bb9ed1853fb3b653bf2",
+      "role": "historical_baseline",
+      "label": "旧基线，仅改进前后比较",
+      "use_as_final_answer": false,
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.36366272180486,
+        "relay_energy_kwh": 2.477496982170001,
+        "joint_finish_s": 6620.617,
+        "transport_finish_s": 6619.643,
+        "last_delivery_s": 6294.771,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3027.916577405858,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.84115970397485,
+        "score": 0.0070791607595772875
+      }
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_recommended.json",
+      "sha256": "887ee5eab5fa5034059f449d469c656960e268a4302a44e57a83cd1c4df7b0e3",
+      "role": "local_experiment",
+      "label": "本地追加试验，未采用",
+      "use_as_final_answer": false,
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.09596908039461,
+        "relay_energy_kwh": 2.349304202173859,
+        "joint_finish_s": 6612.283,
+        "transport_finish_s": 6559.627,
+        "last_delivery_s": 6234.755,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3111.898251046025,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.44527328256846,
+        "score": 0.003708041850279103
+      }
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_recommended.json",
+      "sha256": "112edd2970520aae7c9aa4e1605f125bc003a4a4958bf4004f8e80ee8303453a",
+      "role": "remote_experiment",
+      "label": "远端追加试验，未采用",
+      "use_as_final_answer": false,
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.09596908039461,
+        "relay_energy_kwh": 2.349304202173859,
+        "joint_finish_s": 6612.283,
+        "transport_finish_s": 6559.627,
+        "last_delivery_s": 6234.755,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3100.2948138075317,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.44527328256846,
+        "score": 0.003708041850279103
+      }
+    }
+  ],
+  "all_saved_solution_roles": [
+    {
+      "path": "第三问/结果/solution_recommended.json",
+      "sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b",
+      "role": "formal",
+      "use_as_final_answer": true
+    },
+    {
+      "path": "第三问/结果/solution_single_station_ablation.json",
+      "sha256": "942a66ac8bf643efa94af574ed70d8f316f5d7fecb5921c9ae76e804147944a4",
+      "role": "single_station_ablation",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/基线对照/solution_recommended.json",
+      "sha256": "35e203d5426de54543065ac5051a8956e6450b1092e96bb9ed1853fb3b653bf2",
+      "role": "historical_baseline",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_fixed_refinement.json",
+      "sha256": "33761d5777790a43a2922bea1efaee586187babc1f2aacca9cd9ac635a64ccaf",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_interval_relay_switch.json",
+      "sha256": "ab613b928481344acaca23374aa0fab717c17eeb23c21f50085b37cd3ce23c63",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_joint_neighborhood_1.json",
+      "sha256": "b324768846966e78cf9d311835fbd4e61c98ea612da328a9f94bf6b2b64e6fc9",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_joint_neighborhood_2.json",
+      "sha256": "60890b9f024d47ffdcfc4b9dbdb4111a981699c18edf8920f3738e495496116e",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_joint_neighborhood_3.json",
+      "sha256": "7ddfa92c2db7e7f925be85d656cd41083c167a58e65f517445c5a020e7943e0e",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_recommended.json",
+      "sha256": "887ee5eab5fa5034059f449d469c656960e268a4302a44e57a83cd1c4df7b0e3",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_route_seed_union.json",
+      "sha256": "963dc504aa4e7b0aa38bd4dadc5aaba944e06b4b34a3d7eecadb21f6938221dd",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_search_best.json",
+      "sha256": "60890b9f024d47ffdcfc4b9dbdb4111a981699c18edf8920f3738e495496116e",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/solution_targeted_stations.json",
+      "sha256": "5934eab6357cccd62f406938817ab4ccb8df67ce039d0d402cfb81a1277ae54c",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_fixed_refinement.json",
+      "sha256": "0ede2e124df8e0d2a971de470a9f600d441797f083f1b2d8ba6e7e44f5efb887",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_interval_relay_switch.json",
+      "sha256": "8a8db7794a15b15556ec36fc87932bac0c2a2e5deb1d7ca0487bd1183b71fb7e",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_joint_neighborhood_1.json",
+      "sha256": "7243c6f00175eeded511e25e1c5c012f8ef3f1f967ffaf7f805cbbdc9988e407",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_joint_neighborhood_2.json",
+      "sha256": "f1208fabd40771b7732a96a482ced70ce579981199c95b860aefbc509543d0f4",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_joint_neighborhood_3.json",
+      "sha256": "343d333ce5734770a1e6cca2bd5492975cf718ca257ee4c59b5ed75bae356df9",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_joint_neighborhood_4.json",
+      "sha256": "961ebc0dbe29e8b100aa6efb55756d12e989ec0121dae77885ae4616c16a6473",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_recommended.json",
+      "sha256": "112edd2970520aae7c9aa4e1605f125bc003a4a4958bf4004f8e80ee8303453a",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/solution_search_best.json",
+      "sha256": "0ede2e124df8e0d2a971de470a9f600d441797f083f1b2d8ba6e7e44f5efb887",
+      "role": "experiment_candidate_or_checkpoint",
+      "use_as_final_answer": false
+    }
+  ],
+  "byte_identical_json_groups": [
+    {
+      "sha256": "0ede2e124df8e0d2a971de470a9f600d441797f083f1b2d8ba6e7e44f5efb887",
+      "paths": [
+        "第三问/结果/追加试验_20260925/远端搜索/solution_fixed_refinement.json",
+        "第三问/结果/追加试验_20260925/远端搜索/solution_search_best.json"
+      ],
+      "reason": "同一次试验中阶段结果与当前最佳结果的相同快照",
+      "additional_formal_answer": false
+    },
+    {
+      "sha256": "60890b9f024d47ffdcfc4b9dbdb4111a981699c18edf8920f3738e495496116e",
+      "paths": [
+        "第三问/结果/追加试验_20260925/本地搜索/solution_joint_neighborhood_2.json",
+        "第三问/结果/追加试验_20260925/本地搜索/solution_search_best.json"
+      ],
+      "reason": "同一次试验中阶段结果与当前最佳结果的相同快照",
+      "additional_formal_answer": false
+    },
+    {
+      "sha256": "939206a6afb6ff0aadde5c347fc81a6fed5d18d2cd8f01a035c21e38c7988093",
+      "paths": [
+        "第三问/结果/station_pool.json",
+        "第三问/结果/追加试验_20260925/本地搜索/station_pool.json"
+      ],
+      "reason": "相同站池的输入快照",
+      "additional_formal_answer": false
+    }
+  ],
+  "writing_rules": [
+    "Use canonical solution, matching validation and workbook together.",
+    "Baseline, ablation and experiment files may be cited only as labelled comparisons.",
+    "Do not combine trial finish time or validation counts with canonical figures.",
+    "FEASIBLE finite-search solution; no global optimality claim."
+  ],
+  "decision_basis": "The 1 ms trial improvement changes the fixed score by less than 1e-6; the already frozen formal JSON/validation/workbook remain the final answer."
+}

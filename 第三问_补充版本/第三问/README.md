@@ -1,17 +1,23 @@
 # 第三问
 
-## 当前推荐
+**正式写作采用[写作统一口径](../第三问_写作统一口径.md)指定的唯一方案：66.44527328256846 kWh、6612.284 s。**
+
+## 唯一正式推荐
 
 - [算法复核与改进报告](结果/第三问_Agent算法复核与改进报告.md)
-- [远端延长搜索复核](结果/远端搜索复核报告.md) / [远端搜索摘要](结果/远端搜索摘要.json)
-- [本地与远端追加试验原始文件](结果/追加试验_20260925/README.md)
-- [归档完整性与复现条件](../完整性检查.md)
-- [最终方案](结果/solution_recommended.json)
-- [独立验证](结果/validation_recommended.json)
-- [单站对照](结果/ablation_summary.json)
+- [唯一正式方案](结果/solution_recommended.json)
+- [正式方案独立验证](结果/validation_recommended.json)
 - [最终联合调度 Excel](输出/第三问_Agent改进联合调度.xlsx)
 - [Excel 导出与回读 QA](输出/workbook_export_qa.json) / [只读回读](输出/workbook_readback_qa.json)
 - [源码说明](代码/README.md)
+
+## 对照和试验
+
+- [单站对照：用于算法比较](结果/ablation_summary.json)
+- [旧基线：不是当前最终答案](结果/基线对照/README.md)
+- [远端延长搜索：未采用](结果/远端搜索复核报告.md) / [摘要](结果/远端搜索摘要.json)
+- [本地与远端追加试验原始文件](结果/追加试验_20260925/README.md)
+- [归档完整性与复现条件](../完整性检查.md)
 
 ## 最终数值
 
@@ -25,7 +31,7 @@
 
 ## 复现边界
 
-本目录保留源码和冻结结果，但不复制题目原始附件、DEM、师兄源码、Python/Node 运行时或大型临时候选池。完整重跑需要：
+本目录保留源码、冻结结果和已归档的追加试验候选池，但不复制题目原始附件、DEM、师兄源码或 Python/Node 运行时。完整重跑需要：
 
 1. 以原项目布局准备题目附件和 D:\Desktop\zirankexve\建模 的只读来源；
 2. 在原项目根目录运行 code\validate_q3_senior.py，将 Q3_SENIOR_ROOT 指向师兄工程；

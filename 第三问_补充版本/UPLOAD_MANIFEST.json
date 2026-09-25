@@ -47,21 +47,31 @@
     },
     {
       "path": "CODE_CHANGE_LOG.md",
-      "bytes": 4426,
-      "sha256": "ec65156f183066b01ed39ee0aeb32f0969d7c312d55f08559de671a3eb68db7d",
-      "source": "generated package documentation"
+      "bytes": 6656,
+      "sha256": "531b48d286dbcdd8012bd7b1e0f17f14e14f6319839d68a9b54c194cc4e05035",
+      "source": "generated package documentation",
+      "previous_uploaded_sha256": "ec65156f183066b01ed39ee0aeb32f0969d7c312d55f08559de671a3eb68db7d",
+      "last_update_note": "Clarify canonical writing source and historical/experimental roles; numerical results preserved."
     },
     {
       "path": "README.md",
-      "bytes": 1657,
-      "sha256": "4351417a8b93f01bcb4fea725bce62aedc0e5075b4d92dbec1e33ee68541078b",
-      "source": "generated package documentation"
+      "bytes": 2232,
+      "sha256": "6169e7a3581b431a853d2edf998abb257a1f8673b08989dd7b688393a18319d0",
+      "source": "generated package documentation",
+      "previous_uploaded_sha256": "4351417a8b93f01bcb4fea725bce62aedc0e5075b4d92dbec1e33ee68541078b",
+      "last_update_note": "Clarify canonical writing source and historical/experimental roles; numerical results preserved."
+    },
+    {
+      "path": "WRITING_SOURCE.json",
+      "source": "generated Q3 writing-source clarification",
+      "bytes": 12419,
+      "sha256": "7f686cd453178621ea910bdab6c0c29d223d4e8e3c1c462f9c25bb3470016cd9"
     },
     {
       "path": "完整性检查.json",
       "source": "generated completeness documentation",
-      "bytes": 11210,
-      "sha256": "bc2e486d64f8e1010cbe210547dd7a2632bcc0bf79e2a840a1bfa5c99859b939"
+      "bytes": 11768,
+      "sha256": "1726a83cdeb3469ce078f5684a6f9fa9e7589b3b04a4b118e7cf442a622ddaaf"
     },
     {
       "path": "完整性检查.md",
@@ -71,9 +81,11 @@
     },
     {
       "path": "第三问/README.md",
-      "bytes": 2623,
-      "sha256": "fb6ef97e4c24dbe8f2ae62c43e50084cf1d05ef0d1d3d1dee2343a5328cdd5b8",
-      "source": "generated package documentation"
+      "bytes": 2909,
+      "sha256": "a9a8a5c864bf8ec58686afa5041658ddc233f3ca251aa7090e2a8ae0edc255fb",
+      "source": "generated package documentation",
+      "previous_uploaded_sha256": "fb6ef97e4c24dbe8f2ae62c43e50084cf1d05ef0d1d3d1dee2343a5328cdd5b8",
+      "last_update_note": "Clarify canonical writing source and historical/experimental roles; numerical results preserved."
     },
     {
       "path": "第三问/代码/export_q3_senior.mjs",
@@ -226,6 +238,12 @@
       "source": "generated package documentation"
     },
     {
+      "path": "第三问/结果/README.md",
+      "source": "generated Q3 writing-source clarification",
+      "bytes": 1219,
+      "sha256": "3aaf9d9eb65b8d56f62707e1406390157fef72a9b181c2005a2fd5aa1ab8c417"
+    },
+    {
       "path": "第三问/结果/release_manifest.json",
       "bytes": 5507,
       "sha256": "346255e3eaa34ea00a595024d8428c6fefc834d466571f543e82beed07e81a9c",
@@ -323,9 +341,11 @@
     },
     {
       "path": "第三问/结果/基线对照/README.md",
-      "bytes": 399,
-      "sha256": "47b9a5824a9769ad5c19e938bcaa006f2213311c0f0c57ee46a6a72b882cb53c",
-      "source": "project/results/question3_from_senior/README.md"
+      "bytes": 696,
+      "sha256": "ebbf5533a0a0bee5c2114e3e76e82f74248dddc022e373678ec154ea4a6f0b2d",
+      "source": "project/results/question3_from_senior/README.md",
+      "previous_uploaded_sha256": "47b9a5824a9769ad5c19e938bcaa006f2213311c0f0c57ee46a6a72b882cb53c",
+      "last_update_note": "Clarify canonical writing source and historical/experimental roles; numerical results preserved."
     },
     {
       "path": "第三问/结果/基线对照/solution_recommended.json",
@@ -341,9 +361,11 @@
     },
     {
       "path": "第三问/结果/基线对照/第三问_基于师兄版本重做报告.md",
-      "bytes": 14461,
-      "sha256": "66dad518db497aa3547c5a0eb260a24b24df024e35add865c1e693e54927c9e4",
-      "source": "project/results/question3_from_senior/第三问_基于师兄版本重做报告.md"
+      "bytes": 14777,
+      "sha256": "82a8433093cfcee966b35f2661f35127b290f6eea09d1316c97a08dbf68e2800",
+      "source": "project/results/question3_from_senior/第三问_基于师兄版本重做报告.md",
+      "previous_uploaded_sha256": "66dad518db497aa3547c5a0eb260a24b24df024e35add865c1e693e54927c9e4",
+      "last_update_note": "Clarify canonical writing source and historical/experimental roles; numerical results preserved."
     },
     {
       "path": "第三问/结果/文献核验/four_agent_review.md",
@@ -371,17 +393,21 @@
     },
     {
       "path": "第三问/结果/第三问_Agent算法复核与改进报告.md",
-      "bytes": 24746,
-      "sha256": "1029f65c46739f8c6cb3b54d5d7c5aa2aa636fa322363d5135406f6322f6832e",
+      "bytes": 25016,
+      "sha256": "bc8679fd88d0efa3d83746111db5f7cb121b6a622beb0e0c80aa0dd46b2eaf6b",
       "source": "generated package documentation",
       "source_sha256": "7e2e990e3ae395464b3332860618ea9036019ed70b207f80362e5951b857ffe6",
-      "source_transform": "项目内绝对链接改为新增目录相对链接；正文和数值保留"
+      "source_transform": "项目内绝对链接改为新增目录相对链接；正文和数值保留",
+      "previous_uploaded_sha256": "1029f65c46739f8c6cb3b54d5d7c5aa2aa636fa322363d5135406f6322f6832e",
+      "last_update_note": "Clarify canonical writing source and historical/experimental roles; numerical results preserved."
     },
     {
       "path": "第三问/结果/远端搜索复核报告.md",
-      "bytes": 2580,
-      "sha256": "b32b5a24067f6a2d353a266c9e3554f5fa5e16fde1b295894d86e6db7092468c",
-      "source": "remote search review documentation"
+      "bytes": 2852,
+      "sha256": "b5c7abb9054d6745650293590e2ed406f657f88172bcfa82a13a2697bd4dec7a",
+      "source": "remote search review documentation",
+      "previous_uploaded_sha256": "b32b5a24067f6a2d353a266c9e3554f5fa5e16fde1b295894d86e6db7092468c",
+      "last_update_note": "Clarify canonical writing source and historical/experimental roles; numerical results preserved."
     },
     {
       "path": "第三问/结果/远端搜索摘要.json",
@@ -392,8 +418,10 @@
     {
       "path": "第三问/结果/追加试验_20260925/README.md",
       "source": "generated completeness documentation",
-      "bytes": 2068,
-      "sha256": "810f55f18ae4c0998e18065db285271ea0773ff118e2cb7463af8fa7c2837712"
+      "bytes": 2384,
+      "sha256": "ff3c7fd97c8f6ec510825eff8d132ee0a89a4b5a56ced0b783650d9e6659ca21",
+      "previous_uploaded_sha256": "810f55f18ae4c0998e18065db285271ea0773ff118e2cb7463af8fa7c2837712",
+      "last_update_note": "Clarify canonical writing source and historical/experimental roles; numerical results preserved."
     },
     {
       "path": "第三问/结果/追加试验_20260925/实验来源清单.json",
@@ -406,6 +434,12 @@
       "source": "project/results/question3_trial_local_20260925/audit_final_label_symmetry.json",
       "bytes": 28403,
       "sha256": "8a64ccb62cc8cf1abc3722aceff327ce1f93252a579d07077ba8efc0d0bf03a9"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/本地搜索/README.md",
+      "source": "generated Q3 writing-source clarification",
+      "bytes": 641,
+      "sha256": "7789109ef79a4fd65768498622d978cf25334a549d67123d72d2ec85846131d3"
     },
     {
       "path": "第三问/结果/追加试验_20260925/本地搜索/search_candidate_summary.json",
@@ -538,6 +572,12 @@
       "source": "project/results/q3_remote_long_20260925/audit_final_label_symmetry.json",
       "bytes": 26619,
       "sha256": "b3bc0fdbfd064f87d351a2f6c592dd954f89ec545e220825a0c4e8781dd8f93b"
+    },
+    {
+      "path": "第三问/结果/追加试验_20260925/远端搜索/README.md",
+      "source": "generated Q3 writing-source clarification",
+      "bytes": 767,
+      "sha256": "c324a6c79ba610735bd1591436e051b9782409d5f3d7818b81b6a31f1a28fa56"
     },
     {
       "path": "第三问/结果/追加试验_20260925/远端搜索/run.log",
@@ -730,59 +770,23 @@
       "bytes": 44619,
       "sha256": "a857c6b2bb248bce6e7a168ca390f6e0e00f4c737cb74d0d46ab551af140283f",
       "source": "project/outputs/question3_agent_update/第三问_Agent改进联合调度.xlsx"
+    },
+    {
+      "path": "第三问_写作统一口径.md",
+      "source": "generated Q3 writing-source clarification",
+      "bytes": 3744,
+      "sha256": "2bc5a956c8189b2f0ae7cc3c2c5d395e555a221b3082195a1263c0339321c70d"
     }
   ],
-  "updated_utc": "2026-09-25T07:10:38.523974+00:00",
-  "previous_head": "e32bdbe4351bd9919ebca4a72678cf409d037cd3",
-  "update_scope": "Q3-only: archive 43 original local/remote trial files, audit completeness, and clarify non-standalone reproduction requirements.",
+  "updated_utc": "2026-09-25T07:57:45.310072+00:00",
+  "previous_head": "a806cd1a553ee4332f59b8dfc575b358e71e628b",
+  "update_scope": "Q3 writing-source disambiguation only: one canonical answer, labelled baselines/experiments, explained duplicate checkpoints; numeric evidence preserved.",
   "new_paths": [
-    "完整性检查.json",
-    "完整性检查.md",
-    "第三问/结果/追加试验_20260925/README.md",
-    "第三问/结果/追加试验_20260925/实验来源清单.json",
-    "第三问/结果/追加试验_20260925/本地搜索/audit_final_label_symmetry.json",
-    "第三问/结果/追加试验_20260925/本地搜索/search_candidate_summary.json",
-    "第三问/结果/追加试验_20260925/本地搜索/search_history.json",
-    "第三问/结果/追加试验_20260925/本地搜索/solution_fixed_refinement.json",
-    "第三问/结果/追加试验_20260925/本地搜索/solution_interval_relay_switch.json",
-    "第三问/结果/追加试验_20260925/本地搜索/solution_joint_neighborhood_1.json",
-    "第三问/结果/追加试验_20260925/本地搜索/solution_joint_neighborhood_2.json",
-    "第三问/结果/追加试验_20260925/本地搜索/solution_joint_neighborhood_3.json",
-    "第三问/结果/追加试验_20260925/本地搜索/solution_recommended.json",
-    "第三问/结果/追加试验_20260925/本地搜索/solution_route_seed_union.json",
-    "第三问/结果/追加试验_20260925/本地搜索/solution_search_best.json",
-    "第三问/结果/追加试验_20260925/本地搜索/solution_targeted_stations.json",
-    "第三问/结果/追加试验_20260925/本地搜索/station_pool.json",
-    "第三问/结果/追加试验_20260925/本地搜索/station_refinement_audit.json",
-    "第三问/结果/追加试验_20260925/本地搜索/validation_fixed_refinement.json",
-    "第三问/结果/追加试验_20260925/本地搜索/validation_interval_relay_switch.json",
-    "第三问/结果/追加试验_20260925/本地搜索/validation_joint_neighborhood_1.json",
-    "第三问/结果/追加试验_20260925/本地搜索/validation_joint_neighborhood_2.json",
-    "第三问/结果/追加试验_20260925/本地搜索/validation_joint_neighborhood_3.json",
-    "第三问/结果/追加试验_20260925/本地搜索/validation_recommended.json",
-    "第三问/结果/追加试验_20260925/本地搜索/validation_route_seed_union.json",
-    "第三问/结果/追加试验_20260925/本地搜索/validation_targeted_stations.json",
-    "第三问/结果/追加试验_20260925/远端搜索/audit_final_label_symmetry.json",
-    "第三问/结果/追加试验_20260925/远端搜索/run.log",
-    "第三问/结果/追加试验_20260925/远端搜索/search_candidate_summary.json",
-    "第三问/结果/追加试验_20260925/远端搜索/search_history.json",
-    "第三问/结果/追加试验_20260925/远端搜索/solution_fixed_refinement.json",
-    "第三问/结果/追加试验_20260925/远端搜索/solution_interval_relay_switch.json",
-    "第三问/结果/追加试验_20260925/远端搜索/solution_joint_neighborhood_1.json",
-    "第三问/结果/追加试验_20260925/远端搜索/solution_joint_neighborhood_2.json",
-    "第三问/结果/追加试验_20260925/远端搜索/solution_joint_neighborhood_3.json",
-    "第三问/结果/追加试验_20260925/远端搜索/solution_joint_neighborhood_4.json",
-    "第三问/结果/追加试验_20260925/远端搜索/solution_recommended.json",
-    "第三问/结果/追加试验_20260925/远端搜索/solution_search_best.json",
-    "第三问/结果/追加试验_20260925/远端搜索/station_pool.json",
-    "第三问/结果/追加试验_20260925/远端搜索/validation_fixed_refinement.json",
-    "第三问/结果/追加试验_20260925/远端搜索/validation_interval_relay_switch.json",
-    "第三问/结果/追加试验_20260925/远端搜索/validation_joint_neighborhood_1.json",
-    "第三问/结果/追加试验_20260925/远端搜索/validation_joint_neighborhood_2.json",
-    "第三问/结果/追加试验_20260925/远端搜索/validation_joint_neighborhood_3.json",
-    "第三问/结果/追加试验_20260925/远端搜索/validation_joint_neighborhood_4.json",
-    "第三问/结果/追加试验_20260925/远端搜索/validation_local_rerun.json",
-    "第三问/结果/追加试验_20260925/远端搜索/validation_recommended.json"
+    "WRITING_SOURCE.json",
+    "第三问/结果/README.md",
+    "第三问/结果/追加试验_20260925/本地搜索/README.md",
+    "第三问/结果/追加试验_20260925/远端搜索/README.md",
+    "第三问_写作统一口径.md"
   ],
   "last_update_checks": {
     "source_matched_trial_files": 43,
@@ -790,6 +794,11 @@
     "saved_trial_validations_bound": 16,
     "broken_relative_links": 0,
     "formal_results_preserved": true,
-    "standalone_reproduction_ready": false
-  }
+    "standalone_reproduction_ready": false,
+    "formal_source_count": 1,
+    "same_named_recommendation_files": 4,
+    "identical_intermediate_solution_pairs": 2,
+    "protected_artifacts_unchanged": 97
+  },
+  "writing_source": "WRITING_SOURCE.json"
 }
