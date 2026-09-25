@@ -6,6 +6,7 @@
 
 - [第三问说明与复现边界](第三问/README.md)
 - [算法复核与改进报告](第三问/结果/第三问_Agent算法复核与改进报告.md)
+- [远端延长搜索复核](第三问/结果/远端搜索复核报告.md)
 - [最终方案 JSON](第三问/结果/solution_recommended.json)
 - [独立验证 JSON](第三问/结果/validation_recommended.json)
 - [联合调度 Excel](第三问/输出/第三问_Agent改进联合调度.xlsx)

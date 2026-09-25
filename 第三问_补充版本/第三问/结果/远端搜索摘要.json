@@ -1,0 +1,97 @@
+{
+  "created_utc": "2026-09-25T05:51:45.614294+00:00",
+  "purpose": "Record the local and remote Q3 search comparison; the remote candidate is historical and was not promoted.",
+  "remote_environment": {
+    "host": "xjz-desktop",
+    "account": "xjz",
+    "address": "10.33.12.63",
+    "gpu": "NVIDIA GeForce RTX 3090 24 GB",
+    "python": "3.10.21",
+    "ortools": "9.15.6755",
+    "workers": 8,
+    "search_budget": "65 stations, route pool cap 1200, four joint-neighborhood stages at 120 s each, fixed refinement 120 s",
+    "solver_note": "CP-SAT stages are CPU-bound; the GPU was used only as the remote machine context, not as a CP-SAT accelerator."
+  },
+  "formal": {
+    "path": "results/question3_agent_update/solution_recommended.json",
+    "sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b",
+    "metrics": {
+      "boxes": 80,
+      "transport_sorties": 21,
+      "relay_sorties": 3,
+      "transport_energy_kwh": 64.09596908039461,
+      "relay_energy_kwh": 2.349304202173859,
+      "joint_finish_s": 6612.284,
+      "transport_finish_s": 6559.627,
+      "last_delivery_s": 6234.755,
+      "late_boxes": 0,
+      "weighted_delay_s": 0.0,
+      "weighted_mean_delivery_s": 3092.1109979079497,
+      "multi_stop_sorties": 6,
+      "total_energy_kwh": 66.44527328256846,
+      "score": 0.0037081055399544767
+    },
+    "validation": {
+      "path": "results/question3_agent_update/validation_recommended.json",
+      "sha256": "a661d9f495803115cf5714ea40dd64614d2d3cdef670d6a704619bf0ebfa1375",
+      "passed": true,
+      "check_count": 11884,
+      "error_count": 0,
+      "communication_interval_count": 240,
+      "unproven_communication_interval_count": 0,
+      "minimum_proved_communication_margin_db": 0.07973598524506542
+    }
+  },
+  "remote_candidate": {
+    "local_path": "local results/q3_remote_long_20260925/solution_recommended.json",
+    "sha256": "112edd2970520aae7c9aa4e1605f125bc003a4a4958bf4004f8e80ee8303453a",
+    "metrics": {
+      "boxes": 80,
+      "transport_sorties": 21,
+      "relay_sorties": 3,
+      "transport_energy_kwh": 64.09596908039461,
+      "relay_energy_kwh": 2.349304202173859,
+      "joint_finish_s": 6612.283,
+      "transport_finish_s": 6559.627,
+      "last_delivery_s": 6234.755,
+      "late_boxes": 0,
+      "weighted_delay_s": 0.0,
+      "weighted_mean_delivery_s": 3100.2948138075317,
+      "multi_stop_sorties": 6,
+      "total_energy_kwh": 66.44527328256846,
+      "score": 0.003708041850279103
+    },
+    "validation": {
+      "local_path": "local results/q3_remote_long_20260925/validation_recommended.json",
+      "sha256": "bde0471ab48e0d1c3a47ebd7eb8a7dd317e937e4c4b5ebdc0cd21a42c29e74c9",
+      "passed": true,
+      "check_count": 11902,
+      "error_count": 0,
+      "communication_interval_count": 240,
+      "unproven_communication_interval_count": 0,
+      "minimum_proved_communication_margin_db": 0.07973598524506542
+    }
+  },
+  "delta_remote_minus_formal": {
+    "boxes": 0,
+    "transport_sorties": 0,
+    "relay_sorties": 0,
+    "transport_energy_kwh": 0.0,
+    "relay_energy_kwh": 0.0,
+    "joint_finish_s": -0.0009999999992942321,
+    "transport_finish_s": 0.0,
+    "last_delivery_s": 0.0,
+    "late_boxes": 0,
+    "weighted_delay_s": 0.0,
+    "weighted_mean_delivery_s": 8.183815899581987,
+    "multi_stop_sorties": 0,
+    "total_energy_kwh": 0.0,
+    "score": -6.368967537390136e-08
+  },
+  "decision": {
+    "promote_remote_candidate": false,
+    "reason": "Same 21 transport sorties, 3 relay sorties, and energy; joint finish improves by 0.001 s and score by 6.368967537390136e-08, below the 1e-6 interpretation threshold; weighted mean delivery is 8.183815899581987 s later."
+  },
+  "search_history_path": "local results/q3_remote_long_20260925/search_history.json",
+  "large_candidate_pool_omitted_from_package": true
+}

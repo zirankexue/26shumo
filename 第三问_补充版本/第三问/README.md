@@ -3,6 +3,7 @@
 ## 当前推荐
 
 - [算法复核与改进报告](结果/第三问_Agent算法复核与改进报告.md)
+- [远端延长搜索复核](结果/远端搜索复核报告.md) / [远端搜索摘要](结果/远端搜索摘要.json)
 - [最终方案](结果/solution_recommended.json)
 - [独立验证](结果/validation_recommended.json)
 - [单站对照](结果/ablation_summary.json)

@@ -47,20 +47,20 @@
     },
     {
       "path": "CODE_CHANGE_LOG.md",
-      "bytes": 1086,
-      "sha256": "8fb0267ccfbf9e79265fb51732129f3f5c7e806109d530f01e20ecb0b68b6784",
+      "bytes": 2106,
+      "sha256": "9ac87be0da8e18e80465f7c98f366c854fc0aafe461db8a77404e328db67752f",
       "source": "generated package documentation"
     },
     {
       "path": "README.md",
-      "bytes": 1265,
-      "sha256": "315e54c1ce2db470fbe1bc3f2d3f4c3f56fa052d8adbe5add0d7b53419fdfb28",
+      "bytes": 1340,
+      "sha256": "b656ad138046440eb0654e8b993e91d2efdf066a1c076818c76854bd9a35ec71",
       "source": "generated package documentation"
     },
     {
       "path": "第三问/README.md",
-      "bytes": 2240,
-      "sha256": "85403aac194b0679cb39662330729cecff48fb7bd58575b0594c7bd759290a25",
+      "bytes": 2360,
+      "sha256": "bd76b5410f5cb4d3dcfe00a10b70f3e855ea3ed52a09b14c11272e5e08b71890",
       "source": "generated package documentation"
     },
     {
@@ -436,6 +436,25 @@
       "bytes": 44619,
       "sha256": "a857c6b2bb248bce6e7a168ca390f6e0e00f4c737cb74d0d46ab551af140283f",
       "source": "project/outputs/question3_agent_update/第三问_Agent改进联合调度.xlsx"
+    },
+    {
+      "path": "第三问/结果/远端搜索复核报告.md",
+      "bytes": 2444,
+      "sha256": "16ce4b834b0fdc2516e19064896550841e823703cae3d356827b4c824a375a08",
+      "source": "remote search review documentation"
+    },
+    {
+      "path": "第三问/结果/远端搜索摘要.json",
+      "bytes": 3832,
+      "sha256": "4c753d00934d7255e6970f3c3141c34c8dfbe30a6e600e603bd4a77e16471ccf",
+      "source": "remote search metric/hash summary"
     }
+  ],
+  "updated_utc": "2026-09-25T05:57:42.016858+00:00",
+  "previous_head": "50d0e8dfb763052515762954b4aa97f8e2464573",
+  "update_scope": "Add remote Q3 search review and compact summary; formal solution and senior tree unchanged.",
+  "new_paths": [
+    "第三问/结果/远端搜索复核报告.md",
+    "第三问/结果/远端搜索摘要.json"
   ]
 }
