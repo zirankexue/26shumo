@@ -1,0 +1,433 @@
+{
+  "schema": "q3-paper-delivery-upload-v1",
+  "generated_utc": "2026-09-25T12:05:00.8867266Z",
+  "source_root_label": "E:/sxjm/D题/第三问",
+  "target_root": "第三问_论文交付版",
+  "file_count": 53,
+  "files": [
+    {
+      "source_relative_path": "图片/figure_manifest.json",
+      "target_path": "图片/figure_manifest.json",
+      "bytes": 1903,
+      "source_sha256": "86FDCB20240659A7253F36C7CA6B471C94A5A5D51DADE16BA3DF617D44B1FB36",
+      "target_sha256": "86FDCB20240659A7253F36C7CA6B471C94A5A5D51DADE16BA3DF617D44B1FB36",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_01_workflow.pdf",
+      "target_path": "图片/q3_01_workflow.pdf",
+      "bytes": 24075,
+      "source_sha256": "7D72E7496003E8717083A192E6D8DA68A03209F474443C9E6839AA3E86066FFA",
+      "target_sha256": "7D72E7496003E8717083A192E6D8DA68A03209F474443C9E6839AA3E86066FFA",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_01_workflow.png",
+      "target_path": "图片/q3_01_workflow.png",
+      "bytes": 357390,
+      "source_sha256": "33616F165E1CCC4AED11DEBADFAC7EE4647012AD901D34E5616BF349616281B4",
+      "target_sha256": "33616F165E1CCC4AED11DEBADFAC7EE4647012AD901D34E5616BF349616281B4",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_01_workflow.svg",
+      "target_path": "图片/q3_01_workflow.svg",
+      "bytes": 9880,
+      "source_sha256": "0C870ADEC894D3DA0B52F89F25FAE227F5A246C408D817D05744BC9780492C7D",
+      "target_sha256": "0C870ADEC894D3DA0B52F89F25FAE227F5A246C408D817D05744BC9780492C7D",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_02_routes_relays.pdf",
+      "target_path": "图片/q3_02_routes_relays.pdf",
+      "bytes": 123078,
+      "source_sha256": "57E8FCB87E307FF6CD69A920D6403BBB0211C236C7A093D4DD7E9D2889B23E45",
+      "target_sha256": "57E8FCB87E307FF6CD69A920D6403BBB0211C236C7A093D4DD7E9D2889B23E45",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_02_routes_relays.png",
+      "target_path": "图片/q3_02_routes_relays.png",
+      "bytes": 876415,
+      "source_sha256": "2F5E1A015FD74B6F71BAC196959CB1AE73012E5A90B51FB22E8AB2E44FA0A341",
+      "target_sha256": "2F5E1A015FD74B6F71BAC196959CB1AE73012E5A90B51FB22E8AB2E44FA0A341",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_02_routes_relays.svg",
+      "target_path": "图片/q3_02_routes_relays.svg",
+      "bytes": 245215,
+      "source_sha256": "71F6C1D439F95B60C032E249C16C77225A0A3D8431C4ECD6A22170C527FA96DF",
+      "target_sha256": "71F6C1D439F95B60C032E249C16C77225A0A3D8431C4ECD6A22170C527FA96DF",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_03_joint_schedule.pdf",
+      "target_path": "图片/q3_03_joint_schedule.pdf",
+      "bytes": 15507,
+      "source_sha256": "EF564F361D159CDB5994EF7DEDE295E29FDDAD095F51180F50908785CE17CD7B",
+      "target_sha256": "EF564F361D159CDB5994EF7DEDE295E29FDDAD095F51180F50908785CE17CD7B",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_03_joint_schedule.png",
+      "target_path": "图片/q3_03_joint_schedule.png",
+      "bytes": 413795,
+      "source_sha256": "BCEF65577D4EB1628292FB29473C4495F9D8D94BCCDC82D334D253F3B0DAF938",
+      "target_sha256": "BCEF65577D4EB1628292FB29473C4495F9D8D94BCCDC82D334D253F3B0DAF938",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_03_joint_schedule.svg",
+      "target_path": "图片/q3_03_joint_schedule.svg",
+      "bytes": 82506,
+      "source_sha256": "3A272FF1CEDD6330FC27F5882327FB6F3DFFB25DFF3DD5FE95D82B7E4EE64B42",
+      "target_sha256": "3A272FF1CEDD6330FC27F5882327FB6F3DFFB25DFF3DD5FE95D82B7E4EE64B42",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_04_communication.pdf",
+      "target_path": "图片/q3_04_communication.pdf",
+      "bytes": 15499,
+      "source_sha256": "0F2CDC1A870D9CEF8218DBE992CCABB929FF4308C79E79D4C9E3F745D1ABE099",
+      "target_sha256": "0F2CDC1A870D9CEF8218DBE992CCABB929FF4308C79E79D4C9E3F745D1ABE099",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_04_communication.png",
+      "target_path": "图片/q3_04_communication.png",
+      "bytes": 218015,
+      "source_sha256": "95D187F78FAAE1197A18FB846374066B65F97AFDA537899931B93A27A4DF0B2C",
+      "target_sha256": "95D187F78FAAE1197A18FB846374066B65F97AFDA537899931B93A27A4DF0B2C",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_04_communication.svg",
+      "target_path": "图片/q3_04_communication.svg",
+      "bytes": 74391,
+      "source_sha256": "331DC967C43494A4AF48D4C0DF45DF16B31372D5CA80F677FF14A24DC3BE0907",
+      "target_sha256": "331DC967C43494A4AF48D4C0DF45DF16B31372D5CA80F677FF14A24DC3BE0907",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_05_deliveries.pdf",
+      "target_path": "图片/q3_05_deliveries.pdf",
+      "bytes": 30602,
+      "source_sha256": "3C2CFA0E6158E336F9B878E6C15643BFB507F5AB4BD63E722F889814A6BDB8B1",
+      "target_sha256": "3C2CFA0E6158E336F9B878E6C15643BFB507F5AB4BD63E722F889814A6BDB8B1",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_05_deliveries.png",
+      "target_path": "图片/q3_05_deliveries.png",
+      "bytes": 565762,
+      "source_sha256": "EFB7E79828E2DF04108CEB7AEC384B6C19B8DF6DB5C7CC050619720A44B3F3CE",
+      "target_sha256": "EFB7E79828E2DF04108CEB7AEC384B6C19B8DF6DB5C7CC050619720A44B3F3CE",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_05_deliveries.svg",
+      "target_path": "图片/q3_05_deliveries.svg",
+      "bytes": 109774,
+      "source_sha256": "9FC139EF119DD4829AE64E8A32A3B0ADCCD6E7597D5033AE4034047D81BC330E",
+      "target_sha256": "9FC139EF119DD4829AE64E8A32A3B0ADCCD6E7597D5033AE4034047D81BC330E",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_06_resources.pdf",
+      "target_path": "图片/q3_06_resources.pdf",
+      "bytes": 16890,
+      "source_sha256": "5BBFA71865E3D0AD45B8B39AA49E5A5D29259B9DB20E0E91E03B46D2C086E2E4",
+      "target_sha256": "5BBFA71865E3D0AD45B8B39AA49E5A5D29259B9DB20E0E91E03B46D2C086E2E4",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_06_resources.png",
+      "target_path": "图片/q3_06_resources.png",
+      "bytes": 470443,
+      "source_sha256": "A17588EC88898FCD105ED4A08F17BAE4F3A878CA33FA8EAEAACF21037B23E758",
+      "target_sha256": "A17588EC88898FCD105ED4A08F17BAE4F3A878CA33FA8EAEAACF21037B23E758",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_06_resources.svg",
+      "target_path": "图片/q3_06_resources.svg",
+      "bytes": 60748,
+      "source_sha256": "B5EF22F5F7958A05DC74B4BA6940ED81E26E191682116E1413356D85AC79897B",
+      "target_sha256": "B5EF22F5F7958A05DC74B4BA6940ED81E26E191682116E1413356D85AC79897B",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_07_margins.pdf",
+      "target_path": "图片/q3_07_margins.pdf",
+      "bytes": 12250,
+      "source_sha256": "E5C1AD6175BCA3EA4370302C59299194301967A4FA048E05485CAB0260F104B4",
+      "target_sha256": "E5C1AD6175BCA3EA4370302C59299194301967A4FA048E05485CAB0260F104B4",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_07_margins.png",
+      "target_path": "图片/q3_07_margins.png",
+      "bytes": 384956,
+      "source_sha256": "2BE86F5FBADDD494E346B269E78A1C7A6113FE0F37A1BA1E6BA2E0DE5652DC1C",
+      "target_sha256": "2BE86F5FBADDD494E346B269E78A1C7A6113FE0F37A1BA1E6BA2E0DE5652DC1C",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_07_margins.svg",
+      "target_path": "图片/q3_07_margins.svg",
+      "bytes": 40752,
+      "source_sha256": "3F032A280A7B2ED1F1DFC8C3211E2C8AFA8922B32EA41BB1D34993E4A5C4C524",
+      "target_sha256": "3F032A280A7B2ED1F1DFC8C3211E2C8AFA8922B32EA41BB1D34993E4A5C4C524",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_08_comparison.pdf",
+      "target_path": "图片/q3_08_comparison.pdf",
+      "bytes": 15717,
+      "source_sha256": "3B1B73A8AF700B4B20835862206AA785D52BFCA736F67B838E0B29FF9FC54713",
+      "target_sha256": "3B1B73A8AF700B4B20835862206AA785D52BFCA736F67B838E0B29FF9FC54713",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_08_comparison.png",
+      "target_path": "图片/q3_08_comparison.png",
+      "bytes": 284857,
+      "source_sha256": "B3C1E0004165046ABBED7E8116D2BF08BCDB5D6C095254610096B77476EA1396",
+      "target_sha256": "B3C1E0004165046ABBED7E8116D2BF08BCDB5D6C095254610096B77476EA1396",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "图片/q3_08_comparison.svg",
+      "target_path": "图片/q3_08_comparison.svg",
+      "bytes": 28962,
+      "source_sha256": "1AD3F0674ED17E4F2F51C41445980C2EA15739730821FAFEF15D2A14EC3505AF",
+      "target_sha256": "1AD3F0674ED17E4F2F51C41445980C2EA15739730821FAFEF15D2A14EC3505AF",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/第三问_建模与求解.docx",
+      "target_path": "文字/第三问_建模与求解.docx",
+      "bytes": 3141220,
+      "source_sha256": "714FB1D094AE64A5D258C58BEB3C29ABC6C5698470BED45D455E509ABCC42526",
+      "target_sha256": "714FB1D094AE64A5D258C58BEB3C29ABC6C5698470BED45D455E509ABCC42526",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/第三问_Overleaf.zip",
+      "target_path": "文字/第三问_Overleaf.zip",
+      "bytes": 261832,
+      "source_sha256": "D888ED57D2ED5D47ABBAC6E62421429C766A342AF2D11CB0C4031DE0D1540A6F",
+      "target_sha256": "D888ED57D2ED5D47ABBAC6E62421429C766A342AF2D11CB0C4031DE0D1540A6F",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/第三问附录_可直接粘贴.tex",
+      "target_path": "文字/第三问附录_可直接粘贴.tex",
+      "bytes": 15923,
+      "source_sha256": "5BFF263BE0F03141D8C96D6C6F29BB1A738401238AF6416F4AC4AEA6789CD485",
+      "target_sha256": "5BFF263BE0F03141D8C96D6C6F29BB1A738401238AF6416F4AC4AEA6789CD485",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/第三问正文_可直接粘贴.tex",
+      "target_path": "文字/第三问正文_可直接粘贴.tex",
+      "bytes": 29329,
+      "source_sha256": "A26884BE0FD5C15B521B1EFA557C25A0A1E6FF79EBDE4EB552F10B9F5666D961",
+      "target_sha256": "A26884BE0FD5C15B521B1EFA557C25A0A1E6FF79EBDE4EB552F10B9F5666D961",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/交付核验.md",
+      "target_path": "文字/交付核验.md",
+      "bytes": 1449,
+      "source_sha256": "A7A0C28130B0C10824C385F5DA9DA38088A069DC4FFFC70A0292C366389BE94C",
+      "target_sha256": "A7A0C28130B0C10824C385F5DA9DA38088A069DC4FFFC70A0292C366389BE94C",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/使用说明.md",
+      "target_path": "文字/使用说明.md",
+      "bytes": 2743,
+      "source_sha256": "D569B099B73F888AC08E560214E4CCEC8D5F723CCE0E086EADC751FC6CC83FCB",
+      "target_sha256": "D569B099B73F888AC08E560214E4CCEC8D5F723CCE0E086EADC751FC6CC83FCB",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/figures/q3/q3_01_workflow.pdf",
+      "target_path": "文字/Overleaf/figures/q3/q3_01_workflow.pdf",
+      "bytes": 24075,
+      "source_sha256": "7D72E7496003E8717083A192E6D8DA68A03209F474443C9E6839AA3E86066FFA",
+      "target_sha256": "7D72E7496003E8717083A192E6D8DA68A03209F474443C9E6839AA3E86066FFA",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/figures/q3/q3_02_routes_relays.pdf",
+      "target_path": "文字/Overleaf/figures/q3/q3_02_routes_relays.pdf",
+      "bytes": 123078,
+      "source_sha256": "57E8FCB87E307FF6CD69A920D6403BBB0211C236C7A093D4DD7E9D2889B23E45",
+      "target_sha256": "57E8FCB87E307FF6CD69A920D6403BBB0211C236C7A093D4DD7E9D2889B23E45",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/figures/q3/q3_03_joint_schedule.pdf",
+      "target_path": "文字/Overleaf/figures/q3/q3_03_joint_schedule.pdf",
+      "bytes": 15507,
+      "source_sha256": "EF564F361D159CDB5994EF7DEDE295E29FDDAD095F51180F50908785CE17CD7B",
+      "target_sha256": "EF564F361D159CDB5994EF7DEDE295E29FDDAD095F51180F50908785CE17CD7B",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/figures/q3/q3_04_communication.pdf",
+      "target_path": "文字/Overleaf/figures/q3/q3_04_communication.pdf",
+      "bytes": 15499,
+      "source_sha256": "0F2CDC1A870D9CEF8218DBE992CCABB929FF4308C79E79D4C9E3F745D1ABE099",
+      "target_sha256": "0F2CDC1A870D9CEF8218DBE992CCABB929FF4308C79E79D4C9E3F745D1ABE099",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/figures/q3/q3_05_deliveries.pdf",
+      "target_path": "文字/Overleaf/figures/q3/q3_05_deliveries.pdf",
+      "bytes": 30602,
+      "source_sha256": "3C2CFA0E6158E336F9B878E6C15643BFB507F5AB4BD63E722F889814A6BDB8B1",
+      "target_sha256": "3C2CFA0E6158E336F9B878E6C15643BFB507F5AB4BD63E722F889814A6BDB8B1",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/figures/q3/q3_06_resources.pdf",
+      "target_path": "文字/Overleaf/figures/q3/q3_06_resources.pdf",
+      "bytes": 16890,
+      "source_sha256": "5BBFA71865E3D0AD45B8B39AA49E5A5D29259B9DB20E0E91E03B46D2C086E2E4",
+      "target_sha256": "5BBFA71865E3D0AD45B8B39AA49E5A5D29259B9DB20E0E91E03B46D2C086E2E4",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/figures/q3/q3_07_margins.pdf",
+      "target_path": "文字/Overleaf/figures/q3/q3_07_margins.pdf",
+      "bytes": 12250,
+      "source_sha256": "E5C1AD6175BCA3EA4370302C59299194301967A4FA048E05485CAB0260F104B4",
+      "target_sha256": "E5C1AD6175BCA3EA4370302C59299194301967A4FA048E05485CAB0260F104B4",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/figures/q3/q3_08_comparison.pdf",
+      "target_path": "文字/Overleaf/figures/q3/q3_08_comparison.pdf",
+      "bytes": 15717,
+      "source_sha256": "3B1B73A8AF700B4B20835862206AA785D52BFCA736F67B838E0B29FF9FC54713",
+      "target_sha256": "3B1B73A8AF700B4B20835862206AA785D52BFCA736F67B838E0B29FF9FC54713",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/q3_preview.tex",
+      "target_path": "文字/Overleaf/q3_preview.tex",
+      "bytes": 351,
+      "source_sha256": "2CD6B044215DD343543F194DFB13B35B2829DE1C0C2108E784110FC3DE7B2D23",
+      "target_sha256": "2CD6B044215DD343543F194DFB13B35B2829DE1C0C2108E784110FC3DE7B2D23",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/README.md",
+      "target_path": "文字/Overleaf/README.md",
+      "bytes": 2743,
+      "source_sha256": "D569B099B73F888AC08E560214E4CCEC8D5F723CCE0E086EADC751FC6CC83FCB",
+      "target_sha256": "D569B099B73F888AC08E560214E4CCEC8D5F723CCE0E086EADC751FC6CC83FCB",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/sections/problem3.tex",
+      "target_path": "文字/Overleaf/sections/problem3.tex",
+      "bytes": 24408,
+      "source_sha256": "ADF19EB3DE1613543C709C2EA2F78D4623DC7C50DAB3E07891A1286074675027",
+      "target_sha256": "ADF19EB3DE1613543C709C2EA2F78D4623DC7C50DAB3E07891A1286074675027",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/sections/q3_appendix.tex",
+      "target_path": "文字/Overleaf/sections/q3_appendix.tex",
+      "bytes": 1753,
+      "source_sha256": "E6A856AD443AFDA85AA693C16D83EA5AE61BBAE883BEFA659C91B227C49CC7B6",
+      "target_sha256": "E6A856AD443AFDA85AA693C16D83EA5AE61BBAE883BEFA659C91B227C49CC7B6",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/table/q3/batteries_appendix.tex",
+      "target_path": "文字/Overleaf/table/q3/batteries_appendix.tex",
+      "bytes": 2122,
+      "source_sha256": "3ECA56D254BC45A4B60EFB0EF6323B975DEA1D5F927C1821D5E555952A0E5F85",
+      "target_sha256": "3ECA56D254BC45A4B60EFB0EF6323B975DEA1D5F927C1821D5E555952A0E5F85",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/table/q3/comparison_table.tex",
+      "target_path": "文字/Overleaf/table/q3/comparison_table.tex",
+      "bytes": 856,
+      "source_sha256": "5FA31F2A9EEBCED9A9F8B4305957A8F9D260EBEC4DC22F385AE46E4FA2F525DD",
+      "target_sha256": "5FA31F2A9EEBCED9A9F8B4305957A8F9D260EBEC4DC22F385AE46E4FA2F525DD",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/table/q3/config_appendix.tex",
+      "target_path": "文字/Overleaf/table/q3/config_appendix.tex",
+      "bytes": 3752,
+      "source_sha256": "4997598F260CB714B8AC49F8D4BF4F5BD989CEB06660003E5CA9D5918EF995E7",
+      "target_sha256": "4997598F260CB714B8AC49F8D4BF4F5BD989CEB06660003E5CA9D5918EF995E7",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/table/q3/deliveries_appendix.tex",
+      "target_path": "文字/Overleaf/table/q3/deliveries_appendix.tex",
+      "bytes": 5806,
+      "source_sha256": "540A8C9B5AD8829A1343716A03B84274737960E51627DBE71870443E6262F715",
+      "target_sha256": "540A8C9B5AD8829A1343716A03B84274737960E51627DBE71870443E6262F715",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/table/q3/relay_appendix.tex",
+      "target_path": "文字/Overleaf/table/q3/relay_appendix.tex",
+      "bytes": 910,
+      "source_sha256": "9A9A97773C4CBB7C707B83406D3B95E1DE100CBAD03DE12B57220DF33FB560D3",
+      "target_sha256": "9A9A97773C4CBB7C707B83406D3B95E1DE100CBAD03DE12B57220DF33FB560D3",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/table/q3/relay_table.tex",
+      "target_path": "文字/Overleaf/table/q3/relay_table.tex",
+      "bytes": 907,
+      "source_sha256": "AAB39F9EEA4E7F0713CFEBD81B20A08572F1DE8DCB640D99EE8E9A416620AFE6",
+      "target_sha256": "AAB39F9EEA4E7F0713CFEBD81B20A08572F1DE8DCB640D99EE8E9A416620AFE6",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/table/q3/sorties_table.tex",
+      "target_path": "文字/Overleaf/table/q3/sorties_table.tex",
+      "bytes": 1985,
+      "source_sha256": "CDA00A6B69D8BDE9B8680A8B984C53BE55D28D26FCC1A31EE00964C62DEBCCF6",
+      "target_sha256": "CDA00A6B69D8BDE9B8680A8B984C53BE55D28D26FCC1A31EE00964C62DEBCCF6",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/table/q3/units_appendix.tex",
+      "target_path": "文字/Overleaf/table/q3/units_appendix.tex",
+      "bytes": 1765,
+      "source_sha256": "89971CC734FFAE9953CAC52A2DFBACDA7F8E6FE74561F0F0455EB67D3192A916",
+      "target_sha256": "89971CC734FFAE9953CAC52A2DFBACDA7F8E6FE74561F0F0455EB67D3192A916",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": "文字/Overleaf/table/q3/validation_table.tex",
+      "target_path": "文字/Overleaf/table/q3/validation_table.tex",
+      "bytes": 1313,
+      "source_sha256": "BA95FB33B11BFC5C842146D882F3265854787F18692F76D99976D1998663221C",
+      "target_sha256": "BA95FB33B11BFC5C842146D882F3265854787F18692F76D99976D1998663221C",
+      "source_exists": true
+    },
+    {
+      "source_relative_path": null,
+      "target_path": "README.md",
+      "bytes": 1949,
+      "source_sha256": null,
+      "target_sha256": "131051F08E02757CF3FA06F6B1CA8A647C571384D4D374C3806B959E5844084A",
+      "source_exists": false
+    }
+  ]
+}

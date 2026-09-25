@@ -1,0 +1,82 @@
+[
+  {
+    "name": "q3_01_workflow",
+    "claim": "Transport choices and relay time windows are solved jointly and independently checked.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600
+  },
+  {
+    "name": "q3_02_routes_relays",
+    "claim": "The verified plan uses 21 transport sorties and three terrain-aware relay positions.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600
+  },
+  {
+    "name": "q3_03_joint_schedule",
+    "claim": "Relay service must begin before the first required communication interval and last through the final one.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600
+  },
+  {
+    "name": "q3_04_communication",
+    "claim": "All 240 continuous communication intervals have an available direct gateway or an active relay.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600
+  },
+  {
+    "name": "q3_05_deliveries",
+    "claim": "All 80 boxes meet their expected deadlines, including all 31 hard deadlines.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600
+  },
+  {
+    "name": "q3_06_resources",
+    "claim": "Aircraft turnaround and energy-resource recharge are checked separately without resource overlap.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600
+  },
+  {
+    "name": "q3_07_margins",
+    "claim": "Every hard deadline and return-energy reserve passes under the specified physical model.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600
+  },
+  {
+    "name": "q3_08_comparison",
+    "claim": "The 22-transport alternative saves energy but has a higher frozen weighted score due to one extra sortie.",
+    "formats": [
+      "pdf",
+      "svg",
+      "png"
+    ],
+    "dpi": 600
+  }
+]

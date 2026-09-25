@@ -1,0 +1,300 @@
+% !TeX root = ../main.tex
+\begingroup
+\captionsetup{font=small,skip=4pt}
+\section{问题三运输与中继安排明细}
+\label{app:q3-details}
+以下明细对应21个运输架次与3个中继架次的主方案。所有时刻均从任务开始计，
+逐箱交付表使用分钟，机体及能源流水使用秒。有效硬截止取医疗和首批保障规则中的较早时刻；
+“--”表示该箱无额外硬截止，但本方案仍满足其期望交付时刻。
+
+\subsection{完整货箱配置与访问顺序}
+各运输架次均从O01出发并返回O01。货箱编号唯一，访问顺序仅列服务区。
+% Generated from the frozen verified Q3 solution.
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{longtable}{@{}>{\centering\arraybackslash}p{1.00cm}>{\raggedright\arraybackslash}p{2.80cm}>{\raggedright\arraybackslash}p{3.10cm}>{\raggedright\arraybackslash}p{7.60cm}@{}}
+\caption{21个运输架次的完整货箱配置与访问顺序}\label{tab:q3-full-config}\\
+\toprule
+架次 & 机型/实体机/电池 & 服务区访问顺序 & 完整货箱编号 \\
+\midrule
+\endfirsthead
+\multicolumn{4}{c}{\small 表~\thetable{}（续）}\\
+\toprule
+架次 & 机型/实体机/电池 & 服务区访问顺序 & 完整货箱编号 \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{\small 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+T001 & A/U01/A-01 & S006 & \mbox{S006-FOD-01},\allowbreak \mbox{S006-WAT-01} \\
+T002 & B/U05/B-01 & S014 & \mbox{S014-FOD-01},\allowbreak \mbox{S014-MED-01},\allowbreak \mbox{S014-WAT-01} \\
+T003 & B/U06/B-02 & S010 & \mbox{S010-FOD-01},\allowbreak \mbox{S010-MED-01},\allowbreak \mbox{S010-WAT-01} \\
+T004 & C/U07/C-01 & S001 & \mbox{S001-FOD-01},\allowbreak \mbox{S001-FOD-02},\allowbreak \mbox{S001-HYG-01},\allowbreak \mbox{S001-HYG-02},\allowbreak \mbox{S001-MED-01},\allowbreak \mbox{S001-MED-02},\allowbreak \mbox{S001-WAT-05},\allowbreak \mbox{S001-WAT-07},\allowbreak \mbox{S001-WAT-08} \\
+T005 & C/U08/C-02 & S001 & \mbox{S001-FOD-03},\allowbreak \mbox{S001-WAT-01},\allowbreak \mbox{S001-WAT-02},\allowbreak \mbox{S001-WAT-03},\allowbreak \mbox{S001-WAT-04},\allowbreak \mbox{S001-WAT-06} \\
+T006 & C/U08/C-03 & S002 & \mbox{S002-FOD-01},\allowbreak \mbox{S002-FOD-02},\allowbreak \mbox{S002-HYG-01},\allowbreak \mbox{S002-MED-01},\allowbreak \mbox{S002-WAT-01},\allowbreak \mbox{S002-WAT-02},\allowbreak \mbox{S002-WAT-04} \\
+T007 & B/U06/B-03 & S006 & \mbox{S006-WAT-02},\allowbreak \mbox{S006-WAT-03} \\
+T008 & A/U01/A-02 & S013$\to$S002$\to$S009 & \mbox{S002-WAT-03},\allowbreak \mbox{S009-MED-01},\allowbreak \mbox{S013-MED-01} \\
+T009 & A/U02/A-03 & S013 & \mbox{S013-FOD-01},\allowbreak \mbox{S013-WAT-01} \\
+T010 & C/U07/C-04 & S004 & \mbox{S004-FOD-01},\allowbreak \mbox{S004-HYG-01},\allowbreak \mbox{S004-MED-01},\allowbreak \mbox{S004-WAT-01},\allowbreak \mbox{S004-WAT-02},\allowbreak \mbox{S004-WAT-03} \\
+T011 & A/U03/A-04 & S006$\to$S007 & \mbox{S006-MED-01},\allowbreak \mbox{S007-MED-01},\allowbreak \mbox{S007-WAT-01} \\
+T012 & B/U05/B-04 & S012 & \mbox{S012-FOD-01},\allowbreak \mbox{S012-MED-01},\allowbreak \mbox{S012-WAT-01} \\
+T013 & A/U04/A-01 & S007 & \mbox{S007-FOD-01},\allowbreak \mbox{S007-WAT-02} \\
+T014 & B/U06/B-02 & S008 & \mbox{S008-HYG-01},\allowbreak \mbox{S008-WAT-01} \\
+T015 & A/U02/A-05 & S003$\to$S015 & \mbox{S003-MED-01},\allowbreak \mbox{S003-WAT-01},\allowbreak \mbox{S015-MED-01} \\
+T016 & C/U08/C-01 & S007$\to$S003 & \mbox{S003-FOD-01},\allowbreak \mbox{S003-FOD-02},\allowbreak \mbox{S003-HYG-01},\allowbreak \mbox{S003-WAT-02},\allowbreak \mbox{S003-WAT-03},\allowbreak \mbox{S003-WAT-04},\allowbreak \mbox{S007-HYG-01} \\
+T017 & B/U05/B-01 & S008 & \mbox{S008-FOD-01},\allowbreak \mbox{S008-MED-01},\allowbreak \mbox{S008-WAT-02} \\
+T018 & A/U03/A-06 & S015 & \mbox{S015-FOD-01},\allowbreak \mbox{S015-WAT-01} \\
+T019 & C/U07/C-02 & S005$\to$S011 & \mbox{S005-FOD-01},\allowbreak \mbox{S005-HYG-01},\allowbreak \mbox{S005-MED-01},\allowbreak \mbox{S005-WAT-01},\allowbreak \mbox{S005-WAT-02},\allowbreak \mbox{S005-WAT-03},\allowbreak \mbox{S011-FOD-01},\allowbreak \mbox{S011-MED-01} \\
+T020 & A/U01/A-03 & S009 & \mbox{S009-FOD-01},\allowbreak \mbox{S009-WAT-01} \\
+T021 & B/U06/B-03 & S011$\to$S006 & \mbox{S006-HYG-01},\allowbreak \mbox{S011-WAT-01} \\
+\end{longtable}
+\endgroup
+
+
+\subsection{逐箱交付明细}
+站内序表示所属架次在相应服务区的逐箱交接次序，
+由交接完成时刻确定交付是否按期；医疗箱与首批保障箱可以具有双重身份。
+% Generated from the frozen verified Q3 solution.
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{longtable}{@{}llrrrrrl@{}}
+\caption{80个货箱的交付时刻与所属架次（时间单位：min）}\label{tab:q3-deliveries}\\
+\toprule
+货箱编号 & 架次 & 站内序 & 实际交付 & 期望 & 有效硬截止 & 硬裕量 & 身份 \\
+\midrule
+\endfirsthead
+\multicolumn{8}{c}{\small 表~\thetable{}（续）}\\
+\toprule
+货箱编号 & 架次 & 站内序 & 实际交付 & 期望 & 有效硬截止 & 硬裕量 & 身份 \\
+\midrule
+\endhead
+\midrule
+\multicolumn{8}{r}{\small 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+S001-FOD-01 & T004 & 9 & 23.005 & 120 & -- & -- & 普通 \\
+S001-FOD-02 & T004 & 1 & 18.205 & 120 & -- & -- & 普通 \\
+S001-FOD-03 & T005 & 5 & 19.105 & 120 & -- & -- & 普通 \\
+S001-HYG-01 & T004 & 7 & 21.805 & 180 & -- & -- & 普通 \\
+S001-HYG-02 & T004 & 6 & 21.205 & 180 & -- & -- & 普通 \\
+S001-MED-01 & T004 & 2 & 18.805 & 60 & 60 & 41.195 & 医疗+首批 \\
+S001-MED-02 & T004 & 4 & 20.005 & 60 & 60 & 39.995 & 医疗 \\
+S001-WAT-01 & T005 & 1 & 16.705 & 60 & 60 & 43.295 & 首批 \\
+S001-WAT-02 & T005 & 4 & 18.505 & 60 & -- & -- & 普通 \\
+S001-WAT-03 & T005 & 3 & 17.905 & 60 & -- & -- & 普通 \\
+S001-WAT-04 & T005 & 6 & 19.705 & 60 & -- & -- & 普通 \\
+S001-WAT-05 & T004 & 5 & 20.605 & 60 & -- & -- & 普通 \\
+S001-WAT-06 & T005 & 2 & 17.305 & 60 & -- & -- & 普通 \\
+S001-WAT-07 & T004 & 3 & 19.405 & 60 & -- & -- & 普通 \\
+S001-WAT-08 & T004 & 8 & 22.405 & 60 & -- & -- & 普通 \\
+S002-FOD-01 & T006 & 5 & 49.592 & 120 & -- & -- & 普通 \\
+S002-FOD-02 & T006 & 6 & 50.192 & 120 & -- & -- & 普通 \\
+S002-HYG-01 & T006 & 4 & 48.992 & 180 & -- & -- & 普通 \\
+S002-MED-01 & T006 & 3 & 48.392 & 60 & 60 & 11.608 & 医疗+首批 \\
+S002-WAT-01 & T006 & 1 & 47.192 & 60 & 60 & 12.808 & 首批 \\
+S002-WAT-02 & T006 & 2 & 47.792 & 60 & -- & -- & 普通 \\
+S002-WAT-03 & T008 & 1 & 55.912 & 60 & -- & -- & 普通 \\
+S002-WAT-04 & T006 & 7 & 50.792 & 60 & -- & -- & 普通 \\
+S003-FOD-01 & T016 & 2 & 90.451 & 180 & -- & -- & 普通 \\
+S003-FOD-02 & T016 & 1 & 89.851 & 180 & -- & -- & 普通 \\
+S003-HYG-01 & T016 & 6 & 92.851 & 240 & -- & -- & 普通 \\
+S003-MED-01 & T015 & 1 & 78.211 & 120 & 120 & 41.789 & 医疗+首批 \\
+S003-WAT-01 & T015 & 2 & 78.711 & 120 & 120 & 41.289 & 首批 \\
+S003-WAT-02 & T016 & 5 & 92.251 & 120 & -- & -- & 普通 \\
+S003-WAT-03 & T016 & 4 & 91.651 & 120 & -- & -- & 普通 \\
+S003-WAT-04 & T016 & 3 & 91.051 & 120 & -- & -- & 普通 \\
+S004-FOD-01 & T010 & 6 & 54.595 & 180 & -- & -- & 普通 \\
+S004-HYG-01 & T010 & 5 & 53.995 & 240 & -- & -- & 普通 \\
+S004-MED-01 & T010 & 3 & 52.795 & 120 & 120 & 67.205 & 医疗+首批 \\
+S004-WAT-01 & T010 & 1 & 51.595 & 120 & 120 & 68.405 & 首批 \\
+S004-WAT-02 & T010 & 2 & 52.195 & 120 & -- & -- & 普通 \\
+S004-WAT-03 & T010 & 4 & 53.395 & 120 & -- & -- & 普通 \\
+S005-FOD-01 & T019 & 5 & 89.841 & 240 & -- & -- & 普通 \\
+S005-HYG-01 & T019 & 4 & 89.241 & 300 & -- & -- & 普通 \\
+S005-MED-01 & T019 & 3 & 88.641 & 180 & 180 & 91.359 & 医疗+首批 \\
+S005-WAT-01 & T019 & 1 & 87.441 & 180 & 180 & 92.559 & 首批 \\
+S005-WAT-02 & T019 & 2 & 88.041 & 180 & -- & -- & 普通 \\
+S005-WAT-03 & T019 & 6 & 90.441 & 180 & -- & -- & 普通 \\
+S006-FOD-01 & T001 & 2 & 15.592 & 120 & -- & -- & 普通 \\
+S006-HYG-01 & T021 & 1 & 103.913 & 180 & -- & -- & 普通 \\
+S006-MED-01 & T011 & 1 & 46.340 & 60 & 60 & 13.660 & 医疗+首批 \\
+S006-WAT-01 & T001 & 1 & 15.092 & 60 & 60 & 44.908 & 首批 \\
+S006-WAT-02 & T007 & 1 & 40.130 & 60 & -- & -- & 普通 \\
+S006-WAT-03 & T007 & 2 & 40.630 & 60 & -- & -- & 普通 \\
+S007-FOD-01 & T013 & 2 & 60.500 & 120 & -- & -- & 普通 \\
+S007-HYG-01 & T016 & 1 & 82.196 & 180 & -- & -- & 普通 \\
+S007-MED-01 & T011 & 1 & 55.966 & 60 & 60 & 4.034 & 医疗+首批 \\
+S007-WAT-01 & T011 & 2 & 56.466 & 60 & 60 & 3.534 & 首批 \\
+S007-WAT-02 & T013 & 1 & 60.000 & 60 & -- & -- & 普通 \\
+S008-FOD-01 & T017 & 2 & 84.229 & 180 & -- & -- & 普通 \\
+S008-HYG-01 & T014 & 1 & 70.221 & 240 & -- & -- & 普通 \\
+S008-MED-01 & T017 & 3 & 84.729 & 120 & 120 & 35.271 & 医疗+首批 \\
+S008-WAT-01 & T014 & 2 & 70.721 & 120 & 120 & 49.279 & 首批 \\
+S008-WAT-02 & T017 & 1 & 83.729 & 120 & -- & -- & 普通 \\
+S009-FOD-01 & T020 & 1 & 91.073 & 240 & -- & -- & 普通 \\
+S009-MED-01 & T008 & 1 & 62.567 & 180 & 180 & 117.433 & 医疗+首批 \\
+S009-WAT-01 & T020 & 2 & 91.573 & 180 & 180 & 88.427 & 首批 \\
+S010-FOD-01 & T003 & 3 & 18.087 & 120 & -- & -- & 普通 \\
+S010-MED-01 & T003 & 2 & 17.587 & 60 & 60 & 42.413 & 医疗+首批 \\
+S010-WAT-01 & T003 & 1 & 17.087 & 60 & 60 & 42.913 & 首批 \\
+S011-FOD-01 & T019 & 1 & 99.301 & 240 & -- & -- & 普通 \\
+S011-MED-01 & T019 & 2 & 99.901 & 180 & 180 & 80.099 & 医疗+首批 \\
+S011-WAT-01 & T021 & 1 & 95.506 & 180 & 180 & 84.494 & 首批 \\
+S012-FOD-01 & T012 & 3 & 52.352 & 120 & -- & -- & 普通 \\
+S012-MED-01 & T012 & 1 & 51.352 & 120 & 60 & 8.648 & 医疗+首批 \\
+S012-WAT-01 & T012 & 2 & 51.852 & 60 & 60 & 8.148 & 首批 \\
+S013-FOD-01 & T009 & 2 & 45.913 & 120 & -- & -- & 普通 \\
+S013-MED-01 & T008 & 1 & 45.413 & 60 & 60 & 14.587 & 医疗+首批 \\
+S013-WAT-01 & T009 & 1 & 45.413 & 60 & 60 & 14.587 & 首批 \\
+S014-FOD-01 & T002 & 3 & 20.707 & 120 & -- & -- & 普通 \\
+S014-MED-01 & T002 & 1 & 19.707 & 120 & 60 & 40.293 & 医疗+首批 \\
+S014-WAT-01 & T002 & 2 & 20.207 & 60 & 60 & 39.793 & 首批 \\
+S015-FOD-01 & T018 & 1 & 86.697 & 240 & -- & -- & 普通 \\
+S015-MED-01 & T015 & 1 & 86.265 & 120 & 120 & 33.735 & 医疗+首批 \\
+S015-WAT-01 & T018 & 2 & 87.197 & 180 & 180 & 92.803 & 首批 \\
+\end{longtable}
+\endgroup
+
+
+\subsection{实体机使用流水}
+运输机返航即按题设释放机体；中继机返航后另需300\,s周转。
+机体释放和电池充满是两个独立条件，后继任务同时满足两者后才能开始。
+% Generated from the frozen verified Q3 solution.
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{longtable}{@{}llrrr@{}}
+\caption{运输机与中继机的实体机流水（时间单位：s）}\label{tab:q3-units}\\
+\toprule
+实体机 & 任务 & 准备开始 & 返航 & 机体可再用 \\
+\midrule
+\endfirsthead
+\multicolumn{5}{c}{\small 表~\thetable{}（续）}\\
+\toprule
+实体机 & 任务 & 准备开始 & 返航 & 机体可再用 \\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r}{\small 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+R01 & R001 & 194.652 & 1846.524 & 2146.524 \\
+R01 & R003 & 2345.282 & 6612.284 & 6912.284 \\
+R02 & R002 & 1571.428 & 4178.986 & 4478.986 \\
+U01 & T001 & 0.000 & 1313.477 & 1313.477 \\
+U01 & T008 & 1641.160 & 4316.739 & 4316.739 \\
+U01 & T020 & 4368.478 & 6057.118 & 6057.118 \\
+U02 & T009 & 1671.160 & 3283.324 & 3283.324 \\
+U02 & T015 & 3283.324 & 5886.793 & 5886.793 \\
+U03 & T011 & 1844.884 & 3974.033 & 3974.033 \\
+U03 & T018 & 3974.033 & 5942.687 & 5942.687 \\
+U04 & T013 & 2488.626 & 4216.094 & 4216.094 \\
+U05 & T002 & 0.000 & 1869.749 & 1869.749 \\
+U05 & T012 & 1869.749 & 3792.577 & 3792.577 \\
+U05 & T017 & 3792.577 & 5754.420 & 5754.420 \\
+U06 & T003 & 0.000 & 1555.405 & 1555.405 \\
+U06 & T007 & 1555.405 & 2762.676 & 2762.676 \\
+U06 & T014 & 3012.133 & 4913.976 & 4913.976 \\
+U06 & T021 & 4913.976 & 6559.627 & 6559.627 \\
+U07 & T004 & 0.000 & 1692.176 & 1692.176 \\
+U07 & T010 & 1692.176 & 3993.232 & 3993.232 \\
+U07 & T019 & 3993.232 & 6298.400 & 6298.400 \\
+U08 & T005 & 0.000 & 1494.176 & 1494.176 \\
+U08 & T006 & 1494.177 & 3668.021 & 3668.021 \\
+U08 & T016 & 3668.021 & 6361.703 & 6361.703 \\
+\end{longtable}
+\endgroup
+
+
+\subsection{电池及中继组件流水}
+运输电池编号省略统一前缀BAT；RE01、RE02和RE03为本次实际使用的中继能源组件。
+充电结束时刻向上量化到毫秒，末次返航后的充电恢复不计入联合完工目标。
+% Generated from the frozen verified Q3 solution.
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{longtable}{@{}llrrrr@{}}
+\caption{运输电池与中继组件流水（时间单位：s）}\label{tab:q3-batteries}\\
+\toprule
+电池或组件 & 任务 & 占用开始 & 返航 & 充满可再用 & 返航SOC / \% \\
+\midrule
+\endfirsthead
+\multicolumn{6}{c}{\small 表~\thetable{}（续）}\\
+\toprule
+电池或组件 & 任务 & 占用开始 & 返航 & 充满可再用 & 返航SOC / \% \\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r}{\small 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+A-01 & T001 & 0.000 & 1313.477 & 2205.503 & 69.844185 \\
+A-01 & T013 & 2488.626 & 4216.094 & 5285.484 & 56.200811 \\
+A-02 & T008 & 1641.160 & 4316.739 & 5806.699 & 23.849237 \\
+A-03 & T009 & 1671.160 & 3283.324 & 4368.476 & 54.988321 \\
+A-03 & T020 & 4368.478 & 6057.118 & 7230.621 & 48.192140 \\
+A-04 & T011 & 1844.884 & 3974.033 & 5112.210 & 50.909471 \\
+A-05 & T015 & 3283.324 & 5886.793 & 7339.392 & 26.723154 \\
+A-06 & T018 & 3974.033 & 5942.687 & 7181.603 & 43.160357 \\
+B-01 & T002 & 0.000 & 1869.749 & 3463.876 & 46.492726 \\
+B-01 & T017 & 3792.577 & 5754.420 & 7710.343 & 25.619828 \\
+B-02 & T003 & 0.000 & 1555.405 & 3012.133 & 54.419586 \\
+B-02 & T014 & 3012.133 & 4913.976 & 6778.130 & 30.914220 \\
+B-03 & T007 & 1555.405 & 2762.676 & 3989.868 & 67.662052 \\
+B-03 & T021 & 4913.976 & 6559.627 & 7920.519 & 59.948586 \\
+B-04 & T012 & 1869.749 & 3792.577 & 5652.037 & 31.185001 \\
+C-01 & T004 & 0.000 & 1692.176 & 3315.690 & 63.530149 \\
+C-01 & T016 & 3668.021 & 6361.703 & 8926.383 & 20.091711 \\
+C-02 & T005 & 0.000 & 1494.176 & 3138.866 & 62.552802 \\
+C-02 & T019 & 3993.232 & 6298.400 & 8439.815 & 39.627037 \\
+C-03 & T006 & 1494.177 & 3668.021 & 6202.451 & 21.487872 \\
+C-04 & T010 & 1692.176 & 3993.232 & 6492.965 & 23.089248 \\
+RE01 & R001 & 194.652 & 1846.524 & 2519.917 & 86.662136 \\
+RE02 & R002 & 1571.428 & 4178.986 & 4969.598 & 77.645259 \\
+RE03 & R003 & 2345.282 & 6612.284 & 7602.685 & 62.276848 \\
+\end{longtable}
+\endgroup
+
+
+\subsection{中继位置参数}
+局部坐标以O01为原点，东、北方向为正；离地高度相对当地DEM，绝对海拔为两者之和。
+回传余量包含系统损耗、地形遮挡附加损耗和接收安全裕量。
+% Generated from the frozen verified Q3 solution.
+\begingroup
+\small
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.10}
+\begin{longtable}{@{}lrrrrrr@{}}
+\caption{三个中继位置的空间参数与回传状态}\label{tab:q3-relay-geometry}\\
+\toprule
+任务 & 东向x / m & 北向y / m & 地面高程 / m & 离地高度 / m & 绝对海拔 / m & 回传余量 / dB \\
+\midrule
+\endfirsthead
+\multicolumn{7}{c}{\small 表~\thetable{}（续）}\\
+\toprule
+任务 & 东向x / m & 北向y / m & 地面高程 / m & 离地高度 / m & 绝对海拔 / m & 回传余量 / dB \\
+\midrule
+\endhead
+\midrule
+\multicolumn{7}{r}{\small 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+R001 & 3500 & -500 & 296.227 & 100 & 396.227 & 4.955268 \\
+R002 & 3500 & 5500 & 283.399 & 275 & 558.399 & 9.644684 \\
+R003 & -3000 & 3000 & 407.069 & 275 & 682.069 & 3.324695 \\
+\end{longtable}
+\endgroup
+
+\par\endgroup

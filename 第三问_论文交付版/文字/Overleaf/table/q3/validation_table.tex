@@ -1,0 +1,24 @@
+% Generated from the frozen verified Q3 solution.
+\begin{table}[!htbp]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.10}
+\caption{主方案独立可行性核验结果}\label{tab:q3-checks}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{3.10cm}>{\raggedright\arraybackslash}p{5.80cm}>{\raggedright\arraybackslash}p{6.60cm}@{}}
+\toprule
+检查项目 & 检查条件 & 结果 \\
+\midrule
+货箱唯一交付 & 每箱恰好交付一次 & 80 / 80 \\
+期望交付时刻 & 本轮附加零迟到条件 & 80箱全部按期，W=0 \\
+有效硬截止 & 31箱，合计46条原始规则 & 全部满足；最小裕量212.061 s \\
+运输返航SOC & 不低于20\% & 最低20.091711\% \\
+中继返航SOC & 不低于20\% & 最低62.276848\% \\
+机体与电池占用 & 同一资源不可重叠使用 & 8架运输机、14组电池均通过 \\
+中继机与组件占用 & 含300 s机体周转及组件充电 & 2架中继机、3组组件均通过 \\
+全在途连续通信 & 服务来源可用且取得区间证书 & 240区间通过，未证明区间0 \\
+通信证明余量 & 双向接收门限包含安全裕量 & 最小下界0.079736 dB \\
+独立核验汇总 & 物理、时序、通信及数据一致性 & 11884项检查，0错误 \\
+\bottomrule
+\end{tabular}
+\end{table}
