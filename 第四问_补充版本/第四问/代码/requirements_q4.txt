@@ -1,0 +1,4 @@
+# solve_q4.py uses only the Python 3.10+ standard library.
+# These are read-only workbook checks, tested with:
+openpyxl==3.1.5
+# Optional XLSX export: Codex bundled Node.js and @oai/artifact-tool.

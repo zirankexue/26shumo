@@ -1,0 +1,61 @@
+{
+  "source_solution_sha256": "ab34a1f794b20980cd20393a94ec5f836e8a92c5aea669109472be8c0da96f13",
+  "q3_sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b",
+  "inventory_change_recalculation": true,
+  "output_sha256": "56924f7207125c093c42b639937c4616f12917b67dc4afb70ed1b4cf0686e8d5",
+  "views": [
+    {
+      "sheet": "结果比较",
+      "range": "A1:J31",
+      "name": "summary"
+    },
+    {
+      "sheet": "Q4_分区配置",
+      "range": "A1:K9",
+      "name": "template"
+    },
+    {
+      "sheet": "Q4_分区配置",
+      "range": "L1:Q6",
+      "name": "workload"
+    },
+    {
+      "sheet": "任务明细",
+      "range": "A1:L16",
+      "name": "tasks"
+    },
+    {
+      "sheet": "任务明细",
+      "range": "A24:L30",
+      "name": "relay_tasks"
+    },
+    {
+      "sheet": "资源占用",
+      "range": "A1:J19",
+      "name": "resources"
+    },
+    {
+      "sheet": "分区备选",
+      "range": "A1:D13",
+      "name": "alternatives_groups"
+    },
+    {
+      "sheet": "分区备选",
+      "range": "E4:O12",
+      "name": "alternatives_counts"
+    },
+    {
+      "sheet": "库存与口径",
+      "range": "A1:E27",
+      "name": "inputs"
+    }
+  ],
+  "sheets": [
+    "结果比较",
+    "Q4_分区配置",
+    "任务明细",
+    "资源占用",
+    "分区备选",
+    "库存与口径"
+  ]
+}

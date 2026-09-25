@@ -1,0 +1,1716 @@
+{
+  "source_results": "E:\\sxjm\\D题\\第四问\\版本\\20260925_21运输确认刷新\\结果",
+  "source_q3_sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b",
+  "transport_sorties": 21,
+  "relay_sorties": 3,
+  "partition_counts": {
+    "strict_2": 3,
+    "strict_3": 1,
+    "clone_2": 127,
+    "clone_3": 966
+  },
+  "recommendations": {
+    "strict_2": {
+      "current_shortage_first": "strict-2-0003-minimum",
+      "balance_first": "strict-2-0002-minimum",
+      "utilization_diagnostic": "strict-2-0001-minimum",
+      "current_equals_solver_recommendation": true,
+      "current": {
+        "K": 2,
+        "policy": "strict",
+        "identity": "minimum",
+        "groups": [
+          [
+            "S001"
+          ],
+          [
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S010",
+            "S011",
+            "S012",
+            "S013",
+            "S014",
+            "S015"
+          ]
+        ],
+        "total": {
+          "U_A": 4,
+          "U_B": 2,
+          "U_C": 4,
+          "B_A": 6,
+          "B_B": 4,
+          "B_C": 6,
+          "R": 2,
+          "RE": 3
+        },
+        "gap": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 2,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 2,
+          "R": 0,
+          "RE": 0
+        },
+        "redundancy_vs_global_minimum": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 2,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 2,
+          "R": 0,
+          "RE": 0
+        },
+        "unused_inventory": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 0,
+          "RE": 3
+        },
+        "workload_cv": 0.8424286529395283,
+        "workload_cv_squared_fraction": "72550310416609/102228741737329",
+        "workload_ms": [
+          3186352,
+          37256940
+        ],
+        "boxes_by_group": [
+          15,
+          65
+        ],
+        "relay_sorties_executed": 3,
+        "relay_copy_counts": {
+          "R001": 1,
+          "R002": 1,
+          "R003": 1
+        },
+        "total_energy_kwh": 66.44527328256848,
+        "joint_finish_s": 6612.284,
+        "ranking_first_four": [
+          2,
+          2,
+          12,
+          19
+        ],
+        "partition_id": "strict-2-0003-minimum",
+        "gap_total": 4,
+        "gap_aircraft": 2,
+        "gap_energy": 2,
+        "total_aircraft": 12,
+        "total_energy_resources": 19,
+        "group_resource_utilization": [
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": null,
+              "U_C": 0.9414954472820795,
+              "B_A": null,
+              "B_B": null,
+              "B_C": 0.97333526354997,
+              "R": null,
+              "RE": null
+            },
+            "mean": 0.9574153554160247,
+            "minimum": 0.9414954472820795
+          },
+          {
+            "by_resource": {
+              "U_A": 0.6487656340853851,
+              "U_B": 0.9196094534033719,
+              "U_C": 0.9731586436312821,
+              "B_A": 0.5735789149836935,
+              "B_B": 0.7380534659408051,
+              "B_C": 0.6463090500989881,
+              "R": 0.7016186656250297,
+              "RE": 0.4940959811239142
+            },
+            "mean": 0.7118987261115587,
+            "minimum": 0.4940959811239142
+          }
+        ],
+        "mean_resource_utilization": 0.8346570407637917,
+        "minimum_resource_utilization": 0.4940959811239142
+      },
+      "balance": {
+        "K": 2,
+        "policy": "strict",
+        "identity": "minimum",
+        "groups": [
+          [
+            "S001",
+            "S010",
+            "S014"
+          ],
+          [
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S011",
+            "S012",
+            "S013",
+            "S015"
+          ]
+        ],
+        "total": {
+          "U_A": 4,
+          "U_B": 4,
+          "U_C": 4,
+          "B_A": 6,
+          "B_B": 6,
+          "B_C": 6,
+          "R": 3,
+          "RE": 3
+        },
+        "gap": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 2,
+          "B_A": 0,
+          "B_B": 2,
+          "B_C": 2,
+          "R": 1,
+          "RE": 0
+        },
+        "redundancy_vs_global_minimum": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 2,
+          "B_A": 0,
+          "B_B": 2,
+          "B_C": 2,
+          "R": 1,
+          "RE": 0
+        },
+        "unused_inventory": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 0,
+          "RE": 3
+        },
+        "workload_cv": 0.673048079271094,
+        "workload_cv_squared_fraction": "46308977704900/102228741737329",
+        "workload_ms": [
+          6611506,
+          33831786
+        ],
+        "boxes_by_group": [
+          21,
+          59
+        ],
+        "relay_sorties_executed": 3,
+        "relay_copy_counts": {
+          "R001": 1,
+          "R002": 1,
+          "R003": 1
+        },
+        "total_energy_kwh": 66.44527328256848,
+        "joint_finish_s": 6612.284,
+        "ranking_first_four": [
+          5,
+          4,
+          15,
+          21
+        ],
+        "partition_id": "strict-2-0002-minimum",
+        "gap_total": 9,
+        "gap_aircraft": 5,
+        "gap_energy": 4,
+        "total_aircraft": 15,
+        "total_energy_resources": 21,
+        "group_resource_utilization": [
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": 0.9159395191547101,
+              "U_C": 0.9414954472820795,
+              "B_A": null,
+              "B_B": 0.934792267390634,
+              "B_C": 0.97333526354997,
+              "R": 1.0,
+              "RE": 1.0
+            },
+            "mean": 0.9609270828962323,
+            "minimum": 0.9159395191547101
+          },
+          {
+            "by_resource": {
+              "U_A": 0.6487656340853851,
+              "U_B": 0.8632147015060483,
+              "U_C": 0.9731586436312821,
+              "B_A": 0.5735789149836935,
+              "B_B": 0.6640516179286027,
+              "B_C": 0.6463090500989881,
+              "R": 0.6997529983957628,
+              "RE": 0.7175596231432353
+            },
+            "mean": 0.7232988979716247,
+            "minimum": 0.5735789149836935
+          }
+        ],
+        "mean_resource_utilization": 0.8421129904339285,
+        "minimum_resource_utilization": 0.5735789149836935
+      },
+      "utilization": {
+        "K": 2,
+        "policy": "strict",
+        "identity": "minimum",
+        "groups": [
+          [
+            "S001",
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S011",
+            "S012",
+            "S013",
+            "S015"
+          ],
+          [
+            "S010",
+            "S014"
+          ]
+        ],
+        "total": {
+          "U_A": 4,
+          "U_B": 4,
+          "U_C": 2,
+          "B_A": 6,
+          "B_B": 6,
+          "B_C": 4,
+          "R": 3,
+          "RE": 3
+        },
+        "gap": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 2,
+          "B_C": 0,
+          "R": 1,
+          "RE": 0
+        },
+        "redundancy_vs_global_minimum": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 2,
+          "B_C": 0,
+          "R": 1,
+          "RE": 0
+        },
+        "unused_inventory": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 0,
+          "RE": 3
+        },
+        "workload_cv": 0.8306194263315657,
+        "workload_cv_squared_fraction": "70530535876516/102228741737329",
+        "workload_ms": [
+          37018138,
+          3425154
+        ],
+        "boxes_by_group": [
+          74,
+          6
+        ],
+        "relay_sorties_executed": 3,
+        "relay_copy_counts": {
+          "R002": 1,
+          "R003": 1,
+          "R001": 1
+        },
+        "total_energy_kwh": 66.44527328256848,
+        "joint_finish_s": 6612.284,
+        "ranking_first_four": [
+          3,
+          2,
+          13,
+          19
+        ],
+        "partition_id": "strict-2-0001-minimum",
+        "gap_total": 5,
+        "gap_aircraft": 3,
+        "gap_energy": 2,
+        "total_aircraft": 13,
+        "total_energy_resources": 19,
+        "group_resource_utilization": [
+          {
+            "by_resource": {
+              "U_A": 0.6487656340853851,
+              "U_B": 0.8632147015060483,
+              "U_C": 0.9950246026889341,
+              "B_A": 0.5735789149836935,
+              "B_B": 0.6640516179286027,
+              "B_C": 0.7188959962842733,
+              "R": 0.6997529983957628,
+              "RE": 0.7175596231432353
+            },
+            "mean": 0.7351055111269919,
+            "minimum": 0.5735789149836935
+          },
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": 0.9159395191547101,
+              "U_C": null,
+              "B_A": null,
+              "B_B": 0.934792267390634,
+              "B_C": null,
+              "R": 1.0,
+              "RE": 1.0
+            },
+            "mean": 0.962682946636336,
+            "minimum": 0.9159395191547101
+          }
+        ],
+        "mean_resource_utilization": 0.8488942288816639,
+        "minimum_resource_utilization": 0.5735789149836935
+      }
+    },
+    "strict_3": {
+      "current_shortage_first": "strict-3-0001-minimum",
+      "balance_first": "strict-3-0001-minimum",
+      "utilization_diagnostic": "strict-3-0001-minimum",
+      "current_equals_solver_recommendation": true,
+      "current": {
+        "K": 3,
+        "policy": "strict",
+        "identity": "minimum",
+        "groups": [
+          [
+            "S001"
+          ],
+          [
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S011",
+            "S012",
+            "S013",
+            "S015"
+          ],
+          [
+            "S010",
+            "S014"
+          ]
+        ],
+        "total": {
+          "U_A": 4,
+          "U_B": 4,
+          "U_C": 4,
+          "B_A": 6,
+          "B_B": 6,
+          "B_C": 6,
+          "R": 3,
+          "RE": 3
+        },
+        "gap": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 2,
+          "B_A": 0,
+          "B_B": 2,
+          "B_C": 2,
+          "R": 1,
+          "RE": 0
+        },
+        "redundancy_vs_global_minimum": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 2,
+          "B_A": 0,
+          "B_B": 2,
+          "B_C": 2,
+          "R": 1,
+          "RE": 0
+        },
+        "unused_inventory": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 0,
+          "RE": 3
+        },
+        "workload_cv": 1.0674531782600805,
+        "workload_cv_squared_fraction": "232970365128373/204457483474658",
+        "workload_ms": [
+          3186352,
+          33831786,
+          3425154
+        ],
+        "boxes_by_group": [
+          15,
+          59,
+          6
+        ],
+        "relay_sorties_executed": 3,
+        "relay_copy_counts": {
+          "R002": 1,
+          "R003": 1,
+          "R001": 1
+        },
+        "total_energy_kwh": 66.44527328256848,
+        "joint_finish_s": 6612.284,
+        "ranking_first_four": [
+          5,
+          4,
+          15,
+          21
+        ],
+        "partition_id": "strict-3-0001-minimum",
+        "gap_total": 9,
+        "gap_aircraft": 5,
+        "gap_energy": 4,
+        "total_aircraft": 15,
+        "total_energy_resources": 21,
+        "group_resource_utilization": [
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": null,
+              "U_C": 0.9414954472820795,
+              "B_A": null,
+              "B_B": null,
+              "B_C": 0.97333526354997,
+              "R": null,
+              "RE": null
+            },
+            "mean": 0.9574153554160247,
+            "minimum": 0.9414954472820795
+          },
+          {
+            "by_resource": {
+              "U_A": 0.6487656340853851,
+              "U_B": 0.8632147015060483,
+              "U_C": 0.9731586436312821,
+              "B_A": 0.5735789149836935,
+              "B_B": 0.6640516179286027,
+              "B_C": 0.6463090500989881,
+              "R": 0.6997529983957628,
+              "RE": 0.7175596231432353
+            },
+            "mean": 0.7232988979716247,
+            "minimum": 0.5735789149836935
+          },
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": 0.9159395191547101,
+              "U_C": null,
+              "B_A": null,
+              "B_B": 0.934792267390634,
+              "B_C": null,
+              "R": 1.0,
+              "RE": 1.0
+            },
+            "mean": 0.962682946636336,
+            "minimum": 0.9159395191547101
+          }
+        ],
+        "mean_resource_utilization": 0.8811324000079952,
+        "minimum_resource_utilization": 0.5735789149836935
+      },
+      "balance": {
+        "K": 3,
+        "policy": "strict",
+        "identity": "minimum",
+        "groups": [
+          [
+            "S001"
+          ],
+          [
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S011",
+            "S012",
+            "S013",
+            "S015"
+          ],
+          [
+            "S010",
+            "S014"
+          ]
+        ],
+        "total": {
+          "U_A": 4,
+          "U_B": 4,
+          "U_C": 4,
+          "B_A": 6,
+          "B_B": 6,
+          "B_C": 6,
+          "R": 3,
+          "RE": 3
+        },
+        "gap": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 2,
+          "B_A": 0,
+          "B_B": 2,
+          "B_C": 2,
+          "R": 1,
+          "RE": 0
+        },
+        "redundancy_vs_global_minimum": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 2,
+          "B_A": 0,
+          "B_B": 2,
+          "B_C": 2,
+          "R": 1,
+          "RE": 0
+        },
+        "unused_inventory": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 0,
+          "RE": 3
+        },
+        "workload_cv": 1.0674531782600805,
+        "workload_cv_squared_fraction": "232970365128373/204457483474658",
+        "workload_ms": [
+          3186352,
+          33831786,
+          3425154
+        ],
+        "boxes_by_group": [
+          15,
+          59,
+          6
+        ],
+        "relay_sorties_executed": 3,
+        "relay_copy_counts": {
+          "R002": 1,
+          "R003": 1,
+          "R001": 1
+        },
+        "total_energy_kwh": 66.44527328256848,
+        "joint_finish_s": 6612.284,
+        "ranking_first_four": [
+          5,
+          4,
+          15,
+          21
+        ],
+        "partition_id": "strict-3-0001-minimum",
+        "gap_total": 9,
+        "gap_aircraft": 5,
+        "gap_energy": 4,
+        "total_aircraft": 15,
+        "total_energy_resources": 21,
+        "group_resource_utilization": [
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": null,
+              "U_C": 0.9414954472820795,
+              "B_A": null,
+              "B_B": null,
+              "B_C": 0.97333526354997,
+              "R": null,
+              "RE": null
+            },
+            "mean": 0.9574153554160247,
+            "minimum": 0.9414954472820795
+          },
+          {
+            "by_resource": {
+              "U_A": 0.6487656340853851,
+              "U_B": 0.8632147015060483,
+              "U_C": 0.9731586436312821,
+              "B_A": 0.5735789149836935,
+              "B_B": 0.6640516179286027,
+              "B_C": 0.6463090500989881,
+              "R": 0.6997529983957628,
+              "RE": 0.7175596231432353
+            },
+            "mean": 0.7232988979716247,
+            "minimum": 0.5735789149836935
+          },
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": 0.9159395191547101,
+              "U_C": null,
+              "B_A": null,
+              "B_B": 0.934792267390634,
+              "B_C": null,
+              "R": 1.0,
+              "RE": 1.0
+            },
+            "mean": 0.962682946636336,
+            "minimum": 0.9159395191547101
+          }
+        ],
+        "mean_resource_utilization": 0.8811324000079952,
+        "minimum_resource_utilization": 0.5735789149836935
+      },
+      "utilization": {
+        "K": 3,
+        "policy": "strict",
+        "identity": "minimum",
+        "groups": [
+          [
+            "S001"
+          ],
+          [
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S011",
+            "S012",
+            "S013",
+            "S015"
+          ],
+          [
+            "S010",
+            "S014"
+          ]
+        ],
+        "total": {
+          "U_A": 4,
+          "U_B": 4,
+          "U_C": 4,
+          "B_A": 6,
+          "B_B": 6,
+          "B_C": 6,
+          "R": 3,
+          "RE": 3
+        },
+        "gap": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 2,
+          "B_A": 0,
+          "B_B": 2,
+          "B_C": 2,
+          "R": 1,
+          "RE": 0
+        },
+        "redundancy_vs_global_minimum": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 2,
+          "B_A": 0,
+          "B_B": 2,
+          "B_C": 2,
+          "R": 1,
+          "RE": 0
+        },
+        "unused_inventory": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 0,
+          "RE": 3
+        },
+        "workload_cv": 1.0674531782600805,
+        "workload_cv_squared_fraction": "232970365128373/204457483474658",
+        "workload_ms": [
+          3186352,
+          33831786,
+          3425154
+        ],
+        "boxes_by_group": [
+          15,
+          59,
+          6
+        ],
+        "relay_sorties_executed": 3,
+        "relay_copy_counts": {
+          "R002": 1,
+          "R003": 1,
+          "R001": 1
+        },
+        "total_energy_kwh": 66.44527328256848,
+        "joint_finish_s": 6612.284,
+        "ranking_first_four": [
+          5,
+          4,
+          15,
+          21
+        ],
+        "partition_id": "strict-3-0001-minimum",
+        "gap_total": 9,
+        "gap_aircraft": 5,
+        "gap_energy": 4,
+        "total_aircraft": 15,
+        "total_energy_resources": 21,
+        "group_resource_utilization": [
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": null,
+              "U_C": 0.9414954472820795,
+              "B_A": null,
+              "B_B": null,
+              "B_C": 0.97333526354997,
+              "R": null,
+              "RE": null
+            },
+            "mean": 0.9574153554160247,
+            "minimum": 0.9414954472820795
+          },
+          {
+            "by_resource": {
+              "U_A": 0.6487656340853851,
+              "U_B": 0.8632147015060483,
+              "U_C": 0.9731586436312821,
+              "B_A": 0.5735789149836935,
+              "B_B": 0.6640516179286027,
+              "B_C": 0.6463090500989881,
+              "R": 0.6997529983957628,
+              "RE": 0.7175596231432353
+            },
+            "mean": 0.7232988979716247,
+            "minimum": 0.5735789149836935
+          },
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": 0.9159395191547101,
+              "U_C": null,
+              "B_A": null,
+              "B_B": 0.934792267390634,
+              "B_C": null,
+              "R": 1.0,
+              "RE": 1.0
+            },
+            "mean": 0.962682946636336,
+            "minimum": 0.9159395191547101
+          }
+        ],
+        "mean_resource_utilization": 0.8811324000079952,
+        "minimum_resource_utilization": 0.5735789149836935
+      }
+    },
+    "clone_2": {
+      "current_shortage_first": "clone-2-0016-minimum",
+      "balance_first": "clone-2-0048-minimum",
+      "utilization_diagnostic": "clone-2-0002-minimum",
+      "current_equals_solver_recommendation": true,
+      "current": {
+        "K": 2,
+        "policy": "clone",
+        "identity": "minimum",
+        "groups": [
+          [
+            "S001",
+            "S002",
+            "S003",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S010",
+            "S011",
+            "S012",
+            "S013",
+            "S014",
+            "S015"
+          ],
+          [
+            "S004"
+          ]
+        ],
+        "total": {
+          "U_A": 4,
+          "U_B": 2,
+          "U_C": 3,
+          "B_A": 6,
+          "B_B": 4,
+          "B_C": 4,
+          "R": 3,
+          "RE": 4
+        },
+        "gap": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 1,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 1,
+          "RE": 0
+        },
+        "redundancy_vs_global_minimum": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 1,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 1,
+          "RE": 1
+        },
+        "unused_inventory": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 0,
+          "RE": 2
+        },
+        "workload_cv": 0.886208274044556,
+        "workload_cv_squared_fraction": "80286886487025/102228741737329",
+        "workload_ms": [
+          38142236,
+          2301056
+        ],
+        "boxes_by_group": [
+          74,
+          6
+        ],
+        "relay_sorties_executed": 4,
+        "relay_copy_counts": {
+          "R001": 1,
+          "R002": 2,
+          "R003": 1
+        },
+        "total_energy_kwh": 67.16062500108146,
+        "joint_finish_s": 6612.284,
+        "ranking_first_four": [
+          2,
+          0,
+          12,
+          18
+        ],
+        "partition_id": "clone-2-0016-minimum",
+        "gap_total": 2,
+        "gap_aircraft": 2,
+        "gap_energy": 0,
+        "total_aircraft": 12,
+        "total_energy_resources": 18,
+        "group_resource_utilization": [
+          {
+            "by_resource": {
+              "U_A": 0.6487656340853851,
+              "U_B": 0.9196094534033719,
+              "U_C": 0.8141724000633164,
+              "B_A": 0.5735789149836935,
+              "B_B": 0.7380534659408051,
+              "B_C": 0.779254598419091,
+              "R": 0.7016186656250297,
+              "RE": 0.4940959811239142
+            },
+            "mean": 0.7086436392055758,
+            "minimum": 0.4940959811239142
+          },
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": null,
+              "U_C": 1.0,
+              "B_A": null,
+              "B_B": null,
+              "B_C": 1.0,
+              "R": 1.0,
+              "RE": 1.0
+            },
+            "mean": 1.0,
+            "minimum": 1.0
+          }
+        ],
+        "mean_resource_utilization": 0.854321819602788,
+        "minimum_resource_utilization": 0.4940959811239142
+      },
+      "balance": {
+        "K": 2,
+        "policy": "clone",
+        "identity": "minimum",
+        "groups": [
+          [
+            "S001",
+            "S002",
+            "S008",
+            "S009",
+            "S010",
+            "S012",
+            "S013",
+            "S014"
+          ],
+          [
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S011",
+            "S015"
+          ]
+        ],
+        "total": {
+          "U_A": 5,
+          "U_B": 3,
+          "U_C": 4,
+          "B_A": 6,
+          "B_B": 4,
+          "B_C": 6,
+          "R": 4,
+          "RE": 5
+        },
+        "gap": {
+          "U_A": 1,
+          "U_B": 1,
+          "U_C": 2,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 2,
+          "R": 2,
+          "RE": 0
+        },
+        "redundancy_vs_global_minimum": {
+          "U_A": 1,
+          "U_B": 1,
+          "U_C": 2,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 2,
+          "R": 2,
+          "RE": 2
+        },
+        "unused_inventory": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 0,
+          "RE": 1
+        },
+        "workload_cv": 0.01615105911754167,
+        "workload_cv_squared_fraction": "106668213201/408914966949316",
+        "workload_ms": [
+          20548247,
+          19895045
+        ],
+        "boxes_by_group": [
+          43,
+          37
+        ],
+        "relay_sorties_executed": 5,
+        "relay_copy_counts": {
+          "R001": 1,
+          "R002": 2,
+          "R003": 2
+        },
+        "total_energy_kwh": 68.36776585048835,
+        "joint_finish_s": 6612.284,
+        "ranking_first_four": [
+          6,
+          2,
+          16,
+          21
+        ],
+        "partition_id": "clone-2-0048-minimum",
+        "gap_total": 8,
+        "gap_aircraft": 6,
+        "gap_energy": 2,
+        "total_aircraft": 16,
+        "total_energy_resources": 21,
+        "group_resource_utilization": [
+          {
+            "by_resource": {
+              "U_A": 0.6766802356362991,
+              "U_B": 0.8003993451989948,
+              "U_C": 0.7306659367544515,
+              "B_A": 0.869940589978175,
+              "B_B": 0.7756706370477509,
+              "B_C": 0.5999149905953846,
+              "R": 0.7016186656250297,
+              "RE": 0.4940959811239142
+            },
+            "mean": 0.7061232977449999,
+            "minimum": 0.4940959811239142
+          },
+          {
+            "by_resource": {
+              "U_A": 0.5464540984013909,
+              "U_B": 0.570103005022559,
+              "U_C": 0.7816536878360485,
+              "B_A": 0.5291080310194632,
+              "B_B": 0.8548167401243717,
+              "B_C": 0.668386274634755,
+              "R": 0.6997529983957628,
+              "RE": 0.7175596231432353
+            },
+            "mean": 0.6709793073221983,
+            "minimum": 0.5291080310194632
+          }
+        ],
+        "mean_resource_utilization": 0.6885513025335992,
+        "minimum_resource_utilization": 0.4940959811239142
+      },
+      "utilization": {
+        "K": 2,
+        "policy": "clone",
+        "identity": "minimum",
+        "groups": [
+          [
+            "S001",
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S010",
+            "S011",
+            "S013",
+            "S014",
+            "S015"
+          ],
+          [
+            "S012"
+          ]
+        ],
+        "total": {
+          "U_A": 4,
+          "U_B": 3,
+          "U_C": 2,
+          "B_A": 6,
+          "B_B": 4,
+          "B_C": 4,
+          "R": 3,
+          "RE": 4
+        },
+        "gap": {
+          "U_A": 0,
+          "U_B": 1,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 1,
+          "RE": 0
+        },
+        "redundancy_vs_global_minimum": {
+          "U_A": 0,
+          "U_B": 1,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 1,
+          "RE": 1
+        },
+        "unused_inventory": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 0,
+          "RE": 2
+        },
+        "workload_cv": 0.904912389426657,
+        "workload_cv_squared_fraction": "83711685049281/102228741737329",
+        "workload_ms": [
+          38520464,
+          1922828
+        ],
+        "boxes_by_group": [
+          77,
+          3
+        ],
+        "relay_sorties_executed": 4,
+        "relay_copy_counts": {
+          "R001": 1,
+          "R002": 2,
+          "R003": 1
+        },
+        "total_energy_kwh": 67.16062500108146,
+        "joint_finish_s": 6612.284,
+        "ranking_first_four": [
+          2,
+          0,
+          12,
+          18
+        ],
+        "partition_id": "clone-2-0002-minimum",
+        "gap_total": 2,
+        "gap_aircraft": 2,
+        "gap_energy": 0,
+        "total_aircraft": 12,
+        "total_energy_resources": 18,
+        "group_resource_utilization": [
+          {
+            "by_resource": {
+              "U_A": 0.6487656340853851,
+              "U_B": 0.7730441075384317,
+              "U_C": 0.9950246026889341,
+              "B_A": 0.5735789149836935,
+              "B_B": 0.8248945134361355,
+              "B_C": 0.7188959962842733,
+              "R": 0.7016186656250297,
+              "RE": 0.4940959811239142
+            },
+            "mean": 0.7162398019707247,
+            "minimum": 0.4940959811239142
+          },
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": 1.0,
+              "U_C": null,
+              "B_A": null,
+              "B_B": 1.0,
+              "B_C": null,
+              "R": 1.0,
+              "RE": 1.0
+            },
+            "mean": 1.0,
+            "minimum": 1.0
+          }
+        ],
+        "mean_resource_utilization": 0.8581199009853624,
+        "minimum_resource_utilization": 0.4940959811239142
+      }
+    },
+    "clone_3": {
+      "current_shortage_first": "clone-3-0015-minimum",
+      "balance_first": "clone-3-0301-minimum",
+      "utilization_diagnostic": "clone-3-0002-minimum",
+      "current_equals_solver_recommendation": true,
+      "current": {
+        "K": 3,
+        "policy": "clone",
+        "identity": "minimum",
+        "groups": [
+          [
+            "S001",
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S009",
+            "S011",
+            "S013",
+            "S015"
+          ],
+          [
+            "S008",
+            "S010",
+            "S014"
+          ],
+          [
+            "S012"
+          ]
+        ],
+        "total": {
+          "U_A": 4,
+          "U_B": 4,
+          "U_C": 2,
+          "B_A": 6,
+          "B_B": 4,
+          "B_C": 4,
+          "R": 4,
+          "RE": 5
+        },
+        "gap": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 2,
+          "RE": 0
+        },
+        "redundancy_vs_global_minimum": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 2,
+          "RE": 2
+        },
+        "unused_inventory": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 0,
+          "RE": 1
+        },
+        "workload_cv": 0.9451201192750016,
+        "workload_cv_squared_fraction": "91316032089026/102228741737329",
+        "workload_ms": [
+          31231624,
+          7288840,
+          1922828
+        ],
+        "boxes_by_group": [
+          66,
+          11,
+          3
+        ],
+        "relay_sorties_executed": 5,
+        "relay_copy_counts": {
+          "R002": 2,
+          "R003": 2,
+          "R001": 1
+        },
+        "total_energy_kwh": 68.36776585048835,
+        "joint_finish_s": 6612.284,
+        "ranking_first_four": [
+          4,
+          0,
+          14,
+          19
+        ],
+        "partition_id": "clone-3-0015-minimum",
+        "gap_total": 4,
+        "gap_aircraft": 4,
+        "gap_energy": 0,
+        "total_aircraft": 14,
+        "total_energy_resources": 19,
+        "group_resource_utilization": [
+          {
+            "by_resource": {
+              "U_A": 0.6487656340853851,
+              "U_B": 0.570103005022559,
+              "U_C": 0.9950246026889341,
+              "B_A": 0.5735789149836935,
+              "B_B": 0.8548167401243717,
+              "B_C": 0.7188959962842733,
+              "R": 0.6997529983957628,
+              "RE": 0.7175596231432353
+            },
+            "mean": 0.7223121893410268,
+            "minimum": 0.570103005022559
+          },
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": 0.633325339478175,
+              "U_C": null,
+              "B_A": null,
+              "B_B": 0.9182323017276923,
+              "B_C": null,
+              "R": 0.9704124905919229,
+              "RE": 0.5117868670401441
+            },
+            "mean": 0.7584392497094836,
+            "minimum": 0.5117868670401441
+          },
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": 1.0,
+              "U_C": null,
+              "B_A": null,
+              "B_B": 1.0,
+              "B_C": null,
+              "R": 1.0,
+              "RE": 1.0
+            },
+            "mean": 1.0,
+            "minimum": 1.0
+          }
+        ],
+        "mean_resource_utilization": 0.8269171463501701,
+        "minimum_resource_utilization": 0.5117868670401441
+      },
+      "balance": {
+        "K": 3,
+        "policy": "clone",
+        "identity": "minimum",
+        "groups": [
+          [
+            "S001",
+            "S002",
+            "S009",
+            "S013"
+          ],
+          [
+            "S003",
+            "S005",
+            "S006",
+            "S007",
+            "S011",
+            "S015"
+          ],
+          [
+            "S004",
+            "S008",
+            "S010",
+            "S012",
+            "S014"
+          ]
+        ],
+        "total": {
+          "U_A": 5,
+          "U_B": 3,
+          "U_C": 5,
+          "B_A": 6,
+          "B_B": 4,
+          "B_C": 6,
+          "R": 5,
+          "RE": 6
+        },
+        "gap": {
+          "U_A": 1,
+          "U_B": 1,
+          "U_C": 3,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 2,
+          "R": 3,
+          "RE": 0
+        },
+        "redundancy_vs_global_minimum": {
+          "U_A": 1,
+          "U_B": 1,
+          "U_C": 3,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 2,
+          "R": 3,
+          "RE": 3
+        },
+        "unused_inventory": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 0,
+          "RE": 0
+        },
+        "workload_cv": 0.21579419181676499,
+        "workload_cv_squared_fraction": "38083995484675/817829933898632",
+        "workload_ms": [
+          11336579,
+          17593989,
+          11512724
+        ],
+        "boxes_by_group": [
+          29,
+          31,
+          20
+        ],
+        "relay_sorties_executed": 6,
+        "relay_copy_counts": {
+          "R002": 2,
+          "R003": 3,
+          "R001": 1
+        },
+        "total_energy_kwh": 69.57490669989525,
+        "joint_finish_s": 6612.284,
+        "ranking_first_four": [
+          8,
+          2,
+          18,
+          22
+        ],
+        "partition_id": "clone-3-0301-minimum",
+        "gap_total": 10,
+        "gap_aircraft": 8,
+        "gap_energy": 2,
+        "total_aircraft": 18,
+        "total_energy_resources": 22,
+        "group_resource_utilization": [
+          {
+            "by_resource": {
+              "U_A": 0.6766802356362991,
+              "U_B": null,
+              "U_C": 0.7306659367544515,
+              "B_A": 0.869940589978175,
+              "B_B": null,
+              "B_C": 0.5999149905953846,
+              "R": 0.6997529983957628,
+              "RE": 0.7175596231432353
+            },
+            "mean": 0.7157523957505513,
+            "minimum": 0.5999149905953846
+          },
+          {
+            "by_resource": {
+              "U_A": 0.5464540984013909,
+              "U_B": 0.570103005022559,
+              "U_C": 0.9278842120190877,
+              "B_A": 0.5291080310194632,
+              "B_B": 0.8548167401243717,
+              "B_C": 0.9228106585282642,
+              "R": 1.0,
+              "RE": 1.0
+            },
+            "mean": 0.793897093139392,
+            "minimum": 0.5291080310194632
+          },
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": 0.8003993451989948,
+              "U_C": 1.0,
+              "B_A": null,
+              "B_B": 0.7756706370477509,
+              "B_C": 1.0,
+              "R": 0.7016186656250297,
+              "RE": 0.4940959811239142
+            },
+            "mean": 0.7952974381659482,
+            "minimum": 0.4940959811239142
+          }
+        ],
+        "mean_resource_utilization": 0.7683156423519639,
+        "minimum_resource_utilization": 0.4940959811239142
+      },
+      "utilization": {
+        "K": 3,
+        "policy": "clone",
+        "identity": "minimum",
+        "groups": [
+          [
+            "S001",
+            "S002",
+            "S003",
+            "S004",
+            "S005",
+            "S006",
+            "S007",
+            "S008",
+            "S009",
+            "S011",
+            "S012",
+            "S013",
+            "S015"
+          ],
+          [
+            "S010"
+          ],
+          [
+            "S014"
+          ]
+        ],
+        "total": {
+          "U_A": 4,
+          "U_B": 4,
+          "U_C": 2,
+          "B_A": 6,
+          "B_B": 6,
+          "B_C": 4,
+          "R": 4,
+          "RE": 4
+        },
+        "gap": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 2,
+          "B_C": 0,
+          "R": 2,
+          "RE": 0
+        },
+        "redundancy_vs_global_minimum": {
+          "U_A": 0,
+          "U_B": 2,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 2,
+          "B_C": 0,
+          "R": 2,
+          "RE": 1
+        },
+        "unused_inventory": {
+          "U_A": 0,
+          "U_B": 0,
+          "U_C": 0,
+          "B_A": 0,
+          "B_B": 0,
+          "B_C": 0,
+          "R": 0,
+          "RE": 2
+        },
+        "workload_cv": 1.2345950335433824,
+        "workload_cv_squared_fraction": "1246556746637473/817829933898632",
+        "workload_ms": [
+          37018138,
+          1555405,
+          1869749
+        ],
+        "boxes_by_group": [
+          74,
+          3,
+          3
+        ],
+        "relay_sorties_executed": 4,
+        "relay_copy_counts": {
+          "R002": 1,
+          "R003": 1,
+          "R001": 2
+        },
+        "total_energy_kwh": 66.87208491682246,
+        "joint_finish_s": 6612.284,
+        "ranking_first_four": [
+          4,
+          2,
+          14,
+          20
+        ],
+        "partition_id": "clone-3-0002-minimum",
+        "gap_total": 6,
+        "gap_aircraft": 4,
+        "gap_energy": 2,
+        "total_aircraft": 14,
+        "total_energy_resources": 20,
+        "group_resource_utilization": [
+          {
+            "by_resource": {
+              "U_A": 0.6487656340853851,
+              "U_B": 0.8632147015060483,
+              "U_C": 0.9950246026889341,
+              "B_A": 0.5735789149836935,
+              "B_B": 0.6640516179286027,
+              "B_C": 0.7188959962842733,
+              "R": 0.6997529983957628,
+              "RE": 0.7175596231432353
+            },
+            "mean": 0.7351055111269919,
+            "minimum": 0.5735789149836935
+          },
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": 1.0,
+              "U_C": null,
+              "B_A": null,
+              "B_B": 1.0,
+              "B_C": null,
+              "R": 1.0,
+              "RE": 1.0
+            },
+            "mean": 1.0,
+            "minimum": 1.0
+          },
+          {
+            "by_resource": {
+              "U_A": null,
+              "U_B": 1.0,
+              "U_C": null,
+              "B_A": null,
+              "B_B": 1.0,
+              "B_C": null,
+              "R": 1.0,
+              "RE": 1.0
+            },
+            "mean": 1.0,
+            "minimum": 1.0
+          }
+        ],
+        "mean_resource_utilization": 0.9117018370423305,
+        "minimum_resource_utilization": 0.5735789149836935
+      }
+    }
+  },
+  "shortage_balance_dominance": {
+    "strict_2": [],
+    "strict_3": [],
+    "clone_2": [],
+    "clone_3": []
+  },
+  "conclusion": {
+    "strict_shortage_first_has_no_dominator": true,
+    "strict_partition_structure_can_improve_balance_only_by_accepting_more_shortage": true,
+    "clone_is_sensitivity_only": true,
+    "q4_refresh_improves_declared_primary_objective": false
+  },
+  "external_reference_findings": [
+    {
+      "source": "D:\\Desktop\\Agent\\第一版\\求解\\问题四\\问题四.py",
+      "usable_idea": "运输架次形成原子块后枚举K=2/3分区，并同时记录缺口、资源总量和工作量CV。",
+      "boundary": "其结果来自不同第三问任务/中继结构，不能直接覆盖当前21运输＋3中继冻结输入。"
+    },
+    {
+      "source": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q4.py",
+      "usable_idea": "把区间利用率和负载均衡作为资源配置的补充诊断。",
+      "boundary": "代码重新运行通信分析和中继排程；且rgrp筛选会把所有中继纳入组，不能作为当前冻结通信关系的求解器。"
+    },
+    {
+      "source": "E:\\sxjm\\method.txt",
+      "usable_idea": "超图/不可拆原子块、枚举或MILP/CP-SAT、区间最大并发、缺口和Pareto比较。",
+      "boundary": "公开资料只提供方法级框架，没有可直接核验的Q4数值结果。"
+    }
+  ],
+  "implementation_checks": [
+    "所有资源区间使用半开规则[start,end)，端点先释放后占用。",
+    "中继任务按照实际通信关联绑定，不重新规划、不从候选覆盖集合推断实际保障。",
+    "当前主排序仍为飞机缺口、能源缺口、飞机配置、能源配置、运输工作量CV。"
+  ]
+}

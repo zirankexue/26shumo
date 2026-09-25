@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "check_count": 4316,
+  "error_count": 0,
+  "errors": [],
+  "formulas": 218,
+  "resource_interval_rows": 96,
+  "task_rows": 24,
+  "config_rows": 5,
+  "output_sha256": "56924f7207125c093c42b639937c4616f12917b67dc4afb70ed1b4cf0686e8d5",
+  "source_solution_sha256": "ab34a1f794b20980cd20393a94ec5f836e8a92c5aea669109472be8c0da96f13",
+  "engine": "artifact-tool recalculation and openpyxl saved-cache readback; native Excel/WPS not launched"
+}

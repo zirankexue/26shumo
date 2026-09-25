@@ -1,0 +1,196 @@
+{
+  "old_q3_sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b",
+  "new_q3_sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b",
+  "old_q4_sha256": "89d8e1dddc5f5ccb6a11958448288920152f6f6f5f69140e38fb6d8aac09298f",
+  "new_q4_sha256": "ab34a1f794b20980cd20393a94ec5f836e8a92c5aea669109472be8c0da96f13",
+  "q3_metrics": {
+    "boxes": {
+      "old": 80,
+      "new": 80,
+      "delta": 0
+    },
+    "transport_sorties": {
+      "old": 21,
+      "new": 21,
+      "delta": 0
+    },
+    "relay_sorties": {
+      "old": 3,
+      "new": 3,
+      "delta": 0
+    },
+    "transport_energy_kwh": {
+      "old": 64.09596908039461,
+      "new": 64.09596908039461,
+      "delta": 0.0
+    },
+    "relay_energy_kwh": {
+      "old": 2.349304202173859,
+      "new": 2.349304202173859,
+      "delta": 0.0
+    },
+    "joint_finish_s": {
+      "old": 6612.284,
+      "new": 6612.284,
+      "delta": 0.0
+    },
+    "transport_finish_s": {
+      "old": 6559.627,
+      "new": 6559.627,
+      "delta": 0.0
+    },
+    "last_delivery_s": {
+      "old": 6234.755,
+      "new": 6234.755,
+      "delta": 0.0
+    },
+    "late_boxes": {
+      "old": 0,
+      "new": 0,
+      "delta": 0
+    },
+    "weighted_delay_s": {
+      "old": 0.0,
+      "new": 0.0,
+      "delta": 0.0
+    },
+    "weighted_mean_delivery_s": {
+      "old": 3092.1109979079497,
+      "new": 3092.1109979079497,
+      "delta": 0.0
+    },
+    "multi_stop_sorties": {
+      "old": 6,
+      "new": 6,
+      "delta": 0
+    },
+    "total_energy_kwh": {
+      "old": 66.44527328256846,
+      "new": 66.44527328256846,
+      "delta": 0.0
+    },
+    "score": {
+      "old": 0.0037081055399544767,
+      "new": 0.0037081055399544767,
+      "delta": 0.0
+    }
+  },
+  "task_changes": [],
+  "resource_interval_changes": [],
+  "transport_blocks_unchanged": true,
+  "strict_blocks_unchanged": true,
+  "relay_transport_edges_unchanged": true,
+  "all_recommendation_decisions_unchanged": true,
+  "recommendation_checks": {
+    "strict_2_minimum": {
+      "groups": true,
+      "total": true,
+      "gap": true,
+      "workload_cv": true,
+      "workload_ms": true,
+      "boxes_by_group": true,
+      "relay_sorties_executed": true,
+      "total_energy_kwh": true,
+      "pareto_partition_ids": true,
+      "same_optimum_count": true,
+      "balance_first_decision": true
+    },
+    "strict_2_preserve_ids": {
+      "groups": true,
+      "total": true,
+      "gap": true,
+      "workload_cv": true,
+      "workload_ms": true,
+      "boxes_by_group": true,
+      "relay_sorties_executed": true,
+      "total_energy_kwh": true,
+      "pareto_partition_ids": true,
+      "same_optimum_count": true,
+      "balance_first_decision": true
+    },
+    "strict_3_minimum": {
+      "groups": true,
+      "total": true,
+      "gap": true,
+      "workload_cv": true,
+      "workload_ms": true,
+      "boxes_by_group": true,
+      "relay_sorties_executed": true,
+      "total_energy_kwh": true,
+      "pareto_partition_ids": true,
+      "same_optimum_count": true,
+      "balance_first_decision": true
+    },
+    "strict_3_preserve_ids": {
+      "groups": true,
+      "total": true,
+      "gap": true,
+      "workload_cv": true,
+      "workload_ms": true,
+      "boxes_by_group": true,
+      "relay_sorties_executed": true,
+      "total_energy_kwh": true,
+      "pareto_partition_ids": true,
+      "same_optimum_count": true,
+      "balance_first_decision": true
+    },
+    "clone_2_minimum": {
+      "groups": true,
+      "total": true,
+      "gap": true,
+      "workload_cv": true,
+      "workload_ms": true,
+      "boxes_by_group": true,
+      "relay_sorties_executed": true,
+      "total_energy_kwh": true,
+      "pareto_partition_ids": true,
+      "same_optimum_count": true,
+      "balance_first_decision": true
+    },
+    "clone_2_preserve_ids": {
+      "groups": true,
+      "total": true,
+      "gap": true,
+      "workload_cv": true,
+      "workload_ms": true,
+      "boxes_by_group": true,
+      "relay_sorties_executed": true,
+      "total_energy_kwh": true,
+      "pareto_partition_ids": true,
+      "same_optimum_count": true,
+      "balance_first_decision": true
+    },
+    "clone_3_minimum": {
+      "groups": true,
+      "total": true,
+      "gap": true,
+      "workload_cv": true,
+      "workload_ms": true,
+      "boxes_by_group": true,
+      "relay_sorties_executed": true,
+      "total_energy_kwh": true,
+      "pareto_partition_ids": true,
+      "same_optimum_count": true,
+      "balance_first_decision": true
+    },
+    "clone_3_preserve_ids": {
+      "groups": true,
+      "total": true,
+      "gap": true,
+      "workload_cv": true,
+      "workload_ms": true,
+      "boxes_by_group": true,
+      "relay_sorties_executed": true,
+      "total_energy_kwh": true,
+      "pareto_partition_ids": true,
+      "same_optimum_count": true,
+      "balance_first_decision": true
+    }
+  },
+  "all_partition_rows": 2194,
+  "changed_partition_rows": 0,
+  "partition_changed_field_counts": {},
+  "partition_changes": [],
+  "q3_promoted_to_formal": false,
+  "interpretation": "Separate candidate refresh; original formal Q3 and original Q4 are preserved."
+}

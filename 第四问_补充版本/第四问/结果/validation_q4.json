@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "check_count": 16944,
+  "error_count": 0,
+  "errors": [],
+  "solution_sha256": "ab34a1f794b20980cd20393a94ec5f836e8a92c5aea669109472be8c0da96f13",
+  "validator_sha256": "add29b0b77b8680ea37e180061004aabc8fd1f491599b44ddd116f2355725982",
+  "all_partition_rows": 2194,
+  "q3_sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b",
+  "scope": "Independent partition/resource replay; continuous physical feasibility inherited from current hash-bound Q3 validation."
+}
