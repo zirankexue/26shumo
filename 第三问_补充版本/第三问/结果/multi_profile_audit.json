@@ -1,0 +1,1059 @@
+{
+  "passed": true,
+  "route_count": 21,
+  "pair_stations": [
+    40,
+    2,
+    5
+  ],
+  "station_ids": [
+    "H0720",
+    "H0020",
+    "H0003"
+  ],
+  "ordered_pairs": [
+    [
+      40,
+      2
+    ],
+    [
+      40,
+      5
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      40
+    ],
+    [
+      5,
+      40
+    ],
+    [
+      5,
+      2
+    ]
+  ],
+  "total_single_options": 235,
+  "total_pair_options": 70,
+  "total_actual_two_station_options": 9,
+  "routes_with_two_station_options": 7,
+  "segment_cache_entries": 624,
+  "counters": {
+    "pair_profile_attempts": 126,
+    "pair_profile_proved": 70,
+    "pair_profile_rejected": 26,
+    "direct_pair_duplicates_skipped": 30,
+    "pair_segment_cache_hits": 506,
+    "pair_segment_evaluations": 624
+  },
+  "wall_seconds": 12.004746200000227,
+  "routes": [
+    {
+      "sortie": "T001",
+      "candidate": "4bdb12113ea322f2",
+      "visits": [
+        "S006"
+      ],
+      "single_options": 1,
+      "pair_options": 0,
+      "actual_two_station_options": 0,
+      "pair_requirements": []
+    },
+    {
+      "sortie": "T002",
+      "candidate": "58637b13c93945c6",
+      "visits": [
+        "S014"
+      ],
+      "single_options": 5,
+      "pair_options": 4,
+      "actual_two_station_options": 1,
+      "pair_requirements": [
+        {
+          "key": "pair:40,2",
+          "requirements": [
+            {
+              "station": 40,
+              "first": 725.4003392298291,
+              "last": 1503.3980058964958
+            }
+          ]
+        },
+        {
+          "key": "pair:40,5",
+          "requirements": [
+            {
+              "station": 40,
+              "first": 725.4003392298291,
+              "last": 1503.3980058964958
+            }
+          ]
+        },
+        {
+          "key": "pair:2,40",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 725.4003392298291,
+              "last": 1503.3980058964958
+            },
+            {
+              "station": 40,
+              "first": 906.0515492278873,
+              "last": 1322.7467958984375
+            }
+          ]
+        },
+        {
+          "key": "pair:5,40",
+          "requirements": [
+            {
+              "station": 40,
+              "first": 725.4003392298291,
+              "last": 1503.3980058964958
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T003",
+      "candidate": "6cb0366dc18b20a6",
+      "visits": [
+        "S010"
+      ],
+      "single_options": 9,
+      "pair_options": 4,
+      "actual_two_station_options": 0,
+      "pair_requirements": [
+        {
+          "key": "pair:40,2",
+          "requirements": [
+            {
+              "station": 40,
+              "first": 731.8792371945997,
+              "last": 1192.99575365254
+            }
+          ]
+        },
+        {
+          "key": "pair:40,5",
+          "requirements": [
+            {
+              "station": 40,
+              "first": 731.8792371945997,
+              "last": 1192.99575365254
+            }
+          ]
+        },
+        {
+          "key": "pair:2,40",
+          "requirements": [
+            {
+              "station": 40,
+              "first": 731.8792371945997,
+              "last": 1192.99575365254
+            }
+          ]
+        },
+        {
+          "key": "pair:5,40",
+          "requirements": [
+            {
+              "station": 40,
+              "first": 731.8792371945997,
+              "last": 1192.99575365254
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T004",
+      "candidate": "8c31f9e8595743b2",
+      "visits": [
+        "S001"
+      ],
+      "single_options": 1,
+      "pair_options": 0,
+      "actual_two_station_options": 0,
+      "pair_requirements": []
+    },
+    {
+      "sortie": "T005",
+      "candidate": "d7f51c575af6ec49",
+      "visits": [
+        "S001"
+      ],
+      "single_options": 1,
+      "pair_options": 0,
+      "actual_two_station_options": 0,
+      "pair_requirements": []
+    },
+    {
+      "sortie": "T006",
+      "candidate": "606ebd0f2dc30e60",
+      "visits": [
+        "S009",
+        "S002",
+        "S013"
+      ],
+      "single_options": 14,
+      "pair_options": 4,
+      "actual_two_station_options": 2,
+      "pair_requirements": [
+        {
+          "key": "pair:40,2",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 682.8972810602972,
+              "last": 2364.921310183023
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 920.618258002756,
+              "last": 2364.921310183023
+            },
+            {
+              "station": 5,
+              "first": 445.1763041178385,
+              "last": 920.618258002756
+            }
+          ]
+        },
+        {
+          "key": "pair:2,40",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 682.8972810602972,
+              "last": 2364.921310183023
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 445.1763041178385,
+              "last": 1158.6722172037762
+            },
+            {
+              "station": 2,
+              "first": 1158.6722172037762,
+              "last": 2364.921310183023
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T007",
+      "candidate": "f4d154bb28472d1d",
+      "visits": [
+        "S013"
+      ],
+      "single_options": 28,
+      "pair_options": 4,
+      "actual_two_station_options": 0,
+      "pair_requirements": [
+        {
+          "key": "pair:40,2",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 652.5579768496888,
+              "last": 1301.5063101830222
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 652.5579768496888,
+              "last": 1301.5063101830222
+            }
+          ]
+        },
+        {
+          "key": "pair:2,40",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 652.5579768496888,
+              "last": 1301.5063101830222
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 652.5579768496888,
+              "last": 1301.5063101830222
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T008",
+      "candidate": "038021aafcf260f8",
+      "visits": [
+        "S002"
+      ],
+      "single_options": 23,
+      "pair_options": 4,
+      "actual_two_station_options": 0,
+      "pair_requirements": [
+        {
+          "key": "pair:40,2",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 829.5528287986192,
+              "last": 1836.164828798619
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 829.5528287986192,
+              "last": 1836.164828798619
+            }
+          ]
+        },
+        {
+          "key": "pair:2,40",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 829.5528287986192,
+              "last": 1836.164828798619
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 829.5528287986192,
+              "last": 1836.164828798619
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T009",
+      "candidate": "ec3a0287d936b44f",
+      "visits": [
+        "S006"
+      ],
+      "single_options": 1,
+      "pair_options": 0,
+      "actual_two_station_options": 0,
+      "pair_requirements": []
+    },
+    {
+      "sortie": "T010",
+      "candidate": "58b350f9cc56209c",
+      "visits": [
+        "S004"
+      ],
+      "single_options": 8,
+      "pair_options": 4,
+      "actual_two_station_options": 2,
+      "pair_requirements": [
+        {
+          "key": "pair:40,2",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 845.3717213801232,
+              "last": 1908.629721380123
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 1102.52777625634,
+              "last": 1651.4736665039063
+            },
+            {
+              "station": 5,
+              "first": 588.2156665039063,
+              "last": 2165.78577625634
+            }
+          ]
+        },
+        {
+          "key": "pair:2,40",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 845.3717213801232,
+              "last": 1908.629721380123
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 588.2156665039063,
+              "last": 2165.78577625634
+            },
+            {
+              "station": 2,
+              "first": 1102.52777625634,
+              "last": 1651.4736665039063
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T011",
+      "candidate": "66fb386e789f5a3e",
+      "visits": [
+        "S006",
+        "S007"
+      ],
+      "single_options": 10,
+      "pair_options": 4,
+      "actual_two_station_options": 0,
+      "pair_requirements": [
+        {
+          "key": "pair:40,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 1131.8330217239582,
+              "last": 1975.4391729263598
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 1131.8330217239582,
+              "last": 1975.4391729263598
+            }
+          ]
+        },
+        {
+          "key": "pair:5,40",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 1131.8330217239582,
+              "last": 1975.4391729263598
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 1131.8330217239582,
+              "last": 1975.4391729263598
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T012",
+      "candidate": "0778dae839811744",
+      "visits": [
+        "S012"
+      ],
+      "single_options": 8,
+      "pair_options": 4,
+      "actual_two_station_options": 0,
+      "pair_requirements": [
+        {
+          "key": "pair:40,2",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 731.5716703748618,
+              "last": 1562.215670374862
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 731.5716703748618,
+              "last": 1562.215670374862
+            }
+          ]
+        },
+        {
+          "key": "pair:2,40",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 731.5716703748618,
+              "last": 1562.215670374862
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 731.5716703748618,
+              "last": 1562.215670374862
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T013",
+      "candidate": "920f9b55caa7c7ae",
+      "visits": [
+        "S007"
+      ],
+      "single_options": 13,
+      "pair_options": 4,
+      "actual_two_station_options": 0,
+      "pair_requirements": [
+        {
+          "key": "pair:40,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 488.0910583496094,
+              "last": 1573.7581729263597
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 488.0910583496094,
+              "last": 1573.7581729263597
+            }
+          ]
+        },
+        {
+          "key": "pair:5,40",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 488.0910583496094,
+              "last": 1573.7581729263597
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 488.0910583496094,
+              "last": 1573.7581729263597
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T014",
+      "candidate": "eb973dd900916dc9",
+      "visits": [
+        "S003",
+        "S015"
+      ],
+      "single_options": 7,
+      "pair_options": 4,
+      "actual_two_station_options": 0,
+      "pair_requirements": [
+        {
+          "key": "pair:40,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 534.7013793945313,
+              "last": 2425.828826142066
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 534.7013793945313,
+              "last": 2425.828826142066
+            }
+          ]
+        },
+        {
+          "key": "pair:5,40",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 534.7013793945313,
+              "last": 2425.828826142066
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 534.7013793945313,
+              "last": 2425.828826142066
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T015",
+      "candidate": "ce31b6da4f123b55",
+      "visits": [
+        "S008"
+      ],
+      "single_options": 12,
+      "pair_options": 6,
+      "actual_two_station_options": 1,
+      "pair_requirements": [
+        {
+          "key": "pair:40,2",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 741.0401257180795,
+              "last": 1594.4547923847458
+            }
+          ]
+        },
+        {
+          "key": "pair:40,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 471.7364440917969,
+              "last": 1863.7584740110283
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 1010.343807344362,
+              "last": 1325.1511107584633
+            },
+            {
+              "station": 5,
+              "first": 471.7364440917969,
+              "last": 1863.7584740110283
+            }
+          ]
+        },
+        {
+          "key": "pair:2,40",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 741.0401257180795,
+              "last": 1594.4547923847458
+            }
+          ]
+        },
+        {
+          "key": "pair:5,40",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 471.7364440917969,
+              "last": 1863.7584740110283
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 471.7364440917969,
+              "last": 1863.7584740110283
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T016",
+      "candidate": "e9db49812986d534",
+      "visits": [
+        "S007",
+        "S003"
+      ],
+      "single_options": 3,
+      "pair_options": 4,
+      "actual_two_station_options": 0,
+      "pair_requirements": [
+        {
+          "key": "pair:40,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 663.7092700195312,
+              "last": 2476.6297864578332
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 663.7092700195312,
+              "last": 2476.6297864578332
+            }
+          ]
+        },
+        {
+          "key": "pair:5,40",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 663.7092700195312,
+              "last": 2476.6297864578332
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 663.7092700195312,
+              "last": 2476.6297864578332
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T017",
+      "candidate": "49d2d26f517a7b68",
+      "visits": [
+        "S008"
+      ],
+      "single_options": 12,
+      "pair_options": 6,
+      "actual_two_station_options": 1,
+      "pair_requirements": [
+        {
+          "key": "pair:40,2",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 711.0401257180795,
+              "last": 1534.4547923847458
+            }
+          ]
+        },
+        {
+          "key": "pair:40,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 441.7364440917969,
+              "last": 1803.7584740110283
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 980.343807344362,
+              "last": 1265.1511107584633
+            },
+            {
+              "station": 5,
+              "first": 441.7364440917969,
+              "last": 1803.7584740110283
+            }
+          ]
+        },
+        {
+          "key": "pair:2,40",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 711.0401257180795,
+              "last": 1534.4547923847458
+            }
+          ]
+        },
+        {
+          "key": "pair:5,40",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 441.7364440917969,
+              "last": 1803.7584740110283
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 441.7364440917969,
+              "last": 1803.7584740110283
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T018",
+      "candidate": "31a8131d8650c560",
+      "visits": [
+        "S015"
+      ],
+      "single_options": 16,
+      "pair_options": 4,
+      "actual_two_station_options": 0,
+      "pair_requirements": [
+        {
+          "key": "pair:40,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 508.0330851236979,
+              "last": 1791.013826142066
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 508.0330851236979,
+              "last": 1791.013826142066
+            }
+          ]
+        },
+        {
+          "key": "pair:5,40",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 508.0330851236979,
+              "last": 1791.013826142066
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 508.0330851236979,
+              "last": 1791.013826142066
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T019",
+      "candidate": "47946d417d62a1ae",
+      "visits": [
+        "S005",
+        "S011"
+      ],
+      "single_options": 26,
+      "pair_options": 4,
+      "actual_two_station_options": 1,
+      "pair_requirements": [
+        {
+          "key": "pair:40,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 619.48435546875,
+              "last": 1681.1004746528758
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 1494.2495678710939,
+              "last": 1681.1004746528758
+            },
+            {
+              "station": 5,
+              "first": 619.48435546875,
+              "last": 1494.2495678710939
+            }
+          ]
+        },
+        {
+          "key": "pair:5,40",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 619.48435546875,
+              "last": 1681.1004746528758
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 619.48435546875,
+              "last": 1681.1004746528758
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T020",
+      "candidate": "8749f9503ee0df2a",
+      "visits": [
+        "S009"
+      ],
+      "single_options": 36,
+      "pair_options": 6,
+      "actual_two_station_options": 1,
+      "pair_requirements": [
+        {
+          "key": "pair:40,2",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 652.8972810602972,
+              "last": 1384.7072810602974
+            }
+          ]
+        },
+        {
+          "key": "pair:40,5",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 415.1763041178385,
+              "last": 1622.4282580027561
+            }
+          ]
+        },
+        {
+          "key": "pair:2,5",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 890.618258002756,
+              "last": 1146.9863041178387
+            },
+            {
+              "station": 5,
+              "first": 415.1763041178385,
+              "last": 1622.4282580027561
+            }
+          ]
+        },
+        {
+          "key": "pair:2,40",
+          "requirements": [
+            {
+              "station": 2,
+              "first": 652.8972810602972,
+              "last": 1384.7072810602974
+            }
+          ]
+        },
+        {
+          "key": "pair:5,40",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 415.1763041178385,
+              "last": 1622.4282580027561
+            }
+          ]
+        },
+        {
+          "key": "pair:5,2",
+          "requirements": [
+            {
+              "station": 5,
+              "first": 415.1763041178385,
+              "last": 1622.4282580027561
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sortie": "T021",
+      "candidate": "9dff1580eaed51dd",
+      "visits": [
+        "S011",
+        "S006"
+      ],
+      "single_options": 1,
+      "pair_options": 0,
+      "actual_two_station_options": 0,
+      "pair_requirements": []
+    }
+  ],
+  "guarantee": "Every accepted interval has a whole-segment Geometry certificate and one assigned source; scheduler must honor every per-station requirement.",
+  "optimality_scope": "Finite pair combinations and certificate-induced assignments; not all possible handover schedules.",
+  "source_solution": "E:\\sxjm\\D题\\results\\question3_agent_update\\solution_label_symmetry.json",
+  "source_station_pool": "E:\\sxjm\\D题\\results\\question3_from_senior\\station_pool.json"
+}

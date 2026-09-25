@@ -1,0 +1,679 @@
+{
+  "created_utc": "2026-09-24T13:19:48.682525+00:00",
+  "scope": "Fresh read-only review of first/111 actual Q3 call paths, saved outputs and current frozen 21+3 schedule. No legacy solver imported/executed; no existing solver/source modified.",
+  "source_manifest": {
+    "first_q3": {
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\问题三\\问题三.py",
+      "sha256": "42eb49d1021ce5f9c37a48815e80bb8fc332c0157efb3dff60857025fda4e3dd",
+      "bytes": 19484
+    },
+    "first_physics": {
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\统一模型.py",
+      "sha256": "6bebfb43661eb6d5a26f0d31f89848989947413e632f7899448a79dc670fc14e",
+      "bytes": 14692
+    },
+    "first_cert": {
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\通信认证.py",
+      "sha256": "53d78fdaa115d24b133a31a34a024e2d55631105f7ca24692a983767597a13bc",
+      "bytes": 3221
+    },
+    "first_entry": {
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\一键复现.py",
+      "sha256": "df8914959a866e215af96e42c3c1c2c8eef7d7133c5e53737c261235ff2f44bf",
+      "bytes": 1231
+    },
+    "first_log": {
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\问题三\\运行日志.txt",
+      "sha256": "90f6e0938b5da5c37b659367e3c9319a43b56eb8bcc42bb8fa372eb693e716e9",
+      "bytes": 1994
+    },
+    "first_relays": {
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\问题三\\结果\\中继方案.json",
+      "sha256": "f7ce008bc4881245d8461a2a2f5a7f3703c90180e2ad87181c693c3ef2ee3f9b",
+      "bytes": 2311
+    },
+    "first_communication": {
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\问题三\\结果\\通信保障.csv",
+      "sha256": "ebc45a59de783f569af1a16e3f11712a207bcbfc5c65d814f1126226962a438d",
+      "bytes": 676469
+    },
+    "other_q3": {
+      "path": "D:\\Desktop\\Agent\\111\\求解\\问题三\\问题三.py",
+      "sha256": "9820c63b8d32fe6c6ac81e5bbaaee84396bbd63945da2058dfd637fc3dc3243c",
+      "bytes": 21440
+    },
+    "other_physics": {
+      "path": "D:\\Desktop\\Agent\\111\\求解\\物理模型.py",
+      "sha256": "bd96715f3f802b37a7977b566e4159d6bb8cb9ced2f8d44dbef38dc3e32b789a",
+      "bytes": 8484
+    },
+    "other_relays": {
+      "path": "D:\\Desktop\\Agent\\111\\求解\\问题三\\结果\\中继架次.csv",
+      "sha256": "834ae84c1ea684d65f3ac63571e92cf8d6e6ec737fa0084ed40250db94d94af5",
+      "bytes": 4043
+    },
+    "other_summary": {
+      "path": "D:\\Desktop\\Agent\\111\\求解\\问题三\\结果\\调度汇总.csv",
+      "sha256": "b844a5adcf59565d76f1df3431036099fcda7a65274fce2b2159fbec1f596640",
+      "bytes": 248
+    },
+    "current_solver": {
+      "path": "E:\\sxjm\\D题\\code\\solve_q3_senior.py",
+      "sha256": "969868c54ae91c25058c0f6dead11a45f21452a12031af3d2e22e7f62b313c89",
+      "bytes": 26104,
+      "review_start_sha256": "6bc8526ff29974eecfa5c7f47d9d17a5805d2b64303efad7ddeb85a2aed64ec7"
+    },
+    "current_validator": {
+      "path": "E:\\sxjm\\D题\\code\\validate_q3_senior.py",
+      "sha256": "72dd05f278487801faba8f8301c1cf23782fe3ea73da3d46594bf25b75375258",
+      "bytes": 39695,
+      "review_start_sha256": "f78c43d1d71014841c538e2421b8d0668aa41a340b55072895a5edaae9e312dc"
+    },
+    "current_communication": {
+      "path": "E:\\sxjm\\D题\\code\\solve_q3_independent.py",
+      "sha256": "35cdd15d905c9900e3964f887fbcc3a13f9b112c41998a1a86f75e585aa7044e",
+      "bytes": 18065
+    },
+    "current_solution": {
+      "path": "E:\\sxjm\\D题\\results\\question3_from_senior\\solution_recommended.json",
+      "sha256": "35e203d5426de54543065ac5051a8956e6450b1092e96bb9ed1853fb3b653bf2",
+      "bytes": 276112
+    },
+    "old_review": {
+      "path": "E:\\sxjm\\D题\\results\\question3_independent\\four_agent_review.md",
+      "sha256": "ab2f1803fe4b5a22995ed58cea75dd7b1d096d9e03a8851a34542dd951d72783",
+      "bytes": 13059
+    },
+    "old_evidence": {
+      "path": "E:\\sxjm\\D题\\results\\question3_independent\\four_agent_evidence.json",
+      "sha256": "4118a92dc2ab3b21793338275da7ad759c9f345a88a3a4fb65f1f0d6d4ec174b",
+      "bytes": 19456
+    }
+  },
+  "previous_review_comparison": {
+    "old_evidence_sha256": "4118a92dc2ab3b21793338275da7ad759c9f345a88a3a4fb65f1f0d6d4ec174b",
+    "hash_fields_found": [],
+    "source_hash_comparison_possible": false,
+    "conclusion": "Previous evidence has no source hash fields. Historical byte identity cannot be established; current hashes and line excerpts are frozen here."
+  },
+  "current_metrics": {
+    "boxes": 80,
+    "transport_sorties": 21,
+    "relay_sorties": 3,
+    "transport_energy_kwh": 64.36366272180486,
+    "relay_energy_kwh": 2.477496982170001,
+    "joint_finish_s": 6620.617,
+    "transport_finish_s": 6619.643,
+    "last_delivery_s": 6294.771,
+    "late_boxes": 0,
+    "weighted_delay_s": 0.0,
+    "weighted_mean_delivery_s": 3027.916577405858,
+    "multi_stop_sorties": 6,
+    "total_energy_kwh": 66.84115970397485,
+    "score": 0.0070791607595772875
+  },
+  "current_relay_diagnostics": [
+    {
+      "id": "R001",
+      "station": 40,
+      "candidate": "H0720",
+      "drone": "R01",
+      "component": "RE01",
+      "service_start_s": 725.398,
+      "service_end_s": 1503.399,
+      "return_s": 1846.524,
+      "energy_kwh": 0.426812245365092,
+      "soc_percent": 86.66211733234088,
+      "transport_ids": [
+        "T002",
+        "T003"
+      ],
+      "peak_simultaneously_covered_transports": 2,
+      "guaranteed_interval_union": [
+        [
+          725.4003392298291,
+          1503.3980058964958
+        ]
+      ],
+      "internal_gaps_s": [],
+      "service_envelope_slack_s": 0.003333333333216615,
+      "minimum_gap_for_profitable_split_s_if_other_metrics_unchanged": 3786.5771059221197
+    },
+    {
+      "id": "R002",
+      "station": 2,
+      "candidate": "H0020",
+      "drone": "R02",
+      "component": "RE02",
+      "service_start_s": 1918.781,
+      "service_end_s": 3600.812,
+      "return_s": 4187.326,
+      "energy_kwh": 0.8413067612888306,
+      "soc_percent": 73.70916370972405,
+      "transport_ids": [
+        "T006",
+        "T007",
+        "T008",
+        "T010",
+        "T012"
+      ],
+      "peak_simultaneously_covered_transports": 4,
+      "guaranteed_interval_union": [
+        [
+          1918.7812810602973,
+          3600.8117213801233
+        ]
+      ],
+      "internal_gaps_s": [],
+      "service_envelope_slack_s": 0.0005596801738647628,
+      "minimum_gap_for_profitable_split_s_if_other_metrics_unchanged": 4239.074612581628
+    },
+    {
+      "id": "R003",
+      "station": 5,
+      "candidate": "H0003",
+      "drone": "R01",
+      "component": "RE03",
+      "service_start_s": 2976.67,
+      "service_end_s": 6144.651,
+      "return_s": 6620.617,
+      "energy_kwh": 1.2093779755160783,
+      "soc_percent": 62.20693826512256,
+      "transport_ids": [
+        "T011",
+        "T013",
+        "T014",
+        "T015",
+        "T016",
+        "T017",
+        "T018",
+        "T019",
+        "T020"
+      ],
+      "peak_simultaneously_covered_transports": 7,
+      "guaranteed_interval_union": [
+        [
+          2976.6750217239583,
+          6144.650786457833
+        ]
+      ],
+      "internal_gaps_s": [],
+      "service_envelope_slack_s": 0.005235266124600457,
+      "minimum_gap_for_profitable_split_s_if_other_metrics_unchanged": 3957.7213136889836
+    }
+  ],
+  "current_distinct_components": 3,
+  "extra_sortie_penalty_energy_equivalent_kwh": 0.9679199536666667,
+  "legacy_saved_evidence": {
+    "first_actual_lp_success": true,
+    "first_relay_sorties": [
+      {
+        "id": "R001",
+        "site": 0,
+        "drone": "R01",
+        "component": "RE02"
+      },
+      {
+        "id": "R002",
+        "site": 0,
+        "drone": "R01",
+        "component": "RE05"
+      },
+      {
+        "id": "R003",
+        "site": 1,
+        "drone": "R02",
+        "component": "RE01"
+      },
+      {
+        "id": "R004",
+        "site": 2,
+        "drone": "R02",
+        "component": "RE03"
+      },
+      {
+        "id": "R005",
+        "site": 1,
+        "drone": "R02",
+        "component": "RE04"
+      }
+    ],
+    "first_multistation_transport": {
+      "T004": [
+        "0",
+        "1"
+      ],
+      "T006": [
+        "0",
+        "1"
+      ],
+      "T009": [
+        "0",
+        "2"
+      ],
+      "T013": [
+        "0",
+        "2"
+      ],
+      "T016": [
+        "0",
+        "1"
+      ],
+      "T018": [
+        "0",
+        "1"
+      ]
+    },
+    "first_components_distinct": 5,
+    "other_component_reuses": {
+      "RE01": 6,
+      "RE02": 6,
+      "RE03": 6,
+      "RE04": 2
+    },
+    "other_shared_sorties": [
+      {
+        "relay": "R-001",
+        "transports": [
+          "Q3-001",
+          "Q3-002",
+          "Q3-003",
+          "Q3-004"
+        ]
+      }
+    ],
+    "other_summary": {
+      "运输架次数": "29",
+      "中继架次数": "20",
+      "全程检查样本数": "1217",
+      "直连样本数": "836",
+      "中继样本数": "381",
+      "联合完工时刻_s": "30753.866429160647",
+      "运输能耗_kWh": "89.0645276195122",
+      "中继能耗_kWh": "15.079518353736711",
+      "医疗首批超期箱数": "11"
+    },
+    "limitation": "Only saved data and actual call paths were read; neither legacy solver was imported or executed, and legacy physical/communication feasibility was not revalidated."
+  },
+  "findings": [
+    {
+      "id": "F1-ENTRY",
+      "source_key": "first_q3",
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\问题三\\问题三.py",
+      "source_sha256": "42eb49d1021ce5f9c37a48815e80bb8fc332c0157efb3dff60857025fda4e3dd",
+      "line_start": 217,
+      "line_end": 232,
+      "excerpt": "def main():\n    s=Scene();out=Path(BASE_DIR)/'结果';out.mkdir(exist_ok=True)\n    flights=json.loads((Path(BASE_DIR).parent/'问题二/结果/方案.json').read_text(encoding='utf-8'))\n    cand,choices,pts=candidates(s,flights);chosen=None;record=[]\n    if choices:\n        # 分时三站点仍有时序冲突时，固定路线候选并用线性规划联合移动任务与中继窗口。\n        sites=[cand[i] for i in [85,316,170]]\n        flights,cert,missions=joint_retime(s,flights,sites)\n        if missions is not None:chosen=(sites,cert,missions)\n    for k,(_,score,ids) in enumerate([] if chosen else choices):\n        sites=[cand[i] for i in ids];cert=certified_plan(s,flights,sites)\n        if cert is None:record.append({'组合':str(ids),'连续认证':False,'资源可行':False});continue\n        missions=relay_schedule(s,cert,sites)\n        record.append({'组合':str(ids),'连续认证':True,'资源可行':missions is not None})\n        print('认证组合',ids,'资源',missions is not None,flush=True)\n        if missions is not None:chosen=(sites,cert,missions);break",
+      "finding": "实际入口先读取Q2方案，固定候选85/316/170，优先joint_retime，失败才枚举fallback relay_schedule。",
+      "current_adoption_or_limit": "不能把定义了的贪心函数误当作保存结果的主算法；日志确认LP成功。"
+    },
+    {
+      "id": "F1-LP",
+      "source_key": "first_q3",
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\问题三\\问题三.py",
+      "source_sha256": "42eb49d1021ce5f9c37a48815e80bb8fc332c0157efb3dff60857025fda4e3dd",
+      "line_start": 149,
+      "line_end": 171,
+      "excerpt": "def joint_retime(s,flights,sites):\n    \"\"\"保留路线、实体资源顺序，线性规划调整开始时刻；中继访问按两架给定次序。\"\"\"\n    from scipy.optimize import linprog\n    original=certified_plan(s,flights,sites)\n    if original is None:return flights,None,None\n    # 主西站分两班；另一实体按东站→补盲→东站→补盲组织，所有准备、返航、周转计入。\n    definitions=[(0,[1,4,5,6,8,9,10,11,12,13,15,17]),(0,[14,16,18,19,20]),(1,[2,4,6,7]),(2,[9,13]),(1,[16,18,21])]\n    ids={r['id']:i for i,r in enumerate(flights)};n=len(flights);M=len(definitions);size=n+2*M+1;Z=size-1;rows=[];rhs=[]\n    def ub(entries,value):\n        row=np.zeros(size)\n        for j,c in entries:row[j]+=c\n        rows.append(row);rhs.append(value)\n    bounds=[(0,None)]*size\n    for i,r in enumerate(flights):\n        latest=min((s.hard[int(k)]-t for k,t in r['arrivals'].items()),default=np.inf)\n        bounds[i]=(0,None if not np.isfinite(latest) else latest)\n        ub([(i,1),(Z,-1)],-r['duration'])\n    for key,endkey in [('drone','duration'),('battery','charged')]:\n        for resource in set(r[key] for r in flights):\n            seq=sorted([i for i,r in enumerate(flights) if r[key]==resource],key=lambda i:((1 if i+1 in [16,18,21] else 0),flights[i]['start']))\n            for a,b in zip(seq,seq[1:]):\n                dur=flights[a]['duration'] if key=='drone' else flights[a]['charged']-flights[a]['start']\n                ub([(a,1),(b,-1)],-dur)",
+      "finding": "固定组批、机型、路线及机体/电池资源顺序，以运输开始/中继窗口/Cmax为变量做LP。",
+      "current_adoption_or_limit": "当前已有固定21路线CP-SAT精修并获OPTIMAL；LP主要可做快速内层或诊断。"
+    },
+    {
+      "id": "F1-OBJECTIVE",
+      "source_key": "first_q3",
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\问题三\\问题三.py",
+      "source_sha256": "42eb49d1021ce5f9c37a48815e80bb8fc332c0157efb3dff60857025fda4e3dd",
+      "line_start": 190,
+      "line_end": 198,
+      "excerpt": "    orders=[[0,1],[2,3,4]]\n    for order in orders:\n        for a,b in zip(order,order[1:]):\n            ta=sites[definitions[a][0]]['trip'];tb=sites[definitions[b][0]]['trip']\n            gap=ta['back']+s.relay['turn']+s.relay['prep']+tb['out']+s.relay['link']\n            ub([(n+2*a+1,1),(n+2*b,-1)],-gap)\n    objective=np.zeros(size);objective[:n]=[sum(s.priority[k] for k in r['boxes'])/s.priority.sum() for r in flights];objective[Z]=.1\n    for j in range(M):objective[n+2*j]=-.001;objective[n+2*j+1]=.001\n    result=linprog(objective,A_ub=np.array(rows),b_ub=np.array(rhs),bounds=bounds,method='highs')",
+      "finding": "两条中继实体序列写死；LP目标是加权开始时间+0.1 Cmax+0.001服务时长。",
+      "current_adoption_or_limit": "目标不同于当前固定归一化3:1.5:1:0.5，不能原样作为升级目标。"
+    },
+    {
+      "id": "F1-MULTISTATION",
+      "source_key": "first_q3",
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\问题三\\问题三.py",
+      "source_sha256": "42eb49d1021ce5f9c37a48815e80bb8fc332c0157efb3dff60857025fda4e3dd",
+      "line_start": 62,
+      "line_end": 84,
+      "excerpt": "def certified_plan(s,flights,sites):\n    cert=[]\n    def recurse(r,piece,depth=0):\n        a,b=piece['a'],piece['b'];ok,margin,method=certify_link(s,a,b,s.G,'direct')\n        if ok:which=-1\n        else:\n            matches=[]\n            for i,site in enumerate(sites):\n                good,marg,met=certify_link(s,a,b,site['point'],'access')\n                if good:matches.append((marg,i,met))\n            if matches:\n                # 优先前两主站，第三站仅补盲，避免无必要长时间占用。\n                margin,which,method=min(matches,key=lambda x:(x[1],-x[0]))\n            elif depth<8 and np.linalg.norm(b-a)>.1:\n                mid=(a+b)/2;tm=(piece['t0']+piece['t1'])/2\n                return recurse(r,dict(piece,b=mid,t1=tm),depth+1) and recurse(r,dict(piece,a=mid,t0=tm),depth+1)\n            else:return False\n        cert.append({'运输架次编号':r['id'],'通信阶段':piece['phase'],'开始时刻（s）':r['start']+piece['t0'],'结束时刻（s）':r['start']+piece['t1'],'保障方式':'直连' if which<0 else '中继','站点':which,'证明方式':method,'链路裕量':margin,'x0':float(a[0]),'y0':float(a[1]),'z0':float(a[2]),'x1':float(b[0]),'y1':float(b[1]),'z1':float(b[2])})\n        return True\n    for r in flights:\n        for seg in split_segments(r,100):\n            if not recurse(r,seg):return None\n    return cert",
+      "finding": "每个已认证轨迹子区段独立挑站，允许同一运输架次不同阶段使用不同站。",
+      "current_adoption_or_limit": "当前每运输架次仅一个后备站，尚未吸收。"
+    },
+    {
+      "id": "F1-REPEAT-MISSIONS",
+      "source_key": "first_q3",
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\问题三\\问题三.py",
+      "source_sha256": "42eb49d1021ce5f9c37a48815e80bb8fc332c0157efb3dff60857025fda4e3dd",
+      "line_start": 87,
+      "line_end": 110,
+      "excerpt": "def relay_schedule(s,cert,sites):\n    missions=[];p=s.relay\n    for i,site in enumerate(sites):\n        intervals=sorted((r['开始时刻（s）'],r['结束时刻（s）']) for r in cert if r['站点']==i)\n        if not intervals:continue\n        merged=[]\n        for a,b in intervals:\n            if merged and a<=merged[-1][1]+1e-6:merged[-1][1]=max(b,merged[-1][1])\n            else:merged.append([a,b])\n        trip=site['trip'];maxdur=((1-p['rho'])*p['E']-trip['travel_energy'])*3600/(p['hover']+p['comm'])-p['link']\n        # 贪心合并相邻需求，仅在能量和最大连续服务时长内。\n        batches=[]\n        for a,b in merged:\n            if batches and b-batches[-1][0]<=maxdur and a-batches[-1][1]<900:batches[-1][1]=b\n            else:batches.append([a,b])\n        for a,b in batches:\n            start=a-p['prep']-trip['out']-p['link'];end=b+trip['back']\n            E=trip['travel_energy']+(b-a+p['link'])*(p['hover']+p['comm'])/3600\n            missions.append({'site':i,'start':start,'link_ready':a,'service_end':b,'end':end,'energy':E,'soc':1-E/p['E'],'ready':end+p['turn'],'charged':end+charge(1-E/p['E'],p['full']),'point':site['point'].tolist()})\n    missions.sort(key=lambda r:r['start']);dump(missions,Path(BASE_DIR)/'结果/中继排程候选.json');du=[0.]*2;ba=[0.]*6\n    for k,r in enumerate(missions):\n        d=int(np.argmin(du));b=int(np.argmin(ba))\n        if r['start']<-1e-6 or du[d]>r['start']+1e-6 or ba[b]>r['start']+1e-6 or r['soc']<.2-1e-8:return None\n        r.update(id=f'R{k+1:03}',drone=f'R{d+1:02}',battery=f'RE{b+1:02}');du[d]=r['ready'];ba[b]=r['charged']",
+      "finding": "每站需求区间先并集，再受服务能量/900秒间隙条件分班；实体和组件按ready/charged着色。",
+      "current_adoption_or_limit": "同站多次出勤与组件复用代码可借鉴；当前每站一次、每任务新组件。"
+    },
+    {
+      "id": "F1-ACTUAL-REPEAT",
+      "source_key": "first_q3",
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\问题三\\问题三.py",
+      "source_sha256": "42eb49d1021ce5f9c37a48815e80bb8fc332c0157efb3dff60857025fda4e3dd",
+      "line_start": 153,
+      "line_end": 155,
+      "excerpt": "    if original is None:return flights,None,None\n    # 主西站分两班；另一实体按东站→补盲→东站→补盲组织，所有准备、返航、周转计入。\n    definitions=[(0,[1,4,5,6,8,9,10,11,12,13,15,17]),(0,[14,16,18,19,20]),(1,[2,4,6,7]),(2,[9,13]),(1,[16,18,21])]",
+      "finding": "实际LP definitions中站0、1均出现两次。",
+      "current_adoption_or_limit": "保存5次任务确实存在同站两班，组件5个且没有实际复用。"
+    },
+    {
+      "id": "F1-COMPONENTS",
+      "source_key": "first_q3",
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\问题三\\问题三.py",
+      "source_sha256": "42eb49d1021ce5f9c37a48815e80bb8fc332c0157efb3dff60857025fda4e3dd",
+      "line_start": 204,
+      "line_end": 214,
+      "excerpt": "    for j,(site,_) in enumerate(definitions):\n        trip=sites[site]['trip'];a=result.x[n+2*j];b=result.x[n+2*j+1];energy=trip['travel_energy']+(b-a+s.relay['link'])*1.1/3600\n        start=a-s.relay['prep']-trip['out']-s.relay['link'];end=b+trip['back'];missions.append({'site':site,'start':max(0.,start),'link_ready':a,'service_end':b,'end':end,'energy':energy,'soc':1-energy/s.relay['E'],'ready':end+s.relay['turn'],'charged':end+charge(1-energy/s.relay['E'],s.relay['full']),'point':sites[site]['point'].tolist(),'id':f'R{j+1:03}','drone':'R01' if j in orders[0] else 'R02'})\n    ba=[0.]*6\n    for m in sorted(missions,key=lambda v:v['start']):\n        b=int(np.argmin(ba))\n        if ba[b]>m['start']+1e-6:return flights,None,None\n        m['battery']=f'RE{b+1:02}';ba[b]=m['charged']\n    for r in original:\n        i=ids[r['运输架次编号']];delta=new[i]['start']-flights[i]['start'];r['开始时刻（s）']+=delta;r['结束时刻（s）']+=delta;r['中继架次编号']='' if r['站点']<0 else missions[uses[id(r)]]['id']\n    return new,original,missions",
+      "finding": "LP后用充满时刻贪心分配6个能源组件，失败直接拒绝。",
+      "current_adoption_or_limit": "组件复用不属于该LP优化变量；不能称联合优化了全部组件分配。"
+    },
+    {
+      "id": "F1-FRAGILE",
+      "source_key": "first_q3",
+      "path": "D:\\Desktop\\Agent\\第一版\\求解\\问题三\\问题三.py",
+      "source_sha256": "42eb49d1021ce5f9c37a48815e80bb8fc332c0157efb3dff60857025fda4e3dd",
+      "line_start": 183,
+      "line_end": 189,
+      "excerpt": "    # T009亦依赖西站，归第一班。\n    for r in original:\n        if r['站点']<0 or id(r) in uses:continue\n        i=ids[r['运输架次编号']];j=0 if r['站点']==0 and i+1<=17 else (1 if r['站点']==0 else 5)\n        ready=n+2*j;end=ready+1;t0=r['开始时刻（s）']-flights[i]['start'];t1=r['结束时刻（s）']-flights[i]['start']\n        if definitions[j][0]!=r['站点']:return flights,None,None\n        ub([(ready,1),(i,-1)],t0);ub([(i,1),(end,-1)],-t1);uses[id(r)]=j",
+      "finding": "漏匹配区间的fallback可能取j=5而definitions只有5项；分组/编号写死。",
+      "current_adoption_or_limit": "适用于当前旧实例，移植必须去掉硬编码。"
+    },
+    {
+      "id": "111-ENTRY",
+      "source_key": "other_q3",
+      "path": "D:\\Desktop\\Agent\\111\\求解\\问题三\\问题三.py",
+      "source_sha256": "9820c63b8d32fe6c6ac81e5bbaaee84396bbd63945da2058dfd637fc3dc3243c",
+      "line_start": 69,
+      "line_end": 89,
+      "excerpt": "jobs=[]\nfor _,r in q2.iterrows():\n k=r['机型编号'];ids=r['货箱编号列表'].split(';');zones=r['访问服务区顺序'].split('→')\n stops=[(z,[bid for bid in ids if bm[bid]['zone']==z]) for z in zones]\n calc=trip(stops,types[k],ter,bm)\n if calc is None:raise ValueError('问题二候选架次物理不可行')\n jobs.append(dict(stops=stops,k=k,calc=calc,source=r['架次编号']))\n\n# 全程缺口不可由单中继点填补时只拆分该架次，随后尽量选取最轻能耗可用机型。\nexpanded=[]\nfor job in jobs:\n item=coverage(job)\n if item is False and len(job['stops'])>1:\n  for stop in job['stops']:\n   feasible=[dict(stops=[stop],k=k,calc=c,source=job['source']) for k,p in types.items() if (c:=trip([stop],p,ter,bm)) is not None]\n   feasible=[j for j in feasible if coverage(j) is not False]\n   if not feasible:raise RuntimeError('单服务区航线无法保障'+stop[0])\n   expanded.append(min(feasible,key=lambda j:j['calc']['energy']))\n elif item is False:raise RuntimeError('单服务区航线无法保障'+job['stops'][0][0])\n else:expanded.append(job)\njobs=expanded",
+      "finding": "读Q2组批后重新算物理；单站不覆盖多区架次时拆成单区并选低耗机型。",
+      "current_adoption_or_limit": "本次更适合保留跨区组合并允许分段后备，拆分不宜作为唯一回退。"
+    },
+    {
+      "id": "111-SHARED",
+      "source_key": "other_q3",
+      "path": "D:\\Desktop\\Agent\\111\\求解\\问题三\\问题三.py",
+      "source_sha256": "9820c63b8d32fe6c6ac81e5bbaaee84396bbd63945da2058dfd637fc3dc3243c",
+      "line_start": 122,
+      "line_end": 147,
+      "excerpt": "# 首批3600秒紧急任务：允许同一悬停中继同时保障多架运输无人机。\n# 中继接入按各机分别建立链路，共享中继端点；检查相同时间所有接入链路。\nearly=[j for j in pending if any(bm[b]['deadline']<=3600 for _,ids in j['stops'] for b in ids)]\nneed=[j for j in early if coverage(j)[0] is not None]\npoints=[coverage(j)[0] for j in need]\nmasks=[]\nfor pt in points:\n back_ok=cover(ter,gate,pt,27,12,19,8)[0]\n bits=tuple(back_ok and all(cover(ter,p,pt,20,3,20,6)[0] for t,p in trajectory(j,45) if not direct_at(p)[0]) for j in need)\n masks.append(bits)\n# 有任意两个候选点可覆盖时，按能覆盖的急需箱数最大优先，再将剩余区域分给第2架。\n_,ia,ib=max((sum(a or b for a,b in zip(masks[i],masks[h])),i,h) for i in range(len(points)) for h in range(len(points)) if i!=h)\n# 若第二架被未覆盖的S007占用，需允许直接取其专用点；其他急需箱按时限顺序等待空闲。\nif any(j['stops'][0][0]=='S007' for j in need):\n seventh=next(i for i,j in enumerate(need) if j['stops'][0][0]=='S007')\n ib=seventh\n ia=max((sum(masks[i]),i) for i in range(len(points)) if i!=ib)[1]\nselected=set();initial_groups=[]\nfor idx in (ia,ib):\n group=[j for j,c in zip(need,masks[idx]) if c and id(j) not in selected]\n if not group:continue\n pt=points[idx];flight=relay_flight(ter,pt,relay)\n ret=max(relay['prep']+flight['out']+relay['link']-(types[j['k']]['prep']+sum(len(ids) for _,ids in j['stops'])*types[j['k']]['load'])+j['calc']['duration'] for j in group)+flight['back']\n cost=flight['energy']+relay['hover']*(ret-flight['back']-relay['prep']-flight['out'])/3600\n if cost>relay['battery']*(1-relay['reserve']):raise RuntimeError('共享中继能量不足')\n initial_groups.append((group,pt,flight,cost,ret));selected.update(id(j) for j in group)",
+      "finding": "对3600秒紧急任务的样本覆盖做双候选集合覆盖，再把共同覆盖任务组成共享初始组。",
+      "current_adoption_or_limit": "共享中继当前已支持；紧急任务驱动的候选筛选/热启动仍可借鉴。代码计数是任务数，不是注释声称的急需箱数。"
+    },
+    {
+      "id": "111-FREE-TIME",
+      "source_key": "other_q3",
+      "path": "D:\\Desktop\\Agent\\111\\求解\\问题三\\问题三.py",
+      "source_sha256": "9820c63b8d32fe6c6ac81e5bbaaee84396bbd63945da2058dfd637fc3dc3243c",
+      "line_start": 150,
+      "line_end": 158,
+      "excerpt": "for group,pt,flight,re,rend in initial_groups:\n rd=relays[len(rrecords)];cell=energy[len(rrecords)];rs=0;hs=relay['prep']+flight['out'];he=rend-flight['back']\n rtid=f'R-{len(rrecords)+1:03d}';rids=[]\n rd['free']=rend+relay['turn'];cell['ready']=rend+charge_time(1-re/relay['battery'],relay['charge'])\n for job in group:\n  pending.remove(job);k=job['k'];drone=min(drones[k],key=lambda d:d['free']);battery=min(bats[k],key=lambda b:b['ready'])\n  c=job['calc'];start=max(0,hs+relay['link']-(types[k]['prep']+sum(len(ids) for _,ids in job['stops'])*types[k]['load']))\n  end=start+c['duration'];tid=f'Q3-{len(records)+1:03d}';rids.append(tid)\n  drone['free']=end;battery['ready']=end+charge_time(1-c['energy']/types[k]['battery'],types[k]['charge'])",
+      "finding": "早期组虽选择free/ready最小资源，但start公式没有取资源free/ready最大值。",
+      "current_adoption_or_limit": "不要复制成通用初始化；即使当前旧输出未触发冲突，该分支也不保证任意组都安全。"
+    },
+    {
+      "id": "111-GREEDY",
+      "source_key": "other_q3",
+      "path": "D:\\Desktop\\Agent\\111\\求解\\问题三\\问题三.py",
+      "source_sha256": "9820c63b8d32fe6c6ac81e5bbaaee84396bbd63945da2058dfd637fc3dc3243c",
+      "line_start": 176,
+      "line_end": 198,
+      "excerpt": "while pending:\n best=None\n for j,job in enumerate(pending):\n  k=job['k'];item=coverage(job)\n  for drone in drones[k]:\n   for battery in bats[k]:\n    options=[(None,None)] if item[0] is None else itertools.product(relays,energy)\n    for rd,cell in options:\n     cur=timing(job,drone,battery,rd,cell)\n     if cur is None:continue\n     # earliest hard deadline takes priority among comparable alternatives\n     priority=min((bm[x]['deadline']-job['calc']['delivery'][x] for _,ids in job['stops'] for x in ids if bm[x]['first'] or bm[x]['med']),default=20000)\n     rank=(priority,cur[0][0],cur[0][1],cur[1],cur[0][2])\n     if best is None or rank<best[0]:best=(rank,j,job,drone,battery,rd,cell,cur)\n if best is None:raise RuntimeError('在电池/中继持续时间下无法调度剩余任务'+str(len(pending)))\n _,j,job,drone,battery,rd,cell,t=best\n pending.pop(j)\n _,start,rstart,rend,re,hs,he=t;k=job['k'];c=job['calc'];end=start+c['duration'];tid=f'Q3-{len(records)+1:03d}'\n drone['free']=end;battery['ready']=end+charge_time(1-c['energy']/types[k]['battery'],types[k]['charge'])\n rtid=''\n if rd is not None:\n  rtid=f'R-{len(rrecords)+1:03d}';rd['free']=rend+relay['turn'];cell['ready']=rend+charge_time(1-re/relay['battery'],relay['charge'])\n  pt=coverage(job)[0];lon,lat=ter.ll(pt[0],pt[1]);ground=float(ter.elev(pt[0],pt[1]));",
+      "finding": "剩余任务枚举实体、电池、中继、组件，以截止优先贪心；组件充满后可复用。",
+      "current_adoption_or_limit": "保存20中继任务复用4组件；但保存方案11硬超期，不能转用数值结论。"
+    },
+    {
+      "id": "111-PHYSICS",
+      "source_key": "other_physics",
+      "path": "D:\\Desktop\\Agent\\111\\求解\\物理模型.py",
+      "source_sha256": "bd96715f3f802b37a7977b566e4159d6bb8cb9ced2f8d44dbef38dc3e32b789a",
+      "line_start": 94,
+      "line_end": 124,
+      "excerpt": "def leg(geom,param,mass):\n    effective=param['range_empty']+(param['range_full']-param['range_empty'])*mass/param['capacity']\n    e=param['battery']*geom['d']/effective+(param['empty']+mass)*G*geom['up']/(param['efficiency']*3.6e6)\n    t=geom['d']/param['speed']+geom['up']/param['climb']+geom['down']/param['descend']\n    return float(e),float(t)\n\n\ndef trip(zone_boxes, param, terrain, boxmap):\n    \"\"\"zone_boxes为[(服务区,[箱号]),...]，返回耗能/时长/逐区交付相对时刻/段时序。\"\"\"\n    allids=[bid for _,ids in zone_boxes for bid in ids]\n    mass=sum(boxmap[b]['m'] for b in allids)\n    volume=sum(boxmap[b]['v'] for b in allids)\n    if mass>param['capacity']+1e-8 or volume>param['volume']+1e-8:return None\n    t=param['prep']+len(allids)*param['load'];e=0;cur='O01';delivery={};segs=[]\n    for dest,ids in list(zone_boxes)+[('O01',[])]:\n        geo=terrain.link(cur,dest);de,dt=leg(geo,param,mass)\n        segs.append(dict(start=t,end=t+dt,geom=geo,mass=mass));t+=dt;e+=de\n        if dest!='O01':\n            t+=param['handoff']+param['unload']*len(ids)\n            delivery.update({b:t for b in ids})\n            mass-=sum(boxmap[b]['m'] for b in ids)\n        cur=dest\n    if e>param['battery']*(1-param['reserve'])+1e-8:return None\n    return dict(energy=e,duration=t,delivery=delivery,segments=segs,mass=sum(boxmap[b]['m'] for b in allids),volume=volume)\n\n\ndef box_dict(df):\n    return {r['货箱编号']:dict(zone=r['服务区编号'],m=float(r['单箱质量（kg）']),v=float(r['单箱体积（m³）']),\n            med=r['物资类型']=='医疗物资',first=r['是否首批保障']=='是',\n            deadline=float(r['首批截止时间（s）']) if pd.notna(r['首批截止时间（s）']) else np.inf,\n            due=float(r['期望送达时间（s）']),weight=float(r['应急优先系数'])) for _,r in df.iterrows()}",
+      "finding": "等效航程线性插值；同站箱共同完成；医疗deadline字段仍仅取首批截止。",
+      "current_adoption_or_limit": "必须沿用当前3/2指数、逐箱完成及分别医疗/首批约束。"
+    },
+    {
+      "id": "111-SAMPLE",
+      "source_key": "other_q3",
+      "path": "D:\\Desktop\\Agent\\111\\求解\\问题三\\问题三.py",
+      "source_sha256": "9820c63b8d32fe6c6ac81e5bbaaee84396bbd63945da2058dfd637fc3dc3243c",
+      "line_start": 14,
+      "line_end": 22,
+      "excerpt": "def trajectory(job, step=30):\n c=job['calc'];p=types[job['k']]; samples=[]\n for seg in c['segments']:\n  times=np.linspace(seg['start'],seg['end'],max(3,int(np.ceil((seg['end']-seg['start'])/step))+1))\n  for t in times:samples.append((float(t),position(seg,t,p)))\n for zone,ids in job['stops']:\n  tm=c['delivery'][ids[0]]\n  samples.append((tm,np.asarray(ter.point(zone))))\n return sorted(samples,key=lambda x:x[0])",
+      "finding": "轨迹以航段时间均匀采样，并加投送完成点。",
+      "current_adoption_or_limit": "不能代替当前连续区间证书，也未显式加入全部阶段转换时刻。"
+    },
+    {
+      "id": "CURRENT-LIMITS",
+      "source_key": "current_solver",
+      "path": "E:\\sxjm\\D题\\code\\solve_q3_senior.py",
+      "source_sha256": "969868c54ae91c25058c0f6dead11a45f21452a12031af3d2e22e7f62b313c89",
+      "line_start": 149,
+      "line_end": 176,
+      "excerpt": "    # One sortie per retained position and at most six initially full components.\n    for k,s in enumerate(profiles.stations):\n        active=model.new_bool_var(f'r_on{k}')\n        start=model.new_int_var(0,H,f'r_start{k}')\n        ss=model.new_int_var(0,H,f'r_service{k}')\n        duration=model.new_int_var(0,math.floor(s['max_service_s']*1000-1e-7),f'r_dur{k}')\n        se=model.new_int_var(0,H,f'r_stop{k}')\n        ret=model.new_int_var(0,H,f'r_return{k}')\n        size=model.new_int_var(0,H,f'r_size{k}')\n        ready=ticks(rdata['prepare_s'])+ticks(s['outbound_s'])+ticks(rdata['setup_s'])\n        back=ticks(s['return_s']);turn=ticks(rdata['turnaround_s'])\n        model.add(ss==start+ready).only_enforce_if(active)\n        model.add(se==ss+duration).only_enforce_if(active)\n        model.add(ret==se+back).only_enforce_if(active)\n        model.add(size==ret+turn-start).only_enforce_if(active)\n        relay_intervals.append(model.new_optional_interval_var(start,size,ret+turn,active,f'r_int{k}'))\n        model.add(cmax>=ret).only_enforce_if(active)\n        for v in [start,ss,duration,se,ret,size]:model.add(v==0).only_enforce_if(active.Not())\n        # Two separate ceilings: total error is <2 nano-kWh per relay sortie.\n        fixed=s['travel_energy_kwh']+rdata['setup_s']*power/3600\n        numerator=int(round(power*1000))*duration # power in W * milliseconds\n        hover=model.new_int_var(0,4_000_000_000,f'r_ehover{k}')\n        model.add_division_equality(hover,numerator*10+35,36)\n        energy=math.ceil(fixed*1e9)*active+hover\n        relay_energy.append(energy)\n        relay.append(dict(active=active,start=start,ss=ss,dur=duration,se=se,ret=ret))\n    model.add_cumulative(relay_intervals,[1]*len(relay),2)\n    model.add(sum(v['active'] for v in relay)<=6)",
+      "finding": "每站一个可选中继任务，最多6个任务，2架实体Cumulative。",
+      "current_adoption_or_limit": "同站多班和组件复用尚未建入模型，但当前3组件不紧。",
+      "review_start_source_sha256": "6bc8526ff29974eecfa5c7f47d9d17a5805d2b64303efad7ddeb85a2aed64ec7"
+    },
+    {
+      "id": "CURRENT-ASSOCIATION",
+      "source_key": "current_solver",
+      "path": "E:\\sxjm\\D题\\code\\solve_q3_senior.py",
+      "source_sha256": "969868c54ae91c25058c0f6dead11a45f21452a12031af3d2e22e7f62b313c89",
+      "line_start": 114,
+      "line_end": 125,
+      "excerpt": "    def get(self,p):\n        if p.id in self.cache:return self.cache[p.id]\n        r=stages_for(p,self.data,self.factory,self.geo)\n        direct=self.comm.profile(r,-1)\n        if direct is not None:opts=[dict(station=-1,profile=direct)]\n        else:\n            opts=[]\n            needed={s for s in p.visits if not self.geo.link(self.geo.xyz(s),self.geo.gateway)['available']}\n            for k,s in enumerate(self.stations):\n                if not needed<=set(s['covered_needed_services']):continue\n                profile=self.comm.profile(r,k)\n                if profile is not None:opts.append(dict(station=k,profile=profile))",
+      "finding": "每个运输候选单独选一个能覆盖完整轨迹的站点profile。",
+      "current_adoption_or_limit": "分段多站后备会扩大可行运输候选集。",
+      "review_start_source_sha256": "6bc8526ff29974eecfa5c7f47d9d17a5805d2b64303efad7ddeb85a2aed64ec7"
+    },
+    {
+      "id": "CURRENT-SYNC",
+      "source_key": "current_solver",
+      "path": "E:\\sxjm\\D题\\code\\solve_q3_senior.py",
+      "source_sha256": "969868c54ae91c25058c0f6dead11a45f21452a12031af3d2e22e7f62b313c89",
+      "line_start": 199,
+      "line_end": 209,
+      "excerpt": "            if slots:model.add_no_overlap(slots)\n        choices=[]\n        for j,opt in enumerate(profiles.get(p)['options']):\n            y=model.new_bool_var(f'opt_{pid}_{j}');choices.append(y)\n            requirements=opt.get('requirements',([dict(station=opt['station'],first=opt['profile']['first'],last=opt['profile']['last'])] if opt['station']>=0 else []))\n            for requirement in requirements:\n                k=int(requirement['station'])\n                v=relay[k];model.add_implication(y,v['active'])\n                model.add(s+math.floor(requirement['first']*1000+1e-7)>=v['ss']).only_enforce_if(y)\n                model.add(s+math.ceil(requirement['last']*1000-1e-7)<=v['se']).only_enforce_if(y)\n        model.add(sum(choices)==x);option_vars[pid]=choices",
+      "finding": "本轮并行开发已将单站窗口关联扩展成requirements循环；冻结21+3方案仍为每运输架次单站，默认Profiles仍仅生成单站profile。",
+      "current_adoption_or_limit": "共享一直已实现；多站接口现已开始吸收建议，其新试验结果不在本报告范围。",
+      "review_start_source_sha256": "6bc8526ff29974eecfa5c7f47d9d17a5805d2b64303efad7ddeb85a2aed64ec7",
+      "review_start_excerpt": "            if slots:model.add_no_overlap(slots)\n        choices=[]\n        for j,opt in enumerate(profiles.get(p)['options']):\n            y=model.new_bool_var(f'opt_{pid}_{j}');choices.append(y)\n            k=opt['station']\n            if k>=0:\n                v=relay[k];model.add_implication(y,v['active'])\n                model.add(s+math.floor(opt['profile']['first']*1000+1e-7)>=v['ss']).only_enforce_if(y)\n                model.add(s+math.ceil(opt['profile']['last']*1000-1e-7)<=v['se']).only_enforce_if(y)\n        model.add(sum(choices)==x);option_vars[pid]=choices"
+    },
+    {
+      "id": "CURRENT-NEIGHBORHOOD",
+      "source_key": "current_solver",
+      "path": "E:\\sxjm\\D题\\code\\solve_q3_senior.py",
+      "source_sha256": "969868c54ae91c25058c0f6dead11a45f21452a12031af3d2e22e7f62b313c89",
+      "line_start": 328,
+      "line_end": 368,
+      "excerpt": "def enrich(current,pool,fac,data,profiles,spec,limit,iteration):\n    \"\"\"Senior q2_improved paired move/swap/merge enrichment, communication filtered.\"\"\"\n    def proxy(p):\n        return (spec['alpha']['energy']*p.energy_int/spec['span']['energy']\n            +spec['alpha']['sorties']/spec['span']['sorties']\n            +spec['alpha']['makespan']*p.duration/(len(data.units[p.drone])*spec['span']['makespan']))\n    def alternatives(ids):\n        required=sorted({fac.boxes[b].service for b in ids})\n        if len(required)>3:return []\n        found=[]\n        for visits in itertools.permutations(required):\n            for g in data.units:\n                p=fac.make(g,ids,visits)\n                if p:pool[p.id]=p;found.append(p)\n        return found\n    selected=[pool[r['candidate_id']] for r in current['transport']]\n    bundles=[];rng=random.Random(271+iteration)\n    for p in selected:\n        for q in alternatives(p.boxes):bundles.append((proxy(q)-proxy(p),[q.id]))\n    for p,q in itertools.combinations(selected,2):\n        old=proxy(p)+proxy(q)\n        for a in alternatives(p.boxes+q.boxes):bundles.append((proxy(a)-old,[a.id]))\n        operations=[]\n        for donor,receiver in [(p,q),(q,p)]:\n            if len(donor.boxes)>1:\n                for b in donor.boxes:operations.append((tuple(v for v in donor.boxes if v!=b),receiver.boxes+(b,)))\n        swaps=list(itertools.product(p.boxes,q.boxes));rng.shuffle(swaps)\n        for a,b in swaps[:2+iteration*2]:\n            operations.append((tuple(v for v in p.boxes if v!=a)+(b,),tuple(v for v in q.boxes if v!=b)+(a,)))\n        for ids1,ids2 in operations:\n            aa=sorted(alternatives(ids1),key=proxy)[:2];bb=sorted(alternatives(ids2),key=proxy)[:2]\n            for a in aa:\n                for b in bb:bundles.append((proxy(a)+proxy(b)-old,[a.id,b.id]))\n    active={p.id:p for p in selected}\n    rng.shuffle(bundles)\n    bundles.sort(key=lambda x:x[0]+rng.uniform(0,.015))\n    for _,ids in bundles:\n        if len(active)+len(set(ids)-set(active))>limit:continue\n        if all(profiles.get(pool[pid]) is not None for pid in ids):\n            active.update({pid:pool[pid] for pid in ids})\n        if len(active)>=limit:break",
+      "finding": "配对移箱/换箱/合批后只保留单站profile可行候选。",
+      "current_adoption_or_limit": "可用单站vs双站profile过滤对照测量被排除的跨区候选。",
+      "review_start_source_sha256": "6bc8526ff29974eecfa5c7f47d9d17a5805d2b64303efad7ddeb85a2aed64ec7"
+    }
+  ],
+  "fixed_structure_lp": {
+    "method": "scipy.optimize.linprog(method=highs)",
+    "scipy_version": "1.18.1",
+    "source_solution_sha256": "35e203d5426de54543065ac5051a8956e6450b1092e96bb9ed1853fb3b653bf2",
+    "success": true,
+    "status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "variables": 28,
+    "constraints": 83,
+    "wall_s": 0.004411899997649016,
+    "fixed": [
+      "21 cargo groups, models, visits and within-stop box orders",
+      "3 relay sites and communication assignment",
+      "transport aircraft and battery precedence",
+      "relay entity order",
+      "all expected, medical and first-box deadlines; zero_lateness control preserved"
+    ],
+    "baseline": {
+      "finish_s": 6620.617,
+      "energy_kwh": 66.84115970397485,
+      "unquantized_score": 0.00707916074504766
+    },
+    "lp": {
+      "finish_s": 6620.616,
+      "energy_kwh": 66.84114259286375,
+      "unquantized_score": 0.0070789742898894475,
+      "maximum_constraint_violation_s": 4.547473508864641e-13
+    },
+    "score_improvement": 1.86455158257548e-07,
+    "maximum_absolute_start_shift_s": 30.014999999999873,
+    "constraint_labels": [
+      "transport_finish_T001",
+      "transport_finish_T002",
+      "transport_finish_T003",
+      "transport_finish_T004",
+      "transport_finish_T005",
+      "transport_finish_T006",
+      "transport_finish_T007",
+      "transport_finish_T008",
+      "transport_finish_T009",
+      "transport_finish_T010",
+      "transport_finish_T011",
+      "transport_finish_T012",
+      "transport_finish_T013",
+      "transport_finish_T014",
+      "transport_finish_T015",
+      "transport_finish_T016",
+      "transport_finish_T017",
+      "transport_finish_T018",
+      "transport_finish_T019",
+      "transport_finish_T020",
+      "transport_finish_T021",
+      "drone_U02",
+      "drone_U08",
+      "drone_U08",
+      "drone_U06",
+      "drone_U06",
+      "drone_U06",
+      "drone_U01",
+      "drone_U01",
+      "drone_U05",
+      "drone_U05",
+      "drone_U03",
+      "drone_U07",
+      "drone_U07",
+      "battery_BAT-C-01",
+      "battery_BAT-B-03",
+      "battery_BAT-B-01",
+      "battery_BAT-A-01",
+      "battery_BAT-C-02",
+      "battery_BAT-A-03",
+      "battery_BAT-B-02",
+      "nonnegative_service_R001",
+      "energy_R001",
+      "relay_finish_R001",
+      "nonnegative_service_R002",
+      "energy_R002",
+      "relay_finish_R002",
+      "nonnegative_service_R003",
+      "energy_R003",
+      "relay_finish_R003",
+      "relay_order_R01",
+      "coverage_start_T002",
+      "coverage_end_T002",
+      "coverage_start_T003",
+      "coverage_end_T003",
+      "coverage_start_T006",
+      "coverage_end_T006",
+      "coverage_start_T007",
+      "coverage_end_T007",
+      "coverage_start_T008",
+      "coverage_end_T008",
+      "coverage_start_T010",
+      "coverage_end_T010",
+      "coverage_start_T011",
+      "coverage_end_T011",
+      "coverage_start_T012",
+      "coverage_end_T012",
+      "coverage_start_T013",
+      "coverage_end_T013",
+      "coverage_start_T014",
+      "coverage_end_T014",
+      "coverage_start_T015",
+      "coverage_end_T015",
+      "coverage_start_T016",
+      "coverage_end_T016",
+      "coverage_start_T017",
+      "coverage_end_T017",
+      "coverage_start_T018",
+      "coverage_end_T018",
+      "coverage_start_T019",
+      "coverage_end_T019",
+      "coverage_start_T020",
+      "coverage_end_T020"
+    ],
+    "limitation": "Independent continuous relaxation diagnostic only. No new plan is accepted or exported. Millisecond schedule and integer objective rounding require separate validation before replacing baseline; fixed structure is not a global optimum."
+  },
+  "controlled_experiments": [
+    {
+      "id": "A",
+      "priority": 1,
+      "title": "站点候选扩展受控对照",
+      "control": "固定现21运输候选、当前物理/毫秒口径、零迟到约束、目标权重、同一求解时长与种子；保留现解hint。",
+      "treatment": "只扩展42站池：先从原1158点中，对当前R001/R002/R003保障运输组按完整连续profile筛选可共同覆盖候选；各组补若干去返程短、服务能耗低或鲁棒裕量高的非支配点。必要时再用111的网关-任务群方向偏移及160/240/300m高度生成额外点，全部独立重认证。",
+      "measure": [
+        "可行新增站点及连续覆盖组数",
+        "相同整数目标/未取整固定尺度score",
+        "Cmax/总能耗/架次/最小裕量/运行时间"
+      ],
+      "accept": "仅接受当前验证器通过且冻结目标严格改善（超过1e-6量化误差界）；无改善也保存对照。"
+    },
+    {
+      "id": "B",
+      "priority": 2,
+      "title": "单站与最多两站分段后备对照",
+      "control": "冻结同一运输候选集合与42个位置，不改变载荷/航线/能耗模型及零迟到目标。",
+      "treatment": "对单站不可覆盖候选，允许至多2个已选站按通信区段提供唯一后备；区段服务窗逐条绑定实际中继任务，切换点双侧覆盖且每时刻唯一选择。保留已有单站选项。",
+      "measure": [
+        "新增可行跨区候选数",
+        "被采用新候选/合批数量",
+        "验证后整数目标、Cmax、能耗、运输/中继架次"
+      ],
+      "accept": "需要新分支验证器支持每区段station/relay_sortie_id并核查切换连续性；不得直接绕过现版单站限制。"
+    },
+    {
+      "id": "C",
+      "priority": 3,
+      "title": "同站两次出勤/组件复用功能消融",
+      "control": "固定现21运输路线及42站点，比较每站1次与每站至多2次；保持原参数及同资源库存。",
+      "treatment": "站点-任务槽建模，同站不同任务以独立mission_id索引；实体含300s周转，组件占用到分段充电完成，最多6组而不再等同最多6次任务。",
+      "measure": [
+        "实际启用重复任务数",
+        "组件峰值/复用次数",
+        "通信实际窗口与目标变化"
+      ],
+      "accept": "当前三站需求并集连续、SOC>=62.2%、3组件<6，预期基线改进概率低；仅在B增加任务/分时站需求后优先考虑。"
+    }
+  ],
+  "parallel_development_observed": {
+    "observed_utc": "2026-09-24T13:26:20.055911+00:00",
+    "changed_sources": [
+      {
+        "source_key": "current_solver",
+        "path": "E:\\sxjm\\D题\\code\\solve_q3_senior.py",
+        "review_start_sha256": "6bc8526ff29974eecfa5c7f47d9d17a5805d2b64303efad7ddeb85a2aed64ec7",
+        "review_end_sha256": "969868c54ae91c25058c0f6dead11a45f21452a12031af3d2e22e7f62b313c89"
+      },
+      {
+        "source_key": "current_validator",
+        "path": "E:\\sxjm\\D题\\code\\validate_q3_senior.py",
+        "review_start_sha256": "f78c43d1d71014841c538e2421b8d0668aa41a340b55072895a5edaae9e312dc",
+        "review_end_sha256": "72dd05f278487801faba8f8301c1cf23782fe3ea73da3d46594bf25b75375258"
+      }
+    ],
+    "official_baseline_unchanged": true,
+    "note": "The root task was concurrently adding multi-requirement solver linkage and communication_policy.max_relay_stations_per_sortie to validator. This review concerns the frozen 21+3 baseline; new interfaces are acknowledged, but no claim about uncompleted upgraded search is made."
+  }
+}

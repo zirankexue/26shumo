@@ -1,0 +1,2159 @@
+{
+  "passed": true,
+  "scope": "Independent read-only review of newly implemented two-station options and selected actual schedules. No legacy Agent solver imported/executed; no main code changed.",
+  "reviewed_sources": [
+    {
+      "path": "E:\\sxjm\\D题\\code\\q3_multi_profiles.py",
+      "sha256": "6922c9108f760568d63e3c6e8aab6a5276811e485d1e97e0222c2a2ab550af71"
+    },
+    {
+      "path": "E:\\sxjm\\D题\\code\\solve_q3_senior.py",
+      "sha256": "969868c54ae91c25058c0f6dead11a45f21452a12031af3d2e22e7f62b313c89"
+    },
+    {
+      "path": "E:\\sxjm\\D题\\code\\validate_q3_senior.py",
+      "sha256": "72dd05f278487801faba8f8301c1cf23782fe3ea73da3d46594bf25b75375258"
+    },
+    {
+      "path": "E:\\sxjm\\D题\\code\\q3_geometry.py",
+      "sha256": "a774b6d52feb8655670bcb333955116b26ed04aeb3d4b8681caab69190ac1a71"
+    }
+  ],
+  "static_review": [
+    {
+      "topic": "唯一实际中继",
+      "passed": true,
+      "evidence": "MultiProfiles 每个 row 仅写一个 station；联合 solver 每候选恰选一个 option；validator 将 row.station 映射到唯一已排中继任务并整段检查其服务窗。",
+      "anchors": [
+        "code/q3_multi_profiles.py:65",
+        "code/solve_q3_senior.py:203",
+        "code/solve_q3_senior.py:209",
+        "code/validate_q3_senior.py:396",
+        "code/validate_q3_senior.py:451"
+      ]
+    },
+    {
+      "topic": "两站独立服务窗",
+      "passed": true,
+      "evidence": "requirements 按每站所有已分配区段的最早开始与最晚结束建立，solver 分别使该站 active 并约束覆盖；不将两站候选覆盖等同两站同时在岗。",
+      "anchors": [
+        "code/q3_multi_profiles.py:69",
+        "code/solve_q3_senior.py:203"
+      ]
+    },
+    {
+      "topic": "换站闭端点",
+      "passed": true,
+      "evidence": "几何递归的左右子段均包含分裂端点；每侧整个闭线段均通过距离上界或 DEM 三角区域净空证明。数据实际换站时刻、坐标及两側 active/access/backhaul 已另行核查。",
+      "anchors": [
+        "code/q3_geometry.py:203",
+        "code/q3_geometry.py:232"
+      ]
+    },
+    {
+      "topic": "旧解hint保留",
+      "passed": true,
+      "evidence": "单站 options 被 deepcopy 后保留，并用 single:station 兼容旧 hint；新42站前缀及21条旧架次 options/rows 已重算相等，详见独立证据文件。",
+      "anchors": [
+        "code/q3_multi_profiles.py:86",
+        "code/solve_q3_senior.py:224"
+      ]
+    },
+    {
+      "topic": "验证器没有以采样替代连续证明",
+      "passed": true,
+      "evidence": "每 row 重新以唯一已排站生成整段连续证书。五点采样仅附加诊断。架次站数上限由显式 policy 读取，其余实际任务和连续约束仍保留。",
+      "anchors": [
+        "code/validate_q3_senior.py:454",
+        "code/validate_q3_senior.py:466",
+        "code/validate_q3_senior.py:498"
+      ]
+    }
+  ],
+  "hint_preservation": {
+    "path": "E:\\sxjm\\D题\\results\\question3_agent_update\\multistation_hint_review.json",
+    "sha256": "5055186b59bf0742744d85dee847d2db91d5aad1b21958e011f1476b423e82ae",
+    "passed": true
+  },
+  "solutions": [
+    {
+      "label": "interval_relay_switch",
+      "solution": "E:\\sxjm\\D题\\results\\question3_agent_update\\solution_interval_relay_switch.json",
+      "solution_sha256": "a50921cbe38d4c44ba586c803fe540b1bc6053ec522ecb028d1a97722ee8e74e",
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.36366272180486,
+        "relay_energy_kwh": 2.4730373966183037,
+        "joint_finish_s": 6612.284,
+        "transport_finish_s": 6559.628,
+        "last_delivery_s": 6234.756,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3046.353010460251,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.83670011842317,
+        "score": 0.006516438928799176
+      },
+      "policy": {
+        "max_relay_stations_per_sortie": 2,
+        "direct_priority": true
+      },
+      "pair_key_count": 7,
+      "actual_multistation_sortie_count": 0,
+      "actual_assignments": [
+        {
+          "sortie": "T001",
+          "option": "single:-1",
+          "actual_stations": []
+        },
+        {
+          "sortie": "T002",
+          "option": "single:-1",
+          "actual_stations": []
+        },
+        {
+          "sortie": "T003",
+          "option": "pair:63,40",
+          "actual_stations": [
+            40
+          ]
+        },
+        {
+          "sortie": "T004",
+          "option": "single:-1",
+          "actual_stations": []
+        },
+        {
+          "sortie": "T005",
+          "option": "pair:40,55",
+          "actual_stations": [
+            40
+          ]
+        },
+        {
+          "sortie": "T006",
+          "option": "single:55",
+          "actual_stations": [
+            55
+          ]
+        },
+        {
+          "sortie": "T007",
+          "option": "pair:40,55",
+          "actual_stations": [
+            55
+          ]
+        },
+        {
+          "sortie": "T008",
+          "option": "pair:40,55",
+          "actual_stations": [
+            55
+          ]
+        },
+        {
+          "sortie": "T009",
+          "option": "single:-1",
+          "actual_stations": []
+        },
+        {
+          "sortie": "T010",
+          "option": "single:55",
+          "actual_stations": [
+            55
+          ]
+        },
+        {
+          "sortie": "T011",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T012",
+          "option": "single:55",
+          "actual_stations": [
+            55
+          ]
+        },
+        {
+          "sortie": "T013",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T014",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T015",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T016",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T017",
+          "option": "pair:40,63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T018",
+          "option": "pair:40,63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T019",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T020",
+          "option": "pair:63,55",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T021",
+          "option": "single:-1",
+          "actual_stations": []
+        }
+      ],
+      "actual_multistation_details": [],
+      "existing_validation": {
+        "path": "E:\\sxjm\\D题\\results\\question3_agent_update\\validation_interval_relay_switch.json",
+        "sha256": "d60298b950e9d0ea96d3b0cc96235fa1a7b96f080a9f36a123fa52f79362b8c3",
+        "passed": true,
+        "error_count": 0,
+        "solution_hash_matches": true,
+        "communication_interval_count": 241,
+        "unproven_communication_interval_count": 0,
+        "minimum_proved_communication_margin_db": 0.07973598524506542
+      }
+    },
+    {
+      "label": "joint_neighborhood_1",
+      "solution": "E:\\sxjm\\D题\\results\\question3_agent_update\\solution_joint_neighborhood_1.json",
+      "solution_sha256": "d5212af0186f1b4bea5c74a255bd227a4656098cdc7212f1c9cb2db5cc0d174a",
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.40048749404414,
+        "relay_energy_kwh": 2.3493087855071924,
+        "joint_finish_s": 6612.283,
+        "transport_finish_s": 6559.628,
+        "last_delivery_s": 6234.756,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3102.675857740586,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.74979627955133,
+        "score": 0.0058929381045804766
+      },
+      "policy": {
+        "max_relay_stations_per_sortie": 2,
+        "direct_priority": true
+      },
+      "pair_key_count": 6,
+      "actual_multistation_sortie_count": 1,
+      "actual_assignments": [
+        {
+          "sortie": "T001",
+          "option": "single:-1",
+          "actual_stations": []
+        },
+        {
+          "sortie": "T002",
+          "option": "single:-1",
+          "actual_stations": []
+        },
+        {
+          "sortie": "T003",
+          "option": "single:40",
+          "actual_stations": [
+            40
+          ]
+        },
+        {
+          "sortie": "T004",
+          "option": "single:-1",
+          "actual_stations": []
+        },
+        {
+          "sortie": "T005",
+          "option": "single:40",
+          "actual_stations": [
+            40
+          ]
+        },
+        {
+          "sortie": "T006",
+          "option": "pair:63,55",
+          "actual_stations": [
+            55
+          ]
+        },
+        {
+          "sortie": "T007",
+          "option": "single:-1",
+          "actual_stations": []
+        },
+        {
+          "sortie": "T008",
+          "option": "pair:63,55",
+          "actual_stations": [
+            55,
+            63
+          ]
+        },
+        {
+          "sortie": "T009",
+          "option": "single:55",
+          "actual_stations": [
+            55
+          ]
+        },
+        {
+          "sortie": "T010",
+          "option": "pair:55,40",
+          "actual_stations": [
+            55
+          ]
+        },
+        {
+          "sortie": "T011",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T012",
+          "option": "pair:55,63",
+          "actual_stations": [
+            55
+          ]
+        },
+        {
+          "sortie": "T013",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T014",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T015",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T016",
+          "option": "pair:2,63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T017",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T018",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T019",
+          "option": "pair:63,55",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T020",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T021",
+          "option": "single:-1",
+          "actual_stations": []
+        }
+      ],
+      "actual_multistation_details": [
+        {
+          "sortie": "T008",
+          "candidate_id": "46ae7b5b94e77432",
+          "order": [
+            "S013",
+            "S002",
+            "S009"
+          ],
+          "communication_option": "pair:63,55",
+          "actual_stations": [
+            55,
+            63
+          ],
+          "start_s": 1641.147,
+          "return_s": 4316.726,
+          "communication_interval_count": 20,
+          "airborne_coverage_s": 2285.579,
+          "expected_airborne_s": 2285.579,
+          "station_service_envelopes": [
+            {
+              "station": 55,
+              "relay": "R002",
+              "drone": "R02",
+              "component": "RE02",
+              "service_window_s": [
+                2323.704,
+                3600.807
+              ],
+              "required_start_s": 2323.7049768496886,
+              "required_end_s": 3534.6805203852964,
+              "backhaul_margin_db": 9.644683757105582
+            },
+            {
+              "station": 63,
+              "relay": "R003",
+              "drone": "R01",
+              "component": "RE03",
+              "service_window_s": [
+                2976.717,
+                6144.65
+              ],
+              "required_start_s": 3534.6805203852964,
+              "required_end_s": 4250.514258002756,
+              "backhaul_margin_db": 3.3246948262537614
+            }
+          ],
+          "relay_to_relay_switches": [
+            {
+              "left_row": 12,
+              "right_row": 13,
+              "absolute_time_s": 3534.6805203852964,
+              "relative_time_s": 1893.5335203852967,
+              "position_m": [
+                2387.6719196811728,
+                5181.651302622434,
+                328.2866516113281
+              ],
+              "time_gap_s": 0.0,
+              "position_gap_m": 0.0,
+              "direct": {
+                "available": false,
+                "path_loss_db": 125.18414870817715,
+                "margin_db": -3.1841487081771476,
+                "blocked": true,
+                "distance_m": 5708.160733261016
+              },
+              "sides": [
+                {
+                  "side": "left",
+                  "station": 55,
+                  "relay": "R002",
+                  "active_at_switch": true,
+                  "access": {
+                    "available": true,
+                    "path_loss_db": 101.4892791910161,
+                    "margin_db": 14.510720808983905,
+                    "blocked": false,
+                    "distance_m": 1179.6487662846469
+                  },
+                  "backhaul": {
+                    "available": true,
+                    "path_loss_db": 116.35531624289442,
+                    "margin_db": 9.644683757105582,
+                    "blocked": false,
+                    "distance_m": 6532.126256600404
+                  }
+                },
+                {
+                  "side": "right",
+                  "station": 63,
+                  "relay": "R003",
+                  "active_at_switch": true,
+                  "access": {
+                    "available": true,
+                    "path_loss_db": 115.35772981075269,
+                    "margin_db": 0.6422701892473128,
+                    "blocked": false,
+                    "distance_m": 5823.381585655579
+                  },
+                  "backhaul": {
+                    "available": true,
+                    "path_loss_db": 122.67530517374624,
+                    "margin_db": 3.3246948262537614,
+                    "blocked": true,
+                    "distance_m": 4276.160691676263
+                  }
+                }
+              ],
+              "endpoint_rule": "Intervals left-closed/right-open; final interval includes final endpoint. At switch use right row; both continuous closed-segment proofs cover the endpoint. Direct G01 has priority."
+            }
+          ],
+          "interval_checks": [
+            {
+              "index": 0,
+              "station": -1,
+              "relay": null,
+              "absolute_start_s": 2031.147,
+              "absolute_end_s": 2121.6409412434896,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "G01",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 23.935643142447674
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 1,
+              "station": -1,
+              "relay": null,
+              "absolute_start_s": 2121.6409412434896,
+              "absolute_end_s": 2323.7049768496886,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "G01",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 4.20590418808473
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 2,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 2323.7049768496886,
+              "absolute_end_s": 2525.769012455888,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 2.9118448075001595
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 3,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 2525.769012455888,
+              "absolute_end_s": 2544.7617419480757,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 6.182612275017647
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 4,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 2544.7617419480757,
+              "absolute_end_s": 2544.7619999999997,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 6.182612275017647
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 5,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 2544.7619999999997,
+              "absolute_end_s": 2724.7619999999997,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 6.182612275017647
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 6,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 2724.7619999999997,
+              "absolute_end_s": 2733.2654423828126,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 6.182612275017647
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 7,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 2733.2654423828126,
+              "absolute_end_s": 3111.6178855082394,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 6.18715290795852
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 8,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 3111.6178855082394,
+              "absolute_end_s": 3174.7020163676143,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 2.2122947847614967
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 9,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 3174.7020163676143,
+              "absolute_end_s": 3174.703,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 2.2122947847614967
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 10,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 3174.703,
+              "absolute_end_s": 3354.703,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 2.2122947847614967
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 11,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 3354.703,
+              "absolute_end_s": 3390.965217203776,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 2.2122947847614967
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 12,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 3390.965217203776,
+              "absolute_end_s": 3534.6805203852964,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 2.327609666487625
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 13,
+              "station": 63,
+              "relay": "R003",
+              "absolute_start_s": 3534.6805203852964,
+              "absolute_end_s": 3573.995181029828,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 0.6321386216392
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 14,
+              "station": 63,
+              "relay": "R003",
+              "absolute_start_s": 3573.995181029828,
+              "absolute_end_s": 3573.996,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 0.6321386216392
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 15,
+              "station": 63,
+              "relay": "R003",
+              "absolute_start_s": 3573.996,
+              "absolute_end_s": 3753.996,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 0.6321386216392
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 16,
+              "station": 63,
+              "relay": "R003",
+              "absolute_start_s": 3753.996,
+              "absolute_end_s": 3775.0723041178385,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 0.6321386216392
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 17,
+              "station": 63,
+              "relay": "R003",
+              "absolute_start_s": 3775.0723041178385,
+              "absolute_end_s": 4250.514258002756,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 0.6389373131570295
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 18,
+              "station": -1,
+              "relay": null,
+              "absolute_start_s": 4250.514258002756,
+              "absolute_end_s": 4316.725822944162,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "G01",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 28.686789494765073
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 19,
+              "station": -1,
+              "relay": null,
+              "absolute_start_s": 4316.725822944162,
+              "absolute_end_s": 4316.726000000001,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "G01",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 45.925175252488266
+                  }
+                ],
+                "unproven_count": 0
+              }
+            }
+          ]
+        }
+      ],
+      "existing_validation": {
+        "path": "E:\\sxjm\\D题\\results\\question3_agent_update\\validation_joint_neighborhood_1.json",
+        "sha256": "b012af1690cca75379bf7dbba1f0edd19c6c9a1bf1a5b5db3bf59c476e7eb99a",
+        "passed": true,
+        "error_count": 0,
+        "solution_hash_matches": true,
+        "communication_interval_count": 240,
+        "unproven_communication_interval_count": 0,
+        "minimum_proved_communication_margin_db": 0.07973598524506542
+      }
+    },
+    {
+      "label": "joint_neighborhood_2",
+      "solution": "E:\\sxjm\\D题\\results\\question3_agent_update\\solution_joint_neighborhood_2.json",
+      "solution_sha256": "fed1ca0d5e6b59909b0ce067ccbc7f3270a128238396c0db50179808c9ae09af",
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.09596908039461,
+        "relay_energy_kwh": 2.349304202173859,
+        "joint_finish_s": 6612.284,
+        "transport_finish_s": 6559.627,
+        "last_delivery_s": 6234.755,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3092.92689748954,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.44527328256846,
+        "score": 0.0037081055399544767
+      },
+      "policy": {
+        "max_relay_stations_per_sortie": 2,
+        "direct_priority": true
+      },
+      "pair_key_count": 9,
+      "actual_multistation_sortie_count": 1,
+      "actual_assignments": [
+        {
+          "sortie": "T001",
+          "option": "single:-1",
+          "actual_stations": []
+        },
+        {
+          "sortie": "T002",
+          "option": "pair:63,40",
+          "actual_stations": [
+            40
+          ]
+        },
+        {
+          "sortie": "T003",
+          "option": "single:-1",
+          "actual_stations": []
+        },
+        {
+          "sortie": "T004",
+          "option": "single:40",
+          "actual_stations": [
+            40
+          ]
+        },
+        {
+          "sortie": "T005",
+          "option": "single:-1",
+          "actual_stations": []
+        },
+        {
+          "sortie": "T006",
+          "option": "single:55",
+          "actual_stations": [
+            55
+          ]
+        },
+        {
+          "sortie": "T007",
+          "option": "single:-1",
+          "actual_stations": []
+        },
+        {
+          "sortie": "T008",
+          "option": "pair:63,55",
+          "actual_stations": [
+            55,
+            63
+          ]
+        },
+        {
+          "sortie": "T009",
+          "option": "pair:55,40",
+          "actual_stations": [
+            55
+          ]
+        },
+        {
+          "sortie": "T010",
+          "option": "pair:55,2",
+          "actual_stations": [
+            55
+          ]
+        },
+        {
+          "sortie": "T011",
+          "option": "pair:55,63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T012",
+          "option": "pair:55,40",
+          "actual_stations": [
+            55
+          ]
+        },
+        {
+          "sortie": "T013",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T014",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T015",
+          "option": "pair:63,40",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T016",
+          "option": "pair:2,63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T017",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T018",
+          "option": "pair:2,63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T019",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T020",
+          "option": "single:63",
+          "actual_stations": [
+            63
+          ]
+        },
+        {
+          "sortie": "T021",
+          "option": "single:-1",
+          "actual_stations": []
+        }
+      ],
+      "actual_multistation_details": [
+        {
+          "sortie": "T008",
+          "candidate_id": "46ae7b5b94e77432",
+          "order": [
+            "S013",
+            "S002",
+            "S009"
+          ],
+          "communication_option": "pair:63,55",
+          "actual_stations": [
+            55,
+            63
+          ],
+          "start_s": 1641.16,
+          "return_s": 4316.739,
+          "communication_interval_count": 20,
+          "airborne_coverage_s": 2285.579,
+          "expected_airborne_s": 2285.579,
+          "station_service_envelopes": [
+            {
+              "station": 55,
+              "relay": "R002",
+              "drone": "R02",
+              "component": "RE02",
+              "service_window_s": [
+                2323.717,
+                3600.806
+              ],
+              "required_start_s": 2323.717976849689,
+              "required_end_s": 3534.693520385297,
+              "backhaul_margin_db": 9.644683757105582
+            },
+            {
+              "station": 63,
+              "relay": "R003",
+              "drone": "R01",
+              "component": "RE03",
+              "service_window_s": [
+                2976.717,
+                6144.651
+              ],
+              "required_start_s": 3534.693520385297,
+              "required_end_s": 4250.527258002756,
+              "backhaul_margin_db": 3.3246948262537614
+            }
+          ],
+          "relay_to_relay_switches": [
+            {
+              "left_row": 12,
+              "right_row": 13,
+              "absolute_time_s": 3534.693520385297,
+              "relative_time_s": 1893.5335203852967,
+              "position_m": [
+                2387.6719196811728,
+                5181.651302622434,
+                328.2866516113281
+              ],
+              "time_gap_s": 0.0,
+              "position_gap_m": 0.0,
+              "direct": {
+                "available": false,
+                "path_loss_db": 125.18414870817715,
+                "margin_db": -3.1841487081771476,
+                "blocked": true,
+                "distance_m": 5708.160733261016
+              },
+              "sides": [
+                {
+                  "side": "left",
+                  "station": 55,
+                  "relay": "R002",
+                  "active_at_switch": true,
+                  "access": {
+                    "available": true,
+                    "path_loss_db": 101.4892791910161,
+                    "margin_db": 14.510720808983905,
+                    "blocked": false,
+                    "distance_m": 1179.6487662846469
+                  },
+                  "backhaul": {
+                    "available": true,
+                    "path_loss_db": 116.35531624289442,
+                    "margin_db": 9.644683757105582,
+                    "blocked": false,
+                    "distance_m": 6532.126256600404
+                  }
+                },
+                {
+                  "side": "right",
+                  "station": 63,
+                  "relay": "R003",
+                  "active_at_switch": true,
+                  "access": {
+                    "available": true,
+                    "path_loss_db": 115.35772981075269,
+                    "margin_db": 0.6422701892473128,
+                    "blocked": false,
+                    "distance_m": 5823.381585655579
+                  },
+                  "backhaul": {
+                    "available": true,
+                    "path_loss_db": 122.67530517374624,
+                    "margin_db": 3.3246948262537614,
+                    "blocked": true,
+                    "distance_m": 4276.160691676263
+                  }
+                }
+              ],
+              "endpoint_rule": "Intervals left-closed/right-open; final interval includes final endpoint. At switch use right row; both continuous closed-segment proofs cover the endpoint. Direct G01 has priority."
+            }
+          ],
+          "interval_checks": [
+            {
+              "index": 0,
+              "station": -1,
+              "relay": null,
+              "absolute_start_s": 2031.16,
+              "absolute_end_s": 2121.6539412434895,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "G01",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 23.935643142447674
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 1,
+              "station": -1,
+              "relay": null,
+              "absolute_start_s": 2121.6539412434895,
+              "absolute_end_s": 2323.717976849689,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "G01",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 4.20590418808473
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 2,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 2323.717976849689,
+              "absolute_end_s": 2525.782012455888,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 2.9118448075001595
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 3,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 2525.782012455888,
+              "absolute_end_s": 2544.7747419480756,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 6.182612275017647
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 4,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 2544.7747419480756,
+              "absolute_end_s": 2544.775,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 6.182612275017647
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 5,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 2544.775,
+              "absolute_end_s": 2724.775,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 6.182612275017647
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 6,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 2724.775,
+              "absolute_end_s": 2733.2784423828125,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 6.182612275017647
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 7,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 2733.2784423828125,
+              "absolute_end_s": 3111.6308855082398,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 6.18715290795852
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 8,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 3111.6308855082398,
+              "absolute_end_s": 3174.715016367614,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 2.2122947847614967
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 9,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 3174.715016367614,
+              "absolute_end_s": 3174.7160000000003,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 2.2122947847614967
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 10,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 3174.7160000000003,
+              "absolute_end_s": 3354.7160000000003,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 2.2122947847614967
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 11,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 3354.7160000000003,
+              "absolute_end_s": 3390.9782172037762,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 2.2122947847614967
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 12,
+              "station": 55,
+              "relay": "R002",
+              "absolute_start_s": 3390.9782172037762,
+              "absolute_end_s": 3534.693520385297,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 2.327609666487625
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 13,
+              "station": 63,
+              "relay": "R003",
+              "absolute_start_s": 3534.693520385297,
+              "absolute_end_s": 3574.008181029828,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 0.6321386216392
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 14,
+              "station": 63,
+              "relay": "R003",
+              "absolute_start_s": 3574.008181029828,
+              "absolute_end_s": 3574.009,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 0.6321386216392
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 15,
+              "station": 63,
+              "relay": "R003",
+              "absolute_start_s": 3574.009,
+              "absolute_end_s": 3754.009,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 0.6321386216392
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 16,
+              "station": 63,
+              "relay": "R003",
+              "absolute_start_s": 3754.009,
+              "absolute_end_s": 3775.085304117839,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 0.6321386216392
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 17,
+              "station": 63,
+              "relay": "R003",
+              "absolute_start_s": 3775.085304117839,
+              "absolute_end_s": 4250.527258002756,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "R1",
+                    "proof": "DEM_triangle_LOS",
+                    "min_margin_db": 0.6389373131570295
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 18,
+              "station": -1,
+              "relay": null,
+              "absolute_start_s": 4250.527258002756,
+              "absolute_end_s": 4316.738822944162,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "G01",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 28.686789494765073
+                  }
+                ],
+                "unproven_count": 0
+              }
+            },
+            {
+              "index": 19,
+              "station": -1,
+              "relay": null,
+              "absolute_start_s": 4316.738822944162,
+              "absolute_end_s": 4316.7390000000005,
+              "service_window_covers_full_interval": true,
+              "continuous_certificate": {
+                "proved": true,
+                "segments": [
+                  {
+                    "t0": 0.0,
+                    "t1": 1.0,
+                    "source": "G01",
+                    "proof": "distance_even_if_blocked",
+                    "min_margin_db": 45.925175252488266
+                  }
+                ],
+                "unproven_count": 0
+              }
+            }
+          ]
+        }
+      ],
+      "existing_validation": {
+        "path": "E:\\sxjm\\D题\\results\\question3_agent_update\\validation_joint_neighborhood_2.json",
+        "sha256": "74fa25314b88ff3000fceb8ed5654134ed65dcb9749427bbb46e56ce744f5870",
+        "passed": true,
+        "error_count": 0,
+        "solution_hash_matches": true,
+        "communication_interval_count": 240,
+        "unproven_communication_interval_count": 0,
+        "minimum_proved_communication_margin_db": 0.07973598524506542
+      }
+    }
+  ],
+  "errors": [],
+  "wall_s": 0.2654325000003155,
+  "limitations": [
+    "No global optimality claim; finite station pairs and certificate-induced switching assignments.",
+    "All physical energy, box, battery and fleet checks are delegated to the separately saved complete validator reports; this review recomputes communication for every actual multistation sortie.",
+    "Geometry primitives are shared with the validator; this is a fresh recomputation and implementation review, not an independently implemented terrain/radio engine.",
+    "A pair key alone does not prove two stations were used: actual row station sets decide.",
+    "Endpoint link values are diagnostic witnesses accompanying whole-segment certificates, never substitutes for continuous proofs."
+  ],
+  "final_recommended_review": {
+    "passed": true,
+    "solution": "E:\\sxjm\\D题\\results\\question3_agent_update\\solution_recommended.json",
+    "solution_sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b",
+    "validation_sha256": "a661d9f495803115cf5714ea40dd64614d2d3cdef670d6a704619bf0ebfa1375",
+    "validation_passed": true,
+    "validation_solution_hash_matches": true,
+    "checks": 11884,
+    "error_count": 0,
+    "actual_multistation_count": 1,
+    "details": [
+      {
+        "sortie": "T008",
+        "key": "pair:58,52",
+        "actual_stations": [
+          52,
+          58
+        ],
+        "interval_count": 20,
+        "switches": [
+          {
+            "time_s": 3534.693520385297,
+            "position_m": [
+              2387.6719196811728,
+              5181.651302622434,
+              328.2866516113281
+            ],
+            "time_gap_s": 0.0,
+            "position_gap_m": 0.0,
+            "direct_margin_db": -3.1841487081771476,
+            "sides": [
+              {
+                "station": 52,
+                "station_id": "Lb4de9ea10b",
+                "relay": "R002",
+                "service_start_s": 2323.717,
+                "service_end_s": 3600.806,
+                "active_at_switch": true,
+                "access_margin_db": 14.510720808983905,
+                "backhaul_margin_db": 9.644683757105582
+              },
+              {
+                "station": 58,
+                "station_id": "Lc8e7c66768",
+                "relay": "R003",
+                "service_start_s": 2976.717,
+                "service_end_s": 6144.651,
+                "active_at_switch": true,
+                "access_margin_db": 0.6422701892473128,
+                "backhaul_margin_db": 3.3246948262537614
+              }
+            ]
+          }
+        ],
+        "interval_checks": [
+          {
+            "index": 0,
+            "station": -1,
+            "absolute_start_s": 2031.16,
+            "absolute_end_s": 2121.6539412434895,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "G01",
+                  "proof": "distance_even_if_blocked",
+                  "min_margin_db": 23.935643142447674
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 1,
+            "station": -1,
+            "absolute_start_s": 2121.6539412434895,
+            "absolute_end_s": 2323.717976849689,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "G01",
+                  "proof": "distance_even_if_blocked",
+                  "min_margin_db": 4.20590418808473
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 2,
+            "station": 52,
+            "absolute_start_s": 2323.717976849689,
+            "absolute_end_s": 2525.782012455888,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "DEM_triangle_LOS",
+                  "min_margin_db": 2.9118448075001595
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 3,
+            "station": 52,
+            "absolute_start_s": 2525.782012455888,
+            "absolute_end_s": 2544.7747419480756,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "DEM_triangle_LOS",
+                  "min_margin_db": 6.182612275017647
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 4,
+            "station": 52,
+            "absolute_start_s": 2544.7747419480756,
+            "absolute_end_s": 2544.775,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "DEM_triangle_LOS",
+                  "min_margin_db": 6.182612275017647
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 5,
+            "station": 52,
+            "absolute_start_s": 2544.775,
+            "absolute_end_s": 2724.775,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "DEM_triangle_LOS",
+                  "min_margin_db": 6.182612275017647
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 6,
+            "station": 52,
+            "absolute_start_s": 2724.775,
+            "absolute_end_s": 2733.2784423828125,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "DEM_triangle_LOS",
+                  "min_margin_db": 6.182612275017647
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 7,
+            "station": 52,
+            "absolute_start_s": 2733.2784423828125,
+            "absolute_end_s": 3111.6308855082398,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "DEM_triangle_LOS",
+                  "min_margin_db": 6.18715290795852
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 8,
+            "station": 52,
+            "absolute_start_s": 3111.6308855082398,
+            "absolute_end_s": 3174.715016367614,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "distance_even_if_blocked",
+                  "min_margin_db": 2.2122947847614967
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 9,
+            "station": 52,
+            "absolute_start_s": 3174.715016367614,
+            "absolute_end_s": 3174.7160000000003,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "distance_even_if_blocked",
+                  "min_margin_db": 2.2122947847614967
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 10,
+            "station": 52,
+            "absolute_start_s": 3174.7160000000003,
+            "absolute_end_s": 3354.7160000000003,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "distance_even_if_blocked",
+                  "min_margin_db": 2.2122947847614967
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 11,
+            "station": 52,
+            "absolute_start_s": 3354.7160000000003,
+            "absolute_end_s": 3390.9782172037762,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "distance_even_if_blocked",
+                  "min_margin_db": 2.2122947847614967
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 12,
+            "station": 52,
+            "absolute_start_s": 3390.9782172037762,
+            "absolute_end_s": 3534.693520385297,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "distance_even_if_blocked",
+                  "min_margin_db": 2.327609666487625
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 13,
+            "station": 58,
+            "absolute_start_s": 3534.693520385297,
+            "absolute_end_s": 3574.008181029828,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "DEM_triangle_LOS",
+                  "min_margin_db": 0.6321386216392
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 14,
+            "station": 58,
+            "absolute_start_s": 3574.008181029828,
+            "absolute_end_s": 3574.009,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "DEM_triangle_LOS",
+                  "min_margin_db": 0.6321386216392
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 15,
+            "station": 58,
+            "absolute_start_s": 3574.009,
+            "absolute_end_s": 3754.009,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "DEM_triangle_LOS",
+                  "min_margin_db": 0.6321386216392
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 16,
+            "station": 58,
+            "absolute_start_s": 3754.009,
+            "absolute_end_s": 3775.085304117839,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "DEM_triangle_LOS",
+                  "min_margin_db": 0.6321386216392
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 17,
+            "station": 58,
+            "absolute_start_s": 3775.085304117839,
+            "absolute_end_s": 4250.527258002756,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "R1",
+                  "proof": "DEM_triangle_LOS",
+                  "min_margin_db": 0.6389373131570295
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 18,
+            "station": -1,
+            "absolute_start_s": 4250.527258002756,
+            "absolute_end_s": 4316.738822944162,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "G01",
+                  "proof": "distance_even_if_blocked",
+                  "min_margin_db": 28.686789494765073
+                }
+              ],
+              "unproven_count": 0
+            }
+          },
+          {
+            "index": 19,
+            "station": -1,
+            "absolute_start_s": 4316.738822944162,
+            "absolute_end_s": 4316.7390000000005,
+            "actual_window_covers": true,
+            "certificate": {
+              "proved": true,
+              "segments": [
+                {
+                  "t0": 0.0,
+                  "t1": 1.0,
+                  "source": "G01",
+                  "proof": "distance_even_if_blocked",
+                  "min_margin_db": 45.925175252488266
+                }
+              ],
+              "unproven_count": 0
+            }
+          }
+        ]
+      }
+    ],
+    "station_pool_sha256": "939206a6afb6ff0aadde5c347fc81a6fed5d18d2cd8f01a035c21e38c7988093",
+    "station_positions": 65,
+    "old_to_final_station_indices": {
+      "55": 52,
+      "63": 58
+    },
+    "geometry_sha256": "a774b6d52feb8655670bcb333955116b26ed04aeb3d4b8681caab69190ac1a71",
+    "errors": []
+  }
+}

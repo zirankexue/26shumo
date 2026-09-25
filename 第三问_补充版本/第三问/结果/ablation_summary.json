@@ -1,0 +1,139 @@
+{
+  "experiment": "Single-station policy on the same 21 transport structures and 65 unique positions",
+  "source_seed": "E:\\sxjm\\D题\\results\\question3_agent_update\\solution_deduplicated_seed.json",
+  "source_seed_sha256": "15eeeec62a3b66b9fd5df6fb108bf4324338e38bf6cb8c455a50ada85c73e7dd",
+  "station_pool_sha256": "939206a6afb6ff0aadde5c347fc81a6fed5d18d2cd8f01a035c21e38c7988093",
+  "weighted_spec": {
+    "weights": {
+      "tardiness": 3.0,
+      "makespan": 1.5,
+      "energy": 1.0,
+      "sorties": 0.5
+    },
+    "integer_weights": {
+      "tardiness": 6,
+      "makespan": 3,
+      "energy": 2,
+      "sorties": 1
+    },
+    "alpha": {
+      "tardiness": 0.5,
+      "makespan": 0.25,
+      "energy": 0.16666666666666666,
+      "sorties": 0.08333333333333333
+    },
+    "lower": {
+      "tardiness": 0,
+      "makespan": 7528576,
+      "energy": 62634022492,
+      "sorties": 19
+    },
+    "upper": {
+      "tardiness": 429204104,
+      "makespan": 11453859,
+      "energy": 85864101380,
+      "sorties": 31
+    },
+    "span": {
+      "tardiness": 429204104,
+      "makespan": 3925283,
+      "energy": 23230078888,
+      "sorties": 12
+    },
+    "precision": 1000000,
+    "normalization_source": "Four archived lexicographic solutions, fixed before weighted search",
+    "score_quantization_absolute_error_bound": 1e-06
+  },
+  "seconds": 65,
+  "workers": 4,
+  "random_seed": 61,
+  "zero_lateness": true,
+  "transport_candidates": 21,
+  "station_positions": 65,
+  "max_relay_stations_per_sortie": 1,
+  "hint": null,
+  "objective_cutoff": null,
+  "hint_explanation": "No hint is supplied: the shared solver imposes a cutoff whenever a feasible hint is used, and the multi-station score is not a justified single-station cutoff.",
+  "multistation_seed_metrics": {
+    "boxes": 80,
+    "transport_sorties": 21,
+    "relay_sorties": 3,
+    "transport_energy_kwh": 64.09596908039461,
+    "relay_energy_kwh": 2.349304202173859,
+    "joint_finish_s": 6612.284,
+    "transport_finish_s": 6559.627,
+    "last_delivery_s": 6234.755,
+    "late_boxes": 0,
+    "weighted_delay_s": 0.0,
+    "weighted_mean_delivery_s": 3092.4122531380754,
+    "multi_stop_sorties": 6,
+    "total_energy_kwh": 66.44527328256846,
+    "score": 0.0037081055399544767
+  },
+  "multistation_seed_search": {
+    "label": "exact_box_label_symmetry",
+    "status": "FEASIBLE",
+    "seconds": 65.13317310000001,
+    "seed": 49,
+    "workers": 8,
+    "zero_lateness": true,
+    "route_pool_count": 21,
+    "station_pool_count": 72,
+    "integer_objective": 12774235,
+    "integer_bound": 12483016.0,
+    "model_build_s": 0.05023460000212765,
+    "method": "Earliest hard-deadline labels assigned to earliest strictly equivalent delivery slots",
+    "optimality_scope": "No global optimality claim; this postprocessing preserves the former objective."
+  },
+  "limits": [
+    "Same finite transport structures and station positions; no continuous-position or global routing optimality claim.",
+    "Transport departure times, box ranks, resource assignment and selected relay positions are reoptimized.",
+    "No multi-station cutoff is imposed on the single-station model.",
+    "The 65-second run is a bounded search; FEASIBLE does not establish an optimal single-station objective.",
+    "The comparator may benefit from an incumbent hint and earlier search; differences between feasible results alone do not isolate a proven causal benefit of handover."
+  ],
+  "single_station_search": {
+    "label": "single_station_ablation",
+    "status": "FEASIBLE",
+    "seconds": 65.1614382,
+    "seed": 61,
+    "workers": 4,
+    "zero_lateness": true,
+    "route_pool_count": 21,
+    "station_pool_count": 65,
+    "integer_objective": 12785075,
+    "integer_bound": 12455155.0,
+    "model_build_s": 9.757240499999867
+  },
+  "single_station_feasible": true,
+  "validation_passed": true,
+  "validation_check_count": 11877,
+  "validation_error_count": 0,
+  "single_station_metrics": {
+    "boxes": 80,
+    "transport_sorties": 21,
+    "relay_sorties": 3,
+    "transport_energy_kwh": 64.09596908039461,
+    "relay_energy_kwh": 2.4752111188405257,
+    "joint_finish_s": 6612.284,
+    "transport_finish_s": 6559.627,
+    "last_delivery_s": 6234.755,
+    "late_boxes": 0,
+    "weighted_delay_s": 0.0,
+    "weighted_mean_delivery_s": 3039.6943556485357,
+    "multi_stop_sorties": 6,
+    "total_energy_kwh": 66.57118019923513,
+    "score": 0.004611438079970373
+  },
+  "minimum_hard_deadline_slack_s": 212.06100000000015,
+  "integer_optimality_gap": 329920.0,
+  "single_minus_multistation_seed": {
+    "score": 0.0009033325400158963,
+    "joint_finish_s": 0.0,
+    "total_energy_kwh": 0.12590691666666487,
+    "relay_energy_kwh": 0.12590691666666665,
+    "relay_sorties": 0,
+    "late_boxes": 0
+  },
+  "solution_sha256": "942a66ac8bf643efa94af574ed70d8f316f5d7fecb5921c9ae76e804147944a4"
+}

@@ -1,0 +1,1264 @@
+{
+  "passed": true,
+  "changed_delivery_labels": 19,
+  "changes": [
+    {
+      "old_label_at_slot": "S001-WAT-03",
+      "new_label_at_slot": "S001-WAT-01",
+      "sortie": "T005",
+      "slot_s": 1038.273,
+      "old_hard": null,
+      "new_hard": 3600.0,
+      "equal_key": {
+        "service": "S001",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 3600.0,
+        "priority": 12
+      }
+    },
+    {
+      "old_label_at_slot": "S001-WAT-02",
+      "new_label_at_slot": "S001-WAT-03",
+      "sortie": "T005",
+      "slot_s": 1074.273,
+      "old_hard": null,
+      "new_hard": null,
+      "equal_key": {
+        "service": "S001",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 3600.0,
+        "priority": 12
+      }
+    },
+    {
+      "old_label_at_slot": "S001-WAT-06",
+      "new_label_at_slot": "S001-WAT-02",
+      "sortie": "T005",
+      "slot_s": 1110.273,
+      "old_hard": null,
+      "new_hard": null,
+      "equal_key": {
+        "service": "S001",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 3600.0,
+        "priority": 12
+      }
+    },
+    {
+      "old_label_at_slot": "S001-WAT-07",
+      "new_label_at_slot": "S001-WAT-06",
+      "sortie": "T005",
+      "slot_s": 1146.273,
+      "old_hard": null,
+      "new_hard": null,
+      "equal_key": {
+        "service": "S001",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 3600.0,
+        "priority": 12
+      }
+    },
+    {
+      "old_label_at_slot": "S001-WAT-04",
+      "new_label_at_slot": "S001-WAT-07",
+      "sortie": "T003",
+      "slot_s": 1164.273,
+      "old_hard": null,
+      "new_hard": null,
+      "equal_key": {
+        "service": "S001",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 3600.0,
+        "priority": 12
+      }
+    },
+    {
+      "old_label_at_slot": "S001-WAT-01",
+      "new_label_at_slot": "S001-WAT-04",
+      "sortie": "T005",
+      "slot_s": 1182.273,
+      "old_hard": 3600.0,
+      "new_hard": null,
+      "equal_key": {
+        "service": "S001",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 3600.0,
+        "priority": 12
+      }
+    },
+    {
+      "old_label_at_slot": "S002-WAT-02",
+      "new_label_at_slot": "S002-WAT-01",
+      "sortie": "T006",
+      "slot_s": 2831.509,
+      "old_hard": null,
+      "new_hard": 3600.0,
+      "equal_key": {
+        "service": "S002",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 3600.0,
+        "priority": 12
+      }
+    },
+    {
+      "old_label_at_slot": "S002-WAT-01",
+      "new_label_at_slot": "S002-WAT-02",
+      "sortie": "T006",
+      "slot_s": 2867.509,
+      "old_hard": 3600.0,
+      "new_hard": null,
+      "equal_key": {
+        "service": "S002",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 3600.0,
+        "priority": 12
+      }
+    },
+    {
+      "old_label_at_slot": "S003-WAT-04",
+      "new_label_at_slot": "S003-WAT-01",
+      "sortie": "T015",
+      "slot_s": 4722.666,
+      "old_hard": null,
+      "new_hard": 7200.0,
+      "equal_key": {
+        "service": "S003",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 7200.0,
+        "priority": 10
+      }
+    },
+    {
+      "old_label_at_slot": "S003-WAT-01",
+      "new_label_at_slot": "S003-WAT-04",
+      "sortie": "T016",
+      "slot_s": 5463.074,
+      "old_hard": 7200.0,
+      "new_hard": null,
+      "equal_key": {
+        "service": "S003",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 7200.0,
+        "priority": 10
+      }
+    },
+    {
+      "old_label_at_slot": "S004-WAT-02",
+      "new_label_at_slot": "S004-WAT-01",
+      "sortie": "T010",
+      "slot_s": 3095.674,
+      "old_hard": null,
+      "new_hard": 7200.0,
+      "equal_key": {
+        "service": "S004",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 7200.0,
+        "priority": 10
+      }
+    },
+    {
+      "old_label_at_slot": "S004-WAT-03",
+      "new_label_at_slot": "S004-WAT-02",
+      "sortie": "T010",
+      "slot_s": 3131.674,
+      "old_hard": null,
+      "new_hard": null,
+      "equal_key": {
+        "service": "S004",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 7200.0,
+        "priority": 10
+      }
+    },
+    {
+      "old_label_at_slot": "S004-WAT-01",
+      "new_label_at_slot": "S004-WAT-03",
+      "sortie": "T010",
+      "slot_s": 3203.674,
+      "old_hard": 7200.0,
+      "new_hard": null,
+      "equal_key": {
+        "service": "S004",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 7200.0,
+        "priority": 10
+      }
+    },
+    {
+      "old_label_at_slot": "S006-WAT-02",
+      "new_label_at_slot": "S006-WAT-01",
+      "sortie": "T001",
+      "slot_s": 905.502,
+      "old_hard": null,
+      "new_hard": 3600.0,
+      "equal_key": {
+        "service": "S006",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 3600.0,
+        "priority": 12
+      }
+    },
+    {
+      "old_label_at_slot": "S006-WAT-01",
+      "new_label_at_slot": "S006-WAT-02",
+      "sortie": "T007",
+      "slot_s": 2407.804,
+      "old_hard": 3600.0,
+      "new_hard": null,
+      "equal_key": {
+        "service": "S006",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 3600.0,
+        "priority": 12
+      }
+    },
+    {
+      "old_label_at_slot": "S007-WAT-02",
+      "new_label_at_slot": "S007-WAT-01",
+      "sortie": "T011",
+      "slot_s": 3387.939,
+      "old_hard": null,
+      "new_hard": 3600.0,
+      "equal_key": {
+        "service": "S007",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 3600.0,
+        "priority": 12
+      }
+    },
+    {
+      "old_label_at_slot": "S007-WAT-01",
+      "new_label_at_slot": "S007-WAT-02",
+      "sortie": "T013",
+      "slot_s": 3600.0,
+      "old_hard": 3600.0,
+      "new_hard": null,
+      "equal_key": {
+        "service": "S007",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 3600.0,
+        "priority": 12
+      }
+    },
+    {
+      "old_label_at_slot": "S008-WAT-02",
+      "new_label_at_slot": "S008-WAT-01",
+      "sortie": "T014",
+      "slot_s": 4243.281,
+      "old_hard": null,
+      "new_hard": 7200.0,
+      "equal_key": {
+        "service": "S008",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 7200.0,
+        "priority": 10
+      }
+    },
+    {
+      "old_label_at_slot": "S008-WAT-01",
+      "new_label_at_slot": "S008-WAT-02",
+      "sortie": "T017",
+      "slot_s": 5023.725,
+      "old_hard": 7200.0,
+      "new_hard": null,
+      "equal_key": {
+        "service": "S008",
+        "category": "饮用水",
+        "mass_kg": 14,
+        "volume_m3": 0.027,
+        "expected_s": 7200.0,
+        "priority": 10
+      }
+    }
+  ],
+  "before_min_hard_slack_s": 0.0,
+  "after_min_hard_slack_s": 212.06100000000015,
+  "unchanged_objective_vector": {
+    "tardiness": 0,
+    "makespan": 6612284,
+    "energy": 66445273284,
+    "sorties": 24
+  },
+  "unchanged_score": 0.0037081055399544767,
+  "before_tight_hard_deadlines": [
+    {
+      "box": "S007-WAT-01",
+      "sortie": "T013",
+      "time_s": 3600.0,
+      "deadline_s": 3600.0,
+      "slack_s": 0.0
+    },
+    {
+      "box": "S007-MED-01",
+      "sortie": "T011",
+      "time_s": 3357.939,
+      "deadline_s": 3600.0,
+      "slack_s": 242.06100000000015
+    },
+    {
+      "box": "S012-WAT-01",
+      "sortie": "T012",
+      "time_s": 3111.093,
+      "deadline_s": 3600.0,
+      "slack_s": 488.90700000000015
+    },
+    {
+      "box": "S012-MED-01",
+      "sortie": "T012",
+      "time_s": 3081.093,
+      "deadline_s": 3600.0,
+      "slack_s": 518.9070000000002
+    },
+    {
+      "box": "S002-MED-01",
+      "sortie": "T006",
+      "time_s": 2903.509,
+      "deadline_s": 3600.0,
+      "slack_s": 696.491
+    },
+    {
+      "box": "S002-WAT-01",
+      "sortie": "T006",
+      "time_s": 2867.509,
+      "deadline_s": 3600.0,
+      "slack_s": 732.491
+    },
+    {
+      "box": "S006-MED-01",
+      "sortie": "T011",
+      "time_s": 2780.386,
+      "deadline_s": 3600.0,
+      "slack_s": 819.614
+    },
+    {
+      "box": "S013-MED-01",
+      "sortie": "T008",
+      "time_s": 2724.775,
+      "deadline_s": 3600.0,
+      "slack_s": 875.2249999999999
+    }
+  ],
+  "after_tight_hard_deadlines": [
+    {
+      "box": "S007-WAT-01",
+      "sortie": "T011",
+      "time_s": 3387.939,
+      "deadline_s": 3600.0,
+      "slack_s": 212.06100000000015
+    },
+    {
+      "box": "S007-MED-01",
+      "sortie": "T011",
+      "time_s": 3357.939,
+      "deadline_s": 3600.0,
+      "slack_s": 242.06100000000015
+    },
+    {
+      "box": "S012-WAT-01",
+      "sortie": "T012",
+      "time_s": 3111.093,
+      "deadline_s": 3600.0,
+      "slack_s": 488.90700000000015
+    },
+    {
+      "box": "S012-MED-01",
+      "sortie": "T012",
+      "time_s": 3081.093,
+      "deadline_s": 3600.0,
+      "slack_s": 518.9070000000002
+    },
+    {
+      "box": "S002-MED-01",
+      "sortie": "T006",
+      "time_s": 2903.509,
+      "deadline_s": 3600.0,
+      "slack_s": 696.491
+    },
+    {
+      "box": "S002-WAT-01",
+      "sortie": "T006",
+      "time_s": 2831.509,
+      "deadline_s": 3600.0,
+      "slack_s": 768.491
+    },
+    {
+      "box": "S006-MED-01",
+      "sortie": "T011",
+      "time_s": 2780.386,
+      "deadline_s": 3600.0,
+      "slack_s": 819.614
+    },
+    {
+      "box": "S013-MED-01",
+      "sortie": "T008",
+      "time_s": 2724.775,
+      "deadline_s": 3600.0,
+      "slack_s": 875.2249999999999
+    }
+  ],
+  "minimum_all_expected_slack_s": 0.0,
+  "invariants": [
+    "Same service/category/mass/volume/soft deadline/priority only.",
+    "Same exact physical trajectories, loads, time slots, resource allocation and communication certificates.",
+    "Same original weighted objective; no replacement of the original objective by a robustness score.",
+    "Improved hard-label slack is not an improvement of every soft expected-deadline slack."
+  ],
+  "bottlenecks_before": {
+    "relay_groups": [
+      {
+        "relay": "R001",
+        "station_id": "H0720",
+        "drone": "R01",
+        "service_start_s": 725.4,
+        "service_end_s": 1503.399,
+        "return_s": 1846.524,
+        "terminal_transport": {
+          "sortie": "T002",
+          "services": [
+            "S014"
+          ],
+          "absolute_first_s": 725.4003392298291,
+          "absolute_last_s": 1503.3980058964958,
+          "return_s": 1869.749
+        },
+        "uses": [
+          {
+            "sortie": "T004",
+            "services": [
+              "S010"
+            ],
+            "absolute_first_s": 731.8792371945997,
+            "absolute_last_s": 1192.99575365254,
+            "return_s": 1555.405
+          },
+          {
+            "sortie": "T002",
+            "services": [
+              "S014"
+            ],
+            "absolute_first_s": 725.4003392298291,
+            "absolute_last_s": 1503.3980058964958,
+            "return_s": 1869.749
+          }
+        ],
+        "end_slack_s": 0.0009941035041265422
+      },
+      {
+        "relay": "R002",
+        "station_id": "Lb4de9ea10b",
+        "drone": "R02",
+        "service_start_s": 2323.717,
+        "service_end_s": 3600.806,
+        "return_s": 4178.986,
+        "terminal_transport": {
+          "sortie": "T010",
+          "services": [
+            "S004"
+          ],
+          "absolute_first_s": 2537.547721380123,
+          "absolute_last_s": 3600.805721380123,
+          "return_s": 3993.232
+        },
+        "uses": [
+          {
+            "sortie": "T009",
+            "services": [
+              "S013"
+            ],
+            "absolute_first_s": 2323.717976849689,
+            "absolute_last_s": 2972.6663101830222,
+            "return_s": 3283.324
+          },
+          {
+            "sortie": "T006",
+            "services": [
+              "S002"
+            ],
+            "absolute_first_s": 2323.729828798619,
+            "absolute_last_s": 3330.3418287986187,
+            "return_s": 3668.021
+          },
+          {
+            "sortie": "T012",
+            "services": [
+              "S012"
+            ],
+            "absolute_first_s": 2601.320670374862,
+            "absolute_last_s": 3431.964670374862,
+            "return_s": 3792.577
+          },
+          {
+            "sortie": "T008",
+            "services": [
+              "S013",
+              "S002",
+              "S009"
+            ],
+            "absolute_first_s": 2323.717976849689,
+            "absolute_last_s": 3534.693520385297,
+            "return_s": 4316.739
+          },
+          {
+            "sortie": "T010",
+            "services": [
+              "S004"
+            ],
+            "absolute_first_s": 2537.547721380123,
+            "absolute_last_s": 3600.805721380123,
+            "return_s": 3993.232
+          }
+        ],
+        "end_slack_s": 0.00027861987700816826
+      },
+      {
+        "relay": "R003",
+        "station_id": "Lc8e7c66768",
+        "drone": "R01",
+        "service_start_s": 2976.717,
+        "service_end_s": 6144.651,
+        "return_s": 6612.284,
+        "terminal_transport": {
+          "sortie": "T016",
+          "services": [
+            "S007",
+            "S003"
+          ],
+          "absolute_first_s": 4331.730270019531,
+          "absolute_last_s": 6144.650786457833,
+          "return_s": 6361.703
+        },
+        "uses": [
+          {
+            "sortie": "T011",
+            "services": [
+              "S006",
+              "S007"
+            ],
+            "absolute_first_s": 2976.717021723958,
+            "absolute_last_s": 3820.32317292636,
+            "return_s": 3974.033
+          },
+          {
+            "sortie": "T013",
+            "services": [
+              "S007"
+            ],
+            "absolute_first_s": 2976.7170583496095,
+            "absolute_last_s": 4062.38417292636,
+            "return_s": 4216.094
+          },
+          {
+            "sortie": "T008",
+            "services": [
+              "S013",
+              "S002",
+              "S009"
+            ],
+            "absolute_first_s": 3534.693520385297,
+            "absolute_last_s": 4250.527258002756,
+            "return_s": 4316.739
+          },
+          {
+            "sortie": "T014",
+            "services": [
+              "S008"
+            ],
+            "absolute_first_s": 3453.8694440917966,
+            "absolute_last_s": 4815.891474011029,
+            "return_s": 4913.976
+          },
+          {
+            "sortie": "T017",
+            "services": [
+              "S008"
+            ],
+            "absolute_first_s": 4264.3134440917975,
+            "absolute_last_s": 5656.335474011028,
+            "return_s": 5754.42
+          },
+          {
+            "sortie": "T019",
+            "services": [
+              "S005",
+              "S011"
+            ],
+            "absolute_first_s": 4612.71635546875,
+            "absolute_last_s": 5674.332474652876,
+            "return_s": 6298.4
+          },
+          {
+            "sortie": "T015",
+            "services": [
+              "S003",
+              "S015"
+            ],
+            "absolute_first_s": 3818.0253793945312,
+            "absolute_last_s": 5709.152826142066,
+            "return_s": 5886.793
+          },
+          {
+            "sortie": "T018",
+            "services": [
+              "S015"
+            ],
+            "absolute_first_s": 4482.066085123698,
+            "absolute_last_s": 5765.046826142066,
+            "return_s": 5942.687
+          },
+          {
+            "sortie": "T020",
+            "services": [
+              "S009"
+            ],
+            "absolute_first_s": 4783.654304117838,
+            "absolute_last_s": 5990.906258002757,
+            "return_s": 6057.118
+          },
+          {
+            "sortie": "T016",
+            "services": [
+              "S007",
+              "S003"
+            ],
+            "absolute_first_s": 4331.730270019531,
+            "absolute_last_s": 6144.650786457833,
+            "return_s": 6361.703
+          }
+        ],
+        "end_slack_s": 0.00021354216642066604
+      }
+    ],
+    "tight_hard_deadlines": [
+      {
+        "box": "S007-WAT-01",
+        "sortie": "T013",
+        "time_s": 3600.0,
+        "deadline_s": 3600.0,
+        "slack_s": 0.0
+      },
+      {
+        "box": "S007-MED-01",
+        "sortie": "T011",
+        "time_s": 3357.939,
+        "deadline_s": 3600.0,
+        "slack_s": 242.06100000000015
+      },
+      {
+        "box": "S012-WAT-01",
+        "sortie": "T012",
+        "time_s": 3111.093,
+        "deadline_s": 3600.0,
+        "slack_s": 488.90700000000015
+      },
+      {
+        "box": "S012-MED-01",
+        "sortie": "T012",
+        "time_s": 3081.093,
+        "deadline_s": 3600.0,
+        "slack_s": 518.9070000000002
+      },
+      {
+        "box": "S002-MED-01",
+        "sortie": "T006",
+        "time_s": 2903.509,
+        "deadline_s": 3600.0,
+        "slack_s": 696.491
+      },
+      {
+        "box": "S002-WAT-01",
+        "sortie": "T006",
+        "time_s": 2867.509,
+        "deadline_s": 3600.0,
+        "slack_s": 732.491
+      },
+      {
+        "box": "S006-MED-01",
+        "sortie": "T011",
+        "time_s": 2780.386,
+        "deadline_s": 3600.0,
+        "slack_s": 819.614
+      },
+      {
+        "box": "S013-MED-01",
+        "sortie": "T008",
+        "time_s": 2724.775,
+        "deadline_s": 3600.0,
+        "slack_s": 875.2249999999999
+      }
+    ],
+    "latest_transport": {
+      "id": "T021",
+      "order": [
+        "S011",
+        "S006"
+      ],
+      "return_s": 6559.627,
+      "drone": "U06",
+      "battery": "BAT-B-03"
+    },
+    "latest_relay": {
+      "relay": "R003",
+      "station_id": "Lc8e7c66768",
+      "drone": "R01",
+      "service_start_s": 2976.717,
+      "service_end_s": 6144.651,
+      "return_s": 6612.284,
+      "terminal_transport": {
+        "sortie": "T016",
+        "services": [
+          "S007",
+          "S003"
+        ],
+        "absolute_first_s": 4331.730270019531,
+        "absolute_last_s": 6144.650786457833,
+        "return_s": 6361.703
+      },
+      "uses": [
+        {
+          "sortie": "T011",
+          "services": [
+            "S006",
+            "S007"
+          ],
+          "absolute_first_s": 2976.717021723958,
+          "absolute_last_s": 3820.32317292636,
+          "return_s": 3974.033
+        },
+        {
+          "sortie": "T013",
+          "services": [
+            "S007"
+          ],
+          "absolute_first_s": 2976.7170583496095,
+          "absolute_last_s": 4062.38417292636,
+          "return_s": 4216.094
+        },
+        {
+          "sortie": "T008",
+          "services": [
+            "S013",
+            "S002",
+            "S009"
+          ],
+          "absolute_first_s": 3534.693520385297,
+          "absolute_last_s": 4250.527258002756,
+          "return_s": 4316.739
+        },
+        {
+          "sortie": "T014",
+          "services": [
+            "S008"
+          ],
+          "absolute_first_s": 3453.8694440917966,
+          "absolute_last_s": 4815.891474011029,
+          "return_s": 4913.976
+        },
+        {
+          "sortie": "T017",
+          "services": [
+            "S008"
+          ],
+          "absolute_first_s": 4264.3134440917975,
+          "absolute_last_s": 5656.335474011028,
+          "return_s": 5754.42
+        },
+        {
+          "sortie": "T019",
+          "services": [
+            "S005",
+            "S011"
+          ],
+          "absolute_first_s": 4612.71635546875,
+          "absolute_last_s": 5674.332474652876,
+          "return_s": 6298.4
+        },
+        {
+          "sortie": "T015",
+          "services": [
+            "S003",
+            "S015"
+          ],
+          "absolute_first_s": 3818.0253793945312,
+          "absolute_last_s": 5709.152826142066,
+          "return_s": 5886.793
+        },
+        {
+          "sortie": "T018",
+          "services": [
+            "S015"
+          ],
+          "absolute_first_s": 4482.066085123698,
+          "absolute_last_s": 5765.046826142066,
+          "return_s": 5942.687
+        },
+        {
+          "sortie": "T020",
+          "services": [
+            "S009"
+          ],
+          "absolute_first_s": 4783.654304117838,
+          "absolute_last_s": 5990.906258002757,
+          "return_s": 6057.118
+        },
+        {
+          "sortie": "T016",
+          "services": [
+            "S007",
+            "S003"
+          ],
+          "absolute_first_s": 4331.730270019531,
+          "absolute_last_s": 6144.650786457833,
+          "return_s": 6361.703
+        }
+      ],
+      "end_slack_s": 0.00021354216642066604
+    }
+  },
+  "bottlenecks_after": {
+    "relay_groups": [
+      {
+        "relay": "R001",
+        "station_id": "H0720",
+        "drone": "R01",
+        "service_start_s": 725.4,
+        "service_end_s": 1503.399,
+        "return_s": 1846.524,
+        "terminal_transport": {
+          "sortie": "T002",
+          "services": [
+            "S014"
+          ],
+          "absolute_first_s": 725.4003392298291,
+          "absolute_last_s": 1503.3980058964958,
+          "return_s": 1869.749
+        },
+        "uses": [
+          {
+            "sortie": "T004",
+            "services": [
+              "S010"
+            ],
+            "absolute_first_s": 731.8792371945997,
+            "absolute_last_s": 1192.99575365254,
+            "return_s": 1555.405
+          },
+          {
+            "sortie": "T002",
+            "services": [
+              "S014"
+            ],
+            "absolute_first_s": 725.4003392298291,
+            "absolute_last_s": 1503.3980058964958,
+            "return_s": 1869.749
+          }
+        ],
+        "end_slack_s": 0.0009941035041265422
+      },
+      {
+        "relay": "R002",
+        "station_id": "Lb4de9ea10b",
+        "drone": "R02",
+        "service_start_s": 2323.717,
+        "service_end_s": 3600.806,
+        "return_s": 4178.986,
+        "terminal_transport": {
+          "sortie": "T010",
+          "services": [
+            "S004"
+          ],
+          "absolute_first_s": 2537.547721380123,
+          "absolute_last_s": 3600.805721380123,
+          "return_s": 3993.232
+        },
+        "uses": [
+          {
+            "sortie": "T009",
+            "services": [
+              "S013"
+            ],
+            "absolute_first_s": 2323.717976849689,
+            "absolute_last_s": 2972.6663101830222,
+            "return_s": 3283.324
+          },
+          {
+            "sortie": "T006",
+            "services": [
+              "S002"
+            ],
+            "absolute_first_s": 2323.729828798619,
+            "absolute_last_s": 3330.3418287986187,
+            "return_s": 3668.021
+          },
+          {
+            "sortie": "T012",
+            "services": [
+              "S012"
+            ],
+            "absolute_first_s": 2601.320670374862,
+            "absolute_last_s": 3431.964670374862,
+            "return_s": 3792.577
+          },
+          {
+            "sortie": "T008",
+            "services": [
+              "S013",
+              "S002",
+              "S009"
+            ],
+            "absolute_first_s": 2323.717976849689,
+            "absolute_last_s": 3534.693520385297,
+            "return_s": 4316.739
+          },
+          {
+            "sortie": "T010",
+            "services": [
+              "S004"
+            ],
+            "absolute_first_s": 2537.547721380123,
+            "absolute_last_s": 3600.805721380123,
+            "return_s": 3993.232
+          }
+        ],
+        "end_slack_s": 0.00027861987700816826
+      },
+      {
+        "relay": "R003",
+        "station_id": "Lc8e7c66768",
+        "drone": "R01",
+        "service_start_s": 2976.717,
+        "service_end_s": 6144.651,
+        "return_s": 6612.284,
+        "terminal_transport": {
+          "sortie": "T016",
+          "services": [
+            "S007",
+            "S003"
+          ],
+          "absolute_first_s": 4331.730270019531,
+          "absolute_last_s": 6144.650786457833,
+          "return_s": 6361.703
+        },
+        "uses": [
+          {
+            "sortie": "T011",
+            "services": [
+              "S006",
+              "S007"
+            ],
+            "absolute_first_s": 2976.717021723958,
+            "absolute_last_s": 3820.32317292636,
+            "return_s": 3974.033
+          },
+          {
+            "sortie": "T013",
+            "services": [
+              "S007"
+            ],
+            "absolute_first_s": 2976.7170583496095,
+            "absolute_last_s": 4062.38417292636,
+            "return_s": 4216.094
+          },
+          {
+            "sortie": "T008",
+            "services": [
+              "S013",
+              "S002",
+              "S009"
+            ],
+            "absolute_first_s": 3534.693520385297,
+            "absolute_last_s": 4250.527258002756,
+            "return_s": 4316.739
+          },
+          {
+            "sortie": "T014",
+            "services": [
+              "S008"
+            ],
+            "absolute_first_s": 3453.8694440917966,
+            "absolute_last_s": 4815.891474011029,
+            "return_s": 4913.976
+          },
+          {
+            "sortie": "T017",
+            "services": [
+              "S008"
+            ],
+            "absolute_first_s": 4264.3134440917975,
+            "absolute_last_s": 5656.335474011028,
+            "return_s": 5754.42
+          },
+          {
+            "sortie": "T019",
+            "services": [
+              "S005",
+              "S011"
+            ],
+            "absolute_first_s": 4612.71635546875,
+            "absolute_last_s": 5674.332474652876,
+            "return_s": 6298.4
+          },
+          {
+            "sortie": "T015",
+            "services": [
+              "S003",
+              "S015"
+            ],
+            "absolute_first_s": 3818.0253793945312,
+            "absolute_last_s": 5709.152826142066,
+            "return_s": 5886.793
+          },
+          {
+            "sortie": "T018",
+            "services": [
+              "S015"
+            ],
+            "absolute_first_s": 4482.066085123698,
+            "absolute_last_s": 5765.046826142066,
+            "return_s": 5942.687
+          },
+          {
+            "sortie": "T020",
+            "services": [
+              "S009"
+            ],
+            "absolute_first_s": 4783.654304117838,
+            "absolute_last_s": 5990.906258002757,
+            "return_s": 6057.118
+          },
+          {
+            "sortie": "T016",
+            "services": [
+              "S007",
+              "S003"
+            ],
+            "absolute_first_s": 4331.730270019531,
+            "absolute_last_s": 6144.650786457833,
+            "return_s": 6361.703
+          }
+        ],
+        "end_slack_s": 0.00021354216642066604
+      }
+    ],
+    "tight_hard_deadlines": [
+      {
+        "box": "S007-WAT-01",
+        "sortie": "T011",
+        "time_s": 3387.939,
+        "deadline_s": 3600.0,
+        "slack_s": 212.06100000000015
+      },
+      {
+        "box": "S007-MED-01",
+        "sortie": "T011",
+        "time_s": 3357.939,
+        "deadline_s": 3600.0,
+        "slack_s": 242.06100000000015
+      },
+      {
+        "box": "S012-WAT-01",
+        "sortie": "T012",
+        "time_s": 3111.093,
+        "deadline_s": 3600.0,
+        "slack_s": 488.90700000000015
+      },
+      {
+        "box": "S012-MED-01",
+        "sortie": "T012",
+        "time_s": 3081.093,
+        "deadline_s": 3600.0,
+        "slack_s": 518.9070000000002
+      },
+      {
+        "box": "S002-MED-01",
+        "sortie": "T006",
+        "time_s": 2903.509,
+        "deadline_s": 3600.0,
+        "slack_s": 696.491
+      },
+      {
+        "box": "S002-WAT-01",
+        "sortie": "T006",
+        "time_s": 2831.509,
+        "deadline_s": 3600.0,
+        "slack_s": 768.491
+      },
+      {
+        "box": "S006-MED-01",
+        "sortie": "T011",
+        "time_s": 2780.386,
+        "deadline_s": 3600.0,
+        "slack_s": 819.614
+      },
+      {
+        "box": "S013-MED-01",
+        "sortie": "T008",
+        "time_s": 2724.775,
+        "deadline_s": 3600.0,
+        "slack_s": 875.2249999999999
+      }
+    ],
+    "latest_transport": {
+      "id": "T021",
+      "order": [
+        "S011",
+        "S006"
+      ],
+      "return_s": 6559.627,
+      "drone": "U06",
+      "battery": "BAT-B-03"
+    },
+    "latest_relay": {
+      "relay": "R003",
+      "station_id": "Lc8e7c66768",
+      "drone": "R01",
+      "service_start_s": 2976.717,
+      "service_end_s": 6144.651,
+      "return_s": 6612.284,
+      "terminal_transport": {
+        "sortie": "T016",
+        "services": [
+          "S007",
+          "S003"
+        ],
+        "absolute_first_s": 4331.730270019531,
+        "absolute_last_s": 6144.650786457833,
+        "return_s": 6361.703
+      },
+      "uses": [
+        {
+          "sortie": "T011",
+          "services": [
+            "S006",
+            "S007"
+          ],
+          "absolute_first_s": 2976.717021723958,
+          "absolute_last_s": 3820.32317292636,
+          "return_s": 3974.033
+        },
+        {
+          "sortie": "T013",
+          "services": [
+            "S007"
+          ],
+          "absolute_first_s": 2976.7170583496095,
+          "absolute_last_s": 4062.38417292636,
+          "return_s": 4216.094
+        },
+        {
+          "sortie": "T008",
+          "services": [
+            "S013",
+            "S002",
+            "S009"
+          ],
+          "absolute_first_s": 3534.693520385297,
+          "absolute_last_s": 4250.527258002756,
+          "return_s": 4316.739
+        },
+        {
+          "sortie": "T014",
+          "services": [
+            "S008"
+          ],
+          "absolute_first_s": 3453.8694440917966,
+          "absolute_last_s": 4815.891474011029,
+          "return_s": 4913.976
+        },
+        {
+          "sortie": "T017",
+          "services": [
+            "S008"
+          ],
+          "absolute_first_s": 4264.3134440917975,
+          "absolute_last_s": 5656.335474011028,
+          "return_s": 5754.42
+        },
+        {
+          "sortie": "T019",
+          "services": [
+            "S005",
+            "S011"
+          ],
+          "absolute_first_s": 4612.71635546875,
+          "absolute_last_s": 5674.332474652876,
+          "return_s": 6298.4
+        },
+        {
+          "sortie": "T015",
+          "services": [
+            "S003",
+            "S015"
+          ],
+          "absolute_first_s": 3818.0253793945312,
+          "absolute_last_s": 5709.152826142066,
+          "return_s": 5886.793
+        },
+        {
+          "sortie": "T018",
+          "services": [
+            "S015"
+          ],
+          "absolute_first_s": 4482.066085123698,
+          "absolute_last_s": 5765.046826142066,
+          "return_s": 5942.687
+        },
+        {
+          "sortie": "T020",
+          "services": [
+            "S009"
+          ],
+          "absolute_first_s": 4783.654304117838,
+          "absolute_last_s": 5990.906258002757,
+          "return_s": 6057.118
+        },
+        {
+          "sortie": "T016",
+          "services": [
+            "S007",
+            "S003"
+          ],
+          "absolute_first_s": 4331.730270019531,
+          "absolute_last_s": 6144.650786457833,
+          "return_s": 6361.703
+        }
+      ],
+      "end_slack_s": 0.00021354216642066604
+    }
+  }
+}

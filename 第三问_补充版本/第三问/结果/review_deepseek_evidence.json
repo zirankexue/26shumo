@@ -1,0 +1,713 @@
+{
+  "audit_time_local": "2026-09-24T21:31:57",
+  "mode": "read-only source and saved-output review; did not import or run legacy solver",
+  "rules": {
+    "agents_read": true,
+    "paper_config_read": true,
+    "scope": "audit in current project; no legacy manuscript writing, compilation or source modifications"
+  },
+  "sources": {
+    "q3.py": {
+      "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q3.py",
+      "sha256": "52d717363aeef1a82d12f6a5aeb354334ceb0750be600c6517c096d6569f0091",
+      "size": 28698
+    },
+    "q2.py": {
+      "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q2.py",
+      "sha256": "71b278b0a2b8aae41a27bac0b631d3c2098872aa893fb2787eb386c27bf861a5",
+      "size": 31302
+    },
+    "q2core.py": {
+      "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q2core.py",
+      "sha256": "aedada219e2989d26ba371f46a6b3666008f0910e9d1e02d3b6ff81e9cec63ad",
+      "size": 11089
+    },
+    "comm.py": {
+      "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\comm.py",
+      "sha256": "e5186c781fa40c9672838e0af04f25bdf0fc5497bee65abd1f33a2ad47b7a9f0",
+      "size": 6208
+    },
+    "common.py": {
+      "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\common.py",
+      "sha256": "acb9e5b7e8aff8ed8bdd58071efba40184244bc286a08234dee2fe8dd52f0052",
+      "size": 29461
+    },
+    "notebook.ipynb": {
+      "path": "D:\\Desktop\\Agent\\Deepseek\\20260923-024623-73d893dd\\notebook.ipynb",
+      "sha256": "0ddcf1e2f293e3e3ba2b0dd08570e312927ae3c0e9cc9dabb41ec0b98b72f5c7",
+      "size": 580608
+    },
+    "AGENTS.md": {
+      "path": "D:\\Desktop\\Agent\\Deepseek版本二\\AGENTS.md",
+      "sha256": "1ec0fe1d11ce3a9d05b65519bfa6f59fd5483b7650e0deb73cb31c3f07915543",
+      "size": 1281
+    },
+    "paper_config.json": {
+      "path": "D:\\Desktop\\Agent\\Deepseek版本二\\.mathmodel\\paper\\config.json",
+      "sha256": "0f7d61c736b894fa5c0b8bc7bda7ab88eadf9f88cbb06bad07cadf0ddac4877a",
+      "size": 292
+    },
+    "archived_q3_solution.json": {
+      "path": "D:\\Desktop\\Agent\\Deepseek版本二\\output\\q3_solution.json",
+      "sha256": "9c29f1ca85415832694385d91827568714560906bcba4acd1d9ed0a36e7d1554",
+      "size": 4510
+    },
+    "archived_q3_boxes.csv": {
+      "path": "D:\\Desktop\\Agent\\Deepseek版本二\\output\\q3_逐箱送达时刻.csv",
+      "sha256": "30d0e7d71fda9ac341ea7dc4f513ead19dfd5bafaa4bd7ae547a0c6a1e11cbc5",
+      "size": 5053
+    },
+    "archived_q3_routes.csv": {
+      "path": "D:\\Desktop\\Agent\\Deepseek版本二\\output\\q3_运输路线与架次.csv",
+      "sha256": "e01db07af4627d0dc0f0858392f981e57d97d8ba333a9c903dfc460f2235b519",
+      "size": 2110
+    },
+    "current_solver.py": {
+      "path": "E:\\sxjm\\D题\\code\\solve_q3_senior.py",
+      "sha256": "969868c54ae91c25058c0f6dead11a45f21452a12031af3d2e22e7f62b313c89",
+      "size": 26104
+    },
+    "current_recommended.json": {
+      "path": "E:\\sxjm\\D题\\results\\question3_from_senior\\solution_recommended.json",
+      "sha256": "35e203d5426de54543065ac5051a8956e6450b1092e96bb9ed1853fb3b653bf2",
+      "size": 276112
+    },
+    "box_workbook.xlsx": {
+      "path": "E:\\sxjm\\D题\\数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx",
+      "sha256": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+      "size": 17474
+    }
+  },
+  "findings": [
+    {
+      "id": "D01",
+      "claim": "Joint ALNS really changes transport structures, but repair uses transportation proxy rather than full synchronized CP objective",
+      "severity": "reuse_framework",
+      "refs": [
+        {
+          "source": "q3.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q3.py",
+          "line_start": 458,
+          "line_end": 476,
+          "excerpt": "    # ---- 联合调度 ALNS ------------------------------------------------\n    W = dict(time=1.0, span=1.0, energy=0.35, n=0.35)\n    W_COMM = 2.0e-1\n    W_RELAY = 0.6\n\n    def cost_fn(sol):\n        return joint_cost(sc, sol, ctx, boxes, fleet, W, ref, U, W_COMM, W_RELAY)\n\n    best, best_mt = None, None\n    for seed in [1, 7, 23]:\n        sol, mt = q2.alns(sc, boxes, ctx, fleet, W, ref, iters=6000, seed=seed,\n                          cost_fn=cost_fn)\n        if sol is None:\n            continue\n        key = (mt[\"uncovered\"], mt[\"viol_med\"] + mt[\"viol_first\"],\n               mt[\"joint_span\"])\n        if best is None or key < (best_mt[\"uncovered\"],\n                                  best_mt[\"viol_med\"] + best_mt[\"viol_first\"],\n                                  best_mt[\"joint_span\"]):"
+        },
+        {
+          "source": "q2.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q2.py",
+          "line_start": 445,
+          "line_end": 505,
+          "excerpt": "def alns(sc, boxes, ctx, fleet, w, ref, iters=4000, seed=1, log=None,\n         cost_fn=None):\n    \"\"\"ALNS 主循环。cost_fn(sol) -> (cost, metrics)，默认使用问题二的运输目标。\"\"\"\n    rnd = random.Random(seed)\n    global RNG\n    RNG = rnd\n    _cost = cost_fn or (lambda s: cost_of(sc, s, ctx, boxes, w, ref, fleet))\n\n    sol = initial_solution(sc, ctx, ref, w)\n    if sol is None:\n        return None, None\n    sol = normalize(sol)\n    # 初始解按“C 型优先”装批，机型分布偏重载机；先做一轮换型再平衡\n    sol, _ = local_rebalance(sc, fleet, sol, ctx, boxes, ref, w,\n                             max_try=len(sol), cost_fn=cost_fn)\n    sol = local_search(sc, sol, ctx, ref, w, fleet=fleet, boxes=boxes, deep=True,\n                       cost_fn=cost_fn)\n    cur_cost, cur_mt = _cost(sol)\n    best, best_cost, best_mt = clone(sol), cur_cost, cur_mt\n\n    destroy = [op_random, op_shaw, op_worst, op_route, op_area]\n    repair = [repair_greedy, repair_regret]\n    dw = np.ones(len(destroy))\n    rw = np.ones(len(repair))\n    T0, T1 = 0.30, 0.002\n    n_box = len(boxes)\n\n    for it in range(iters):\n        T = T0 * (T1 / T0) ** (it / max(iters - 1, 1))\n        di = rnd.choices(range(len(destroy)), weights=dw)[0]\n        ri = rnd.choices(range(len(repair)), weights=rw)[0]\n        k = rnd.randint(max(2, n_box // 12), max(3, n_box // 5))\n        part, pool = destroy[di](clone(sol), k, ctx)\n        if not pool:\n            continue\n        cand = repair[ri](sc, part, pool, ctx, w[\"energy\"], w[\"span\"], w[\"n\"], ref,\n                          order=rnd.choice([None, \"desc_mass\", \"far_first\"]))\n        if cand is None:\n            continue\n        if rnd.random() < 0.30:\n            cand = local_search(sc, cand, ctx, ref, w, fleet=fleet, boxes=boxes,\n                                deep=False, cost_fn=cost_fn)\n        cand = normalize(cand)\n        c_cost, c_mt = _cost(cand)\n        if c_cost < cur_cost or rnd.random() < math.exp(\n                -(c_cost - cur_cost) / (T + 1e-12)):\n            sol, cur_cost, cur_mt = cand, c_cost, c_mt\n            if c_cost < best_cost:\n                best, best_cost, best_mt = clone(cand), c_cost, c_mt\n                rw[ri] += 3\n                if c_mt is not None and c_mt[\"viol_med\"] + c_mt[\"viol_first\"] == 0:\n                    dw[di] += 3\n        else:\n            dw[di] += 0.2\n            rw[ri] += 0.2\n        if (it + 1) % 200 == 0:\n            dw = np.maximum(dw * 0.9, 0.2)\n            rw = np.maximum(rw * 0.9, 0.2)\n            if log:\n                log(it + 1, best_cost, best_mt)\n    return best, best_mt"
+        },
+        {
+          "source": "q2.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q2.py",
+          "line_start": 159,
+          "line_end": 209,
+          "excerpt": "def try_insert(sc, sol, b, ctx, wE, wT, wN, ref):\n    \"\"\"把货箱 b 插入解中，返回 (增量成本, 新解)；无可行位置返回 None。\"\"\"\n    bm, bv, sid_of = ctx[\"bm\"], ctx[\"bv\"], ctx[\"box_sid\"]\n    sid = sid_of[b]\n    best = None\n    for i, s in enumerate(sol):\n        g = s[\"g\"]\n        oldE, oldT, _, _, _ = sortie_fast(sc, g, s[\"stops\"], bm, bv)\n        cands = []\n        for pos in range(len(s[\"stops\"]) + 1):\n            if pos < len(s[\"stops\"]) and s[\"stops\"][pos][\"sid\"] == sid:\n                ns = [dict(sid=st[\"sid\"], boxes=list(st[\"boxes\"]))\n                      for st in s[\"stops\"]]\n                ns[pos][\"boxes\"].append(b)\n                cands.append(ns)\n                break\n            if pos == len(s[\"stops\"]):\n                ns = [dict(sid=st[\"sid\"], boxes=list(st[\"boxes\"]))\n                      for st in s[\"stops\"]]\n                ns.append(dict(sid=sid, boxes=[b]))\n                cands.append(ns)\n        for ns in cands:\n            E, T, q, vol, ok = sortie_fast(sc, g, ns, bm, bv)\n            if not ok:\n                continue\n            d = wE * (E - oldE) / ref[\"energy\"] + wT * (T - oldT) / ref[\"span\"]\n            if best is None or d < best[0]:\n                best = (d, i, ns)\n    # 新建架次\n    for g in TYPES:\n        ns = [dict(sid=sid, boxes=[b])]\n        E, T, q, vol, ok = sortie_fast(sc, g, ns, bm, bv)\n        if ok:\n            d = wE * E / ref[\"energy\"] + wT * T / ref[\"span\"] + wN / ref[\"n\"]\n            if best is None or d < best[0]:\n                best = (d, -1, ns)\n    if best is None:\n        return None\n    d, i, ns = best\n    out = clone(sol)\n    if i < 0:\n        g = None\n        for gg in TYPES:                       # 取可行的最轻机型\n            E, T, q, vol, ok = sortie_fast(sc, gg, ns, bm, bv)\n            if ok:\n                g = gg\n                break\n        out.append(dict(g=g, stops=ns))\n    else:\n        out[i] = dict(g=sol[i][\"g\"], stops=ns)\n    return d, out"
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "claim": "Five destroy operators cover random, spatial/mass Shaw, cost, route and area neighborhoods; they can escape pair-only incumbent enrichment",
+      "severity": "safe_reimplementation",
+      "refs": [
+        {
+          "source": "q2.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q2.py",
+          "line_start": 92,
+          "line_end": 153,
+          "excerpt": "def op_random(sol, k, ctx):\n    bs = sol_boxes(sol)\n    if len(bs) <= k:\n        return sol, bs\n    pick = RNG.sample(bs, k)\n    return remove_boxes(sol, pick), pick\n\n\ndef op_shaw(sol, k, ctx):\n    \"\"\"Shaw 相关移除：以某箱为种子，移除与其“服务区相近且质量相近”的货箱。\"\"\"\n    bs = sol_boxes(sol)\n    if not bs:\n        return sol, []\n    seed = RNG.choice(bs)\n    bm, sid_of = ctx[\"bm\"], ctx[\"box_sid\"]\n    area_xy = ctx[\"area_xy\"]\n\n    def rel(b):\n        d = float(np.hypot(*(area_xy[sid_of[b]] - area_xy[sid_of[seed]])))\n        return d + 500.0 * abs(bm[b] - bm[seed])\n\n    ranked = sorted(bs, key=rel)\n    pick = ranked[:min(k, len(bs))]\n    return remove_boxes(sol, pick), pick\n\n\ndef op_worst(sol, k, ctx):\n    \"\"\"最差移除：优先移除“单位质量运输代价高、位置偏远”的货箱。\"\"\"\n    bs = sol_boxes(sol)\n    if not bs:\n        return sol, []\n    sc, bm = ctx[\"sc\"], ctx[\"bm\"]\n    sid_of = ctx[\"box_sid\"]\n\n    def cost(b):\n        s_out = sc.seg(\"O01\", sid_of[b])\n        return (s_out[\"d\"] * bm[b] / 1000.0) * (1.0 + s_out[\"hup\"] / 1000.0)\n\n    ranked = sorted(bs, key=cost, reverse=True)\n    pick = ranked[:min(k, len(bs))]\n    return remove_boxes(sol, pick), pick\n\n\ndef op_route(sol, k, ctx):\n    \"\"\"整架次移除：随机移除一个完整架次。\"\"\"\n    if len(sol) <= 1:\n        return op_random(sol, k, ctx)\n    j = RNG.randrange(len(sol))\n    pick = [b for st in sol[j][\"stops\"] for b in st[\"boxes\"]]\n    return remove_boxes(sol, pick), pick\n\n\ndef op_area(sol, k, ctx):\n    \"\"\"按服务区移除：随机选一个服务区，移除其全部货箱。\"\"\"\n    sid_of = ctx[\"box_sid\"]\n    bs = sol_boxes(sol)\n    sids = sorted({sid_of[b] for b in bs})\n    if not sids:\n        return sol, []\n    sid = RNG.choice(sids)\n    pick = [b for b in bs if sid_of[b] == sid]\n    return remove_boxes(sol, pick), pick"
+        }
+      ]
+    },
+    {
+      "id": "D03",
+      "claim": "Greedy set cover chooses per-checkpoint stations; time clustering uses adjacent gaps >3600, not total service-span or energy bound",
+      "severity": "reuse_idea_only",
+      "refs": [
+        {
+          "source": "q3.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q3.py",
+          "line_start": 237,
+          "line_end": 272,
+          "excerpt": "def plan_relays(sc, need_points, max_per_station_span=3600.0):\n    \"\"\"贪心集合覆盖 + 时间聚类，把需要中继的检查点组织成若干中继架次。\n\n    need_points : [(时刻, 检查点键, 候选站点索引列表)]\n    返回 (deployments, uncovered_count)\n    \"\"\"\n    rt = sc.rtypes[\"R\"]\n    remaining = list(need_points)\n    deployments = []\n    while remaining:\n        # 统计每个站点能覆盖的剩余需求数\n        cnt = {}\n        for _, _, sts in remaining:\n            for s in sts:\n                cnt[s] = cnt.get(s, 0) + 1\n        if not cnt:\n            break\n        best = max(cnt, key=lambda k: (cnt[k], -k))\n        mine = [r for r in remaining if best in r[2]]\n        remaining = [r for r in remaining if best not in r[2]]\n        # 需要中继但该站点也覆盖不到的点（同批中无候选的）另行处理\n        times = sorted(t for t, _, _ in mine)\n        # 按时间聚类：间隔超过阈值则拆分为多个架次\n        groups, cur = [], [times[0]]\n        for x in times[1:]:\n            if x - cur[-1] > max_per_station_span:\n                groups.append(cur)\n                cur = [x]\n            else:\n                cur.append(x)\n        groups.append(cur)\n        st = sc_station(sc, best)\n        for gp in groups:\n            deployments.append(dict(station=best, t0=gp[0], t1=gp[-1],\n                                    n_points=len(gp)))\n    return deployments, len(remaining)"
+        }
+      ]
+    },
+    {
+      "id": "D04",
+      "claim": "Relay deployment may be delayed by resources without shifting transport or rechecking need windows; no 300-second turnaround",
+      "severity": "invalid_saved_solution",
+      "refs": [
+        {
+          "source": "q3.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q3.py",
+          "line_start": 317,
+          "line_end": 355,
+          "excerpt": "def schedule_relays(sc, deployments, fleet_relay):\n    \"\"\"把中继架次指派到实体中继无人机与共享能源组件（尽早开工贪心）。\"\"\"\n    rt = sc.rtypes[\"R\"]\n    items = []\n    for d in deployments:\n        st = _STATION_CACHE[d[\"station\"]]\n        c = relay_sortie_cost(sc, st, d[\"t0\"], d[\"t1\"])\n        if not c[\"feasible\"]:\n            d[\"over_energy\"] = True\n        items.append(dict(d=d, st=st, c=c))\n    items.sort(key=lambda x: x[\"c\"][\"depart\"])\n    n_d = len(sc.relay[\"drones\"])\n    n_b = sc.relay[\"energy_modules\"][\"R\"][\"n\"]\n    T_full = sc.relay[\"energy_modules\"][\"R\"][\"T_full\"]\n    drones = [0.0] * n_d\n    bats = [0.0] * n_b\n    out = []\n    for it in items:\n        st, c = it[\"st\"], it[\"c\"]\n        best, key = None, None\n        for di in range(n_d):\n            for bi in range(n_b):\n                st_t = max(drones[di], bats[bi], c[\"depart\"])\n                en = st_t + c[\"dur\"]\n                k = (en, st_t, di, bi)\n                if key is None or k < key:\n                    key, best = k, (di, bi, st_t, en)\n        di, bi, st_t, en = best\n        drones[di] = en\n        soc = soc_after(c[\"E\"], rt[\"E_use\"])\n        bats[bi] = en + charge_time(soc, T_full)\n        out.append(dict(station=st[\"idx\"], lon=st[\"lon\"], lat=st[\"lat\"],\n                        h_agl=st[\"h_agl\"], h_abs=st[\"h_abs\"], terr=st[\"terr\"],\n                        drone=di, module=bi, start=st_t, end=en, dur=c[\"dur\"],\n                        E=c[\"E\"], soc_end=soc, bat_ready=en + charge_time(soc, T_full),\n                        service=c[\"service\"], t_need0=it[\"d\"][\"t0\"],\n                        t_need1=it[\"d\"][\"t1\"], feasible=not it[\"d\"].get(\"over_energy\", False)))\n    return out\n"
+        }
+      ]
+    },
+    {
+      "id": "D05",
+      "claim": "Relay setup time is included in duration, but setup hover/communication energy is absent from energy expression",
+      "severity": "physics_mismatch",
+      "refs": [
+        {
+          "source": "q3.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q3.py",
+          "line_start": 222,
+          "line_end": 234,
+          "excerpt": "def relay_sortie_cost(sc, st, t_need0, t_need1):\n    \"\"\"一个中继架次的时长、能耗与可行性（在 [t_need0, t_need1] 内提供通信服务）。\"\"\"\n    rt = sc.rtypes[\"R\"]\n    out = relay_transit(sc, rt, st[\"lon\"], st[\"lat\"], st[\"h_abs\"])\n    back = relay_return(sc, rt, st[\"lon\"], st[\"lat\"], st[\"h_abs\"])\n    service = max(t_need1 - t_need0, 1.0)\n    E = out[\"E\"] + back[\"E\"] + relay_service_energy(rt, service)\n    dur = rt[\"t_prep\"] + out[\"t\"] + rt[\"t_link\"] + service + back[\"t\"]\n    lim = (1.0 - rt[\"rho\"]) * rt[\"E_use\"]\n    return dict(E=E, dur=dur, service=service, feasible=E <= lim + 1e-12,\n                E_budget=lim, transit_out=out[\"t\"], transit_back=back[\"t\"],\n                depart=t_need0 - (rt[\"t_prep\"] + out[\"t\"] + rt[\"t_link\"]),\n                ret=t_need1 + back[\"t\"])"
+        }
+      ]
+    },
+    {
+      "id": "D06",
+      "claim": "Joint makespan and relay feasibility are computed but absent from cost feasibility/transport-span term; final seed ranking uses a different tuple",
+      "severity": "objective_mismatch",
+      "refs": [
+        {
+          "source": "q3.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q3.py",
+          "line_start": 379,
+          "line_end": 407,
+          "excerpt": "def joint_cost(sc, sol, ctx, boxes, fleet, w, ref, U, w_comm, w_relay):\n    \"\"\"联合目标：运输四指标 + 通信中断罚 + 中继代价（架次数与能耗）。\"\"\"\n    sched = decode_schedule(sc, fleet, sol, ctx[\"bm\"], ctx[\"bv\"],\n                            priority=ctx[\"prio_of_sortie\"](sol))\n    if sched is None:\n        return 1e12, None\n    mt = schedule_metrics(sc, boxes, sched, ctx[\"bm\"], ctx[\"bv\"])\n    need, uncovered = comm_analysis(sc, U, sched)\n    deps = []\n    if need:\n        deps, _ = plan_relays(sc, need)        # 贪心集合覆盖选出悬停点\n    relay_sched = schedule_relays(sc, deps, None) if deps else []\n    relay_E = float(sum(r[\"E\"] for r in relay_sched))\n    relay_n = len(relay_sched)\n    relay_span = max([r[\"end\"] for r in relay_sched], default=0.0)\n    joint_span = max(mt[\"makespan\"], relay_span)\n    pen = 1e5 * (mt[\"viol_med\"] + mt[\"viol_first\"]) + w_comm * uncovered\n    c = (pen\n         + w[\"time\"] * mt[\"J_time\"] / ref[\"time\"]\n         + w[\"span\"] * mt[\"makespan\"] / ref[\"span\"]\n         + w[\"energy\"] * mt[\"energy\"] / ref[\"energy\"]\n         + w[\"n\"] * mt[\"n_sortie\"] / ref[\"n\"]\n         + w_relay * (relay_E / ref[\"relay_e\"] + relay_n / ref[\"relay_n\"]))\n    mt = dict(mt)\n    mt.update(uncovered=uncovered, relay_n=relay_n, relay_E=relay_E,\n              relay_span=relay_span, joint_span=joint_span,\n              relay_feasible=all(r[\"feasible\"] for r in relay_sched),\n              deps=deps, relay_sched=relay_sched)\n    return c, mt"
+        },
+        {
+          "source": "q3.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q3.py",
+          "line_start": 467,
+          "line_end": 477,
+          "excerpt": "    for seed in [1, 7, 23]:\n        sol, mt = q2.alns(sc, boxes, ctx, fleet, W, ref, iters=6000, seed=seed,\n                          cost_fn=cost_fn)\n        if sol is None:\n            continue\n        key = (mt[\"uncovered\"], mt[\"viol_med\"] + mt[\"viol_first\"],\n               mt[\"joint_span\"])\n        if best is None or key < (best_mt[\"uncovered\"],\n                                  best_mt[\"viol_med\"] + best_mt[\"viol_first\"],\n                                  best_mt[\"joint_span\"]):\n            best, best_mt = sol, mt"
+        }
+      ]
+    },
+    {
+      "id": "D07",
+      "claim": "Actual Q3 communication uses sparse hover/arrive/mid checkpoints; denser comm.py routine is not imported by q3/q2/q2core",
+      "severity": "no_continuous_proof",
+      "refs": [
+        {
+          "source": "q3.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q3.py",
+          "line_start": 35,
+          "line_end": 41,
+          "excerpt": "\nsys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))\nfrom common import (Scenario, CommModel, OUT_DIR, relay_transit, relay_return,\n                    relay_service_energy, charge_time, soc_after, G_ACC, J_PER_KWH)\nfrom q2core import Fleet, decode_schedule, schedule_metrics, sortie_fast\nimport q2\nfrom q2 import (TYPES, clone, make_ctx, initial_solution, local_search,"
+        },
+        {
+          "source": "q3.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q3.py",
+          "line_start": 141,
+          "line_end": 216,
+          "excerpt": "        self.cp = {}\n        self._build()\n\n    def _build(self):\n        sc, cm = self.sc, self.cm\n        nodes = list(sc.nodes)\n        keys = []\n        for v in nodes:                                   # 各节点悬停点\n            keys.append((\"hover\", v, \"\"))\n        for u in nodes:                                   # 航段终点巡航点\n            for v in nodes:\n                if u != v:\n                    keys.append((\"arrive\", v, u))\n        for u in nodes:                                   # 航段巡航中点\n            for v in nodes:\n                if u != v:\n                    keys.append((\"mid\", u, v))\n        for k in keys:\n            kind, a, b = k\n            if kind == \"hover\":\n                lon, lat = sc.nodes[a][\"lon\"], sc.nodes[a][\"lat\"]\n                h = sc.op_alt[a]\n            else:\n                seg = sc.seg(b, a) if kind == \"arrive\" else sc.seg(a, b)\n                if kind == \"arrive\":\n                    lon, lat = sc.nodes[a][\"lon\"], sc.nodes[a][\"lat\"]\n                else:\n                    lon = 0.5 * (sc.nodes[a][\"lon\"] + sc.nodes[b][\"lon\"])\n                    lat = 0.5 * (sc.nodes[a][\"lat\"] + sc.nodes[b][\"lat\"])\n                h = seg[\"H\"]\n            direct = cm.direct_ok(lon, lat, h)\n            sts = []\n            if not direct:\n                for st in self.stations:\n                    if cm.access_ok(lon, lat, h, st[\"lon\"], st[\"lat\"], st[\"h_abs\"]):\n                        sts.append(st[\"idx\"])\n            self.cp[k] = dict(lon=lon, lat=lat, h=h, direct=bool(direct), sts=sts)\n\n    def direct_ratio(self):\n        n = len(self.cp)\n        d = sum(1 for v in self.cp.values() if v[\"direct\"])\n        cover = sum(1 for v in self.cp.values() if v[\"direct\"] or v[\"sts\"])\n        return d / n, cover / n, n\n\n\n# ==========================================================================\n# 3. 架次检查点时间线\n# ==========================================================================\ndef sortie_checkpoints(sc, g, stops, start_time):\n    \"\"\"给出架次全过程中的 (绝对时刻, 检查点键)。\"\"\"\n    gt = sc.ntypes[g]\n    nb = sum(len(st[\"boxes\"]) for st in stops)\n    t = start_time + gt[\"t_prep\"] + gt[\"t_load_box\"] * nb\n    out = []\n    prev = \"O01\"\n    out.append((t, (\"hover\", \"O01\", \"\")))\n    for st in stops:\n        v = st[\"sid\"]\n        seg = sc.seg(prev, v)\n        t += seg[\"hup\"] / gt[\"v_up\"]\n        tc = seg[\"d\"] / gt[\"v_cruise\"]\n        out.append((t + 0.5 * tc, (\"mid\", prev, v)))\n        t += tc\n        out.append((t, (\"arrive\", v, prev)))\n        t += seg[\"hdn\"] / gt[\"v_down\"]\n        th = gt[\"t_hand_base\"] + gt[\"t_hand_box\"] * len(st[\"boxes\"])\n        out.append((t + 0.5 * th, (\"hover\", v, \"\")))\n        t += th\n        prev = v\n    seg = sc.seg(prev, \"O01\")\n    t += seg[\"hup\"] / gt[\"v_up\"]\n    tc = seg[\"d\"] / gt[\"v_cruise\"]\n    out.append((t + 0.5 * tc, (\"mid\", prev, \"O01\")))\n    t += tc\n    out.append((t, (\"arrive\", \"O01\", prev)))\n    return out"
+        },
+        {
+          "source": "comm.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\comm.py",
+          "line_start": 61,
+          "line_end": 130,
+          "excerpt": "def sortie_comm_timeline(sc, g, stops, start_time):\n    \"\"\"给出架次全过程的时空轨迹：[(绝对时刻, lon, lat, h_abs)]。\n\n    覆盖爬升、巡航、下降以及各接收点的物资交接（悬停）全过程。\n    \"\"\"\n    gt = sc.ntypes[g]\n    nb = sum(len(st[\"boxes\"]) for st in stops)\n    t = start_time + gt[\"t_prep\"] + gt[\"t_load_box\"] * nb\n    traj = []\n    prev = \"O01\"\n    for st in stops:\n        s = sc.seg(prev, st[\"sid\"])\n        # 爬升\n        if s[\"hup\"] > 1e-9:\n            dt = s[\"hup\"] / gt[\"v_up\"]\n            for k in range(4):\n                f = k / 3.0\n                traj.append((t + f * dt, sc.nodes[prev][\"lon\"], sc.nodes[prev][\"lat\"],\n                             sc.op_alt[prev] + f * s[\"hup\"]))\n            t += dt\n        # 巡航\n        if s[\"d\"] > 1e-9:\n            dt = s[\"d\"] / gt[\"v_cruise\"]\n            for k in range(13):\n                f = k / 12.0\n                a, b = sc.nodes[prev], sc.nodes[st[\"sid\"]]\n                traj.append((t + f * dt, a[\"lon\"] + f * (b[\"lon\"] - a[\"lon\"]),\n                             a[\"lat\"] + f * (b[\"lat\"] - a[\"lat\"]), s[\"H\"]))\n            t += dt\n        # 下降\n        if s[\"hdn\"] > 1e-9:\n            dt = s[\"hdn\"] / gt[\"v_down\"]\n            for k in range(4):\n                f = k / 3.0\n                traj.append((t + f * dt, sc.nodes[st[\"sid\"]][\"lon\"],\n                             sc.nodes[st[\"sid\"]][\"lat\"], s[\"H\"] - f * s[\"hdn\"]))\n            t += dt\n        # 物资交接（悬停在作业高度）\n        th = gt[\"t_hand_base\"] + gt[\"t_hand_box\"] * len(st[\"boxes\"])\n        for k in range(3):\n            f = k / 2.0\n            traj.append((t + f * th, sc.nodes[st[\"sid\"]][\"lon\"],\n                         sc.nodes[st[\"sid\"]][\"lat\"], sc.op_alt[st[\"sid\"]]))\n        t += th\n        prev = st[\"sid\"]\n    # 返航\n    s = sc.seg(prev, \"O01\")\n    if s[\"hup\"] > 1e-9:\n        dt = s[\"hup\"] / gt[\"v_up\"]\n        for k in range(4):\n            f = k / 3.0\n            traj.append((t + f * dt, sc.nodes[prev][\"lon\"], sc.nodes[prev][\"lat\"],\n                         sc.op_alt[prev] + f * s[\"hup\"]))\n        t += dt\n    if s[\"d\"] > 1e-9:\n        dt = s[\"d\"] / gt[\"v_cruise\"]\n        for k in range(13):\n            f = k / 12.0\n            a, b = sc.nodes[prev], sc.nodes[\"O01\"]\n            traj.append((t + f * dt, a[\"lon\"] + f * (b[\"lon\"] - a[\"lon\"]),\n                         a[\"lat\"] + f * (b[\"lat\"] - a[\"lat\"]), s[\"H\"]))\n        t += dt\n    if s[\"hdn\"] > 1e-9:\n        dt = s[\"hdn\"] / gt[\"v_down\"]\n        for k in range(4):\n            f = k / 3.0\n            traj.append((t + f * dt, sc.nodes[\"O01\"][\"lon\"], sc.nodes[\"O01\"][\"lat\"],\n                         s[\"H\"] - f * s[\"hdn\"]))\n        t += dt\n    return traj"
+        }
+      ]
+    },
+    {
+      "id": "D08",
+      "claim": "Radio distance uses horizontal distance; DEM LOS/max terrain rely on sampled interpolation, not certified cell/surface bounds",
+      "severity": "do_not_inherit_physics",
+      "refs": [
+        {
+          "source": "common.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\common.py",
+          "line_start": 235,
+          "line_end": 247,
+          "excerpt": "    def max_elev_along(self, lon1, lat1, lon2, lat2, step=10.0):\n        \"\"\"返回线段经过的 DEM 像元的最高地面高程 (m)。step 为采样间距 (m)。\"\"\"\n        fx = Frame(lon1, lat1)\n        x1, y1 = 0.0, 0.0\n        x2, y2 = fx.to_xy(lon2, lat2)\n        D = math.hypot(float(x2), float(y2))\n        n = max(int(D / step) + 1, 2)\n        t = np.linspace(0.0, 1.0, n)\n        xs = x1 + t * (float(x2) - x1)\n        ys = y1 + t * (float(y2) - y1)\n        lon = lon1 + xs / fx.kx\n        lat = lat1 + ys / fx.ky\n        return float(np.max(self.elev(lon, lat)))"
+        },
+        {
+          "source": "common.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\common.py",
+          "line_start": 539,
+          "line_end": 555,
+          "excerpt": "    def _los_exact(self, x, y, h, gx, gy, h_ref, terrain_ref=None, n_pt=None):\n        \"\"\"点 (x,y,h) 与参考端点 (gx,gy,h_ref) 之间的地形视距判定。\"\"\"\n        sc = self.sc\n        dx, dy = x - gx, y - gy\n        D = math.hypot(dx, dy)\n        if D < 1.0:\n            return True\n        # DEM 为 30 m 分辨率，采样步长 12 m 已保证每个像元至少两次采样\n        n = n_pt or max(int(D / 12.0), 3)\n        t = np.linspace(1e-9, 1.0, n)[:, None]\n        sx = gx + t * dx\n        sy = gy + t * dy\n        lon = sc.frame.lon0 + sx / sc.frame.kx\n        lat = sc.frame.lat0 + sy / sc.frame.ky\n        terr = sc.dem.elev(lon, lat)\n        line = h_ref + t[:, 0] * (h - h_ref)\n        return bool(np.all(line >= terr - 1e-6))"
+        },
+        {
+          "source": "common.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\common.py",
+          "line_start": 570,
+          "line_end": 608,
+          "excerpt": "    def direct_ok(self, lon, lat, h_abs):\n        \"\"\"运输无人机与固定网关 G01 的直连判定（栅格加速 + 临界精确复核）。\"\"\"\n        sc = self.sc\n        x, y = sc.frame.to_xy(lon, lat)\n        x, y = float(np.asarray(x)), float(np.asarray(y))\n        dx, dy = x - self.gx, y - self.gy\n        D = math.hypot(dx, dy)\n        if D > 60000:\n            return False\n        slope = (h_abs - self.h_G) / max(D, 1.0)\n        M = self._M_lookup(lon, lat)\n        if slope >= M + 0.02:            # 明显不被遮挡\n            blocked = False\n        elif slope <= M - 0.02:          # 明显被遮挡\n            blocked = True\n        else:\n            blocked = not self._los_exact(x, y, h_abs, self.gx, self.gy, self.h_G)\n        L = self._fspl(D) + (self.p[\"L_obs\"] if blocked else 0.0)\n        return L <= self.Lmax_T_G\n\n    # -- 中继接入 / 回传 --------------------------------------------------\n    def access_ok(self, t_lon, t_lat, t_h, r_lon, r_lat, r_h):\n        \"\"\"运输无人机 <-> 中继接入端 链路判定。\"\"\"\n        sc = self.sc\n        x1, y1 = sc.frame.to_xy(t_lon, t_lat)\n        x2, y2 = sc.frame.to_xy(r_lon, r_lat)\n        x1, y1, x2, y2 = float(x1), float(y1), float(x2), float(y2)\n        D = math.hypot(x2 - x1, y2 - y1)\n        ok, _ = self.link_ok(D, t_h, r_h, x1, y1, x2, y2, self.Lmax_T_R)\n        return ok\n\n    def backhaul_ok(self, r_lon, r_lat, r_h):\n        \"\"\"中继回传端 <-> 固定网关 G01 链路判定。\"\"\"\n        sc = self.sc\n        x1, y1 = sc.frame.to_xy(r_lon, r_lat)\n        x1, y1 = float(x1), float(y1)\n        D = math.hypot(x1 - self.gx, y1 - self.gy)\n        ok, _ = self.link_ok(D, r_h, self.h_G, x1, y1, self.gx, self.gy,\n                             self.Lmax_R_G)"
+        }
+      ]
+    },
+    {
+      "id": "D09",
+      "claim": "All boxes at a stop share visit-end delivery time, unlike current optimized individual handovers",
+      "severity": "time_model_mismatch",
+      "refs": [
+        {
+          "source": "q2core.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q2core.py",
+          "line_start": 88,
+          "line_end": 104,
+          "excerpt": "def sortie_timeline(sc, g, stops, box_mass, box_vol):\n    \"\"\"返回 (各服务区送达时刻 dict, 架次总时长, 初始载质量, 初始体积, 是否装载可行)。\"\"\"\n    gt = sc.ntypes[g]\n    nb = sum(len(s[\"boxes\"]) for s in stops)\n    t = gt[\"t_prep\"] + gt[\"t_load_box\"] * nb\n    mass0 = stops_mass(sc, [b for s in stops for b in s[\"boxes\"]], box_mass)\n    vol0 = float(box_vol[[b for s in stops for b in s[\"boxes\"]]].sum())\n    ok_load = (mass0 <= gt[\"Q_max\"] + 1e-9) and (vol0 <= gt[\"V_max\"] + 1e-12)\n    arrive, prev = {}, \"O01\"\n    for s in stops:\n        seg = sc.seg(prev, s[\"sid\"])\n        t += float(seg_time(gt, seg))\n        t += gt[\"t_hand_base\"] + gt[\"t_hand_box\"] * len(s[\"boxes\"])\n        arrive[s[\"sid\"]] = t\n        prev = s[\"sid\"]\n    t += float(seg_time(gt, sc.seg(prev, \"O01\")))\n    return arrive, t, mass0, vol0, ok_load"
+        },
+        {
+          "source": "q2core.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q2core.py",
+          "line_start": 216,
+          "line_end": 235,
+          "excerpt": "    # 逐箱送达时刻\n    deliv = np.full(len(boxes), np.nan)\n    for s in sched:\n        for st in s[\"stops\"]:\n            for b in st[\"boxes\"]:\n                deliv[b] = s[\"start\"] + s[\"arrive\"][st[\"sid\"]]\n    t_exp = boxes[\"t_expect\"].to_numpy(float)\n    t_first = boxes[\"t_first\"].to_numpy(float)\n    first = boxes[\"first\"].to_numpy(bool)\n    mtype = boxes[\"mtype\"].to_numpy()\n    prio = boxes[\"prio\"].to_numpy(float)\n\n    med = (mtype == \"医疗物资\")\n    viol_med = int(np.sum(med & (deliv > t_exp + 1e-9)))\n    viol_first = int(np.sum(first & (deliv > t_first + 1e-9)))\n    # 软性及时性：非首批、非医疗货箱的加权拖期\n    soft = (~first) & (~med)\n    tard = np.where(soft, np.maximum(0.0, deliv - t_exp), 0.0)\n    J_time = float(np.sum(prio * tard))\n    n_late = int(np.sum(soft & (deliv > t_exp + 1e-9)))"
+        }
+      ]
+    },
+    {
+      "id": "D10",
+      "claim": "Source physical transport formula uses g9.80665 and exponent1.5, but its geometry/time conventions still differ",
+      "severity": "partial_alignment",
+      "refs": [
+        {
+          "source": "common.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\common.py",
+          "line_start": 37,
+          "line_end": 39,
+          "excerpt": "G_ACC = 9.80665          # 重力加速度 m/s^2\nJ_PER_KWH = 3.6e6        # 1 kWh = 3.6e6 J\nEARTH_R = 6371000.0      # 地球半径 m（局部平面近似用）"
+        },
+        {
+          "source": "q2core.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q2core.py",
+          "line_start": 31,
+          "line_end": 46,
+          "excerpt": "def eq_range_s(g, q):\n    \"\"\"等效航程 L_g(q)，标量版。\"\"\"\n    L0, LF, Q = g[\"L0\"], g[\"LF\"], g[\"Q_max\"]\n    r = (0.0 if q < 0.0 else (Q if q > Q else q)) / Q\n    return L0 - (L0 - LF) * r ** 1.5\n\n\ndef seg_E_s(g, q, seg):\n    \"\"\"航段能耗 (kWh)，标量版：水平巡航 + 爬升附加。\"\"\"\n    return (seg[\"d\"] * g[\"E_use\"] / eq_range_s(g, q)\n            + (g[\"m_empty\"] + q) * G_ACC * seg[\"hup\"] / (g[\"eta_up\"] * J_PER_KWH))\n\n\ndef seg_T_s(g, seg):\n    \"\"\"航段飞行时间 (s)，标量版。\"\"\"\n    return seg[\"hup\"] / g[\"v_up\"] + seg[\"d\"] / g[\"v_cruise\"] + seg[\"hdn\"] / g[\"v_down\"]"
+        }
+      ]
+    },
+    {
+      "id": "D11",
+      "claim": "Spatial densification and multiple AGL levels are useful; candidate cache lacks input/source fingerprint validation",
+      "severity": "safe_reimplementation_with_certification",
+      "refs": [
+        {
+          "source": "q3.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q3.py",
+          "line_start": 85,
+          "line_end": 137,
+          "excerpt": "            break\n    return out\n\n\ndef augment_stations(sc, cm, stations, U, extra_per_cp=24, span_deg=0.030,\n                     step_deg=0.0015, agl_grid=(300.0, 250.0, 150.0, 80.0, 20.0)):\n    \"\"\"对“无任何中继可覆盖”的检查点，在其周边做矩形网格加密搜索补充候选悬停点。\n\n    这是保证通信可达域完备的关键一步：固定栅格取点可能漏掉位于服务区近旁、\n    地势中等但恰好与运输机和网关都能通视的位置。加密搜索同时放开悬停离地高度，\n    因为题目只规定上限，降低悬停高度可缩短中继航程、节省能量。\n    \"\"\"\n    bad = [v for v in U.cp.values() if not v[\"direct\"] and not v[\"sts\"]]\n    if not bad:\n        return stations, 0\n    existing = {(round(s[\"lon\"], 7), round(s[\"lat\"], 7)) for s in stations}\n    added = 0\n    for v in bad:\n        got = 0\n        ds = np.arange(-span_deg, span_deg + 1e-9, step_deg)\n        for dlon in ds:\n            if got >= extra_per_cp:\n                break\n            for dlat in ds:\n                if got >= extra_per_cp:\n                    break\n                lo, la = v[\"lon\"] + float(dlon), v[\"lat\"] + float(dlat)\n                if not (sc.dem.left < lo < sc.dem.right and\n                        sc.dem.bottom < la < sc.dem.top):\n                    continue\n                if (round(lo, 7), round(la, 7)) in existing:\n                    continue\n                terr = float(sc.dem.elev(lo, la))\n                for agl in agl_grid:\n                    h_abs = terr + agl\n                    if not cm.backhaul_ok(lo, la, h_abs):\n                        continue\n                    if not cm.access_ok(v[\"lon\"], v[\"lat\"], v[\"h\"], lo, la, h_abs):\n                        continue\n                    stations.append(dict(idx=len(stations), lon=lo, lat=la,\n                                         terr=terr, h_agl=agl, h_abs=h_abs))\n                    existing.add((round(lo, 7), round(la, 7)))\n                    added += 1\n                    got += 1\n                    break\n    return stations, added\n\n\n# ==========================================================================\n# 2. 检查点全集与通信可达域\n# ==========================================================================\nclass CommUniverse:\n    \"\"\"预计算运输检查点的直连可用性与可为其提供接入的中继候选点。\"\"\""
+        },
+        {
+          "source": "q3.py",
+          "path": "D:\\Desktop\\Agent\\Deepseek版本二\\code\\q3.py",
+          "line_start": 284,
+          "line_end": 300,
+          "excerpt": "    import hashlib\n    sp = os.path.join(OUT_DIR, \"cache_stations.json\")\n    up = os.path.join(OUT_DIR, \"cache_universe.json\")\n    if os.path.exists(sp) and os.path.exists(up):\n        stations = json.load(open(sp, encoding=\"utf-8\"))\n        raw = json.load(open(up, encoding=\"utf-8\"))\n        U = CommUniverse.__new__(CommUniverse)\n        U.sc, U.cm, U.stations = sc, cm, stations\n        U.cp = {tuple(json.loads(k)): v for k, v in raw.items()}\n        if verbose:\n            print(\"  从缓存载入：中继候选点 %d 个，检查点 %d 个\"\n                  % (len(stations), len(U.cp)), flush=True)\n        return stations, U\n\n    t0 = time.time()\n    stations = build_stations(sc, cm)\n    U = CommUniverse(sc, cm, stations)"
+        }
+      ]
+    },
+    {
+      "id": "N01",
+      "claim": "Notebook terrain is interpolated from 16 nodes, not original DEM",
+      "severity": "do_not_inherit_physics",
+      "refs": [
+        {
+          "source": "notebook.ipynb",
+          "cell_one_based": 83,
+          "cell_line_start": 5,
+          "cell_line_end": 11,
+          "raw_json_matching_lines": [
+            7938,
+            7939,
+            7940,
+            7941,
+            7942,
+            7943,
+            7944
+          ],
+          "excerpt": "# 用节点高程插值地形面\npts=nodes[['经度','纬度']].values; z=nodes['海拔'].values\nlon_g=np.linspace(svc['经度'].min()-0.01, svc['经度'].max()+0.01, 60)\nlat_g=np.linspace(svc['纬度'].min()-0.01, svc['纬度'].max()+0.01, 60)\nLON,LAT=np.meshgrid(lon_g,lat_g)\nZ=griddata(pts,z,(LON,LAT),method='cubic')\nZ=np.where(np.isnan(Z), np.nanmin(z), Z)"
+        },
+        {
+          "source": "notebook.ipynb",
+          "cell_one_based": 85,
+          "cell_line_start": 14,
+          "cell_line_end": 18,
+          "raw_json_matching_lines": [
+            8177,
+            8178,
+            8179,
+            8180,
+            8181
+          ],
+          "excerpt": "# 地形面(复用fig18插值)\nfrom scipy.interpolate import RegularGridInterpolator\nterrain_fn=RegularGridInterpolator((lat_g,lon_g), np.nan_to_num(Z,nan=np.nanmin(z)), bounds_error=False, fill_value=np.nanmin(z))\ndef terrain_h(lon,lat):\n    return float(terrain_fn([[lat,lon]])[0])"
+        }
+      ]
+    },
+    {
+      "id": "N02",
+      "claim": "Notebook final relay_sched is overwritten by cell93; hardcoded windows and no prepare/link timing in arrival",
+      "severity": "do_not_inherit_schedule",
+      "refs": [
+        {
+          "source": "notebook.ipynb",
+          "cell_one_based": 93,
+          "cell_line_start": 1,
+          "cell_line_end": 17,
+          "raw_json_matching_lines": [
+            8458,
+            8538,
+            8887,
+            8888,
+            8889,
+            8891,
+            8892,
+            8898,
+            8899,
+            8972,
+            8973,
+            8974,
+            8975,
+            8976,
+            8977,
+            8978,
+            8979,
+            8980,
+            8981,
+            8982,
+            8983,
+            8984,
+            8985,
+            8986,
+            8987,
+            8988
+          ],
+          "excerpt": "# 修正中继调度(进入盲区前就位)\nrelay_sched=[]\nrelay_win={'S003':(46.7*60, 98.7*60), 'S012':(9.9*60, 14.7*60)}\nfor si in relay_areas:\n    hp=hover_pts[si]\n    d_to_hover=D_h((hp['lon'],hp['lat']),(G01_lon,G01_lat))\n    dz=hp['z']-terrain_h2(G01_lon,G01_lat)\n    t_fly=dz/relay_params['vc']+d_to_hover/relay_params['v']\n    w0,w1=relay_win[si]\n    depart=max(0.0, w0-t_fly)\n    arrive=depart+t_fly\n    hover_end=max(w1, arrive)\n    T_hover=hover_end-arrive\n    E=relay_energy(d_to_hover,dz)+(relay_params['Phov']+relay_params['Pcom'])*T_hover/3600+relay_energy(d_to_hover,0)\n    land=hover_end + d_to_hover/relay_params['v'] + dz/relay_params['vd']\n    relay_sched.append(dict(si=si,hover_lon=hp['lon'],hover_lat=hp['lat'],hover_alt=hp['z'],\n                            depart=depart,arrive=arrive,hover_end=hover_end,land=land,T_hover=T_hover,E=E,d=d_to_hover))"
+        }
+      ]
+    },
+    {
+      "id": "N03",
+      "claim": "Notebook initial one-way budget/LOS classification is later partially fixed for sensitivity only, without rerunning joint schedule",
+      "severity": "execution_path_mismatch",
+      "refs": [
+        {
+          "source": "notebook.ipynb",
+          "cell_one_based": 85,
+          "cell_line_start": 4,
+          "cell_line_end": 11,
+          "raw_json_matching_lines": [
+            8167,
+            8168,
+            8169,
+            8170,
+            8171,
+            8172,
+            8173,
+            8174
+          ],
+          "excerpt": "# 链路预算(G01 -> 运输机)  双向取小\nf=2400; Lsys=3; Lobs=10; Psens=-98; M=8\nPt_G,G_G=27,12        # 固定网关\nPt_U,G_U=20,3         # 运输机\nbudget_GU = Pt_G+G_G+G_U - Lsys - M - Psens     # 含遮挡前\nbudget_dir = budget_GU                            # 无地形遮挡时\ndmax_free = 10**((budget_GU - 20*np.log10(f) - 32.45)/20)\ndmax_obs  = 10**((budget_GU - Lobs - 20*np.log10(f) - 32.45)/20)"
+        },
+        {
+          "source": "notebook.ipynb",
+          "cell_one_based": 86,
+          "cell_line_start": 11,
+          "cell_line_end": 19,
+          "raw_json_matching_lines": [
+            3463,
+            3560,
+            3586,
+            3599,
+            3697,
+            3811,
+            3827,
+            3918,
+            3930,
+            4129,
+            4427,
+            4434,
+            4449,
+            4466,
+            5386,
+            5404,
+            5420,
+            5429,
+            5897,
+            6072,
+            7097,
+            8203,
+            8204,
+            8276,
+            8277,
+            8283,
+            8284,
+            8285,
+            8286,
+            8287,
+            8288,
+            8289,
+            8290,
+            8291,
+            8354,
+            9054,
+            9060
+          ],
+          "excerpt": "# 综合: 一个服务区若在任一阶段(LOS)被遮挡, 则该航段需中继\nneed_relay={}\nfor si in si_list:\n    lon=float(svc.set_index('节点').loc[si,'经度']); lat=float(svc.set_index('节点').loc[si,'纬度'])\n    blk_cruise=los_blocked(G01_lon,G01_lat,G01_h, lon,lat,cruise_alt(si))\n    blk_op=los_blocked(G01_lon,G01_lat,G01_h, lon,lat,ground[si]+30)\n    need_relay[si]= blk_cruise or blk_op\nprint(\"\\n【综合判定: 需中继保障的服务区】\")\nrelay_areas=[si for si in si_list if need_relay[si]]"
+        },
+        {
+          "source": "notebook.ipynb",
+          "cell_one_based": 114,
+          "cell_line_start": 1,
+          "cell_line_end": 17,
+          "raw_json_matching_lines": [
+            3277,
+            4266,
+            5310,
+            5589,
+            10189,
+            10495,
+            10786,
+            10789,
+            10870,
+            10873,
+            10951,
+            10952,
+            10953,
+            10954,
+            10956,
+            10957,
+            10958,
+            10959,
+            10960,
+            10961,
+            10962,
+            10963,
+            10964,
+            10965,
+            10966,
+            10967
+          ],
+          "excerpt": "# 修正: 通信可达性 = (通视 & d≤dmax_free) 或 (遮挡 & d≤dmax_obs)\nbudget_min=min(Pt_G+G_G+G_U, Pt_U+G_U+G_G)-Lsys-M-Psens  # 122dB(双向取小)\ndmax_free=10**((budget_min-20*np.log10(f)-32.45)/20)\nprint(f\"双向链路预算 {budget_min}dB → 直连半径(通视){dmax_free:.2f}km\")\n\ndef relay_need(Lobs_v):\n    dmax_obs=10**((budget_min-Lobs_v-20*np.log10(f)-32.45)/20)\n    areas=[]\n    for si in si_list:\n        lon=float(svc_pos.loc[si,'经度']); lat=float(svc_pos.loc[si,'纬度']); d=Dm('O01',si)/1000\n        blocked=los_blocked2(G01_lon,G01_lat,G01_h, lon,lat,ground[si]+30)\n        if blocked:\n            need = d>dmax_obs\n        else:\n            need = d>dmax_free\n        if need: areas.append(si)\n    return areas, dmax_obs"
+        }
+      ]
+    },
+    {
+      "id": "N04",
+      "claim": "Notebook routes move horizontally in climb/descent samples and omit service/return in blocked-window loop",
+      "severity": "invalid_trajectory_check",
+      "refs": [
+        {
+          "source": "notebook.ipynb",
+          "cell_one_based": 90,
+          "cell_line_start": 30,
+          "cell_line_end": 52,
+          "raw_json_matching_lines": [
+            8624,
+            8625,
+            8630,
+            8631,
+            8632,
+            8633,
+            8644,
+            8645,
+            8646,
+            8647,
+            8648,
+            8649,
+            8650,
+            8651,
+            8652,
+            8653,
+            8654,
+            8655,
+            8656,
+            8657,
+            8658,
+            8659,
+            8660,
+            8661,
+            8662,
+            8663,
+            8664,
+            8665,
+            8666,
+            8790,
+            8791,
+            8792,
+            8793,
+            8794,
+            8795,
+            8796,
+            8797,
+            8798,
+            8801,
+            8806,
+            8807
+          ],
+          "excerpt": "# 更简单的实现: 逐架次逐点判定\ndef blocked_windows(s):\n    kk=s['k']; p=machines[kk]; windows=[]; t=s['start']; prev='O01'\n    def chk(t,h,lo,la): \n        return los_blocked(G01_lon,G01_lat,G01_h, lo,la,h)\n    for b in s['seq']:\n        lon1,lat1=node_lonlat(prev); lon2,lat2=node_lonlat(b)\n        d=Dm(prev,b); hc=max(ground[prev],ground[b])+50.0; h1=op_h[prev]; h2=op_h[b]\n        T=(hc-h1)/p['vc']+d/p['v']+(hc-h2)/p['vd']\n        for frac in np.linspace(0,1,40):\n            lo=lon1+(lon2-lon1)*frac; la=lat1+(lat2-lat1)*frac\n            if frac<0.3: h=h1+(hc-h1)*(frac/0.3)\n            elif frac>0.7: h=hc-(hc-h2)*((frac-0.7)/0.3)\n            else: h=hc\n            if chk(t+frac*T,h,lo,la): windows.append(t+frac*T)\n        t+=T; prev=b\n    # 归并\n    if not windows: return None\n    windows=sorted(windows); merged=[[windows[0],windows[0]]]\n    for w in windows[1:]:\n        if w-merged[-1][1]<=60: merged[-1][1]=w\n        else: merged.append([w,w])\n    return merged"
+        },
+        {
+          "source": "notebook.ipynb",
+          "cell_one_based": 91,
+          "cell_line_start": 15,
+          "cell_line_end": 34,
+          "raw_json_matching_lines": [
+            8624,
+            8625,
+            8630,
+            8631,
+            8632,
+            8633,
+            8649,
+            8650,
+            8651,
+            8652,
+            8653,
+            8654,
+            8655,
+            8656,
+            8657,
+            8659,
+            8665,
+            8666,
+            8788,
+            8789,
+            8790,
+            8791,
+            8792,
+            8793,
+            8794,
+            8795,
+            8796,
+            8797,
+            8798,
+            8799,
+            8800,
+            8801,
+            8802,
+            8803,
+            8804,
+            8805,
+            8806,
+            8807
+          ],
+          "excerpt": "def blocked_windows2(s):\n    kk=s['k']; p=machines[kk]; wins=[]; t=s['start']; prev='O01'\n    for b in s['seq']:\n        lon1,lat1=node_lonlat(prev); lon2,lat2=node_lonlat(b)\n        d=Dm(prev,b); hc=max(ground[prev],ground[b])+50.0; h1=op_h[prev]; h2=op_h[b]\n        T=(hc-h1)/p['vc']+d/p['v']+(hc-h2)/p['vd']\n        for frac in np.linspace(0,1,40):\n            lo=lon1+(lon2-lon1)*frac; la=lat1+(lat2-lat1)*frac\n            if frac<0.3: h=h1+(hc-h1)*(frac/0.3)\n            elif frac>0.7: h=hc-(hc-h2)*((frac-0.7)/0.3)\n            else: h=hc\n            t_abs=t+frac*T\n            if los_blocked2(G01_lon,G01_lat,G01_h, lo,la,h): wins.append(t_abs)\n        t+=T; prev=b\n    if not wins: return None\n    wins=sorted(wins); merged=[[wins[0],wins[0]]]\n    for w in wins[1:]:\n        if w-merged[-1][1]<=90: merged[-1][1]=w\n        else: merged.append([w,w])\n    return merged"
+        }
+      ]
+    }
+  ],
+  "saved_relay_counterexamples": [
+    {
+      "relay_index_one_based": 3,
+      "start_s": 1828.3575335170847,
+      "need0_s": 1151.8880093488124,
+      "zero_travel_service_start_lower_bound_s": 2038.3575335170847,
+      "service_start_lateness_lower_bound_s": 886.4695241682723
+    },
+    {
+      "relay_index_one_based": 4,
+      "start_s": 3110.978552843565,
+      "need0_s": 3111.967031857089,
+      "zero_travel_service_start_lower_bound_s": 3320.978552843565,
+      "service_start_lateness_lower_bound_s": 209.01152098647617
+    },
+    {
+      "relay_index_one_based": 5,
+      "start_s": 7430.877335603694,
+      "need0_s": 5414.4578063871095,
+      "zero_travel_service_start_lower_bound_s": 7640.877335603694,
+      "service_start_lateness_lower_bound_s": 2226.419529216584
+    },
+    {
+      "relay_index_one_based": 6,
+      "start_s": 8051.778854342179,
+      "need0_s": 7000.9242820223,
+      "zero_travel_service_start_lower_bound_s": 8261.77885434218,
+      "service_start_lateness_lower_bound_s": 1260.8545723198795
+    }
+  ],
+  "saved_turnaround_gaps": [
+    {
+      "drone_zero_based": 0,
+      "gap_s": 0.0,
+      "required_turnaround_s": 300
+    },
+    {
+      "drone_zero_based": 1,
+      "gap_s": 0.0,
+      "required_turnaround_s": 300
+    },
+    {
+      "drone_zero_based": 1,
+      "gap_s": 0.0,
+      "required_turnaround_s": 300
+    },
+    {
+      "drone_zero_based": 1,
+      "gap_s": 0.0,
+      "required_turnaround_s": 300
+    }
+  ],
+  "current_recommended_window_audit": [
+    {
+      "relay": "R001",
+      "station": "H0720",
+      "certified_need_union_s": [
+        [
+          725.4003392298291,
+          1503.3980058964958
+        ]
+      ],
+      "max_gap_s": 0,
+      "extra_trip_and_setup_energy_kwh": 0.18908971758731422,
+      "same_makespan_score_break_even_gap_s": 3786.5771059221197
+    },
+    {
+      "relay": "R002",
+      "station": "H0020",
+      "certified_need_union_s": [
+        [
+          1918.7812810602973,
+          3600.8117213801233
+        ]
+      ],
+      "max_gap_s": 0,
+      "extra_trip_and_setup_energy_kwh": 0.32735284462216396,
+      "same_makespan_score_break_even_gap_s": 4239.074612581628
+    },
+    {
+      "relay": "R003",
+      "station": "H0003",
+      "certified_need_union_s": [
+        [
+          2976.6750217239583,
+          6144.650786457833
+        ]
+      ],
+      "max_gap_s": 0,
+      "extra_trip_and_setup_energy_kwh": 0.2413837810716339,
+      "same_makespan_score_break_even_gap_s": 3957.7213136889836
+    }
+  ],
+  "extra_sortie_equivalent_energy_kwh": 0.9679199536666667,
+  "current_solver_function_lines": {
+    "choose_stations": {
+      "start": 75,
+      "end": 105
+    },
+    "Profiles": {
+      "start": 108,
+      "end": 127
+    },
+    "solve": {
+      "start": 130,
+      "end": 321
+    },
+    "enrich": {
+      "start": 328,
+      "end": 370
+    }
+  },
+  "current_solver_has_multi_requirement_interface": true,
+  "notes": [
+    "Current solver is being edited concurrently by parent; source SHA binds this review snapshot.",
+    "Notebook cells are one-based to avoid ambiguity; raw JSON matching lines are supplementary anchors.",
+    "Saved legacy metrics are not independently validated feasible results."
+  ]
+}

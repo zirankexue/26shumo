@@ -1,0 +1,182 @@
+{
+  "passed": true,
+  "source_solution": "E:\\sxjm\\D题\\results\\question3_agent_update\\solution_targeted_stations.json",
+  "source_solution_sha256": "a6728359a1550a5fbde3856a4705e61e411d4d184f3cf5c03473d87a66c11ad1",
+  "station_pool_sha256": "4e59a37a89c7b45aa19e6c8b6fd87ddb97b02c8a3a39afc64daa03b0020ae9bb",
+  "old_station_prefix_length": 42,
+  "expanded_station_count": 72,
+  "old_prefix_byte_values_unchanged": true,
+  "hint_count": 21,
+  "checks": [
+    {
+      "sortie": "T001",
+      "candidate": "24f8caa7d620c167",
+      "wanted_key": "single:-1",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 1
+    },
+    {
+      "sortie": "T002",
+      "candidate": "4bdb12113ea322f2",
+      "wanted_key": "single:-1",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 1
+    },
+    {
+      "sortie": "T003",
+      "candidate": "58637b13c93945c6",
+      "wanted_key": "single:40",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 17
+    },
+    {
+      "sortie": "T004",
+      "candidate": "638d6e803ad854d5",
+      "wanted_key": "single:-1",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 1
+    },
+    {
+      "sortie": "T005",
+      "candidate": "6cb0366dc18b20a6",
+      "wanted_key": "single:40",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 21
+    },
+    {
+      "sortie": "T006",
+      "candidate": "a70857771474fae8",
+      "wanted_key": "single:55",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 23
+    },
+    {
+      "sortie": "T007",
+      "candidate": "f4d154bb28472d1d",
+      "wanted_key": "single:55",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 39
+    },
+    {
+      "sortie": "T008",
+      "candidate": "2af5d67e5d41a679",
+      "wanted_key": "single:55",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 32
+    },
+    {
+      "sortie": "T009",
+      "candidate": "ec3a0287d936b44f",
+      "wanted_key": "single:-1",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 1
+    },
+    {
+      "sortie": "T010",
+      "candidate": "58b350f9cc56209c",
+      "wanted_key": "single:55",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 17
+    },
+    {
+      "sortie": "T011",
+      "candidate": "57f9ca57932da16c",
+      "wanted_key": "single:63",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 19
+    },
+    {
+      "sortie": "T012",
+      "candidate": "0778dae839811744",
+      "wanted_key": "single:55",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 17
+    },
+    {
+      "sortie": "T013",
+      "candidate": "580101f5b41e0310",
+      "wanted_key": "single:63",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 22
+    },
+    {
+      "sortie": "T014",
+      "candidate": "c36888df3a3a6934",
+      "wanted_key": "single:63",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 16
+    },
+    {
+      "sortie": "T015",
+      "candidate": "0564f6e759c890b3",
+      "wanted_key": "single:63",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 25
+    },
+    {
+      "sortie": "T016",
+      "candidate": "dd80ad26e4984bf0",
+      "wanted_key": "single:63",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 12
+    },
+    {
+      "sortie": "T017",
+      "candidate": "4b7f575440af23b7",
+      "wanted_key": "single:63",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 25
+    },
+    {
+      "sortie": "T018",
+      "candidate": "8749f9503ee0df2a",
+      "wanted_key": "single:63",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 54
+    },
+    {
+      "sortie": "T019",
+      "candidate": "31a8131d8650c560",
+      "wanted_key": "single:63",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 25
+    },
+    {
+      "sortie": "T020",
+      "candidate": "47946d417d62a1ae",
+      "wanted_key": "single:63",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 35
+    },
+    {
+      "sortie": "T021",
+      "candidate": "9dff1580eaed51dd",
+      "wanted_key": "single:-1",
+      "matching_options": 1,
+      "unchanged_communication_rows": true,
+      "option_count": 1
+    }
+  ],
+  "wall_s": 10.971758800002135,
+  "scope": "Rebuilt actual inherited single-station options and checked exact rows and key uniqueness. MultiProfiles.get deep-copies these before appending distinct pair keys; no full re-solve performed."
+}

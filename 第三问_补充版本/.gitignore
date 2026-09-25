@@ -1,0 +1,7 @@
+# Original inputs, local runtimes and generated caches stay local.
+/第三问/数据/原始附件/
+/第三问/运行时/
+**/__pycache__/
+**/*.py[cod]
+**/.env*
+*.partial

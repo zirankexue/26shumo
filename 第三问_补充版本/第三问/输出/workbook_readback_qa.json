@@ -1,0 +1,2970 @@
+{
+  "passed": true,
+  "read_only": true,
+  "input": "E:\\sxjm\\D题\\results\\question3_agent_update\\solution_recommended.json",
+  "input_sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b",
+  "workbook": "E:\\sxjm\\D题\\outputs\\question3_agent_update\\第三问_Agent改进联合调度.xlsx",
+  "workbook_sha256": "a857c6b2bb248bce6e7a168ca390f6e0e00f4c737cb74d0d46ab551af140283f",
+  "check_count": 700,
+  "formula_count": 397,
+  "formula_errors": [],
+  "missing_formula_cache": [],
+  "native_objective": {
+    "tardiness": 0,
+    "makespan": 6612284,
+    "energy": 66445273284,
+    "sorties": 24
+  },
+  "score": 0.0037081055399544836,
+  "communication": {
+    "original_intervals": 240,
+    "merged_rows": 238,
+    "relay_intervals": 116,
+    "route_bindings": {
+      "T001": [],
+      "T002": [
+        {
+          "station": 40,
+          "relay": "R001"
+        }
+      ],
+      "T003": [
+        {
+          "station": 40,
+          "relay": "R001"
+        }
+      ],
+      "T004": [],
+      "T005": [],
+      "T006": [
+        {
+          "station": 52,
+          "relay": "R002"
+        }
+      ],
+      "T007": [],
+      "T008": [
+        {
+          "station": 52,
+          "relay": "R002"
+        },
+        {
+          "station": 58,
+          "relay": "R003"
+        }
+      ],
+      "T009": [
+        {
+          "station": 52,
+          "relay": "R002"
+        }
+      ],
+      "T010": [
+        {
+          "station": 52,
+          "relay": "R002"
+        }
+      ],
+      "T011": [
+        {
+          "station": 58,
+          "relay": "R003"
+        }
+      ],
+      "T012": [
+        {
+          "station": 52,
+          "relay": "R002"
+        }
+      ],
+      "T013": [
+        {
+          "station": 58,
+          "relay": "R003"
+        }
+      ],
+      "T014": [
+        {
+          "station": 58,
+          "relay": "R003"
+        }
+      ],
+      "T015": [
+        {
+          "station": 58,
+          "relay": "R003"
+        }
+      ],
+      "T016": [
+        {
+          "station": 58,
+          "relay": "R003"
+        }
+      ],
+      "T017": [
+        {
+          "station": 58,
+          "relay": "R003"
+        }
+      ],
+      "T018": [
+        {
+          "station": 58,
+          "relay": "R003"
+        }
+      ],
+      "T019": [
+        {
+          "station": 58,
+          "relay": "R003"
+        }
+      ],
+      "T020": [
+        {
+          "station": 58,
+          "relay": "R003"
+        }
+      ],
+      "T021": []
+    }
+  },
+  "sheet_dimensions": {
+    "方案汇总": [
+      40,
+      4
+    ],
+    "Q3_运输架次": [
+      22,
+      18
+    ],
+    "逐箱交付": [
+      81,
+      14
+    ],
+    "Q3_中继架次": [
+      4,
+      21
+    ],
+    "Q3_通信保障": [
+      239,
+      10
+    ],
+    "运输资源": [
+      49,
+      10
+    ],
+    "算法说明": [
+      25,
+      3
+    ]
+  },
+  "checks": [
+    {
+      "check": "exact seven sheets",
+      "passed": true
+    },
+    {
+      "check": "Q3_运输架次 template columns",
+      "passed": true
+    },
+    {
+      "check": "逐箱交付 template columns",
+      "passed": true
+    },
+    {
+      "check": "Q3_中继架次 template columns",
+      "passed": true
+    },
+    {
+      "check": "Q3_通信保障 template columns",
+      "passed": true
+    },
+    {
+      "check": "80 unique boxes",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-FOD-02",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-FOD-02",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-FOD-02",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-FOD-03",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-FOD-03",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-FOD-03",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-HYG-02",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-HYG-02",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-HYG-02",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-MED-02",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-MED-02",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-MED-02",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-WAT-04",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-WAT-04",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-WAT-04",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-WAT-05",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-WAT-05",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-WAT-05",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-WAT-06",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-WAT-06",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-WAT-06",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-WAT-07",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-WAT-07",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-WAT-07",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S001-WAT-08",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S001-WAT-08",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S001-WAT-08",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S002-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S002-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S002-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S002-FOD-02",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S002-FOD-02",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S002-FOD-02",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S002-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S002-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S002-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S002-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S002-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S002-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S002-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S002-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S002-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S002-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S002-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S002-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S002-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S002-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S002-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S002-WAT-04",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S002-WAT-04",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S002-WAT-04",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S003-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S003-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S003-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S003-FOD-02",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S003-FOD-02",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S003-FOD-02",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S003-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S003-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S003-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S003-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S003-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S003-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S003-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S003-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S003-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S003-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S003-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S003-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S003-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S003-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S003-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S003-WAT-04",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S003-WAT-04",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S003-WAT-04",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S004-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S004-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S004-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S004-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S004-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S004-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S004-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S004-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S004-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S004-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S004-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S004-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S004-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S004-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S004-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S004-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S004-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S004-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S005-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S005-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S005-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S005-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S005-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S005-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S005-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S005-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S005-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S005-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S005-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S005-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S005-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S005-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S005-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S005-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S005-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S005-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S006-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S006-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S006-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S006-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S006-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S006-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S006-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S006-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S006-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S006-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S006-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S006-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S006-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S006-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S006-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S006-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S006-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S006-WAT-03",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S007-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S007-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S007-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S007-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S007-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S007-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S007-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S007-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S007-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S007-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S007-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S007-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S007-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S007-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S007-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S008-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S008-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S008-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S008-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S008-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S008-HYG-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S008-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S008-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S008-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S008-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S008-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S008-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S008-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S008-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S008-WAT-02",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S009-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S009-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S009-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S009-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S009-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S009-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S009-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S009-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S009-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S010-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S010-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S010-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S010-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S010-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S010-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S010-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S010-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S010-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S011-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S011-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S011-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S011-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S011-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S011-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S011-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S011-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S011-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S012-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S012-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S012-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S012-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S012-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S012-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S012-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S012-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S012-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S013-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S013-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S013-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S013-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S013-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S013-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S013-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S013-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S013-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S014-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S014-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S014-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S014-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S014-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S014-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S014-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S014-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S014-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S015-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S015-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S015-FOD-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S015-MED-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S015-MED-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S015-MED-01",
+      "passed": true
+    },
+    {
+      "check": "box mapping/time S015-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "optimized delivery order S015-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "hard deadline S015-WAT-01",
+      "passed": true
+    },
+    {
+      "check": "transport row count",
+      "passed": true
+    },
+    {
+      "check": "relay row count",
+      "passed": true
+    },
+    {
+      "check": "transport source row T001",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T001",
+      "passed": true
+    },
+    {
+      "check": "transport source row T002",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T002",
+      "passed": true
+    },
+    {
+      "check": "transport source row T003",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T003",
+      "passed": true
+    },
+    {
+      "check": "transport source row T004",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T004",
+      "passed": true
+    },
+    {
+      "check": "transport source row T005",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T005",
+      "passed": true
+    },
+    {
+      "check": "transport source row T006",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T006",
+      "passed": true
+    },
+    {
+      "check": "transport source row T007",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T007",
+      "passed": true
+    },
+    {
+      "check": "transport source row T008",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T008",
+      "passed": true
+    },
+    {
+      "check": "transport source row T009",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T009",
+      "passed": true
+    },
+    {
+      "check": "transport source row T010",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T010",
+      "passed": true
+    },
+    {
+      "check": "transport source row T011",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T011",
+      "passed": true
+    },
+    {
+      "check": "transport source row T012",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T012",
+      "passed": true
+    },
+    {
+      "check": "transport source row T013",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T013",
+      "passed": true
+    },
+    {
+      "check": "transport source row T014",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T014",
+      "passed": true
+    },
+    {
+      "check": "transport source row T015",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T015",
+      "passed": true
+    },
+    {
+      "check": "transport source row T016",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T016",
+      "passed": true
+    },
+    {
+      "check": "transport source row T017",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T017",
+      "passed": true
+    },
+    {
+      "check": "transport source row T018",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T018",
+      "passed": true
+    },
+    {
+      "check": "transport source row T019",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T019",
+      "passed": true
+    },
+    {
+      "check": "transport source row T020",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T020",
+      "passed": true
+    },
+    {
+      "check": "transport source row T021",
+      "passed": true
+    },
+    {
+      "check": "transport native energy T021",
+      "passed": true
+    },
+    {
+      "check": "relay source/formula row R001",
+      "passed": true
+    },
+    {
+      "check": "relay separate-ceil energy R001",
+      "passed": true
+    },
+    {
+      "check": "relay source/formula row R002",
+      "passed": true
+    },
+    {
+      "check": "relay separate-ceil energy R002",
+      "passed": true
+    },
+    {
+      "check": "relay source/formula row R003",
+      "passed": true
+    },
+    {
+      "check": "relay separate-ceil energy R003",
+      "passed": true
+    },
+    {
+      "check": "native objective tardiness",
+      "passed": true
+    },
+    {
+      "check": "native objective makespan",
+      "passed": true
+    },
+    {
+      "check": "native objective energy",
+      "passed": true
+    },
+    {
+      "check": "native objective sorties",
+      "passed": true
+    },
+    {
+      "check": "summary B5",
+      "passed": true
+    },
+    {
+      "check": "summary B6",
+      "passed": true
+    },
+    {
+      "check": "summary B7",
+      "passed": true
+    },
+    {
+      "check": "summary B10",
+      "passed": true
+    },
+    {
+      "check": "summary B11",
+      "passed": true
+    },
+    {
+      "check": "summary B14",
+      "passed": true
+    },
+    {
+      "check": "summary B15",
+      "passed": true
+    },
+    {
+      "check": "summary B16",
+      "passed": true
+    },
+    {
+      "check": "summary B20",
+      "passed": true
+    },
+    {
+      "check": "summary B21",
+      "passed": true
+    },
+    {
+      "check": "finite search feasibility scope",
+      "passed": true
+    },
+    {
+      "check": "two-station policy text",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T001 1",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T001 2",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T001 3",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T001 4",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T001 5",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T001 6",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T001 7",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T001 8",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T001 9",
+      "passed": true
+    },
+    {
+      "check": "station policy T001",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T002 10",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T002 11",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T002 12",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T002 12",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T002 13",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T002 13",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T002 14",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T002 14",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T002 15",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T002 15",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T002 16",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T002 16",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T002 17",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T002 17",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T002 18",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T002 19",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T002 20",
+      "passed": true
+    },
+    {
+      "check": "station policy T002",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T003 21",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T003 22",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T003 23",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T003 24",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T003 24",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T003 25",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T003 25",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T003 26",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T003 26",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T003 27",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T003 27",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T003 28",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T003 28",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T003 29",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T003 29",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T003 30",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T003 31",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T003 32",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T003 33",
+      "passed": true
+    },
+    {
+      "check": "station policy T003",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T004 34",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T004 35",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T004 36",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T004 37",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T004 38",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T004 39",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T004 40",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T004 41",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T004 42",
+      "passed": true
+    },
+    {
+      "check": "station policy T004",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T005 43",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T005 44",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T005 45",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T005 46",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T005 47",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T005 48",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T005 49",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T005 50",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T005 51",
+      "passed": true
+    },
+    {
+      "check": "station policy T005",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T006 52",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T006 53",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T006 54",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T006 54",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T006 55",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T006 55",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T006 56",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T006 56",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T006 57",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T006 57",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T006 58",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T006 58",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T006 59",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T006 59",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T006 60",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T006 61",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T006 62",
+      "passed": true
+    },
+    {
+      "check": "station policy T006",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T007 63",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T007 64",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T007 65",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T007 66",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T007 67",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T007 68",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T007 69",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T007 70",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T007 71",
+      "passed": true
+    },
+    {
+      "check": "station policy T007",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 72",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 73",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 74",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 74",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 75",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 75",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 76",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 76",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 77",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 77",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 78",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 78",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 79",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 79",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 80",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 80",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 81",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 81",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 82",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 82",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 83",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 83",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 84",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 84",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 85",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 85",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 86",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 86",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 87",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 87",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 88",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 88",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T008 89",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 89",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 90",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T008 91",
+      "passed": true
+    },
+    {
+      "check": "station policy T008",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T009 92",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T009 93",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T009 94",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T009 94",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T009 95",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T009 95",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T009 96",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T009 96",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T009 97",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T009 97",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T009 98",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T009 98",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T009 99",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T009 99",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T009 100",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T009 101",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T009 102",
+      "passed": true
+    },
+    {
+      "check": "station policy T009",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T010 103",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T010 104",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T010 105",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T010 105",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T010 106",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T010 106",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T010 107",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T010 107",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T010 108",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T010 108",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T010 109",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T010 109",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T010 110",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T010 110",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T010 111",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T010 112",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T010 113",
+      "passed": true
+    },
+    {
+      "check": "station policy T010",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 114",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 115",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 116",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 117",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 118",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 119",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 120",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T011 121",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 121",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T011 122",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 122",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T011 123",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 123",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T011 124",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 124",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T011 125",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 125",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T011 126",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 126",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 127",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T011 128",
+      "passed": true
+    },
+    {
+      "check": "station policy T011",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T012 129",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T012 130",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T012 131",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T012 131",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T012 132",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T012 132",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T012 133",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T012 133",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T012 134",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T012 134",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T012 135",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T012 135",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T012 136",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T012 136",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T012 137",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T012 138",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T012 139",
+      "passed": true
+    },
+    {
+      "check": "station policy T012",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T013 140",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T013 141",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T013 141",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T013 142",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T013 142",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T013 143",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T013 143",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T013 144",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T013 144",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T013 145",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T013 145",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T013 146",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T013 146",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T013 147",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T013 148",
+      "passed": true
+    },
+    {
+      "check": "station policy T013",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T014 149",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T014 150",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T014 150",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T014 151",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T014 151",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T014 152",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T014 152",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T014 153",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T014 153",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T014 154",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T014 154",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T014 155",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T014 155",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T014 156",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T014 157",
+      "passed": true
+    },
+    {
+      "check": "station policy T014",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 158",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T015 159",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 159",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T015 160",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 160",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T015 161",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 161",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T015 162",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 162",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T015 163",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 163",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T015 164",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 164",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T015 165",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 165",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T015 166",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 166",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T015 167",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 167",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T015 168",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 168",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T015 169",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 169",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 170",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T015 171",
+      "passed": true
+    },
+    {
+      "check": "station policy T015",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 172",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T016 173",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 173",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T016 174",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 174",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T016 175",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 175",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T016 176",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 176",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T016 177",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 177",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T016 178",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 178",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T016 179",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 179",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T016 180",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 180",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T016 181",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 181",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T016 182",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 182",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T016 183",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 183",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 184",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T016 185",
+      "passed": true
+    },
+    {
+      "check": "station policy T016",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T017 186",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T017 187",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T017 187",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T017 188",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T017 188",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T017 189",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T017 189",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T017 190",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T017 190",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T017 191",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T017 191",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T017 192",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T017 192",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T017 193",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T017 194",
+      "passed": true
+    },
+    {
+      "check": "station policy T017",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T018 195",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T018 196",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T018 196",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T018 197",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T018 197",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T018 198",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T018 198",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T018 199",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T018 199",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T018 200",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T018 200",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T018 201",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T018 201",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T018 202",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T018 203",
+      "passed": true
+    },
+    {
+      "check": "station policy T018",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 204",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T019 205",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 205",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T019 206",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 206",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T019 207",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 207",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T019 208",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 208",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T019 209",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 209",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T019 210",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 210",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 211",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 212",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 213",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 214",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 215",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 216",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T019 217",
+      "passed": true
+    },
+    {
+      "check": "station policy T019",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T020 218",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T020 219",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T020 219",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T020 220",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T020 220",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T020 221",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T020 221",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T020 222",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T020 222",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T020 223",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T020 223",
+      "passed": true
+    },
+    {
+      "check": "source unique active relay T020 224",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T020 224",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T020 225",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T020 226",
+      "passed": true
+    },
+    {
+      "check": "station policy T020",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 227",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 228",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 229",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 230",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 231",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 232",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 233",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 234",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 235",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 236",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 237",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 238",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 239",
+      "passed": true
+    },
+    {
+      "check": "exported interval binding T021 240",
+      "passed": true
+    },
+    {
+      "check": "station policy T021",
+      "passed": true
+    },
+    {
+      "check": "communication original interval count",
+      "passed": true
+    },
+    {
+      "check": "T008 actual station52/R002 and station58/R003",
+      "passed": true
+    },
+    {
+      "check": "zero Excel formula errors",
+      "passed": true
+    },
+    {
+      "check": "all formula caches populated",
+      "passed": true
+    },
+    {
+      "check": "sub-ms certificate time display",
+      "passed": true
+    },
+    {
+      "check": "frozen row and id column Q3_运输架次",
+      "passed": true
+    },
+    {
+      "check": "frozen row and id column 逐箱交付",
+      "passed": true
+    },
+    {
+      "check": "frozen row and id column Q3_中继架次",
+      "passed": true
+    },
+    {
+      "check": "frozen row and id column Q3_通信保障",
+      "passed": true
+    },
+    {
+      "check": "frozen row and id column 运输资源",
+      "passed": true
+    },
+    {
+      "check": "frozen row and id column 算法说明",
+      "passed": true
+    }
+  ],
+  "visual_qa": {
+    "sheet_count": 7,
+    "preview_count": 9,
+    "all_sheets_reviewed": true,
+    "clipping_detected": false,
+    "multistation_preview": "T008 R002 to R003 transition is visible; readback maps to stations52/58"
+  }
+}

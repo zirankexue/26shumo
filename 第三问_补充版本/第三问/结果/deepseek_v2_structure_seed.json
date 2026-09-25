@@ -1,0 +1,489 @@
+{
+  "purpose": "structure_only_seed; do not inherit times, energy, resources, relay or communication",
+  "source": "D:\\Desktop\\Agent\\Deepseek版本二\\output\\q3_solution.json",
+  "source_sha256": "9c29f1ca85415832694385d91827568714560906bcba4acd1d9ed0a36e7d1554",
+  "index_mapping_source": "E:\\sxjm\\D题\\数据\\无人机应急物资运输基础数据\\物资需求与配送时限.xlsx",
+  "index_mapping_source_sha256": "5a3346159ceddcf585859d270b8f62114b388a1f737fbe64ffde0ee1fdc8170a",
+  "mapping_validation": "all 80 indices match service IDs and 20 complete route signatures match archived CSV with explicit box IDs",
+  "routes": [
+    {
+      "id": "DEEPSEEK2-001",
+      "model": "C",
+      "boxes": [
+        "S001-WAT-05",
+        "S001-WAT-01",
+        "S001-MED-02",
+        "S001-HYG-02",
+        "S001-FOD-01",
+        "S001-WAT-07",
+        "S001-WAT-08"
+      ],
+      "order": [
+        "S001"
+      ],
+      "source_box_indices": [
+        6,
+        2,
+        1,
+        14,
+        10,
+        8,
+        9
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-002",
+      "model": "C",
+      "boxes": [
+        "S001-MED-01",
+        "S001-HYG-01",
+        "S001-FOD-03",
+        "S001-WAT-03",
+        "S009-FOD-01",
+        "S009-WAT-01",
+        "S002-HYG-01",
+        "S002-FOD-02",
+        "S002-FOD-01"
+      ],
+      "order": [
+        "S001",
+        "S009",
+        "S002"
+      ],
+      "source_box_indices": [
+        0,
+        13,
+        12,
+        4,
+        61,
+        60,
+        22,
+        21,
+        20
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-003",
+      "model": "B",
+      "boxes": [
+        "S014-MED-01",
+        "S014-FOD-01",
+        "S014-WAT-01"
+      ],
+      "order": [
+        "S014"
+      ],
+      "source_box_indices": [
+        74,
+        76,
+        75
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-004",
+      "model": "C",
+      "boxes": [
+        "S004-HYG-01",
+        "S004-MED-01",
+        "S004-FOD-01",
+        "S004-WAT-02",
+        "S004-WAT-03",
+        "S004-WAT-01"
+      ],
+      "order": [
+        "S004"
+      ],
+      "source_box_indices": [
+        36,
+        31,
+        35,
+        33,
+        34,
+        32
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-005",
+      "model": "C",
+      "boxes": [
+        "S001-WAT-02",
+        "S001-WAT-06",
+        "S001-FOD-02",
+        "S002-WAT-01",
+        "S002-WAT-02",
+        "S002-WAT-04"
+      ],
+      "order": [
+        "S001",
+        "S002"
+      ],
+      "source_box_indices": [
+        3,
+        7,
+        11,
+        16,
+        17,
+        19
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-006",
+      "model": "C",
+      "boxes": [
+        "S006-WAT-02",
+        "S006-HYG-01",
+        "S006-WAT-01",
+        "S007-MED-01",
+        "S007-HYG-01",
+        "S007-WAT-01",
+        "S007-WAT-02",
+        "S007-FOD-01"
+      ],
+      "order": [
+        "S006",
+        "S007"
+      ],
+      "source_box_indices": [
+        45,
+        48,
+        44,
+        49,
+        53,
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-007",
+      "model": "C",
+      "boxes": [
+        "S005-MED-01",
+        "S005-FOD-01",
+        "S005-HYG-01",
+        "S005-WAT-03",
+        "S005-WAT-02",
+        "S005-WAT-01"
+      ],
+      "order": [
+        "S005"
+      ],
+      "source_box_indices": [
+        37,
+        41,
+        42,
+        40,
+        39,
+        38
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-008",
+      "model": "B",
+      "boxes": [
+        "S012-FOD-01",
+        "S012-WAT-01",
+        "S012-MED-01"
+      ],
+      "order": [
+        "S012"
+      ],
+      "source_box_indices": [
+        70,
+        69,
+        68
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-009",
+      "model": "C",
+      "boxes": [
+        "S011-MED-01",
+        "S011-FOD-01",
+        "S011-WAT-01",
+        "S008-MED-01",
+        "S008-HYG-01",
+        "S008-WAT-02",
+        "S008-WAT-01",
+        "S008-FOD-01"
+      ],
+      "order": [
+        "S011",
+        "S008"
+      ],
+      "source_box_indices": [
+        65,
+        67,
+        66,
+        54,
+        58,
+        56,
+        55,
+        57
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-010",
+      "model": "A",
+      "boxes": [
+        "S001-WAT-04",
+        "S010-FOD-01"
+      ],
+      "order": [
+        "S001",
+        "S010"
+      ],
+      "source_box_indices": [
+        5,
+        64
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-011",
+      "model": "A",
+      "boxes": [
+        "S006-MED-01",
+        "S006-WAT-03"
+      ],
+      "order": [
+        "S006"
+      ],
+      "source_box_indices": [
+        43,
+        46
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-012",
+      "model": "A",
+      "boxes": [
+        "S010-MED-01",
+        "S013-MED-01",
+        "S013-WAT-01"
+      ],
+      "order": [
+        "S010",
+        "S013"
+      ],
+      "source_box_indices": [
+        62,
+        71,
+        72
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-013",
+      "model": "A",
+      "boxes": [
+        "S015-FOD-01",
+        "S015-WAT-01"
+      ],
+      "order": [
+        "S015"
+      ],
+      "source_box_indices": [
+        79,
+        78
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-014",
+      "model": "A",
+      "boxes": [
+        "S010-WAT-01",
+        "S013-FOD-01"
+      ],
+      "order": [
+        "S010",
+        "S013"
+      ],
+      "source_box_indices": [
+        63,
+        73
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-015",
+      "model": "A",
+      "boxes": [
+        "S009-MED-01",
+        "S002-WAT-03",
+        "S002-MED-01"
+      ],
+      "order": [
+        "S009",
+        "S002"
+      ],
+      "source_box_indices": [
+        59,
+        18,
+        15
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-016",
+      "model": "A",
+      "boxes": [
+        "S015-MED-01",
+        "S003-WAT-01"
+      ],
+      "order": [
+        "S015",
+        "S003"
+      ],
+      "source_box_indices": [
+        77,
+        24
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-017",
+      "model": "A",
+      "boxes": [
+        "S006-FOD-01",
+        "S003-WAT-03"
+      ],
+      "order": [
+        "S006",
+        "S003"
+      ],
+      "source_box_indices": [
+        47,
+        26
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-018",
+      "model": "A",
+      "boxes": [
+        "S003-FOD-01",
+        "S003-WAT-02"
+      ],
+      "order": [
+        "S003"
+      ],
+      "source_box_indices": [
+        28,
+        25
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-019",
+      "model": "A",
+      "boxes": [
+        "S003-WAT-04",
+        "S003-FOD-02"
+      ],
+      "order": [
+        "S003"
+      ],
+      "source_box_indices": [
+        27,
+        29
+      ]
+    },
+    {
+      "id": "DEEPSEEK2-020",
+      "model": "A",
+      "boxes": [
+        "S003-HYG-01",
+        "S003-MED-01"
+      ],
+      "order": [
+        "S003"
+      ],
+      "source_box_indices": [
+        30,
+        23
+      ]
+    }
+  ],
+  "box_index_map": {
+    "0": "S001-MED-01",
+    "1": "S001-MED-02",
+    "2": "S001-WAT-01",
+    "3": "S001-WAT-02",
+    "4": "S001-WAT-03",
+    "5": "S001-WAT-04",
+    "6": "S001-WAT-05",
+    "7": "S001-WAT-06",
+    "8": "S001-WAT-07",
+    "9": "S001-WAT-08",
+    "10": "S001-FOD-01",
+    "11": "S001-FOD-02",
+    "12": "S001-FOD-03",
+    "13": "S001-HYG-01",
+    "14": "S001-HYG-02",
+    "15": "S002-MED-01",
+    "16": "S002-WAT-01",
+    "17": "S002-WAT-02",
+    "18": "S002-WAT-03",
+    "19": "S002-WAT-04",
+    "20": "S002-FOD-01",
+    "21": "S002-FOD-02",
+    "22": "S002-HYG-01",
+    "23": "S003-MED-01",
+    "24": "S003-WAT-01",
+    "25": "S003-WAT-02",
+    "26": "S003-WAT-03",
+    "27": "S003-WAT-04",
+    "28": "S003-FOD-01",
+    "29": "S003-FOD-02",
+    "30": "S003-HYG-01",
+    "31": "S004-MED-01",
+    "32": "S004-WAT-01",
+    "33": "S004-WAT-02",
+    "34": "S004-WAT-03",
+    "35": "S004-FOD-01",
+    "36": "S004-HYG-01",
+    "37": "S005-MED-01",
+    "38": "S005-WAT-01",
+    "39": "S005-WAT-02",
+    "40": "S005-WAT-03",
+    "41": "S005-FOD-01",
+    "42": "S005-HYG-01",
+    "43": "S006-MED-01",
+    "44": "S006-WAT-01",
+    "45": "S006-WAT-02",
+    "46": "S006-WAT-03",
+    "47": "S006-FOD-01",
+    "48": "S006-HYG-01",
+    "49": "S007-MED-01",
+    "50": "S007-WAT-01",
+    "51": "S007-WAT-02",
+    "52": "S007-FOD-01",
+    "53": "S007-HYG-01",
+    "54": "S008-MED-01",
+    "55": "S008-WAT-01",
+    "56": "S008-WAT-02",
+    "57": "S008-FOD-01",
+    "58": "S008-HYG-01",
+    "59": "S009-MED-01",
+    "60": "S009-WAT-01",
+    "61": "S009-FOD-01",
+    "62": "S010-MED-01",
+    "63": "S010-WAT-01",
+    "64": "S010-FOD-01",
+    "65": "S011-MED-01",
+    "66": "S011-WAT-01",
+    "67": "S011-FOD-01",
+    "68": "S012-MED-01",
+    "69": "S012-WAT-01",
+    "70": "S012-FOD-01",
+    "71": "S013-MED-01",
+    "72": "S013-WAT-01",
+    "73": "S013-FOD-01",
+    "74": "S014-MED-01",
+    "75": "S014-WAT-01",
+    "76": "S014-FOD-01",
+    "77": "S015-MED-01",
+    "78": "S015-WAT-01",
+    "79": "S015-FOD-01"
+  },
+  "coverage": {
+    "routes": 20,
+    "boxes": 80,
+    "unique_boxes": 80,
+    "csv_route_signatures_match": true
+  }
+}

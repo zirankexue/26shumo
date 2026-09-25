@@ -1,0 +1,336 @@
+{
+  "baseline": "results\\question3_from_senior\\solution_recommended.json",
+  "baseline_sha256": "35e203d5426de54543065ac5051a8956e6450b1092e96bb9ed1853fb3b653bf2",
+  "recommended_sha256": "45734e940dbec226d19fd21537c02952e7897e35c1ae0059c193cc3f24c69b9b",
+  "comparison": {
+    "transport_sorties": {
+      "old": 21,
+      "new": 21,
+      "new_minus_old": 0
+    },
+    "relay_sorties": {
+      "old": 3,
+      "new": 3,
+      "new_minus_old": 0
+    },
+    "transport_energy_kwh": {
+      "old": 64.36366272180486,
+      "new": 64.09596908039461,
+      "new_minus_old": -0.2676936414102471
+    },
+    "relay_energy_kwh": {
+      "old": 2.477496982170001,
+      "new": 2.349304202173859,
+      "new_minus_old": -0.12819277999614176
+    },
+    "total_energy_kwh": {
+      "old": 66.84115970397485,
+      "new": 66.44527328256846,
+      "new_minus_old": -0.39588642140638797
+    },
+    "joint_finish_s": {
+      "old": 6620.617,
+      "new": 6612.284,
+      "new_minus_old": -8.333000000000538
+    },
+    "last_delivery_s": {
+      "old": 6294.771,
+      "new": 6234.755,
+      "new_minus_old": -60.01599999999962
+    },
+    "late_boxes": {
+      "old": 0,
+      "new": 0,
+      "new_minus_old": 0
+    },
+    "weighted_delay_s": {
+      "old": 0.0,
+      "new": 0.0,
+      "new_minus_old": 0.0
+    },
+    "weighted_mean_delivery_s": {
+      "old": 3027.916577405858,
+      "new": 3092.1109979079497,
+      "new_minus_old": 64.19442050209182
+    },
+    "score": {
+      "old": 0.0070791607595772875,
+      "new": 0.0037081055399544767,
+      "new_minus_old": -0.003371055219622811
+    }
+  },
+  "validation": {
+    "passed": true,
+    "check_count": 11884,
+    "error_count": 0,
+    "minimum_hard_deadline_slack_s": 212.06100000000015,
+    "minimum_transport_return_soc_percent": 20.09171095022737,
+    "minimum_relay_return_soc_percent": 62.27684845603449,
+    "communication_interval_count": 240,
+    "unproven_communication_interval_count": 0,
+    "minimum_proved_communication_margin_db": 0.07973598524506542
+  },
+  "minimum_all_expected_slack_s": 0.0,
+  "actual_multistation_sorties": [
+    {
+      "id": "T008",
+      "order": [
+        "S013",
+        "S002",
+        "S009"
+      ],
+      "stations": [
+        52,
+        58
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "label": "route_seed_union",
+      "search": {
+        "label": "route_seed_union",
+        "status": "FEASIBLE",
+        "seconds": 65.15570100000001,
+        "seed": 41,
+        "workers": 8,
+        "zero_lateness": true,
+        "route_pool_count": 49,
+        "station_pool_count": 42,
+        "integer_objective": 12814688,
+        "integer_bound": 12438386.0,
+        "model_build_s": 8.930684700000384
+      },
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.36366272180486,
+        "relay_energy_kwh": 2.477496982170001,
+        "joint_finish_s": 6620.617,
+        "transport_finish_s": 6619.643,
+        "last_delivery_s": 6294.771,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3023.810907949791,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.84115970397485,
+        "score": 0.0070791607595772875
+      }
+    },
+    {
+      "label": "targeted_stations",
+      "search": {
+        "label": "targeted_stations",
+        "status": "FEASIBLE",
+        "seconds": 65.1019387,
+        "seed": 42,
+        "workers": 8,
+        "zero_lateness": true,
+        "route_pool_count": 21,
+        "station_pool_count": 72,
+        "integer_objective": 12807935,
+        "integer_bound": 12519223.0,
+        "model_build_s": 8.065541699999471
+      },
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.36366272180486,
+        "relay_energy_kwh": 2.4730373966183037,
+        "joint_finish_s": 6612.283,
+        "transport_finish_s": 6559.627,
+        "last_delivery_s": 6234.755,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3041.2565460251044,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.83670011842317,
+        "score": 0.006516438921624564
+      }
+    },
+    {
+      "label": "interval_relay_switch",
+      "search": {
+        "label": "interval_relay_switch",
+        "status": "FEASIBLE",
+        "seconds": 65.1323366,
+        "seed": 43,
+        "workers": 8,
+        "zero_lateness": true,
+        "route_pool_count": 49,
+        "station_pool_count": 72,
+        "integer_objective": 12807935,
+        "integer_bound": 12387265.0,
+        "model_build_s": 17.839373700000266
+      },
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.36366272180486,
+        "relay_energy_kwh": 2.4730373966183037,
+        "joint_finish_s": 6612.284,
+        "transport_finish_s": 6559.628,
+        "last_delivery_s": 6234.756,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3046.353010460251,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.83670011842317,
+        "score": 0.006516438928799176
+      }
+    },
+    {
+      "label": "joint_neighborhood_1",
+      "search": {
+        "label": "joint_neighborhood_1",
+        "status": "FEASIBLE",
+        "seconds": 65.1620271,
+        "seed": 44,
+        "workers": 8,
+        "zero_lateness": true,
+        "route_pool_count": 350,
+        "station_pool_count": 72,
+        "integer_objective": 12800453,
+        "integer_bound": 12351594.0,
+        "model_build_s": 0.36952399999715624
+      },
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.40048749404414,
+        "relay_energy_kwh": 2.3493087855071924,
+        "joint_finish_s": 6612.283,
+        "transport_finish_s": 6559.628,
+        "last_delivery_s": 6234.756,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3102.675857740586,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.74979627955133,
+        "score": 0.0058929381045804766
+      }
+    },
+    {
+      "label": "joint_neighborhood_2",
+      "search": {
+        "label": "joint_neighborhood_2",
+        "status": "FEASIBLE",
+        "seconds": 65.13035670000001,
+        "seed": 45,
+        "workers": 8,
+        "zero_lateness": true,
+        "route_pool_count": 350,
+        "station_pool_count": 72,
+        "integer_objective": 12774235,
+        "integer_bound": 12315785.0,
+        "model_build_s": 0.36455789999989463
+      },
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.09596908039461,
+        "relay_energy_kwh": 2.349304202173859,
+        "joint_finish_s": 6612.284,
+        "transport_finish_s": 6559.627,
+        "last_delivery_s": 6234.755,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3092.92689748954,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.44527328256846,
+        "score": 0.0037081055399544767
+      }
+    },
+    {
+      "label": "fixed_refinement",
+      "search": {
+        "label": "fixed_refinement",
+        "status": "FEASIBLE",
+        "seconds": 65.13317310000001,
+        "seed": 49,
+        "workers": 8,
+        "zero_lateness": true,
+        "route_pool_count": 21,
+        "station_pool_count": 72,
+        "integer_objective": 12774235,
+        "integer_bound": 12483016.0,
+        "model_build_s": 0.05023460000212765
+      },
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.09596908039461,
+        "relay_energy_kwh": 2.349304202173859,
+        "joint_finish_s": 6612.284,
+        "transport_finish_s": 6559.627,
+        "last_delivery_s": 6234.755,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3092.4122531380754,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.44527328256846,
+        "score": 0.0037081055399544767
+      }
+    },
+    {
+      "label": "normalized_fixed_refinement",
+      "search": {
+        "label": "normalized_fixed_refinement",
+        "status": "FEASIBLE",
+        "seconds": 65.0793009,
+        "seed": 61,
+        "workers": 4,
+        "zero_lateness": true,
+        "route_pool_count": 21,
+        "station_pool_count": 65,
+        "integer_objective": 12774235,
+        "integer_bound": 12467315.0,
+        "model_build_s": 14.433688799996972
+      },
+      "metrics": {
+        "boxes": 80,
+        "transport_sorties": 21,
+        "relay_sorties": 3,
+        "transport_energy_kwh": 64.09596908039461,
+        "relay_energy_kwh": 2.349304202173859,
+        "joint_finish_s": 6612.284,
+        "transport_finish_s": 6559.627,
+        "last_delivery_s": 6234.755,
+        "late_boxes": 0,
+        "weighted_delay_s": 0.0,
+        "weighted_mean_delivery_s": 3092.1109979079497,
+        "multi_stop_sorties": 6,
+        "total_energy_kwh": 66.44527328256846,
+        "score": 0.0037081055399544767
+      }
+    }
+  ],
+  "single_station_ablation": {
+    "boxes": 80,
+    "transport_sorties": 21,
+    "relay_sorties": 3,
+    "transport_energy_kwh": 64.09596908039461,
+    "relay_energy_kwh": 2.4752111188405257,
+    "joint_finish_s": 6612.284,
+    "transport_finish_s": 6559.627,
+    "last_delivery_s": 6234.755,
+    "late_boxes": 0,
+    "weighted_delay_s": 0.0,
+    "weighted_mean_delivery_s": 3039.6943556485357,
+    "multi_stop_sorties": 6,
+    "total_energy_kwh": 66.57118019923513,
+    "score": 0.004611438079970373
+  },
+  "limits": [
+    "Finite candidate search; no global optimality proof.",
+    "Zero expected lateness enforced in these comparisons.",
+    "Weighted average delivery time is not a direct objective component and increases.",
+    "Time-bounded single/multi-station incumbent difference is not a certified optimum gap."
+  ]
+}

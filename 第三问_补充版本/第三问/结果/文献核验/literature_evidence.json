@@ -1,0 +1,609 @@
+{
+  "schema_version": 1,
+  "access_date": "2026-09-24",
+  "scope": "第三问独立建模的算法文献检索与证据核验；不是论文复现实验。",
+  "skill": "nature-academic-search; multi-source-search",
+  "search_sources": [
+    "Crossref public HTTP API",
+    "OpenAlex public HTTP API",
+    "arXiv official abstract page",
+    "DTU Research Database",
+    "Springer",
+    "RePEc/IDEAS",
+    "US DOE OSTI",
+    "Local Dorling author manuscript"
+  ],
+  "search_terms": [
+    "Vehicle Routing Problems for Drone Delivery",
+    "adaptive large neighborhood search metaheuristic vehicle routing problem drones",
+    "drone delivery shared battery swapping scheduling multi trip",
+    "drone delivery Benders decomposition",
+    "drone delivery battery recharging scheduling",
+    "multi trip heterogeneous drone routing time windows",
+    "Joint trajectory communication design multi UAV networks",
+    "\"multi-trip\" \"drone\"",
+    "\"drone\" \"battery\" \"scheduling\" \"integer\"",
+    "\"drone\" \"heterogeneous fleet\"",
+    "\"shared batteries\" \"drone\"",
+    "\"drone\" \"battery swapping\" \"scheduling\""
+  ],
+  "dedup_rule": "按小写规范化DOI合并；Wu arXiv与正式期刊通过同题同作者合并为一篇；优先正式期刊日期。",
+  "access_failures": [
+    {
+      "source": "academic-search MCP",
+      "status": "工具未挂载；仅发现Zotero添加工具，按技能使用公开HTTP API。"
+    },
+    {
+      "source": "Crossref keyword search",
+      "status": "部分并行关键词请求HTTP 429；随后直接DOI查询成功。"
+    },
+    {
+      "source": "https://export.arxiv.org/api/query",
+      "status": "HTTP 406；arxiv.org/abs/1705.02723官方页面访问成功。"
+    },
+    {
+      "source": "https://www.sciencedirect.com/science/article/abs/pii/S0305054822001228",
+      "status": "HTTP 403；L06仅元数据/标题核验，不报告未经证实算法细节。"
+    }
+  ],
+  "limitations": [
+    "本轮多数算法核验限于公开摘要，并非逐篇全文复现。",
+    "未核验到与本题完全一致的有限共享电池池+两阶段充电+通信中继统一模型；相应约束直接依题设。",
+    "8篇中L06只验证Benders方法名称，其他7篇有摘要或本地原文算法依据。",
+    "文献中的性能百分比、最优性和收敛结论不迁移到本题。",
+    "本文件仅给方法依据；实际求解器实现与运行结果由第三问主报告记录。"
+  ],
+  "papers": [
+    {
+      "id": "L01",
+      "doi": "10.1109/TSMC.2016.2582745",
+      "year": 2017,
+      "title": "Vehicle Routing Problems for Drone Delivery",
+      "authors": [
+        "Kevin Dorling",
+        "Jordan Heinrichs",
+        "Geoffrey G. Messier",
+        "Sebastian Magierowski"
+      ],
+      "algorithm": "多架次配送 MILP；模拟退火 SA；载荷与电池质量相关能耗。",
+      "evidence_level": "本轮复核本地作者稿第1、5、9、10页，并以Crossref及OpenAlex核对元数据和摘要。",
+      "evidence": [
+        {
+          "url": "https://api.openalex.org/works/https://doi.org/10.1109/TSMC.2016.2582745",
+          "excerpt": "We use this approximation to derive mixed integer linear programs for our VRPs."
+        },
+        {
+          "path": "E:/sxjm/D题/文献阅读/原文/04_Dorling_2016_arXiv_1608.02305v1.pdf",
+          "pages": [
+            1,
+            5,
+            9,
+            10
+          ],
+          "note": "第1页MILP和SA；第5页不考虑换下电池在任务期间重新充电；第9至10页SA。"
+        }
+      ],
+      "adaptation": "可借鉴多架次复用、路线与实体机排程分离及SA编码；本题能源模型及参数全部使用题给规则。",
+      "differences": "原稿假定事先备足满电电池，不处理本题有限共享电池池与两阶段回充；其电池质量优化不能照搬本题固定机型电池。",
+      "date_note": "作者稿2016；期刊正式发表2017。",
+      "doi_url": "https://doi.org/10.1109/TSMC.2016.2582745",
+      "metadata_snapshots": [
+        {
+          "source": "Crossref",
+          "source_url": "https://api.crossref.org/works/10.1109/TSMC.2016.2582745",
+          "title": [
+            "Vehicle Routing Problems for Drone Delivery"
+          ],
+          "authors": [
+            "Kevin Dorling",
+            "Jordan Heinrichs",
+            "Geoffrey G. Messier",
+            "Sebastian Magierowski"
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2017,
+                1
+              ]
+            ]
+          },
+          "journal": [
+            "IEEE Transactions on Systems, Man, and Cybernetics: Systems"
+          ]
+        },
+        {
+          "source": "OpenAlex",
+          "source_url": "https://openalex.org/W2471190594",
+          "title": "Vehicle Routing Problems for Drone Delivery"
+        }
+      ]
+    },
+    {
+      "id": "L02",
+      "doi": "10.1016/j.trc.2019.02.018",
+      "year": 2019,
+      "title": "An adaptive large neighborhood search metaheuristic for the vehicle routing problem with drones",
+      "authors": [
+        "David Sacramento",
+        "David Pisinger",
+        "Stefan Ropke"
+      ],
+      "algorithm": "容量与时限约束下的数学模型；Adaptive Large Neighborhood Search (ALNS)。",
+      "evidence_level": "Crossref元数据+DTU研究数据库公开摘要；未在本轮阅读完整论文。",
+      "evidence": [
+        {
+          "url": "https://orbit.dtu.dk/en/publications/de5c7fac-a4e0-41fc-b8e8-2f3bcb033b2b",
+          "excerpt": "Due to the difficulty of solving large instances to optimality, an Adaptive Large Neighborhood Search metaheuristic is proposed."
+        }
+      ],
+      "adaptation": "可借鉴破坏—修复及算子选择机制；设计本题自己的移箱、拆批、调序、起飞平移、中继服务窗合并等算子。",
+      "differences": "论文为卡车与无人机协同配送，含发射/回收同步；本题为O01出发返回的纯无人机机队和专用中继，不得直接复制其同步约束。",
+      "doi_url": "https://doi.org/10.1016/j.trc.2019.02.018",
+      "metadata_snapshots": [
+        {
+          "source": "Crossref",
+          "source_url": "https://api.crossref.org/works/10.1016/j.trc.2019.02.018",
+          "title": [
+            "An adaptive large neighborhood search metaheuristic for the vehicle routing problem with drones"
+          ],
+          "authors": [
+            "David Sacramento",
+            "David Pisinger",
+            "Stefan Ropke"
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2019,
+                5
+              ]
+            ]
+          },
+          "journal": [
+            "Transportation Research Part C: Emerging Technologies"
+          ]
+        },
+        {
+          "source": "OpenAlex",
+          "source_url": "https://openalex.org/W2927378423",
+          "title": "An adaptive large neighborhood search metaheuristic for the vehicle routing problem with drones"
+        }
+      ]
+    },
+    {
+      "id": "L03",
+      "doi": "10.1007/s10846-019-01034-w",
+      "year": 2020,
+      "title": "Drone Delivery Scheduling Optimization Considering Payload-induced Battery Consumption Rates",
+      "authors": [
+        "Maryam Torabbeigi",
+        "Gino J. Lim",
+        "Seon Jin Kim"
+      ],
+      "algorithm": "战略层最小集合覆盖；运营层MILP；变量预处理与原始/对偶界生成。",
+      "evidence_level": "Crossref元数据+Springer公开摘要；未在本轮阅读订阅全文。",
+      "evidence": [
+        {
+          "url": "https://link.springer.com/article/10.1007/s10846-019-01034-w",
+          "excerpt": "A minimum set covering approach is used to model the strategic planning and a mixed integer linear programming problem (MILP) is used for operational planning."
+        }
+      ],
+      "adaptation": "支持将候选覆盖关系与排程分层处理、计入载荷变化和返航电量；其预处理思想可用于过滤不可行架次。",
+      "differences": "不能由该摘要推断其已处理本题编号电池充电回流、DEM遮挡或中继连续通信；其电耗率模型不能替换附录2。",
+      "date_note": "2019-05-10在线；Crossref期刊卷期为2020年3月，本文参考文献按2020记。",
+      "doi_url": "https://doi.org/10.1007/s10846-019-01034-w",
+      "metadata_snapshots": [
+        {
+          "source": "OpenAlex",
+          "source_url": "https://openalex.org/W2944128823",
+          "title": "Drone Delivery Scheduling Optimization Considering Payload-induced Battery Consumption Rates",
+          "authors": [
+            "Maryam Torabbeigi",
+            "Gino J. Lim",
+            "Seonjin Kim"
+          ],
+          "year": 2019
+        },
+        {
+          "source": "Crossref",
+          "source_url": "https://api.crossref.org/works/10.1007/s10846-019-01034-w",
+          "title": [
+            "Drone Delivery Scheduling Optimization Considering Payload-induced Battery Consumption Rates"
+          ],
+          "authors": [
+            "Maryam Torabbeigi",
+            "Gino J. Lim",
+            "Seon Jin Kim"
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2019,
+                5,
+                10
+              ]
+            ]
+          },
+          "published_print": {
+            "date-parts": [
+              [
+                2020,
+                3
+              ]
+            ]
+          },
+          "journal": [
+            "Journal of Intelligent &amp; Robotic Systems"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L04",
+      "doi": "10.1016/j.trb.2020.06.011",
+      "year": 2020,
+      "title": "Drone routing with energy function: Formulation and exact algorithm",
+      "authors": [
+        "Chun Cheng",
+        "Yossiri Adulyasak",
+        "Louis-Martin Rousseau"
+      ],
+      "algorithm": "二索引建模；非线性凸能耗；逻辑割与次梯度割；branch-and-cut。",
+      "evidence_level": "Crossref元数据+RePEc公开摘要；未在本轮阅读完整论文。",
+      "evidence": [
+        {
+          "url": "https://ideas.repec.org/a/eee/transb/v139y2020icp364-387.html",
+          "excerpt": "We use a 2-index formulation to model the problem and develop a branch-and-cut algorithm for the formulation."
+        }
+      ],
+      "adaptation": "可借鉴对候选路线按真实能耗独立校验、以有效割排除不可行组合，避免仅用粗略航程半径代替载荷能耗。",
+      "differences": "文中采用其自身非线性凸能耗模型；本题附录2具有特定等效航程/爬升公式和DEM航高。文献结果不能证明本题模型凸或某种线性化有效。",
+      "doi_url": "https://doi.org/10.1016/j.trb.2020.06.011",
+      "metadata_snapshots": [
+        {
+          "source": "OpenAlex",
+          "source_url": "https://openalex.org/W3041611419",
+          "title": "Drone routing with energy function: Formulation and exact algorithm",
+          "authors": [
+            "Chun Cheng",
+            "Yossiri Adulyasak",
+            "Louis-Martin Rousseau"
+          ],
+          "year": 2020
+        },
+        {
+          "source": "Crossref",
+          "source_url": "https://api.crossref.org/works/10.1016/j.trb.2020.06.011",
+          "title": [
+            "Drone routing with energy function: Formulation and exact algorithm"
+          ],
+          "authors": [
+            "Chun Cheng",
+            "Yossiri Adulyasak",
+            "Louis-Martin Rousseau"
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2020,
+                9
+              ]
+            ]
+          },
+          "published_print": {
+            "date-parts": [
+              [
+                2020,
+                9
+              ]
+            ]
+          },
+          "journal": [
+            "Transportation Research Part B: Methodological"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "L05",
+      "doi": "10.1016/j.cor.2020.105177",
+      "year": 2021,
+      "title": "Designing a drone delivery network with automated battery swapping machines",
+      "authors": [
+        "Taner Cokyasar",
+        "Wenquan Dong",
+        "Mingzhou Jin",
+        "İsmail Ömer Verbas"
+      ],
+      "algorithm": "含换电站等待时间的MINLP；导数支持的割平面精确算法。",
+      "evidence_level": "Crossref元数据+美国能源部OSTI公开摘要；未在本轮下载其可获取作者稿。",
+      "evidence": [
+        {
+          "url": "https://www.osti.gov/biblio/1765828",
+          "excerpt": "We build a mixed-integer nonlinear program that captures the nonlinear waiting time of drones at ABSMs."
+        }
+      ],
+      "adaptation": "说明换电/等待过程会影响设施和运营决策；本题应显式记飞机与能源的独立占用，不能用机数替代电池数。",
+      "differences": "论文为分布式自动换电设施的长期网络设计；本题只在O01管理有限共享能源组件并按题给SOC分段回充。这里只是方法背景，不能说直接复现其换电网络模型。",
+      "date_note": "OSTI记2020-12-17；Crossref正式卷期为2021年5月、129卷、105177，本文按2021记。",
+      "doi_url": "https://doi.org/10.1016/j.cor.2020.105177",
+      "metadata_snapshots": [
+        {
+          "source": "OpenAlex",
+          "source_url": "https://openalex.org/W3112045312",
+          "title": "Designing a drone delivery network with automated battery swapping machines",
+          "authors": [
+            "Taner Cokyasar",
+            "Wenquan Dong",
+            "Mingzhou Jin",
+            "İsmail Ömer Verbas"
+          ],
+          "year": 2020
+        },
+        {
+          "source": "Crossref",
+          "source_url": "https://api.crossref.org/works/10.1016/j.cor.2020.105177",
+          "title": [
+            "Designing a drone delivery network with automated battery swapping machines"
+          ],
+          "authors": [
+            "Taner Cokyasar",
+            "Wenquan Dong",
+            "Mingzhou Jin",
+            "İsmail Ömer Verbas"
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2021,
+                5
+              ]
+            ]
+          },
+          "published_print": {
+            "date-parts": [
+              [
+                2021,
+                5
+              ]
+            ]
+          },
+          "published_online": null,
+          "journal": [
+            "Computers &amp; Operations Research"
+          ],
+          "volume": "129",
+          "issue": null,
+          "pages": "105177",
+          "article_number": "105177"
+        }
+      ]
+    },
+    {
+      "id": "L06",
+      "doi": "10.1016/j.cor.2022.105845",
+      "year": 2022,
+      "title": "A logic-based Benders decomposition method for the multi-trip traveling repairman problem with drones",
+      "authors": [
+        "M.E. Bruni",
+        "S. Khodaparasti",
+        "M. Moshref-Javadi"
+      ],
+      "algorithm": "Logic-based Benders decomposition。仅核验方法名与多趟巡修/服务问题名称。",
+      "evidence_level": "Crossref+OpenAlex+Elsevier公开元数据；ScienceDirect摘要页403；全文与摘要细节未核验。",
+      "evidence": [
+        {
+          "url": "https://api.crossref.org/works/10.1016/j.cor.2022.105845",
+          "excerpt": "A logic-based Benders decomposition method for the multi-trip traveling repairman problem with drones"
+        },
+        {
+          "url": "https://api.elsevier.com/content/article/PII:S0305054822001228?httpAccept=text/xml",
+          "note": "成功返回标题、DOI、刊名、日期等元数据，不含可用算法细节。"
+        }
+      ],
+      "adaptation": "可作为路线/排程主问题—通信可行性子问题的分解方法检索入口；具体主子问题与有效割必须针对本题重新证明。",
+      "differences": "文献研究multi-trip traveling repairman；本题还含80个不可拆分货箱、异构固定机队、双能源池及连续通信。未核验该文主子问题细节，不声称与本文分解相同。",
+      "doi_url": "https://doi.org/10.1016/j.cor.2022.105845",
+      "metadata_snapshots": [
+        {
+          "source": "OpenAlex",
+          "source_url": "https://openalex.org/W4225003238",
+          "title": "A logic-based Benders decomposition method for the multi-trip traveling repairman problem with drones",
+          "authors": [
+            "Maria Elena Bruni",
+            "Sara Khodaparasti",
+            "Mohammad Moshref‐Javadi"
+          ],
+          "year": 2022
+        },
+        {
+          "source": "Crossref",
+          "source_url": "https://api.crossref.org/works/10.1016/j.cor.2022.105845",
+          "title": [
+            "A logic-based Benders decomposition method for the multi-trip traveling repairman problem with drones"
+          ],
+          "authors": [
+            "M.E. Bruni",
+            "S. Khodaparasti",
+            "M. Moshref-Javadi"
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                9
+              ]
+            ]
+          },
+          "published_print": {
+            "date-parts": [
+              [
+                2022,
+                9
+              ]
+            ]
+          },
+          "journal": [
+            "Computers &amp; Operations Research"
+          ]
+        },
+        {
+          "source": "Crossref",
+          "source_url": "https://api.crossref.org/works/10.1016/j.cor.2022.105845",
+          "title": [
+            "A logic-based Benders decomposition method for the multi-trip traveling repairman problem with drones"
+          ],
+          "authors": [
+            "M.E. Bruni",
+            "S. Khodaparasti",
+            "M. Moshref-Javadi"
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2022,
+                9
+              ]
+            ]
+          },
+          "published_print": {
+            "date-parts": [
+              [
+                2022,
+                9
+              ]
+            ]
+          },
+          "published_online": null,
+          "journal": [
+            "Computers &amp; Operations Research"
+          ],
+          "volume": "145",
+          "issue": null,
+          "pages": "105845",
+          "article_number": "105845"
+        }
+      ]
+    },
+    {
+      "id": "L07",
+      "doi": "10.1109/TCOMM.2016.2611512",
+      "year": 2016,
+      "title": "Throughput Maximization for UAV-Enabled Mobile Relaying Systems",
+      "authors": [
+        "Yong Zeng",
+        "Rui Zhang",
+        "Teng Joon Lim"
+      ],
+      "algorithm": "固定轨迹下功率优化；固定功率下逐次凸优化轨迹；交替迭代。",
+      "evidence_level": "Crossref元数据+OpenAlex所收录公开摘要；本轮未读取全文。",
+      "evidence": [
+        {
+          "url": "https://api.openalex.org/works/https://doi.org/10.1109/TCOMM.2016.2611512",
+          "excerpt": "An iterative algorithm is thus proposed to optimize the power allocations and relay trajectory alternately."
+        }
+      ],
+      "adaptation": "可借鉴交替优化思想：固定运输排程优化中继选址/服务窗，再回调运输；每次都用本题精确链路判定。",
+      "differences": "论文优化移动中继、发射功率、吞吐量与信息因果性；本题中继为到达悬停点建链后提供服务，设备功率固定，目标为配送/完成时间/能耗/架次。不能让运输任意绕飞或用平均吞吐量替代全程链路可用。",
+      "doi_url": "https://doi.org/10.1109/TCOMM.2016.2611512",
+      "metadata_snapshots": [
+        {
+          "source": "Crossref",
+          "source_url": "https://api.crossref.org/works/10.1109/TCOMM.2016.2611512",
+          "title": [
+            "Throughput Maximization for UAV-Enabled Mobile Relaying Systems"
+          ],
+          "authors": [
+            "Yong Zeng",
+            "Rui Zhang",
+            "Teng Joon Lim"
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2016,
+                12
+              ]
+            ]
+          },
+          "journal": [
+            "IEEE Transactions on Communications"
+          ]
+        },
+        {
+          "source": "OpenAlex",
+          "source_url": "https://openalex.org/W2523219060",
+          "title": "Throughput Maximization for UAV-Enabled Mobile Relaying Systems"
+        }
+      ]
+    },
+    {
+      "id": "L08",
+      "doi": "10.1109/TWC.2017.2789293",
+      "year": 2018,
+      "title": "Joint Trajectory and Communication Design for Multi-UAV Enabled Wireless Networks",
+      "authors": [
+        "Qingqing Wu",
+        "Yong Zeng",
+        "Rui Zhang"
+      ],
+      "algorithm": "Block Coordinate Descent (BCD)+successive convex optimization；交替优化用户调度关联、轨迹和发射功率。",
+      "evidence_level": "Crossref元数据+OpenAlex摘要+arXiv官方摘要页；本轮未阅读全文。",
+      "evidence": [
+        {
+          "url": "https://arxiv.org/abs/1705.02723",
+          "excerpt": "we propose an efficient iterative algorithm for solving it by applying the block coordinate descent and successive convex optimization techniques."
+        }
+      ],
+      "adaptation": "用于论证通信和几何位置联合优化的耦合；本题可离散候选悬停点，再与时段排程交替优化。",
+      "differences": "论文为空中基站服务地面用户的吞吐公平性问题，优化平滑通信模型下轨迹/功率。本题DEM遮挡产生跳变，运输航迹受附录2约束，不能直接套SCA或迁移其收敛/最优性结论。",
+      "date_note": "arXiv首稿2017；正式期刊2018。",
+      "doi_url": "https://doi.org/10.1109/TWC.2017.2789293",
+      "metadata_snapshots": [
+        {
+          "source": "OpenAlex",
+          "source_url": "https://openalex.org/W2963061782",
+          "title": "Joint Trajectory and Communication Design for Multi-UAV Enabled Wireless Networks",
+          "authors": [
+            "Qingqing Wu",
+            "Yong Zeng",
+            "Rui Zhang"
+          ],
+          "year": 2018
+        },
+        {
+          "source": "Crossref",
+          "source_url": "https://api.crossref.org/works/10.1109/TWC.2017.2789293",
+          "title": [
+            "Joint Trajectory and Communication Design for Multi-UAV Enabled Wireless Networks"
+          ],
+          "authors": [
+            "Qingqing Wu",
+            "Yong Zeng",
+            "Rui Zhang"
+          ],
+          "published": {
+            "date-parts": [
+              [
+                2018,
+                3
+              ]
+            ]
+          },
+          "published_print": {
+            "date-parts": [
+              [
+                2018,
+                3
+              ]
+            ]
+          },
+          "journal": [
+            "IEEE Transactions on Wireless Communications"
+          ]
+        }
+      ]
+    }
+  ]
+}
